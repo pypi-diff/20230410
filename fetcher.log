@@ -585,3 +585,35 @@
 [2023-04-10 01:23:03] INFO root fetch - processPackages [bigdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdict-21.4.11.tar.gz tmp/bigdict-22.5.29.tar.gz --markdown 20230410/b/bigdict/21.4.11-22.5.29/diff.md --exclude *.pyd
 [2023-04-10 01:23:04] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:23:04] INFO root fetch - main [MainThread]: Store serial: [17640338]
+[2023-04-10 01:28:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640338]
+[2023-04-10 01:28:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 01:28:11] INFO root fetch - processPackages [auto-vicuna]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 01:28:11] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 01:28:11] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 01:28:11] INFO root fetch - processPackages [taskiq-redis]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-04-10 01:28:11] INFO root fetch - processPackages [ufbt]: New version: [0.2.1rc4] Old Version: [0.2.1rc3]
+[2023-04-10 01:28:11] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 01:28:11] INFO root fetch - processPackages [auto-vicuna]: Downloading https://files.pythonhosted.org/packages/3b/99/66d7362fad9ce4d09339ef213628dddc59d1fba9a82786dc865329f07051/auto_vicuna-0.0.1.tar.gz
+[2023-04-10 01:28:11] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 01:28:11] INFO root fetch - processPackages [taskiq-redis]: Downloading https://files.pythonhosted.org/packages/dd/55/edabb08378394dd5532a11e8c97211a84b71a136b4ec787ae32f859f3ad6/taskiq_redis-0.2.3.tar.gz
+[2023-04-10 01:28:11] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 01:28:11] INFO root fetch - main [MainThread]: error
+[2023-04-10 01:28:11] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 01:28:11] INFO root fetch - main [MainThread]: error
+[2023-04-10 01:28:11] INFO root fetch - processPackages [dioptra]: New version: [1.0.7rc1] Old Version: [1.0.6]
+[2023-04-10 01:28:11] INFO root fetch - processPackages [ufbt]: Downloading https://files.pythonhosted.org/packages/0f/54/96114a453905c3758819b551b7d403830398ee4eff4cad0a9b8a0ea9fa68/ufbt-0.2.1rc4.tar.gz
+[2023-04-10 01:28:11] INFO root fetch - processPackages [dioptra]: executing diffoscope
+[2023-04-10 01:28:11] INFO root fetch - processPackages [dioptra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dioptra-1.0.6.tar.gz tmp/dioptra-1.0.7rc1.tar.gz --markdown 20230410/d/dioptra/1.0.6-1.0.7rc1/diff.md --exclude *.pyd
+[2023-04-10 01:28:11] INFO root fetch - processPackages [taskiq-redis]: Downloading https://files.pythonhosted.org/packages/de/de/d718e3186022b135b92dc14707fc824c304f10ec96b45e3fe93136f99359/taskiq_redis-0.3.0.tar.gz
+[2023-04-10 01:28:11] INFO root fetch - processPackages [auto-vicuna]: Downloading https://files.pythonhosted.org/packages/5f/ce/689e07c3a113da587401abaf8e133e30b91e0b789ce70161eb77b14f1b99/auto_vicuna-0.0.2.tar.gz
+[2023-04-10 01:28:12] INFO root fetch - processPackages [ufbt]: executing diffoscope
+[2023-04-10 01:28:12] INFO root fetch - processPackages [ufbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ufbt-0.2.1rc3.tar.gz tmp/ufbt-0.2.1rc4.tar.gz --markdown 20230410/u/ufbt/0.2.1rc3-0.2.1rc4/diff.md --exclude *.pyd
+[2023-04-10 01:28:12] INFO root fetch - processPackages [taskiq-redis]: executing diffoscope
+[2023-04-10 01:28:12] INFO root fetch - processPackages [taskiq-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskiq_redis-0.2.3.tar.gz tmp/taskiq_redis-0.3.0.tar.gz --markdown 20230410/t/taskiq-redis/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-04-10 01:28:12] INFO root fetch - processPackages [auto-vicuna]: executing diffoscope
+[2023-04-10 01:28:12] INFO root fetch - processPackages [auto-vicuna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_vicuna-0.0.1.tar.gz tmp/auto_vicuna-0.0.2.tar.gz --markdown 20230410/a/auto-vicuna/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 01:28:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:28:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:28:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:28:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:28:13] INFO root fetch - main [MainThread]: Store serial: [17640360]
