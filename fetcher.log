@@ -509,3 +509,39 @@
 [2023-04-10 01:07:28] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:07:28] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:07:28] INFO root fetch - main [MainThread]: Store serial: [17640290]
+[2023-04-10 01:12:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640290]
+[2023-04-10 01:12:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 01:12:36] INFO root fetch - processPackages [stochastic-arrow]: New version: [0.5.2] Old Version: [0.5.0]
+[2023-04-10 01:12:36] INFO root fetch - processPackages [deepdog]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-04-10 01:12:36] INFO root fetch - processPackages [edwh]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-04-10 01:12:36] INFO root fetch - processPackages [secimport]: New version: [0.7.3] Old Version: [0.7.0]
+[2023-04-10 01:12:36] INFO root fetch - processPackages [huckle]: New version: [3.0.0] Old Version: [2.6.2]
+[2023-04-10 01:12:36] INFO root fetch - processPackages [stochastic-arrow]: Downloading https://files.pythonhosted.org/packages/f5/9d/9c26484aa6930464dd1a1e93f789c4c2dbf0586f8b26935a66707eb84ab8/stochastic-arrow-0.5.0.tar.gz
+[2023-04-10 01:12:36] INFO root fetch - processPackages [deepdog]: Downloading https://files.pythonhosted.org/packages/fc/90/3a2c7be6fe160443adabe651397d8bf76e1e0f4e25148f3358ebda78fb05/deepdog-0.6.6.tar.gz
+[2023-04-10 01:12:36] INFO root fetch - processPackages [deepdog]: executing diffoscope
+[2023-04-10 01:12:36] INFO root fetch - processPackages [deepdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdog-0.6.5.tar.gz tmp/deepdog-0.6.6.tar.gz --markdown 20230410/d/deepdog/0.6.5-0.6.6/diff.md --exclude *.pyd
+[2023-04-10 01:12:36] INFO root fetch - processPackages [huckle]: Downloading https://files.pythonhosted.org/packages/f6/90/e69702039ebf8481f8faadddda8d2b7a201f96d77f2b409bf848a2bef3af/huckle-2.6.2.tar.gz
+[2023-04-10 01:12:36] INFO root fetch - processPackages [edwh]: Downloading https://files.pythonhosted.org/packages/58/29/d522e02e8bd04941f1448c5b239c692cc4246d2255e751fc1c070a8ffb36/edwh-0.3.0.tar.gz
+[2023-04-10 01:12:36] INFO root fetch - processPackages [secimport]: Downloading https://files.pythonhosted.org/packages/98/dd/7bbd0fb04d02bc16c32fc70f00674591644854d5261b783866e029cb9f23/secimport-0.7.3.tar.gz
+[2023-04-10 01:12:36] INFO root fetch - processPackages [secimport]: executing diffoscope
+[2023-04-10 01:12:36] INFO root fetch - processPackages [secimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secimport-0.7.0.tar.gz tmp/secimport-0.7.3.tar.gz --markdown 20230410/s/secimport/0.7.0-0.7.3/diff.md --exclude *.pyd
+[2023-04-10 01:12:36] INFO root fetch - processPackages [edwh]: executing diffoscope
+[2023-04-10 01:12:36] INFO root fetch - processPackages [edwh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh-0.2.3.tar.gz tmp/edwh-0.3.0.tar.gz --markdown 20230410/e/edwh/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-04-10 01:12:36] INFO root fetch - processPackages [stochastic-arrow]: Downloading https://files.pythonhosted.org/packages/54/d1/23afc4b2349578db96085c8ed6ee94e407ebc82b39275f707120baa075ae/stochastic-arrow-0.5.2.tar.gz
+[2023-04-10 01:12:36] INFO root fetch - processPackages [huckle]: Downloading https://files.pythonhosted.org/packages/51/c1/4a105f3f85dd6ea41bd5feb7797d8ecb01c16e42e8c9918bb6b350452a24/huckle-3.0.0.tar.gz
+[2023-04-10 01:12:36] INFO root fetch - processPackages [stochastic-arrow]: executing diffoscope
+[2023-04-10 01:12:36] INFO root fetch - processPackages [stochastic-arrow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stochastic-arrow-0.5.0.tar.gz tmp/stochastic-arrow-0.5.2.tar.gz --markdown 20230410/s/stochastic-arrow/0.5.0-0.5.2/diff.md --exclude *.pyd
+[2023-04-10 01:12:37] INFO root fetch - processPackages [huckle]: executing diffoscope
+[2023-04-10 01:12:37] INFO root fetch - processPackages [huckle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huckle-2.6.2.tar.gz tmp/huckle-3.0.0.tar.gz --markdown 20230410/h/huckle/2.6.2-3.0.0/diff.md --exclude *.pyd
+[2023-04-10 01:12:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:12:37] INFO root fetch - processPackages [taskiq]: New version: [0.4.0] Old Version: [0.3.5]
+[2023-04-10 01:12:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:12:37] INFO root fetch - processPackages [taskiq]: Downloading https://files.pythonhosted.org/packages/cc/cf/1b2bd19f2e8f5afc970f1e4d0dac309c6a3cce6c85ad1f3e5441b0652647/taskiq-0.3.5.tar.gz
+[2023-04-10 01:12:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:12:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:12:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:12:38] INFO root fetch - processPackages [taskiq]: Downloading https://files.pythonhosted.org/packages/c6/a8/d932cb4617a35b3e151a14c1e3eaf9005f2e2f3926ba80323977badd8fb9/taskiq-0.4.0.tar.gz
+[2023-04-10 01:12:38] INFO root fetch - processPackages [taskiq]: executing diffoscope
+[2023-04-10 01:12:38] INFO root fetch - processPackages [taskiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskiq-0.3.5.tar.gz tmp/taskiq-0.4.0.tar.gz --markdown 20230410/t/taskiq/0.3.5-0.4.0/diff.md --exclude *.pyd
+[2023-04-10 01:12:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:12:39] INFO root fetch - main [MainThread]: Store serial: [17640308]
