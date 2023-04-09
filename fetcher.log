@@ -657,3 +657,41 @@
 [2023-04-10 01:38:31] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:39:00] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:39:00] INFO root fetch - main [MainThread]: Store serial: [17640413]
+[2023-04-10 01:44:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640413]
+[2023-04-10 01:44:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 01:44:07] INFO root fetch - processPackages [edwh]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-10 01:44:07] INFO root fetch - processPackages [only-train-once]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-10 01:44:07] WARNING root fetch - processPackages [metaflow-card-corise]: Skipping, unable to determine old version
+[2023-04-10 01:44:07] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.4b0] Old Version: [0.8.3]
+[2023-04-10 01:44:07] INFO root fetch - processPackages [turbo-docs]: New version: [0.4.1] Old Version: [0.4]
+[2023-04-10 01:44:07] INFO root fetch - main [MainThread]: error
+[2023-04-10 01:44:07] INFO root fetch - processPackages [modal-client]: New version: [0.48.1839] Old Version: [0.48.1829]
+[2023-04-10 01:44:07] INFO root fetch - processPackages [only-train-once]: Downloading https://files.pythonhosted.org/packages/1f/7a/131fb7a00349883fe8adae5ae2f81a35fff82eb4b4e0d8823afd015e9e58/only_train_once-2.0.8.tar.gz
+[2023-04-10 01:44:07] INFO root fetch - processPackages [python-project-structure]: Downloading https://files.pythonhosted.org/packages/ba/a0/d7a8510f7080fcc70e6d80fd7a296db59bbbde0c8274f3d9767f19a8c1f9/python-project-structure-0.8.3.tar.gz
+[2023-04-10 01:44:07] INFO root fetch - processPackages [edwh]: Downloading https://files.pythonhosted.org/packages/2c/32/bf21f8964ad55d43588bd91120430005540521e44452bbfcf9fc397db3d9/edwh-0.3.2.tar.gz
+[2023-04-10 01:44:07] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/a6/17/2e6f0bb11b94cb776a45a6939336270ddc8a2e04df1710f8e4b4720743dc/modal_client-0.48.1839-py3-none-any.whl
+[2023-04-10 01:44:07] INFO root fetch - processPackages [turbo-docs]: Downloading https://files.pythonhosted.org/packages/4f/90/0a28ca781d6b138c34511c797ccb9077ce5418f28182996e4254264cc1e6/turbo_docs-0.4.1.tar.gz
+[2023-04-10 01:44:07] INFO root fetch - processPackages [python-project-structure]: Downloading https://files.pythonhosted.org/packages/65/ef/76ed5e78939c94a26fa30bb5b226ebeb91092107eb3e545c0a6c28a160d1/python-project-structure-0.8.4b0.tar.gz
+[2023-04-10 01:44:07] INFO root fetch - processPackages [only-train-once]: Downloading https://files.pythonhosted.org/packages/ee/80/06ee4385ba8b427773f71c598eb179360dee5b41a04df5fc40054537ea28/only_train_once-2.0.9.tar.gz
+[2023-04-10 01:44:07] INFO root fetch - processPackages [only-train-once]: executing diffoscope
+[2023-04-10 01:44:07] INFO root fetch - processPackages [only-train-once]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/only_train_once-2.0.8.tar.gz tmp/only_train_once-2.0.9.tar.gz --markdown 20230410/o/only-train-once/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-10 01:44:08] INFO root fetch - processPackages [edwh]: executing diffoscope
+[2023-04-10 01:44:08] INFO root fetch - processPackages [edwh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh-0.3.1.tar.gz tmp/edwh-0.3.2.tar.gz --markdown 20230410/e/edwh/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-10 01:44:08] INFO root fetch - processPackages [turbo-docs]: executing diffoscope
+[2023-04-10 01:44:08] INFO root fetch - processPackages [turbo-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_docs-0.4.tar.gz tmp/turbo_docs-0.4.1.tar.gz --markdown 20230410/t/turbo-docs/0.4-0.4.1/diff.md --exclude *.pyd
+[2023-04-10 01:44:08] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2023-04-10 01:44:08] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.48.1829-py3-none-any.whl.zip tmp/modal_client-0.48.1839-py3-none-any.whl.zip --markdown 20230410/m/modal-client/0.48.1829-0.48.1839/diff.md --exclude *.pyd
+[2023-04-10 01:44:08] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-10 01:44:08] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.3.tar.gz tmp/python-project-structure-0.8.4b0.tar.gz --markdown 20230410/p/python-project-structure/0.8.3-0.8.4b0/diff.md --exclude *.pyd
+[2023-04-10 01:44:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:44:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:44:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:44:09] INFO root fetch - processPackages [gptdeploy]: New version: [0.17] Old Version: [0.1.5]
+[2023-04-10 01:44:09] INFO root fetch - processPackages [gptdeploy]: Downloading https://files.pythonhosted.org/packages/e8/f5/3e5000c9cab172f02d797a6a6992dae64e94ef641477157b439e7c9574d0/gptdeploy-0.1.5.tar.gz
+[2023-04-10 01:44:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:44:09] INFO root fetch - processPackages [gptdeploy]: Downloading https://files.pythonhosted.org/packages/8f/f0/57a7f23fc186e3335c1ee4745b2ccfa071c3dbcb77a83e68b22a34d47518/gptdeploy-0.17.tar.gz
+[2023-04-10 01:44:09] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-10 01:44:09] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.1.5.tar.gz tmp/gptdeploy-0.17.tar.gz --markdown 20230410/g/gptdeploy/0.1.5-0.17/diff.md --exclude *.pyd
+[2023-04-10 01:44:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:44:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:44:10] INFO root fetch - main [MainThread]: Store serial: [17640435]
