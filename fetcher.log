@@ -711,3 +711,61 @@
 [2023-04-10 01:49:19] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:49:19] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:49:19] INFO root fetch - main [MainThread]: Store serial: [17640440]
+[2023-04-10 01:54:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640440]
+[2023-04-10 01:54:26] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 01:54:26] INFO root fetch - processPackages [use-case-registry]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-04-10 01:54:26] INFO root fetch - processPackages [singular-client]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 01:54:26] INFO root fetch - processPackages [taskiq-nats]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-10 01:54:26] INFO root fetch - processPackages [dioptra]: New version: [1.0.7rc3] Old Version: [1.0.7rc2]
+[2023-04-10 01:54:26] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 01:54:26] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 01:54:27] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 01:54:27] INFO root fetch - main [MainThread]: error
+[2023-04-10 01:54:27] INFO root fetch - processPackages [taskiq-nats]: Downloading https://files.pythonhosted.org/packages/df/9f/b7eb0ad9135de6af4a7549a4b749a05b565e23e4ee1ace9d027393a778b7/taskiq_nats-0.1.2.tar.gz
+[2023-04-10 01:54:27] INFO root fetch - processPackages [pyFileFixity]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-10 01:54:27] INFO root fetch - processPackages [dioptra]: Downloading https://files.pythonhosted.org/packages/cb/3a/85bac0f152142a953643744d9a5a3d5659ec8b8b57fac0fa36a085c6ab6d/dioptra-1.0.7rc2.tar.gz
+[2023-04-10 01:54:27] INFO root fetch - processPackages [singular-client]: Downloading https://files.pythonhosted.org/packages/d6/13/c4cfa2cc14ac634f5872cc8ea2c3cc127c10b2f5dba708be0f5d5ef51c5d/singular_client-0.1.2.tar.gz
+[2023-04-10 01:54:27] INFO root fetch - processPackages [use-case-registry]: Downloading https://files.pythonhosted.org/packages/b6/9a/f0bfa3ec734c59b445363edecfc18d30534637ecaa621f71305717b7d349/use_case_registry-1.4.3.tar.gz
+[2023-04-10 01:54:27] INFO root fetch - processPackages [pyFileFixity]: Downloading https://files.pythonhosted.org/packages/8f/92/affa2137f5677ceed8f1028e4a2d32b8963cdc0c07e2a2c198574a6a6dbb/pyFileFixity-3.1.1.tar.gz
+[2023-04-10 01:54:27] INFO root fetch - processPackages [singular-client]: executing diffoscope
+[2023-04-10 01:54:27] INFO root fetch - processPackages [singular-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/singular_client-0.1.1.tar.gz tmp/singular_client-0.1.2.tar.gz --markdown 20230410/s/singular-client/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 01:54:27] INFO root fetch - processPackages [taskiq-nats]: Downloading https://files.pythonhosted.org/packages/ba/92/38558163442fa414b6ac1466059f9620c07d4a1ee5d87e559710f7d8e242/taskiq_nats-0.2.0.tar.gz
+[2023-04-10 01:54:27] INFO root fetch - processPackages [dioptra]: Downloading https://files.pythonhosted.org/packages/fc/a5/07b58d962bccfd5ce25a6a10a3236973b4354275e7aa983d5d32ce2d1bac/dioptra-1.0.7rc3.tar.gz
+[2023-04-10 01:54:27] INFO root fetch - processPackages [use-case-registry]: executing diffoscope
+[2023-04-10 01:54:27] INFO root fetch - processPackages [use-case-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/use_case_registry-1.4.2.tar.gz tmp/use_case_registry-1.4.3.tar.gz --markdown 20230410/u/use-case-registry/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-04-10 01:54:27] INFO root fetch - processPackages [taskiq-nats]: executing diffoscope
+[2023-04-10 01:54:27] INFO root fetch - processPackages [taskiq-nats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskiq_nats-0.1.2.tar.gz tmp/taskiq_nats-0.2.0.tar.gz --markdown 20230410/t/taskiq-nats/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 01:54:27] INFO root fetch - processPackages [dioptra]: executing diffoscope
+[2023-04-10 01:54:27] INFO root fetch - processPackages [dioptra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dioptra-1.0.7rc2.tar.gz tmp/dioptra-1.0.7rc3.tar.gz --markdown 20230410/d/dioptra/1.0.7rc2-1.0.7rc3/diff.md --exclude *.pyd
+[2023-04-10 01:54:27] INFO root fetch - processPackages [pyFileFixity]: executing diffoscope
+[2023-04-10 01:54:27] INFO root fetch - processPackages [pyFileFixity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyFileFixity-3.1.0.tar.gz tmp/pyFileFixity-3.1.1.tar.gz --markdown 20230410/p/pyFileFixity/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-10 01:54:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:54:28] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.4b0] Old Version: [0.8.4]
+[2023-04-10 01:54:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:54:28] INFO root fetch - processPackages [gptdeploy]: New version: [0.17] Old Version: [0.1.7]
+[2023-04-10 01:54:28] INFO root fetch - processPackages [python-project-structure]: Downloading https://files.pythonhosted.org/packages/3d/3a/4dcc6c58d9a6d3ebca496b203e92d861569a0cb021025902802c2a39ead6/python-project-structure-0.8.4.tar.gz
+[2023-04-10 01:54:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:54:28] INFO root fetch - processPackages [gptdeploy]: Downloading https://files.pythonhosted.org/packages/2c/9d/a5d5864cadc8bbf3e0deddb6c982be04e83854dc7c51262467c529b47971/gptdeploy-0.1.7.tar.gz
+[2023-04-10 01:54:28] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 01:54:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:54:28] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-04-10 01:54:28] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230410/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 01:54:28] INFO root fetch - processPackages [taskiq-aio-pika]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-10 01:54:28] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-10 01:54:28] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.4.tar.gz tmp/python-project-structure-0.8.4b0.tar.gz --markdown 20230410/p/python-project-structure/0.8.4-0.8.4b0/diff.md --exclude *.pyd
+[2023-04-10 01:54:29] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-10 01:54:29] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.1.7.tar.gz tmp/gptdeploy-0.17.tar.gz --markdown 20230410/g/gptdeploy/0.1.7-0.17/diff.md --exclude *.pyd
+[2023-04-10 01:54:29] INFO root fetch - processPackages [taskiq-aio-pika]: Downloading https://files.pythonhosted.org/packages/d0/1a/059d38d7758c9edd2503f5a30d1058b8ef64ddc6217a630effb2b5c1333f/taskiq_aio_pika-0.1.1.tar.gz
+[2023-04-10 01:54:29] INFO root fetch - processPackages [taskiq-aio-pika]: Downloading https://files.pythonhosted.org/packages/e0/80/9eaf649f7a3b3cc26be033f015fc7c4cab7ae768412eccb049f34b934f4c/taskiq_aio_pika-0.2.0.tar.gz
+[2023-04-10 01:54:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:54:29] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 01:54:29] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 01:54:29] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 01:54:29] INFO root fetch - main [MainThread]: error
+[2023-04-10 01:54:29] INFO root fetch - processPackages [taskiq-aio-pika]: executing diffoscope
+[2023-04-10 01:54:29] INFO root fetch - processPackages [taskiq-aio-pika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskiq_aio_pika-0.1.1.tar.gz tmp/taskiq_aio_pika-0.2.0.tar.gz --markdown 20230410/t/taskiq-aio-pika/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 01:54:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:54:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:54:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:54:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:54:30] INFO root fetch - main [MainThread]: Store serial: [17640472]
