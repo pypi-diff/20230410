@@ -277,3 +277,51 @@
 [2023-04-10 00:36:07] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:36:09] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:36:09] INFO root fetch - main [MainThread]: Store serial: [17640101]
+[2023-04-10 00:41:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640101]
+[2023-04-10 00:41:16] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 00:41:16] INFO root fetch - processPackages [github-rest-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 00:41:16] INFO root fetch - processPackages [DonatelloPyzza]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-04-10 00:41:16] INFO root fetch - processPackages [aprilgrid]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 00:41:16] INFO root fetch - processPackages [texturize]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 00:41:16] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 00:41:16] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 00:41:16] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 00:41:16] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:41:16] INFO root fetch - processPackages [aprilgrid]: Downloading https://files.pythonhosted.org/packages/de/54/479fedf385109e5bcf170d83425f7e808d0564da09c0f81484d7561b6fe6/aprilgrid-0.2.1.tar.gz
+[2023-04-10 00:41:16] INFO root fetch - processPackages [DonatelloPyzza]: Downloading https://files.pythonhosted.org/packages/01/3b/7eb102a8f319d175341c3ebfff5fb102ff16559a03177b427c59c11b7e42/donatellopyzza-1.6.2.tar.gz
+[2023-04-10 00:41:16] WARNING root fetch - processPackages [candphy]: Skipping, unable to determine old version
+[2023-04-10 00:41:16] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:41:17] INFO root fetch - processPackages [deepdog]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-10 00:41:17] INFO root fetch - processPackages [DonatelloPyzza]: executing diffoscope
+[2023-04-10 00:41:17] INFO root fetch - processPackages [DonatelloPyzza]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donatellopyzza-1.6.1.tar.gz tmp/donatellopyzza-1.6.2.tar.gz --markdown 20230410/D/DonatelloPyzza/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-04-10 00:41:17] INFO root fetch - processPackages [deepdog]: Downloading https://files.pythonhosted.org/packages/82/88/f21172c3dbcbe3dc35e3e71aeb0ddf8061a3cd758b9cef7b9c98a253bd31/deepdog-0.6.4.tar.gz
+[2023-04-10 00:41:17] INFO root fetch - processPackages [github-rest-api]: executing diffoscope
+[2023-04-10 00:41:17] INFO root fetch - processPackages [github-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_rest_api-0.8.0.tar.gz tmp/github_rest_api-0.9.0.tar.gz --markdown 20230410/g/github-rest-api/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 00:41:17] INFO root fetch - processPackages [texturize]: executing diffoscope
+[2023-04-10 00:41:17] INFO root fetch - processPackages [texturize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/texturize-0.8.0.tar.gz tmp/texturize-0.9.0.tar.gz --markdown 20230410/t/texturize/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 00:41:17] INFO root fetch - processPackages [aprilgrid]: Downloading https://files.pythonhosted.org/packages/22/ae/678efe1ee2bbfac9152119d28a70039a6d4689bd9613411d2b71027e34f7/aprilgrid-0.2.2.tar.gz
+[2023-04-10 00:41:17] INFO root fetch - processPackages [aprilgrid]: executing diffoscope
+[2023-04-10 00:41:17] INFO root fetch - processPackages [aprilgrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aprilgrid-0.2.1.tar.gz tmp/aprilgrid-0.2.2.tar.gz --markdown 20230410/a/aprilgrid/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 00:41:17] INFO root fetch - processPackages [deepdog]: Downloading https://files.pythonhosted.org/packages/fe/5a/8afb9c767dab1252a53f4de37040b99350484f25ef2d0e62c8f9e89fcc5e/deepdog-0.6.5.tar.gz
+[2023-04-10 00:41:17] INFO root fetch - processPackages [deepdog]: executing diffoscope
+[2023-04-10 00:41:17] INFO root fetch - processPackages [deepdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdog-0.6.4.tar.gz tmp/deepdog-0.6.5.tar.gz --markdown 20230410/d/deepdog/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-10 00:41:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:41:18] INFO root fetch - processPackages [yfinance]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-10 00:41:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:41:18] INFO root fetch - processPackages [Pytanis]: New version: [0.5] Old Version: [0.4.1]
+[2023-04-10 00:41:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:41:18] INFO root fetch - processPackages [yfinance]: executing diffoscope
+[2023-04-10 00:41:18] INFO root fetch - processPackages [yfinance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yfinance-0.2.7.tar.gz tmp/yfinance-0.2.9.tar.gz --markdown 20230410/y/yfinance/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 00:41:18] INFO root fetch - processPackages [roboweb-extension]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 00:41:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:41:18] INFO root fetch - processPackages [roboweb-extension]: executing diffoscope
+[2023-04-10 00:41:18] INFO root fetch - processPackages [roboweb-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb-extension-0.1.8.tar.gz tmp/roboweb_extension-0.1.9.tar.gz --markdown 20230410/r/roboweb-extension/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 00:41:18] INFO root fetch - processPackages [Pytanis]: Downloading https://files.pythonhosted.org/packages/4c/dc/3472180600cebfc602c77a621a8c1b1aa5f57eb63da39a0c5049ac3e5556/pytanis-0.4.1.tar.gz
+[2023-04-10 00:41:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:41:19] INFO root fetch - processPackages [Pytanis]: Downloading https://files.pythonhosted.org/packages/87/07/642c455178b1318342ceee61bec47f647bedfaedb81c6a4e77af3abe05ad/pytanis-0.5.tar.gz
+[2023-04-10 00:41:19] INFO root fetch - processPackages [Pytanis]: executing diffoscope
+[2023-04-10 00:41:19] INFO root fetch - processPackages [Pytanis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytanis-0.4.1.tar.gz tmp/pytanis-0.5.tar.gz --markdown 20230410/P/Pytanis/0.4.1-0.5/diff.md --exclude *.pyd
+[2023-04-10 00:41:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:41:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:41:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:41:21] INFO root fetch - main [MainThread]: Store serial: [17640138]
