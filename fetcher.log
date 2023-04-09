@@ -695,3 +695,19 @@
 [2023-04-10 01:44:10] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:44:10] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:44:10] INFO root fetch - main [MainThread]: Store serial: [17640435]
+[2023-04-10 01:49:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640435]
+[2023-04-10 01:49:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-10 01:49:18] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.5.1] Old Version: [0.9.5]
+[2023-04-10 01:49:18] INFO root fetch - processPackages [use-case-registry]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-10 01:49:18] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 01:49:18] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 01:49:18] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 01:49:18] INFO root fetch - main [MainThread]: error
+[2023-04-10 01:49:18] INFO root fetch - processPackages [use-case-registry]: executing diffoscope
+[2023-04-10 01:49:18] INFO root fetch - processPackages [use-case-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/use_case_registry-1.4.1.tar.gz tmp/use_case_registry-1.4.2.tar.gz --markdown 20230410/u/use-case-registry/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-10 01:49:18] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/3a/2c/e56ee9955047aecd640bb4f1bf90fb31bf3112abdf0c5b01d3294d55217c/symbolicmode-0.9.5.1.tar.gz
+[2023-04-10 01:49:18] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-10 01:49:18] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.5.tar.gz tmp/symbolicmode-0.9.5.1.tar.gz --markdown 20230410/s/symbolicmode/0.9.5-0.9.5.1/diff.md --exclude *.pyd
+[2023-04-10 01:49:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:49:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:49:19] INFO root fetch - main [MainThread]: Store serial: [17640440]
