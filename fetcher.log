@@ -578,3 +578,10 @@
 [2023-04-10 01:17:49] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:17:55] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:17:55] INFO root fetch - main [MainThread]: Store serial: [17640334]
+[2023-04-10 01:22:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640334]
+[2023-04-10 01:23:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-10 01:23:03] INFO root fetch - processPackages [bigdict]: New version: [22.5.29] Old Version: [21.4.11]
+[2023-04-10 01:23:03] INFO root fetch - processPackages [bigdict]: executing diffoscope
+[2023-04-10 01:23:03] INFO root fetch - processPackages [bigdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdict-21.4.11.tar.gz tmp/bigdict-22.5.29.tar.gz --markdown 20230410/b/bigdict/21.4.11-22.5.29/diff.md --exclude *.pyd
+[2023-04-10 01:23:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:23:04] INFO root fetch - main [MainThread]: Store serial: [17640338]
