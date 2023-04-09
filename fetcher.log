@@ -23,3 +23,38 @@
 [2023-04-10 00:04:53] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:04:54] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:04:54] INFO root fetch - main [MainThread]: Store serial: [17639864]
+[2023-04-10 00:09:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639864]
+[2023-04-10 00:10:01] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 00:10:01] INFO root fetch - processPackages [epubcrush]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-10 00:10:01] WARNING root fetch - processPackages [dauth]: Skipping, unable to determine old version
+[2023-04-10 00:10:01] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:10:01] INFO root fetch - processPackages [aspose-finance]: New version: [23.3] Old Version: [23.2]
+[2023-04-10 00:10:01] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.19] Old Version: [0.1.18]
+[2023-04-10 00:10:01] INFO root fetch - processPackages [recipe]: New version: [0.9.0] Old Version: [0.8.0rc1]
+[2023-04-10 00:10:01] INFO root fetch - processPackages [dolby]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 00:10:01] INFO root fetch - processPackages [epubcrush]: Downloading https://files.pythonhosted.org/packages/5d/62/950184d0b170b234f4996220f9f17f8e2d6e6f60d87560955d2ebe793971/epubcrush-2.0.1.tar.gz
+[2023-04-10 00:10:01] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/01/c9/a16fd94d21df520972b72c74f4fa30c101c7a73c4c388af8f41b6f0ed3a3/roboweb_server-0.1.19.tar.gz
+[2023-04-10 00:10:01] INFO root fetch - processPackages [recipe]: Downloading https://files.pythonhosted.org/packages/ce/15/8c74f6750282094cbabd958b7f2234a420ac7c3017e51bbcfc287946f16a/recipe-0.8.0rc1.tar.gz
+[2023-04-10 00:10:01] INFO root fetch - processPackages [dolby]: Downloading https://files.pythonhosted.org/packages/3c/07/797b95b8125bb04c259bc0b6d388df41b4e8d6ca3a7faaffdace8def20ed/dolby-0.0.3.tar.gz
+[2023-04-10 00:10:01] INFO root fetch - processPackages [aspose-finance]: Downloading https://files.pythonhosted.org/packages/af/0d/7fbdf0ad6718d82dc1a39f9c38a3ca60f06a887122525ccfae37265fdb0e/aspose_finance-23.2-py3-none-win_amd64.whl
+[2023-04-10 00:10:01] INFO root fetch - processPackages [epubcrush]: Downloading https://files.pythonhosted.org/packages/e8/6f/89823a0796b239ecd13b775ce6529ddb07f29268d4c9a3b9685eb3d3e5a9/epubcrush-2.0.2.tar.gz
+[2023-04-10 00:10:01] WARNING root fetch - processPackages [aspose-finance]: Skipping package: exceeds size limit 41672171>=10485760
+[2023-04-10 00:10:01] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:10:01] INFO root fetch - processPackages [dolby]: executing diffoscope
+[2023-04-10 00:10:01] INFO root fetch - processPackages [dolby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolby-0.0.2.tar.gz tmp/dolby-0.0.3.tar.gz --markdown 20230410/d/dolby/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 00:10:01] INFO root fetch - processPackages [simpleworkspace]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-04-10 00:10:02] INFO root fetch - processPackages [epubcrush]: executing diffoscope
+[2023-04-10 00:10:02] INFO root fetch - processPackages [epubcrush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epubcrush-2.0.1.tar.gz tmp/epubcrush-2.0.2.tar.gz --markdown 20230410/e/epubcrush/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-10 00:10:02] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2023-04-10 00:10:02] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleWorkspace-1.1.98-py3-none-any.whl.zip tmp/SimpleWorkspace-1.1.99-py3-none-any.whl.zip --markdown 20230410/s/simpleworkspace/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-04-10 00:10:02] INFO root fetch - processPackages [recipe]: Downloading https://files.pythonhosted.org/packages/70/76/e165fbbd4c4a88310fc0fad5f0313f35d02956694cdeee97d1a392e638ab/recipe-0.9.0.tar.gz
+[2023-04-10 00:10:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:10:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:10:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:10:04] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-10 00:10:04] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.18.tar.gz tmp/roboweb_server-0.1.19.tar.gz --markdown 20230410/r/roboweb-server/0.1.18-0.1.19/diff.md --exclude *.pyd
+[2023-04-10 00:10:04] INFO root fetch - processPackages [recipe]: executing diffoscope
+[2023-04-10 00:10:04] INFO root fetch - processPackages [recipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recipe-0.8.0rc1.tar.gz tmp/recipe-0.9.0.tar.gz --markdown 20230410/r/recipe/0.8.0rc1-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 00:10:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:10:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:10:11] INFO root fetch - main [MainThread]: Store serial: [17639889]
