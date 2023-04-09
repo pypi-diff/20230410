@@ -769,3 +769,24 @@
 [2023-04-10 01:54:30] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:54:30] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:54:30] INFO root fetch - main [MainThread]: Store serial: [17640472]
+[2023-04-10 01:59:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640472]
+[2023-04-10 01:59:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-10 01:59:37] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.5.3] Old Version: [0.9.5.2]
+[2023-04-10 01:59:37] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.5.3] Old Version: [0.9.5.2]
+[2023-04-10 01:59:37] WARNING root fetch - processPackages [cwsearch-utils]: Skipping, unable to determine old version
+[2023-04-10 01:59:37] INFO root fetch - main [MainThread]: error
+[2023-04-10 01:59:37] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1680998625] Old Version: [1680912175]
+[2023-04-10 01:59:38] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-04-10 01:59:38] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1680912175.tar.gz tmp/torchdatasets-nightly-1680998625.tar.gz --markdown 20230410/t/torchdatasets-nightly/1680912175-1680998625/diff.md --exclude *.pyd
+[2023-04-10 01:59:38] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/61/e4/e387944415fed0a1ac5b4edd88222f776bbe628313b37bfc3a6c7edf2db3/symbolicmode-0.9.5.2.tar.gz
+[2023-04-10 01:59:38] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/61/e4/e387944415fed0a1ac5b4edd88222f776bbe628313b37bfc3a6c7edf2db3/symbolicmode-0.9.5.2.tar.gz
+[2023-04-10 01:59:38] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/7a/48/82f1d43b388841a02bc5f97705ad858ad74444728c8a249ec6865027e612/symbolicmode-0.9.5.3.tar.gz
+[2023-04-10 01:59:38] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/7a/48/82f1d43b388841a02bc5f97705ad858ad74444728c8a249ec6865027e612/symbolicmode-0.9.5.3.tar.gz
+[2023-04-10 01:59:38] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-10 01:59:38] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.5.2.tar.gz tmp/symbolicmode-0.9.5.3.tar.gz --markdown 20230410/s/symbolicmode/0.9.5.2-0.9.5.3/diff.md --exclude *.pyd
+[2023-04-10 01:59:38] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-10 01:59:38] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.5.2.tar.gz tmp/symbolicmode-0.9.5.3.tar.gz --markdown 20230410/s/symbolicmode/0.9.5.2-0.9.5.3/diff.md --exclude *.pyd
+[2023-04-10 01:59:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:59:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:59:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:59:39] INFO root fetch - main [MainThread]: Store serial: [17640481]
