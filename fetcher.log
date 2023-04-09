@@ -159,3 +159,49 @@
 [2023-04-10 00:25:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:25:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:25:42] INFO root fetch - main [MainThread]: Store serial: [17639944]
+[2023-04-10 00:30:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639944]
+[2023-04-10 00:30:49] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 00:30:49] INFO root fetch - processPackages [ultralytics]: New version: [8.0.9] Old Version: [8.0.8]
+[2023-04-10 00:30:49] WARNING root fetch - processPackages [transpire]: Skipping, unable to determine old version
+[2023-04-10 00:30:49] WARNING root fetch - processPackages [snakeit]: Skipping, unable to determine old version
+[2023-04-10 00:30:49] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.20] Old Version: [0.1.19]
+[2023-04-10 00:30:49] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:30:49] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:30:49] INFO root fetch - processPackages [zowie]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-10 00:30:49] INFO root fetch - processPackages [google-chad]: New version: [3.2] Old Version: [3.1]
+[2023-04-10 00:30:49] INFO root fetch - processPackages [borealis-fireworks]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-10 00:30:49] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/8a/6c/7f84445491278360cd9a2d2be8444395c1d3dcacb928ed183dce3817650b/roboweb_server-0.1.20.tar.gz
+[2023-04-10 00:30:49] INFO root fetch - processPackages [google-chad]: Downloading https://files.pythonhosted.org/packages/b6/23/fdbb432fdd24c60a92893fb7390911c1822a5f34a09cc6a57bdc6b7b9573/google-chad-3.1.tar.gz
+[2023-04-10 00:30:49] INFO root fetch - processPackages [borealis-fireworks]: Downloading https://files.pythonhosted.org/packages/9e/02/77942db851fc50bfb24a2062fb9aaae7794ad1394be58b253ef755e85346/borealis-fireworks-0.9.0.tar.gz
+[2023-04-10 00:30:49] INFO root fetch - processPackages [zowie]: Downloading https://files.pythonhosted.org/packages/e2/23/c7b9a0668d6be9ddc20ff9e5625a67681360b99b5c90f7d52b6f13a2ee92/zowie-1.2.0.tar.gz
+[2023-04-10 00:30:49] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-10 00:30:49] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.19.tar.gz tmp/roboweb_server-0.1.20.tar.gz --markdown 20230410/r/roboweb-server/0.1.19-0.1.20/diff.md --exclude *.pyd
+[2023-04-10 00:30:49] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-04-10 00:30:49] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.8.tar.gz tmp/ultralytics-8.0.9.tar.gz --markdown 20230410/u/ultralytics/8.0.8-8.0.9/diff.md --exclude *.pyd
+[2023-04-10 00:30:49] INFO root fetch - processPackages [google-chad]: Downloading https://files.pythonhosted.org/packages/d8/a0/0d887b5ca49dc649cb4a525e94b3659ec12ba88fd84f1695d9d3862f19ce/google-chad-3.2.tar.gz
+[2023-04-10 00:30:49] INFO root fetch - processPackages [google-chad]: executing diffoscope
+[2023-04-10 00:30:49] INFO root fetch - processPackages [google-chad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-chad-3.1.tar.gz tmp/google-chad-3.2.tar.gz --markdown 20230410/g/google-chad/3.1-3.2/diff.md --exclude *.pyd
+[2023-04-10 00:30:50] INFO root fetch - processPackages [zowie]: Downloading https://files.pythonhosted.org/packages/8d/00/521c86c5ec590bc4591d620bc2d171d8ec9e66354d1cbc39fce6de2036f8/zowie-1.3.0.tar.gz
+[2023-04-10 00:30:50] INFO root fetch - processPackages [zowie]: executing diffoscope
+[2023-04-10 00:30:50] INFO root fetch - processPackages [zowie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zowie-1.2.0.tar.gz tmp/zowie-1.3.0.tar.gz --markdown 20230410/z/zowie/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-10 00:30:50] INFO root fetch - processPackages [borealis-fireworks]: Downloading https://files.pythonhosted.org/packages/dc/75/cb9abbab6cb9a5c62f6cc35be3a3ad2cc0cf7fd7de3e7ee562c2df428a62/borealis-fireworks-0.9.1.tar.gz
+[2023-04-10 00:30:50] INFO root fetch - processPackages [borealis-fireworks]: executing diffoscope
+[2023-04-10 00:30:50] INFO root fetch - processPackages [borealis-fireworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/borealis-fireworks-0.9.0.tar.gz tmp/borealis-fireworks-0.9.1.tar.gz --markdown 20230410/b/borealis-fireworks/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-10 00:30:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:30:51] INFO root fetch - processPackages [datastructuresLionelEric]: New version: [1.0.84] Old Version: [1.0.83]
+[2023-04-10 00:30:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:30:51] WARNING root fetch - processPackages [yunxiao]: Skipping, unable to determine old version
+[2023-04-10 00:30:51] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:30:51] INFO root fetch - processPackages [datastructuresLionelEric]: executing diffoscope
+[2023-04-10 00:30:51] INFO root fetch - processPackages [datastructuresLionelEric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datastructuresLionelEric-1.0.83.tar.gz tmp/datastructuresLionelEric-1.0.84.tar.gz --markdown 20230410/d/datastructuresLionelEric/1.0.83-1.0.84/diff.md --exclude *.pyd
+[2023-04-10 00:30:51] INFO root fetch - processPackages [texturize]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 00:30:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:30:51] INFO root fetch - processPackages [texturize]: Downloading https://files.pythonhosted.org/packages/90/66/45eecbc27216961a795b92d054c90acfcf2fc90b1f5f298f21d7e1b22c25/texturize-0.8.0.tar.gz
+[2023-04-10 00:30:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:30:51] INFO root fetch - processPackages [texturize]: Downloading https://files.pythonhosted.org/packages/7a/e8/e0b74cdbbdbfe99b5263d380e3049d02983f0b804c1f5478170310a4d4a9/texturize-0.9.0.tar.gz
+[2023-04-10 00:30:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:30:52] INFO root fetch - processPackages [texturize]: executing diffoscope
+[2023-04-10 00:30:52] INFO root fetch - processPackages [texturize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/texturize-0.8.0.tar.gz tmp/texturize-0.9.0.tar.gz --markdown 20230410/t/texturize/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 00:30:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:30:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:30:55] INFO root fetch - main [MainThread]: Store serial: [17639977]
