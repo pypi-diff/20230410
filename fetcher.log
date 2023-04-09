@@ -85,3 +85,27 @@
 [2023-04-10 00:15:21] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:15:21] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:15:21] INFO root fetch - main [MainThread]: Store serial: [17639905]
+[2023-04-10 00:20:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639905]
+[2023-04-10 00:20:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-10 00:20:29] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 00:20:29] INFO root fetch - processPackages [datastructuresLionelEric]: New version: [1.0.81] Old Version: [1.0.8]
+[2023-04-10 00:20:29] INFO root fetch - processPackages [lamindb]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-04-10 00:20:29] INFO root fetch - processPackages [brawling]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-10 00:20:29] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 00:20:29] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 00:20:29] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:20:29] INFO root fetch - processPackages [lamindb]: Downloading https://files.pythonhosted.org/packages/15/74/34148a2f59ec5fafeee3ffbc599388444e1e8d22d525c0b2e244aa151fef/lamindb-0.9.4.tar.gz
+[2023-04-10 00:20:29] INFO root fetch - processPackages [brawling]: Downloading https://files.pythonhosted.org/packages/ff/9a/bb20667df15da3522cb94ada75c321327b8e7e94be21cd372977e15a8eb8/brawling-2.0.0.tar.gz
+[2023-04-10 00:20:29] INFO root fetch - processPackages [datastructuresLionelEric]: Downloading https://files.pythonhosted.org/packages/93/ce/efc33010fb8706ae5270e2fe0534730826000e9e4c2df125dcd6e62ade4f/datastructuresLionelEric-1.0.81.tar.gz
+[2023-04-10 00:20:29] INFO root fetch - processPackages [datastructuresLionelEric]: executing diffoscope
+[2023-04-10 00:20:29] INFO root fetch - processPackages [datastructuresLionelEric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datastructuresLionelEric-1.0.8.tar.gz tmp/datastructuresLionelEric-1.0.81.tar.gz --markdown 20230410/d/datastructuresLionelEric/1.0.8-1.0.81/diff.md --exclude *.pyd
+[2023-04-10 00:20:29] INFO root fetch - processPackages [brawling]: Downloading https://files.pythonhosted.org/packages/19/42/fe5edb96e6b95d66122685a7aaf479a98146898d968a4af90948a6794676/brawling-2.0.1.tar.gz
+[2023-04-10 00:20:29] INFO root fetch - processPackages [lamindb]: Downloading https://files.pythonhosted.org/packages/a8/dd/da42b7dd3f39064fda6a4977c93f1a040eefa69ef3a3cefd7b4b8d13efb6/lamindb-0.9.6.tar.gz
+[2023-04-10 00:20:29] INFO root fetch - processPackages [lamindb]: executing diffoscope
+[2023-04-10 00:20:29] INFO root fetch - processPackages [lamindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb-0.9.4.tar.gz tmp/lamindb-0.9.6.tar.gz --markdown 20230410/l/lamindb/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-04-10 00:20:29] INFO root fetch - processPackages [brawling]: executing diffoscope
+[2023-04-10 00:20:29] INFO root fetch - processPackages [brawling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brawling-2.0.0.tar.gz tmp/brawling-2.0.1.tar.gz --markdown 20230410/b/brawling/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-10 00:20:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:20:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:20:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:20:31] INFO root fetch - main [MainThread]: Store serial: [17639918]
