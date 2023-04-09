@@ -436,3 +436,43 @@
 [2023-04-10 00:57:00] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:57:00] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:57:00] INFO root fetch - main [MainThread]: Store serial: [17640224]
+[2023-04-10 01:02:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640224]
+[2023-04-10 01:02:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 01:02:08] INFO root fetch - processPackages [clear-skies]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-10 01:02:08] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 01:02:08] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230409] Old Version: [0.7.0b20230408]
+[2023-04-10 01:02:08] INFO root fetch - processPackages [flwr-nightly]: New version: [1.4.0.dev20230408] Old Version: [1.4.0.dev20230331]
+[2023-04-10 01:02:08] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230409] Old Version: [0.7.0b20230408]
+[2023-04-10 01:02:08] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 01:02:08] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 01:02:08] INFO root fetch - main [MainThread]: error
+[2023-04-10 01:02:08] INFO root fetch - processPackages [appdaemon]: New version: [4.4.1] Old Version: [4.4.0]
+[2023-04-10 01:02:08] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-04-10 01:02:08] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.4.0.dev20230331.tar.gz tmp/flwr_nightly-1.4.0.dev20230408.tar.gz --markdown 20230410/f/flwr-nightly/1.4.0.dev20230331-1.4.0.dev20230408/diff.md --exclude *.pyd
+[2023-04-10 01:02:08] INFO root fetch - processPackages [clear-skies]: Downloading https://files.pythonhosted.org/packages/86/c6/5fc7f98d0b986c1fc7be0ee2f9821c93bff9852a85fc1b812fd0d36b5902/clear-skies-1.8.0.tar.gz
+[2023-04-10 01:02:08] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/f7/4c/4776eb4e4d9a620fdbd9d4e5e80fbb216bc26c531f742b4ea069bdbdaa99/tmnt-0.7.0b20230409.tar.gz
+[2023-04-10 01:02:08] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/d6/23/d1a741a5261a0f7da115c70db078cb5a156b082641ce132664c76b45c36b/tmnt-cu101-0.7.0b20230409.tar.gz
+[2023-04-10 01:02:08] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-04-10 01:02:08] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230408.tar.gz tmp/tmnt-cu101-0.7.0b20230409.tar.gz --markdown 20230410/t/tmnt-cu101/0.7.0b20230408-0.7.0b20230409/diff.md --exclude *.pyd
+[2023-04-10 01:02:09] INFO root fetch - processPackages [appdaemon]: Downloading https://files.pythonhosted.org/packages/94/a1/94a88192d9f41dab16f874d15722c05861f62d29103546070ce6419ff0b1/appdaemon-4.4.1.tar.gz
+[2023-04-10 01:02:09] INFO root fetch - processPackages [clear-skies]: Downloading https://files.pythonhosted.org/packages/46/ff/38dd0872e0df49c2ac34c7256f311d26a829dd84c6f09be6ed0215107767/clear-skies-1.9.0.tar.gz
+[2023-04-10 01:02:09] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-04-10 01:02:09] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230408.tar.gz tmp/tmnt-0.7.0b20230409.tar.gz --markdown 20230410/t/tmnt/0.7.0b20230408-0.7.0b20230409/diff.md --exclude *.pyd
+[2023-04-10 01:02:09] INFO root fetch - processPackages [clear-skies]: executing diffoscope
+[2023-04-10 01:02:09] INFO root fetch - processPackages [clear-skies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear-skies-1.8.0.tar.gz tmp/clear-skies-1.9.0.tar.gz --markdown 20230410/c/clear-skies/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-10 01:02:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:02:10] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-10 01:02:10] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: executing diffoscope
+[2023-04-10 01:02:10] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_streamdeck_yaml-2023.4.8.tar.gz tmp/home_assistant_streamdeck_yaml-2023.4.9.tar.gz --markdown 20230410/h/home-assistant-streamdeck-yaml/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-10 01:02:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:02:10] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 01:02:10] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 01:02:10] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 01:02:10] INFO root fetch - main [MainThread]: error
+[2023-04-10 01:02:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:02:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:02:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:02:13] INFO root fetch - processPackages [appdaemon]: executing diffoscope
+[2023-04-10 01:02:13] INFO root fetch - processPackages [appdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appdaemon-4.4.0.tar.gz tmp/appdaemon-4.4.1.tar.gz --markdown 20230410/a/appdaemon/4.4.0-4.4.1/diff.md --exclude *.pyd
+[2023-04-10 01:02:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 01:02:18] INFO root fetch - main [MainThread]: Store serial: [17640250]
