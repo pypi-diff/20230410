@@ -1,0 +1,25 @@
+[2023-04-10 00:04:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639838]
+[2023-04-10 00:04:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-10 00:04:52] INFO root fetch - processPackages [dolby]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 00:04:52] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 00:04:52] INFO root fetch - processPackages [roboweb-extension]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 00:04:52] INFO root fetch - processPackages [PyMieSim]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-10 00:04:52] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 00:04:52] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 00:04:52] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 00:04:52] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 00:04:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:04:52] INFO root fetch - processPackages [roboweb-extension]: executing diffoscope
+[2023-04-10 00:04:52] INFO root fetch - processPackages [roboweb-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb-extension-0.1.8.tar.gz tmp/roboweb_extension-0.1.9.tar.gz --markdown 20230410/r/roboweb-extension/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 00:04:52] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 00:04:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:04:52] INFO root fetch - processPackages [dolby]: Downloading https://files.pythonhosted.org/packages/70/27/f6b50d90c9641ee6d84607f560e36e966722bba13a26391bcfa204068c03/dolby-0.0.1.tar.gz
+[2023-04-10 00:04:52] INFO root fetch - processPackages [PyMieSim]: Downloading https://files.pythonhosted.org/packages/e6/86/a37ee96990691fa1eb8169d994519acfcd13801c0200d8f56a3b90c19a3b/PyMieSim-0.9.8-cp39-cp39-win_amd64.whl
+[2023-04-10 00:04:52] WARNING root fetch - processPackages [PyMieSim]: Skipping package: exceeds size limit 32115192>=10485760
+[2023-04-10 00:04:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:04:52] INFO root fetch - processPackages [dolby]: Downloading https://files.pythonhosted.org/packages/8d/73/193adc1f508d1a321c17c0406cf7679d0cbe46cc0067a872c0a3582f6419/dolby-0.0.2.tar.gz
+[2023-04-10 00:04:53] INFO root fetch - processPackages [dolby]: executing diffoscope
+[2023-04-10 00:04:53] INFO root fetch - processPackages [dolby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolby-0.0.1.tar.gz tmp/dolby-0.0.2.tar.gz --markdown 20230410/d/dolby/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 00:04:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:04:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:04:54] INFO root fetch - main [MainThread]: Store serial: [17639864]
