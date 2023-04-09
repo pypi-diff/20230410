@@ -325,3 +325,42 @@
 [2023-04-10 00:41:19] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:41:21] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:41:21] INFO root fetch - main [MainThread]: Store serial: [17640138]
+[2023-04-10 00:46:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640138]
+[2023-04-10 00:46:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 00:46:28] INFO root fetch - processPackages [aprilgrid]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-10 00:46:28] INFO root fetch - processPackages [PyMemoryEditor]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-04-10 00:46:28] INFO root fetch - processPackages [datastructuresLionelEric]: New version: [1.0.92] Old Version: [1.0.899]
+[2023-04-10 00:46:28] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.22] Old Version: [0.1.21]
+[2023-04-10 00:46:28] INFO root fetch - processPackages [brawling]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-10 00:46:28] INFO root fetch - processPackages [datastructuresLionelEric]: Downloading https://files.pythonhosted.org/packages/29/78/1d64e1b591e4f2e9638c6465d9a97080f9387f5f032e402213cfc7168087/datastructuresLionelEric-1.0.899.tar.gz
+[2023-04-10 00:46:28] INFO root fetch - processPackages [brawling]: Downloading https://files.pythonhosted.org/packages/73/92/526349aebeb90dddb0f362fb66cd532e250a00172b18f6a91a744a592b38/brawling-2.0.2.tar.gz
+[2023-04-10 00:46:28] INFO root fetch - processPackages [aprilgrid]: Downloading https://files.pythonhosted.org/packages/9e/b2/cc116b496548db7076aa0d53bd63431391bf7b8c79d3e85b7332318b43cc/aprilgrid-0.2.3.tar.gz
+[2023-04-10 00:46:28] INFO root fetch - processPackages [PyMemoryEditor]: Downloading https://files.pythonhosted.org/packages/ff/d1/75cf405000de7c5b01f4f0dc80bb20f565a75910547ffc4265d2e6e3cb2d/PyMemoryEditor-1.4.3.tar.gz
+[2023-04-10 00:46:28] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/98/59/0429cf06b57edf24a4d85598857d72fbb27a4df22ea23c949817eb18138c/roboweb_server-0.1.22.tar.gz
+[2023-04-10 00:46:29] INFO root fetch - processPackages [brawling]: executing diffoscope
+[2023-04-10 00:46:29] INFO root fetch - processPackages [brawling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brawling-2.0.1.tar.gz tmp/brawling-2.0.2.tar.gz --markdown 20230410/b/brawling/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-10 00:46:29] INFO root fetch - processPackages [aprilgrid]: executing diffoscope
+[2023-04-10 00:46:29] INFO root fetch - processPackages [aprilgrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aprilgrid-0.2.2.tar.gz tmp/aprilgrid-0.2.3.tar.gz --markdown 20230410/a/aprilgrid/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-10 00:46:29] INFO root fetch - processPackages [PyMemoryEditor]: executing diffoscope
+[2023-04-10 00:46:29] INFO root fetch - processPackages [PyMemoryEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMemoryEditor-1.4.2.tar.gz tmp/PyMemoryEditor-1.4.3.tar.gz --markdown 20230410/P/PyMemoryEditor/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-04-10 00:46:29] INFO root fetch - processPackages [datastructuresLionelEric]: Downloading https://files.pythonhosted.org/packages/37/eb/75e700e7a7b1de629b57b73228e8663c67e534f67fb244ee5df687c628b5/datastructuresLionelEric-1.0.92.tar.gz
+[2023-04-10 00:46:29] INFO root fetch - processPackages [datastructuresLionelEric]: executing diffoscope
+[2023-04-10 00:46:29] INFO root fetch - processPackages [datastructuresLionelEric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datastructuresLionelEric-1.0.899.tar.gz tmp/datastructuresLionelEric-1.0.92.tar.gz --markdown 20230410/d/datastructuresLionelEric/1.0.899-1.0.92/diff.md --exclude *.pyd
+[2023-04-10 00:46:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:46:30] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 00:46:30] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 00:46:30] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 00:46:30] INFO root fetch - main [MainThread]: error
+[2023-04-10 00:46:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:46:30] INFO root fetch - processPackages [qabot]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-10 00:46:30] INFO root fetch - processPackages [qabot]: Downloading https://files.pythonhosted.org/packages/7c/85/9ea03e7b7b3a07716cc8ae638e1a63acd01f375be24974d044b23e382e17/qabot-0.2.8.tar.gz
+[2023-04-10 00:46:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:46:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:46:30] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-10 00:46:30] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.21.tar.gz tmp/roboweb_server-0.1.22.tar.gz --markdown 20230410/r/roboweb-server/0.1.21-0.1.22/diff.md --exclude *.pyd
+[2023-04-10 00:46:30] INFO root fetch - processPackages [qabot]: Downloading https://files.pythonhosted.org/packages/29/d1/ef7d4bf4ab4f48bd5fd8e3f26ddef2f9ffe51c73ec05b07690597c67af3d/qabot-0.2.9.tar.gz
+[2023-04-10 00:46:31] INFO root fetch - processPackages [qabot]: executing diffoscope
+[2023-04-10 00:46:31] INFO root fetch - processPackages [qabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qabot-0.2.8.tar.gz tmp/qabot-0.2.9.tar.gz --markdown 20230410/q/qabot/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 00:46:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:46:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:46:33] INFO root fetch - main [MainThread]: Store serial: [17640168]
