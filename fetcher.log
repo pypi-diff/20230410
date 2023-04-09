@@ -384,3 +384,55 @@
 [2023-04-10 00:51:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:51:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 00:51:42] INFO root fetch - main [MainThread]: Store serial: [17640182]
+[2023-04-10 00:56:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640182]
+[2023-04-10 00:56:49] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 00:56:49] INFO root fetch - processPackages [DonatelloPyzza]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-04-10 00:56:49] INFO root fetch - processPackages [prettyqt]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-10 00:56:49] INFO root fetch - processPackages [transports]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 00:56:49] INFO root fetch - processPackages [pysam]: New version: [0.9.1.4] Old Version: [0.9.1.3]
+[2023-04-10 00:56:49] INFO root fetch - processPackages [screcode]: New version: [0.1.2.dev202304092258] Old Version: [0.1.2.dev202304080348]
+[2023-04-10 00:56:50] INFO root fetch - processPackages [transports]: Downloading https://files.pythonhosted.org/packages/28/9c/2636ec957d481fdae36fe0b34454983738d100ed226a3bedd3b6a7a499cf/transports-0.1.1.tar.gz
+[2023-04-10 00:56:50] INFO root fetch - processPackages [prettyqt]: Downloading https://files.pythonhosted.org/packages/cf/83/5c5cba04486b2a560a9ceba767e3a94435ea9cd833398aa762baa92acefd/prettyqt-1.0.0.tar.gz
+[2023-04-10 00:56:50] INFO root fetch - processPackages [pysam]: Downloading https://files.pythonhosted.org/packages/e7/e9/db49c8bd39673c1f48200f69ccc34784016d664136f36e03a090411a95fc/pysam-0.9.1.3.tar.gz
+[2023-04-10 00:56:50] INFO root fetch - processPackages [DonatelloPyzza]: executing diffoscope
+[2023-04-10 00:56:50] INFO root fetch - processPackages [DonatelloPyzza]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donatellopyzza-1.6.1.tar.gz tmp/donatellopyzza-1.6.2.tar.gz --markdown 20230410/D/DonatelloPyzza/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-04-10 00:56:50] INFO root fetch - processPackages [transports]: Downloading https://files.pythonhosted.org/packages/c9/fa/e3760eb4dd5c87c08f0c0ac20ba6ad239fc6eb73ef59b4d4e4ece00449ef/transports-0.1.2.tar.gz
+[2023-04-10 00:56:50] INFO root fetch - processPackages [screcode]: Downloading https://files.pythonhosted.org/packages/16/00/348e5d989700f1ad3eb8ddc57bff6a0269db0946a3d2940b7d5e1ce3d415/screcode-0.1.2.dev202304092258-py3-none-any.whl
+[2023-04-10 00:56:50] INFO root fetch - processPackages [transports]: executing diffoscope
+[2023-04-10 00:56:50] INFO root fetch - processPackages [transports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transports-0.1.1.tar.gz tmp/transports-0.1.2.tar.gz --markdown 20230410/t/transports/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 00:56:50] INFO root fetch - processPackages [screcode]: executing diffoscope
+[2023-04-10 00:56:50] INFO root fetch - processPackages [screcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screcode-0.1.2.dev202304080348-py3-none-any.whl.zip tmp/screcode-0.1.2.dev202304092258-py3-none-any.whl.zip --markdown 20230410/s/screcode/0.1.2.dev202304080348-0.1.2.dev202304092258/diff.md --exclude *.pyd
+[2023-04-10 00:56:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:56:51] INFO root fetch - processPackages [unhandled-exception-logger]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 00:56:51] INFO root fetch - processPackages [unhandled-exception-logger]: executing diffoscope
+[2023-04-10 00:56:51] INFO root fetch - processPackages [unhandled-exception-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unhandled_exception_logger-0.0.1.tar.gz tmp/unhandled_exception_logger-0.0.2.tar.gz --markdown 20230410/u/unhandled-exception-logger/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 00:56:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:56:51] INFO root fetch - processPackages [pysam]: Downloading https://files.pythonhosted.org/packages/de/03/02934438b204565bc5231f38a11da840a3c3e4b2beac8c8770d675770668/pysam-0.9.1.4.tar.gz
+[2023-04-10 00:56:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:56:51] INFO root fetch - processPackages [qlat]: New version: [0.9] Old Version: [0.8]
+[2023-04-10 00:56:51] INFO root fetch - processPackages [qlat-grid]: New version: [0.9] Old Version: [0.8]
+[2023-04-10 00:56:51] INFO root fetch - processPackages [qlat]: Downloading https://files.pythonhosted.org/packages/c1/78/3a21dfaa66aadd58ff521b3bbe198adc1082646f3b916b87ce3c16a06a4b/qlat-0.8.tar.gz
+[2023-04-10 00:56:51] INFO root fetch - processPackages [qlat-grid]: Downloading https://files.pythonhosted.org/packages/cf/0f/594acbf132deaec157f4f6359b76028d1dc4d7f5664ef0481e1697ff48ef/qlat_grid-0.8.tar.gz
+[2023-04-10 00:56:52] INFO root fetch - processPackages [prettyqt]: Downloading https://files.pythonhosted.org/packages/6b/41/516dcfa75ed15d62b797042f33fa75dec343631ed34b9d3e5832782ba117/prettyqt-1.1.0.tar.gz
+[2023-04-10 00:56:52] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-04-10 00:56:52] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.0.0.tar.gz tmp/prettyqt-1.1.0.tar.gz --markdown 20230410/p/prettyqt/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 00:56:52] INFO root fetch - processPackages [qlat]: Downloading https://files.pythonhosted.org/packages/a0/e1/78310cfcdfaadaa0349840d9886556d6fb5ad85d743641d50f280a9e08df/qlat-0.9.tar.gz
+[2023-04-10 00:56:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:56:52] INFO root fetch - processPackages [qlat-grid]: Downloading https://files.pythonhosted.org/packages/a2/eb/4942d98922c17c64af3ee3db55ec8fc6ef5e9d228f9c6d009457e1ddaf61/qlat_grid-0.9.tar.gz
+[2023-04-10 00:56:52] INFO root fetch - processPackages [qlat-utils]: New version: [0.9] Old Version: [0.8]
+[2023-04-10 00:56:52] INFO root fetch - processPackages [pysam]: executing diffoscope
+[2023-04-10 00:56:52] INFO root fetch - processPackages [pysam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysam-0.9.1.3.tar.gz tmp/pysam-0.9.1.4.tar.gz --markdown 20230410/p/pysam/0.9.1.3-0.9.1.4/diff.md --exclude *.pyd
+[2023-04-10 00:56:52] INFO root fetch - processPackages [qlat-grid]: executing diffoscope
+[2023-04-10 00:56:52] INFO root fetch - processPackages [qlat-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlat_grid-0.8.tar.gz tmp/qlat_grid-0.9.tar.gz --markdown 20230410/q/qlat-grid/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-10 00:56:52] INFO root fetch - processPackages [qlat-utils]: Downloading https://files.pythonhosted.org/packages/7c/2b/2132e4683879343a8503be10dfddbda8ef69bed2da3406817f3c6cbb1ea4/qlat_utils-0.8.tar.gz
+[2023-04-10 00:56:52] INFO root fetch - processPackages [qlat]: executing diffoscope
+[2023-04-10 00:56:52] INFO root fetch - processPackages [qlat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlat-0.8.tar.gz tmp/qlat-0.9.tar.gz --markdown 20230410/q/qlat/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-10 00:56:52] INFO root fetch - processPackages [qlat-utils]: Downloading https://files.pythonhosted.org/packages/db/40/6e58c3038e9046dd51fa42c9748ef7c8c65466165c0e9a6ed71064e6ca6b/qlat_utils-0.9.tar.gz
+[2023-04-10 00:56:53] INFO root fetch - processPackages [qlat-utils]: executing diffoscope
+[2023-04-10 00:56:53] INFO root fetch - processPackages [qlat-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlat_utils-0.8.tar.gz tmp/qlat_utils-0.9.tar.gz --markdown 20230410/q/qlat-utils/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-10 00:56:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:56:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:56:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:57:00] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:57:00] INFO root fetch - main [MainThread]: success
+[2023-04-10 00:57:00] INFO root fetch - main [MainThread]: Store serial: [17640224]
