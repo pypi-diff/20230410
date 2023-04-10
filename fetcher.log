@@ -790,3 +790,52 @@
 [2023-04-10 01:59:39] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:59:39] INFO root fetch - main [MainThread]: success
 [2023-04-10 01:59:39] INFO root fetch - main [MainThread]: Store serial: [17640481]
+[2023-04-10 02:04:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640481]
+[2023-04-10 02:04:46] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 02:04:46] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9042023.post411] Old Version: [1.8.0.9032023.post431]
+[2023-04-10 02:04:46] INFO root fetch - processPackages [threadsnake]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-10 02:04:46] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.5.5] Old Version: [0.9.5.4]
+[2023-04-10 02:04:46] INFO root fetch - processPackages [PyMemoryEditor]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-04-10 02:04:46] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-04-10 02:04:46] INFO root fetch - processPackages [threadsnake]: Downloading https://files.pythonhosted.org/packages/8c/3d/2e6a2731326dabb128323dbe7b1f42a79b4d517481d137bbe3db43a4cdbb/threadsnake-1.0.7.tar.gz
+[2023-04-10 02:04:46] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-04-10 02:04:46] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230410/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-04-10 02:04:46] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-04-10 02:04:46] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9032023.post431.tar.gz tmp/mct-nightly-1.8.0.9042023.post411.tar.gz --markdown 20230410/m/mct-nightly/1.8.0.9032023.post431-1.8.0.9042023.post411/diff.md --exclude *.pyd
+[2023-04-10 02:04:46] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/7d/ca/633f20f4159acb1fc57410031f7a8a03a8dc7353851634f2863c14a420fc/symbolicmode-0.9.5.4.tar.gz
+[2023-04-10 02:04:46] INFO root fetch - processPackages [PyMemoryEditor]: Downloading https://files.pythonhosted.org/packages/f2/9e/68457e3de734ef6eaf638123bb6e29a2dc1c44c20def27bd8da3ea2a099e/PyMemoryEditor-1.4.4.tar.gz
+[2023-04-10 02:04:46] INFO root fetch - processPackages [PyMemoryEditor]: executing diffoscope
+[2023-04-10 02:04:46] INFO root fetch - processPackages [PyMemoryEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMemoryEditor-1.4.3.tar.gz tmp/PyMemoryEditor-1.4.4.tar.gz --markdown 20230410/P/PyMemoryEditor/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-04-10 02:04:46] INFO root fetch - processPackages [threadsnake]: Downloading https://files.pythonhosted.org/packages/f3/d0/1a098531d1dce5fbf702e5eeac8f5e1761ae94a43a6d6d0d96144b712358/threadsnake-1.0.8.tar.gz
+[2023-04-10 02:04:46] INFO root fetch - processPackages [threadsnake]: executing diffoscope
+[2023-04-10 02:04:46] INFO root fetch - processPackages [threadsnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/threadsnake-1.0.7.tar.gz tmp/threadsnake-1.0.8.tar.gz --markdown 20230410/t/threadsnake/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-10 02:04:46] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/8a/61/ff8e05a5d3828405a8cc0d8459fa0736a647379cadbb25711f5fd29ba665/symbolicmode-0.9.5.5.tar.gz
+[2023-04-10 02:04:47] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-10 02:04:47] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.5.4.tar.gz tmp/symbolicmode-0.9.5.5.tar.gz --markdown 20230410/s/symbolicmode/0.9.5.4-0.9.5.5/diff.md --exclude *.pyd
+[2023-04-10 02:04:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:04:47] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.5.5] Old Version: [0.9.5.4]
+[2023-04-10 02:04:47] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-10 02:04:47] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.5.4.tar.gz tmp/symbolicmode-0.9.5.5.tar.gz --markdown 20230410/s/symbolicmode/0.9.5.4-0.9.5.5/diff.md --exclude *.pyd
+[2023-04-10 02:04:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:04:47] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 02:04:48] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 02:04:48] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 02:04:48] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:04:48] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.1] Old Version: [0.17]
+[2023-04-10 02:04:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:04:48] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230409] Old Version: [0.0.8.dev20230408]
+[2023-04-10 02:04:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:04:48] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1680998840] Old Version: [1680912384]
+[2023-04-10 02:04:48] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-04-10 02:04:48] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230408.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230409.tar.gz --markdown 20230410/j/jaxutils-nightly/0.0.8.dev20230408-0.0.8.dev20230409/diff.md --exclude *.pyd
+[2023-04-10 02:04:48] INFO root fetch - processPackages [gptdeploy]: Downloading https://files.pythonhosted.org/packages/13/0f/51e964a8349e45a74c2ae3f3d9654c36b1a3e374b31ff6a419f808815411/gptdeploy-0.18.1.tar.gz
+[2023-04-10 02:04:48] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-04-10 02:04:48] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1680912384.tar.gz tmp/torchlayers-nightly-1680998840.tar.gz --markdown 20230410/t/torchlayers-nightly/1680912384-1680998840/diff.md --exclude *.pyd
+[2023-04-10 02:04:48] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-10 02:04:48] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.17.tar.gz tmp/gptdeploy-0.18.1.tar.gz --markdown 20230410/g/gptdeploy/0.17-0.18.1/diff.md --exclude *.pyd
+[2023-04-10 02:04:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:04:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:04:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:04:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:04:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:04:52] INFO root fetch - main [MainThread]: Store serial: [17640510]
