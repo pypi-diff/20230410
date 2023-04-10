@@ -9930,3 +9930,56 @@ EOFError: EOF read where object expected
 [2023-04-10 15:23:07] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:23:09] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:23:09] INFO root fetch - main [MainThread]: Store serial: [17646164]
+[2023-04-10 15:28:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646164]
+[2023-04-10 15:28:16] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 15:28:16] INFO root fetch - processPackages [referencing]: New version: [0.9.2] Old Version: [0.8.9]
+[2023-04-10 15:28:16] INFO root fetch - processPackages [ssbtoolkit]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 15:28:16] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: New version: [2.1.0.dev3871883101] Old Version: [2.0.0.dev4657853182]
+[2023-04-10 15:28:16] INFO root fetch - processPackages [umnet-pyncs]: New version: [0.1.9] Old Version: [0.1.6]
+[2023-04-10 15:28:16] INFO root fetch - processPackages [supervisely]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-04-10 15:28:17] INFO root fetch - processPackages [referencing]: Downloading https://files.pythonhosted.org/packages/2b/ed/f98bc7032a95aa20012ccefb729c1908f6acc9c6c6f88e038ac0a93750cb/referencing-0.8.9.tar.gz
+[2023-04-10 15:28:17] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: Downloading https://files.pythonhosted.org/packages/49/48/0196b237dbb97229ab60c7a34a2eb6c422285ba28cc508ae96dae1b2d3f1/th2_grpc_lw_data_provider-2.0.0.dev4657853182.tar.gz
+[2023-04-10 15:28:17] INFO root fetch - processPackages [ssbtoolkit]: Downloading https://files.pythonhosted.org/packages/e6/11/faa1428680de01f7ece6c037a323a5d205c62d7940ee15e7f678bb7d01ea/ssbtoolkit-1.0.4.tar.gz
+[2023-04-10 15:28:17] INFO root fetch - processPackages [umnet-pyncs]: Downloading https://files.pythonhosted.org/packages/ac/f6/d27529599a25d9ee20faa4e695bab1523241cfaf8561a6cd53795142c9ce/umnet-pyncs-0.1.6.tar.gz
+[2023-04-10 15:28:17] INFO root fetch - processPackages [supervisely]: executing diffoscope
+[2023-04-10 15:28:17] INFO root fetch - processPackages [supervisely]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervisely-6.9.1.tar.gz tmp/supervisely-6.9.2.tar.gz --markdown 20230410/s/supervisely/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-04-10 15:28:17] INFO root fetch - processPackages [ssbtoolkit]: executing diffoscope
+[2023-04-10 15:28:17] INFO root fetch - processPackages [ssbtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssbtoolkit-1.0.3.tar.gz tmp/ssbtoolkit-1.0.4.tar.gz --markdown 20230410/s/ssbtoolkit/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-10 15:28:17] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: executing diffoscope
+[2023-04-10 15:28:17] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_grpc_lw_data_provider-2.0.0.dev4657853182.tar.gz tmp/th2_grpc_lw_data_provider-2.1.0.dev3871883101.tar.gz --markdown 20230410/t/th2-grpc-lw-data-provider/2.0.0.dev4657853182-2.1.0.dev3871883101/diff.md --exclude *.pyd
+[2023-04-10 15:28:17] INFO root fetch - processPackages [referencing]: Downloading https://files.pythonhosted.org/packages/3a/2c/6c5c6451d2818adfd99b87a8aa1c5147f6d9097d31cfee6a020418f9b02c/referencing-0.9.2.tar.gz
+[2023-04-10 15:28:17] INFO root fetch - processPackages [umnet-pyncs]: Downloading https://files.pythonhosted.org/packages/68/32/84be9ad6422276a7693dba10a703a65af3ff1f2567c0e7c39b222c29bb7b/umnet-pyncs-0.1.9.tar.gz
+[2023-04-10 15:28:17] INFO root fetch - processPackages [referencing]: executing diffoscope
+[2023-04-10 15:28:17] INFO root fetch - processPackages [referencing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/referencing-0.8.9.tar.gz tmp/referencing-0.9.2.tar.gz --markdown 20230410/r/referencing/0.8.9-0.9.2/diff.md --exclude *.pyd
+[2023-04-10 15:28:17] INFO root fetch - processPackages [umnet-pyncs]: executing diffoscope
+[2023-04-10 15:28:17] INFO root fetch - processPackages [umnet-pyncs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/umnet-pyncs-0.1.6.tar.gz tmp/umnet-pyncs-0.1.9.tar.gz --markdown 20230410/u/umnet-pyncs/0.1.6-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 15:28:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:28:18] INFO root fetch - processPackages [laminci]: New version: [0.5.0] Old Version: [0.4.2]
+[2023-04-10 15:28:18] INFO root fetch - processPackages [laminci]: Downloading https://files.pythonhosted.org/packages/b1/8c/7361033e75e8ed851e27ee07b77dd3b0ed3164c781c66446ce5b03e23195/laminci-0.4.2.tar.gz
+[2023-04-10 15:28:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:28:18] WARNING root fetch - processPackages [ruiwen-data-all]: Skipping, unable to determine old version
+[2023-04-10 15:28:18] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:28:18] INFO root fetch - processPackages [zillion]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-10 15:28:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:28:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:28:18] INFO root fetch - processPackages [discordapiwebhooks]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 15:28:18] INFO root fetch - processPackages [laminci]: Downloading https://files.pythonhosted.org/packages/01/43/aeef9a29d8155d4c848e4f2fa763b415bc2b07b2c6cdfc90f08b7519b932/laminci-0.5.0.tar.gz
+[2023-04-10 15:28:18] INFO root fetch - processPackages [laminci]: executing diffoscope
+[2023-04-10 15:28:18] INFO root fetch - processPackages [laminci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laminci-0.4.2.tar.gz tmp/laminci-0.5.0.tar.gz --markdown 20230410/l/laminci/0.4.2-0.5.0/diff.md --exclude *.pyd
+[2023-04-10 15:28:18] INFO root fetch - processPackages [zillion]: Downloading https://files.pythonhosted.org/packages/d3/8a/dc2c021658958619beda6b0625083bafef5de7ddd11c29c3e1597a4d9bdb/zillion-0.9.3.tar.gz
+[2023-04-10 15:28:18] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 15:28:19] INFO root fetch - processPackages [discordapiwebhooks]: Downloading https://files.pythonhosted.org/packages/56/7b/02be4ecc2fc65df3c7bda8f9f0ed160b90494483124e2c72f17b4a49b954/discordapiwebhooks-1.0.0.tar.gz
+[2023-04-10 15:28:19] INFO root fetch - processPackages [zillion]: Downloading https://files.pythonhosted.org/packages/5c/94/8d322a55252fd952fa8ade5a326f192141cee1ee32d09e7eb6b8f8cd463e/zillion-0.9.4.tar.gz
+[2023-04-10 15:28:19] INFO root fetch - processPackages [discordapiwebhooks]: Downloading https://files.pythonhosted.org/packages/9e/9d/de5e112be37ebb678997bf6be715655a88d083f5d5b8e63f6cbdd35a23fc/discordapiwebhooks-1.0.1.tar.gz
+[2023-04-10 15:28:19] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-10 15:28:19] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230410/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 15:28:19] INFO root fetch - processPackages [discordapiwebhooks]: executing diffoscope
+[2023-04-10 15:28:19] INFO root fetch - processPackages [discordapiwebhooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discordapiwebhooks-1.0.0.tar.gz tmp/discordapiwebhooks-1.0.1.tar.gz --markdown 20230410/d/discordapiwebhooks/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 15:28:19] INFO root fetch - processPackages [zillion]: executing diffoscope
+[2023-04-10 15:28:19] INFO root fetch - processPackages [zillion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zillion-0.9.3.tar.gz tmp/zillion-0.9.4.tar.gz --markdown 20230410/z/zillion/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-10 15:28:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:28:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:28:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:28:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:28:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:28:20] INFO root fetch - main [MainThread]: Store serial: [17646196]
