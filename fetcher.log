@@ -15444,3 +15444,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 22:20:08] INFO root fetch - processPackages [acryl-datahub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-0.9.6rc0.tar.gz tmp/acryl-datahub-0.9.6rc1.tar.gz --markdown 20230410/a/acryl-datahub/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
 [2023-04-10 22:20:14] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:20:14] INFO root fetch - main [MainThread]: Store serial: [17650047]
+[2023-04-10 22:25:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650047]
+[2023-04-10 22:25:24] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 22:25:24] INFO root fetch - processPackages [satcfdi]: New version: [4.0.8] Old Version: [4.0.7]
+[2023-04-10 22:25:24] INFO root fetch - processPackages [lamindb]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-04-10 22:25:24] INFO root fetch - processPackages [lf]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 22:25:24] INFO root fetch - processPackages [svcco]: New version: [0.6.31] Old Version: [0.6.30]
+[2023-04-10 22:25:24] INFO root fetch - processPackages [jimGW]: New version: [0.0.4.4] Old Version: [0.0.4.3]
+[2023-04-10 22:25:24] INFO root fetch - processPackages [lamindb]: executing diffoscope
+[2023-04-10 22:25:24] INFO root fetch - processPackages [lamindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb-0.9.4.tar.gz tmp/lamindb-0.9.6.tar.gz --markdown 20230410/l/lamindb/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-04-10 22:25:24] INFO root fetch - processPackages [lf]: Downloading https://files.pythonhosted.org/packages/65/7c/c87fb754c34ed5b7a804bdef27c88790aeb39087f35175db9c1ba98a853d/lf-0.1.8.tar.gz
+[2023-04-10 22:25:24] INFO root fetch - processPackages [jimGW]: Downloading https://files.pythonhosted.org/packages/9a/6f/4a7de1a5f39483aae268a168d9d323fa30ec7cb880f8eba5fd8d91cb59ae/jimGW-0.0.4.3.tar.gz
+[2023-04-10 22:25:24] INFO root fetch - processPackages [svcco]: Downloading https://files.pythonhosted.org/packages/ad/ca/8d7f6df46cafd38ce55a01d77f486320e187808b2a367562f6358d9f54a6/svcco-0.6.31.tar.gz
+[2023-04-10 22:25:24] INFO root fetch - processPackages [svcco]: executing diffoscope
+[2023-04-10 22:25:24] INFO root fetch - processPackages [svcco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/svcco-0.6.30.tar.gz tmp/svcco-0.6.31.tar.gz --markdown 20230410/s/svcco/0.6.30-0.6.31/diff.md --exclude *.pyd
+[2023-04-10 22:25:24] INFO root fetch - processPackages [satcfdi]: Downloading https://files.pythonhosted.org/packages/e2/d6/375edaf0658a821ca84c3272ee9e2db8ab7f91cb99562b3606904078ee0b/satcfdi-4.0.8.tar.gz
+[2023-04-10 22:25:24] INFO root fetch - processPackages [lf]: Downloading https://files.pythonhosted.org/packages/57/b7/3f2af6e107a74d58e43d7919369084bbbd3b62de7d5c7da44ef27b5a7966/lf-0.1.9.tar.gz
+[2023-04-10 22:25:24] INFO root fetch - processPackages [jimGW]: Downloading https://files.pythonhosted.org/packages/ab/82/d52cf9a25ee50217a7958a6475a42a9946df2094b537cb97e06e6a8f09ff/jimGW-0.0.4.4.tar.gz
+[2023-04-10 22:25:24] INFO root fetch - processPackages [lf]: executing diffoscope
+[2023-04-10 22:25:24] INFO root fetch - processPackages [lf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lf-0.1.8.tar.gz tmp/lf-0.1.9.tar.gz --markdown 20230410/l/lf/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 22:25:25] INFO root fetch - processPackages [jimGW]: executing diffoscope
+[2023-04-10 22:25:25] INFO root fetch - processPackages [jimGW]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jimGW-0.0.4.3.tar.gz tmp/jimGW-0.0.4.4.tar.gz --markdown 20230410/j/jimGW/0.0.4.3-0.0.4.4/diff.md --exclude *.pyd
+[2023-04-10 22:25:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:25:25] INFO root fetch - processPackages [datasette-sqlite-vss]: New version: [0.0.2a3] Old Version: [0.0.2a2]
+[2023-04-10 22:25:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:25:26] INFO root fetch - processPackages [sqlite-vss]: New version: [0.0.2a3] Old Version: [0.0.2a2]
+[2023-04-10 22:25:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:25:26] INFO root fetch - processPackages [cythereal-magic]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-10 22:25:26] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/13/83/a22c0e492c559a2fc5f8d311bc2c6a14f04ba962f7c5cf210ec1ee81f942/datasette_sqlite_vss-0.0.2a3-py3-none-any.whl
+[2023-04-10 22:25:26] INFO root fetch - processPackages [cythereal-magic]: executing diffoscope
+[2023-04-10 22:25:26] INFO root fetch - processPackages [cythereal-magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cythereal-magic-1.9.0.tar.gz tmp/cythereal-magic-1.9.1.tar.gz --markdown 20230410/c/cythereal-magic/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-10 22:25:26] INFO root fetch - processPackages [sqlite-vss]: Downloading https://files.pythonhosted.org/packages/3a/87/53e83dae7bab4dec9dbd6029e4a5d4359e48cbca20f7be9720d9ac88c221/sqlite_vss-0.0.2a3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-04-10 22:25:26] INFO root fetch - processPackages [datasette-sqlite-vss]: executing diffoscope
+[2023-04-10 22:25:26] INFO root fetch - processPackages [datasette-sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vss-0.0.2a2-py3-none-any.whl.zip tmp/datasette_sqlite_vss-0.0.2a3-py3-none-any.whl.zip --markdown 20230410/d/datasette-sqlite-vss/0.0.2a2-0.0.2a3/diff.md --exclude *.pyd
+[2023-04-10 22:25:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:25:26] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.55.9] Old Version: [1.55.8]
+[2023-04-10 22:25:26] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-04-10 22:25:26] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.55.8.tar.gz tmp/Simba-UW-tf-dev-1.55.9.tar.gz --markdown 20230410/S/Simba-UW-tf-dev/1.55.8-1.55.9/diff.md --exclude *.pyd
+[2023-04-10 22:25:26] INFO root fetch - processPackages [sqlite-vss]: executing diffoscope
+[2023-04-10 22:25:26] INFO root fetch - processPackages [sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_vss-0.0.2a2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_vss-0.0.2a3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230410/s/sqlite-vss/0.0.2a2-0.0.2a3/diff.md --exclude *.pyd
+[2023-04-10 22:25:27] INFO root fetch - processPackages [satcfdi]: executing diffoscope
+[2023-04-10 22:25:27] INFO root fetch - processPackages [satcfdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satcfdi-4.0.7.tar.gz tmp/satcfdi-4.0.8.tar.gz --markdown 20230410/s/satcfdi/4.0.7-4.0.8/diff.md --exclude *.pyd
+[2023-04-10 22:25:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:25:27] INFO root fetch - processPackages [mnfinder]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-10 22:25:27] INFO root fetch - processPackages [mnfinder]: Downloading https://files.pythonhosted.org/packages/03/14/df4cc3219dae2348a2ef2b31d00b288cf525c223c6b2e8592f6e2b426ce8/mnfinder-0.1.3.tar.gz
+[2023-04-10 22:25:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:25:28] WARNING root fetch - processPackages [mnfinder]: Skipping package: exceeds size limit 33926961>=10485760
+[2023-04-10 22:25:28] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:25:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:25:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:26:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:26:05] INFO root fetch - main [MainThread]: Store serial: [17650074]
