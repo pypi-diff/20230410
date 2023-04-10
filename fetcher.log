@@ -8644,3 +8644,53 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 13:57:51] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:57:58] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:57:58] INFO root fetch - main [MainThread]: Store serial: [17645500]
+[2023-04-10 14:03:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645500]
+[2023-04-10 14:03:06] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 14:03:06] INFO root fetch - processPackages [ruiwen-data-all]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-10 14:03:06] INFO root fetch - processPackages [muffin-grpc]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-10 14:03:06] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 14:03:06] WARNING root fetch - processPackages [astro-deployment-utils]: Skipping, unable to determine old version
+[2023-04-10 14:03:06] INFO root fetch - main [MainThread]: error
+[2023-04-10 14:03:06] INFO root fetch - processPackages [vessl]: New version: [0.1.9] Old Version: [0.1.89]
+[2023-04-10 14:03:06] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 14:03:06] INFO root fetch - processPackages [vessl]: Downloading https://files.pythonhosted.org/packages/6b/42/337c6c073a437bafa2637632ef56093fa4c16d5bf6349641375a4bc79c74/vessl-0.1.89.tar.gz
+[2023-04-10 14:03:06] INFO root fetch - processPackages [ruiwen-data-all]: Downloading https://files.pythonhosted.org/packages/1f/a2/a0708be602e0f9044796e2449e90edcdceb26409afa48b40a8ec23c022a5/ruiwen_data_all-2.0.4.tar.gz
+[2023-04-10 14:03:06] INFO root fetch - processPackages [macrometa-source-snowflake]: Downloading https://files.pythonhosted.org/packages/6f/04/89a4f6b25c2ccd3248b00b2eeb4c9cfd010be518d7d6b05312ac488dea69/macrometa-source-snowflake-0.0.8.tar.gz
+[2023-04-10 14:03:06] INFO root fetch - processPackages [muffin-grpc]: Downloading https://files.pythonhosted.org/packages/f3/88/dc476c6cab9a45efd3af63d2757202d1f990e3297aa1e910703dc5761b95/muffin_grpc-0.5.2.tar.gz
+[2023-04-10 14:03:06] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: Downloading https://files.pythonhosted.org/packages/5c/cc/c9a07e2eec81d3b9c0bec5d181cec8fd8e0aa90dbefcd775b3e42f8091dd/fastapi-crudrouter-mongodb-0.0.3.tar.gz
+[2023-04-10 14:03:06] INFO root fetch - processPackages [ruiwen-data-all]: executing diffoscope
+[2023-04-10 14:03:06] INFO root fetch - processPackages [ruiwen-data-all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruiwen_data_all-2.0.3.tar.gz tmp/ruiwen_data_all-2.0.4.tar.gz --markdown 20230410/r/ruiwen-data-all/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-10 14:03:06] INFO root fetch - processPackages [muffin-grpc]: executing diffoscope
+[2023-04-10 14:03:06] INFO root fetch - processPackages [muffin-grpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muffin_grpc-0.5.1.tar.gz tmp/muffin_grpc-0.5.2.tar.gz --markdown 20230410/m/muffin-grpc/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-10 14:03:06] INFO root fetch - processPackages [macrometa-source-snowflake]: Downloading https://files.pythonhosted.org/packages/2e/9e/785f1d5ca8fd1608cadf7e6fb62934878661764e686ccbda2e5d32e7c7f5/macrometa-source-snowflake-0.0.9.tar.gz
+[2023-04-10 14:03:06] INFO root fetch - processPackages [vessl]: Downloading https://files.pythonhosted.org/packages/41/20/462817da27dc4ec9fd244d6edb42cfa7a2f961b5caf133d0a88003824519/vessl-0.1.9.tar.gz
+[2023-04-10 14:03:06] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: Downloading https://files.pythonhosted.org/packages/42/b9/cd640552b9ee7dcb1246539fca8de2c768850285b78f75fd68a97e5cd5c2/fastapi-crudrouter-mongodb-0.0.4.tar.gz
+[2023-04-10 14:03:06] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-04-10 14:03:06] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230410/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 14:03:07] INFO root fetch - processPackages [vessl]: executing diffoscope
+[2023-04-10 14:03:07] INFO root fetch - processPackages [vessl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vessl-0.1.89.tar.gz tmp/vessl-0.1.9.tar.gz --markdown 20230410/v/vessl/0.1.89-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 14:03:07] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: executing diffoscope
+[2023-04-10 14:03:07] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-crudrouter-mongodb-0.0.3.tar.gz tmp/fastapi-crudrouter-mongodb-0.0.4.tar.gz --markdown 20230410/f/fastapi-crudrouter-mongodb/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 14:03:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:03:07] INFO root fetch - processPackages [ipfabric]: New version: [6.2.0b4] Old Version: [6.2.0b3]
+[2023-04-10 14:03:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:03:07] INFO root fetch - processPackages [oarepo-model-builder-ui]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-04-10 14:03:07] INFO root fetch - processPackages [ipfabric]: Downloading https://files.pythonhosted.org/packages/14/6f/bd0a2f9d530afbe518aa8fa5075f863b464d69177f8fd7460a6d11d5320d/ipfabric-6.2.0b3.tar.gz
+[2023-04-10 14:03:07] INFO root fetch - processPackages [oarepo-model-builder-ui]: Downloading https://files.pythonhosted.org/packages/5d/69/a9bc17e83d3583ca7222c0c5e2d4d1bdae43af24ffa8154a0f83678905a0/oarepo-model-builder-ui-2.0.5.tar.gz
+[2023-04-10 14:03:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:03:08] INFO root fetch - processPackages [oarepo-model-builder-ui]: Downloading https://files.pythonhosted.org/packages/d0/da/0eb6f2d21073fb27ce424ca6273c545ab7a623fd8ada17a212734ff15094/oarepo-model-builder-ui-2.0.6.tar.gz
+[2023-04-10 14:03:08] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.3.0] Old Version: [2.2.9]
+[2023-04-10 14:03:08] INFO root fetch - processPackages [ipfabric]: Downloading https://files.pythonhosted.org/packages/36/17/4ae58b129a06808f4ab0543f38462266941d0961bdcdb79b88c35f4e7527/ipfabric-6.2.0b4.tar.gz
+[2023-04-10 14:03:08] INFO root fetch - processPackages [oarepo-model-builder-ui]: executing diffoscope
+[2023-04-10 14:03:08] INFO root fetch - processPackages [oarepo-model-builder-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-ui-2.0.5.tar.gz tmp/oarepo-model-builder-ui-2.0.6.tar.gz --markdown 20230410/o/oarepo-model-builder-ui/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-04-10 14:03:08] INFO root fetch - processPackages [ipfabric]: executing diffoscope
+[2023-04-10 14:03:08] INFO root fetch - processPackages [ipfabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipfabric-6.2.0b3.tar.gz tmp/ipfabric-6.2.0b4.tar.gz --markdown 20230410/i/ipfabric/6.2.0b3-6.2.0b4/diff.md --exclude *.pyd
+[2023-04-10 14:03:08] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/27/0b/50198c46f8a4683701efce6ed069d4635d5744b604ef7bff09da5aef46cd/cdk8s-plus-26-2.3.0.tar.gz
+[2023-04-10 14:03:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:03:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:03:09] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-04-10 14:03:09] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.2.9.tar.gz tmp/cdk8s-plus-26-2.3.0.tar.gz --markdown 20230410/c/cdk8s-plus-26/2.2.9-2.3.0/diff.md --exclude *.pyd
+[2023-04-10 14:03:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:03:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:03:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:03:18] INFO root fetch - main [MainThread]: Store serial: [17645529]
