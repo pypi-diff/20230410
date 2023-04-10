@@ -16041,3 +16041,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 23:17:13] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:18:09] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:18:09] INFO root fetch - main [MainThread]: Store serial: [17650516]
+[2023-04-10 23:23:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650516]
+[2023-04-10 23:23:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 23:23:17] WARNING root fetch - processPackages [pyobflite]: Skipping, unable to determine old version
+[2023-04-10 23:23:17] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:23:17] INFO root fetch - processPackages [in-dbt-spark]: New version: [1.2.509] Old Version: [1.2.507]
+[2023-04-10 23:23:17] INFO root fetch - processPackages [trainerbase]: New version: [2.9.4] Old Version: [2.9.3]
+[2023-04-10 23:23:17] INFO root fetch - processPackages [dramatiq-mongodb]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-10 23:23:17] INFO root fetch - processPackages [qiskit-ibm-provider]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-10 23:23:17] INFO root fetch - processPackages [trainerbase]: New version: [2.9.4] Old Version: [2.9.3]
+[2023-04-10 23:23:17] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/8b/8e/1396d4f63e49248f498712b39d18b90bd92ae7f0643f4d7768409df44f4d/TrainerBase-2.9.3.tar.gz
+[2023-04-10 23:23:17] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/8b/8e/1396d4f63e49248f498712b39d18b90bd92ae7f0643f4d7768409df44f4d/TrainerBase-2.9.3.tar.gz
+[2023-04-10 23:23:17] INFO root fetch - processPackages [qiskit-ibm-provider]: Downloading https://files.pythonhosted.org/packages/7d/79/d3391b48494b5ed81813670d45355126293b28be1bc7f8ef5fcddd251c9a/qiskit-ibm-provider-0.5.1.tar.gz
+[2023-04-10 23:23:17] INFO root fetch - processPackages [dramatiq-mongodb]: Downloading https://files.pythonhosted.org/packages/57/53/fd2dd5f8f5af74aa435fc0154940985867084ef65a942db2fca8c257616f/dramatiq_mongodb-0.8.2.tar.gz
+[2023-04-10 23:23:17] INFO root fetch - processPackages [in-dbt-spark]: Downloading https://files.pythonhosted.org/packages/cd/66/0f8add2a835d0ae159073bf6319c101262607ffe88a33e979d991f5fde34/in-dbt-spark-1.2.507.tar.gz
+[2023-04-10 23:23:17] INFO root fetch - processPackages [dramatiq-mongodb]: executing diffoscope
+[2023-04-10 23:23:17] INFO root fetch - processPackages [dramatiq-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dramatiq_mongodb-0.8.1.tar.gz tmp/dramatiq_mongodb-0.8.2.tar.gz --markdown 20230410/d/dramatiq-mongodb/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-10 23:23:17] INFO root fetch - processPackages [in-dbt-spark]: Downloading https://files.pythonhosted.org/packages/62/ae/b53022fd669882475f755c47756c862cac031af11f1edb961f1f9030b331/in-dbt-spark-1.2.509.tar.gz
+[2023-04-10 23:23:17] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/16/6c/e667a754e84322a81c92eabe7159eba209a25609b84032a66c9a44b329a8/TrainerBase-2.9.4.tar.gz
+[2023-04-10 23:23:17] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/16/6c/e667a754e84322a81c92eabe7159eba209a25609b84032a66c9a44b329a8/TrainerBase-2.9.4.tar.gz
+[2023-04-10 23:23:17] INFO root fetch - processPackages [in-dbt-spark]: executing diffoscope
+[2023-04-10 23:23:17] INFO root fetch - processPackages [in-dbt-spark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/in-dbt-spark-1.2.507.tar.gz tmp/in-dbt-spark-1.2.509.tar.gz --markdown 20230410/i/in-dbt-spark/1.2.507-1.2.509/diff.md --exclude *.pyd
+[2023-04-10 23:23:17] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2023-04-10 23:23:17] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2023-04-10 23:23:17] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainerBase-2.9.3.tar.gz tmp/TrainerBase-2.9.4.tar.gz --markdown 20230410/t/trainerbase/2.9.3-2.9.4/diff.md --exclude *.pyd
+[2023-04-10 23:23:17] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainerBase-2.9.3.tar.gz tmp/TrainerBase-2.9.4.tar.gz --markdown 20230410/t/trainerbase/2.9.3-2.9.4/diff.md --exclude *.pyd
+[2023-04-10 23:23:17] INFO root fetch - processPackages [qiskit-ibm-provider]: Downloading https://files.pythonhosted.org/packages/be/e5/f246ca05809d7845ab55a642ff26816e7fce164108027ee8a59484d51ae0/qiskit-ibm-provider-0.5.2.tar.gz
+[2023-04-10 23:23:17] INFO root fetch - processPackages [qiskit-ibm-provider]: executing diffoscope
+[2023-04-10 23:23:17] INFO root fetch - processPackages [qiskit-ibm-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qiskit-ibm-provider-0.5.1.tar.gz tmp/qiskit-ibm-provider-0.5.2.tar.gz --markdown 20230410/q/qiskit-ibm-provider/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-10 23:23:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:23:18] ERROR root fetch - processPackages [hnhm]: Unable to get metadata: No such project 'hnhm'
+[2023-04-10 23:23:18] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:23:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:23:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:23:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:23:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:23:19] INFO root fetch - main [MainThread]: Store serial: [17650538]
