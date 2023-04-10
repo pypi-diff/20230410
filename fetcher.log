@@ -14481,3 +14481,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 21:05:10] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:05:11] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:05:11] INFO root fetch - main [MainThread]: Store serial: [17649413]
+[2023-04-10 21:10:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649413]
+[2023-04-10 21:10:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 21:10:19] WARNING root fetch - processPackages [pepelimpiezas]: Skipping, unable to determine old version
+[2023-04-10 21:10:19] INFO root fetch - main [MainThread]: error
+[2023-04-10 21:10:19] INFO root fetch - processPackages [aiosmartpost]: New version: [0.4.0b2] Old Version: [0.4.0b1]
+[2023-04-10 21:10:19] INFO root fetch - processPackages [boneIO]: New version: [0.6.0.dev4] Old Version: [0.6.0.dev3]
+[2023-04-10 21:10:19] INFO root fetch - processPackages [egauge-python]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-10 21:10:19] INFO root fetch - processPackages [retry-extended]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-10 21:10:19] INFO root fetch - processPackages [python-cmethods]: New version: [1.0.0] Old Version: [0.6.3]
+[2023-04-10 21:10:19] INFO root fetch - processPackages [aiosmartpost]: Downloading https://files.pythonhosted.org/packages/ad/81/97ed8391ba03191a94ea50e02a8d1c559ac3fe767d17fe1d43530f5078b1/aiosmartpost-0.4.0b1-py3-none-any.whl
+[2023-04-10 21:10:20] INFO root fetch - processPackages [python-cmethods]: Downloading https://files.pythonhosted.org/packages/8c/34/fa5a2bd22904d02294e19a38d6081469cf92a45d857ed858d775c87a5e66/python-cmethods-0.6.3.tar.gz
+[2023-04-10 21:10:20] INFO root fetch - processPackages [boneIO]: Downloading https://files.pythonhosted.org/packages/43/d6/5d8e2cb0f182483d1d4def239865385f63ee8dacbbe87363aea2cb5316b1/boneIO-0.6.0.dev3.tar.gz
+[2023-04-10 21:10:20] INFO root fetch - processPackages [retry-extended]: Downloading https://files.pythonhosted.org/packages/b3/88/fae9f0fbc3bb5bc5f16bd0f074f7eee330a50c1c94bc7f415db4c2a6b4ca/retry_extended-0.2.1.tar.gz
+[2023-04-10 21:10:20] INFO root fetch - processPackages [egauge-python]: Downloading https://files.pythonhosted.org/packages/d9/a9/ea2e507686a2d232d57390c91be4c5e2da903bdfa14af0783499ab4cac64/egauge-python-0.7.1.tar.gz
+[2023-04-10 21:10:20] INFO root fetch - processPackages [retry-extended]: executing diffoscope
+[2023-04-10 21:10:20] INFO root fetch - processPackages [retry-extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retry_extended-0.2.0.tar.gz tmp/retry_extended-0.2.1.tar.gz --markdown 20230410/r/retry-extended/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-10 21:10:20] INFO root fetch - processPackages [aiosmartpost]: Downloading https://files.pythonhosted.org/packages/59/1a/415d40dc0d94c8d3bd568fefcf545baefa08abe3af8864401389f2b220c6/aiosmartpost-0.4.0b2-py3-none-any.whl
+[2023-04-10 21:10:20] INFO root fetch - processPackages [boneIO]: Downloading https://files.pythonhosted.org/packages/1b/84/6d86b080dca64e2863108a445b4026a23129ec3b97e7b0c87476f69ed1b9/boneIO-0.6.0.dev4.tar.gz
+[2023-04-10 21:10:20] INFO root fetch - processPackages [python-cmethods]: Downloading https://files.pythonhosted.org/packages/1d/44/17cce7058a99150ddacea3b30abb963bab6927c3c31774743faab09a0e4d/python_cmethods-1.0.0-py3-none-any.whl
+[2023-04-10 21:10:20] INFO root fetch - processPackages [egauge-python]: Downloading https://files.pythonhosted.org/packages/75/80/19679d978d63f7dfefae142eba7ef7ff6d5f5e995015abb798777c78d80f/egauge-python-0.7.2.tar.gz
+[2023-04-10 21:10:20] INFO root fetch - processPackages [python-cmethods]: executing diffoscope
+[2023-04-10 21:10:20] INFO root fetch - processPackages [python-cmethods]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-cmethods-0.6.3.tar.gz tmp/python_cmethods-1.0.0-py3-none-any.whl.zip --markdown 20230410/p/python-cmethods/0.6.3-1.0.0/diff.md --exclude *.pyd
+[2023-04-10 21:10:20] INFO root fetch - processPackages [aiosmartpost]: executing diffoscope
+[2023-04-10 21:10:20] INFO root fetch - processPackages [aiosmartpost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiosmartpost-0.4.0b1-py3-none-any.whl.zip tmp/aiosmartpost-0.4.0b2-py3-none-any.whl.zip --markdown 20230410/a/aiosmartpost/0.4.0b1-0.4.0b2/diff.md --exclude *.pyd
+[2023-04-10 21:10:20] INFO root fetch - processPackages [egauge-python]: executing diffoscope
+[2023-04-10 21:10:20] INFO root fetch - processPackages [egauge-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/egauge-python-0.7.1.tar.gz tmp/egauge-python-0.7.2.tar.gz --markdown 20230410/e/egauge-python/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-10 21:10:20] INFO root fetch - processPackages [boneIO]: executing diffoscope
+[2023-04-10 21:10:20] INFO root fetch - processPackages [boneIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boneIO-0.6.0.dev3.tar.gz tmp/boneIO-0.6.0.dev4.tar.gz --markdown 20230410/b/boneIO/0.6.0.dev3-0.6.0.dev4/diff.md --exclude *.pyd
+[2023-04-10 21:10:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:10:21] INFO root fetch - processPackages [twitter-api-client]: New version: [0.6.0] Old Version: [0.5.9]
+[2023-04-10 21:10:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:10:21] INFO root fetch - processPackages [gpush]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-10 21:10:21] INFO root fetch - processPackages [gpush]: executing diffoscope
+[2023-04-10 21:10:21] INFO root fetch - processPackages [gpush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpush-1.1.0.tar.gz tmp/gpush-1.1.1.tar.gz --markdown 20230410/g/gpush/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-10 21:10:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:10:21] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/e2/43/101cccbbbaac38df78c4f0248378461f8a32a63755843215304d975dea0a/twitter-api-client-0.6.0.tar.gz
+[2023-04-10 21:10:21] INFO root fetch - processPackages [posthog]: New version: [2.5.0] Old Version: [2.4.2]
+[2023-04-10 21:10:21] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-10 21:10:21] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.5.9.tar.gz tmp/twitter-api-client-0.6.0.tar.gz --markdown 20230410/t/twitter-api-client/0.5.9-0.6.0/diff.md --exclude *.pyd
+[2023-04-10 21:10:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:10:22] INFO root fetch - processPackages [posthog]: Downloading https://files.pythonhosted.org/packages/32/d7/4d025c314b52883285649f83691a4f2a7bf4d7f15f971d3523f26e50d13b/posthog-2.4.2.tar.gz
+[2023-04-10 21:10:22] INFO root fetch - processPackages [posthog]: Downloading https://files.pythonhosted.org/packages/02/93/aaa6cf6fe32347bbeffbc48b4bcff3764d50f77d0b5f6dbc6dd22103d7f8/posthog-2.5.0.tar.gz
+[2023-04-10 21:10:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:10:22] INFO root fetch - processPackages [posthog]: executing diffoscope
+[2023-04-10 21:10:22] INFO root fetch - processPackages [posthog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/posthog-2.4.2.tar.gz tmp/posthog-2.5.0.tar.gz --markdown 20230410/p/posthog/2.4.2-2.5.0/diff.md --exclude *.pyd
+[2023-04-10 21:10:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:10:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:10:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:10:23] INFO root fetch - main [MainThread]: Store serial: [17649439]
