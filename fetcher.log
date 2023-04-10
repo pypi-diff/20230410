@@ -13950,3 +13950,82 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 20:22:53] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:23:10] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:23:10] INFO root fetch - main [MainThread]: Store serial: [17649097]
+[2023-04-10 20:28:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649097]
+[2023-04-10 20:28:19] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-10 20:28:19] INFO root fetch - processPackages [layermake]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-10 20:28:19] INFO root fetch - processPackages [pseudopeople]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-10 20:28:19] INFO root fetch - processPackages [localthickness]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 20:28:19] INFO root fetch - processPackages [napari-segment-anything]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-10 20:28:19] WARNING root fetch - processPackages [nextgpt]: Skipping, unable to determine old version
+[2023-04-10 20:28:19] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:28:19] INFO root fetch - processPackages [blackduck-c-cpp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 20:28:20] INFO root fetch - processPackages [localthickness]: Downloading https://files.pythonhosted.org/packages/12/fb/b9476607be373883673f35519635891cd934bfbb5de06743994983da7a3e/localthickness-0.1.1.tar.gz
+[2023-04-10 20:28:20] INFO root fetch - processPackages [layermake]: Downloading https://files.pythonhosted.org/packages/be/bf/f10b24366c119b95e40da1e37fed66586675fa654d077d3c413481e36c56/layermake-0.0.6.tar.gz
+[2023-04-10 20:28:20] INFO root fetch - processPackages [pseudopeople]: Downloading https://files.pythonhosted.org/packages/6f/56/f320fa0b28b90185b2a1a40e0ce07729653218cba1a4643e79bcb1b86007/pseudopeople-0.3.0.tar.gz
+[2023-04-10 20:28:20] INFO root fetch - processPackages [blackduck-c-cpp]: Downloading https://files.pythonhosted.org/packages/32/6b/1bf15999997054e560aa32b656cd316b9883f4f074a07ec9b0231f35eb26/blackduck-c-cpp-1.0.8.tar.gz
+[2023-04-10 20:28:20] INFO root fetch - processPackages [napari-segment-anything]: Downloading https://files.pythonhosted.org/packages/e8/16/f4a87395ab6c4d4f3d4188313a7b46851aef07f6d84a878fbd2903800de1/napari-segment-anything-0.1.3.tar.gz
+[2023-04-10 20:28:20] INFO root fetch - processPackages [napari-segment-anything]: executing diffoscope
+[2023-04-10 20:28:20] INFO root fetch - processPackages [layermake]: Downloading https://files.pythonhosted.org/packages/be/d9/2804c50f5b94ee04eb581b73c26218b1b9b529d1848bec050ff9c27b5ee9/layermake-0.0.7.tar.gz
+[2023-04-10 20:28:20] INFO root fetch - processPackages [napari-segment-anything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-segment-anything-0.1.2.tar.gz tmp/napari-segment-anything-0.1.3.tar.gz --markdown 20230410/n/napari-segment-anything/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-10 20:28:20] INFO root fetch - processPackages [pseudopeople]: Downloading https://files.pythonhosted.org/packages/5f/09/4d2f27ac164ac4d5a3a7cc7611039e1e9882e1920fb265173e4122508057/pseudopeople-0.3.1.tar.gz
+[2023-04-10 20:28:20] WARNING root fetch - processPackages [pseudopeople]: Skipping package: exceeds size limit 14680175>=10485760
+[2023-04-10 20:28:20] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:28:20] INFO root fetch - processPackages [layermake]: executing diffoscope
+[2023-04-10 20:28:20] INFO root fetch - processPackages [layermake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layermake-0.0.6.tar.gz tmp/layermake-0.0.7.tar.gz --markdown 20230410/l/layermake/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-10 20:28:20] INFO root fetch - processPackages [doppkit]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-10 20:28:20] INFO root fetch - processPackages [localthickness]: Downloading https://files.pythonhosted.org/packages/2b/21/b45f29493aeec5c0d85fb1fa4f5d93f7db08e3f972cdab6b52cf9a5aac0a/localthickness-0.1.2.tar.gz
+[2023-04-10 20:28:20] INFO root fetch - processPackages [localthickness]: executing diffoscope
+[2023-04-10 20:28:20] INFO root fetch - processPackages [localthickness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localthickness-0.1.1.tar.gz tmp/localthickness-0.1.2.tar.gz --markdown 20230410/l/localthickness/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 20:28:20] INFO root fetch - processPackages [blackduck-c-cpp]: Downloading https://files.pythonhosted.org/packages/f2/70/0ef7535f40488f457f17ca24951cd2699aed348ba1485034695947829567/blackduck-c-cpp-1.0.9.tar.gz
+[2023-04-10 20:28:20] INFO root fetch - processPackages [doppkit]: Downloading https://files.pythonhosted.org/packages/a2/f8/ef437d9d97b44cbf41bd1c9f321d7b354405efea7da1c11892ff021e76d7/doppkit-0.1.4.tar.gz
+[2023-04-10 20:28:20] INFO root fetch - processPackages [doppkit]: executing diffoscope
+[2023-04-10 20:28:20] INFO root fetch - processPackages [doppkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doppkit-0.1.3.tar.gz tmp/doppkit-0.1.4.tar.gz --markdown 20230410/d/doppkit/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-10 20:28:20] INFO root fetch - processPackages [blackduck-c-cpp]: executing diffoscope
+[2023-04-10 20:28:20] INFO root fetch - processPackages [blackduck-c-cpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blackduck-c-cpp-1.0.8.tar.gz tmp/blackduck-c-cpp-1.0.9.tar.gz --markdown 20230410/b/blackduck-c-cpp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 20:28:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:21] INFO root fetch - processPackages [ork]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 20:28:21] INFO root fetch - processPackages [ork]: Downloading https://files.pythonhosted.org/packages/d7/83/3d11a4e5e9965dddd5a8aec1c57563ec923ed138edffe6ad875700d09282/ork-0.0.1.tar.gz
+[2023-04-10 20:28:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:22] INFO root fetch - processPackages [retry-extended]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-10 20:28:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:22] INFO root fetch - processPackages [mmda]: New version: [0.3.6] Old Version: [0.3.0]
+[2023-04-10 20:28:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:22] INFO root fetch - processPackages [cythereal-magic]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-10 20:28:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:22] INFO root fetch - processPackages [ork]: Downloading https://files.pythonhosted.org/packages/ef/ff/8bf91ade8b9f73fe595c86e211caf3d360f9ed724e0bdfb78bd3e9293afd/ork-0.0.2.tar.gz
+[2023-04-10 20:28:22] WARNING root fetch - processPackages [buildlackey]: Skipping, unable to determine old version
+[2023-04-10 20:28:22] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:28:22] INFO root fetch - processPackages [retry-extended]: Downloading https://files.pythonhosted.org/packages/8d/4c/561e28d0697b73357cf7a1f6ad57e3a0b9390d9e4c324fa052bafd97ea99/retry_extended-0.1.1.tar.gz
+[2023-04-10 20:28:22] INFO root fetch - processPackages [bbot]: New version: [1.0.5.1597rc0] Old Version: [1.0.5.1595rc0]
+[2023-04-10 20:28:22] INFO root fetch - processPackages [mmda]: Downloading https://files.pythonhosted.org/packages/bf/69/ece03542b626139eec72ad1495ed243d6a89d900df28d17da85df919a115/mmda-0.3.0.tar.gz
+[2023-04-10 20:28:22] INFO root fetch - processPackages [cythereal-magic]: Downloading https://files.pythonhosted.org/packages/a3/35/9da82e6b4484370ad985c82a71b080cf8a3645abbfcccb48bd46d4775d92/cythereal-magic-1.9.0.tar.gz
+[2023-04-10 20:28:22] INFO root fetch - processPackages [ork]: executing diffoscope
+[2023-04-10 20:28:22] INFO root fetch - processPackages [ork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ork-0.0.1.tar.gz tmp/ork-0.0.2.tar.gz --markdown 20230410/o/ork/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 20:28:22] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/9a/b0/2537a2c01334dcb52fe486de55919b8e47983def3304aa6c56a8f4f84d68/bbot-1.0.5.1597rc0.tar.gz
+[2023-04-10 20:28:22] INFO root fetch - processPackages [retry-extended]: Downloading https://files.pythonhosted.org/packages/37/e2/00cd6eb0e23cb19d990b6565c70d34772246f45c314ec8cfc7ea65ef5393/retry_extended-0.2.0.tar.gz
+[2023-04-10 20:28:22] INFO root fetch - processPackages [retry-extended]: executing diffoscope
+[2023-04-10 20:28:22] INFO root fetch - processPackages [retry-extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retry_extended-0.1.1.tar.gz tmp/retry_extended-0.2.0.tar.gz --markdown 20230410/r/retry-extended/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 20:28:22] INFO root fetch - processPackages [cythereal-magic]: Downloading https://files.pythonhosted.org/packages/23/53/8b0ec9ff48a894dd2692d3bdf3aa4407c051eb68cb0077536057a0c6aa6f/cythereal-magic-1.9.1.tar.gz
+[2023-04-10 20:28:22] INFO root fetch - processPackages [cythereal-magic]: executing diffoscope
+[2023-04-10 20:28:22] INFO root fetch - processPackages [cythereal-magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cythereal-magic-1.9.0.tar.gz tmp/cythereal-magic-1.9.1.tar.gz --markdown 20230410/c/cythereal-magic/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-10 20:28:22] INFO root fetch - processPackages [bbot]: executing diffoscope
+[2023-04-10 20:28:22] INFO root fetch - processPackages [bbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbot-1.0.5.1595rc0.tar.gz tmp/bbot-1.0.5.1597rc0.tar.gz --markdown 20230410/b/bbot/1.0.5.1595rc0-1.0.5.1597rc0/diff.md --exclude *.pyd
+[2023-04-10 20:28:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:23] INFO root fetch - processPackages [cythereal-magic]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-10 20:28:23] INFO root fetch - processPackages [cythereal-magic]: executing diffoscope
+[2023-04-10 20:28:23] INFO root fetch - processPackages [cythereal-magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cythereal-magic-1.9.0.tar.gz tmp/cythereal-magic-1.9.1.tar.gz --markdown 20230410/c/cythereal-magic/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-10 20:28:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:23] INFO root fetch - processPackages [voltage-imaging-analysis]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-10 20:28:24] INFO root fetch - processPackages [voltage-imaging-analysis]: Downloading https://files.pythonhosted.org/packages/46/0b/0068da763800b1b528e70095a6279a3ac5403a3f8d67f1cf4aa1a20969f7/voltage_imaging_analysis-0.1.3.tar.gz
+[2023-04-10 20:28:24] INFO root fetch - processPackages [voltage-imaging-analysis]: Downloading https://files.pythonhosted.org/packages/51/65/0a06ad54a35f8628eacbe34c5a5123889f1699c3b92e72d52b5a5d622f9c/voltage_imaging_analysis-0.1.4.tar.gz
+[2023-04-10 20:28:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:24] INFO root fetch - processPackages [voltage-imaging-analysis]: executing diffoscope
+[2023-04-10 20:28:24] INFO root fetch - processPackages [voltage-imaging-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voltage_imaging_analysis-0.1.3.tar.gz tmp/voltage_imaging_analysis-0.1.4.tar.gz --markdown 20230410/v/voltage-imaging-analysis/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-10 20:28:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:25] INFO root fetch - processPackages [mmda]: Downloading https://files.pythonhosted.org/packages/5a/3d/09f9bdb8a54162ae834972d74cc5e92603769a57d69abf78caeee0e4eebf/mmda-0.3.6.tar.gz
+[2023-04-10 20:28:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:28] INFO root fetch - processPackages [mmda]: executing diffoscope
+[2023-04-10 20:28:28] INFO root fetch - processPackages [mmda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmda-0.3.0.tar.gz tmp/mmda-0.3.6.tar.gz --markdown 20230410/m/mmda/0.3.0-0.3.6/diff.md --exclude *.pyd
+[2023-04-10 20:28:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:28:31] INFO root fetch - main [MainThread]: Store serial: [17649141]
