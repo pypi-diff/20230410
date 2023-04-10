@@ -1572,3 +1572,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-10 03:13:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:13:45] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:13:45] INFO root fetch - main [MainThread]: Store serial: [17640979]
+[2023-04-10 03:18:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640979]
+[2023-04-10 03:18:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 03:18:53] INFO root fetch - processPackages [db-classifier]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 03:18:53] INFO root fetch - processPackages [lmah88]: New version: [1.4] Old Version: [1.1]
+[2023-04-10 03:18:53] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-10 03:18:53] INFO root fetch - processPackages [neon-homeassistant-skill]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 03:18:53] INFO root fetch - processPackages [pygeometa]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-10 03:18:53] INFO root fetch - processPackages [neon-homeassistant-skill]: executing diffoscope
+[2023-04-10 03:18:53] INFO root fetch - processPackages [neon-homeassistant-skill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_homeassistant_skill-0.0.8.tar.gz tmp/neon_homeassistant_skill-0.0.9.tar.gz --markdown 20230410/n/neon-homeassistant-skill/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 03:18:53] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: executing diffoscope
+[2023-04-10 03:18:53] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scotthsieh_projen_statemachine-2.0.98.tar.gz tmp/scotthsieh_projen_statemachine-2.0.99.tar.gz --markdown 20230410/s/scotthsieh-projen-statemachine/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-10 03:18:53] INFO root fetch - processPackages [db-classifier]: Downloading https://files.pythonhosted.org/packages/00/00/a541299e0c1aad4209e8be4cea5eb9260ecdc3d2eec3608f6dfa248c9d10/db-classifier-0.0.4.tar.gz
+[2023-04-10 03:18:53] INFO root fetch - processPackages [lmah88]: Downloading https://files.pythonhosted.org/packages/b2/fc/5146ae424f197e662aa1db1dd730c1ae9ad3ae91601d4a2bbf9f493ced94/lmah88-1.1.tar.gz
+[2023-04-10 03:18:53] INFO root fetch - processPackages [pygeometa]: Downloading https://files.pythonhosted.org/packages/1c/f0/a475bfa5037252400749ca948b23830968cccf39a47400c9651f6e010c50/pygeometa-0.9.0.tar.gz
+[2023-04-10 03:18:53] INFO root fetch - processPackages [lmah88]: Downloading https://files.pythonhosted.org/packages/23/9e/f01d1fa7766b079e1d49a87741702739310fa2462c2a91c1f779845a7340/lmah88-1.4.tar.gz
+[2023-04-10 03:18:53] INFO root fetch - processPackages [db-classifier]: executing diffoscope
+[2023-04-10 03:18:53] INFO root fetch - processPackages [db-classifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/db-classifier-0.0.3.tar.gz tmp/db-classifier-0.0.4.tar.gz --markdown 20230410/d/db-classifier/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 03:18:54] INFO root fetch - processPackages [lmah88]: executing diffoscope
+[2023-04-10 03:18:54] INFO root fetch - processPackages [lmah88]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmah88-1.1.tar.gz tmp/lmah88-1.4.tar.gz --markdown 20230410/l/lmah88/1.1-1.4/diff.md --exclude *.pyd
+[2023-04-10 03:18:54] INFO root fetch - processPackages [pygeometa]: Downloading https://files.pythonhosted.org/packages/2e/38/90b14001ab1629765103fc7f53291a6e526a87fb7cad7efa9e32eb228eb3/pygeometa-0.9.1.tar.gz
+[2023-04-10 03:18:54] INFO root fetch - processPackages [pygeometa]: executing diffoscope
+[2023-04-10 03:18:54] INFO root fetch - processPackages [pygeometa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygeometa-0.9.0.tar.gz tmp/pygeometa-0.9.1.tar.gz --markdown 20230410/p/pygeometa/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-10 03:18:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:18:54] INFO root fetch - processPackages [application-properties]: New version: [0.6.0] Old Version: [0.5.2]
+[2023-04-10 03:18:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:18:54] INFO root fetch - processPackages [pygwalker]: New version: [0.1.7a4] Old Version: [0.1.7a3]
+[2023-04-10 03:18:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:18:55] INFO root fetch - processPackages [application-properties]: Downloading https://files.pythonhosted.org/packages/52/75/817b6ea28b75fcfc2e03ee2b73998cd6b4108bf118db3ef13bcbf892d32f/application_properties-0.5.2.tar.gz
+[2023-04-10 03:18:55] INFO root fetch - processPackages [pysmells]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-10 03:18:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:18:55] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/86/30/9f0cd8672571b51cfb8a029c5af81b31817348fab40f9370318eecaaa069/pygwalker-0.1.7a4.tar.gz
+[2023-04-10 03:18:55] INFO root fetch - processPackages [pysmells]: Downloading https://files.pythonhosted.org/packages/5b/a0/c86e58258ee998df0da343fedad66410a6eef280011a6e235aef2b12cd24/pysmells-1.0.7.tar.gz
+[2023-04-10 03:18:55] INFO root fetch - processPackages [pygwalker]: executing diffoscope
+[2023-04-10 03:18:55] INFO root fetch - processPackages [pygwalker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygwalker-0.1.7a3.tar.gz tmp/pygwalker-0.1.7a4.tar.gz --markdown 20230410/p/pygwalker/0.1.7a3-0.1.7a4/diff.md --exclude *.pyd
+[2023-04-10 03:18:55] INFO root fetch - processPackages [application-properties]: Downloading https://files.pythonhosted.org/packages/14/1e/e66fe5b791f7e8c66ca5d7e4a297f3fb05131ad35c7134f1361e9fa95510/application_properties-0.6.0.tar.gz
+[2023-04-10 03:18:55] INFO root fetch - processPackages [pysmells]: executing diffoscope
+[2023-04-10 03:18:55] INFO root fetch - processPackages [pysmells]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysmells-1.0.6.tar.gz tmp/pysmells-1.0.7.tar.gz --markdown 20230410/p/pysmells/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-10 03:18:55] INFO root fetch - processPackages [application-properties]: executing diffoscope
+[2023-04-10 03:18:55] INFO root fetch - processPackages [application-properties]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/application_properties-0.5.2.tar.gz tmp/application_properties-0.6.0.tar.gz --markdown 20230410/a/application-properties/0.5.2-0.6.0/diff.md --exclude *.pyd
+[2023-04-10 03:18:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:18:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:18:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:18:59] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:18:59] INFO root fetch - main [MainThread]: Store serial: [17641005]
