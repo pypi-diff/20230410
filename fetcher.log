@@ -9403,3 +9403,65 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 14:46:00] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:46:00] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:46:00] INFO root fetch - main [MainThread]: Store serial: [17645910]
+[2023-04-10 14:51:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645910]
+[2023-04-10 14:51:09] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 14:51:09] INFO root fetch - processPackages [B0tHe1Per-test-api]: New version: [0.5] Old Version: [0.4]
+[2023-04-10 14:51:09] INFO root fetch - processPackages [admin-tool-button]: New version: [1.0.4a0] Old Version: [1.0.3a0]
+[2023-04-10 14:51:09] INFO root fetch - processPackages [pdstools]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-04-10 14:51:09] INFO root fetch - processPackages [olist-loafer]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-10 14:51:09] INFO root fetch - processPackages [Pygments]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-04-10 14:51:09] INFO root fetch - processPackages [Pygments]: Downloading https://files.pythonhosted.org/packages/15/9d/bc9047ca1eee944cc245f3649feea6eecde3f38011ee9b8a6a64fb7088cd/Pygments-2.8.1.tar.gz
+[2023-04-10 14:51:09] INFO root fetch - processPackages [pdstools]: Downloading https://files.pythonhosted.org/packages/45/d8/4b2af0fa256c9f51535b48aa34df0f101e859e9f7ae2b9fb8f742ac909cc/pdstools-3.0.1.tar.gz
+[2023-04-10 14:51:09] INFO root fetch - processPackages [admin-tool-button]: Downloading https://files.pythonhosted.org/packages/c7/21/c98d1524354059c276b70a7be0835cf223d117bc67047e6406dd0947ec24/admin_tool_button-1.0.4a0.tar.gz
+[2023-04-10 14:51:09] INFO root fetch - processPackages [olist-loafer]: Downloading https://files.pythonhosted.org/packages/20/15/c3493168e1affdc20f6c87a87cf826dea0240d26c8dd567c315606e9f0c5/olist-loafer-3.0.8.tar.gz
+[2023-04-10 14:51:09] INFO root fetch - processPackages [B0tHe1Per-test-api]: Downloading https://files.pythonhosted.org/packages/9e/d4/7c34a9365d327dda534b1b1b24a109e10254abb4c7edc6b6d11c28b0f405/B0tHe1Per_test_api-0.5.tar.gz
+[2023-04-10 14:51:10] INFO root fetch - processPackages [B0tHe1Per-test-api]: executing diffoscope
+[2023-04-10 14:51:10] INFO root fetch - processPackages [B0tHe1Per-test-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/B0tHe1Per_test_api-0.4.tar.gz tmp/B0tHe1Per_test_api-0.5.tar.gz --markdown 20230410/B/B0tHe1Per-test-api/0.4-0.5/diff.md --exclude *.pyd
+[2023-04-10 14:51:11] INFO root fetch - processPackages [admin-tool-button]: executing diffoscope
+[2023-04-10 14:51:11] INFO root fetch - processPackages [admin-tool-button]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/admin_tool_button-1.0.3a0.tar.gz tmp/admin_tool_button-1.0.4a0.tar.gz --markdown 20230410/a/admin-tool-button/1.0.3a0-1.0.4a0/diff.md --exclude *.pyd
+[2023-04-10 14:51:11] INFO root fetch - processPackages [olist-loafer]: Downloading https://files.pythonhosted.org/packages/77/74/be79bc530ff708a690345a2ebda733dba4668f0df943a631d79e19f2eb44/olist-loafer-3.0.9.tar.gz
+[2023-04-10 14:51:11] INFO root fetch - processPackages [pdstools]: Downloading https://files.pythonhosted.org/packages/0b/e2/095b9f26c0c39538f12de6afa9a20adf127ad2937c2b7cac22ebadf7d3ce/pdstools-3.0.2.tar.gz
+[2023-04-10 14:51:11] INFO root fetch - processPackages [olist-loafer]: executing diffoscope
+[2023-04-10 14:51:11] INFO root fetch - processPackages [olist-loafer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/olist-loafer-3.0.8.tar.gz tmp/olist-loafer-3.0.9.tar.gz --markdown 20230410/o/olist-loafer/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-10 14:51:11] INFO root fetch - processPackages [pdstools]: executing diffoscope
+[2023-04-10 14:51:11] INFO root fetch - processPackages [pdstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdstools-3.0.1.tar.gz tmp/pdstools-3.0.2.tar.gz --markdown 20230410/p/pdstools/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-04-10 14:51:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:11] INFO root fetch - processPackages [je-auto-control]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-04-10 14:51:11] INFO root fetch - processPackages [je-auto-control]: executing diffoscope
+[2023-04-10 14:51:11] INFO root fetch - processPackages [je-auto-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control-0.0.97.tar.gz tmp/je_auto_control-0.0.99.tar.gz --markdown 20230410/j/je-auto-control/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 14:51:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:12] INFO root fetch - processPackages [gtki-module-orup-errors]: New version: [1.35.6] Old Version: [1.35.5]
+[2023-04-10 14:51:12] INFO root fetch - processPackages [gtki-module-orup-errors]: Downloading https://files.pythonhosted.org/packages/63/66/526a67f31ff2533bc0b81962d981721b99960ffb9b82d6b926ddc3749789/gtki_module_orup_errors-1.35.6-py3-none-any.whl
+[2023-04-10 14:51:12] INFO root fetch - processPackages [Pygments]: Downloading https://files.pythonhosted.org/packages/ba/6e/7a7c13c21d8a4a7f82ccbfe257a045890d4dbf18c023f985f565f97393e3/Pygments-2.9.0.tar.gz
+[2023-04-10 14:51:12] INFO root fetch - processPackages [gtki-module-orup-errors]: executing diffoscope
+[2023-04-10 14:51:12] INFO root fetch - processPackages [gtki-module-orup-errors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtki_module_orup_errors-1.35.5-py3-none-any.whl.zip tmp/gtki_module_orup_errors-1.35.6-py3-none-any.whl.zip --markdown 20230410/g/gtki-module-orup-errors/1.35.5-1.35.6/diff.md --exclude *.pyd
+[2023-04-10 14:51:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:12] INFO root fetch - processPackages [spaceone-core]: New version: [1.9.7rc1] Old Version: [1.9.7.1]
+[2023-04-10 14:51:12] INFO root fetch - processPackages [spaceone-core]: executing diffoscope
+[2023-04-10 14:51:12] INFO root fetch - processPackages [spaceone-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_core-1.9.7.1-py3-none-any.whl.zip tmp/spaceone_core-1.9.7rc1-py3-none-any.whl.zip --markdown 20230410/s/spaceone-core/1.9.7.1-1.9.7rc1/diff.md --exclude *.pyd
+[2023-04-10 14:51:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:13] INFO root fetch - processPackages [tinkoff-investments]: New version: [0.2.0b9] Old Version: [0.2.0b8]
+[2023-04-10 14:51:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:13] INFO root fetch - processPackages [pyapep]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-04-10 14:51:13] INFO root fetch - processPackages [tinkoff-investments]: Downloading https://files.pythonhosted.org/packages/26/e2/450ebc25ad12ba1e49dfdd0ced24ba781f86f8d619b83497b752d53684d6/tinkoff-investments-0.2.0b8.tar.gz
+[2023-04-10 14:51:13] INFO root fetch - processPackages [pyapep]: Downloading https://files.pythonhosted.org/packages/c4/cc/9a2c5c354073f9780a1d400b9572be3b98ea9744de01525399b6e8932b1e/pyapep-0.0.8.tar.gz
+[2023-04-10 14:51:13] INFO root fetch - processPackages [Pygments]: executing diffoscope
+[2023-04-10 14:51:13] INFO root fetch - processPackages [Pygments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pygments-2.8.1.tar.gz tmp/Pygments-2.9.0.tar.gz --markdown 20230410/P/Pygments/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-04-10 14:51:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:13] INFO root fetch - processPackages [metal-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 14:51:13] INFO root fetch - processPackages [pyapep]: Downloading https://files.pythonhosted.org/packages/6a/a1/4b949a99813d3021ea87f6b7d84467ecbecb653b953bc9c5fe63ac4e7b76/pyapep-0.1.0.tar.gz
+[2023-04-10 14:51:13] INFO root fetch - processPackages [metal-sdk]: Downloading https://files.pythonhosted.org/packages/62/f1/318f1e9daa14af88561affa27fc807603dbb59078317d080652003b5cbf0/metal_sdk-0.0.8.tar.gz
+[2023-04-10 14:51:13] INFO root fetch - processPackages [tinkoff-investments]: Downloading https://files.pythonhosted.org/packages/94/16/7662bf8919bdb6ec8e9e97a83c077b533322c887e013f722fff35fb92b55/tinkoff-investments-0.2.0b9.tar.gz
+[2023-04-10 14:51:13] INFO root fetch - processPackages [pyapep]: executing diffoscope
+[2023-04-10 14:51:13] INFO root fetch - processPackages [pyapep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyapep-0.0.8.tar.gz tmp/pyapep-0.1.0.tar.gz --markdown 20230410/p/pyapep/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-04-10 14:51:13] INFO root fetch - processPackages [tinkoff-investments]: executing diffoscope
+[2023-04-10 14:51:13] INFO root fetch - processPackages [tinkoff-investments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinkoff-investments-0.2.0b8.tar.gz tmp/tinkoff-investments-0.2.0b9.tar.gz --markdown 20230410/t/tinkoff-investments/0.2.0b8-0.2.0b9/diff.md --exclude *.pyd
+[2023-04-10 14:51:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:14] INFO root fetch - processPackages [metal-sdk]: Downloading https://files.pythonhosted.org/packages/e2/bb/f9165f96d122fbc0fd8edb7689518d054d8e9c3a77d60da14da94f063ec6/metal_sdk-0.0.9.tar.gz
+[2023-04-10 14:51:14] INFO root fetch - processPackages [metal-sdk]: executing diffoscope
+[2023-04-10 14:51:14] INFO root fetch - processPackages [metal-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metal_sdk-0.0.8.tar.gz tmp/metal_sdk-0.0.9.tar.gz --markdown 20230410/m/metal-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 14:51:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:51:52] INFO root fetch - main [MainThread]: Store serial: [17645940]
