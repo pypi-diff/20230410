@@ -5728,3 +5728,35 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 08:59:08] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:59:09] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:59:09] INFO root fetch - main [MainThread]: Store serial: [17643622]
+[2023-04-10 09:04:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643622]
+[2023-04-10 09:04:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 09:04:17] INFO root fetch - processPackages [xj-enroll]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-04-10 09:04:17] INFO root fetch - processPackages [antchain-baasplus]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-10 09:04:17] INFO root fetch - processPackages [py4web]: New version: [1.20230410.1] Old Version: [1.20230314.1]
+[2023-04-10 09:04:17] INFO root fetch - processPackages [kcli]: New version: [99.0.202304100703] Old Version: [99.0.202304091755]
+[2023-04-10 09:04:17] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-04-10 09:04:17] INFO root fetch - processPackages [xj-enroll]: executing diffoscope
+[2023-04-10 09:04:17] INFO root fetch - processPackages [xj-enroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_enroll-1.0.98.tar.gz tmp/xj_enroll-1.0.99.tar.gz --markdown 20230410/x/xj-enroll/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-04-10 09:04:17] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-04-10 09:04:17] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230410/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-04-10 09:04:17] INFO root fetch - processPackages [antchain-baasplus]: Downloading https://files.pythonhosted.org/packages/72/f2/d1672bb8e56bf332a26dc4af6c491cb2c364f665b5fe449498e5afaa77cd/antchain_baasplus-1.1.5.tar.gz
+[2023-04-10 09:04:17] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/69/b1/298888648d0f2c401b0c4aaa26f18d7c9a87c0eb80002225ecfa4d033601/kcli-99.0.202304100703-py3-none-any.whl
+[2023-04-10 09:04:17] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/46/f3/201362710efa507a87334e7a6b4e8e353d4d86cee04f7b51b63f0bcf56ac/py4web-1.20230314.1.tar.gz
+[2023-04-10 09:04:18] INFO root fetch - processPackages [antchain-baasplus]: Downloading https://files.pythonhosted.org/packages/10/dc/e2938226bc3849b87e242d06f9c83bce1cb86b35ec84379d3f03494010ad/antchain_baasplus-1.1.6.tar.gz
+[2023-04-10 09:04:18] INFO root fetch - processPackages [antchain-baasplus]: executing diffoscope
+[2023-04-10 09:04:18] INFO root fetch - processPackages [antchain-baasplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_baasplus-1.1.5.tar.gz tmp/antchain_baasplus-1.1.6.tar.gz --markdown 20230410/a/antchain-baasplus/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-10 09:04:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:04:18] INFO root fetch - processPackages [aifactory]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-04-10 09:04:19] INFO root fetch - processPackages [aifactory]: executing diffoscope
+[2023-04-10 09:04:19] INFO root fetch - processPackages [aifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifactory-1.6.8.tar.gz tmp/aifactory-1.6.9.tar.gz --markdown 20230410/a/aifactory/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-04-10 09:04:19] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-10 09:04:19] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304091755-py3-none-any.whl.zip tmp/kcli-99.0.202304100703-py3-none-any.whl.zip --markdown 20230410/k/kcli/99.0.202304091755-99.0.202304100703/diff.md --exclude *.pyd
+[2023-04-10 09:04:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:04:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:04:21] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/9f/4d/4564937455abb84ba7a1b5fc46a0028a402caa0f202ada2b0b38edf0eb87/py4web-1.20230410.1.tar.gz
+[2023-04-10 09:04:25] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2023-04-10 09:04:25] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20230314.1.tar.gz tmp/py4web-1.20230410.1.tar.gz --markdown 20230410/p/py4web/1.20230314.1-1.20230410.1/diff.md --exclude *.pyd
+[2023-04-10 09:04:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:04:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:04:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:04:39] INFO root fetch - main [MainThread]: Store serial: [17643639]
