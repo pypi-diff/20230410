@@ -7154,3 +7154,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 11:18:40] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:18:41] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:18:41] INFO root fetch - main [MainThread]: Store serial: [17644649]
+[2023-04-10 11:23:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644649]
+[2023-04-10 11:23:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 11:23:49] INFO root fetch - processPackages [simpleworkspace]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-04-10 11:23:49] INFO root fetch - processPackages [AttentionMOI]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-10 11:23:49] INFO root fetch - processPackages [sf-elastic-apm]: New version: [6.7.2] Old Version: [6.3.4]
+[2023-04-10 11:23:49] INFO root fetch - processPackages [tvmer]: New version: [0.1.5.dev3] Old Version: [0.1.5.dev2]
+[2023-04-10 11:23:49] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-10 11:23:49] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-10 11:23:49] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230410/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-10 11:23:49] INFO root fetch - processPackages [sf-elastic-apm]: Downloading https://files.pythonhosted.org/packages/9a/52/d0d11e49aaeffe9c49c2a21b04190c89c8115a528a62c0c966e361f24587/sf-elastic-apm-6.3.4.tar.gz
+[2023-04-10 11:23:49] INFO root fetch - processPackages [AttentionMOI]: Downloading https://files.pythonhosted.org/packages/06/9f/9b5743619b5bbc84b4284c4bb19aca5f7ba71398f808befc37ec79c5f047/AttentionMOI-0.0.5.tar.gz
+[2023-04-10 11:23:49] INFO root fetch - processPackages [tvmer]: Downloading https://files.pythonhosted.org/packages/4a/1e/9e64707dc05910f505588955e377245906f52077e6c4f7a8045cbb7ec80a/tvmer-0.1.5.dev2.tar.gz
+[2023-04-10 11:23:49] INFO root fetch - processPackages [AttentionMOI]: executing diffoscope
+[2023-04-10 11:23:49] INFO root fetch - processPackages [AttentionMOI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AttentionMOI-0.0.4.tar.gz tmp/AttentionMOI-0.0.5.tar.gz --markdown 20230410/A/AttentionMOI/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-10 11:23:49] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2023-04-10 11:23:49] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleWorkspace-1.1.98-py3-none-any.whl.zip tmp/SimpleWorkspace-1.1.99-py3-none-any.whl.zip --markdown 20230410/s/simpleworkspace/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-04-10 11:23:49] INFO root fetch - processPackages [tvmer]: Downloading https://files.pythonhosted.org/packages/2e/28/042dc94c9bd95ff547210a7d458dbe080bde501f44881591ef1d4d47d4a0/tvmer-0.1.5.dev3.tar.gz
+[2023-04-10 11:23:50] INFO root fetch - processPackages [tvmer]: executing diffoscope
+[2023-04-10 11:23:50] INFO root fetch - processPackages [tvmer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvmer-0.1.5.dev2.tar.gz tmp/tvmer-0.1.5.dev3.tar.gz --markdown 20230410/t/tvmer/0.1.5.dev2-0.1.5.dev3/diff.md --exclude *.pyd
+[2023-04-10 11:23:50] INFO root fetch - processPackages [sf-elastic-apm]: Downloading https://files.pythonhosted.org/packages/fd/f6/8af5d821b256397a19bbf7e5ca36d8f6185a36099e009ec43e9cc41025cf/sf-elastic-apm-6.7.2.tar.gz
+[2023-04-10 11:23:50] INFO root fetch - processPackages [sf-elastic-apm]: executing diffoscope
+[2023-04-10 11:23:50] INFO root fetch - processPackages [sf-elastic-apm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sf-elastic-apm-6.3.4.tar.gz tmp/sf-elastic-apm-6.7.2.tar.gz --markdown 20230410/s/sf-elastic-apm/6.3.4-6.7.2/diff.md --exclude *.pyd
+[2023-04-10 11:23:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:23:50] INFO root fetch - processPackages [mpai-cae-arp]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-10 11:23:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:23:50] INFO root fetch - processPackages [hestia-earth-models]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-10 11:23:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:23:50] INFO root fetch - processPackages [mpai-cae-arp]: Downloading https://files.pythonhosted.org/packages/73/76/362a478131ebb1680cdbc4ed1e974dc133b128e07105c4dc10251d5b897e/mpai_cae_arp-0.2.3.tar.gz
+[2023-04-10 11:23:50] INFO root fetch - processPackages [mpai-cae-arp]: executing diffoscope
+[2023-04-10 11:23:50] INFO root fetch - processPackages [mpai-cae-arp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpai_cae_arp-0.2.2.tar.gz tmp/mpai_cae_arp-0.2.3.tar.gz --markdown 20230410/m/mpai-cae-arp/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-10 11:23:50] WARNING root fetch - processPackages [rplidar-sharpattack]: Skipping, unable to determine old version
+[2023-04-10 11:23:50] INFO root fetch - main [MainThread]: error
+[2023-04-10 11:23:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:23:51] INFO root fetch - processPackages [hestia-earth-models]: Downloading https://files.pythonhosted.org/packages/a2/61/d19a2d7e01e8a5e0035eea49d6f5bdd2e224d17d89fe9ef0012f7ff05723/hestia-earth-models-0.9.0.tar.gz
+[2023-04-10 11:23:51] INFO root fetch - processPackages [hestia-earth-models]: Downloading https://files.pythonhosted.org/packages/59/94/5b9b4317f8ae747ccffceb5debddd5d4f68a8aac6d6d53afb2ade6dbdfdb/hestia-earth-models-0.9.1.tar.gz
+[2023-04-10 11:23:51] INFO root fetch - processPackages [hestia-earth-models]: executing diffoscope
+[2023-04-10 11:23:51] INFO root fetch - processPackages [hestia-earth-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hestia-earth-models-0.9.0.tar.gz tmp/hestia-earth-models-0.9.1.tar.gz --markdown 20230410/h/hestia-earth-models/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-10 11:23:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:23:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:23:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:23:54] INFO root fetch - main [MainThread]: Store serial: [17644677]
