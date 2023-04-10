@@ -6172,3 +6172,34 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 09:41:06] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:41:07] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:41:07] INFO root fetch - main [MainThread]: Store serial: [17643958]
+[2023-04-10 09:46:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643958]
+[2023-04-10 09:46:16] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 09:46:16] WARNING root fetch - processPackages [FastMitoAssembler]: Skipping, unable to determine old version
+[2023-04-10 09:46:16] INFO root fetch - main [MainThread]: error
+[2023-04-10 09:46:16] INFO root fetch - processPackages [azure-devops-repository-archiver]: New version: [1.5.8] Old Version: [1.5.7]
+[2023-04-10 09:46:16] WARNING root fetch - processPackages [rootbox]: Skipping, unable to determine old version
+[2023-04-10 09:46:16] INFO root fetch - main [MainThread]: error
+[2023-04-10 09:46:16] INFO root fetch - processPackages [vja]: New version: [2.0.0b3] Old Version: [2.0.0b2]
+[2023-04-10 09:46:16] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-04-10 09:46:16] ERROR root fetch - processPackages [ToolCadeau]: Unable to get metadata: No such project 'ToolCadeau'
+[2023-04-10 09:46:16] INFO root fetch - main [MainThread]: error
+[2023-04-10 09:46:16] INFO root fetch - processPackages [kaflow]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 09:46:16] WARNING root fetch - processPackages [playfromtext]: Skipping, unable to determine old version
+[2023-04-10 09:46:16] INFO root fetch - main [MainThread]: error
+[2023-04-10 09:46:16] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-04-10 09:46:16] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230410/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-04-10 09:46:16] INFO root fetch - processPackages [azure-devops-repository-archiver]: Downloading https://files.pythonhosted.org/packages/bd/42/885a31bbdcd92b7a49e53df1c3154c3ab3e58d998c68d27da3db5dbda0dd/azure-devops-repository-archiver-1.5.8.tar.gz
+[2023-04-10 09:46:16] INFO root fetch - processPackages [vja]: Downloading https://files.pythonhosted.org/packages/3d/38/992fe2e6c2f126737385f0e389e0b5dee5fb80065a6cd19ac7a11b8dc5eb/vja-2.0.0b2.tar.gz
+[2023-04-10 09:46:16] INFO root fetch - processPackages [azure-devops-repository-archiver]: executing diffoscope
+[2023-04-10 09:46:16] INFO root fetch - processPackages [azure-devops-repository-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-devops-repository-archiver-1.5.7.tar.gz tmp/azure-devops-repository-archiver-1.5.8.tar.gz --markdown 20230410/a/azure-devops-repository-archiver/1.5.7-1.5.8/diff.md --exclude *.pyd
+[2023-04-10 09:46:16] INFO root fetch - processPackages [kaflow]: Downloading https://files.pythonhosted.org/packages/8e/2d/16940d0ebc3e3fa974ddaa528acfcac1f5344e3443478b044088c2974a84/kaflow-0.1.1.tar.gz
+[2023-04-10 09:46:16] INFO root fetch - processPackages [kaflow]: executing diffoscope
+[2023-04-10 09:46:16] INFO root fetch - processPackages [kaflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaflow-0.1.0.tar.gz tmp/kaflow-0.1.1.tar.gz --markdown 20230410/k/kaflow/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 09:46:17] INFO root fetch - processPackages [vja]: Downloading https://files.pythonhosted.org/packages/35/90/8a31e40ee1dc992cc0a36890f1a3acc137015abb112a78783ca64fba4208/vja-2.0.0b3.tar.gz
+[2023-04-10 09:46:17] INFO root fetch - processPackages [vja]: executing diffoscope
+[2023-04-10 09:46:17] INFO root fetch - processPackages [vja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vja-2.0.0b2.tar.gz tmp/vja-2.0.0b3.tar.gz --markdown 20230410/v/vja/2.0.0b2-2.0.0b3/diff.md --exclude *.pyd
+[2023-04-10 09:46:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:46:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:46:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:46:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:46:25] INFO root fetch - main [MainThread]: Store serial: [17643993]
