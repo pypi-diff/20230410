@@ -5365,3 +5365,37 @@ EOFError: EOF read where object expected
 [2023-04-10 08:17:04] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:17:07] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:17:07] INFO root fetch - main [MainThread]: Store serial: [17643427]
+[2023-04-10 08:22:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643427]
+[2023-04-10 08:22:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 08:22:15] INFO root fetch - processPackages [aifactory]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-04-10 08:22:15] INFO root fetch - processPackages [nautobot-tools-dd]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 08:22:15] INFO root fetch - processPackages [htmlfilesforquiz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 08:22:15] WARNING root fetch - processPackages [scikit-duplo]: Skipping, unable to determine old version
+[2023-04-10 08:22:15] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:22:15] INFO root fetch - processPackages [pgb-broker-utils]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-10 08:22:15] INFO root fetch - processPackages [odoo-addon-base-comment-template]: New version: [16.0.2.0.0.3] Old Version: [16.0.2.0.0.2]
+[2023-04-10 08:22:15] INFO root fetch - processPackages [aifactory]: executing diffoscope
+[2023-04-10 08:22:15] INFO root fetch - processPackages [aifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifactory-1.6.8.tar.gz tmp/aifactory-1.6.9.tar.gz --markdown 20230410/a/aifactory/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-04-10 08:22:15] INFO root fetch - processPackages [htmlfilesforquiz]: executing diffoscope
+[2023-04-10 08:22:15] INFO root fetch - processPackages [htmlfilesforquiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmlfilesforquiz-0.0.8.tar.gz tmp/htmlfilesforquiz-0.0.9.tar.gz --markdown 20230410/h/htmlfilesforquiz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 08:22:15] INFO root fetch - processPackages [nautobot-tools-dd]: Downloading https://files.pythonhosted.org/packages/61/38/e741d5118e404c38974ec3ab2771a886357aea087d6e44e1da0c1d5d96c3/nautobot_tools_dd-0.0.8.tar.gz
+[2023-04-10 08:22:15] INFO root fetch - processPackages [pgb-broker-utils]: Downloading https://files.pythonhosted.org/packages/2e/16/0ed7b8d05f2a44f0e1a0e9ec70aae1e803211126be25d13c57a15e1acf71/pgb_broker_utils-0.2.8.tar.gz
+[2023-04-10 08:22:16] INFO root fetch - processPackages [odoo-addon-base-comment-template]: executing diffoscope
+[2023-04-10 08:22:16] INFO root fetch - processPackages [odoo-addon-base-comment-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_comment_template-16.0.2.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_base_comment_template-16.0.2.0.0.3-py3-none-any.whl.zip --markdown 20230410/o/odoo-addon-base-comment-template/16.0.2.0.0.2-16.0.2.0.0.3/diff.md --exclude *.pyd
+[2023-04-10 08:22:16] INFO root fetch - processPackages [nautobot-tools-dd]: Downloading https://files.pythonhosted.org/packages/70/d2/be3e104cc7798aedec0ec4bc2700fef7064c45ffb7e67c1195c019ea0325/nautobot_tools_dd-0.0.9.tar.gz
+[2023-04-10 08:22:16] INFO root fetch - processPackages [pgb-broker-utils]: Downloading https://files.pythonhosted.org/packages/ce/07/51be91ecdfbae24cc02226c764836b3b5ff7e2c477d89cf16313070ce49d/pgb_broker_utils-0.2.9.tar.gz
+[2023-04-10 08:22:16] INFO root fetch - processPackages [nautobot-tools-dd]: executing diffoscope
+[2023-04-10 08:22:16] INFO root fetch - processPackages [nautobot-tools-dd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautobot_tools_dd-0.0.8.tar.gz tmp/nautobot_tools_dd-0.0.9.tar.gz --markdown 20230410/n/nautobot-tools-dd/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 08:22:16] INFO root fetch - processPackages [pgb-broker-utils]: executing diffoscope
+[2023-04-10 08:22:16] INFO root fetch - processPackages [pgb-broker-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgb_broker_utils-0.2.8.tar.gz tmp/pgb_broker_utils-0.2.9.tar.gz --markdown 20230410/p/pgb-broker-utils/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 08:22:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:22:16] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230410] Old Version: [20230409]
+[2023-04-10 08:22:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:22:16] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/13/21/140072e312b1ac4a2cddcf73da616db69a7502ddb59685dab07958d7b58c/fake-bpy-module-latest-20230410.tar.gz
+[2023-04-10 08:22:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:22:17] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-04-10 08:22:17] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230409.tar.gz tmp/fake-bpy-module-latest-20230410.tar.gz --markdown 20230410/f/fake-bpy-module-latest/20230409-20230410/diff.md --exclude *.pyd
+[2023-04-10 08:22:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:22:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:22:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:22:23] INFO root fetch - main [MainThread]: Store serial: [17643448]
