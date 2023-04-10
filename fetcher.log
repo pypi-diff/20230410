@@ -15914,3 +15914,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 23:06:04] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:06:41] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:06:41] INFO root fetch - main [MainThread]: Store serial: [17650390]
+[2023-04-10 23:11:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650390]
+[2023-04-10 23:11:48] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-10 23:11:48] INFO root fetch - processPackages [chessdisplay]: New version: [0.4] Old Version: [0.3]
+[2023-04-10 23:11:48] INFO root fetch - processPackages [use-case-registry]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-10 23:11:48] INFO root fetch - processPackages [chessdisplay]: New version: [0.4] Old Version: [0.3]
+[2023-04-10 23:11:48] INFO root fetch - processPackages [brds]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-10 23:11:48] INFO root fetch - processPackages [cross-cal-resourcesat]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-10 23:11:49] INFO root fetch - processPackages [chessdisplay]: Downloading https://files.pythonhosted.org/packages/5e/8b/2b139b5188e367bca2b33817ed50190d8cabebf1e959679a1a6649deddc1/chessdisplay-0.3-py2.py3-none-any.whl
+[2023-04-10 23:11:49] INFO root fetch - processPackages [chessdisplay]: Downloading https://files.pythonhosted.org/packages/5e/8b/2b139b5188e367bca2b33817ed50190d8cabebf1e959679a1a6649deddc1/chessdisplay-0.3-py2.py3-none-any.whl
+[2023-04-10 23:11:49] INFO root fetch - processPackages [use-case-registry]: Downloading https://files.pythonhosted.org/packages/e5/a5/d4348a8ca0922b09f0a736d6ce9d9f9dc7dddf4880596fbf9321920c3a67/use_case_registry-1.4.9.tar.gz
+[2023-04-10 23:11:49] INFO root fetch - processPackages [cross-cal-resourcesat]: Downloading https://files.pythonhosted.org/packages/e5/9c/c12886032b0c0b8a123b488176aad38d87f50145a8f80df01f619ae7389c/cross_cal_resourcesat-0.0.1.tar.gz
+[2023-04-10 23:11:49] INFO root fetch - processPackages [brds]: Downloading https://files.pythonhosted.org/packages/e6/5c/18a8321c1b2cae821976aa1fb6cefb15d921c149c634e2ef391821e7faa7/brds-0.2.3.tar.gz
+[2023-04-10 23:11:49] INFO root fetch - processPackages [use-case-registry]: executing diffoscope
+[2023-04-10 23:11:49] INFO root fetch - processPackages [use-case-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/use_case_registry-1.4.8.tar.gz tmp/use_case_registry-1.4.9.tar.gz --markdown 20230410/u/use-case-registry/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-10 23:11:49] INFO root fetch - processPackages [brds]: executing diffoscope
+[2023-04-10 23:11:49] INFO root fetch - processPackages [brds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brds-0.2.2.tar.gz tmp/brds-0.2.3.tar.gz --markdown 20230410/b/brds/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-10 23:11:49] INFO root fetch - processPackages [chessdisplay]: Downloading https://files.pythonhosted.org/packages/7a/ed/3dda582a02c5b48eed0a6deb36cf49c50029e4afb9d0bbc4042eab96e0e6/chessdisplay-0.4-py2.py3-none-any.whl
+[2023-04-10 23:11:49] INFO root fetch - processPackages [chessdisplay]: Downloading https://files.pythonhosted.org/packages/7a/ed/3dda582a02c5b48eed0a6deb36cf49c50029e4afb9d0bbc4042eab96e0e6/chessdisplay-0.4-py2.py3-none-any.whl
+[2023-04-10 23:11:49] INFO root fetch - processPackages [chessdisplay]: executing diffoscope
+[2023-04-10 23:11:49] INFO root fetch - processPackages [chessdisplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chessdisplay-0.3-py2.py3-none-any.whl.zip tmp/chessdisplay-0.4-py2.py3-none-any.whl.zip --markdown 20230410/c/chessdisplay/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-10 23:11:49] INFO root fetch - processPackages [chessdisplay]: executing diffoscope
+[2023-04-10 23:11:49] INFO root fetch - processPackages [chessdisplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chessdisplay-0.3-py2.py3-none-any.whl.zip tmp/chessdisplay-0.4-py2.py3-none-any.whl.zip --markdown 20230410/c/chessdisplay/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-10 23:11:49] INFO root fetch - processPackages [cross-cal-resourcesat]: Downloading https://files.pythonhosted.org/packages/a2/bc/601d170c9a4ff5e8642be3a5aef3d4dfcc02bcf4b0019deffd7030e00883/cross_cal_resourcesat-0.1.0.tar.gz
+[2023-04-10 23:11:49] INFO root fetch - processPackages [cross-cal-resourcesat]: executing diffoscope
+[2023-04-10 23:11:49] INFO root fetch - processPackages [cross-cal-resourcesat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cross_cal_resourcesat-0.0.1.tar.gz tmp/cross_cal_resourcesat-0.1.0.tar.gz --markdown 20230410/c/cross-cal-resourcesat/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-10 23:11:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:50] INFO root fetch - processPackages [idem]: New version: [9] Old Version: [7.6]
+[2023-04-10 23:11:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:50] INFO root fetch - processPackages [datasette-auth-osm]: New version: [0.2] Old Version: [0.1]
+[2023-04-10 23:11:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:50] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-10 23:11:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:50] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 23:11:50] INFO root fetch - processPackages [datasette-auth-osm]: Downloading https://files.pythonhosted.org/packages/05/8f/71c90b4adb88bd8e76f915e9417558599b0726ed94bca60f014b545775be/datasette-auth-osm-0.1.tar.gz
+[2023-04-10 23:11:50] INFO root fetch - processPackages [idem]: executing diffoscope
+[2023-04-10 23:11:50] INFO root fetch - processPackages [idem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idem-7.6.tar.gz tmp/idem-9.tar.gz --markdown 20230410/i/idem/7.6-9/diff.md --exclude *.pyd
+[2023-04-10 23:11:51] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-10 23:11:51] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.1.tar.gz tmp/gpt_gateway-0.0.2.tar.gz --markdown 20230410/g/gpt-gateway/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 23:11:51] INFO root fetch - processPackages [pureml]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-10 23:11:51] INFO root fetch - processPackages [datasette-auth-osm]: Downloading https://files.pythonhosted.org/packages/c3/06/c73c81ee583e2759dd63e89fc22554e72f201eecbed5da340e8e20bae2c8/datasette-auth-osm-0.2.tar.gz
+[2023-04-10 23:11:51] INFO root fetch - processPackages [quantconnect-stubs]: Downloading https://files.pythonhosted.org/packages/c1/05/f15c16a3f852decfd032ce1688dfdf02fd7289f1780742453533e8c55209/quantconnect-stubs-9997.tar.gz
+[2023-04-10 23:11:51] INFO root fetch - processPackages [datasette-auth-osm]: executing diffoscope
+[2023-04-10 23:11:51] INFO root fetch - processPackages [datasette-auth-osm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette-auth-osm-0.1.tar.gz tmp/datasette-auth-osm-0.2.tar.gz --markdown 20230410/d/datasette-auth-osm/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-10 23:11:51] INFO root fetch - processPackages [pureml]: Downloading https://files.pythonhosted.org/packages/c3/c5/2e53ad2d28fd32dc6b40c84a84406dd7b34f042b7b556a49a85eb25ccf35/pureml-0.3.2.tar.gz
+[2023-04-10 23:11:51] INFO root fetch - processPackages [pureml]: executing diffoscope
+[2023-04-10 23:11:51] INFO root fetch - processPackages [pureml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pureml-0.3.1.tar.gz tmp/pureml-0.3.2.tar.gz --markdown 20230410/p/pureml/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-10 23:11:52] INFO root fetch - processPackages [quantconnect-stubs]: Downloading https://files.pythonhosted.org/packages/b7/4c/71e6bb724f14efcd8865f2aa692528a4c45877c58f5cf8c964a8e0fc0e74/quantconnect-stubs-9998.tar.gz
+[2023-04-10 23:11:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:52] INFO root fetch - processPackages [trainerbase]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-04-10 23:11:52] INFO root fetch - processPackages [relation-validator]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-10 23:11:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:52] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2023-04-10 23:11:52] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainerBase-2.9.0.tar.gz tmp/TrainerBase-2.9.1.tar.gz --markdown 20230410/t/trainerbase/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-04-10 23:11:52] INFO root fetch - processPackages [relation-validator]: Downloading https://files.pythonhosted.org/packages/47/ba/9f1be33af6ed7555c5eaf91e3dd0744eb1b1c1e664e7cb41fb0c8abf55ff/relation_validator-0.1.0.tar.gz
+[2023-04-10 23:11:52] INFO root fetch - processPackages [relation-validator]: Downloading https://files.pythonhosted.org/packages/d5/22/a8c3d57632eded84ed3b25d081254e7e9902c9d160a0e2b5dfeb2b75301b/relation_validator-0.2.0.tar.gz
+[2023-04-10 23:11:53] INFO root fetch - processPackages [relation-validator]: executing diffoscope
+[2023-04-10 23:11:53] INFO root fetch - processPackages [relation-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relation_validator-0.1.0.tar.gz tmp/relation_validator-0.2.0.tar.gz --markdown 20230410/r/relation-validator/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 23:11:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:53] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-10 23:11:53] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230410/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-10 23:11:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:11:58] INFO root fetch - main [MainThread]: Store serial: [17650478]
