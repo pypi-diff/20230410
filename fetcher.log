@@ -12134,3 +12134,98 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 17:59:41] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:59:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:59:42] INFO root fetch - main [MainThread]: Store serial: [17647609]
+[2023-04-10 18:04:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647609]
+[2023-04-10 18:04:50] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-10 18:04:50] INFO root fetch - processPackages [columbus]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-10 18:04:50] INFO root fetch - processPackages [basic-pitch]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-10 18:04:50] WARNING root fetch - processPackages [deployment-jmsierra-prueba]: Skipping, unable to determine old version
+[2023-04-10 18:04:50] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:04:50] WARNING root fetch - processPackages [amarese-hello]: Skipping, unable to determine old version
+[2023-04-10 18:04:50] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:04:50] INFO root fetch - processPackages [py-avro-schema]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-10 18:04:50] INFO root fetch - processPackages [rust-statespace]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-10 18:04:50] INFO root fetch - processPackages [kin]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-10 18:04:50] INFO root fetch - processPackages [columbus]: Downloading https://files.pythonhosted.org/packages/f9/e9/af9388e0ca2c5f6b22c40046e976a5b06f2f9329bdf9ecb89e5ee1ac19d9/columbus-0.1.6.tar.gz
+[2023-04-10 18:04:50] INFO root fetch - processPackages [basic-pitch]: Downloading https://files.pythonhosted.org/packages/a5/04/b2e5e50da65030f5f0c4b50be307632d32e8067a76ab3d1d24ca7d03788c/basic-pitch-0.2.3.tar.gz
+[2023-04-10 18:04:50] INFO root fetch - processPackages [kin]: Downloading https://files.pythonhosted.org/packages/39/88/24594655d597eaf9972c221636ca307266309473055d549e26acb531e0aa/kin-2.1.1.tar.gz
+[2023-04-10 18:04:50] INFO root fetch - processPackages [rust-statespace]: Downloading https://files.pythonhosted.org/packages/3b/33/d0ecaef668cd00a8443a0f9c85290db73be401ed22057b46593108479968/rust_statespace-0.1.4.tar.gz
+[2023-04-10 18:04:50] INFO root fetch - processPackages [rust-statespace]: executing diffoscope
+[2023-04-10 18:04:50] INFO root fetch - processPackages [rust-statespace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rust_statespace-0.1.3.tar.gz tmp/rust_statespace-0.1.4.tar.gz --markdown 20230410/r/rust-statespace/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-10 18:04:50] INFO root fetch - processPackages [columbus]: Downloading https://files.pythonhosted.org/packages/be/63/8e9f3b349e4158c2c78fccc2a0cc2cb261bcc28307f167655e5f95170846/columbus-0.1.7.tar.gz
+[2023-04-10 18:04:50] INFO root fetch - processPackages [py-avro-schema]: Downloading https://files.pythonhosted.org/packages/b4/93/d2bf183add298589e5049977cc502923bd7be1c513b276519d2d458aad55/py-avro-schema-2.0.1.tar.gz
+[2023-04-10 18:04:50] INFO root fetch - processPackages [kin]: Downloading https://files.pythonhosted.org/packages/82/7f/432656a09f26264719cd5d0739bf58ad3b702b915910972aa031cafff039/kin-2.1.2.tar.gz
+[2023-04-10 18:04:50] INFO root fetch - processPackages [columbus]: executing diffoscope
+[2023-04-10 18:04:50] INFO root fetch - processPackages [columbus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/columbus-0.1.6.tar.gz tmp/columbus-0.1.7.tar.gz --markdown 20230410/c/columbus/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-10 18:04:50] INFO root fetch - processPackages [kin]: executing diffoscope
+[2023-04-10 18:04:50] INFO root fetch - processPackages [kin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kin-2.1.1.tar.gz tmp/kin-2.1.2.tar.gz --markdown 20230410/k/kin/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-10 18:04:51] INFO root fetch - processPackages [py-avro-schema]: Downloading https://files.pythonhosted.org/packages/85/e4/4ec82920bff734cdd7efce997af315ad2c0a05fc02978c4a5c1d6f626a4e/py-avro-schema-2.0.2.tar.gz
+[2023-04-10 18:04:51] INFO root fetch - processPackages [py-avro-schema]: executing diffoscope
+[2023-04-10 18:04:51] INFO root fetch - processPackages [py-avro-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-avro-schema-2.0.1.tar.gz tmp/py-avro-schema-2.0.2.tar.gz --markdown 20230410/p/py-avro-schema/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-10 18:04:51] INFO root fetch - processPackages [basic-pitch]: Downloading https://files.pythonhosted.org/packages/b7/32/7438cb656137a1bbd9a6e5fba6abd031bbd09de6fd561f8203d87c28e531/basic-pitch-0.2.4.tar.gz
+[2023-04-10 18:04:51] INFO root fetch - processPackages [basic-pitch]: executing diffoscope
+[2023-04-10 18:04:51] INFO root fetch - processPackages [basic-pitch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basic-pitch-0.2.3.tar.gz tmp/basic-pitch-0.2.4.tar.gz --markdown 20230410/b/basic-pitch/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-10 18:04:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:51] WARNING root fetch - processPackages [nightingaleews]: Skipping, unable to determine old version
+[2023-04-10 18:04:51] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:04:51] INFO root fetch - processPackages [xdat]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-10 18:04:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:51] INFO root fetch - processPackages [amazon-braket-algorithm-library]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-10 18:04:52] INFO root fetch - processPackages [amazon-braket-algorithm-library]: Downloading https://files.pythonhosted.org/packages/3b/cb/844be0dcbceb26ebfffe07c732852661eea5721213501268d30df4b61fbc/amazon-braket-algorithm-library-1.3.0.tar.gz
+[2023-04-10 18:04:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:52] INFO root fetch - processPackages [graphein]: New version: [1.7.0] Old Version: [1.6.0]
+[2023-04-10 18:04:52] INFO root fetch - processPackages [xdat]: executing diffoscope
+[2023-04-10 18:04:52] INFO root fetch - processPackages [xdat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdat-0.1.98.tar.gz tmp/xdat-0.1.99.tar.gz --markdown 20230410/x/xdat/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-10 18:04:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:52] WARNING root fetch - processPackages [ewuohia123]: Skipping, unable to determine old version
+[2023-04-10 18:04:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:04:52] INFO root fetch - processPackages [graphein]: Downloading https://files.pythonhosted.org/packages/c3/31/044538dea617f3c1c1fb9f9a00fb6d2c1960aebb3a3db279c4cda5ad9930/graphein-1.6.0.tar.gz
+[2023-04-10 18:04:52] INFO root fetch - processPackages [amazon-braket-algorithm-library]: Downloading https://files.pythonhosted.org/packages/ba/2f/3e965878b6bd0c38d2be054a9be95336a0580854adb7d552bbd1c6865484/amazon-braket-algorithm-library-1.3.1.tar.gz
+[2023-04-10 18:04:52] INFO root fetch - processPackages [amazon-braket-algorithm-library]: executing diffoscope
+[2023-04-10 18:04:52] INFO root fetch - processPackages [amazon-braket-algorithm-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-braket-algorithm-library-1.3.0.tar.gz tmp/amazon-braket-algorithm-library-1.3.1.tar.gz --markdown 20230410/a/amazon-braket-algorithm-library/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-10 18:04:52] INFO root fetch - processPackages [meerkat-ml]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-10 18:04:52] INFO root fetch - processPackages [meerkat-ml]: Downloading https://files.pythonhosted.org/packages/8a/2e/37724d9e2b781351fd2c0185838a66236e69f9adb233792da37ec770c088/meerkat-ml-0.4.6.tar.gz
+[2023-04-10 18:04:52] INFO root fetch - processPackages [graphein]: Downloading https://files.pythonhosted.org/packages/a7/be/af71315a7518c5041fcbf81c0bc2d61dcca01ca9e7d7c5bed0c88945e5c4/graphein-1.7.0.tar.gz
+[2023-04-10 18:04:53] INFO root fetch - processPackages [graphein]: executing diffoscope
+[2023-04-10 18:04:53] INFO root fetch - processPackages [graphein]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphein-1.6.0.tar.gz tmp/graphein-1.7.0.tar.gz --markdown 20230410/g/graphein/1.6.0-1.7.0/diff.md --exclude *.pyd
+[2023-04-10 18:04:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:53] INFO root fetch - processPackages [botsh]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-10 18:04:53] INFO root fetch - processPackages [botsh]: Downloading https://files.pythonhosted.org/packages/e2/3d/ba2240b239dc7a33116f2537acaaa1944a77b195474fcc325efa7996ba5f/botsh-0.1.3.tar.gz
+[2023-04-10 18:04:53] INFO root fetch - processPackages [botsh]: executing diffoscope
+[2023-04-10 18:04:53] INFO root fetch - processPackages [botsh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botsh-0.1.2.tar.gz tmp/botsh-0.1.3.tar.gz --markdown 20230410/b/botsh/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-10 18:04:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:53] INFO root fetch - processPackages [columbus]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-10 18:04:53] INFO root fetch - processPackages [columbus]: executing diffoscope
+[2023-04-10 18:04:53] INFO root fetch - processPackages [columbus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/columbus-0.1.6.tar.gz tmp/columbus-0.1.7.tar.gz --markdown 20230410/c/columbus/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-10 18:04:53] INFO root fetch - processPackages [meerkat-ml]: Downloading https://files.pythonhosted.org/packages/d3/b2/536ba68326a07bdda43dc44cfd64f482e713cdb172bda55224bd75fcb82a/meerkat-ml-0.4.7.tar.gz
+[2023-04-10 18:04:54] INFO root fetch - processPackages [meerkat-ml]: executing diffoscope
+[2023-04-10 18:04:54] INFO root fetch - processPackages [meerkat-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meerkat-ml-0.4.6.tar.gz tmp/meerkat-ml-0.4.7.tar.gz --markdown 20230410/m/meerkat-ml/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-10 18:04:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:54] ERROR root fetch - processPackages [randgenlib]: Unable to get metadata: No such project 'randgenlib'
+[2023-04-10 18:04:54] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:04:54] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-10 18:04:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:54] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-10 18:04:55] INFO root fetch - processPackages [notification-service-nightly]: Downloading https://files.pythonhosted.org/packages/ce/0f/f3ab9a91cd48947bfe4b2fdc37e1a4b0ab941ee56b38fbd9bc94809467e3/notification_service_nightly-2023.4.9.tar.gz
+[2023-04-10 18:04:55] INFO root fetch - processPackages [ai-flow-nightly]: Downloading https://files.pythonhosted.org/packages/4b/a1/5d1dbe596641bcb245726409f9036baf5c33f804612443987da582853c57/ai_flow_nightly-2023.4.9.tar.gz
+[2023-04-10 18:04:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:55] ERROR root fetch - processPackages [scalable-pypeline]: Unable to get metadata: No such project 'scalable-pypeline'
+[2023-04-10 18:04:55] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:04:55] INFO root fetch - processPackages [griffe]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 18:04:55] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-04-10 18:04:55] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.4.8.tar.gz tmp/notification_service_nightly-2023.4.9.tar.gz --markdown 20230410/n/notification-service-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-10 18:04:55] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-04-10 18:04:55] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.4.8.tar.gz tmp/ai_flow_nightly-2023.4.9.tar.gz --markdown 20230410/a/ai-flow-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-10 18:04:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:55] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-10 18:04:55] INFO root fetch - processPackages [griffe]: Downloading https://files.pythonhosted.org/packages/32/dd/bc07e7e6b53772e9c44c34a18ca7e4ceb99b58bfb2c2f72f7913e3f0d303/griffe-0.8.0.tar.gz
+[2023-04-10 18:04:55] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-10 18:04:55] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230410/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-10 18:04:55] INFO root fetch - processPackages [griffe]: Downloading https://files.pythonhosted.org/packages/97/67/6905162d0aeccc0a65143c6fda9d6510d04561725f6df7df71457a053c3d/griffe-0.9.0.tar.gz
+[2023-04-10 18:04:56] INFO root fetch - processPackages [griffe]: executing diffoscope
+[2023-04-10 18:04:56] INFO root fetch - processPackages [griffe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffe-0.8.0.tar.gz tmp/griffe-0.9.0.tar.gz --markdown 20230410/g/griffe/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 18:04:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:04:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:05:00] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:05:00] INFO root fetch - main [MainThread]: Store serial: [17647680]
