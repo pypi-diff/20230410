@@ -7374,3 +7374,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 11:44:44] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:44:45] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:44:45] INFO root fetch - main [MainThread]: Store serial: [17644784]
+[2023-04-10 11:49:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644784]
+[2023-04-10 11:49:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 11:49:52] INFO root fetch - processPackages [PyStorCLI2]: New version: [0.6.1.dev6] Old Version: [0.6.0]
+[2023-04-10 11:49:52] WARNING root fetch - processPackages [asas-egb]: Skipping, unable to determine old version
+[2023-04-10 11:49:52] INFO root fetch - processPackages [skinport.py]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-10 11:49:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 11:49:52] INFO root fetch - processPackages [czthry]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-10 11:49:52] INFO root fetch - processPackages [napari-sam]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 11:49:52] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-10 11:49:52] INFO root fetch - processPackages [czthry]: Downloading https://files.pythonhosted.org/packages/6a/55/aa61a50d8c0463bdd17b19edad63b204f5beeed97a071597b8fc62d709d8/czthry-0.0.7.tar.gz
+[2023-04-10 11:49:52] INFO root fetch - processPackages [PyStorCLI2]: Downloading https://files.pythonhosted.org/packages/68/0b/44c8b444eeb7ff3e707825eb66c2de4bc4af4936ec167d93022e18c37ac2/PyStorCLI2-0.6.0.tar.gz
+[2023-04-10 11:49:52] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-10 11:49:52] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230410/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-10 11:49:52] INFO root fetch - processPackages [skinport.py]: Downloading https://files.pythonhosted.org/packages/f1/69/71e2e14f8d91039451aca784c0bbb797cd347b262b83dfb8e3c7519ea6d6/skinport.py-0.8.0.tar.gz
+[2023-04-10 11:49:52] INFO root fetch - processPackages [napari-sam]: Downloading https://files.pythonhosted.org/packages/2e/a7/022ecc18a24368b1ee68a2bf9c98c0fa9d77d0a5be8f4cc5ac89c69e5797/napari-sam-0.2.2.tar.gz
+[2023-04-10 11:49:52] INFO root fetch - processPackages [skinport.py]: executing diffoscope
+[2023-04-10 11:49:52] INFO root fetch - processPackages [skinport.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skinport.py-0.7.0.tar.gz tmp/skinport.py-0.8.0.tar.gz --markdown 20230410/s/skinport.py/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-10 11:49:52] INFO root fetch - processPackages [napari-sam]: executing diffoscope
+[2023-04-10 11:49:52] INFO root fetch - processPackages [napari-sam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-sam-0.2.1.tar.gz tmp/napari-sam-0.2.2.tar.gz --markdown 20230410/n/napari-sam/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 11:49:53] INFO root fetch - processPackages [PyStorCLI2]: Downloading https://files.pythonhosted.org/packages/34/ad/f5c5cd1af4d2baef37ac0f25c8af44fa0f7f06b9d7c9d9766bb8ad58ac1f/PyStorCLI2-0.6.1.dev6.tar.gz
+[2023-04-10 11:49:53] INFO root fetch - processPackages [czthry]: Downloading https://files.pythonhosted.org/packages/29/a6/3b677a7916d25eb5ea7599fe4e6c74da36ce5cbc913fe131950dc876472e/czthry-0.0.9.tar.gz
+[2023-04-10 11:49:53] INFO root fetch - processPackages [czthry]: executing diffoscope
+[2023-04-10 11:49:53] INFO root fetch - processPackages [czthry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czthry-0.0.7.tar.gz tmp/czthry-0.0.9.tar.gz --markdown 20230410/c/czthry/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 11:49:53] INFO root fetch - processPackages [PyStorCLI2]: executing diffoscope
+[2023-04-10 11:49:53] INFO root fetch - processPackages [PyStorCLI2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyStorCLI2-0.6.0.tar.gz tmp/PyStorCLI2-0.6.1.dev6.tar.gz --markdown 20230410/P/PyStorCLI2/0.6.0-0.6.1.dev6/diff.md --exclude *.pyd
+[2023-04-10 11:49:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:49:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:49:54] INFO root fetch - processPackages [baselib]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-10 11:49:54] INFO root fetch - processPackages [baselib]: executing diffoscope
+[2023-04-10 11:49:54] INFO root fetch - processPackages [baselib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baselib-1.0.6.tar.gz tmp/baselib-1.0.7.tar.gz --markdown 20230410/b/baselib/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-10 11:49:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:49:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:49:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:50:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:50:32] INFO root fetch - main [MainThread]: Store serial: [17644808]
