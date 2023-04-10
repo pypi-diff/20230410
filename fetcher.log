@@ -1529,3 +1529,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-10 03:08:29] INFO root fetch - processPackages [mofdb-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mofdb_client-0.8.0.tar.gz tmp/mofdb_client-0.9.0.tar.gz --markdown 20230410/m/mofdb-client/0.8.0-0.9.0/diff.md --exclude *.pyd
 [2023-04-10 03:08:30] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:08:30] INFO root fetch - main [MainThread]: Store serial: [17640934]
+[2023-04-10 03:13:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640934]
+[2023-04-10 03:13:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 03:13:37] INFO root fetch - processPackages [robotslacker-testcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 03:13:37] WARNING root fetch - processPackages [enprog]: Skipping, unable to determine old version
+[2023-04-10 03:13:37] INFO root fetch - main [MainThread]: error
+[2023-04-10 03:13:37] INFO root fetch - processPackages [hx-requests]: New version: [0.8.0] Old Version: [0.7.2]
+[2023-04-10 03:13:37] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-10 03:13:37] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-10 03:13:37] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-04-10 03:13:37] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230410/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-10 03:13:37] INFO root fetch - processPackages [robotslacker-testcli]: Downloading https://files.pythonhosted.org/packages/57/71/45cf11c2c66e7969006d17b79832678705ed38a0df644acf7ca1110f208b/robotslacker-testcli-0.0.8.tar.gz
+[2023-04-10 03:13:37] INFO root fetch - processPackages [hx-requests]: Downloading https://files.pythonhosted.org/packages/3a/66/abe3611c9a7b331352d0d584b6cb03b625bec10e97ea4d64a76fa90a7369/hx_requests-0.8.0.tar.gz
+[2023-04-10 03:13:37] INFO root fetch - processPackages [hx-requests]: executing diffoscope
+[2023-04-10 03:13:37] INFO root fetch - processPackages [hx-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hx_requests-0.7.2.tar.gz tmp/hx_requests-0.8.0.tar.gz --markdown 20230410/h/hx-requests/0.7.2-0.8.0/diff.md --exclude *.pyd
+[2023-04-10 03:13:38] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.7.1.9.dev202304101681056266] Old Version: [1.7.1.9.dev202304091680456188]
+[2023-04-10 03:13:38] INFO root fetch - processPackages [pepperize.cdk-organizations]: Downloading https://files.pythonhosted.org/packages/c4/ec/fa2c14031b7b9ce22e4b044c652dd13a1a81769141fcd90e55c9eeb24d66/pepperize.cdk-organizations-0.7.98.tar.gz
+[2023-04-10 03:13:38] INFO root fetch - processPackages [pepperize.cdk-organizations]: Downloading https://files.pythonhosted.org/packages/12/45/1106cc30844f7f4d96f7898a6ef3647d24a597c297bab995920a5915750e/pepperize.cdk-organizations-0.7.99.tar.gz
+[2023-04-10 03:13:38] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-04-10 03:13:38] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230410/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-10 03:13:38] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/f6/11/d7f6fed8561d9ac4127a327b2065d01925825c3580549f6d9eca7a8aacc1/pyAgrum_nightly-1.7.1.9.dev202304101681056266-cp39-cp39-win_amd64.whl
+[2023-04-10 03:13:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:13:38] INFO root fetch - processPackages [xj-thread]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-10 03:13:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:13:39] INFO root fetch - processPackages [pyecharts]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-10 03:13:39] INFO root fetch - processPackages [xj-thread]: Downloading https://files.pythonhosted.org/packages/d0/40/892813003a2b082a6e0c2667824534711f1cf8fdfc940df20ba978459e48/xj_thread-1.2.98.tar.gz
+[2023-04-10 03:13:39] INFO root fetch - processPackages [pyecharts]: Downloading https://files.pythonhosted.org/packages/93/cd/25c15f8df7e433cce6172e5528921cc74e76635e83c310a14673d726717e/pyecharts-2.0.2.tar.gz
+[2023-04-10 03:13:39] INFO root fetch - processPackages [xj-thread]: Downloading https://files.pythonhosted.org/packages/fc/75/4ed5778921ea61c4cdd8fe2c5f8b0a37873dc9cc5b9f507a3240f0380e69/xj_thread-1.2.99.tar.gz
+[2023-04-10 03:13:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:13:39] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-04-10 03:13:39] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.7.1.9.dev202304091680456188-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.7.1.9.dev202304101681056266-cp39-cp39-win_amd64.whl.zip --markdown 20230410/p/pyagrum-nightly/1.7.1.9.dev202304091680456188-1.7.1.9.dev202304101681056266/diff.md --exclude *.pyd
+[2023-04-10 03:13:39] INFO root fetch - processPackages [xj-thread]: executing diffoscope
+[2023-04-10 03:13:39] INFO root fetch - processPackages [xj-thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_thread-1.2.98.tar.gz tmp/xj_thread-1.2.99.tar.gz --markdown 20230410/x/xj-thread/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-10 03:13:39] INFO root fetch - processPackages [pyecharts]: Downloading https://files.pythonhosted.org/packages/26/d6/013a1be22a0dc419566d6bd1b6fa019afc30377205816f76494a30846042/pyecharts-2.0.3.tar.gz
+[2023-04-10 03:13:40] INFO root fetch - processPackages [pyecharts]: executing diffoscope
+[2023-04-10 03:13:40] INFO root fetch - processPackages [pyecharts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyecharts-2.0.2.tar.gz tmp/pyecharts-2.0.3.tar.gz --markdown 20230410/p/pyecharts/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-10 03:13:40] INFO root fetch - processPackages [robotslacker-testcli]: Downloading https://files.pythonhosted.org/packages/49/c7/4e9f25562dae606566643edd46e0c7fdfcb015dd742780c7eeb381d4ae43/robotslacker-testcli-0.0.9.tar.gz
+[2023-04-10 03:13:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:13:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:13:42] INFO root fetch - processPackages [robotslacker-testcli]: executing diffoscope
+[2023-04-10 03:13:42] INFO root fetch - processPackages [robotslacker-testcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotslacker-testcli-0.0.8.tar.gz tmp/robotslacker-testcli-0.0.9.tar.gz --markdown 20230410/r/robotslacker-testcli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 03:13:42] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:13:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:13:45] INFO root fetch - main [MainThread]: Store serial: [17640979]
