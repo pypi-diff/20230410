@@ -4422,3 +4422,40 @@ EOFError: EOF read where object expected
 [2023-04-10 06:06:35] INFO root fetch - main [MainThread]: success
 [2023-04-10 06:06:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 06:06:36] INFO root fetch - main [MainThread]: Store serial: [17642648]
+[2023-04-10 06:11:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642648]
+[2023-04-10 06:11:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 06:11:43] WARNING root fetch - processPackages [dashboard-dataviz-project]: Skipping, unable to determine old version
+[2023-04-10 06:11:43] INFO root fetch - processPackages [thompcoutils]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-10 06:11:43] INFO root fetch - main [MainThread]: error
+[2023-04-10 06:11:43] INFO root fetch - processPackages [aiotruenas-client]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 06:11:43] INFO root fetch - processPackages [tvault]: New version: [0.2.7] Old Version: [0.2.5]
+[2023-04-10 06:11:43] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-04-10 06:11:43] INFO root fetch - processPackages [pyntone]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-10 06:11:43] INFO root fetch - processPackages [thompcoutils]: Downloading https://files.pythonhosted.org/packages/a1/76/0ffc0d2945ab3d83891291a2ee338ba735e3497b0c35e3df6f05dc8d3187/thompcoutils-2.0.8.tar.gz
+[2023-04-10 06:11:43] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/99/79/43905be2e41628a4fcaa35d92d788e3c23e667eca088e0516db977aab196/tvault-0.2.7-py3-none-any.whl
+[2023-04-10 06:11:43] INFO root fetch - processPackages [pyntone]: Downloading https://files.pythonhosted.org/packages/44/30/c4508d58f1da31a4d0947aae59dd517bbd5b1819381230a7b0a790ce593f/pyntone-0.0.4.tar.gz
+[2023-04-10 06:11:43] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/e4/dd/d13aa44836c07ae7a6d90a99daf3e006d8d592f634183afeb7c4bec560c4/symbolicmode-0.9.7.tar.gz
+[2023-04-10 06:11:43] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-10 06:11:43] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.2.5-py3-none-any.whl.zip tmp/tvault-0.2.7-py3-none-any.whl.zip --markdown 20230410/t/tvault/0.2.5-0.2.7/diff.md --exclude *.pyd
+[2023-04-10 06:11:43] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-10 06:11:43] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.6.tar.gz tmp/symbolicmode-0.9.7.tar.gz --markdown 20230410/s/symbolicmode/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-04-10 06:11:44] INFO root fetch - processPackages [aiotruenas-client]: executing diffoscope
+[2023-04-10 06:11:44] INFO root fetch - processPackages [aiotruenas-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotruenas-client-0.8.0.tar.gz tmp/aiotruenas-client-0.9.0.tar.gz --markdown 20230410/a/aiotruenas-client/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 06:11:44] INFO root fetch - processPackages [pyntone]: Downloading https://files.pythonhosted.org/packages/51/4f/277342585481bfddd9fb88ac0772c86569a413fc17c76dd81de1f43d69f1/pyntone-0.1.0.tar.gz
+[2023-04-10 06:11:44] INFO root fetch - processPackages [pyntone]: executing diffoscope
+[2023-04-10 06:11:44] INFO root fetch - processPackages [pyntone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyntone-0.0.4.tar.gz tmp/pyntone-0.1.0.tar.gz --markdown 20230410/p/pyntone/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-10 06:11:44] INFO root fetch - processPackages [thompcoutils]: Downloading https://files.pythonhosted.org/packages/a0/ef/09b9ca7be6cb42ea4d065a916e81a4256f3099df2b7c11285e7ebbace2ff/thompcoutils-2.0.9.tar.gz
+[2023-04-10 06:11:44] INFO root fetch - processPackages [thompcoutils]: executing diffoscope
+[2023-04-10 06:11:44] INFO root fetch - processPackages [thompcoutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thompcoutils-2.0.8.tar.gz tmp/thompcoutils-2.0.9.tar.gz --markdown 20230410/t/thompcoutils/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-10 06:11:44] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:11:45] INFO root fetch - processPackages [azure-devops-repository-archiver]: New version: [1.5.7] Old Version: [1.5.6]
+[2023-04-10 06:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:11:45] INFO root fetch - processPackages [azure-devops-repository-archiver]: Downloading https://files.pythonhosted.org/packages/46/04/056c6ed0cd7f434fd0b9ffa35077b7f914d928ae5da6994f1f5d6b21c20c/azure-devops-repository-archiver-1.5.6.tar.gz
+[2023-04-10 06:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:11:45] INFO root fetch - processPackages [azure-devops-repository-archiver]: Downloading https://files.pythonhosted.org/packages/51/b5/c0d52ea21c6b8f57f5f030139104f6eb70f7aa35e8edeb529105e23b80e8/azure-devops-repository-archiver-1.5.7.tar.gz
+[2023-04-10 06:11:45] INFO root fetch - processPackages [azure-devops-repository-archiver]: executing diffoscope
+[2023-04-10 06:11:45] INFO root fetch - processPackages [azure-devops-repository-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-devops-repository-archiver-1.5.6.tar.gz tmp/azure-devops-repository-archiver-1.5.7.tar.gz --markdown 20230410/a/azure-devops-repository-archiver/1.5.6-1.5.7/diff.md --exclude *.pyd
+[2023-04-10 06:11:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:11:47] INFO root fetch - main [MainThread]: Store serial: [17642683]
