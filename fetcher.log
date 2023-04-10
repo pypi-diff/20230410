@@ -6239,3 +6239,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 09:51:35] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:51:48] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:51:48] INFO root fetch - main [MainThread]: Store serial: [17644024]
+[2023-04-10 09:56:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644024]
+[2023-04-10 09:57:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-10 09:57:00] WARNING root fetch - processPackages [local-pipeline-lib]: Skipping, unable to determine old version
+[2023-04-10 09:57:00] INFO root fetch - main [MainThread]: error
+[2023-04-10 09:57:00] INFO root fetch - processPackages [requests-toolkit-stable]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-10 09:57:00] INFO root fetch - processPackages [sos-ansible]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-10 09:57:00] INFO root fetch - processPackages [requests-toolkit-stable]: executing diffoscope
+[2023-04-10 09:57:00] INFO root fetch - processPackages [requests-toolkit-stable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requests-toolkit-stable-0.9.1.tar.gz tmp/requests-toolkit-stable-0.9.2.tar.gz --markdown 20230410/r/requests-toolkit-stable/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-10 09:57:00] INFO root fetch - processPackages [sos-ansible]: Downloading https://files.pythonhosted.org/packages/53/72/166c00761a27eb504cff0c3b726be062f56b15a140921d1cf11969627935/sos_ansible-1.0.2.tar.gz
+[2023-04-10 09:57:00] INFO root fetch - processPackages [sos-ansible]: Downloading https://files.pythonhosted.org/packages/0a/0c/651e2f941f78796cf5f43510ba330f8e7b5bcefaa8457d4303a63f411d1f/sos_ansible-1.0.3.tar.gz
+[2023-04-10 09:57:00] INFO root fetch - processPackages [sos-ansible]: executing diffoscope
+[2023-04-10 09:57:00] INFO root fetch - processPackages [sos-ansible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sos_ansible-1.0.2.tar.gz tmp/sos_ansible-1.0.3.tar.gz --markdown 20230410/s/sos-ansible/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-10 09:57:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:57:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:57:02] INFO root fetch - main [MainThread]: Store serial: [17644035]
