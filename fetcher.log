@@ -4963,3 +4963,20 @@ EOFError: EOF read where object expected
 [2023-04-10 07:14:39] INFO root fetch - main [MainThread]: success
 [2023-04-10 07:14:40] INFO root fetch - main [MainThread]: success
 [2023-04-10 07:14:40] INFO root fetch - main [MainThread]: Store serial: [17643045]
+[2023-04-10 07:19:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643045]
+[2023-04-10 07:19:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-10 07:19:47] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.0.9.dev20230323] Old Version: [0.0.9.dev20230322]
+[2023-04-10 07:19:47] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 07:19:47] INFO root fetch - processPackages [langchain-utils]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-10 07:19:47] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-04-10 07:19:47] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.0.9.dev20230322.tar.gz tmp/rapidpe_rift_pipe-0.0.9.dev20230323.tar.gz --markdown 20230410/r/rapidpe-rift-pipe/0.0.9.dev20230322-0.0.9.dev20230323/diff.md --exclude *.pyd
+[2023-04-10 07:19:47] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/b8/7c/79f6880059e4fff3fd57eb492196a1997317bcc33574a7c114165f062aae/langchain_utils-0.1.8.tar.gz
+[2023-04-10 07:19:48] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: Downloading https://files.pythonhosted.org/packages/a4/60/a926bd119bbb53d9515f76f7a5e0a205a859617088dfdfd1ff17c023fca1/nonebot_plugin_pokemonfusion-1.0.4.tar.gz
+[2023-04-10 07:19:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:19:49] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: executing diffoscope
+[2023-04-10 07:19:49] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_pokemonfusion-1.0.3.tar.gz tmp/nonebot_plugin_pokemonfusion-1.0.4.tar.gz --markdown 20230410/n/nonebot-plugin-pokemonfusion/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-10 07:19:49] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-10 07:19:49] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.1.7.tar.gz tmp/langchain_utils-0.1.8.tar.gz --markdown 20230410/l/langchain-utils/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-10 07:19:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:19:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:19:50] INFO root fetch - main [MainThread]: Store serial: [17643056]
