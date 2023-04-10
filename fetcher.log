@@ -6254,3 +6254,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 09:57:01] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:57:02] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:57:02] INFO root fetch - main [MainThread]: Store serial: [17644035]
+[2023-04-10 10:02:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644035]
+[2023-04-10 10:02:09] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 10:02:09] INFO root fetch - processPackages [edman]: New version: [2023.4.5] Old Version: [2023.4.10]
+[2023-04-10 10:02:09] INFO root fetch - processPackages [balance]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-10 10:02:09] WARNING root fetch - processPackages [chemotools]: Skipping, unable to determine old version
+[2023-04-10 10:02:09] INFO root fetch - main [MainThread]: error
+[2023-04-10 10:02:09] INFO root fetch - processPackages [dfimagetools]: New version: [20230410] Old Version: [20230409]
+[2023-04-10 10:02:09] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-10 10:02:09] INFO root fetch - processPackages [injective-py]: New version: [0.6.1.2] Old Version: [0.6.1.1]
+[2023-04-10 10:02:09] INFO root fetch - processPackages [edman]: Downloading https://files.pythonhosted.org/packages/fe/0c/c824aa10262f053970daf897726eae5e80e44f2350e80a86ba55aa664980/edman-2023.4.10.tar.gz
+[2023-04-10 10:02:09] INFO root fetch - processPackages [dfimagetools]: Downloading https://files.pythonhosted.org/packages/5d/a3/aaa5c812e4d8a82c090bf69c5c96e502a0bc27a16fe3ffe18d7c0c1230bb/dfimagetools-20230410.tar.gz
+[2023-04-10 10:02:09] INFO root fetch - processPackages [balance]: Downloading https://files.pythonhosted.org/packages/15/55/74e34232ce3e4508f47e83608fbf7f174183923e551611be81a07e3036c1/balance-0.6.0.tar.gz
+[2023-04-10 10:02:09] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/b3/e0/b42031fa36c37c6218655075bbe11f5aa4918b2dbfd7bc062d0ec81f9446/langchain_utils-0.3.4.tar.gz
+[2023-04-10 10:02:09] INFO root fetch - processPackages [injective-py]: Downloading https://files.pythonhosted.org/packages/a3/6c/bef5fcf8adfa0e5708cb9af75e2f687f06003cd8c2b69d694230f52dd29b/injective-py-0.6.1.1.tar.gz
+[2023-04-10 10:02:09] INFO root fetch - processPackages [dfimagetools]: executing diffoscope
+[2023-04-10 10:02:09] INFO root fetch - processPackages [dfimagetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfimagetools-20230409.tar.gz tmp/dfimagetools-20230410.tar.gz --markdown 20230410/d/dfimagetools/20230409-20230410/diff.md --exclude *.pyd
+[2023-04-10 10:02:09] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-10 10:02:09] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.3.tar.gz tmp/langchain_utils-0.3.4.tar.gz --markdown 20230410/l/langchain-utils/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-10 10:02:09] INFO root fetch - processPackages [edman]: Downloading https://files.pythonhosted.org/packages/4f/97/8fd82cb4ea908cc99d36629128d51264eb29898438d3e36f59c77f20e19d/edman-2023.4.5.tar.gz
+[2023-04-10 10:02:09] INFO root fetch - processPackages [edman]: executing diffoscope
+[2023-04-10 10:02:09] INFO root fetch - processPackages [edman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edman-2023.4.10.tar.gz tmp/edman-2023.4.5.tar.gz --markdown 20230410/e/edman/2023.4.10-2023.4.5/diff.md --exclude *.pyd
+[2023-04-10 10:02:10] INFO root fetch - processPackages [injective-py]: Downloading https://files.pythonhosted.org/packages/58/b6/8917d53cefb3caf935b14200b429c241b31c7bc802055176fc2feb81967a/injective-py-0.6.1.2.tar.gz
+[2023-04-10 10:02:10] INFO root fetch - processPackages [injective-py]: executing diffoscope
+[2023-04-10 10:02:10] INFO root fetch - processPackages [injective-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/injective-py-0.6.1.1.tar.gz tmp/injective-py-0.6.1.2.tar.gz --markdown 20230410/i/injective-py/0.6.1.1-0.6.1.2/diff.md --exclude *.pyd
+[2023-04-10 10:02:10] INFO root fetch - processPackages [balance]: Downloading https://files.pythonhosted.org/packages/21/02/46a52a1d39570c933709c5ad5a0a21df36a64dab42c878272946e794bc1f/balance-0.7.0.tar.gz
+[2023-04-10 10:02:10] INFO root fetch - processPackages [balance]: executing diffoscope
+[2023-04-10 10:02:10] INFO root fetch - processPackages [balance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balance-0.6.0.tar.gz tmp/balance-0.7.0.tar.gz --markdown 20230410/b/balance/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-10 10:02:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:02:10] INFO root fetch - processPackages [grpc-load-balancer]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 10:02:10] INFO root fetch - processPackages [grpc-load-balancer]: Downloading https://files.pythonhosted.org/packages/1c/73/bb419a7ec7095ece01e293ae05a8601e5822e9007d594f6ec3c9b289e2c0/grpc_load_balancer-0.0.1.tar.gz
+[2023-04-10 10:02:11] INFO root fetch - processPackages [grpc-load-balancer]: Downloading https://files.pythonhosted.org/packages/2b/69/90b7848c230cacd3bf8cbe141b245939591e75897860e052de5c8ab94350/grpc_load_balancer-0.0.2.tar.gz
+[2023-04-10 10:02:11] INFO root fetch - processPackages [grpc-load-balancer]: executing diffoscope
+[2023-04-10 10:02:11] INFO root fetch - processPackages [grpc-load-balancer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpc_load_balancer-0.0.1.tar.gz tmp/grpc_load_balancer-0.0.2.tar.gz --markdown 20230410/g/grpc-load-balancer/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 10:02:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:02:11] WARNING root fetch - processPackages [e01loss]: Skipping, unable to determine old version
+[2023-04-10 10:02:11] INFO root fetch - main [MainThread]: error
+[2023-04-10 10:02:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:02:12] INFO root fetch - processPackages [upathlib]: New version: [0.7.6] Old Version: [0.7.5b2]
+[2023-04-10 10:02:12] INFO root fetch - processPackages [asone]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-10 10:02:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:02:12] INFO root fetch - processPackages [upathlib]: Downloading https://files.pythonhosted.org/packages/b6/44/47c631c1dbbfcbdd98d532f04e103ffd227a44d6c2251ff9190e6a06ac96/upathlib-0.7.5b2.tar.gz
+[2023-04-10 10:02:12] INFO root fetch - processPackages [asone]: Downloading https://files.pythonhosted.org/packages/0f/68/fc0ff3f729546811c48ddbeaaa9d50371f401441f9d2e9bd7693681e0fa4/asone-0.2.4-py3-none-any.whl
+[2023-04-10 10:02:12] INFO root fetch - processPackages [compose-x-common]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-10 10:02:12] INFO root fetch - processPackages [compose-x-common]: Downloading https://files.pythonhosted.org/packages/47/40/550a09e2673bb90e0327d0c08f059308a17dcdf004769cfca91063d045c1/compose_x_common-1.2.8.tar.gz
+[2023-04-10 10:02:12] INFO root fetch - processPackages [asone]: Downloading https://files.pythonhosted.org/packages/84/7e/a77a3a7e054bf65df9275a6607cfca0e62d6ec5da2b15c4f3eaeb962a83e/asone-0.2.5-py3-none-any.whl
+[2023-04-10 10:02:12] INFO root fetch - processPackages [upathlib]: Downloading https://files.pythonhosted.org/packages/ba/9c/45164fddd6ff5e7808c09352afa7bed8fccf957fb61b6f1f007c921a4316/upathlib-0.7.6.tar.gz
+[2023-04-10 10:02:12] INFO root fetch - processPackages [upathlib]: executing diffoscope
+[2023-04-10 10:02:12] INFO root fetch - processPackages [upathlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upathlib-0.7.5b2.tar.gz tmp/upathlib-0.7.6.tar.gz --markdown 20230410/u/upathlib/0.7.5b2-0.7.6/diff.md --exclude *.pyd
+[2023-04-10 10:02:12] INFO root fetch - processPackages [compose-x-common]: Downloading https://files.pythonhosted.org/packages/55/d9/cc13939bbde8aadd0f6c1d4dd37541cc6c29989e73a30ca0494937f5a209/compose_x_common-1.2.9.tar.gz
+[2023-04-10 10:02:13] INFO root fetch - processPackages [asone]: executing diffoscope
+[2023-04-10 10:02:13] INFO root fetch - processPackages [asone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asone-0.2.4-py3-none-any.whl.zip tmp/asone-0.2.5-py3-none-any.whl.zip --markdown 20230410/a/asone/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-10 10:02:13] INFO root fetch - processPackages [compose-x-common]: executing diffoscope
+[2023-04-10 10:02:13] INFO root fetch - processPackages [compose-x-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compose_x_common-1.2.8.tar.gz tmp/compose_x_common-1.2.9.tar.gz --markdown 20230410/c/compose-x-common/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-10 10:02:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:02:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:02:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:02:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:02:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:02:57] INFO root fetch - main [MainThread]: Store serial: [17644081]
