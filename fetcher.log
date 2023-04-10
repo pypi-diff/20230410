@@ -5918,3 +5918,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 09:20:16] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:20:16] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:20:16] INFO root fetch - main [MainThread]: Store serial: [17643768]
+[2023-04-10 09:25:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643768]
+[2023-04-10 09:25:23] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 09:25:23] INFO root fetch - processPackages [analysisbykwok]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-04-10 09:25:23] INFO root fetch - processPackages [metaseg]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-10 09:25:23] INFO root fetch - processPackages [aifactory]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-04-10 09:25:23] INFO root fetch - processPackages [webtypy]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-10 09:25:23] INFO root fetch - processPackages [danbi]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-04-10 09:25:23] INFO root fetch - processPackages [aifactory]: executing diffoscope
+[2023-04-10 09:25:23] INFO root fetch - processPackages [aifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifactory-1.6.8.tar.gz tmp/aifactory-1.6.9.tar.gz --markdown 20230410/a/aifactory/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-04-10 09:25:23] INFO root fetch - processPackages [danbi]: executing diffoscope
+[2023-04-10 09:25:23] INFO root fetch - processPackages [danbi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danbi-0.2.98.tar.gz tmp/danbi-0.2.99.tar.gz --markdown 20230410/d/danbi/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-04-10 09:25:24] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/e4/b4/e66ee607a2ca5eee0131c6470b2f50666c5dc2ec80e0fc1494128f1d5f70/metaseg-0.4.1.tar.gz
+[2023-04-10 09:25:24] INFO root fetch - processPackages [webtypy]: Downloading https://files.pythonhosted.org/packages/18/fc/a295049d7cd3f429968e212c0afb1883c0d33e7c00945b25d12a44bbb095/webtypy-0.1.6.tar.gz
+[2023-04-10 09:25:24] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-10 09:25:24] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.4.0.tar.gz tmp/metaseg-0.4.1.tar.gz --markdown 20230410/m/metaseg/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-10 09:25:24] INFO root fetch - processPackages [webtypy]: executing diffoscope
+[2023-04-10 09:25:24] INFO root fetch - processPackages [webtypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webtypy-0.1.5.tar.gz tmp/webtypy-0.1.6.tar.gz --markdown 20230410/w/webtypy/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-10 09:25:24] INFO root fetch - processPackages [analysisbykwok]: Downloading https://files.pythonhosted.org/packages/16/fb/2ddc48e8780c7bee1798de57bcde6bbcb170693d97083a9eb9ee8c3ff37f/analysisbykwok-0.0.16.tar.gz
+[2023-04-10 09:25:24] INFO root fetch - processPackages [analysisbykwok]: executing diffoscope
+[2023-04-10 09:25:24] INFO root fetch - processPackages [analysisbykwok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/analysisbykwok-0.0.15.tar.gz tmp/analysisbykwok-0.0.16.tar.gz --markdown 20230410/a/analysisbykwok/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-04-10 09:25:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:25:24] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-04-10 09:25:25] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-04-10 09:25:25] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230410/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 09:25:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:25:25] INFO root fetch - processPackages [seven-studio]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-04-10 09:25:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:25:25] WARNING root fetch - processPackages [aliyun-python-sdk-documentautoml]: Skipping, unable to determine old version
+[2023-04-10 09:25:25] INFO root fetch - main [MainThread]: error
+[2023-04-10 09:25:25] WARNING root fetch - processPackages [taichu-serve]: Skipping, unable to determine old version
+[2023-04-10 09:25:25] INFO root fetch - main [MainThread]: error
+[2023-04-10 09:25:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:25:25] WARNING root fetch - processPackages [taichu-serve]: Skipping, unable to determine old version
+[2023-04-10 09:25:25] INFO root fetch - main [MainThread]: error
+[2023-04-10 09:25:25] INFO root fetch - processPackages [seven-studio]: Downloading https://files.pythonhosted.org/packages/3c/1c/ac9fb302d942e9768f43addcf4f0b159e6080978c21a93e710920897128a/seven_studio-1.1.9.tar.gz
+[2023-04-10 09:25:25] INFO root fetch - processPackages [fastapi-myhelper]: New version: [0.1.5.2] Old Version: [0.1.5.1]
+[2023-04-10 09:25:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:25:25] INFO root fetch - processPackages [seven-studio]: Downloading https://files.pythonhosted.org/packages/00/d9/c5bb30ae043cdb683a318c0c7bb988dcae5d8ab7974ee0464cb6ca73f55d/seven_studio-1.2.0.tar.gz
+[2023-04-10 09:25:25] INFO root fetch - processPackages [fastapi-myhelper]: Downloading https://files.pythonhosted.org/packages/2f/71/d52e48f168380dba52eb46fc1cd8acbee7639cb902f9c9426b4234674fa5/fastapi_myhelper-0.1.5.1.tar.gz
+[2023-04-10 09:25:25] INFO root fetch - processPackages [seven-studio]: executing diffoscope
+[2023-04-10 09:25:25] INFO root fetch - processPackages [seven-studio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_studio-1.1.9.tar.gz tmp/seven_studio-1.2.0.tar.gz --markdown 20230410/s/seven-studio/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-04-10 09:25:25] INFO root fetch - processPackages [fastapi-myhelper]: Downloading https://files.pythonhosted.org/packages/dc/b0/41c5f53259f8023f20118276589925164858ba0d03a9e852e4fa8d4d4588/fastapi_myhelper-0.1.5.2.tar.gz
+[2023-04-10 09:25:26] INFO root fetch - processPackages [fastapi-myhelper]: executing diffoscope
+[2023-04-10 09:25:26] INFO root fetch - processPackages [fastapi-myhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_myhelper-0.1.5.1.tar.gz tmp/fastapi_myhelper-0.1.5.2.tar.gz --markdown 20230410/f/fastapi-myhelper/0.1.5.1-0.1.5.2/diff.md --exclude *.pyd
+[2023-04-10 09:25:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:25:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:25:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:25:27] INFO root fetch - main [MainThread]: Store serial: [17643803]
