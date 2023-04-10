@@ -5701,3 +5701,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 08:53:58] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:53:58] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:53:58] INFO root fetch - main [MainThread]: Store serial: [17643562]
+[2023-04-10 08:59:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643562]
+[2023-04-10 08:59:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 08:59:06] INFO root fetch - processPackages [onnx2kerastl]: New version: [0.0.82.dev6] Old Version: [0.0.82.dev5]
+[2023-04-10 08:59:06] WARNING root fetch - processPackages [ToolCadeau]: Skipping, unable to determine old version
+[2023-04-10 08:59:06] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:59:06] INFO root fetch - processPackages [easytradetesting]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 08:59:06] INFO root fetch - processPackages [aifactory]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-04-10 08:59:06] INFO root fetch - processPackages [systemrdl-compiler]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-10 08:59:06] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-04-10 08:59:06] INFO root fetch - processPackages [easytradetesting]: executing diffoscope
+[2023-04-10 08:59:06] INFO root fetch - processPackages [easytradetesting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytradetesting-0.1.8.tar.gz tmp/easytradetesting-0.1.9.tar.gz --markdown 20230410/e/easytradetesting/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 08:59:06] INFO root fetch - processPackages [aifactory]: executing diffoscope
+[2023-04-10 08:59:06] INFO root fetch - processPackages [aifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifactory-1.6.8.tar.gz tmp/aifactory-1.6.9.tar.gz --markdown 20230410/a/aifactory/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-04-10 08:59:06] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-04-10 08:59:06] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230410/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-04-10 08:59:06] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/79/0a/a8fb0d50cf87b3da0935ba352f306c718acecb295d732f530cbe0b72f886/onnx2kerastl-0.0.82.dev5.tar.gz
+[2023-04-10 08:59:06] INFO root fetch - processPackages [systemrdl-compiler]: executing diffoscope
+[2023-04-10 08:59:06] INFO root fetch - processPackages [systemrdl-compiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systemrdl-compiler-1.8.0.tar.gz tmp/systemrdl-compiler-1.9.0.tar.gz --markdown 20230410/s/systemrdl-compiler/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-10 08:59:06] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/5e/14/646ca85ab6d6fa9de5e81b91e2fbd3fa6aa9d748eb55c59b6c44ed6ed08d/onnx2kerastl-0.0.82.dev6.tar.gz
+[2023-04-10 08:59:07] INFO root fetch - processPackages [onnx2kerastl]: executing diffoscope
+[2023-04-10 08:59:07] INFO root fetch - processPackages [onnx2kerastl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2kerastl-0.0.82.dev5.tar.gz tmp/onnx2kerastl-0.0.82.dev6.tar.gz --markdown 20230410/o/onnx2kerastl/0.0.82.dev5-0.0.82.dev6/diff.md --exclude *.pyd
+[2023-04-10 08:59:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:59:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:59:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:59:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:59:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:59:09] INFO root fetch - main [MainThread]: Store serial: [17643622]
