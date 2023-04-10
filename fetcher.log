@@ -13803,3 +13803,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 20:11:50] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:12:19] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:12:19] INFO root fetch - main [MainThread]: Store serial: [17649010]
+[2023-04-10 20:17:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649010]
+[2023-04-10 20:17:27] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-10 20:17:27] WARNING root fetch - processPackages [mayfpayapi]: Skipping, unable to determine old version
+[2023-04-10 20:17:27] INFO root fetch - processPackages [srsinst.sr860]: New version: [0.0.3] Old Version: [0.0.18]
+[2023-04-10 20:17:27] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:17:27] INFO root fetch - processPackages [ovos-PHAL-plugin-system]: New version: [0.0.4a1] Old Version: [0.0.3a1]
+[2023-04-10 20:17:27] INFO root fetch - processPackages [wf-gqlpycgen]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-10 20:17:27] WARNING root fetch - processPackages [poisson-glm]: Skipping, unable to determine old version
+[2023-04-10 20:17:27] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:17:27] INFO root fetch - processPackages [srsgui]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-10 20:17:27] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-04-10 20:17:27] INFO root fetch - processPackages [srsinst.sr860]: Downloading https://files.pythonhosted.org/packages/76/09/a65b1dcbebf02cd87742e0bea19fd7747f56b2f6ed54accdfc1a122b6142/srsinst.sr860-0.0.18.tar.gz
+[2023-04-10 20:17:27] INFO root fetch - processPackages [wf-gqlpycgen]: Downloading https://files.pythonhosted.org/packages/a2/90/7c5ba0a11b9038fa6b2e7564d47ad42401c9e4a1b1fd8fc51b66a0c0ce86/wf-gqlpycgen-0.7.3.tar.gz
+[2023-04-10 20:17:27] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-04-10 20:17:27] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230410/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-04-10 20:17:27] INFO root fetch - processPackages [ovos-PHAL-plugin-system]: Downloading https://files.pythonhosted.org/packages/bf/d2/255fbc5382864f937c8085a91107af3e4701603d651ed49229a2eaa097f2/ovos-PHAL-plugin-system-0.0.3a1.tar.gz
+[2023-04-10 20:17:27] INFO root fetch - processPackages [srsgui]: Downloading https://files.pythonhosted.org/packages/39/93/8e78cb2c0f73d9cfee06e412c3c1dc9c0dc488bf792ef8219e140aa6537e/srsgui-0.2.7.tar.gz
+[2023-04-10 20:17:27] INFO root fetch - processPackages [srsgui]: executing diffoscope
+[2023-04-10 20:17:27] INFO root fetch - processPackages [srsgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srsgui-0.2.6.tar.gz tmp/srsgui-0.2.7.tar.gz --markdown 20230410/s/srsgui/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-10 20:17:27] INFO root fetch - processPackages [wf-gqlpycgen]: Downloading https://files.pythonhosted.org/packages/a4/4e/f97294b8383b843e58d8ff4acea647937cf1307890200795f3d416ee8e99/wf_gqlpycgen-0.7.4.tar.gz
+[2023-04-10 20:17:27] INFO root fetch - processPackages [srsinst.sr860]: executing diffoscope
+[2023-04-10 20:17:27] INFO root fetch - processPackages [srsinst.sr860]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srsinst.sr860-0.0.18.tar.gz tmp/srsinst.sr860-0.0.3.tar.gz --markdown 20230410/s/srsinst.sr860/0.0.18-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 20:17:28] INFO root fetch - processPackages [wf-gqlpycgen]: executing diffoscope
+[2023-04-10 20:17:28] INFO root fetch - processPackages [wf-gqlpycgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wf-gqlpycgen-0.7.3.tar.gz tmp/wf_gqlpycgen-0.7.4.tar.gz --markdown 20230410/w/wf-gqlpycgen/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-10 20:17:28] INFO root fetch - processPackages [ovos-PHAL-plugin-system]: Downloading https://files.pythonhosted.org/packages/0a/ac/79636912afefba4a6d07ba52f588792ff93ffbbded8d5c46c1da72271813/ovos-PHAL-plugin-system-0.0.4a1.tar.gz
+[2023-04-10 20:17:28] INFO root fetch - processPackages [ovos-PHAL-plugin-system]: executing diffoscope
+[2023-04-10 20:17:28] INFO root fetch - processPackages [ovos-PHAL-plugin-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-PHAL-plugin-system-0.0.3a1.tar.gz tmp/ovos-PHAL-plugin-system-0.0.4a1.tar.gz --markdown 20230410/o/ovos-PHAL-plugin-system/0.0.3a1-0.0.4a1/diff.md --exclude *.pyd
+[2023-04-10 20:17:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:29] INFO root fetch - processPackages [dcontainer]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-10 20:17:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:29] INFO root fetch - processPackages [pythonegardia]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 20:17:29] INFO root fetch - processPackages [dcontainer]: Downloading https://files.pythonhosted.org/packages/04/f9/aad3dfb8f7ea1c477dea6e3b32c35dba8a7a3dd94c33390295b448e5fbf8/dcontainer-1.0.6-py3-none-any.whl
+[2023-04-10 20:17:29] INFO root fetch - processPackages [pythonegardia]: Downloading https://files.pythonhosted.org/packages/f0/16/33d7a9d2c556286d755db57e5d1d4c44eba19e8393fe36078f696060cbc6/pythonegardia-1.0.8.tar.gz
+[2023-04-10 20:17:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:29] INFO root fetch - processPackages [sinergym]: New version: [2.3.0] Old Version: [2.2.9]
+[2023-04-10 20:17:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:29] INFO root fetch - processPackages [doppkit]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-10 20:17:29] INFO root fetch - processPackages [dcontainer]: Downloading https://files.pythonhosted.org/packages/d7/65/303e335b125395c4b5dc9ac4b0afd8f87778e817627d299378489852fc97/dcontainer-1.0.7-py3-none-any.whl
+[2023-04-10 20:17:29] INFO root fetch - processPackages [sinergym]: Downloading https://files.pythonhosted.org/packages/21/ff/376bddb8fd57c6669918a47ee67b165d39b601bdb847de9ae7b6dce925e4/sinergym-2.2.9.tar.gz
+[2023-04-10 20:17:29] INFO root fetch - processPackages [doppkit]: Downloading https://files.pythonhosted.org/packages/a4/06/3037ca21ce1bd5dfde56a86ead0a77253f550f77598fd1d6c61c7e940a87/doppkit-0.1.3.tar.gz
+[2023-04-10 20:17:29] INFO root fetch - processPackages [dcontainer]: executing diffoscope
+[2023-04-10 20:17:29] INFO root fetch - processPackages [dcontainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcontainer-1.0.6-py3-none-any.whl.zip tmp/dcontainer-1.0.7-py3-none-any.whl.zip --markdown 20230410/d/dcontainer/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-10 20:17:29] INFO root fetch - processPackages [pythonegardia]: Downloading https://files.pythonhosted.org/packages/96/e0/592983c3bcba17fb07cf8f040602131d482fc39c8af43d03dbcd41162d27/pythonegardia-1.0.9.tar.gz
+[2023-04-10 20:17:29] INFO root fetch - processPackages [doppkit]: executing diffoscope
+[2023-04-10 20:17:29] INFO root fetch - processPackages [doppkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doppkit-0.1.2.tar.gz tmp/doppkit-0.1.3.tar.gz --markdown 20230410/d/doppkit/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-10 20:17:29] INFO root fetch - processPackages [pythonegardia]: executing diffoscope
+[2023-04-10 20:17:29] INFO root fetch - processPackages [pythonegardia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonegardia-1.0.8.tar.gz tmp/pythonegardia-1.0.9.tar.gz --markdown 20230410/p/pythonegardia/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 20:17:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:30] INFO root fetch - processPackages [aiofauna]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 20:17:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:30] INFO root fetch - processPackages [aiofauna]: executing diffoscope
+[2023-04-10 20:17:30] INFO root fetch - processPackages [aiofauna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiofauna-0.0.8.tar.gz tmp/aiofauna-0.0.9.tar.gz --markdown 20230410/a/aiofauna/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 20:17:30] INFO root fetch - processPackages [sinergym]: Downloading https://files.pythonhosted.org/packages/95/2c/a9fcb1dd578003984055b5d61b2ad33e05dba8c3fe44a3bda7c6f06238eb/sinergym-2.3.0.tar.gz
+[2023-04-10 20:17:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:31] INFO root fetch - processPackages [udi-interface]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-10 20:17:31] INFO root fetch - processPackages [udi-interface]: Downloading https://files.pythonhosted.org/packages/c0/51/dfe91ad763bae4f37bcc702efca1a0203ac20555622342538c7577e89325/udi_interface-3.0.8.tar.gz
+[2023-04-10 20:17:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:31] INFO root fetch - processPackages [udi-interface]: Downloading https://files.pythonhosted.org/packages/2e/af/c1c23f937e0bea436329e585e4e5531273c5cdd6021816fe805c9fa33136/udi_interface-3.0.9.tar.gz
+[2023-04-10 20:17:31] INFO root fetch - processPackages [udi-interface]: executing diffoscope
+[2023-04-10 20:17:31] INFO root fetch - processPackages [udi-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/udi_interface-3.0.8.tar.gz tmp/udi_interface-3.0.9.tar.gz --markdown 20230410/u/udi-interface/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-10 20:17:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:32] INFO root fetch - processPackages [sinergym]: executing diffoscope
+[2023-04-10 20:17:32] INFO root fetch - processPackages [sinergym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinergym-2.2.9.tar.gz tmp/sinergym-2.3.0.tar.gz --markdown 20230410/s/sinergym/2.2.9-2.3.0/diff.md --exclude *.pyd
+[2023-04-10 20:17:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:17:35] INFO root fetch - main [MainThread]: Store serial: [17649048]
