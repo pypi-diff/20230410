@@ -9100,3 +9100,64 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 14:30:07] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:30:09] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:30:09] INFO root fetch - main [MainThread]: Store serial: [17645721]
+[2023-04-10 14:35:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645721]
+[2023-04-10 14:35:17] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 14:35:17] INFO root fetch - processPackages [kevin-toolbox-dev]: New version: [1.0.1.5] Old Version: [1.0.1]
+[2023-04-10 14:35:17] INFO root fetch - processPackages [qtpy-frameless-window]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 14:35:17] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-10 14:35:17] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.4.dev202304101235] Old Version: [2.1.4.dev202304071857]
+[2023-04-10 14:35:17] INFO root fetch - processPackages [bdating-common]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-10 14:35:17] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-04-10 14:35:17] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230410/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 14:35:17] INFO root fetch - processPackages [kevin-toolbox-dev]: Downloading https://files.pythonhosted.org/packages/8a/42/91246e76c7d8fc4d46006c0489b55f9759364234e7158833f85a7fcaea93/kevin-toolbox-dev-1.0.1.5.tar.gz
+[2023-04-10 14:35:17] INFO root fetch - processPackages [qtpy-frameless-window]: Downloading https://files.pythonhosted.org/packages/67/99/11d6c3bb39b2ba3f6504d4a95cc4783a7201623d5d9e69fda1c527dc781c/QtPy-Frameless-Window-0.0.4.tar.gz
+[2023-04-10 14:35:17] INFO root fetch - processPackages [kevin-toolbox-dev]: executing diffoscope
+[2023-04-10 14:35:17] INFO root fetch - processPackages [kevin-toolbox-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kevin-toolbox-dev-1.0.1.tar.gz tmp/kevin-toolbox-dev-1.0.1.5.tar.gz --markdown 20230410/k/kevin-toolbox-dev/1.0.1-1.0.1.5/diff.md --exclude *.pyd
+[2023-04-10 14:35:17] INFO root fetch - processPackages [PyroFork-dev]: Downloading https://files.pythonhosted.org/packages/97/ce/d8961d47ddd84b99a8a0f630cd3a6d2fbce6b9ea2adb83bb3d40957b3931/PyroFork-dev-2.1.4.dev202304101235.tar.gz
+[2023-04-10 14:35:17] INFO root fetch - processPackages [bdating-common]: executing diffoscope
+[2023-04-10 14:35:17] INFO root fetch - processPackages [bdating-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdating-common-0.9.8.tar.gz tmp/bdating-common-0.9.9.tar.gz --markdown 20230410/b/bdating-common/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-10 14:35:17] INFO root fetch - processPackages [qtpy-frameless-window]: executing diffoscope
+[2023-04-10 14:35:17] INFO root fetch - processPackages [qtpy-frameless-window]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QtPy-Frameless-Window-0.0.3.tar.gz tmp/QtPy-Frameless-Window-0.0.4.tar.gz --markdown 20230410/q/qtpy-frameless-window/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 14:35:17] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-10 14:35:17] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.4.dev202304071857.tar.gz tmp/PyroFork-dev-2.1.4.dev202304101235.tar.gz --markdown 20230410/P/PyroFork-dev/2.1.4.dev202304071857-2.1.4.dev202304101235/diff.md --exclude *.pyd
+[2023-04-10 14:35:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:18] INFO root fetch - processPackages [BNumMet]: New version: [1.0.0.dev7] Old Version: [1.0.0.dev6]
+[2023-04-10 14:35:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:18] INFO root fetch - processPackages [B0tHe1Per-test-api]: New version: [0.4] Old Version: [0.3]
+[2023-04-10 14:35:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:18] INFO root fetch - processPackages [XBXBOT]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 14:35:19] INFO root fetch - processPackages [BNumMet]: Downloading https://files.pythonhosted.org/packages/88/8d/5c78a2726eb8450f5d0f6223f673a74bef3befe2ce4f56e4b0f3d756cc2e/BNumMet-1.0.0.dev6.tar.gz
+[2023-04-10 14:35:19] INFO root fetch - processPackages [B0tHe1Per-test-api]: Downloading https://files.pythonhosted.org/packages/68/98/d504c6450d50ca6b49934def7be04be4a235c007826e0af3ea2dda6bccdb/B0tHe1Per_test_api-0.4.tar.gz
+[2023-04-10 14:35:19] INFO root fetch - processPackages [B0tHe1Per-test-api]: executing diffoscope
+[2023-04-10 14:35:19] INFO root fetch - processPackages [B0tHe1Per-test-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/B0tHe1Per_test_api-0.3.tar.gz tmp/B0tHe1Per_test_api-0.4.tar.gz --markdown 20230410/B/B0tHe1Per-test-api/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-10 14:35:19] INFO root fetch - processPackages [XBXBOT]: Downloading https://files.pythonhosted.org/packages/90/c8/4ba295626b3cc73759f6c4c208d1f1209d5efc7ad3dcf80e07b0c982495e/XBXBOT-1.0.3-py3-none-any.whl
+[2023-04-10 14:35:19] INFO root fetch - processPackages [BNumMet]: Downloading https://files.pythonhosted.org/packages/ce/af/ec1282e4b99516a0472c2d7d3151012f4f36e0da80d2f5b1245a8483dc0d/BNumMet-1.0.0.dev7.tar.gz
+[2023-04-10 14:35:19] INFO root fetch - processPackages [XBXBOT]: Downloading https://files.pythonhosted.org/packages/49/68/e4eb23a058b89d17b5f327a06eac0d69d779f68b08eac2605131a1c82444/XBXBOT-1.0.4-py3-none-any.whl
+[2023-04-10 14:35:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:19] INFO root fetch - processPackages [table2md]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-10 14:35:19] INFO root fetch - processPackages [XBXBOT]: executing diffoscope
+[2023-04-10 14:35:19] INFO root fetch - processPackages [XBXBOT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/XBXBOT-1.0.3-py3-none-any.whl.zip tmp/XBXBOT-1.0.4-py3-none-any.whl.zip --markdown 20230410/X/XBXBOT/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-10 14:35:19] INFO root fetch - processPackages [BNumMet]: executing diffoscope
+[2023-04-10 14:35:19] INFO root fetch - processPackages [BNumMet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BNumMet-1.0.0.dev6.tar.gz tmp/BNumMet-1.0.0.dev7.tar.gz --markdown 20230410/B/BNumMet/1.0.0.dev6-1.0.0.dev7/diff.md --exclude *.pyd
+[2023-04-10 14:35:19] INFO root fetch - processPackages [table2md]: Downloading https://files.pythonhosted.org/packages/80/28/e57d97d2b3877935cf03c6c391b206b58260c85722c1422f31bc16160cf4/table2md-1.0.0.tar.gz
+[2023-04-10 14:35:19] INFO root fetch - processPackages [table2md]: Downloading https://files.pythonhosted.org/packages/d3/a6/ee9798a71fa41a02ee8013edd52b769c9e02a2eb3a851711e6faff7c5227/table2md-1.1.0.tar.gz
+[2023-04-10 14:35:20] INFO root fetch - processPackages [table2md]: executing diffoscope
+[2023-04-10 14:35:20] INFO root fetch - processPackages [table2md]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/table2md-1.0.0.tar.gz tmp/table2md-1.1.0.tar.gz --markdown 20230410/t/table2md/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 14:35:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:20] INFO root fetch - processPackages [nr-metadata]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 14:35:20] INFO root fetch - processPackages [nr-metadata]: Downloading https://files.pythonhosted.org/packages/c8/d2/ecd2a36d73bd8615ec5c741fdebaea54f978bade8f4566182e53851073e1/nr-metadata-1.0.8.tar.gz
+[2023-04-10 14:35:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:20] INFO root fetch - processPackages [plotly-gif]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 14:35:20] INFO root fetch - processPackages [nr-metadata]: Downloading https://files.pythonhosted.org/packages/f4/d8/aa840642b0ba69c0068b58b4f652bf87455628a7d66e8a485e55f9a583a3/nr-metadata-1.0.9.tar.gz
+[2023-04-10 14:35:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:20] INFO root fetch - processPackages [plotly-gif]: Downloading https://files.pythonhosted.org/packages/ea/e6/73a296aa4e4cc6e591eb4beace79da556c9a2f5d1c3c6ca41a8b7d615e84/plotly_gif-0.0.3.tar.gz
+[2023-04-10 14:35:20] INFO root fetch - processPackages [nr-metadata]: executing diffoscope
+[2023-04-10 14:35:20] INFO root fetch - processPackages [nr-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nr-metadata-1.0.8.tar.gz tmp/nr-metadata-1.0.9.tar.gz --markdown 20230410/n/nr-metadata/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 14:35:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:21] INFO root fetch - processPackages [plotly-gif]: Downloading https://files.pythonhosted.org/packages/a6/7e/44e75ca84ce06d780eea98c1ee536331f09aa5bb7d853dba02e0b876bdd4/plotly_gif-0.0.4.tar.gz
+[2023-04-10 14:35:21] INFO root fetch - processPackages [plotly-gif]: executing diffoscope
+[2023-04-10 14:35:21] INFO root fetch - processPackages [plotly-gif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotly_gif-0.0.3.tar.gz tmp/plotly_gif-0.0.4.tar.gz --markdown 20230410/p/plotly-gif/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 14:35:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:35:22] INFO root fetch - main [MainThread]: Store serial: [17645763]
