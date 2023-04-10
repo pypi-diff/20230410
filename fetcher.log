@@ -14972,3 +14972,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 21:42:39] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:42:58] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:42:58] INFO root fetch - main [MainThread]: Store serial: [17649721]
+[2023-04-10 21:48:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649721]
+[2023-04-10 21:48:07] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-10 21:48:07] INFO root fetch - processPackages [brds]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-10 21:48:07] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a8]
+[2023-04-10 21:48:07] INFO root fetch - processPackages [pyradiosky]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-10 21:48:07] WARNING root fetch - processPackages [codestructure]: Skipping, unable to determine old version
+[2023-04-10 21:48:07] INFO root fetch - main [MainThread]: error
+[2023-04-10 21:48:07] INFO root fetch - processPackages [polars]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-10 21:48:07] INFO root fetch - processPackages [myke]: New version: [0.0.1a9] Old Version: [0.0.1a8]
+[2023-04-10 21:48:07] INFO root fetch - processPackages [brds]: Downloading https://files.pythonhosted.org/packages/df/ca/f233fe1e4967a05406efb5308a63285afd7a6fcf139de0d83874b4eb23d8/brds-0.0.5.tar.gz
+[2023-04-10 21:48:07] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/a3/76/1a6506ed13641d2fc17c7fbfc49fa836f2f56c312756581beb60fd7e234c/cbra-2.0.0a8.tar.gz
+[2023-04-10 21:48:07] INFO root fetch - processPackages [pyradiosky]: Downloading https://files.pythonhosted.org/packages/35/b3/536bd39ef8c1bc20b82db44041f85b6380b5476426608d35de74c91a2b5b/pyradiosky-0.2.0.tar.gz
+[2023-04-10 21:48:07] INFO root fetch - processPackages [polars]: executing diffoscope
+[2023-04-10 21:48:07] INFO root fetch - processPackages [polars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars-0.9.8.tar.gz tmp/polars-0.9.9.tar.gz --markdown 20230410/p/polars/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-10 21:48:07] INFO root fetch - processPackages [myke]: executing diffoscope
+[2023-04-10 21:48:07] INFO root fetch - processPackages [myke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myke-0.0.1a8.tar.gz tmp/myke-0.0.1a9.tar.gz --markdown 20230410/m/myke/0.0.1a8-0.0.1a9/diff.md --exclude *.pyd
+[2023-04-10 21:48:07] INFO root fetch - processPackages [brds]: Downloading https://files.pythonhosted.org/packages/12/87/9e9a0fbd5b1abcb6f0e8407c63bc31f0b54a877c86a123bd2d522a6014c8/brds-0.1.0.tar.gz
+[2023-04-10 21:48:07] INFO root fetch - processPackages [brds]: executing diffoscope
+[2023-04-10 21:48:07] INFO root fetch - processPackages [brds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brds-0.0.5.tar.gz tmp/brds-0.1.0.tar.gz --markdown 20230410/b/brds/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-10 21:48:08] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/e3/30/881c6ff6126ad5e84aee92c87271280498b0d03f3c7ad7ca93e0e0fd381b/cbra-3.0.0a7.tar.gz
+[2023-04-10 21:48:08] INFO root fetch - processPackages [pyradiosky]: Downloading https://files.pythonhosted.org/packages/5e/36/eaaad6265376d0cf0404b451a07a018a286b7604b7c8a18e37a170520f12/pyradiosky-0.3.0.tar.gz
+[2023-04-10 21:48:08] INFO root fetch - processPackages [pyradiosky]: executing diffoscope
+[2023-04-10 21:48:08] INFO root fetch - processPackages [pyradiosky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyradiosky-0.2.0.tar.gz tmp/pyradiosky-0.3.0.tar.gz --markdown 20230410/p/pyradiosky/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-10 21:48:08] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-10 21:48:08] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a8.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230410/c/cbra/2.0.0a8-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-10 21:48:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:09] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-10 21:48:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:09] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.5b0] Old Version: [0.8.4b1]
+[2023-04-10 21:48:09] INFO root fetch - processPackages [python-project-structure]: Downloading https://files.pythonhosted.org/packages/3a/2c/d8d454339d378bc22e75c90fe2ff0d28d381e93256e6720e465b1809ac1d/python-project-structure-0.8.5b0.tar.gz
+[2023-04-10 21:48:09] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-04-10 21:48:09] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230410/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-10 21:48:09] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-10 21:48:09] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.4b1.tar.gz tmp/python-project-structure-0.8.5b0.tar.gz --markdown 20230410/p/python-project-structure/0.8.4b1-0.8.5b0/diff.md --exclude *.pyd
+[2023-04-10 21:48:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:10] INFO root fetch - processPackages [pheno-utils]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-10 21:48:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:10] INFO root fetch - processPackages [bqtools-json]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-10 21:48:10] INFO root fetch - processPackages [pheno-utils]: Downloading https://files.pythonhosted.org/packages/6c/cc/c27b7f0ed3249114228a44711e2c305294dc78df6f0659e23682452ca41c/pheno-utils-0.0.5.tar.gz
+[2023-04-10 21:48:10] INFO root fetch - processPackages [bqtools-json]: Downloading https://files.pythonhosted.org/packages/f5/b5/082239d364140459eaca9b564fe78537f8a906e9481f132294e56298168a/bqtools-json-1.0.4.tar.gz
+[2023-04-10 21:48:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:10] INFO root fetch - processPackages [icpp]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-04-10 21:48:10] INFO root fetch - processPackages [pheno-utils]: Downloading https://files.pythonhosted.org/packages/89/05/6be0858de2cd13a04d839d98bd9846f37946ad839acdd0731e6a8f476e0a/pheno-utils-0.0.6.tar.gz
+[2023-04-10 21:48:10] INFO root fetch - processPackages [pheno-utils]: executing diffoscope
+[2023-04-10 21:48:10] INFO root fetch - processPackages [pheno-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheno-utils-0.0.5.tar.gz tmp/pheno-utils-0.0.6.tar.gz --markdown 20230410/p/pheno-utils/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-10 21:48:11] INFO root fetch - processPackages [icpp]: Downloading https://files.pythonhosted.org/packages/99/6a/3f4eb83b52fdf21ec1d4d217e2c40ddf6b40b77d86827477884b38709178/icpp-1.5.3.tar.gz
+[2023-04-10 21:48:11] INFO root fetch - processPackages [icpp]: Downloading https://files.pythonhosted.org/packages/0d/7c/2dd03fd608753d7ec07eeeb1ab5eadbd29b8461c6af5c474d4f0e131ff05/icpp-1.5.4.tar.gz
+[2023-04-10 21:48:11] INFO root fetch - processPackages [icpp]: executing diffoscope
+[2023-04-10 21:48:11] INFO root fetch - processPackages [icpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icpp-1.5.3.tar.gz tmp/icpp-1.5.4.tar.gz --markdown 20230410/i/icpp/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-04-10 21:48:11] INFO root fetch - processPackages [bqtools-json]: Downloading https://files.pythonhosted.org/packages/6a/4d/2967729e8807462c6bd741315be39e48f56cb8876c30f5c414c158040528/bqtools-json-1.0.5.tar.gz
+[2023-04-10 21:48:11] INFO root fetch - processPackages [bqtools-json]: executing diffoscope
+[2023-04-10 21:48:11] INFO root fetch - processPackages [bqtools-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bqtools-json-1.0.4.tar.gz tmp/bqtools-json-1.0.5.tar.gz --markdown 20230410/b/bqtools-json/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-10 21:48:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:11] INFO root fetch - processPackages [use-case-registry]: New version: [1.4.6] Old Version: [1.4.5]
+[2023-04-10 21:48:11] INFO root fetch - processPackages [use-case-registry]: Downloading https://files.pythonhosted.org/packages/fc/8f/55e090dec480d15d7ac0fc10a53143087473b24e4351ee18b90e967f7a23/use_case_registry-1.4.6.tar.gz
+[2023-04-10 21:48:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:11] WARNING root fetch - processPackages [buildapp]: Skipping, unable to determine old version
+[2023-04-10 21:48:11] INFO root fetch - main [MainThread]: error
+[2023-04-10 21:48:11] INFO root fetch - processPackages [brds]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 21:48:11] INFO root fetch - processPackages [use-case-registry]: executing diffoscope
+[2023-04-10 21:48:11] INFO root fetch - processPackages [use-case-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/use_case_registry-1.4.5.tar.gz tmp/use_case_registry-1.4.6.tar.gz --markdown 20230410/u/use-case-registry/1.4.5-1.4.6/diff.md --exclude *.pyd
+[2023-04-10 21:48:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:12] INFO root fetch - processPackages [brds]: Downloading https://files.pythonhosted.org/packages/15/53/5d158304830186f9b5772b23328fdd4b3c33470556a3f4db1fa6a54f48b5/brds-0.1.1.tar.gz
+[2023-04-10 21:48:12] INFO root fetch - processPackages [brds]: executing diffoscope
+[2023-04-10 21:48:12] INFO root fetch - processPackages [brds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brds-0.1.0.tar.gz tmp/brds-0.1.1.tar.gz --markdown 20230410/b/brds/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 21:48:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:48:15] INFO root fetch - main [MainThread]: Store serial: [17649767]
