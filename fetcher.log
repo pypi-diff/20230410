@@ -1638,3 +1638,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-10 03:24:15] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.8.5.tar.gz tmp/bioregistry-0.8.6.tar.gz --markdown 20230410/b/bioregistry/0.8.5-0.8.6/diff.md --exclude *.pyd
 [2023-04-10 03:25:23] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:25:23] INFO root fetch - main [MainThread]: Store serial: [17641018]
+[2023-04-10 03:30:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17641018]
+[2023-04-10 03:30:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 03:30:32] INFO root fetch - processPackages [shady-island]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 03:30:32] INFO root fetch - processPackages [trilogy-public-models]: New version: [0.0.6] Old Version: [0.0.4]
+[2023-04-10 03:30:32] INFO root fetch - processPackages [planutils]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 03:30:32] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-10 03:30:32] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-10 03:30:32] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-10 03:30:32] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230410/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-10 03:30:32] INFO root fetch - processPackages [planutils]: Downloading https://files.pythonhosted.org/packages/3d/d8/d78c06c7250e9b79b2063807f6cb476cb766c984ec52a84eac198a88f026/planutils-0.8.0.tar.gz
+[2023-04-10 03:30:32] INFO root fetch - processPackages [trilogy-public-models]: Downloading https://files.pythonhosted.org/packages/08/3f/b835fb364a41f8135846a95414b8d44ef1c3a694f3cb0164c35d561ca01b/trilogy-public-models-0.0.4.tar.gz
+[2023-04-10 03:30:32] INFO root fetch - processPackages [shady-island]: executing diffoscope
+[2023-04-10 03:30:32] INFO root fetch - processPackages [shady-island]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shady-island-0.0.8.tar.gz tmp/shady-island-0.0.9.tar.gz --markdown 20230410/s/shady-island/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 03:30:32] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-04-10 03:30:32] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230410/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-10 03:30:32] INFO root fetch - processPackages [trilogy-public-models]: Downloading https://files.pythonhosted.org/packages/4e/13/5fd34a016f6c5ef8b1201c00bf281a76c9f4970a6bde8a11d77f45d3f285/trilogy-public-models-0.0.6.tar.gz
+[2023-04-10 03:30:32] INFO root fetch - processPackages [planutils]: Downloading https://files.pythonhosted.org/packages/ef/f8/66f36587580377a6d1f162faa4f8ccd8ff2acbb3a5bea12632bc99dfaba6/planutils-0.9.0.tar.gz
+[2023-04-10 03:30:32] INFO root fetch - processPackages [trilogy-public-models]: executing diffoscope
+[2023-04-10 03:30:32] INFO root fetch - processPackages [trilogy-public-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trilogy-public-models-0.0.4.tar.gz tmp/trilogy-public-models-0.0.6.tar.gz --markdown 20230410/t/trilogy-public-models/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2023-04-10 03:30:33] INFO root fetch - processPackages [planutils]: executing diffoscope
+[2023-04-10 03:30:33] INFO root fetch - processPackages [planutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planutils-0.8.0.tar.gz tmp/planutils-0.9.0.tar.gz --markdown 20230410/p/planutils/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 03:30:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:30:33] INFO root fetch - processPackages [captest]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 03:30:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:30:33] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 03:30:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:30:33] INFO root fetch - processPackages [lama-cleaner]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-10 03:30:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:30:34] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-10 03:30:34] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230410/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 03:30:34] INFO root fetch - processPackages [lama-cleaner]: Downloading https://files.pythonhosted.org/packages/db/a8/e90fcc1e55d537a706911a55cb486aa65226ed10fcc866c5e6246fa2e652/lama-cleaner-1.1.1.tar.gz
+[2023-04-10 03:30:34] INFO root fetch - processPackages [captest]: executing diffoscope
+[2023-04-10 03:30:34] INFO root fetch - processPackages [captest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/captest-0.8.0.tar.gz tmp/captest-0.9.0.tar.gz --markdown 20230410/c/captest/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 03:30:34] INFO root fetch - processPackages [lama-cleaner]: Downloading https://files.pythonhosted.org/packages/5e/5c/b31e20549b8b7f594d1a813be67732fd7d105db42cd1dc0bf98faabe9f89/lama-cleaner-1.1.2.tar.gz
+[2023-04-10 03:30:34] INFO root fetch - processPackages [lama-cleaner]: executing diffoscope
+[2023-04-10 03:30:34] INFO root fetch - processPackages [lama-cleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lama-cleaner-1.1.1.tar.gz tmp/lama-cleaner-1.1.2.tar.gz --markdown 20230410/l/lama-cleaner/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-10 03:30:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:30:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:30:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:30:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:30:36] INFO root fetch - main [MainThread]: Store serial: [17641045]
