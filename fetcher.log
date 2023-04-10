@@ -4027,3 +4027,46 @@ EOFError: EOF read where object expected
 
 [2023-04-10 05:23:35] INFO root fetch - main [MainThread]: error
 [2023-04-10 05:23:35] INFO root fetch - main [MainThread]: Store serial: [17642365]
+[2023-04-10 05:28:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642365]
+[2023-04-10 05:28:42] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 05:28:42] INFO root fetch - processPackages [moarc-framework]: New version: [0.9.5.4] Old Version: [0.9.5.3]
+[2023-04-10 05:28:42] INFO root fetch - processPackages [pawpaw]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-04-10 05:28:42] INFO root fetch - processPackages [snemail]: New version: [1.1.13] Old Version: [1.1.12]
+[2023-04-10 05:28:42] INFO root fetch - processPackages [je-auto-control-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 05:28:42] INFO root fetch - processPackages [policyengine-us]: New version: [0.281.0] Old Version: [0.280.0]
+[2023-04-10 05:28:42] INFO root fetch - processPackages [je-auto-control-dev]: executing diffoscope
+[2023-04-10 05:28:42] INFO root fetch - processPackages [je-auto-control-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control_dev-0.0.8.tar.gz tmp/je_auto_control_dev-0.0.9.tar.gz --markdown 20230410/j/je-auto-control-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 05:28:43] INFO root fetch - processPackages [pawpaw]: Downloading https://files.pythonhosted.org/packages/4e/38/139e6da52fcf9f88e49a87eb708f08c574a75bc706b26abce8d5921c445f/pawpaw-1.0.0a8.tar.gz
+[2023-04-10 05:28:43] INFO root fetch - processPackages [snemail]: Downloading https://files.pythonhosted.org/packages/1a/50/0028d4b24a7457c3e8e091ed797fb6501673c9dcd40bfff5fbdf12ec8ab4/snemail-1.1.13.tar.gz
+[2023-04-10 05:28:43] INFO root fetch - processPackages [snemail]: executing diffoscope
+[2023-04-10 05:28:43] INFO root fetch - processPackages [snemail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snemail-1.1.12.tar.gz tmp/snemail-1.1.13.tar.gz --markdown 20230410/s/snemail/1.1.12-1.1.13/diff.md --exclude *.pyd
+[2023-04-10 05:28:43] INFO root fetch - processPackages [moarc-framework]: Downloading https://files.pythonhosted.org/packages/25/0f/b9f75800ab44e7a84ae9b3d73d20786a6cc53efb2af2300cb53247d4a09a/moarc-framework-0.9.5.4.tar.gz
+[2023-04-10 05:28:43] INFO root fetch - processPackages [moarc-framework]: executing diffoscope
+[2023-04-10 05:28:43] INFO root fetch - processPackages [moarc-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moarc-framework-0.9.5.3.tar.gz tmp/moarc-framework-0.9.5.4.tar.gz --markdown 20230410/m/moarc-framework/0.9.5.3-0.9.5.4/diff.md --exclude *.pyd
+[2023-04-10 05:28:43] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/67/55/17aecfd4b30189391ecce4cf6d7e9d73c5a4b45d36ff4f96c627c8b56aa5/policyengine-us-0.281.0.tar.gz
+[2023-04-10 05:28:43] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-10 05:28:43] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.280.0.tar.gz tmp/policyengine-us-0.281.0.tar.gz --markdown 20230410/p/policyengine-us/0.280.0-0.281.0/diff.md --exclude *.pyd
+[2023-04-10 05:28:43] INFO root fetch - processPackages [pawpaw]: Downloading https://files.pythonhosted.org/packages/99/61/5aeda6c2959b7174ce8b3a2c7b38f7a0a3685069fa0d2de94b2ed326fb5b/pawpaw-1.0.0a9.tar.gz
+[2023-04-10 05:28:44] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:28:44] INFO root fetch - processPackages [CrossPy]: New version: [0.0.0a3.dev9] Old Version: [0.0.0a3.dev8]
+[2023-04-10 05:28:44] INFO root fetch - processPackages [CrossPy]: executing diffoscope
+[2023-04-10 05:28:44] INFO root fetch - processPackages [CrossPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CrossPy-0.0.0a3.dev8.tar.gz tmp/CrossPy-0.0.0a3.dev9.tar.gz --markdown 20230410/C/CrossPy/0.0.0a3.dev8-0.0.0a3.dev9/diff.md --exclude *.pyd
+[2023-04-10 05:28:44] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:28:44] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:28:44] INFO root fetch - processPackages [revChatGPT]: New version: [4.1.6] Old Version: [4.1.5.1]
+[2023-04-10 05:28:44] INFO root fetch - processPackages [advantage-air]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-10 05:28:44] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/05/38/9ed8497bb938620618d96e326985916263ea93b8570f98b1448f51df5a84/revChatGPT-4.1.6.tar.gz
+[2023-04-10 05:28:44] INFO root fetch - processPackages [advantage-air]: Downloading https://files.pythonhosted.org/packages/7c/f1/bcd1ebaebdd08225a8dd099d3a66693fdba0b3f7b71cd2044c034910b59d/advantage_air-0.4.2.tar.gz
+[2023-04-10 05:28:44] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-04-10 05:28:44] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-4.1.5.1.tar.gz tmp/revChatGPT-4.1.6.tar.gz --markdown 20230410/r/revChatGPT/4.1.5.1-4.1.6/diff.md --exclude *.pyd
+[2023-04-10 05:28:44] INFO root fetch - processPackages [advantage-air]: Downloading https://files.pythonhosted.org/packages/6b/8c/982c8e3b3db64103739508cc4cd129cd3ce64284cc1e5ee4e01cc9337060/advantage_air-0.4.3.tar.gz
+[2023-04-10 05:28:44] INFO root fetch - processPackages [advantage-air]: executing diffoscope
+[2023-04-10 05:28:44] INFO root fetch - processPackages [advantage-air]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/advantage_air-0.4.2.tar.gz tmp/advantage_air-0.4.3.tar.gz --markdown 20230410/a/advantage-air/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-10 05:28:44] INFO root fetch - processPackages [pawpaw]: executing diffoscope
+[2023-04-10 05:28:44] INFO root fetch - processPackages [pawpaw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pawpaw-1.0.0a8.tar.gz tmp/pawpaw-1.0.0a9.tar.gz --markdown 20230410/p/pawpaw/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-04-10 05:28:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:28:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:28:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:28:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:29:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:29:40] INFO root fetch - main [MainThread]: Store serial: [17642389]
