@@ -4824,3 +4824,83 @@ EOFError: EOF read where object expected
 [2023-04-10 07:01:26] INFO root fetch - main [MainThread]: success
 [2023-04-10 07:01:26] INFO root fetch - main [MainThread]: success
 [2023-04-10 07:01:26] INFO root fetch - main [MainThread]: Store serial: [17642932]
+[2023-04-10 07:06:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642932]
+[2023-04-10 07:06:33] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-10 07:06:33] INFO root fetch - processPackages [qq-chat-history]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-10 07:06:33] WARNING root fetch - processPackages [ImgPro-Z]: Skipping, unable to determine old version
+[2023-04-10 07:06:33] INFO root fetch - main [MainThread]: error
+[2023-04-10 07:06:33] INFO root fetch - processPackages [hexo2notionnext]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-10 07:06:33] INFO root fetch - processPackages [streamlink-serverless]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 07:06:33] INFO root fetch - processPackages [xj-payment]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 07:06:34] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.13.0.dev20230409] Old Version: [2.13.0.dev20230407]
+[2023-04-10 07:06:34] INFO root fetch - processPackages [qq-chat-history]: Downloading https://files.pythonhosted.org/packages/3a/09/d5e9f558a99cdf75d74259218d2a0db3ebd0458de9b2c0ed7dfb0a52bb36/qq_chat_history-1.1.4.tar.gz
+[2023-04-10 07:06:34] INFO root fetch - processPackages [streamlink-serverless]: Downloading https://files.pythonhosted.org/packages/f4/69/e3e142be5d3593c1d6a272ce94c57e2901afd267b86a3f2a39962f38dbea/streamlink-serverless-0.0.8.tar.gz
+[2023-04-10 07:06:34] INFO root fetch - processPackages [xj-payment]: Downloading https://files.pythonhosted.org/packages/c8/86/b6513ec484bdc048de2a61687e0fafb255faaf25d870a541c20301d0f665/xj_payment-1.0.8.tar.gz
+[2023-04-10 07:06:34] INFO root fetch - processPackages [qq-chat-history]: executing diffoscope
+[2023-04-10 07:06:34] INFO root fetch - processPackages [qq-chat-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qq_chat_history-1.1.3.tar.gz tmp/qq_chat_history-1.1.4.tar.gz --markdown 20230410/q/qq-chat-history/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-10 07:06:34] INFO root fetch - processPackages [hexo2notionnext]: Downloading https://files.pythonhosted.org/packages/88/f7/55959ecfedce3424bfc7ec1d4e7e8156253341e1980c59a99a28d7759a3d/hexo2notionnext-0.0.8.tar.gz
+[2023-04-10 07:06:34] INFO root fetch - processPackages [hexo2notionnext]: executing diffoscope
+[2023-04-10 07:06:34] INFO root fetch - processPackages [hexo2notionnext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexo2notionnext-0.0.7.tar.gz tmp/hexo2notionnext-0.0.8.tar.gz --markdown 20230410/h/hexo2notionnext/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-10 07:06:34] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/0e/ea/207244a421103f9f2495eb91d25bc9ca53b3f49dcfcab97d59d933ae898d/tflite_runtime_nightly-2.13.0.dev20230409-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-10 07:06:34] INFO root fetch - processPackages [streamlink-serverless]: Downloading https://files.pythonhosted.org/packages/38/68/27939e4527aa4f820fff11a0801161189ae3d676ebeb80bf700ba94779ee/streamlink-serverless-0.0.9.tar.gz
+[2023-04-10 07:06:34] INFO root fetch - processPackages [xj-payment]: Downloading https://files.pythonhosted.org/packages/d7/56/18cf5dbfcf96a8d2dd714a47e8ce30642dea3c0825b0f79fd94491be1a01/xj_payment-1.0.9.tar.gz
+[2023-04-10 07:06:34] INFO root fetch - processPackages [xj-payment]: executing diffoscope
+[2023-04-10 07:06:34] INFO root fetch - processPackages [xj-payment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_payment-1.0.8.tar.gz tmp/xj_payment-1.0.9.tar.gz --markdown 20230410/x/xj-payment/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 07:06:34] INFO root fetch - processPackages [streamlink-serverless]: executing diffoscope
+[2023-04-10 07:06:34] INFO root fetch - processPackages [streamlink-serverless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlink-serverless-0.0.8.tar.gz tmp/streamlink-serverless-0.0.9.tar.gz --markdown 20230410/s/streamlink-serverless/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 07:06:35] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-04-10 07:06:35] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.13.0.dev20230407-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.13.0.dev20230409-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230410/t/tflite-runtime-nightly/2.13.0.dev20230407-2.13.0.dev20230409/diff.md --exclude *.pyd
+[2023-04-10 07:06:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:35] WARNING root fetch - processPackages [openai-chat]: Skipping, unable to determine old version
+[2023-04-10 07:06:35] INFO root fetch - main [MainThread]: error
+[2023-04-10 07:06:35] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230410] Old Version: [1.1.8b20230409]
+[2023-04-10 07:06:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:35] INFO root fetch - processPackages [smannan-lotr-sdk]: New version: [7.0] Old Version: [6.0]
+[2023-04-10 07:06:35] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/df/1d/79693dabea86a29817772906d5b5fabbe06a5766498b5cf496009f1ca05e/multi_model_server-1.1.8b20230410-py2.py3-none-any.whl
+[2023-04-10 07:06:35] INFO root fetch - processPackages [smannan-lotr-sdk]: Downloading https://files.pythonhosted.org/packages/94/f7/a128dea3f94e42650539d1408846ab0b3694339971dbca685017e8d05ec4/smannan_lotr_sdk-7.0.tar.gz
+[2023-04-10 07:06:35] INFO root fetch - processPackages [smannan-lotr-sdk]: executing diffoscope
+[2023-04-10 07:06:35] INFO root fetch - processPackages [smannan-lotr-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smannan_lotr_sdk-6.0.tar.gz tmp/smannan_lotr_sdk-7.0.tar.gz --markdown 20230410/s/smannan-lotr-sdk/6.0-7.0/diff.md --exclude *.pyd
+[2023-04-10 07:06:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:35] INFO root fetch - processPackages [wtt02]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-10 07:06:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:35] WARNING root fetch - processPackages [Rungui3]: Skipping, unable to determine old version
+[2023-04-10 07:06:35] INFO root fetch - main [MainThread]: error
+[2023-04-10 07:06:35] INFO root fetch - processPackages [smithed-libraries]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-10 07:06:36] INFO root fetch - processPackages [wtt02]: Downloading https://files.pythonhosted.org/packages/9c/ab/05557bafc7527718b787b4ce7b93fabeb4c2206eb603a7cdb6275f8559c1/wtt02-0.1.9.tar.gz
+[2023-04-10 07:06:36] INFO root fetch - processPackages [smithed-libraries]: Downloading https://files.pythonhosted.org/packages/e2/c4/6b671c6e87f8474bf06ea141bb1170e808dcb8173f8ed0580bc80fc1bda4/smithed_libraries-0.4.0.tar.gz
+[2023-04-10 07:06:36] INFO root fetch - processPackages [wtt02]: Downloading https://files.pythonhosted.org/packages/3c/10/e0502f4cfb969905bf8f837c8818f0bb56f304b2b8d0dbf0ed9a66e80859/wtt02-0.2.0.tar.gz
+[2023-04-10 07:06:36] INFO root fetch - processPackages [wtt02]: executing diffoscope
+[2023-04-10 07:06:36] INFO root fetch - processPackages [wtt02]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtt02-0.1.9.tar.gz tmp/wtt02-0.2.0.tar.gz --markdown 20230410/w/wtt02/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 07:06:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:36] INFO root fetch - processPackages [tvault]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-10 07:06:36] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-10 07:06:36] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.2.8-py3-none-any.whl.zip tmp/tvault-0.2.9-py3-none-any.whl.zip --markdown 20230410/t/tvault/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 07:06:36] INFO root fetch - processPackages [smithed-libraries]: Downloading https://files.pythonhosted.org/packages/0b/92/4a392f5e36486f0a1d8e7e2096ae53d61b82424adc44a5a4c50b124bed15/smithed_libraries-0.4.1.tar.gz
+[2023-04-10 07:06:37] INFO root fetch - processPackages [smithed-libraries]: executing diffoscope
+[2023-04-10 07:06:37] INFO root fetch - processPackages [smithed-libraries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smithed_libraries-0.4.0.tar.gz tmp/smithed_libraries-0.4.1.tar.gz --markdown 20230410/s/smithed-libraries/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-10 07:06:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:37] WARNING root fetch - processPackages [NanyEitaa]: Skipping, unable to determine old version
+[2023-04-10 07:06:37] INFO root fetch - main [MainThread]: error
+[2023-04-10 07:06:37] INFO root fetch - processPackages [aiocapsolver]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 07:06:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:37] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202304090507] Old Version: [0.4.3.dev202304080508]
+[2023-04-10 07:06:37] INFO root fetch - processPackages [aiocapsolver]: Downloading https://files.pythonhosted.org/packages/29/9b/035c5331a5d6e1935a08e2744ba391d9a5202b1d150f3fa80d4bd9b8318c/aiocapsolver-0.0.3.tar.gz
+[2023-04-10 07:06:37] INFO root fetch - processPackages [aiocapsolver]: executing diffoscope
+[2023-04-10 07:06:37] INFO root fetch - processPackages [aiocapsolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocapsolver-0.0.2.tar.gz tmp/aiocapsolver-0.0.3.tar.gz --markdown 20230410/a/aiocapsolver/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 07:06:37] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/4c/86/32b25403c9bf6ed388020931635a930afd3aaacbbad53e89609d90825027/tflite-model-maker-nightly-0.4.3.dev202304090507.tar.gz
+[2023-04-10 07:06:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:37] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-04-10 07:06:37] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202304080508.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202304090507.tar.gz --markdown 20230410/t/tflite-model-maker-nightly/0.4.3.dev202304080508-0.4.3.dev202304090507/diff.md --exclude *.pyd
+[2023-04-10 07:06:37] INFO root fetch - processPackages [quantplay]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-10 07:06:38] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-04-10 07:06:38] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230409-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230410-py2.py3-none-any.whl.zip --markdown 20230410/m/multi-model-server/1.1.8b20230409-1.1.8b20230410/diff.md --exclude *.pyd
+[2023-04-10 07:06:38] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2023-04-10 07:06:38] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.2.8.tar.gz tmp/quantplay-1.2.9.tar.gz --markdown 20230410/q/quantplay/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-10 07:06:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:38] WARNING root fetch - processPackages [gptchat]: Skipping, unable to determine old version
+[2023-04-10 07:06:38] INFO root fetch - main [MainThread]: error
+[2023-04-10 07:06:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:06:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:09:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:09:28] INFO root fetch - main [MainThread]: Store serial: [17642994]
