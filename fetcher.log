@@ -5303,3 +5303,65 @@ EOFError: EOF read where object expected
 [2023-04-10 08:11:54] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:11:54] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:11:54] INFO root fetch - main [MainThread]: Store serial: [17643368]
+[2023-04-10 08:16:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643368]
+[2023-04-10 08:17:01] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-10 08:17:01] INFO root fetch - processPackages [muffin-babel]: New version: [1.4.0] Old Version: [1.3.6]
+[2023-04-10 08:17:01] INFO root fetch - processPackages [samna]: New version: [0.9.39.0] Old Version: [0.9.38.0]
+[2023-04-10 08:17:01] INFO root fetch - processPackages [cdk-cloudformation-awscommunity-account-alternatecontact]: New version: [1.5.0a7] Old Version: [1.3.0a7]
+[2023-04-10 08:17:01] INFO root fetch - processPackages [genofunc]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 08:17:01] INFO root fetch - processPackages [awsimple]: New version: [2.3.3] Old Version: [2.3.2]
+[2023-04-10 08:17:01] INFO root fetch - processPackages [muffin-babel]: Downloading https://files.pythonhosted.org/packages/33/ed/819a1a836054dcfe1e0153b02072efb4df0a6d5fd10b876a62b8ffa28edd/muffin_babel-1.3.6.tar.gz
+[2023-04-10 08:17:01] INFO root fetch - processPackages [cdk-cloudformation-awscommunity-account-alternatecontact]: Downloading https://files.pythonhosted.org/packages/2d/e5/bea1eabb4c7112f71cff1d32e196fa6d5ec99fde00738485d781161e9f7f/cdk-cloudformation-awscommunity-account-alternatecontact-1.3.0a7.tar.gz
+[2023-04-10 08:17:01] INFO root fetch - processPackages [genofunc]: Downloading https://files.pythonhosted.org/packages/60/fc/ef1bb8734901180f675ff8a3fa6fad2413ec3a70b68c324be3b9465c5e77/genofunc-1.0.3-py3-none-any.whl
+[2023-04-10 08:17:01] INFO root fetch - processPackages [awsimple]: Downloading https://files.pythonhosted.org/packages/42/da/3147c488daf95c8fae13a00bcf6295afcdfaf5a2ad4720060d4c2417a2b2/awsimple-2.3.3-py3-none-any.whl
+[2023-04-10 08:17:01] INFO root fetch - processPackages [samna]: Downloading https://files.pythonhosted.org/packages/ac/49/8e22575b9ef0f797dd5332cff83b9f2288c02887aeff0cb8048a960a2edb/samna-0.9.38.0-py3-none-any.whl
+[2023-04-10 08:17:01] INFO root fetch - processPackages [awsimple]: executing diffoscope
+[2023-04-10 08:17:01] INFO root fetch - processPackages [awsimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awsimple-2.3.2-py3-none-any.whl.zip tmp/awsimple-2.3.3-py3-none-any.whl.zip --markdown 20230410/a/awsimple/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2023-04-10 08:17:01] INFO root fetch - processPackages [muffin-babel]: Downloading https://files.pythonhosted.org/packages/7b/d3/0a0f7d0e1cd93e803b588968ae32fd1fa1b19930b9dc4f69462d91c40239/muffin_babel-1.4.0.tar.gz
+[2023-04-10 08:17:01] INFO root fetch - processPackages [muffin-babel]: executing diffoscope
+[2023-04-10 08:17:01] INFO root fetch - processPackages [muffin-babel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muffin_babel-1.3.6.tar.gz tmp/muffin_babel-1.4.0.tar.gz --markdown 20230410/m/muffin-babel/1.3.6-1.4.0/diff.md --exclude *.pyd
+[2023-04-10 08:17:02] INFO root fetch - processPackages [genofunc]: Downloading https://files.pythonhosted.org/packages/e8/d6/6afded27a92caa329505412d37b138dc84f942a711b9df4fdfaca8416aea/genofunc-1.0.4.tar.gz
+[2023-04-10 08:17:02] INFO root fetch - processPackages [cdk-cloudformation-awscommunity-account-alternatecontact]: Downloading https://files.pythonhosted.org/packages/a8/1a/6b305e9f1c32e06708cdf819d2e80d1e0e02128134e001ba726744397b86/cdk-cloudformation-awscommunity-account-alternatecontact-1.5.0a7.tar.gz
+[2023-04-10 08:17:02] INFO root fetch - processPackages [genofunc]: executing diffoscope
+[2023-04-10 08:17:02] INFO root fetch - processPackages [genofunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genofunc-1.0.3-py3-none-any.whl.zip tmp/genofunc-1.0.4.tar.gz --markdown 20230410/g/genofunc/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-10 08:17:02] INFO root fetch - processPackages [samna]: Downloading https://files.pythonhosted.org/packages/00/d4/3de54a6c91f47d5c29700e274166c999cadaf0ba26c263d4a4b8a40342e2/samna-0.9.39.0-py3-none-any.whl
+[2023-04-10 08:17:02] INFO root fetch - processPackages [cdk-cloudformation-awscommunity-account-alternatecontact]: executing diffoscope
+[2023-04-10 08:17:02] INFO root fetch - processPackages [cdk-cloudformation-awscommunity-account-alternatecontact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-cloudformation-awscommunity-account-alternatecontact-1.3.0a7.tar.gz tmp/cdk-cloudformation-awscommunity-account-alternatecontact-1.5.0a7.tar.gz --markdown 20230410/c/cdk-cloudformation-awscommunity-account-alternatecontact/1.3.0a7-1.5.0a7/diff.md --exclude *.pyd
+[2023-04-10 08:17:02] INFO root fetch - processPackages [samna]: executing diffoscope
+[2023-04-10 08:17:02] INFO root fetch - processPackages [samna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/samna-0.9.38.0-py3-none-any.whl.zip tmp/samna-0.9.39.0-py3-none-any.whl.zip --markdown 20230410/s/samna/0.9.38.0-0.9.39.0/diff.md --exclude *.pyd
+[2023-04-10 08:17:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:17:02] WARNING root fetch - processPackages [wbpFonttools]: Skipping, unable to determine old version
+[2023-04-10 08:17:02] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:17:02] INFO root fetch - processPackages [cdk-cloudformation-awscommunity-s3-deletebucketcontents]: New version: [1.8.0a7] Old Version: [1.8.0a6]
+[2023-04-10 08:17:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:17:03] WARNING root fetch - processPackages [cdk-cloudformation-awscommunity-time-offset]: Skipping, unable to determine old version
+[2023-04-10 08:17:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:17:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:17:03] INFO root fetch - processPackages [intelliw]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-10 08:17:03] WARNING root fetch - processPackages [cdk-cloudformation-awscommunity-time-static]: Skipping, unable to determine old version
+[2023-04-10 08:17:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:17:03] INFO root fetch - processPackages [skduplo]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 08:17:03] INFO root fetch - processPackages [cdk-cloudformation-awscommunity-s3-deletebucketcontents]: Downloading https://files.pythonhosted.org/packages/a8/21/449147e0781660538acc9340e5acce90c965508c9f0d56c1a1598d848c2a/cdk-cloudformation-awscommunity-s3-deletebucketcontents-1.8.0a6.tar.gz
+[2023-04-10 08:17:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:17:03] INFO root fetch - processPackages [skduplo]: Downloading https://files.pythonhosted.org/packages/e8/e1/9396846a1a19161bf02a5b2addfb075e47b3f526a3b5f48e8c42f6f6e432/skduplo-0.1.0.tar.gz
+[2023-04-10 08:17:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:17:03] WARNING root fetch - processPackages [cdk-cloudformation-awscommunity-time-sleep]: Skipping, unable to determine old version
+[2023-04-10 08:17:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:17:03] ERROR root fetch - processPackages [cdk-cloudformation-awscommunity-cloudfront-s3website-module]: Unable to get metadata: No such project 'cdk-cloudformation-awscommunity-cloudfront-s3website-module'
+[2023-04-10 08:17:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:17:03] INFO root fetch - processPackages [intelliw]: executing diffoscope
+[2023-04-10 08:17:03] INFO root fetch - processPackages [intelliw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intelliw-1.2.8-py3-none-any.whl.zip tmp/intelliw-1.2.9-py3-none-any.whl.zip --markdown 20230410/i/intelliw/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-10 08:17:03] WARNING root fetch - processPackages [cdk-cloudformation-awscommunity-s3-bucket-module]: Skipping, unable to determine old version
+[2023-04-10 08:17:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:17:03] INFO root fetch - processPackages [skduplo]: Downloading https://files.pythonhosted.org/packages/62/d6/8d8f920a8b1fc6e45f27afbd87596356135785b59f4ec8549766e57832a5/skduplo-0.1.1.tar.gz
+[2023-04-10 08:17:03] ERROR root fetch - processPackages [cdk-cloudformation-awscommunity-dynamodb-item]: Unable to get metadata: No such project 'cdk-cloudformation-awscommunity-dynamodb-item'
+[2023-04-10 08:17:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:17:03] INFO root fetch - processPackages [skduplo]: executing diffoscope
+[2023-04-10 08:17:03] INFO root fetch - processPackages [skduplo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skduplo-0.1.0.tar.gz tmp/skduplo-0.1.1.tar.gz --markdown 20230410/s/skduplo/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 08:17:03] INFO root fetch - processPackages [cdk-cloudformation-awscommunity-s3-deletebucketcontents]: Downloading https://files.pythonhosted.org/packages/5f/02/0f121094d598f60e3b8391814f2a810309cdda6d50184d2a1b7a18e997a6/cdk-cloudformation-awscommunity-s3-deletebucketcontents-1.8.0a7.tar.gz
+[2023-04-10 08:17:03] INFO root fetch - processPackages [cdk-cloudformation-awscommunity-s3-deletebucketcontents]: executing diffoscope
+[2023-04-10 08:17:03] INFO root fetch - processPackages [cdk-cloudformation-awscommunity-s3-deletebucketcontents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-cloudformation-awscommunity-s3-deletebucketcontents-1.8.0a6.tar.gz tmp/cdk-cloudformation-awscommunity-s3-deletebucketcontents-1.8.0a7.tar.gz --markdown 20230410/c/cdk-cloudformation-awscommunity-s3-deletebucketcontents/1.8.0a6-1.8.0a7/diff.md --exclude *.pyd
+[2023-04-10 08:17:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:17:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:17:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:17:07] INFO root fetch - main [MainThread]: Store serial: [17643427]
