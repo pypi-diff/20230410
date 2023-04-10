@@ -8226,3 +8226,55 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 13:15:34] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:15:39] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:15:39] INFO root fetch - main [MainThread]: Store serial: [17645252]
+[2023-04-10 13:20:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645252]
+[2023-04-10 13:20:47] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 13:20:47] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-04-10 13:20:47] INFO root fetch - processPackages [supervisely]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-04-10 13:20:47] INFO root fetch - processPackages [ruiwen-data-all]: New version: [2.0.1] Old Version: [1.0.3]
+[2023-04-10 13:20:47] INFO root fetch - processPackages [market-analy]: New version: [0.2.3] Old Version: [0.2]
+[2023-04-10 13:20:47] INFO root fetch - processPackages [datagen-tech]: New version: [1.9.0rc2] Old Version: [1.9.0rc1]
+[2023-04-10 13:20:48] INFO root fetch - processPackages [ruiwen-data-all]: Downloading https://files.pythonhosted.org/packages/6b/c6/fb41e3b8041a4e7480a959c5faf19bed08058d621b0f6e51f92be115ca4f/ruiwen_data_all-1.0.3.tar.gz
+[2023-04-10 13:20:48] INFO root fetch - processPackages [market-analy]: Downloading https://files.pythonhosted.org/packages/d0/90/747eaa0532a4c72912d2e4b1cbc392cd8941f2fd22df958dd241ebf2ea00/market_analy-0.2.tar.gz
+[2023-04-10 13:20:48] INFO root fetch - processPackages [supervisely]: executing diffoscope
+[2023-04-10 13:20:48] INFO root fetch - processPackages [supervisely]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervisely-6.9.1.tar.gz tmp/supervisely-6.9.2.tar.gz --markdown 20230410/s/supervisely/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-04-10 13:20:48] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-04-10 13:20:48] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230410/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-04-10 13:20:48] INFO root fetch - processPackages [ruiwen-data-all]: Downloading https://files.pythonhosted.org/packages/99/b5/26f693b81704d0ea43d00e4d3bfe0c9fc879dd612cb33e2d38a93a224f78/ruiwen_data_all-2.0.1.tar.gz
+[2023-04-10 13:20:48] INFO root fetch - processPackages [market-analy]: Downloading https://files.pythonhosted.org/packages/5f/41/119c2efd972166b24a130050d00cd13004acf3e6a4542532daf213b43b84/market_analy-0.2.3.tar.gz
+[2023-04-10 13:20:48] INFO root fetch - processPackages [ruiwen-data-all]: executing diffoscope
+[2023-04-10 13:20:48] INFO root fetch - processPackages [ruiwen-data-all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruiwen_data_all-1.0.3.tar.gz tmp/ruiwen_data_all-2.0.1.tar.gz --markdown 20230410/r/ruiwen-data-all/1.0.3-2.0.1/diff.md --exclude *.pyd
+[2023-04-10 13:20:48] INFO root fetch - processPackages [datagen-tech]: executing diffoscope
+[2023-04-10 13:20:48] INFO root fetch - processPackages [datagen-tech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_tech-1.9.0rc1.tar.gz tmp/datagen_tech-1.9.0rc2.tar.gz --markdown 20230410/d/datagen-tech/1.9.0rc1-1.9.0rc2/diff.md --exclude *.pyd
+[2023-04-10 13:20:48] INFO root fetch - processPackages [market-analy]: executing diffoscope
+[2023-04-10 13:20:48] INFO root fetch - processPackages [market-analy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/market_analy-0.2.tar.gz tmp/market_analy-0.2.3.tar.gz --markdown 20230410/m/market-analy/0.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-10 13:20:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:20:49] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-10 13:20:49] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/48/97/381791bc4283e669dec9f67993e2049ffec0082aab092c27860699d3eb24/torchtnt-nightly-2023.4.9.tar.gz
+[2023-04-10 13:20:50] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-04-10 13:20:50] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.4.8.tar.gz tmp/torchtnt-nightly-2023.4.9.tar.gz --markdown 20230410/t/torchtnt-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-10 13:20:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:20:50] INFO root fetch - processPackages [alibabacloud-documentautoml20221229-py2]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-10 13:20:50] INFO root fetch - processPackages [alibabacloud-documentautoml20221229-py2]: executing diffoscope
+[2023-04-10 13:20:50] INFO root fetch - processPackages [alibabacloud-documentautoml20221229-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_documentautoml20221229_py2-1.0.7.tar.gz tmp/alibabacloud_documentautoml20221229_py2-1.0.8.tar.gz --markdown 20230410/a/alibabacloud-documentautoml20221229-py2/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-10 13:20:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:20:51] INFO root fetch - processPackages [alibabacloud-documentautoml20221229]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-10 13:20:51] INFO root fetch - processPackages [alibabacloud-documentautoml20221229]: executing diffoscope
+[2023-04-10 13:20:51] INFO root fetch - processPackages [alibabacloud-documentautoml20221229]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_documentautoml20221229-1.0.7.tar.gz tmp/alibabacloud_documentautoml20221229-1.0.8.tar.gz --markdown 20230410/a/alibabacloud-documentautoml20221229/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-10 13:20:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:20:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:20:51] INFO root fetch - processPackages [dbis-relational-calculus]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 13:20:51] INFO root fetch - processPackages [clang-format]: New version: [9.0.0] Old Version: [8.0.1]
+[2023-04-10 13:20:51] INFO root fetch - processPackages [dbis-relational-calculus]: Downloading https://files.pythonhosted.org/packages/56/6d/b9dae0bf15299ca145d3401118e35d498b8d33164f13fc3206953a1cfdaa/dbis-relational-calculus-1.0.1.tar.gz
+[2023-04-10 13:20:51] INFO root fetch - processPackages [clang-format]: Downloading https://files.pythonhosted.org/packages/37/66/75e3c14f22c8a7a02c7e337547e29d42bed516ba8067fdef87d3d9346e52/clang_format-8.0.1-py2.py3-none-manylinux1_x86_64.whl
+[2023-04-10 13:20:51] INFO root fetch - processPackages [dbis-relational-calculus]: Downloading https://files.pythonhosted.org/packages/d0/df/604f36738341edeb760a5037e6207bb0ae63c6a64540df069477d623b22b/dbis-relational-calculus-1.0.2.tar.gz
+[2023-04-10 13:20:52] INFO root fetch - processPackages [dbis-relational-calculus]: executing diffoscope
+[2023-04-10 13:20:52] INFO root fetch - processPackages [dbis-relational-calculus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbis-relational-calculus-1.0.1.tar.gz tmp/dbis-relational-calculus-1.0.2.tar.gz --markdown 20230410/d/dbis-relational-calculus/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 13:20:52] INFO root fetch - processPackages [clang-format]: Downloading https://files.pythonhosted.org/packages/25/f2/d989afaf8a91385f18fd06e6202644be0bc3a1d14548c18a8ece4911e005/clang_format-9.0.0-py2.py3-none-manylinux1_x86_64.whl
+[2023-04-10 13:20:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:20:52] INFO root fetch - processPackages [clang-format]: executing diffoscope
+[2023-04-10 13:20:52] INFO root fetch - processPackages [clang-format]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clang_format-8.0.1-py2.py3-none-manylinux1_x86_64.whl.zip tmp/clang_format-9.0.0-py2.py3-none-manylinux1_x86_64.whl.zip --markdown 20230410/c/clang-format/8.0.1-9.0.0/diff.md --exclude *.pyd
+[2023-04-10 13:20:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:20:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:20:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:21:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:21:07] INFO root fetch - main [MainThread]: Store serial: [17645295]
