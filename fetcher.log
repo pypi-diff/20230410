@@ -1616,3 +1616,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-10 03:18:56] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:18:59] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:18:59] INFO root fetch - main [MainThread]: Store serial: [17641005]
+[2023-04-10 03:24:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17641005]
+[2023-04-10 03:24:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-10 03:24:06] INFO root fetch - processPackages [sm-search-connector-poc]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 03:24:06] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 03:24:06] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-10 03:24:06] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 03:24:06] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 03:24:06] INFO root fetch - main [MainThread]: error
+[2023-04-10 03:24:06] INFO root fetch - processPackages [bioregistry]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-04-10 03:24:06] INFO root fetch - processPackages [sm-search-connector-poc]: Downloading https://files.pythonhosted.org/packages/25/9e/4263799063c479805902599e8e53d571d3781ebc243507df62d684ce4302/sm-search-connector-poc-0.1.0.tar.gz
+[2023-04-10 03:24:06] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-04-10 03:24:06] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230410/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-10 03:24:06] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/7f/5f/6193e34ce341d20449a0cd07aa27ac84732ad78284cf7903b83489a2eb41/bioregistry-0.8.6.tar.gz
+[2023-04-10 03:24:07] INFO root fetch - processPackages [sm-search-connector-poc]: Downloading https://files.pythonhosted.org/packages/81/b7/ecfe3d2cb00c600ff8a916d4b75bd8d2415622844e9a1874b7cfc4000490/sm-search-connector-poc-0.1.1.tar.gz
+[2023-04-10 03:24:07] INFO root fetch - processPackages [sm-search-connector-poc]: executing diffoscope
+[2023-04-10 03:24:07] INFO root fetch - processPackages [sm-search-connector-poc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sm-search-connector-poc-0.1.0.tar.gz tmp/sm-search-connector-poc-0.1.1.tar.gz --markdown 20230410/s/sm-search-connector-poc/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 03:24:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:24:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:24:15] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-04-10 03:24:15] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.8.5.tar.gz tmp/bioregistry-0.8.6.tar.gz --markdown 20230410/b/bioregistry/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-04-10 03:25:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:25:23] INFO root fetch - main [MainThread]: Store serial: [17641018]
