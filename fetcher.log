@@ -886,3 +886,81 @@
 [2023-04-10 02:10:06] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:10:13] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:10:13] INFO root fetch - main [MainThread]: Store serial: [17640540]
+[2023-04-10 02:15:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640540]
+[2023-04-10 02:15:21] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-10 02:15:21] INFO root fetch - processPackages [linc]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-10 02:15:21] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.93] Old Version: [1.1.92]
+[2023-04-10 02:15:21] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 02:15:21] INFO root fetch - processPackages [cdk-amazon-chime-resources]: New version: [2.2.7] Old Version: [2.2.6]
+[2023-04-10 02:15:21] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.5.0.dev20230410] Old Version: [0.5.0.dev20230409]
+[2023-04-10 02:15:21] INFO root fetch - processPackages [linc]: Downloading https://files.pythonhosted.org/packages/d6/f8/f9f762594f43f096c2c862be46bc65f018ebf9e1874a9c8cddf531a8a2af/linc-1.3.0.tar.gz
+[2023-04-10 02:15:21] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 02:15:22] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 02:15:22] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:15:22] INFO root fetch - processPackages [cdk-amazon-chime-resources]: Downloading https://files.pythonhosted.org/packages/72/a6/c03a621517ba81904776df15fe3fc465f96cb2633c91ff98bd93fc65966c/cdk-amazon-chime-resources-2.2.6.tar.gz
+[2023-04-10 02:15:22] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/8c/5b/f113cafbfc55dffaafdb83073b4646cc09630c169b8f96c0dec880fdc28b/pytorch-ignite-0.5.0.dev20230410.tar.gz
+[2023-04-10 02:15:22] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2023-04-10 02:15:22] WARNING root fetch - processPackages [cdk-amazon-chime-resources]: Skipping package: exceeds size limit 14330526>=10485760
+[2023-04-10 02:15:22] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:15:22] INFO root fetch - processPackages [geotorchai]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-10 02:15:22] INFO root fetch - processPackages [linc]: Downloading https://files.pythonhosted.org/packages/d3/d3/5b13e3f07e1be573ff9b5536162ece3220f3ba8ba32dab5d48cb8c12f66e/linc-1.4.0.tar.gz
+[2023-04-10 02:15:22] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/9c/c7/0fb088a50f56b2705ad4e8b0737ad29bf87e179f9f14a2764e2cc975fef4/cdk-skylight-1.1.93.tar.gz
+[2023-04-10 02:15:22] INFO root fetch - processPackages [linc]: executing diffoscope
+[2023-04-10 02:15:22] INFO root fetch - processPackages [linc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linc-1.3.0.tar.gz tmp/linc-1.4.0.tar.gz --markdown 20230410/l/linc/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-10 02:15:22] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2023-04-10 02:15:22] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.92.tar.gz tmp/cdk-skylight-1.1.93.tar.gz --markdown 20230410/c/cdk-skylight/1.1.92-1.1.93/diff.md --exclude *.pyd
+[2023-04-10 02:15:22] INFO root fetch - processPackages [geotorchai]: Downloading https://files.pythonhosted.org/packages/e4/a9/0c55a23dbcb9af5f33ce9d3e04a930063690ebb7e38177d5724d01f0ab22/geotorchai-0.1.0.tar.gz
+[2023-04-10 02:15:22] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2023-04-10 02:15:22] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20230410/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/diff.md --exclude *.pyd
+[2023-04-10 02:15:22] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2023-04-10 02:15:22] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-ignite-0.5.0.dev20230409.tar.gz tmp/pytorch-ignite-0.5.0.dev20230410.tar.gz --markdown 20230410/p/pytorch-ignite/0.5.0.dev20230409-0.5.0.dev20230410/diff.md --exclude *.pyd
+[2023-04-10 02:15:22] INFO root fetch - processPackages [geotorchai]: Downloading https://files.pythonhosted.org/packages/00/a2/090cc8f3ddb22f69ae852cb112514214434436005f174e1ebc78e4c150a1/geotorchai-0.2.0.tar.gz
+[2023-04-10 02:15:22] INFO root fetch - processPackages [geotorchai]: executing diffoscope
+[2023-04-10 02:15:22] INFO root fetch - processPackages [geotorchai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geotorchai-0.1.0.tar.gz tmp/geotorchai-0.2.0.tar.gz --markdown 20230410/g/geotorchai/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 02:15:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:23] INFO root fetch - processPackages [sm-search-connector-poc-interface]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-04-10 02:15:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:23] INFO root fetch - processPackages [sm-search-connector-poc-interface]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-04-10 02:15:23] INFO root fetch - processPackages [sm-search-connector-poc-interface]: Downloading https://files.pythonhosted.org/packages/3c/27/0654fd654c7e771f604ba20d890573b30e958b78c0cc69d88a1e254ce57c/sm-search-connector-poc-interface-0.1.1.tar.gz
+[2023-04-10 02:15:23] INFO root fetch - processPackages [sm-search-connector-poc-interface]: Downloading https://files.pythonhosted.org/packages/3c/27/0654fd654c7e771f604ba20d890573b30e958b78c0cc69d88a1e254ce57c/sm-search-connector-poc-interface-0.1.1.tar.gz
+[2023-04-10 02:15:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:23] INFO root fetch - processPackages [sm-search-connector-poc-interface]: Downloading https://files.pythonhosted.org/packages/a0/38/54e1fc485654c6f3facaa385ab2e4edf12c6f8e0d52f1497286c2e731ee6/sm-search-connector-poc-interface-0.2.1.tar.gz
+[2023-04-10 02:15:23] INFO root fetch - processPackages [sm-search-connector-poc-interface]: Downloading https://files.pythonhosted.org/packages/a0/38/54e1fc485654c6f3facaa385ab2e4edf12c6f8e0d52f1497286c2e731ee6/sm-search-connector-poc-interface-0.2.1.tar.gz
+[2023-04-10 02:15:23] INFO root fetch - processPackages [onnx-weekly]: New version: [1.14.0.dev20230410] Old Version: [1.14.0.dev20230403]
+[2023-04-10 02:15:23] INFO root fetch - processPackages [sm-search-connector-poc-interface]: executing diffoscope
+[2023-04-10 02:15:23] INFO root fetch - processPackages [sm-search-connector-poc-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sm-search-connector-poc-interface-0.1.1.tar.gz tmp/sm-search-connector-poc-interface-0.2.1.tar.gz --markdown 20230410/s/sm-search-connector-poc-interface/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-04-10 02:15:23] INFO root fetch - processPackages [sm-search-connector-poc-interface]: executing diffoscope
+[2023-04-10 02:15:23] INFO root fetch - processPackages [sm-search-connector-poc-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sm-search-connector-poc-interface-0.1.1.tar.gz tmp/sm-search-connector-poc-interface-0.2.1.tar.gz --markdown 20230410/s/sm-search-connector-poc-interface/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-04-10 02:15:24] INFO root fetch - processPackages [onnx-weekly]: Downloading https://files.pythonhosted.org/packages/db/4d/f02dfa7697483c2ed4c09736c75d648fc8544508eccc0ae5bc8571284d11/onnx-weekly-1.14.0.dev20230403.tar.gz
+[2023-04-10 02:15:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:24] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 02:15:24] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 02:15:24] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 02:15:24] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:15:24] INFO root fetch - processPackages [cdklabs.appsync-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 02:15:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:24] INFO root fetch - processPackages [hx-requests]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-10 02:15:24] INFO root fetch - processPackages [cdklabs.appsync-utils]: executing diffoscope
+[2023-04-10 02:15:24] INFO root fetch - processPackages [cdklabs.appsync-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.appsync-utils-0.0.8.tar.gz tmp/cdklabs.appsync-utils-0.0.9.tar.gz --markdown 20230410/c/cdklabs.appsync-utils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 02:15:24] INFO root fetch - processPackages [hx-requests]: Downloading https://files.pythonhosted.org/packages/b0/09/51ecf40861a734f693af8d226c40cbc78a1c9c892d6d538baa79a75cb795/hx_requests-0.7.1.tar.gz
+[2023-04-10 02:15:24] INFO root fetch - processPackages [hx-requests]: executing diffoscope
+[2023-04-10 02:15:24] INFO root fetch - processPackages [hx-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hx_requests-0.7.0.tar.gz tmp/hx_requests-0.7.1.tar.gz --markdown 20230410/h/hx-requests/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-10 02:15:24] WARNING root fetch - processPackages [onnx-weekly]: Skipping package: exceeds size limit 11331102>=10485760
+[2023-04-10 02:15:24] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:15:24] INFO root fetch - processPackages [auto-vicuna]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 02:15:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:24] INFO root fetch - processPackages [cdktf-surreal-backend]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 02:15:24] INFO root fetch - processPackages [auto-vicuna]: executing diffoscope
+[2023-04-10 02:15:24] INFO root fetch - processPackages [auto-vicuna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_vicuna-0.0.1.tar.gz tmp/auto_vicuna-0.0.2.tar.gz --markdown 20230410/a/auto-vicuna/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 02:15:24] INFO root fetch - processPackages [cdktf-surreal-backend]: executing diffoscope
+[2023-04-10 02:15:24] INFO root fetch - processPackages [cdktf-surreal-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-surreal-backend-1.0.8.tar.gz tmp/cdktf-surreal-backend-1.0.9.tar.gz --markdown 20230410/c/cdktf-surreal-backend/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 02:15:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:24] INFO root fetch - processPackages [cdk8s-valheim]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 02:15:25] INFO root fetch - processPackages [cdk8s-valheim]: executing diffoscope
+[2023-04-10 02:15:25] INFO root fetch - processPackages [cdk8s-valheim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-valheim-0.0.8.tar.gz tmp/cdk8s-valheim-0.0.9.tar.gz --markdown 20230410/c/cdk8s-valheim/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 02:15:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:15:26] INFO root fetch - main [MainThread]: Store serial: [17640592]
