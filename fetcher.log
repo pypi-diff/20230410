@@ -7195,3 +7195,25 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 11:23:53] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:23:54] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:23:54] INFO root fetch - main [MainThread]: Store serial: [17644677]
+[2023-04-10 11:28:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644677]
+[2023-04-10 11:29:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-10 11:29:02] INFO root fetch - processPackages [xj-role]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 11:29:02] INFO root fetch - processPackages [exodusutils]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-10 11:29:02] INFO root fetch - processPackages [pygwalker]: New version: [0.1.7a5] Old Version: [0.1.7a4]
+[2023-04-10 11:29:02] INFO root fetch - processPackages [bagbag]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-10 11:29:02] INFO root fetch - processPackages [xj-role]: Downloading https://files.pythonhosted.org/packages/6b/8b/97965272d3462d0f7d0a27d169efd5145a23039e46eb22ce86c516d7eb65/xj_role-1.0.8.tar.gz
+[2023-04-10 11:29:02] INFO root fetch - processPackages [exodusutils]: executing diffoscope
+[2023-04-10 11:29:02] INFO root fetch - processPackages [exodusutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exodusutils-0.3.7.tar.gz tmp/exodusutils-0.3.9.tar.gz --markdown 20230410/e/exodusutils/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-10 11:29:02] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-04-10 11:29:02] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.9.5.tar.gz tmp/bagbag-0.9.6.tar.gz --markdown 20230410/b/bagbag/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-10 11:29:02] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/f9/67/2c44fa96ff25aea894561feacf1a39d5ebaed58f3239474b307af4755641/pygwalker-0.1.7a5.tar.gz
+[2023-04-10 11:29:02] INFO root fetch - processPackages [xj-role]: Downloading https://files.pythonhosted.org/packages/2c/77/ebb1d3254b61bd786e3aaebbd01dfa15310557c1a927f61995a6b9e0531e/xj_role-1.0.9.tar.gz
+[2023-04-10 11:29:02] INFO root fetch - processPackages [xj-role]: executing diffoscope
+[2023-04-10 11:29:02] INFO root fetch - processPackages [xj-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_role-1.0.8.tar.gz tmp/xj_role-1.0.9.tar.gz --markdown 20230410/x/xj-role/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 11:29:02] INFO root fetch - processPackages [pygwalker]: executing diffoscope
+[2023-04-10 11:29:02] INFO root fetch - processPackages [pygwalker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygwalker-0.1.7a4.tar.gz tmp/pygwalker-0.1.7a5.tar.gz --markdown 20230410/p/pygwalker/0.1.7a4-0.1.7a5/diff.md --exclude *.pyd
+[2023-04-10 11:29:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:29:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:29:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:29:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:29:06] INFO root fetch - main [MainThread]: Store serial: [17644692]
