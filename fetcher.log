@@ -4664,3 +4664,29 @@ EOFError: EOF read where object expected
 [2023-04-10 06:38:21] INFO root fetch - main [MainThread]: success
 [2023-04-10 06:39:57] INFO root fetch - main [MainThread]: success
 [2023-04-10 06:39:57] INFO root fetch - main [MainThread]: Store serial: [17642800]
+[2023-04-10 06:45:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642800]
+[2023-04-10 06:45:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-10 06:45:13] INFO root fetch - processPackages [tvault]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-10 06:45:13] INFO root fetch - processPackages [aiocapsolver]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 06:45:13] INFO root fetch - processPackages [CircleBlock]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-10 06:45:13] INFO root fetch - processPackages [nonebot-adapter-walleq]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-10 06:45:13] WARNING root fetch - processPackages [text-excuse-generator]: Skipping, unable to determine old version
+[2023-04-10 06:45:13] INFO root fetch - main [MainThread]: error
+[2023-04-10 06:45:13] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-10 06:45:13] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.2.8-py3-none-any.whl.zip tmp/tvault-0.2.9-py3-none-any.whl.zip --markdown 20230410/t/tvault/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 06:45:13] INFO root fetch - processPackages [aiocapsolver]: Downloading https://files.pythonhosted.org/packages/9f/7b/5afd5fcbeef3f9f4585d41cba9987a2a08313b57954c215e9e39284d7ad5/aiocapsolver-0.0.1.tar.gz
+[2023-04-10 06:45:13] INFO root fetch - processPackages [CircleBlock]: Downloading https://files.pythonhosted.org/packages/8a/99/f2af9ec5deda1676032ac34c5952abc37c2aa5d86b68ad1ebf46f1daba4d/circleblock-1.0.8.tar.gz
+[2023-04-10 06:45:13] INFO root fetch - processPackages [nonebot-adapter-walleq]: Downloading https://files.pythonhosted.org/packages/67/bc/b5f39b1be6ccf57da732678e281f6dea57ed31203867c8c808adbb8e14e2/nonebot_adapter_walleq-0.1.1.tar.gz
+[2023-04-10 06:45:13] INFO root fetch - processPackages [CircleBlock]: executing diffoscope
+[2023-04-10 06:45:13] INFO root fetch - processPackages [CircleBlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CircleBlock-1.0.7.tar.gz tmp/circleblock-1.0.8.tar.gz --markdown 20230410/C/CircleBlock/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-10 06:45:13] INFO root fetch - processPackages [aiocapsolver]: Downloading https://files.pythonhosted.org/packages/3d/a3/3cd388a5fd5279022fc4a6c87d21f8de3f4f5b6567428565bb15a5b0cb2e/aiocapsolver-0.0.2.tar.gz
+[2023-04-10 06:45:13] INFO root fetch - processPackages [aiocapsolver]: executing diffoscope
+[2023-04-10 06:45:13] INFO root fetch - processPackages [aiocapsolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocapsolver-0.0.1.tar.gz tmp/aiocapsolver-0.0.2.tar.gz --markdown 20230410/a/aiocapsolver/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 06:45:13] INFO root fetch - processPackages [nonebot-adapter-walleq]: Downloading https://files.pythonhosted.org/packages/ff/c6/8312c4e187916879a6625bd23fb319e10d2b91fcf6500c95dbbcee165093/nonebot_adapter_walleq-0.2.0.tar.gz
+[2023-04-10 06:45:13] INFO root fetch - processPackages [nonebot-adapter-walleq]: executing diffoscope
+[2023-04-10 06:45:13] INFO root fetch - processPackages [nonebot-adapter-walleq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_adapter_walleq-0.1.1.tar.gz tmp/nonebot_adapter_walleq-0.2.0.tar.gz --markdown 20230410/n/nonebot-adapter-walleq/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 06:45:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:45:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:45:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:45:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:45:14] INFO root fetch - main [MainThread]: Store serial: [17642815]
