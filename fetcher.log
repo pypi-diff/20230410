@@ -10346,3 +10346,79 @@ EOFError: EOF read where object expected
 [2023-04-10 15:54:31] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:54:31] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:54:31] INFO root fetch - main [MainThread]: Store serial: [17646464]
+[2023-04-10 15:59:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646464]
+[2023-04-10 15:59:39] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-10 15:59:39] INFO root fetch - processPackages [polywrap-core]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-10 15:59:39] INFO root fetch - processPackages [polywrap-plugin]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-10 15:59:39] INFO root fetch - processPackages [caso]: New version: [4.1.0.0rc1] Old Version: [4.0.1.dev1]
+[2023-04-10 15:59:39] INFO root fetch - processPackages [polywrap-wasm]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-10 15:59:39] INFO root fetch - processPackages [nbconvert]: New version: [7.3.1] Old Version: [7.3.0]
+[2023-04-10 15:59:40] INFO root fetch - processPackages [nbconvert]: Downloading https://files.pythonhosted.org/packages/2c/ef/43febf167d571db57463cca41f4be7757d03e9c70b0530d436ac9e9551b9/nbconvert-7.3.0.tar.gz
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-core]: Downloading https://files.pythonhosted.org/packages/7b/b1/1484222b63b3e1b70d597e65561606bde5651d540e5c9df28e9ab3dda02b/polywrap_core-0.1.0a7.tar.gz
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-wasm]: Downloading https://files.pythonhosted.org/packages/d5/19/70a8edb0676461386210251f8bc9983269fc212d0b6664eee96fc5569f8c/polywrap_wasm-0.1.0a6.tar.gz
+[2023-04-10 15:59:40] INFO root fetch - processPackages [caso]: Downloading https://files.pythonhosted.org/packages/29/bd/fa166f05cca4bbd7cce9fc545c6ce012557c0ea16b8545592d9bcc46f824/caso-4.0.1.dev1.tar.gz
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-plugin]: Downloading https://files.pythonhosted.org/packages/f4/97/c10b8b5ec154f879d052ed84f0e13843a1e4cb1b409a21920a29cc9d2d41/polywrap_plugin-0.1.0a6.tar.gz
+[2023-04-10 15:59:40] INFO root fetch - processPackages [nbconvert]: Downloading https://files.pythonhosted.org/packages/9a/60/e682399bba78a8f3cf39f23006ab1bbb3f8b7706c6f00f34e2f5e36bfc44/nbconvert-7.3.1.tar.gz
+[2023-04-10 15:59:40] INFO root fetch - processPackages [nbconvert]: executing diffoscope
+[2023-04-10 15:59:40] INFO root fetch - processPackages [nbconvert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbconvert-7.3.0.tar.gz tmp/nbconvert-7.3.1.tar.gz --markdown 20230410/n/nbconvert/7.3.0-7.3.1/diff.md --exclude *.pyd
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-core]: Downloading https://files.pythonhosted.org/packages/90/d2/7bf0a80d0c2cc70ceefe989729f194f3d0c8d6dfc9282c14919ee73276e0/polywrap_core-0.1.0a8.tar.gz
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-wasm]: Downloading https://files.pythonhosted.org/packages/bc/38/6a2979eb32cadf6a2c76b0a2fe367656e24719f54d9e3669b52279b5e314/polywrap_wasm-0.1.0a7.tar.gz
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-plugin]: Downloading https://files.pythonhosted.org/packages/b3/3c/5ba12e1bf0c9e5d66c6dab019c7fa21a48eb6897cc7e2a7f9138b9f02112/polywrap_plugin-0.1.0a7.tar.gz
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-core]: executing diffoscope
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_core-0.1.0a7.tar.gz tmp/polywrap_core-0.1.0a8.tar.gz --markdown 20230410/p/polywrap-core/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-wasm]: executing diffoscope
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-wasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_wasm-0.1.0a6.tar.gz tmp/polywrap_wasm-0.1.0a7.tar.gz --markdown 20230410/p/polywrap-wasm/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-10 15:59:40] INFO root fetch - processPackages [caso]: Downloading https://files.pythonhosted.org/packages/27/9d/925d37052227669d0cc31f814420176a1c130b55bb29ff82d9e519b6faac/caso-4.1.0.0rc1.tar.gz
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-plugin]: executing diffoscope
+[2023-04-10 15:59:40] INFO root fetch - processPackages [polywrap-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_plugin-0.1.0a6.tar.gz tmp/polywrap_plugin-0.1.0a7.tar.gz --markdown 20230410/p/polywrap-plugin/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-10 15:59:40] INFO root fetch - processPackages [caso]: executing diffoscope
+[2023-04-10 15:59:40] INFO root fetch - processPackages [caso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caso-4.0.1.dev1.tar.gz tmp/caso-4.1.0.0rc1.tar.gz --markdown 20230410/c/caso/4.0.1.dev1-4.1.0.0rc1/diff.md --exclude *.pyd
+[2023-04-10 15:59:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:41] INFO root fetch - processPackages [recon-lw]: New version: [2.0.0.dev4658068825] Old Version: [2.0.0.dev4655775132]
+[2023-04-10 15:59:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:41] INFO root fetch - processPackages [snappi]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-10 15:59:41] INFO root fetch - processPackages [audioldm]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-10 15:59:42] INFO root fetch - processPackages [recon-lw]: Downloading https://files.pythonhosted.org/packages/26/60/9863ed2ec8b82a869473072606ecf798a64a049b617ed431f75fcdb4b602/recon_lw-2.0.0.dev4658068825.tar.gz
+[2023-04-10 15:59:42] INFO root fetch - processPackages [snappi]: Downloading https://files.pythonhosted.org/packages/e1/24/ca8bfd6fd1ae66023fba8d16057e3f008c3a93fa2356621c53e01767507f/snappi-0.9.7.tar.gz
+[2023-04-10 15:59:42] INFO root fetch - processPackages [audioldm]: Downloading https://files.pythonhosted.org/packages/25/8e/519c842eabb42f50a3538b58bbd6d040ffe1670d68d261cf75c2c6e71aca/audioldm-0.0.9.tar.gz
+[2023-04-10 15:59:42] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2023-04-10 15:59:42] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-2.0.0.dev4655775132.tar.gz tmp/recon_lw-2.0.0.dev4658068825.tar.gz --markdown 20230410/r/recon-lw/2.0.0.dev4655775132-2.0.0.dev4658068825/diff.md --exclude *.pyd
+[2023-04-10 15:59:42] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:42] INFO root fetch - processPackages [libfwevt-python]: New version: [20230410] Old Version: [20220925]
+[2023-04-10 15:59:42] INFO root fetch - processPackages [snappi]: Downloading https://files.pythonhosted.org/packages/09/a0/4ebf64a764adf0a4a06e6fe78f8eae91866a91f9ce7eb416b6e93d701bfa/snappi-0.9.8.tar.gz
+[2023-04-10 15:59:42] INFO root fetch - processPackages [libfwevt-python]: Downloading https://files.pythonhosted.org/packages/82/3e/c376196a917857547f5a9154cb5d3347463365d85ead2f1394dbecde7e5f/libfwevt-python-20220925.tar.gz
+[2023-04-10 15:59:43] INFO root fetch - processPackages [snappi]: executing diffoscope
+[2023-04-10 15:59:43] INFO root fetch - processPackages [snappi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snappi-0.9.7.tar.gz tmp/snappi-0.9.8.tar.gz --markdown 20230410/s/snappi/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-10 15:59:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:43] INFO root fetch - processPackages [oldschool-management-tools]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 15:59:43] INFO root fetch - processPackages [audioldm]: Downloading https://files.pythonhosted.org/packages/73/c3/e79ce353635a5f5dfc39fc5d2547d00679ed3667f64145fffa9c52fc51bc/audioldm-0.1.0.tar.gz
+[2023-04-10 15:59:43] INFO root fetch - processPackages [audioldm]: executing diffoscope
+[2023-04-10 15:59:43] INFO root fetch - processPackages [audioldm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audioldm-0.0.9.tar.gz tmp/audioldm-0.1.0.tar.gz --markdown 20230410/a/audioldm/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-10 15:59:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:43] INFO root fetch - processPackages [oldschool-management-tools]: Downloading https://files.pythonhosted.org/packages/af/86/05b6dcb712214587b2e3ed926aae5b4de259c171db00bcb916629b1a116b/oldschool_management_tools-0.1.2.tar.gz
+[2023-04-10 15:59:43] INFO root fetch - processPackages [oldschool-management-tools]: executing diffoscope
+[2023-04-10 15:59:43] INFO root fetch - processPackages [oldschool-management-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oldschool_management_tools-0.1.1.tar.gz tmp/oldschool_management_tools-0.1.2.tar.gz --markdown 20230410/o/oldschool-management-tools/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 15:59:43] INFO root fetch - processPackages [rpa-cooperativa]: New version: [1.0.41] Old Version: [1.0.40]
+[2023-04-10 15:59:43] INFO root fetch - processPackages [rpa-cooperativa]: Downloading https://files.pythonhosted.org/packages/67/af/98f6610c7efb9a55746706f6d0fbe9275090957afdaf75d6bc3f785fe05e/rpa_cooperativa-1.0.40.tar.gz
+[2023-04-10 15:59:43] INFO root fetch - processPackages [rpa-cooperativa]: Downloading https://files.pythonhosted.org/packages/02/9d/64fc1b123b1b6ebf0062673fca6c9d3060307f568df55292e4124db6543d/rpa_cooperativa-1.0.41.tar.gz
+[2023-04-10 15:59:44] INFO root fetch - processPackages [rpa-cooperativa]: executing diffoscope
+[2023-04-10 15:59:44] INFO root fetch - processPackages [rpa-cooperativa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpa_cooperativa-1.0.40.tar.gz tmp/rpa_cooperativa-1.0.41.tar.gz --markdown 20230410/r/rpa-cooperativa/1.0.40-1.0.41/diff.md --exclude *.pyd
+[2023-04-10 15:59:44] INFO root fetch - processPackages [libfwevt-python]: Downloading https://files.pythonhosted.org/packages/a2/00/905ddfb44ca9c81bd3a9d8da5cfcb899063813bb67b1c152bebf7c0fb71b/libfwevt-python-20230410.tar.gz
+[2023-04-10 15:59:44] INFO root fetch - processPackages [libfwevt-python]: executing diffoscope
+[2023-04-10 15:59:44] INFO root fetch - processPackages [libfwevt-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libfwevt-python-20220925.tar.gz tmp/libfwevt-python-20230410.tar.gz --markdown 20230410/l/libfwevt-python/20220925-20230410/diff.md --exclude *.pyd
+[2023-04-10 15:59:44] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:44] INFO root fetch - processPackages [ssbtoolkit]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 15:59:44] INFO root fetch - processPackages [ssbtoolkit]: executing diffoscope
+[2023-04-10 15:59:44] INFO root fetch - processPackages [ssbtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssbtoolkit-1.0.3.tar.gz tmp/ssbtoolkit-1.0.4.tar.gz --markdown 20230410/s/ssbtoolkit/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-10 15:59:44] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:44] INFO root fetch - processPackages [morphqs]: New version: [0.1.21] Old Version: [0.1.20]
+[2023-04-10 15:59:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:45] INFO root fetch - processPackages [morphqs]: Downloading https://files.pythonhosted.org/packages/21/7e/1961dfc34897f26f877b6a2772da160d406074a580fe2bc974e7f0554d91/morphqs-0.1.21.tar.gz
+[2023-04-10 15:59:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:45] INFO root fetch - processPackages [morphqs]: executing diffoscope
+[2023-04-10 15:59:45] INFO root fetch - processPackages [morphqs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphqs-0.1.20.tar.gz tmp/morphqs-0.1.21.tar.gz --markdown 20230410/m/morphqs/0.1.20-0.1.21/diff.md --exclude *.pyd
+[2023-04-10 15:59:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:59:56] INFO root fetch - main [MainThread]: Store serial: [17646506]
