@@ -7592,3 +7592,74 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 12:11:26] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:12:15] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:12:15] INFO root fetch - main [MainThread]: Store serial: [17644922]
+[2023-04-10 12:17:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644922]
+[2023-04-10 12:17:23] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-10 12:17:23] INFO root fetch - processPackages [marshmallow_api_utils]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-10 12:17:23] INFO root fetch - processPackages [tatarubot2]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-10 12:17:23] INFO root fetch - processPackages [topologicpy]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-10 12:17:23] INFO root fetch - processPackages [leadguru-data]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-10 12:17:23] INFO root fetch - processPackages [gm]: New version: [3.0.152] Old Version: [3.0.151]
+[2023-04-10 12:17:23] INFO root fetch - processPackages [tatarubot2]: Downloading https://files.pythonhosted.org/packages/2b/ad/cbea1172cbfa96ef4f6cc4e7c0908ad8f5d9a8c7f0470326ab587325dc2f/tatarubot2-0.1.5.tar.gz
+[2023-04-10 12:17:23] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/a8/71/12b52945b4d84e25f4ac3d812ca6861a383f3796b0b9401750531e63b52b/topologicpy-0.4.1.tar.gz
+[2023-04-10 12:17:23] INFO root fetch - processPackages [gm]: Downloading https://files.pythonhosted.org/packages/c2/b5/dfd62fcb947a92b2c31cab281284ab6c39c7d8608a98ae40d8eb6503bf45/gm-3.0.151-cp39-cp39-win_amd64.whl
+[2023-04-10 12:17:23] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34011893>=10485760
+[2023-04-10 12:17:23] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:17:23] INFO root fetch - processPackages [marshmallow_api_utils]: Downloading https://files.pythonhosted.org/packages/6a/a0/a3334ffac0025cedc637c5ec039b6f04763015515155e34a4f2dca7f47f3/marshmallow_api_utils-0.2.4.tar.gz
+[2023-04-10 12:17:23] INFO root fetch - processPackages [leadguru-common]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-10 12:17:23] INFO root fetch - processPackages [tatarubot2]: executing diffoscope
+[2023-04-10 12:17:23] INFO root fetch - processPackages [tatarubot2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tatarubot2-0.1.4.tar.gz tmp/tatarubot2-0.1.5.tar.gz --markdown 20230410/t/tatarubot2/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-10 12:17:23] INFO root fetch - processPackages [marshmallow_api_utils]: executing diffoscope
+[2023-04-10 12:17:23] INFO root fetch - processPackages [marshmallow_api_utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marshmallow_api_utils-0.2.3.tar.gz tmp/marshmallow_api_utils-0.2.4.tar.gz --markdown 20230410/m/marshmallow_api_utils/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-10 12:17:23] INFO root fetch - processPackages [leadguru-data]: executing diffoscope
+[2023-04-10 12:17:23] INFO root fetch - processPackages [leadguru-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leadguru_data-0.98.0.tar.gz tmp/leadguru_data-0.99.0.tar.gz --markdown 20230410/l/leadguru-data/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-10 12:17:24] INFO root fetch - processPackages [leadguru-common]: executing diffoscope
+[2023-04-10 12:17:24] INFO root fetch - processPackages [leadguru-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leadguru_common-0.98.0.tar.gz tmp/leadguru_common-0.99.0.tar.gz --markdown 20230410/l/leadguru-common/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-10 12:17:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:24] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 12:17:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:24] INFO root fetch - processPackages [fs-toolkit]: New version: [2.4.8] Old Version: [1.0.3]
+[2023-04-10 12:17:24] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-10 12:17:24] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230410/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 12:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:25] INFO root fetch - processPackages [pyntcli]: New version: [0.1.40] Old Version: [0.1.39]
+[2023-04-10 12:17:25] INFO root fetch - processPackages [fs-toolkit]: Downloading https://files.pythonhosted.org/packages/af/8f/7b76dbc72bde76abf448fcb8665093b0eeb2ca52b6f7b8947c6c932cbe23/fs_toolkit-1.0.3.tar.gz
+[2023-04-10 12:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:25] INFO root fetch - processPackages [frouros]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 12:17:25] INFO root fetch - processPackages [pyntcli]: Downloading https://files.pythonhosted.org/packages/6e/5b/c4d0249a2f4de95ae5726d48358118287087cf9b20908b5955ad273cb7f3/pyntcli-0.1.39-py3-none-any.whl
+[2023-04-10 12:17:25] INFO root fetch - processPackages [fs-toolkit]: Downloading https://files.pythonhosted.org/packages/da/17/31be676802b3cd76ceb845bc40d47284e06f693ef69f3bb94e247845a402/fs_toolkit-2.4.8.tar.gz
+[2023-04-10 12:17:25] INFO root fetch - processPackages [gm]: Downloading https://files.pythonhosted.org/packages/76/0e/168c56cd688545464d07ffc83b59e56240e0dd3de36ea63a1ed6f9e42952/gm-3.0.152-cp39-cp39-win_amd64.whl
+[2023-04-10 12:17:25] INFO root fetch - processPackages [pyntcli]: Downloading https://files.pythonhosted.org/packages/be/ee/2669e3ff292cd522c40d7f4683d1411f009a70598b763ab561cf1b8ab8bb/pyntcli-0.1.40-py3-none-any.whl
+[2023-04-10 12:17:25] INFO root fetch - processPackages [frouros]: Downloading https://files.pythonhosted.org/packages/63/c1/916071e698024ab2d47c2a01dda55c8c287f47204e3e14cf1a245442fa9c/frouros-0.2.1.tar.gz
+[2023-04-10 12:17:25] INFO root fetch - processPackages [fs-toolkit]: executing diffoscope
+[2023-04-10 12:17:25] INFO root fetch - processPackages [fs-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fs_toolkit-1.0.3.tar.gz tmp/fs_toolkit-2.4.8.tar.gz --markdown 20230410/f/fs-toolkit/1.0.3-2.4.8/diff.md --exclude *.pyd
+[2023-04-10 12:17:25] INFO root fetch - processPackages [pyntcli]: executing diffoscope
+[2023-04-10 12:17:25] INFO root fetch - processPackages [pyntcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyntcli-0.1.39-py3-none-any.whl.zip tmp/pyntcli-0.1.40-py3-none-any.whl.zip --markdown 20230410/p/pyntcli/0.1.39-0.1.40/diff.md --exclude *.pyd
+[2023-04-10 12:17:25] INFO root fetch - processPackages [gm]: executing diffoscope
+[2023-04-10 12:17:25] INFO root fetch - processPackages [gm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gm-3.0.151-cp39-cp39-win_amd64.whl.zip tmp/gm-3.0.152-cp39-cp39-win_amd64.whl.zip --markdown 20230410/g/gm/3.0.151-3.0.152/diff.md --exclude *.pyd
+[2023-04-10 12:17:25] INFO root fetch - processPackages [frouros]: Downloading https://files.pythonhosted.org/packages/23/85/2f4ec75c5ab736bd00da89665f1bc5ae343da64b0348692295dfd5cfeb40/frouros-0.2.2.tar.gz
+[2023-04-10 12:17:25] INFO root fetch - processPackages [frouros]: executing diffoscope
+[2023-04-10 12:17:25] INFO root fetch - processPackages [frouros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frouros-0.2.1.tar.gz tmp/frouros-0.2.2.tar.gz --markdown 20230410/f/frouros/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 12:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:26] INFO root fetch - processPackages [leadguru-jobs]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-10 12:17:26] INFO root fetch - processPackages [leadguru-jobs]: executing diffoscope
+[2023-04-10 12:17:26] INFO root fetch - processPackages [leadguru-jobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leadguru_jobs-0.98.0.tar.gz tmp/leadguru_jobs-0.99.0.tar.gz --markdown 20230410/l/leadguru-jobs/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-10 12:17:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:26] WARNING root fetch - processPackages [ColabGeek]: Skipping, unable to determine old version
+[2023-04-10 12:17:26] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:17:26] INFO root fetch - processPackages [gptcache]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-10 12:17:26] INFO root fetch - processPackages [gptcache]: Downloading https://files.pythonhosted.org/packages/d5/a2/c2c44865c62f87909b839317947a401725bbe33450f0c9fd0c658b21fcbc/gptcache-0.1.5.tar.gz
+[2023-04-10 12:17:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:27] INFO root fetch - processPackages [stoppy]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-10 12:17:27] INFO root fetch - processPackages [gptcache]: Downloading https://files.pythonhosted.org/packages/0b/aa/1e2bd8d2bdd4563a5a9f45dfc2e255cc9004cee96fab1835693d3b6898f2/gptcache-0.1.6.tar.gz
+[2023-04-10 12:17:27] INFO root fetch - processPackages [gptcache]: executing diffoscope
+[2023-04-10 12:17:27] INFO root fetch - processPackages [gptcache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptcache-0.1.5.tar.gz tmp/gptcache-0.1.6.tar.gz --markdown 20230410/g/gptcache/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-10 12:17:27] INFO root fetch - processPackages [stoppy]: Downloading https://files.pythonhosted.org/packages/7a/72/6bb179042451b47c2a8dc7e0c478cbfa9adadca3ea91d4a9095f950e4101/stoppy-1.0.4.tar.gz
+[2023-04-10 12:17:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:27] INFO root fetch - processPackages [stoppy]: Downloading https://files.pythonhosted.org/packages/5d/9e/57e189186bb267dd7c36e68e5a00874879d3569df32361eea0f0cd1c1456/stoppy-1.0.5.tar.gz
+[2023-04-10 12:17:27] INFO root fetch - processPackages [stoppy]: executing diffoscope
+[2023-04-10 12:17:27] INFO root fetch - processPackages [stoppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stoppy-1.0.4.tar.gz tmp/stoppy-1.0.5.tar.gz --markdown 20230410/s/stoppy/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-10 12:17:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:17:57] INFO root fetch - main [MainThread]: Store serial: [17644979]
