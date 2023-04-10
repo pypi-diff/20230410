@@ -5760,3 +5760,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 09:04:31] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:04:39] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:04:39] INFO root fetch - main [MainThread]: Store serial: [17643639]
+[2023-04-10 09:09:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643639]
+[2023-04-10 09:09:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 09:09:46] INFO root fetch - processPackages [taichu-model-server]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-10 09:09:46] INFO root fetch - processPackages [zesty.zbs-api]: New version: [1.0.2023.4.10.1681110487] Old Version: [1.0.2023.3.16.1678978980]
+[2023-04-10 09:09:46] INFO root fetch - processPackages [tuneflow-devkit-py]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-04-10 09:09:46] INFO root fetch - processPackages [numpoly]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-04-10 09:09:46] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-10 09:09:46] INFO root fetch - processPackages [taichu-model-server]: Downloading https://files.pythonhosted.org/packages/1b/6f/d38e4cf07f526d90eeb8cc4fdf9a481f42b956828a5b49dbe266af90e988/taichu-model-server-1.0.5.tar.gz
+[2023-04-10 09:09:47] INFO root fetch - processPackages [zesty.zbs-api]: Downloading https://files.pythonhosted.org/packages/ea/91/c4d0c3137dfe6c1f60670a68c2417f30af76c82e0cbc9ff54865c937589a/zesty.zbs-api-1.0.2023.3.16.1678978980.tar.gz
+[2023-04-10 09:09:47] INFO root fetch - processPackages [numpoly]: Downloading https://files.pythonhosted.org/packages/d1/f5/c934072a11a6dc36ef640a7377d25f156614960a6bac03a1bea83daff194/numpoly-1.2.6.tar.gz
+[2023-04-10 09:09:47] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: Downloading https://files.pythonhosted.org/packages/67/44/1dba32653c7525f0fbd8908ad6d202d1043a5fcb6cf364972a4c23bffeac/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz
+[2023-04-10 09:09:47] INFO root fetch - processPackages [tuneflow-devkit-py]: Downloading https://files.pythonhosted.org/packages/60/16/4858a73be758c0c65450837c4b3cbd1186ed9d2c42a106bf3c43488cfde6/tuneflow-devkit-py-0.5.4.tar.gz
+[2023-04-10 09:09:47] INFO root fetch - processPackages [taichu-model-server]: Downloading https://files.pythonhosted.org/packages/28/f8/d81b4cdea40829d0beb3e62d741e470e145ec8d2987bf2359be269f80b79/taichu-model-server-1.0.6.tar.gz
+[2023-04-10 09:09:47] INFO root fetch - processPackages [numpoly]: Downloading https://files.pythonhosted.org/packages/a3/e9/fb3fcfebcc78ceacc54f60acac1414f1e5d7173a4add8ed31fc6641021d8/numpoly-1.2.7.tar.gz
+[2023-04-10 09:09:47] INFO root fetch - processPackages [taichu-model-server]: executing diffoscope
+[2023-04-10 09:09:47] INFO root fetch - processPackages [taichu-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taichu-model-server-1.0.5.tar.gz tmp/taichu-model-server-1.0.6.tar.gz --markdown 20230410/t/taichu-model-server/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-10 09:09:47] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: Downloading https://files.pythonhosted.org/packages/49/e5/a2d418e8a59e46c739ecaa72adebcb65d676b8149513d576b8cd05d6324e/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz
+[2023-04-10 09:09:47] INFO root fetch - processPackages [numpoly]: executing diffoscope
+[2023-04-10 09:09:47] INFO root fetch - processPackages [numpoly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpoly-1.2.6.tar.gz tmp/numpoly-1.2.7.tar.gz --markdown 20230410/n/numpoly/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-04-10 09:09:47] INFO root fetch - processPackages [tuneflow-devkit-py]: Downloading https://files.pythonhosted.org/packages/97/3d/f209a04d5d8b61409e1ab5e277def490ca4e288a8ba20475a4c57a967ac5/tuneflow-devkit-py-0.5.5.tar.gz
+[2023-04-10 09:09:47] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-04-10 09:09:47] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230410/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-10 09:09:47] INFO root fetch - processPackages [zesty.zbs-api]: Downloading https://files.pythonhosted.org/packages/c0/2b/a85df83b5e3cc8ee012e8a5e7b80b8e18719e38d4ef5e5f49b1e47c9dcd1/zesty.zbs-api-1.0.2023.4.10.1681110487.tar.gz
+[2023-04-10 09:09:47] INFO root fetch - processPackages [tuneflow-devkit-py]: executing diffoscope
+[2023-04-10 09:09:47] INFO root fetch - processPackages [tuneflow-devkit-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneflow-devkit-py-0.5.4.tar.gz tmp/tuneflow-devkit-py-0.5.5.tar.gz --markdown 20230410/t/tuneflow-devkit-py/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-04-10 09:09:47] INFO root fetch - processPackages [zesty.zbs-api]: executing diffoscope
+[2023-04-10 09:09:47] INFO root fetch - processPackages [zesty.zbs-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zesty.zbs-api-1.0.2023.3.16.1678978980.tar.gz tmp/zesty.zbs-api-1.0.2023.4.10.1681110487.tar.gz --markdown 20230410/z/zesty.zbs-api/1.0.2023.3.16.1678978980-1.0.2023.4.10.1681110487/diff.md --exclude *.pyd
+[2023-04-10 09:09:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:09:48] INFO root fetch - processPackages [rook]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-10 09:09:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:09:48] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-10 09:09:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:09:48] INFO root fetch - processPackages [rook]: Downloading https://files.pythonhosted.org/packages/67/18/c70b219c9b4d5fd61239711e3f1a30205947fc46a96f000d1691c6de383b/rook-0.1.98.tar.gz
+[2023-04-10 09:09:48] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/b1/29/4b1f9956525c9c6120273a1da18387e3e1852410b233a5286306a3ecaa2c/langchain_utils-0.3.2.tar.gz
+[2023-04-10 09:09:48] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-10 09:09:48] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.1.tar.gz tmp/langchain_utils-0.3.2.tar.gz --markdown 20230410/l/langchain-utils/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-10 09:09:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:09:49] INFO root fetch - processPackages [rook]: Downloading https://files.pythonhosted.org/packages/4a/c3/67d4fc6d1fe2061f4a7c2b0b28c8e0a8707358abad2d341e10b79eacecfe/rook-0.1.99.tar.gz
+[2023-04-10 09:09:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:09:49] INFO root fetch - processPackages [rook]: executing diffoscope
+[2023-04-10 09:09:49] INFO root fetch - processPackages [rook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rook-0.1.98.tar.gz tmp/rook-0.1.99.tar.gz --markdown 20230410/r/rook/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-10 09:09:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:09:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:09:50] INFO root fetch - main [MainThread]: Store serial: [17643691]
