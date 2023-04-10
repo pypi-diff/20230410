@@ -14078,3 +14078,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 20:33:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:33:43] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:33:43] INFO root fetch - main [MainThread]: Store serial: [17649172]
+[2023-04-10 20:38:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649172]
+[2023-04-10 20:38:52] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 20:38:52] INFO root fetch - processPackages [semantic-kernel]: New version: [0.2.0.dev0] Old Version: [0.1.0.dev0]
+[2023-04-10 20:38:52] WARNING root fetch - processPackages [albert-toolkit]: Skipping, unable to determine old version
+[2023-04-10 20:38:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:38:52] INFO root fetch - processPackages [fastapi-all-out]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-10 20:38:52] INFO root fetch - processPackages [piqa]: New version: [1.3.0] Old Version: [1.2.2]
+[2023-04-10 20:38:52] INFO root fetch - processPackages [semantic-kernel]: New version: [0.2.0.dev0] Old Version: [0.1.0.dev0]
+[2023-04-10 20:38:52] INFO root fetch - processPackages [recon-lw]: New version: [2.0.0.dev4658666204] Old Version: [2.0.0.dev4658240612]
+[2023-04-10 20:38:52] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2023-04-10 20:38:52] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-2.0.0.dev4658240612.tar.gz tmp/recon_lw-2.0.0.dev4658666204.tar.gz --markdown 20230410/r/recon-lw/2.0.0.dev4658240612-2.0.0.dev4658666204/diff.md --exclude *.pyd
+[2023-04-10 20:38:52] INFO root fetch - processPackages [semantic-kernel]: Downloading https://files.pythonhosted.org/packages/65/52/7c253693a0a2f05585bb6375456749d8743095c3c975ea698509dc844832/semantic_kernel-0.1.0.dev0.tar.gz
+[2023-04-10 20:38:52] INFO root fetch - processPackages [semantic-kernel]: Downloading https://files.pythonhosted.org/packages/65/52/7c253693a0a2f05585bb6375456749d8743095c3c975ea698509dc844832/semantic_kernel-0.1.0.dev0.tar.gz
+[2023-04-10 20:38:52] INFO root fetch - processPackages [piqa]: Downloading https://files.pythonhosted.org/packages/79/1e/a9cdf440fb9a78d281786e54c2b5c005f6aa7d2e38708d7ff31c9432f195/piqa-1.2.2.tar.gz
+[2023-04-10 20:38:52] INFO root fetch - processPackages [fastapi-all-out]: Downloading https://files.pythonhosted.org/packages/04/9d/7dbd9781e3d2b3e1f0d7d750265b942a129e4eba87fe9378dbcc2d2e6611/fastapi_all_out-0.2.0.tar.gz
+[2023-04-10 20:38:52] INFO root fetch - processPackages [fastapi-all-out]: executing diffoscope
+[2023-04-10 20:38:52] INFO root fetch - processPackages [fastapi-all-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_all_out-0.1.2.tar.gz tmp/fastapi_all_out-0.2.0.tar.gz --markdown 20230410/f/fastapi-all-out/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 20:38:52] INFO root fetch - processPackages [semantic-kernel]: Downloading https://files.pythonhosted.org/packages/ed/2c/ca5adada901e517e854064c4c7ef541fcb50f70ca7c4d31a85927aa0e333/semantic_kernel-0.2.0.dev0.tar.gz
+[2023-04-10 20:38:52] INFO root fetch - processPackages [semantic-kernel]: Downloading https://files.pythonhosted.org/packages/ed/2c/ca5adada901e517e854064c4c7ef541fcb50f70ca7c4d31a85927aa0e333/semantic_kernel-0.2.0.dev0.tar.gz
+[2023-04-10 20:38:52] INFO root fetch - processPackages [piqa]: Downloading https://files.pythonhosted.org/packages/bc/7b/a8e781a151f2c7adf8936e88cea3a251640b2516ac4000dcc24b3672cc35/piqa-1.3.0.tar.gz
+[2023-04-10 20:38:52] INFO root fetch - processPackages [semantic-kernel]: executing diffoscope
+[2023-04-10 20:38:52] INFO root fetch - processPackages [semantic-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_kernel-0.1.0.dev0.tar.gz tmp/semantic_kernel-0.2.0.dev0.tar.gz --markdown 20230410/s/semantic-kernel/0.1.0.dev0-0.2.0.dev0/diff.md --exclude *.pyd
+[2023-04-10 20:38:52] INFO root fetch - processPackages [semantic-kernel]: executing diffoscope
+[2023-04-10 20:38:52] INFO root fetch - processPackages [semantic-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_kernel-0.1.0.dev0.tar.gz tmp/semantic_kernel-0.2.0.dev0.tar.gz --markdown 20230410/s/semantic-kernel/0.1.0.dev0-0.2.0.dev0/diff.md --exclude *.pyd
+[2023-04-10 20:38:52] INFO root fetch - processPackages [piqa]: executing diffoscope
+[2023-04-10 20:38:52] INFO root fetch - processPackages [piqa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piqa-1.2.2.tar.gz tmp/piqa-1.3.0.tar.gz --markdown 20230410/p/piqa/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2023-04-10 20:38:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:38:53] INFO root fetch - processPackages [napari-omero]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-10 20:38:53] INFO root fetch - processPackages [napari-omero]: Downloading https://files.pythonhosted.org/packages/82/1f/6714988862b723596820380c61b50678882bb2fa04a2179a1a7142ce81dc/napari_omero-0.2.0.tar.gz
+[2023-04-10 20:38:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:38:54] INFO root fetch - processPackages [fenrircore]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-10 20:38:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:38:54] INFO root fetch - processPackages [fenrircore]: Downloading https://files.pythonhosted.org/packages/58/81/5980de5e76fbe7a2012b6f59c434fde7da72ff839aac7f8e525e35217ba9/fenrircore-0.4.0.tar.gz
+[2023-04-10 20:38:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:38:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:38:54] INFO root fetch - processPackages [fenrircore]: Downloading https://files.pythonhosted.org/packages/a6/2e/a03a7f743dae2148224bf7e61c71bc7080d56c4d0fadd2adbed65bdf5d0c/fenrircore-0.5.0.tar.gz
+[2023-04-10 20:38:54] INFO root fetch - processPackages [fenrircore]: executing diffoscope
+[2023-04-10 20:38:54] INFO root fetch - processPackages [fenrircore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fenrircore-0.4.0.tar.gz tmp/fenrircore-0.5.0.tar.gz --markdown 20230410/f/fenrircore/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-10 20:38:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:38:57] INFO root fetch - processPackages [napari-omero]: Downloading https://files.pythonhosted.org/packages/3f/f7/3130e76316193a0191ccc3b07be4224d637a9673be02f8938fe6e3e7568f/napari_omero-0.2.1.tar.gz
+[2023-04-10 20:39:01] INFO root fetch - processPackages [napari-omero]: executing diffoscope
+[2023-04-10 20:39:01] INFO root fetch - processPackages [napari-omero]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_omero-0.2.0.tar.gz tmp/napari_omero-0.2.1.tar.gz --markdown 20230410/n/napari-omero/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-10 20:39:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:39:03] INFO root fetch - main [MainThread]: Store serial: [17649196]
