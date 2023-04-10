@@ -11747,3 +11747,84 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 17:28:06] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:28:09] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:28:09] INFO root fetch - main [MainThread]: Store serial: [17647343]
+[2023-04-10 17:33:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647343]
+[2023-04-10 17:33:17] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-10 17:33:17] WARNING root fetch - processPackages [pyCHIPS]: Skipping, unable to determine old version
+[2023-04-10 17:33:17] INFO root fetch - main [MainThread]: error
+[2023-04-10 17:33:17] INFO root fetch - processPackages [fastapi-all-out]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 17:33:17] INFO root fetch - processPackages [torchact]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 17:33:17] INFO root fetch - processPackages [zuko]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-04-10 17:33:17] WARNING root fetch - processPackages [twitch-to-clip]: Skipping, unable to determine old version
+[2023-04-10 17:33:17] INFO root fetch - main [MainThread]: error
+[2023-04-10 17:33:17] INFO root fetch - processPackages [cluster-colors]: New version: [0.8.0] Old Version: [0.7.3]
+[2023-04-10 17:33:17] INFO root fetch - processPackages [archaea]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-10 17:33:17] INFO root fetch - processPackages [torchact]: Downloading https://files.pythonhosted.org/packages/65/9a/05f668e0bfbdd82c4fa4be08671c165b4f098274c06ad6216f7526c70eeb/torchact-0.2.1.tar.gz
+[2023-04-10 17:33:17] INFO root fetch - processPackages [fastapi-all-out]: Downloading https://files.pythonhosted.org/packages/d3/72/33070c10b4eb0e1e3e8abeb463cf282df11b5ecebb9410399c55e476592a/fastapi_all_out-0.1.1.tar.gz
+[2023-04-10 17:33:17] INFO root fetch - processPackages [cluster-colors]: Downloading https://files.pythonhosted.org/packages/96/60/da968e81d16bf63fa7f6fd51e547dcb12a93e141d3d737b1ed87a159c5e6/cluster_colors-0.7.3.tar.gz
+[2023-04-10 17:33:17] INFO root fetch - processPackages [zuko]: Downloading https://files.pythonhosted.org/packages/49/16/6ebc0ebad73004e315107a455f2906958b885a1446bdbab66e0e60c8e1b3/zuko-0.1.5.tar.gz
+[2023-04-10 17:33:17] INFO root fetch - processPackages [archaea]: Downloading https://files.pythonhosted.org/packages/56/46/e3b2928b665409d298a0f710b204ae4617dafa61d8be8f6afe2bb95c3da4/archaea-1.1.8.tar.gz
+[2023-04-10 17:33:17] INFO root fetch - processPackages [torchact]: Downloading https://files.pythonhosted.org/packages/7a/41/0680c03d0e0fd42dc8306e53ed325790f142d27e37aa1ecf34893b5a9286/torchact-0.2.2.tar.gz
+[2023-04-10 17:33:17] INFO root fetch - processPackages [torchact]: executing diffoscope
+[2023-04-10 17:33:17] INFO root fetch - processPackages [torchact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchact-0.2.1.tar.gz tmp/torchact-0.2.2.tar.gz --markdown 20230410/t/torchact/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 17:33:17] INFO root fetch - processPackages [zuko]: Downloading https://files.pythonhosted.org/packages/bd/90/cfe110d745111f1cb019fb2acf95d0a95947548658405e8b66aae56ffbe8/zuko-0.2.0.tar.gz
+[2023-04-10 17:33:17] INFO root fetch - processPackages [cluster-colors]: Downloading https://files.pythonhosted.org/packages/fe/9c/1088bbe28d9c4f97867f528845a7802078c200833d7384b3e95fe19c23f6/cluster_colors-0.8.0.tar.gz
+[2023-04-10 17:33:17] INFO root fetch - processPackages [fastapi-all-out]: Downloading https://files.pythonhosted.org/packages/2a/d7/3391d606ab8c4157506d2be5485cad8318d3d162e442964d07770237f030/fastapi_all_out-0.1.2.tar.gz
+[2023-04-10 17:33:18] INFO root fetch - processPackages [zuko]: executing diffoscope
+[2023-04-10 17:33:18] INFO root fetch - processPackages [zuko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuko-0.1.5.tar.gz tmp/zuko-0.2.0.tar.gz --markdown 20230410/z/zuko/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 17:33:18] INFO root fetch - processPackages [cluster-colors]: executing diffoscope
+[2023-04-10 17:33:18] INFO root fetch - processPackages [cluster-colors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluster_colors-0.7.3.tar.gz tmp/cluster_colors-0.8.0.tar.gz --markdown 20230410/c/cluster-colors/0.7.3-0.8.0/diff.md --exclude *.pyd
+[2023-04-10 17:33:18] INFO root fetch - processPackages [fastapi-all-out]: executing diffoscope
+[2023-04-10 17:33:18] INFO root fetch - processPackages [fastapi-all-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_all_out-0.1.1.tar.gz tmp/fastapi_all_out-0.1.2.tar.gz --markdown 20230410/f/fastapi-all-out/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 17:33:18] INFO root fetch - processPackages [archaea]: Downloading https://files.pythonhosted.org/packages/a3/cb/f70559d236988f1127e9e0fdc295f52216fd0c2f3a700e72551ed470f01d/archaea-1.1.9.tar.gz
+[2023-04-10 17:33:18] INFO root fetch - processPackages [archaea]: executing diffoscope
+[2023-04-10 17:33:18] INFO root fetch - processPackages [archaea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archaea-1.1.8.tar.gz tmp/archaea-1.1.9.tar.gz --markdown 20230410/a/archaea/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-10 17:33:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:19] INFO root fetch - processPackages [dkist-fits-specifications]: New version: [3.5.0] Old Version: [3.4.0]
+[2023-04-10 17:33:19] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.23.0.dev1] Old Version: [0.22.5.3]
+[2023-04-10 17:33:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:19] INFO root fetch - processPackages [systembridgeconnector]: New version: [3.6.3.dev6] Old Version: [3.6.3.dev5]
+[2023-04-10 17:33:19] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/ac/2f/fcf603c75ac2c8e79958128c3a5e0d90cf17a7d595a18c9a37c6be4fbe0e/pyastroweatherio-0.22.5.3.tar.gz
+[2023-04-10 17:33:19] INFO root fetch - processPackages [dkist-fits-specifications]: Downloading https://files.pythonhosted.org/packages/9b/4e/ddfea65e4e01542ef7c19665aebb1a048da6aca585ba0ba2dd75f90e6310/dkist_fits_specifications-3.4.0.tar.gz
+[2023-04-10 17:33:19] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/c0/07/28257101c978df44727281f0143aabef2d11baf5fd467c0dd1d093e542cd/pyastroweatherio-0.23.0.dev1.tar.gz
+[2023-04-10 17:33:19] INFO root fetch - processPackages [systembridgeconnector]: Downloading https://files.pythonhosted.org/packages/6e/38/805c8765746bfff7a52daa46d88b5a9df87ca4792eec6e9d1644d701ef75/systembridgeconnector-3.6.3.dev5.tar.gz
+[2023-04-10 17:33:19] INFO root fetch - processPackages [dkist-fits-specifications]: Downloading https://files.pythonhosted.org/packages/13/ea/10e95bf9040bc995eda449f544f590b87424f4479257a3e4501ecdd4a80e/dkist_fits_specifications-3.5.0.tar.gz
+[2023-04-10 17:33:19] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2023-04-10 17:33:19] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.22.5.3.tar.gz tmp/pyastroweatherio-0.23.0.dev1.tar.gz --markdown 20230410/p/pyastroweatherio/0.22.5.3-0.23.0.dev1/diff.md --exclude *.pyd
+[2023-04-10 17:33:19] INFO root fetch - processPackages [dkist-fits-specifications]: executing diffoscope
+[2023-04-10 17:33:19] INFO root fetch - processPackages [dkist-fits-specifications]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist_fits_specifications-3.4.0.tar.gz tmp/dkist_fits_specifications-3.5.0.tar.gz --markdown 20230410/d/dkist-fits-specifications/3.4.0-3.5.0/diff.md --exclude *.pyd
+[2023-04-10 17:33:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:20] INFO root fetch - processPackages [torchact]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 17:33:20] INFO root fetch - processPackages [torchact]: executing diffoscope
+[2023-04-10 17:33:20] INFO root fetch - processPackages [torchact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchact-0.2.1.tar.gz tmp/torchact-0.2.2.tar.gz --markdown 20230410/t/torchact/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 17:33:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:20] INFO root fetch - processPackages [yeagerai-agent]: New version: [0.0.36] Old Version: [0.0.35]
+[2023-04-10 17:33:20] INFO root fetch - processPackages [systembridgeconnector]: Downloading https://files.pythonhosted.org/packages/48/3a/64d273da1692faff95496d2ab637d154a9ea2ce935de75cbed4bb02c9cf6/systembridgeconnector-3.6.3.dev6.tar.gz
+[2023-04-10 17:33:20] INFO root fetch - processPackages [yeagerai-agent]: Downloading https://files.pythonhosted.org/packages/90/71/b6b59014b85911333f693b9aeb7e38e4303bec69d463bb68945ad4d990c4/yeagerai-agent-0.0.36.tar.gz
+[2023-04-10 17:33:20] INFO root fetch - processPackages [systembridgeconnector]: executing diffoscope
+[2023-04-10 17:33:20] INFO root fetch - processPackages [systembridgeconnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systembridgeconnector-3.6.3.dev5.tar.gz tmp/systembridgeconnector-3.6.3.dev6.tar.gz --markdown 20230410/s/systembridgeconnector/3.6.3.dev5-3.6.3.dev6/diff.md --exclude *.pyd
+[2023-04-10 17:33:20] INFO root fetch - processPackages [yeagerai-agent]: executing diffoscope
+[2023-04-10 17:33:20] INFO root fetch - processPackages [yeagerai-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeagerai-agent-0.0.35.tar.gz tmp/yeagerai-agent-0.0.36.tar.gz --markdown 20230410/y/yeagerai-agent/0.0.35-0.0.36/diff.md --exclude *.pyd
+[2023-04-10 17:33:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:20] INFO root fetch - processPackages [systembridgeshared]: New version: [3.6.3.dev6] Old Version: [3.6.3.dev5]
+[2023-04-10 17:33:21] INFO root fetch - processPackages [systembridgeshared]: Downloading https://files.pythonhosted.org/packages/92/a8/05047e4b68eea0cb0be823c5e9fd12119b12b11d311ce57b4a3f0d6a0cfb/systembridgeshared-3.6.3.dev5.tar.gz
+[2023-04-10 17:33:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:21] INFO root fetch - processPackages [reacher]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-10 17:33:21] INFO root fetch - processPackages [reacher]: Downloading https://files.pythonhosted.org/packages/7e/32/88bfccfba1e3dd6a6a6a4562b9f88bb592fe0873f9da397d9ac6fb9c43c5/reacher-0.3.8-py2.py3-none-any.whl
+[2023-04-10 17:33:21] INFO root fetch - processPackages [systembridgeshared]: Downloading https://files.pythonhosted.org/packages/01/63/7aa238057bbb6bba9cc0897a5575f8fd4de6f1e388aa2e9172708c06e475/systembridgeshared-3.6.3.dev6.tar.gz
+[2023-04-10 17:33:21] INFO root fetch - processPackages [reacher]: executing diffoscope
+[2023-04-10 17:33:21] INFO root fetch - processPackages [reacher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reacher-0.3.7-py2.py3-none-any.whl.zip tmp/reacher-0.3.8-py2.py3-none-any.whl.zip --markdown 20230410/r/reacher/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-10 17:33:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:21] INFO root fetch - processPackages [systembridgeshared]: executing diffoscope
+[2023-04-10 17:33:21] INFO root fetch - processPackages [systembridgeshared]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systembridgeshared-3.6.3.dev5.tar.gz tmp/systembridgeshared-3.6.3.dev6.tar.gz --markdown 20230410/s/systembridgeshared/3.6.3.dev5-3.6.3.dev6/diff.md --exclude *.pyd
+[2023-04-10 17:33:21] INFO root fetch - processPackages [systembridgebackend]: New version: [3.6.3.dev6] Old Version: [3.6.3.dev5]
+[2023-04-10 17:33:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:21] INFO root fetch - processPackages [systembridgebackend]: Downloading https://files.pythonhosted.org/packages/d2/13/971bcc649ecbf28dcc9426fab583061848e81200f29aa4810748d349cbfa/systembridgebackend-3.6.3.dev5.tar.gz
+[2023-04-10 17:33:22] INFO root fetch - processPackages [systembridgebackend]: Downloading https://files.pythonhosted.org/packages/ce/36/1ff999ca555bbbbf05e85cbdfed52b762b0a8313682f1c80e6e2686a967b/systembridgebackend-3.6.3.dev6.tar.gz
+[2023-04-10 17:33:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:22] INFO root fetch - processPackages [systembridgebackend]: executing diffoscope
+[2023-04-10 17:33:22] INFO root fetch - processPackages [systembridgebackend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systembridgebackend-3.6.3.dev5.tar.gz tmp/systembridgebackend-3.6.3.dev6.tar.gz --markdown 20230410/s/systembridgebackend/3.6.3.dev5-3.6.3.dev6/diff.md --exclude *.pyd
+[2023-04-10 17:33:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:33:23] INFO root fetch - main [MainThread]: Store serial: [17647390]
