@@ -8391,3 +8391,83 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 13:36:57] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:36:57] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:36:57] INFO root fetch - main [MainThread]: Store serial: [17645357]
+[2023-04-10 13:42:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645357]
+[2023-04-10 13:42:05] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-10 13:42:05] INFO root fetch - processPackages [audiobook-dl]: New version: [0.5.0] Old Version: [0.4.4]
+[2023-04-10 13:42:05] INFO root fetch - processPackages [richvalues]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-04-10 13:42:05] INFO root fetch - processPackages [essentials-configuration]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-10 13:42:05] INFO root fetch - processPackages [estimagic]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-10 13:42:05] INFO root fetch - processPackages [pygmo]: New version: [2.9] Old Version: [2.8]
+[2023-04-10 13:42:05] INFO root fetch - processPackages [estimagic]: Downloading https://files.pythonhosted.org/packages/8e/bd/37d1ced659cb49243aece4141d94a1ccb69da38aeab9a930b4c80e91f719/estimagic-0.4.4.tar.gz
+[2023-04-10 13:42:05] INFO root fetch - processPackages [audiobook-dl]: Downloading https://files.pythonhosted.org/packages/9f/f6/2ede411be1ec4682f934d43d1389c35f2116ff9c71c5194b3372c9e2ceb7/audiobook-dl-0.4.4.tar.gz
+[2023-04-10 13:42:05] INFO root fetch - processPackages [richvalues]: Downloading https://files.pythonhosted.org/packages/de/2e/4b63df7b77515b6ab2f680deaa30e86b757e6462d4f9a791f48cff6bd61d/richvalues-2.0.0.tar.gz
+[2023-04-10 13:42:05] INFO root fetch - processPackages [pygmo]: Downloading https://files.pythonhosted.org/packages/4f/95/9bde2d0114aa0904a92b430e162c71f2a921a579debc7d6b1683af4ae91f/pygmo-2.8-cp36-cp36m-win_amd64.whl
+[2023-04-10 13:42:06] INFO root fetch - processPackages [essentials-configuration]: Downloading https://files.pythonhosted.org/packages/70/d8/28ac1f14d71f76427d21ecd421e1c2e0d01a83e1879f2fcbd7d9e6b2be0e/essentials-configuration-2.0.2.tar.gz
+[2023-04-10 13:42:06] INFO root fetch - processPackages [essentials-configuration]: executing diffoscope
+[2023-04-10 13:42:06] INFO root fetch - processPackages [essentials-configuration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/essentials_configuration-2.0.1.tar.gz tmp/essentials-configuration-2.0.2.tar.gz --markdown 20230410/e/essentials-configuration/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-10 13:42:06] INFO root fetch - processPackages [audiobook-dl]: Downloading https://files.pythonhosted.org/packages/95/b9/aa9a31c977c2363776e32f3ddba5ea3dbcfeb2f4f778c2982ce2df11f8ad/audiobook-dl-0.5.0.tar.gz
+[2023-04-10 13:42:06] INFO root fetch - processPackages [richvalues]: Downloading https://files.pythonhosted.org/packages/3d/3e/541b64f24ade302815803183a2374ab0b3d1fe346298f8f30ce16bc19ead/richvalues-3.0.0.tar.gz
+[2023-04-10 13:42:06] INFO root fetch - processPackages [estimagic]: Downloading https://files.pythonhosted.org/packages/82/c7/70922b436bcc811770b168ad48d908a35c7fc58e25f7762f085d56777e2c/estimagic-0.4.5.tar.gz
+[2023-04-10 13:42:06] INFO root fetch - processPackages [richvalues]: executing diffoscope
+[2023-04-10 13:42:06] INFO root fetch - processPackages [richvalues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richvalues-2.0.0.tar.gz tmp/richvalues-3.0.0.tar.gz --markdown 20230410/r/richvalues/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-10 13:42:06] INFO root fetch - processPackages [audiobook-dl]: executing diffoscope
+[2023-04-10 13:42:06] INFO root fetch - processPackages [audiobook-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiobook-dl-0.4.4.tar.gz tmp/audiobook-dl-0.5.0.tar.gz --markdown 20230410/a/audiobook-dl/0.4.4-0.5.0/diff.md --exclude *.pyd
+[2023-04-10 13:42:06] INFO root fetch - processPackages [estimagic]: executing diffoscope
+[2023-04-10 13:42:06] INFO root fetch - processPackages [estimagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/estimagic-0.4.4.tar.gz tmp/estimagic-0.4.5.tar.gz --markdown 20230410/e/estimagic/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-10 13:42:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:07] INFO root fetch - processPackages [mmtools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 13:42:07] INFO root fetch - processPackages [mmtools]: executing diffoscope
+[2023-04-10 13:42:07] INFO root fetch - processPackages [mmtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmtools-0.0.8.tar.gz tmp/mmtools-0.0.9.tar.gz --markdown 20230410/m/mmtools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 13:42:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:07] INFO root fetch - processPackages [utbot-executor]: New version: [1.5.0] Old Version: [1.4.9]
+[2023-04-10 13:42:07] INFO root fetch - processPackages [utbot-executor]: Downloading https://files.pythonhosted.org/packages/39/62/7d080a5e708da3231d0bf5c726f5784cf541d4874432686b85573f86499f/utbot_executor-1.4.9.tar.gz
+[2023-04-10 13:42:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:07] INFO root fetch - processPackages [nvosscript]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-10 13:42:07] INFO root fetch - processPackages [nvosscript]: Downloading https://files.pythonhosted.org/packages/56/8a/005509b1adb275feb5b85530b758de9fc94064769c4d5eebc6bb1eae7383/nvosscript-1.1.5.tar.gz
+[2023-04-10 13:42:07] INFO root fetch - processPackages [utbot-executor]: Downloading https://files.pythonhosted.org/packages/e8/05/223c00ef55fac1b910ef4cec681d5ad6474bf5ef488d05a15ca5a9ae6d35/utbot_executor-1.5.0.tar.gz
+[2023-04-10 13:42:07] INFO root fetch - processPackages [nvosscript]: executing diffoscope
+[2023-04-10 13:42:07] INFO root fetch - processPackages [nvosscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvosscript-1.1.4.tar.gz tmp/nvosscript-1.1.5.tar.gz --markdown 20230410/n/nvosscript/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-10 13:42:07] INFO root fetch - processPackages [utbot-executor]: executing diffoscope
+[2023-04-10 13:42:07] INFO root fetch - processPackages [utbot-executor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utbot_executor-1.4.9.tar.gz tmp/utbot_executor-1.5.0.tar.gz --markdown 20230410/u/utbot-executor/1.4.9-1.5.0/diff.md --exclude *.pyd
+[2023-04-10 13:42:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:08] INFO root fetch - processPackages [waffle-hub]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-10 13:42:08] INFO root fetch - processPackages [pygmo]: Downloading https://files.pythonhosted.org/packages/01/4f/330612bff1e39aa1e19ad8ed47e67701bbd4b4ccc69da3261bd02472ef19/pygmo-2.9-cp37-cp37m-manylinux1_x86_64.whl
+[2023-04-10 13:42:08] INFO root fetch - processPackages [waffle-hub]: Downloading https://files.pythonhosted.org/packages/f2/db/26a010015d1f697a5e118dd11f9851015fcb241811b6a2b428ec0af938b3/waffle_hub-0.1.5.tar.gz
+[2023-04-10 13:42:08] INFO root fetch - processPackages [waffle-hub]: Downloading https://files.pythonhosted.org/packages/34/70/e3776e56aeb43e77c75c59b894c9d139c96be879089d677c76764eb26bda/waffle_hub-0.1.6.tar.gz
+[2023-04-10 13:42:08] INFO root fetch - processPackages [waffle-hub]: executing diffoscope
+[2023-04-10 13:42:08] INFO root fetch - processPackages [waffle-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waffle_hub-0.1.5.tar.gz tmp/waffle_hub-0.1.6.tar.gz --markdown 20230410/w/waffle-hub/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-10 13:42:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:08] INFO root fetch - processPackages [dashscope]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 13:42:09] INFO root fetch - processPackages [dashscope]: Downloading https://files.pythonhosted.org/packages/d9/d2/34ef4bda103116baeec6142b2a48a72d2e4f3e6418aef233ee496ce030e1/dashscope-1.0.2.tar.gz
+[2023-04-10 13:42:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:09] INFO root fetch - processPackages [abcd-seth]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-10 13:42:09] INFO root fetch - processPackages [dashscope]: executing diffoscope
+[2023-04-10 13:42:09] INFO root fetch - processPackages [dashscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dashscope-1.0.1.tar.gz tmp/dashscope-1.0.2.tar.gz --markdown 20230410/d/dashscope/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 13:42:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:09] INFO root fetch - processPackages [B0tHe1Per-test-api]: New version: [0.2] Old Version: [0.1]
+[2023-04-10 13:42:09] INFO root fetch - processPackages [abcd-seth]: Downloading https://files.pythonhosted.org/packages/c0/99/a4e55140b7bb44eb16089466c044030f556fa7fd69b57e5aaffe406f3f3b/abcd_seth-1.0.3.tar.gz
+[2023-04-10 13:42:09] INFO root fetch - processPackages [abcd-seth]: executing diffoscope
+[2023-04-10 13:42:09] INFO root fetch - processPackages [abcd-seth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcd_seth-1.0.2.tar.gz tmp/abcd_seth-1.0.3.tar.gz --markdown 20230410/a/abcd-seth/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-10 13:42:09] INFO root fetch - processPackages [B0tHe1Per-test-api]: Downloading https://files.pythonhosted.org/packages/4d/4b/772a3274376a400f7c15f1ef90362cf9618fac16852329bba2f6abb2f41c/B0tHe1Per_test_api-0.1.tar.gz
+[2023-04-10 13:42:09] INFO root fetch - processPackages [B0tHe1Per-test-api]: Downloading https://files.pythonhosted.org/packages/00/b7/a389f1cce0c4256f602b9aa872e34d3e2291508f4b85df14af509c7cffed/B0tHe1Per_test_api-0.2.tar.gz
+[2023-04-10 13:42:09] INFO root fetch - processPackages [B0tHe1Per-test-api]: executing diffoscope
+[2023-04-10 13:42:09] INFO root fetch - processPackages [B0tHe1Per-test-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/B0tHe1Per_test_api-0.1.tar.gz tmp/B0tHe1Per_test_api-0.2.tar.gz --markdown 20230410/B/B0tHe1Per-test-api/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-10 13:42:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:10] INFO root fetch - processPackages [discord-py-interactions]: New version: [5.0.0] Old Version: [4.4.0]
+[2023-04-10 13:42:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:10] INFO root fetch - processPackages [gridworks-protocol]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-10 13:42:10] INFO root fetch - processPackages [discord-py-interactions]: Downloading https://files.pythonhosted.org/packages/05/96/05aeeca3b8b54e4742ba1fc9f3d03461bf0a8e07d23ae13bd44c1144995c/discord-py-interactions-4.4.0.tar.gz
+[2023-04-10 13:42:10] INFO root fetch - processPackages [gridworks-protocol]: Downloading https://files.pythonhosted.org/packages/69/2c/835f33c9e41452ac3503e48b51247dfa8fe2fbb69c3d1c5ffecabcf6c11b/gridworks_protocol-0.4.4.tar.gz
+[2023-04-10 13:42:10] INFO root fetch - processPackages [gridworks-protocol]: executing diffoscope
+[2023-04-10 13:42:10] INFO root fetch - processPackages [gridworks-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridworks_protocol-0.4.3.tar.gz tmp/gridworks_protocol-0.4.4.tar.gz --markdown 20230410/g/gridworks-protocol/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-10 13:42:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:10] INFO root fetch - processPackages [discord-py-interactions]: Downloading https://files.pythonhosted.org/packages/d1/21/b92acd10006b940c9fe90518f10aa6a623dd134ffac78e7ad50d2739f252/discord-py-interactions-5.0.0.tar.gz
+[2023-04-10 13:42:10] INFO root fetch - processPackages [discord-py-interactions]: executing diffoscope
+[2023-04-10 13:42:10] INFO root fetch - processPackages [discord-py-interactions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-py-interactions-4.4.0.tar.gz tmp/discord-py-interactions-5.0.0.tar.gz --markdown 20230410/d/discord-py-interactions/4.4.0-5.0.0/diff.md --exclude *.pyd
+[2023-04-10 13:42:11] INFO root fetch - processPackages [pygmo]: executing diffoscope
+[2023-04-10 13:42:11] INFO root fetch - processPackages [pygmo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmo-2.8-cp36-cp36m-win_amd64.whl.zip tmp/pygmo-2.9-cp37-cp37m-manylinux1_x86_64.whl.zip --markdown 20230410/p/pygmo/2.8-2.9/diff.md --exclude *.pyd
+[2023-04-10 13:42:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:42:13] INFO root fetch - main [MainThread]: Store serial: [17645398]
