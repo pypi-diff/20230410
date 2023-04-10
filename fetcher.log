@@ -4258,3 +4258,45 @@ EOFError: EOF read where object expected
 [2023-04-10 05:50:26] INFO root fetch - main [MainThread]: success
 [2023-04-10 05:50:27] INFO root fetch - main [MainThread]: success
 [2023-04-10 05:50:27] INFO root fetch - main [MainThread]: Store serial: [17642523]
+[2023-04-10 05:55:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642523]
+[2023-04-10 05:55:34] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 05:55:34] WARNING root fetch - processPackages [smannan-lotr-sdk]: Skipping, unable to determine old version
+[2023-04-10 05:55:34] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:55:34] INFO root fetch - processPackages [Slpapy]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-10 05:55:34] WARNING root fetch - processPackages [asmr-spider]: Skipping, unable to determine old version
+[2023-04-10 05:55:34] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:55:34] INFO root fetch - processPackages [tvault]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-10 05:55:34] INFO root fetch - processPackages [lessweb]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-10 05:55:34] INFO root fetch - processPackages [tvault]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-10 05:55:34] INFO root fetch - processPackages [rqdatac]: New version: [2.9.8] Old Version: [2.9.7]
+[2023-04-10 05:55:34] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/08/eb/879d2eebe298f208a22ca37ef0439f9fe6a607514cb608f9daf22c1c9772/tvault-0.2.3-py3-none-any.whl
+[2023-04-10 05:55:34] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/08/eb/879d2eebe298f208a22ca37ef0439f9fe6a607514cb608f9daf22c1c9772/tvault-0.2.3-py3-none-any.whl
+[2023-04-10 05:55:34] INFO root fetch - processPackages [Slpapy]: Downloading https://files.pythonhosted.org/packages/28/77/4ec81cf7d945eafa235c6fda36001a2bef9e025443fb51e917b1e9648d87/Slpapy-0.1.7.tar.gz
+[2023-04-10 05:55:34] INFO root fetch - processPackages [lessweb]: Downloading https://files.pythonhosted.org/packages/75/54/4c387491e40a600530978a1a2f03c4f401f4ff7fd31a0bb4420a2884364e/lessweb-1.0.5.tar.gz
+[2023-04-10 05:55:34] INFO root fetch - processPackages [rqdatac]: Downloading https://files.pythonhosted.org/packages/90/b6/591b01b456b98874d6e034b98d6ec3812de60b8dc0e73b29d834f8b185ba/rqdatac-2.9.7-cp38-cp38-win_amd64.whl
+[2023-04-10 05:55:34] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/6a/ec/660b89d9b3d85e1d51acc0b124047b5fdc5f8869686bc33e47366cb46862/tvault-0.2.4-py3-none-any.whl
+[2023-04-10 05:55:34] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/6a/ec/660b89d9b3d85e1d51acc0b124047b5fdc5f8869686bc33e47366cb46862/tvault-0.2.4-py3-none-any.whl
+[2023-04-10 05:55:34] INFO root fetch - processPackages [lessweb]: Downloading https://files.pythonhosted.org/packages/16/8e/fdd5a3c7ea250ffdaa8c6f185b9a86262efdb839928803af6673dddcd560/lessweb-1.0.6.tar.gz
+[2023-04-10 05:55:34] INFO root fetch - processPackages [Slpapy]: Downloading https://files.pythonhosted.org/packages/ea/bc/9c0dc3c64ddaa66cc8b4ff4edf396f6183a125cc9d18b09f55bedf530abf/Slpapy-0.1.8.tar.gz
+[2023-04-10 05:55:34] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-10 05:55:34] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.2.3-py3-none-any.whl.zip tmp/tvault-0.2.4-py3-none-any.whl.zip --markdown 20230410/t/tvault/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-10 05:55:34] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-10 05:55:34] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.2.3-py3-none-any.whl.zip tmp/tvault-0.2.4-py3-none-any.whl.zip --markdown 20230410/t/tvault/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-10 05:55:34] INFO root fetch - processPackages [lessweb]: executing diffoscope
+[2023-04-10 05:55:34] INFO root fetch - processPackages [lessweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lessweb-1.0.5.tar.gz tmp/lessweb-1.0.6.tar.gz --markdown 20230410/l/lessweb/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-10 05:55:34] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-04-10 05:55:34] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.1.7.tar.gz tmp/Slpapy-0.1.8.tar.gz --markdown 20230410/S/Slpapy/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-10 05:55:35] INFO root fetch - processPackages [rqdatac]: Downloading https://files.pythonhosted.org/packages/d6/cf/51051b52cdbade7aa3c185f1d7fb144e327ff1c676a67ba8d842f933df4b/rqdatac-2.9.8-cp38-cp38-win_amd64.whl
+[2023-04-10 05:55:35] INFO root fetch - processPackages [rqdatac]: executing diffoscope
+[2023-04-10 05:55:35] INFO root fetch - processPackages [rqdatac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rqdatac-2.9.7-cp38-cp38-win_amd64.whl.zip tmp/rqdatac-2.9.8-cp38-cp38-win_amd64.whl.zip --markdown 20230410/r/rqdatac/2.9.7-2.9.8/diff.md --exclude *.pyd
+[2023-04-10 05:55:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:55:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:55:35] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-10 05:55:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:55:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:55:35] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: Downloading https://files.pythonhosted.org/packages/57/47/8b3413889d945d98cf68b9d1994f99212c3d18484dec31f48fcf9650bb2d/nonebot-plugin-chatgpt-on-qq-1.1.0.tar.gz
+[2023-04-10 05:55:36] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: executing diffoscope
+[2023-04-10 05:55:36] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-chatgpt-on-qq-1.0.2.tar.gz tmp/nonebot-plugin-chatgpt-on-qq-1.1.0.tar.gz --markdown 20230410/n/nonebot-plugin-chatgpt-on-qq/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 05:55:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:55:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:55:36] INFO root fetch - main [MainThread]: Store serial: [17642571]
