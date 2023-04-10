@@ -1491,3 +1491,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-10 03:03:15] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:03:18] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:03:18] INFO root fetch - main [MainThread]: Store serial: [17640908]
+[2023-04-10 03:08:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640908]
+[2023-04-10 03:08:26] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 03:08:26] INFO root fetch - processPackages [db-classifier]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 03:08:26] INFO root fetch - processPackages [sm-search-connector-poc-interface]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 03:08:26] WARNING root fetch - processPackages [BBFinance]: Skipping, unable to determine old version
+[2023-04-10 03:08:26] INFO root fetch - main [MainThread]: error
+[2023-04-10 03:08:26] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2023-04-10 03:08:26] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 03:08:26] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-10 03:08:26] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 03:08:26] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 03:08:26] INFO root fetch - main [MainThread]: error
+[2023-04-10 03:08:26] INFO root fetch - processPackages [db-classifier]: Downloading https://files.pythonhosted.org/packages/eb/98/2433ffa0a19ef59fcb87562b94d36e5f501fe9949cd0c1557d012fec34c3/db-classifier-0.0.3.tar.gz
+[2023-04-10 03:08:26] INFO root fetch - processPackages [pyvosklivesubtitle]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 03:08:27] INFO root fetch - processPackages [db-classifier]: executing diffoscope
+[2023-04-10 03:08:27] INFO root fetch - processPackages [db-classifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/db-classifier-0.0.2.tar.gz tmp/db-classifier-0.0.3.tar.gz --markdown 20230410/d/db-classifier/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 03:08:27] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-10 03:08:27] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230410/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-10 03:08:27] INFO root fetch - processPackages [sm-search-connector-poc-interface]: Downloading https://files.pythonhosted.org/packages/39/7e/f3db43d02bd50ae62699e4d961b4e4fc6a6316c368e2f453b97afb6545ed/sm-search-connector-poc-interface-0.2.2.tar.gz
+[2023-04-10 03:08:27] INFO root fetch - processPackages [sm-search-connector-poc-interface]: executing diffoscope
+[2023-04-10 03:08:27] INFO root fetch - processPackages [sm-search-connector-poc-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sm-search-connector-poc-interface-0.2.1.tar.gz tmp/sm-search-connector-poc-interface-0.2.2.tar.gz --markdown 20230410/s/sm-search-connector-poc-interface/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 03:08:27] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2023-04-10 03:08:27] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20230410/p/pypreql/0.0.1rc8-0.0.1rc9/diff.md --exclude *.pyd
+[2023-04-10 03:08:27] INFO root fetch - processPackages [pyvosklivesubtitle]: Downloading https://files.pythonhosted.org/packages/21/c3/ea4ffe34a83f5758a963fe6b96ac9f87672f95261bbedb75e68d7df4e2f3/pyvosklivesubtitle-0.1.1.tar.gz
+[2023-04-10 03:08:27] INFO root fetch - processPackages [pyvosklivesubtitle]: executing diffoscope
+[2023-04-10 03:08:27] INFO root fetch - processPackages [pyvosklivesubtitle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvosklivesubtitle-0.1.0.tar.gz tmp/pyvosklivesubtitle-0.1.1.tar.gz --markdown 20230410/p/pyvosklivesubtitle/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 03:08:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:08:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:08:28] INFO root fetch - processPackages [mofdb-client]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 03:08:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:08:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:08:28] INFO root fetch - processPackages [mofdb-client]: Downloading https://files.pythonhosted.org/packages/85/db/aaaf85f1816a1302c64dc7a15624f5eea99b9ffe5a70a9228950cc0f2711/mofdb_client-0.8.0.tar.gz
+[2023-04-10 03:08:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:08:28] INFO root fetch - processPackages [mofdb-client]: Downloading https://files.pythonhosted.org/packages/92/79/3a8e502301919d23ed5427eb667ba76e8cc34a078bf807cb4bd7fbb503a6/mofdb_client-0.9.0.tar.gz
+[2023-04-10 03:08:29] INFO root fetch - processPackages [mofdb-client]: executing diffoscope
+[2023-04-10 03:08:29] INFO root fetch - processPackages [mofdb-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mofdb_client-0.8.0.tar.gz tmp/mofdb_client-0.9.0.tar.gz --markdown 20230410/m/mofdb-client/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 03:08:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:08:30] INFO root fetch - main [MainThread]: Store serial: [17640934]
