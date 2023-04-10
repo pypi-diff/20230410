@@ -5036,3 +5036,34 @@ EOFError: EOF read where object expected
 [2023-04-10 07:30:09] INFO root fetch - main [MainThread]: success
 [2023-04-10 07:30:09] INFO root fetch - main [MainThread]: success
 [2023-04-10 07:30:09] INFO root fetch - main [MainThread]: Store serial: [17643144]
+[2023-04-10 07:35:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643144]
+[2023-04-10 07:35:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 07:35:16] INFO root fetch - processPackages [ytpodgen]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-10 07:35:16] INFO root fetch - processPackages [eks-token]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 07:35:16] WARNING root fetch - processPackages [ImgProcessZ]: Skipping, unable to determine old version
+[2023-04-10 07:35:16] INFO root fetch - main [MainThread]: error
+[2023-04-10 07:35:16] INFO root fetch - processPackages [mpapi-webui]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-10 07:35:16] INFO root fetch - processPackages [hbili-gpt]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 07:35:16] INFO root fetch - processPackages [vcorelib]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-10 07:35:16] INFO root fetch - processPackages [eks-token]: Downloading https://files.pythonhosted.org/packages/1c/0f/069c80a8c3d6ec564b36b72ca7726ebda1a2e79d45443d199e04be813ef3/eks_token-0.1.1.tar.gz
+[2023-04-10 07:35:16] INFO root fetch - processPackages [mpapi-webui]: Downloading https://files.pythonhosted.org/packages/c7/71/cdd0524373abde4ee81609c7064af7544be73ef72a36cba533b1ce510b21/mpapi-webui-1.0.0.tar.gz
+[2023-04-10 07:35:16] INFO root fetch - processPackages [hbili-gpt]: executing diffoscope
+[2023-04-10 07:35:16] INFO root fetch - processPackages [hbili-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbili-gpt-0.1.8.tar.gz tmp/hbili-gpt-0.1.9.tar.gz --markdown 20230410/h/hbili-gpt/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 07:35:16] INFO root fetch - processPackages [ytpodgen]: Downloading https://files.pythonhosted.org/packages/4d/f1/5ffdd834fad801536eefcafdd1ab5988e48b661e62e4b052a4a95644bd83/ytpodgen-0.2.5.tar.gz
+[2023-04-10 07:35:16] INFO root fetch - processPackages [ytpodgen]: executing diffoscope
+[2023-04-10 07:35:16] INFO root fetch - processPackages [ytpodgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytpodgen-0.2.4.tar.gz tmp/ytpodgen-0.2.5.tar.gz --markdown 20230410/y/ytpodgen/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-10 07:35:16] INFO root fetch - processPackages [vcorelib]: Downloading https://files.pythonhosted.org/packages/da/ec/74bf8f7eec1a6fecc27043a981cccc6800a58ebb8316b5e962e15be63b55/vcorelib-1.5.2.tar.gz
+[2023-04-10 07:35:16] INFO root fetch - processPackages [mpapi-webui]: Downloading https://files.pythonhosted.org/packages/f2/29/ae415ef0b0478ade3af67c20295089bc67171cd35ad68c23b7111a0440cc/mpapi-webui-1.1.0.tar.gz
+[2023-04-10 07:35:17] INFO root fetch - processPackages [mpapi-webui]: executing diffoscope
+[2023-04-10 07:35:17] INFO root fetch - processPackages [mpapi-webui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpapi-webui-1.0.0.tar.gz tmp/mpapi-webui-1.1.0.tar.gz --markdown 20230410/m/mpapi-webui/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 07:35:17] INFO root fetch - processPackages [eks-token]: Downloading https://files.pythonhosted.org/packages/b0/c9/f3af685a50acb6084293ca3d52b1ae3e530dcba621c43b79e06b660db3d8/eks_token-0.1.2.tar.gz
+[2023-04-10 07:35:17] INFO root fetch - processPackages [eks-token]: executing diffoscope
+[2023-04-10 07:35:17] INFO root fetch - processPackages [eks-token]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eks_token-0.1.1.tar.gz tmp/eks_token-0.1.2.tar.gz --markdown 20230410/e/eks-token/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 07:35:17] INFO root fetch - processPackages [vcorelib]: executing diffoscope
+[2023-04-10 07:35:17] INFO root fetch - processPackages [vcorelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcorelib-1.5.1.tar.gz tmp/vcorelib-1.5.2.tar.gz --markdown 20230410/v/vcorelib/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-10 07:35:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:35:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:35:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:35:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:35:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:35:18] INFO root fetch - main [MainThread]: Store serial: [17643168]
