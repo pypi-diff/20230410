@@ -1783,3 +1783,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-10 03:40:57] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:40:58] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:40:58] INFO root fetch - main [MainThread]: Store serial: [17641139]
+[2023-04-10 03:46:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17641139]
+[2023-04-10 03:46:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-10 03:46:05] INFO root fetch - processPackages [ogr-tiller]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 03:46:05] INFO root fetch - processPackages [aifactory]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-04-10 03:46:05] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 03:46:05] INFO root fetch - processPackages [satcfdi]: New version: [4.0.6] Old Version: [4.0.5]
+[2023-04-10 03:46:05] INFO root fetch - processPackages [unicorn-binance-websocket-api]: New version: [1.45.2] Old Version: [1.45.1]
+[2023-04-10 03:46:05] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 03:46:05] INFO root fetch - processPackages [ogr-tiller]: executing diffoscope
+[2023-04-10 03:46:05] INFO root fetch - processPackages [ogr-tiller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogr_tiller-0.0.8.tar.gz tmp/ogr_tiller-0.0.9.tar.gz --markdown 20230410/o/ogr-tiller/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 03:46:05] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 03:46:05] INFO root fetch - main [MainThread]: error
+[2023-04-10 03:46:05] INFO root fetch - processPackages [satcfdi]: Downloading https://files.pythonhosted.org/packages/79/0d/4460f31c19d1c7684bb4aed4bd33064149ea5b6516d33fb7975b72977fbd/satcfdi-4.0.5.tar.gz
+[2023-04-10 03:46:05] INFO root fetch - processPackages [aifactory]: Downloading https://files.pythonhosted.org/packages/20/8f/18ca7231de1dad9e447813707a26d49ada62ca9d4474c62e7f48841964ee/aifactory-1.6.8.tar.gz
+[2023-04-10 03:46:05] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Downloading https://files.pythonhosted.org/packages/71/40/20aa135d06e2e4032d0ab1d886a955a05feade6f53a14689ce2e12608321/unicorn-binance-websocket-api-1.45.2.tar.gz
+[2023-04-10 03:46:05] INFO root fetch - processPackages [unicorn-binance-websocket-api]: executing diffoscope
+[2023-04-10 03:46:05] INFO root fetch - processPackages [unicorn-binance-websocket-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicorn-binance-websocket-api-1.45.1.tar.gz tmp/unicorn-binance-websocket-api-1.45.2.tar.gz --markdown 20230410/u/unicorn-binance-websocket-api/1.45.1-1.45.2/diff.md --exclude *.pyd
+[2023-04-10 03:46:05] INFO root fetch - processPackages [aifactory]: Downloading https://files.pythonhosted.org/packages/56/63/960f94924ecafc79206bc64a5e1c9dbec701f7c9631eaf03f406e26f3c29/aifactory-1.6.9.tar.gz
+[2023-04-10 03:46:05] INFO root fetch - processPackages [aifactory]: executing diffoscope
+[2023-04-10 03:46:05] INFO root fetch - processPackages [aifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifactory-1.6.8.tar.gz tmp/aifactory-1.6.9.tar.gz --markdown 20230410/a/aifactory/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-04-10 03:46:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:46:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:46:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:46:07] INFO root fetch - processPackages [satcfdi]: Downloading https://files.pythonhosted.org/packages/85/10/8cb850c7ae02f63bdf27e4ad6dc08a30bbfa0626b9985af4df174e3bc90d/satcfdi-4.0.6.tar.gz
+[2023-04-10 03:46:10] INFO root fetch - processPackages [satcfdi]: executing diffoscope
+[2023-04-10 03:46:10] INFO root fetch - processPackages [satcfdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satcfdi-4.0.5.tar.gz tmp/satcfdi-4.0.6.tar.gz --markdown 20230410/s/satcfdi/4.0.5-4.0.6/diff.md --exclude *.pyd
+[2023-04-10 03:46:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:46:15] INFO root fetch - main [MainThread]: Store serial: [17641154]
