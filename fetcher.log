@@ -9778,3 +9778,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 15:12:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:12:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:12:42] INFO root fetch - main [MainThread]: Store serial: [17646089]
+[2023-04-10 15:17:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646089]
+[2023-04-10 15:17:49] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 15:17:49] INFO root fetch - processPackages [types-graphene]: New version: [0.2] Old Version: [0.19]
+[2023-04-10 15:17:49] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.705] Old Version: [0.0.704]
+[2023-04-10 15:17:49] INFO root fetch - processPackages [gyropalm-control]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 15:17:49] INFO root fetch - processPackages [abilian-devtools]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-10 15:17:49] INFO root fetch - processPackages [pygmo]: New version: [2.9] Old Version: [2.8]
+[2023-04-10 15:17:49] INFO root fetch - processPackages [types-graphene]: Downloading https://files.pythonhosted.org/packages/16/bf/f941835194e71333e0d440093323f34fc033345331b2b848ceb27f4ba7d7/types-graphene-0.19.tar.gz
+[2023-04-10 15:17:49] INFO root fetch - processPackages [pygmo]: executing diffoscope
+[2023-04-10 15:17:49] INFO root fetch - processPackages [pygmo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmo-2.8-cp36-cp36m-win_amd64.whl.zip tmp/pygmo-2.9-cp37-cp37m-manylinux1_x86_64.whl.zip --markdown 20230410/p/pygmo/2.8-2.9/diff.md --exclude *.pyd
+[2023-04-10 15:17:49] INFO root fetch - processPackages [abilian-devtools]: executing diffoscope
+[2023-04-10 15:17:49] INFO root fetch - processPackages [abilian-devtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abilian_devtools-0.4.8.tar.gz tmp/abilian_devtools-0.4.9.tar.gz --markdown 20230410/a/abilian-devtools/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-10 15:17:49] INFO root fetch - processPackages [gyropalm-control]: Downloading https://files.pythonhosted.org/packages/75/ea/dfd9dff10bc2d0f179fb9edcccc98b8c2487d6594f1ae739b2306d7e4c04/gyropalm_control-1.0.0.tar.gz
+[2023-04-10 15:17:49] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/d9/52/16f001d3f4841a03ee402d9cf0ae56fa1e81b52ed2abdf3cb2fae803d066/nbdev-apl-0.0.705.tar.gz
+[2023-04-10 15:17:49] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-10 15:17:49] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.704.tar.gz tmp/nbdev-apl-0.0.705.tar.gz --markdown 20230410/n/nbdev-apl/0.0.704-0.0.705/diff.md --exclude *.pyd
+[2023-04-10 15:17:50] INFO root fetch - processPackages [types-graphene]: Downloading https://files.pythonhosted.org/packages/7c/0c/fcc64b9561a41de4d23715ee6a866ae88274456f943e89e6498e903b6ea9/types-graphene-0.2.tar.gz
+[2023-04-10 15:17:50] INFO root fetch - processPackages [gyropalm-control]: Downloading https://files.pythonhosted.org/packages/93/b6/ff73f6f0b8ed24bbfc3e43f9cd58492b0fc31d6eb0cda3cb137858dad96a/gyropalm_control-1.0.1.tar.gz
+[2023-04-10 15:17:50] INFO root fetch - processPackages [gyropalm-control]: executing diffoscope
+[2023-04-10 15:17:50] INFO root fetch - processPackages [gyropalm-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gyropalm_control-1.0.0.tar.gz tmp/gyropalm_control-1.0.1.tar.gz --markdown 20230410/g/gyropalm-control/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 15:17:50] INFO root fetch - processPackages [types-graphene]: executing diffoscope
+[2023-04-10 15:17:50] INFO root fetch - processPackages [types-graphene]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-graphene-0.19.tar.gz tmp/types-graphene-0.2.tar.gz --markdown 20230410/t/types-graphene/0.19-0.2/diff.md --exclude *.pyd
+[2023-04-10 15:17:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:17:50] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 15:17:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:17:51] INFO root fetch - processPackages [admin-tool-button]: New version: [1.0.4a0] Old Version: [1.0.3a0]
+[2023-04-10 15:17:51] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: executing diffoscope
+[2023-04-10 15:17:51] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-route53-health-check-0.0.98.tar.gz tmp/pepperize.cdk-route53-health-check-0.0.99.tar.gz --markdown 20230410/p/pepperize.cdk-route53-health-check/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 15:17:51] INFO root fetch - processPackages [admin-tool-button]: executing diffoscope
+[2023-04-10 15:17:51] INFO root fetch - processPackages [admin-tool-button]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/admin_tool_button-1.0.3a0.tar.gz tmp/admin_tool_button-1.0.4a0.tar.gz --markdown 20230410/a/admin-tool-button/1.0.3a0-1.0.4a0/diff.md --exclude *.pyd
+[2023-04-10 15:17:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:17:51] INFO root fetch - processPackages [chunkdot]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-10 15:17:51] INFO root fetch - processPackages [chunkdot]: Downloading https://files.pythonhosted.org/packages/1e/6e/039a170abcb001ba4f6d9600a38dea207a07bd0f3ec42b4e394778950cee/chunkdot-0.1.4.tar.gz
+[2023-04-10 15:17:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:17:51] INFO root fetch - processPackages [pyright-polite]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 15:17:51] INFO root fetch - processPackages [pyright-polite]: Downloading https://files.pythonhosted.org/packages/e8/04/9f66694b8c4dcf09bdb7205cfe83f13a721d1daa1f2db466ab1c617873cd/pyright_polite-1.0.4.tar.gz
+[2023-04-10 15:17:51] INFO root fetch - processPackages [pyright-polite]: executing diffoscope
+[2023-04-10 15:17:51] INFO root fetch - processPackages [pyright-polite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyright_polite-1.0.3.tar.gz tmp/pyright_polite-1.0.4.tar.gz --markdown 20230410/p/pyright-polite/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-10 15:17:51] INFO root fetch - processPackages [chunkdot]: Downloading https://files.pythonhosted.org/packages/67/39/c02acf19c45b3b2d5d921efb75edc9ef563417527b09906a539489155af3/chunkdot-0.1.5.tar.gz
+[2023-04-10 15:17:51] INFO root fetch - processPackages [chunkdot]: executing diffoscope
+[2023-04-10 15:17:51] INFO root fetch - processPackages [chunkdot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chunkdot-0.1.4.tar.gz tmp/chunkdot-0.1.5.tar.gz --markdown 20230410/c/chunkdot/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-10 15:17:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:17:52] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-10 15:17:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:17:52] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/91/d7/37b19c2c14c34663f10ad284c315d7cdad71cbf7995d5e3bd737507ac655/fbgemm_gpu_nightly-2023.4.8-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-10 15:17:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:17:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:17:53] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 205605176>=10485760
+[2023-04-10 15:17:53] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:17:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:17:53] INFO root fetch - main [MainThread]: Store serial: [17646128]
