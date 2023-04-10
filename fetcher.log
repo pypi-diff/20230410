@@ -10012,3 +10012,48 @@ EOFError: EOF read where object expected
 [2023-04-10 15:33:30] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:33:31] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:33:31] INFO root fetch - main [MainThread]: Store serial: [17646221]
+[2023-04-10 15:38:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646221]
+[2023-04-10 15:38:38] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 15:38:38] WARNING root fetch - processPackages [modProcesso]: Skipping, unable to determine old version
+[2023-04-10 15:38:38] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:38:38] WARNING root fetch - processPackages [xbee900-HIT]: Skipping, unable to determine old version
+[2023-04-10 15:38:38] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:38:38] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 15:38:38] INFO root fetch - processPackages [jupyterlab-judge]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-10 15:38:38] INFO root fetch - processPackages [redis-benchmarks-specification]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 15:38:38] INFO root fetch - processPackages [kolibri-explore-plugin]: New version: [5.9.0] Old Version: [5.8.0]
+[2023-04-10 15:38:38] INFO root fetch - processPackages [datrafilcha]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 15:38:38] INFO root fetch - processPackages [datrafilcha]: Downloading https://files.pythonhosted.org/packages/cd/23/dad95ba542d65a80a44689e3fbcae546c7b206ad741157b4e8334d7af09a/datrafilcha-1.0.0.tar.gz
+[2023-04-10 15:38:38] INFO root fetch - processPackages [redis-benchmarks-specification]: Downloading https://files.pythonhosted.org/packages/02/05/eeb01b3d4530ec9ef06d77b9c64130dfe75ee7c56d84831dc66258ea0456/redis-benchmarks-specification-0.1.8.tar.gz
+[2023-04-10 15:38:38] INFO root fetch - processPackages [kolibri-explore-plugin]: Downloading https://files.pythonhosted.org/packages/0c/7a/c73dde3624d86c7539942b345c199c1b99ced64421ccfe50eea5b3591969/kolibri_explore_plugin-5.8.0-py2.py3-none-any.whl
+[2023-04-10 15:38:39] INFO root fetch - processPackages [datrafilcha]: Downloading https://files.pythonhosted.org/packages/45/c5/5bc7608795f01dec6e340d679e355ccfdeb8471b41a58b75db898650c1f7/datrafilcha-1.0.1.tar.gz
+[2023-04-10 15:38:39] INFO root fetch - processPackages [jupyterlab-judge]: executing diffoscope
+[2023-04-10 15:38:39] INFO root fetch - processPackages [jupyterlab-judge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_judge-0.9.1.tar.gz tmp/jupyterlab_judge-0.9.2.tar.gz --markdown 20230410/j/jupyterlab-judge/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-10 15:38:39] INFO root fetch - processPackages [datrafilcha]: executing diffoscope
+[2023-04-10 15:38:39] INFO root fetch - processPackages [datrafilcha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datrafilcha-1.0.0.tar.gz tmp/datrafilcha-1.0.1.tar.gz --markdown 20230410/d/datrafilcha/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 15:38:39] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: executing diffoscope
+[2023-04-10 15:38:39] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-provider-huawei-cloud-demo-0.0.8.tar.gz tmp/airflow-provider-huawei-cloud-demo-0.0.9.tar.gz --markdown 20230410/a/airflow-provider-huawei-cloud-demo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 15:38:39] INFO root fetch - processPackages [redis-benchmarks-specification]: Downloading https://files.pythonhosted.org/packages/08/d2/fc2acfc5ec846d3e183901faac26553b1a4e9525fa352b8b81c004cc0903/redis-benchmarks-specification-0.1.9.tar.gz
+[2023-04-10 15:38:39] INFO root fetch - processPackages [redis-benchmarks-specification]: executing diffoscope
+[2023-04-10 15:38:39] INFO root fetch - processPackages [redis-benchmarks-specification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redis-benchmarks-specification-0.1.8.tar.gz tmp/redis-benchmarks-specification-0.1.9.tar.gz --markdown 20230410/r/redis-benchmarks-specification/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 15:38:39] WARNING root fetch - processPackages [kolibri-explore-plugin]: Skipping package: exceeds size limit 16264518>=10485760
+[2023-04-10 15:38:39] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:38:39] WARNING root fetch - processPackages [codebuddie]: Skipping, unable to determine old version
+[2023-04-10 15:38:39] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:38:39] INFO root fetch - processPackages [PolicyEngine-UK]: New version: [0.45.1] Old Version: [0.45.0]
+[2023-04-10 15:38:39] INFO root fetch - processPackages [PolicyEngine-UK]: Downloading https://files.pythonhosted.org/packages/ae/66/fb1405fbfb8ef3acb1a76a7dfd5b17e5187b06fda3137259703e519590db/PolicyEngine-UK-0.45.0.tar.gz
+[2023-04-10 15:38:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:38:40] INFO root fetch - processPackages [monty]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-04-10 15:38:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:38:40] INFO root fetch - processPackages [monty]: Downloading https://files.pythonhosted.org/packages/8e/e7/07f0704728ab5c67112d6e8a1c074e74a69dbed087ddd51315d6d40e9508/monty-4.0.1.tar.gz
+[2023-04-10 15:38:40] INFO root fetch - processPackages [PolicyEngine-UK]: Downloading https://files.pythonhosted.org/packages/59/15/d56025bffb7fed55439cccfc49439f997ef90a6d605fea84561d2b063bc3/PolicyEngine-UK-0.45.1.tar.gz
+[2023-04-10 15:38:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:38:40] INFO root fetch - processPackages [monty]: Downloading https://files.pythonhosted.org/packages/84/60/a1fc171b7d1720bdb370077f32807dc7b87bd5245021f2fefc8c66a2ae9f/monty-4.0.2.tar.gz
+[2023-04-10 15:38:40] INFO root fetch - processPackages [PolicyEngine-UK]: executing diffoscope
+[2023-04-10 15:38:40] INFO root fetch - processPackages [PolicyEngine-UK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PolicyEngine-UK-0.45.0.tar.gz tmp/PolicyEngine-UK-0.45.1.tar.gz --markdown 20230410/P/PolicyEngine-UK/0.45.0-0.45.1/diff.md --exclude *.pyd
+[2023-04-10 15:38:40] INFO root fetch - processPackages [monty]: executing diffoscope
+[2023-04-10 15:38:40] INFO root fetch - processPackages [monty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monty-4.0.1.tar.gz tmp/monty-4.0.2.tar.gz --markdown 20230410/m/monty/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-04-10 15:38:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:38:42] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:38:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:38:47] INFO root fetch - main [MainThread]: Store serial: [17646258]
