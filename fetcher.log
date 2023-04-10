@@ -7461,3 +7461,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 11:55:44] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:55:44] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:55:44] INFO root fetch - main [MainThread]: Store serial: [17644837]
+[2023-04-10 12:00:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644837]
+[2023-04-10 12:00:52] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 12:00:52] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 12:00:52] WARNING root fetch - processPackages [trackgrab]: Skipping, unable to determine old version
+[2023-04-10 12:00:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:00:52] INFO root fetch - processPackages [aiocapsolver]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-10 12:00:52] INFO root fetch - processPackages [lightnovel-crawler]: New version: [3.2.6] Old Version: [3.2.5]
+[2023-04-10 12:00:52] INFO root fetch - processPackages [busy]: New version: [3.4.6] Old Version: [3.4.5]
+[2023-04-10 12:00:52] INFO root fetch - processPackages [automation_rest_server]: New version: [3.6.4] Old Version: [3.6.3]
+[2023-04-10 12:00:53] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: executing diffoscope
+[2023-04-10 12:00:53] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-provider-huawei-cloud-demo-0.0.8.tar.gz tmp/airflow-provider-huawei-cloud-demo-0.0.9.tar.gz --markdown 20230410/a/airflow-provider-huawei-cloud-demo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 12:00:53] INFO root fetch - processPackages [aiocapsolver]: Downloading https://files.pythonhosted.org/packages/4c/1a/5d3df4adca68b64497839d0daece9a9ba0043d4c92f55055591412d4c05a/aiocapsolver-0.0.6.tar.gz
+[2023-04-10 12:00:53] INFO root fetch - processPackages [lightnovel-crawler]: Downloading https://files.pythonhosted.org/packages/99/a0/e9c5da64a7c6be6051cba5ded9b22db84603dad77661e18863d604fff023/lightnovel_crawler-3.2.6-py3-none-any.whl
+[2023-04-10 12:00:53] INFO root fetch - processPackages [automation_rest_server]: Downloading https://files.pythonhosted.org/packages/a3/af/92444030bbb0cd6ead8c45a0338b25d0d7a045f8af6c5bd49b02465d786f/automation_rest_server-3.6.4.tar.gz
+[2023-04-10 12:00:53] INFO root fetch - processPackages [aiocapsolver]: executing diffoscope
+[2023-04-10 12:00:53] INFO root fetch - processPackages [aiocapsolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocapsolver-0.0.5.tar.gz tmp/aiocapsolver-0.0.6.tar.gz --markdown 20230410/a/aiocapsolver/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-10 12:00:53] INFO root fetch - processPackages [lightnovel-crawler]: executing diffoscope
+[2023-04-10 12:00:53] INFO root fetch - processPackages [lightnovel-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightnovel_crawler-3.2.5-py3-none-any.whl.zip tmp/lightnovel_crawler-3.2.6-py3-none-any.whl.zip --markdown 20230410/l/lightnovel-crawler/3.2.5-3.2.6/diff.md --exclude *.pyd
+[2023-04-10 12:00:53] INFO root fetch - processPackages [automation_rest_server]: executing diffoscope
+[2023-04-10 12:00:53] INFO root fetch - processPackages [automation_rest_server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation_rest_server-3.6.3.tar.gz tmp/automation_rest_server-3.6.4.tar.gz --markdown 20230410/a/automation_rest_server/3.6.3-3.6.4/diff.md --exclude *.pyd
+[2023-04-10 12:00:53] INFO root fetch - processPackages [busy]: Downloading https://files.pythonhosted.org/packages/c7/40/3f083ae714bf5adf3ff1d8bb7b6514295061ce82de4744bf97d8eba791bc/busy-3.4.6.tar.gz
+[2023-04-10 12:00:53] INFO root fetch - processPackages [busy]: executing diffoscope
+[2023-04-10 12:00:53] INFO root fetch - processPackages [busy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/busy-3.4.5.tar.gz tmp/busy-3.4.6.tar.gz --markdown 20230410/b/busy/3.4.5-3.4.6/diff.md --exclude *.pyd
+[2023-04-10 12:00:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:00:54] WARNING root fetch - processPackages [jsonschema-validator-new]: Skipping, unable to determine old version
+[2023-04-10 12:00:54] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:00:54] INFO root fetch - processPackages [qr-server]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-10 12:00:54] INFO root fetch - processPackages [qr-server]: Downloading https://files.pythonhosted.org/packages/da/43/453980cdbe8120c37fa6274244092186605b7fa4fe22610aa08615ee142e/qr_server-1.1.8.tar.gz
+[2023-04-10 12:00:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:00:54] INFO root fetch - processPackages [qr-server]: Downloading https://files.pythonhosted.org/packages/bb/90/84284946c5c4d2d7afb3a9119aa837784379da89d128e5518c4368167ff8/qr_server-1.1.9.tar.gz
+[2023-04-10 12:00:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:00:55] INFO root fetch - processPackages [qr-server]: executing diffoscope
+[2023-04-10 12:00:55] INFO root fetch - processPackages [qr-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qr_server-1.1.8.tar.gz tmp/qr_server-1.1.9.tar.gz --markdown 20230410/q/qr-server/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-10 12:00:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:00:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:00:59] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:00:59] INFO root fetch - main [MainThread]: Store serial: [17644863]
