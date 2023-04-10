@@ -11122,3 +11122,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 16:42:03] INFO root fetch - main [MainThread]: success
 [2023-04-10 16:42:03] INFO root fetch - main [MainThread]: success
 [2023-04-10 16:42:03] INFO root fetch - main [MainThread]: Store serial: [17646921]
+[2023-04-10 16:47:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646921]
+[2023-04-10 16:47:11] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-10 16:47:11] WARNING root fetch - processPackages [torswitch]: Skipping, unable to determine old version
+[2023-04-10 16:47:11] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:47:11] INFO root fetch - processPackages [aa-buybackprogram]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-10 16:47:11] INFO root fetch - processPackages [simpleworkspace]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-04-10 16:47:11] INFO root fetch - processPackages [croydon]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-10 16:47:11] INFO root fetch - processPackages [tempora]: New version: [5.2.2] Old Version: [5.2.1]
+[2023-04-10 16:47:11] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-10 16:47:11] INFO root fetch - processPackages [croydon]: executing diffoscope
+[2023-04-10 16:47:11] INFO root fetch - processPackages [croydon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croydon-0.9.0.tar.gz tmp/croydon-0.9.1.tar.gz --markdown 20230410/c/croydon/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-10 16:47:11] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2023-04-10 16:47:11] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleWorkspace-1.1.98-py3-none-any.whl.zip tmp/SimpleWorkspace-1.1.99-py3-none-any.whl.zip --markdown 20230410/s/simpleworkspace/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-04-10 16:47:11] INFO root fetch - processPackages [tempora]: Downloading https://files.pythonhosted.org/packages/03/01/ab56dcb400513c6d1658d177cc68c83bc4e6ce5624dff717e4bf4a1f8b00/tempora-5.2.1.tar.gz
+[2023-04-10 16:47:11] INFO root fetch - processPackages [aa-buybackprogram]: Downloading https://files.pythonhosted.org/packages/84/42/9e4ae98bd058e77c16f9ab541b4801b84526f02ec1458bade6a4cc9acf3f/aa-buybackprogram-1.9.0.tar.gz
+[2023-04-10 16:47:12] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-10 16:47:12] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230410/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-10 16:47:12] INFO root fetch - processPackages [tempora]: Downloading https://files.pythonhosted.org/packages/1c/32/963e37d9ad64582b822b8bf3288ac135ede936e5c8fe1c71da74164f0974/tempora-5.2.2.tar.gz
+[2023-04-10 16:47:12] INFO root fetch - processPackages [tempora]: executing diffoscope
+[2023-04-10 16:47:12] INFO root fetch - processPackages [tempora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tempora-5.2.1.tar.gz tmp/tempora-5.2.2.tar.gz --markdown 20230410/t/tempora/5.2.1-5.2.2/diff.md --exclude *.pyd
+[2023-04-10 16:47:12] INFO root fetch - processPackages [aa-buybackprogram]: Downloading https://files.pythonhosted.org/packages/aa/f0/45941023cd842a420d73f54d15d47e712e7a5815ac9f550a1e9f51d1310b/aa-buybackprogram-1.9.1.tar.gz
+[2023-04-10 16:47:12] INFO root fetch - processPackages [aa-buybackprogram]: executing diffoscope
+[2023-04-10 16:47:12] INFO root fetch - processPackages [aa-buybackprogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-buybackprogram-1.9.0.tar.gz tmp/aa-buybackprogram-1.9.1.tar.gz --markdown 20230410/a/aa-buybackprogram/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-10 16:47:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:13] INFO root fetch - processPackages [pure-math]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 16:47:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:13] INFO root fetch - processPackages [encrypt256]: New version: [1.8.1] Old Version: [1.6]
+[2023-04-10 16:47:13] INFO root fetch - processPackages [pure-math]: Downloading https://files.pythonhosted.org/packages/e5/c9/08dca15cb0f549492a0cc52bef411c69c506c19bf763413ac96530080df9/pure_math-0.0.1.tar.gz
+[2023-04-10 16:47:13] INFO root fetch - processPackages [encrypt256]: Downloading https://files.pythonhosted.org/packages/5a/16/09c503993b3396de5eee0d5674253f9be02c98aecbc20624b289b5eb7cf2/encrypt256-1.8.1.tar.gz
+[2023-04-10 16:47:13] INFO root fetch - processPackages [encrypt256]: executing diffoscope
+[2023-04-10 16:47:13] INFO root fetch - processPackages [encrypt256]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encrypt256-1.6.tar.gz tmp/encrypt256-1.8.1.tar.gz --markdown 20230410/e/encrypt256/1.6-1.8.1/diff.md --exclude *.pyd
+[2023-04-10 16:47:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:13] INFO root fetch - processPackages [pure-math]: Downloading https://files.pythonhosted.org/packages/28/8e/f341fd98ede084afd2643cd57654559d262775de79bd964ecfe7e0342cb9/pure_math-0.0.2.tar.gz
+[2023-04-10 16:47:13] INFO root fetch - processPackages [django-pgpubsub]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 16:47:13] INFO root fetch - processPackages [pure-math]: executing diffoscope
+[2023-04-10 16:47:13] INFO root fetch - processPackages [pure-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_math-0.0.1.tar.gz tmp/pure_math-0.0.2.tar.gz --markdown 20230410/p/pure-math/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 16:47:13] INFO root fetch - processPackages [django-pgpubsub]: Downloading https://files.pythonhosted.org/packages/4d/85/db7e7f1077f6920c809eebae1533d6451e548dc3ebf121cef0dd1a2b34c6/django_pgpubsub-1.0.4.tar.gz
+[2023-04-10 16:47:13] INFO root fetch - processPackages [django-pgpubsub]: executing diffoscope
+[2023-04-10 16:47:13] INFO root fetch - processPackages [django-pgpubsub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pgpubsub-1.0.3.tar.gz tmp/django_pgpubsub-1.0.4.tar.gz --markdown 20230410/d/django-pgpubsub/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-10 16:47:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:14] INFO root fetch - processPackages [stockprice-cli]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-10 16:47:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:14] WARNING root fetch - processPackages [noodle-quiz]: Skipping, unable to determine old version
+[2023-04-10 16:47:14] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:47:14] INFO root fetch - processPackages [stockprice-cli]: Downloading https://files.pythonhosted.org/packages/6d/45/4ef2adb43ad8b591baa16a793bcc5edbd6a6f8d36330907a14d75e4acc95/stockprice_cli-2.0.3-py3-none-any.whl
+[2023-04-10 16:47:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:14] INFO root fetch - processPackages [Kekik]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-10 16:47:14] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.4658413128] Old Version: [0.0.1.4646344030]
+[2023-04-10 16:47:14] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/18/2d/0ca67d70552a5e53d315ce84385b0b284f97f77419dc20f6a1fc8d28d1d7/Kekik-1.2.4.tar.gz
+[2023-04-10 16:47:14] INFO root fetch - processPackages [stockprice-cli]: Downloading https://files.pythonhosted.org/packages/4e/ea/034755eab75d6141cdda4deefb661c57423106037421b2ce9e22466cb170/stockprice_cli-2.0.4-py3-none-any.whl
+[2023-04-10 16:47:14] INFO root fetch - processPackages [stockprice-cli]: executing diffoscope
+[2023-04-10 16:47:14] INFO root fetch - processPackages [stockprice-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockprice_cli-2.0.3-py3-none-any.whl.zip tmp/stockprice_cli-2.0.4-py3-none-any.whl.zip --markdown 20230410/s/stockprice-cli/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-10 16:47:15] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/ca/4b/13327040fd3e3c41f95615263902ad459a14836801da8f94bf040d3ceb1b/Kekik-1.2.5.tar.gz
+[2023-04-10 16:47:15] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/dd/97/22fefa09fe8bf16f1b61b5070285d6fffc7291a5e9227d6a3104d996b5b8/zuspec_parser-0.0.1.4658413128-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-10 16:47:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:15] INFO root fetch - processPackages [flixy2app]: New version: [0.2] Old Version: [0.1]
+[2023-04-10 16:47:15] INFO root fetch - processPackages [flixy2app]: executing diffoscope
+[2023-04-10 16:47:15] INFO root fetch - processPackages [flixy2app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flixy2app-0.1.tar.gz tmp/flixy2app-0.2.tar.gz --markdown 20230410/f/flixy2app/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-10 16:47:15] INFO root fetch - processPackages [Kekik]: executing diffoscope
+[2023-04-10 16:47:15] INFO root fetch - processPackages [Kekik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kekik-1.2.4.tar.gz tmp/Kekik-1.2.5.tar.gz --markdown 20230410/K/Kekik/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-10 16:47:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:16] WARNING root fetch - processPackages [napari-laptrack]: Skipping, unable to determine old version
+[2023-04-10 16:47:16] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:47:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:17] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2023-04-10 16:47:17] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.4646344030-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.4658413128-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230410/z/zuspec-parser/0.0.1.4646344030-0.0.1.4658413128/diff.md --exclude *.pyd
+[2023-04-10 16:47:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:47:49] INFO root fetch - main [MainThread]: Store serial: [17646975]
