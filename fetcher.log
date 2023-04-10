@@ -16442,3 +16442,59 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 23:50:04] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:50:13] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:50:13] INFO root fetch - main [MainThread]: Store serial: [17650877]
+[2023-04-10 23:55:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650877]
+[2023-04-10 23:55:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 23:55:21] INFO root fetch - processPackages [brds]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-10 23:55:21] INFO root fetch - processPackages [demo-sna]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-10 23:55:21] INFO root fetch - processPackages [muutils]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-10 23:55:21] WARNING root fetch - processPackages [pygeogis]: Skipping, unable to determine old version
+[2023-04-10 23:55:21] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:55:21] INFO root fetch - processPackages [pyntree]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-10 23:55:21] INFO root fetch - processPackages [slangpy]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 23:55:21] INFO root fetch - processPackages [brds]: Downloading https://files.pythonhosted.org/packages/df/08/7afbf7d328f28afe6c928131a1a20c115e84b4b0d4514ba376b9ffded333/brds-0.2.7.tar.gz
+[2023-04-10 23:55:21] INFO root fetch - processPackages [muutils]: Downloading https://files.pythonhosted.org/packages/da/09/a8d493989fbaf84c1d43c0785d0d9b059e01fead8f50203fa0e4c6281157/muutils-0.3.7.tar.gz
+[2023-04-10 23:55:21] INFO root fetch - processPackages [pyntree]: Downloading https://files.pythonhosted.org/packages/a1/15/a6f21759c62c6618d7c1303baba15298e5cbd85c4e7c7d7a197dd1a06613/pyntree-1.0.1.tar.gz
+[2023-04-10 23:55:21] INFO root fetch - processPackages [slangpy]: Downloading https://files.pythonhosted.org/packages/42/97/de130a1122edc907361b3c8f049895426f5206970f1e9a0a4f4df4818a95/slangpy-0.1.1.tar.gz
+[2023-04-10 23:55:21] INFO root fetch - processPackages [demo-sna]: Downloading https://files.pythonhosted.org/packages/d1/ac/9e847f4c5a566f6b98d5ce378b3c4e28ea1b4d293e27b7a7d0f225b9148e/demo_sna-0.3.6.tar.gz
+[2023-04-10 23:55:21] INFO root fetch - processPackages [demo-sna]: executing diffoscope
+[2023-04-10 23:55:21] INFO root fetch - processPackages [demo-sna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demo_sna-0.3.5.tar.gz tmp/demo_sna-0.3.6.tar.gz --markdown 20230410/d/demo-sna/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-10 23:55:21] INFO root fetch - processPackages [brds]: Downloading https://files.pythonhosted.org/packages/fc/5d/25416534b82a6bb65db549f3803d41b25371d41efcbe6e7218697db24c94/brds-0.2.8.tar.gz
+[2023-04-10 23:55:21] INFO root fetch - processPackages [muutils]: Downloading https://files.pythonhosted.org/packages/c2/01/a194cc8564f06629ecf4b845104de25083deb8421b394220dfd708838ea1/muutils-0.3.8.tar.gz
+[2023-04-10 23:55:21] INFO root fetch - processPackages [brds]: executing diffoscope
+[2023-04-10 23:55:21] INFO root fetch - processPackages [brds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brds-0.2.7.tar.gz tmp/brds-0.2.8.tar.gz --markdown 20230410/b/brds/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-10 23:55:21] INFO root fetch - processPackages [muutils]: executing diffoscope
+[2023-04-10 23:55:21] INFO root fetch - processPackages [muutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muutils-0.3.7.tar.gz tmp/muutils-0.3.8.tar.gz --markdown 20230410/m/muutils/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-10 23:55:21] WARNING root fetch - processPackages [slangpy]: Skipping package: exceeds size limit 12213646>=10485760
+[2023-04-10 23:55:21] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:55:21] INFO root fetch - processPackages [hiddifypanel]: New version: [3.1.4] Old Version: [3.1.3]
+[2023-04-10 23:55:21] INFO root fetch - processPackages [pyntree]: Downloading https://files.pythonhosted.org/packages/6a/d1/cc88a5656d49b2a7bccdb49ac4ed562a9298d3876f0bd0e52549cc6e58d0/pyntree-1.1.0.tar.gz
+[2023-04-10 23:55:21] INFO root fetch - processPackages [pyntree]: executing diffoscope
+[2023-04-10 23:55:21] INFO root fetch - processPackages [pyntree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyntree-1.0.1.tar.gz tmp/pyntree-1.1.0.tar.gz --markdown 20230410/p/pyntree/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 23:55:22] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/9b/f5/13ed0ca16443e43cced4b6381e3a03229a2f3f31adb232da51fe4aa55ef8/hiddifypanel-3.1.4-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-10 23:55:22] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-10 23:55:22] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.1.3-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.1.4-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230410/h/hiddifypanel/3.1.3-3.1.4/diff.md --exclude *.pyd
+[2023-04-10 23:55:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:55:22] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.9] Old Version: [0.18.8]
+[2023-04-10 23:55:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:55:23] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 23:55:23] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-10 23:55:23] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.8.tar.gz tmp/gptdeploy-0.18.9.tar.gz --markdown 20230410/g/gptdeploy/0.18.8-0.18.9/diff.md --exclude *.pyd
+[2023-04-10 23:55:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:55:23] INFO root fetch - processPackages [scikit-duplo]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 23:55:23] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: Downloading https://files.pythonhosted.org/packages/94/2e/545483be50d73cd555694f78674a227f7f5aca4aa7b2165c2e807bd63e87/dcentralab_qa_infra_automation-0.0.9.tar.gz
+[2023-04-10 23:55:23] INFO root fetch - processPackages [scikit-duplo]: Downloading https://files.pythonhosted.org/packages/32/3d/c0fdbaf659c72a1fdbdb70225ffa202cefd0f258952aed5153283d508507/scikit-duplo-0.1.1.tar.gz
+[2023-04-10 23:55:23] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: executing diffoscope
+[2023-04-10 23:55:23] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcentralab_qa_infra_automation-0.0.8.tar.gz tmp/dcentralab_qa_infra_automation-0.0.9.tar.gz --markdown 20230410/d/dcentralab-qa-infra-automation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 23:55:23] INFO root fetch - processPackages [scikit-duplo]: Downloading https://files.pythonhosted.org/packages/1d/51/2b9dd3670fe39e1752b7acdcd07a8825712ec7f040af0e7f7cadf57f1c0c/scikit-duplo-0.1.2.tar.gz
+[2023-04-10 23:55:23] INFO root fetch - processPackages [scikit-duplo]: executing diffoscope
+[2023-04-10 23:55:23] INFO root fetch - processPackages [scikit-duplo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-duplo-0.1.1.tar.gz tmp/scikit-duplo-0.1.2.tar.gz --markdown 20230410/s/scikit-duplo/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 23:55:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:55:23] INFO root fetch - processPackages [brds]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-10 23:55:23] INFO root fetch - processPackages [brds]: executing diffoscope
+[2023-04-10 23:55:23] INFO root fetch - processPackages [brds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brds-0.2.7.tar.gz tmp/brds-0.2.8.tar.gz --markdown 20230410/b/brds/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-10 23:55:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:55:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:55:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:55:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:55:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:55:39] INFO root fetch - main [MainThread]: Store serial: [17650915]
