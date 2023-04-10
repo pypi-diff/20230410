@@ -8100,3 +8100,43 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 12:59:57] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:59:57] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:59:57] INFO root fetch - main [MainThread]: Store serial: [17645187]
+[2023-04-10 13:05:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645187]
+[2023-04-10 13:05:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 13:05:05] INFO root fetch - processPackages [AttentionMOI]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-10 13:05:05] WARNING root fetch - processPackages [rvid.tex-runner]: Skipping, unable to determine old version
+[2023-04-10 13:05:05] INFO root fetch - main [MainThread]: error
+[2023-04-10 13:05:05] INFO root fetch - processPackages [cloud-toolkit-aws]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-10 13:05:05] INFO root fetch - processPackages [flottplot]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-04-10 13:05:05] INFO root fetch - processPackages [gtki-module-orup-errors]: New version: [1.35.3] Old Version: [1.35.2]
+[2023-04-10 13:05:05] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-10 13:05:05] INFO root fetch - processPackages [AttentionMOI]: Downloading https://files.pythonhosted.org/packages/b7/72/6e55db9465f3c376bae105502712db51481b57e09044290ffd4171790f64/AttentionMOI-0.0.6.tar.gz
+[2023-04-10 13:05:05] INFO root fetch - processPackages [cloud-toolkit-aws]: Downloading https://files.pythonhosted.org/packages/c5/80/7c5cb7d11374f1b7ddcb8b376ae15f53cfdbd5238b5773745257a8d968e2/cloud_toolkit_aws-0.8.1.tar.gz
+[2023-04-10 13:05:05] INFO root fetch - processPackages [gtki-module-orup-errors]: Downloading https://files.pythonhosted.org/packages/27/2e/abae8e66677ba1a80a94f37b46cf1901d4a76ddc7d64fb4f38c897f2ea59/gtki_module_orup_errors-1.35.2-py3-none-any.whl
+[2023-04-10 13:05:05] INFO root fetch - processPackages [flottplot]: Downloading https://files.pythonhosted.org/packages/cb/6a/65229d4ddd75fd4b5961c882a26b0a51d711a671b5abf66faaa9a3bf6a4f/flottplot-2.1.0-py3-none-any.whl
+[2023-04-10 13:05:05] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/22/b2/c7509f3446ffcf623735e42e32a78f2531bcbf442dac167571ac0e5ba476/PySide6-Fluent-Widgets-0.6.9.tar.gz
+[2023-04-10 13:05:05] INFO root fetch - processPackages [gtki-module-orup-errors]: Downloading https://files.pythonhosted.org/packages/10/be/a58e9f79196c16ed61f00fdb408cf69e842bec61549558a6dd299a680b9f/gtki_module_orup_errors-1.35.3-py3-none-any.whl
+[2023-04-10 13:05:05] INFO root fetch - processPackages [flottplot]: Downloading https://files.pythonhosted.org/packages/2a/76/cf61708d8d94f8cc12d846fce999ac4b01756229a71469466a496e182f38/flottplot-2.2.0-py3-none-any.whl
+[2023-04-10 13:05:05] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: executing diffoscope
+[2023-04-10 13:05:05] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide6-Fluent-Widgets-0.6.8.tar.gz tmp/PySide6-Fluent-Widgets-0.6.9.tar.gz --markdown 20230410/P/PySide6-Fluent-Widgets/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-10 13:05:05] INFO root fetch - processPackages [gtki-module-orup-errors]: executing diffoscope
+[2023-04-10 13:05:05] INFO root fetch - processPackages [gtki-module-orup-errors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtki_module_orup_errors-1.35.2-py3-none-any.whl.zip tmp/gtki_module_orup_errors-1.35.3-py3-none-any.whl.zip --markdown 20230410/g/gtki-module-orup-errors/1.35.2-1.35.3/diff.md --exclude *.pyd
+[2023-04-10 13:05:05] INFO root fetch - processPackages [flottplot]: executing diffoscope
+[2023-04-10 13:05:05] INFO root fetch - processPackages [flottplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flottplot-2.1.0-py3-none-any.whl.zip tmp/flottplot-2.2.0-py3-none-any.whl.zip --markdown 20230410/f/flottplot/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-04-10 13:05:05] INFO root fetch - processPackages [cloud-toolkit-aws]: Downloading https://files.pythonhosted.org/packages/1b/cd/de7aa61a0539e1d17b0251be3c82c69b15f33fa003ecb288ab2636055702/cloud_toolkit_aws-0.8.2.tar.gz
+[2023-04-10 13:05:05] INFO root fetch - processPackages [AttentionMOI]: Downloading https://files.pythonhosted.org/packages/66/2f/368a74a6962b0e03623bfbc144b5c89c82a16140aa7dddbc6a226ca9defe/AttentionMOI-0.0.7.tar.gz
+[2023-04-10 13:05:05] INFO root fetch - processPackages [AttentionMOI]: executing diffoscope
+[2023-04-10 13:05:05] INFO root fetch - processPackages [AttentionMOI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AttentionMOI-0.0.6.tar.gz tmp/AttentionMOI-0.0.7.tar.gz --markdown 20230410/A/AttentionMOI/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-10 13:05:06] INFO root fetch - processPackages [cloud-toolkit-aws]: executing diffoscope
+[2023-04-10 13:05:06] INFO root fetch - processPackages [cloud-toolkit-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud_toolkit_aws-0.8.1.tar.gz tmp/cloud_toolkit_aws-0.8.2.tar.gz --markdown 20230410/c/cloud-toolkit-aws/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-10 13:05:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:05:06] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 13:05:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:05:07] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: Downloading https://files.pythonhosted.org/packages/28/fc/54f1f63eb379b5c5560d5fe273751ff4c753fea4870c4ba1a754b481df0c/pepperize.projen-awscdk-app-ts-0.0.98.tar.gz
+[2023-04-10 13:05:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:05:07] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: Downloading https://files.pythonhosted.org/packages/44/cb/73b41b7503716cd836989732ed965709837bacf1b66b147f95689ad44458/pepperize.projen-awscdk-app-ts-0.0.99.tar.gz
+[2023-04-10 13:05:07] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: executing diffoscope
+[2023-04-10 13:05:07] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.projen-awscdk-app-ts-0.0.98.tar.gz tmp/pepperize.projen-awscdk-app-ts-0.0.99.tar.gz --markdown 20230410/p/pepperize.projen-awscdk-app-ts/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 13:05:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:05:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:05:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:05:11] INFO root fetch - main [MainThread]: Store serial: [17645206]
