@@ -9161,3 +9161,71 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 14:35:22] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:35:22] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:35:22] INFO root fetch - main [MainThread]: Store serial: [17645763]
+[2023-04-10 14:40:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645763]
+[2023-04-10 14:40:30] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-10 14:40:30] INFO root fetch - processPackages [arrow-odbc]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 14:40:30] INFO root fetch - processPackages [gtki-module-orup-errors]: New version: [1.35.4] Old Version: [1.35.3]
+[2023-04-10 14:40:30] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304101240] Old Version: [1.0.1.dev202304101210]
+[2023-04-10 14:40:30] INFO root fetch - processPackages [abilian-devtools]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-10 14:40:30] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.8.0.dev20230409] Old Version: [0.8.0.dev20230408]
+[2023-04-10 14:40:30] INFO root fetch - processPackages [abilian-devtools]: Downloading https://files.pythonhosted.org/packages/16/34/e0efadacf16462adc853a42041299ad6e7e4b795cc22a8f93c5b66f4a287/abilian_devtools-0.4.8.tar.gz
+[2023-04-10 14:40:30] INFO root fetch - processPackages [gtki-module-orup-errors]: Downloading https://files.pythonhosted.org/packages/0c/25/467b504d3fcb3a26e0f2dd686e83296bdc5d77e817af00d8347229d9cca8/gtki_module_orup_errors-1.35.4-py3-none-any.whl
+[2023-04-10 14:40:30] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/7a/69/736433dc82202b13f1212b25801f3c66ebce5c3d2873d7e64406e0020a8b/cellmap-1.0.1.dev202304101240-py3-none-any.whl
+[2023-04-10 14:40:30] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/7a/10/83f4d01fec45471ae04efea70ac986defd972ad6d791fd2fef17c3a556f8/tensorcircuit-nightly-0.8.0.dev20230409.tar.gz
+[2023-04-10 14:40:30] INFO root fetch - processPackages [gtki-module-orup-errors]: executing diffoscope
+[2023-04-10 14:40:30] INFO root fetch - processPackages [gtki-module-orup-errors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtki_module_orup_errors-1.35.3-py3-none-any.whl.zip tmp/gtki_module_orup_errors-1.35.4-py3-none-any.whl.zip --markdown 20230410/g/gtki-module-orup-errors/1.35.3-1.35.4/diff.md --exclude *.pyd
+[2023-04-10 14:40:30] INFO root fetch - processPackages [arrow-odbc]: Downloading https://files.pythonhosted.org/packages/4a/62/2dcc65a61b377f3740d6e9497694c01a32b5dd815ef20cd2853ab34ed85e/arrow_odbc-1.0.1.tar.gz
+[2023-04-10 14:40:30] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-10 14:40:30] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304101210-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304101240-py3-none-any.whl.zip --markdown 20230410/c/cellmap/1.0.1.dev202304101210-1.0.1.dev202304101240/diff.md --exclude *.pyd
+[2023-04-10 14:40:30] INFO root fetch - processPackages [arrow-odbc]: executing diffoscope
+[2023-04-10 14:40:30] INFO root fetch - processPackages [arrow-odbc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrow_odbc-1.0.0.tar.gz tmp/arrow_odbc-1.0.1.tar.gz --markdown 20230410/a/arrow-odbc/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 14:40:30] INFO root fetch - processPackages [abilian-devtools]: Downloading https://files.pythonhosted.org/packages/ff/2c/2376e356cbf2050a286821ee7a05fba2ad54ccdce95ff75cb586cd276493/abilian_devtools-0.4.9.tar.gz
+[2023-04-10 14:40:31] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-04-10 14:40:31] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.8.0.dev20230408.tar.gz tmp/tensorcircuit-nightly-0.8.0.dev20230409.tar.gz --markdown 20230410/t/tensorcircuit-nightly/0.8.0.dev20230408-0.8.0.dev20230409/diff.md --exclude *.pyd
+[2023-04-10 14:40:31] INFO root fetch - processPackages [abilian-devtools]: executing diffoscope
+[2023-04-10 14:40:31] INFO root fetch - processPackages [abilian-devtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abilian_devtools-0.4.8.tar.gz tmp/abilian_devtools-0.4.9.tar.gz --markdown 20230410/a/abilian-devtools/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-10 14:40:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:31] INFO root fetch - processPackages [hestia-earth-earth-engine]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-10 14:40:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:31] WARNING root fetch - processPackages [flixy2app]: Skipping, unable to determine old version
+[2023-04-10 14:40:31] INFO root fetch - main [MainThread]: error
+[2023-04-10 14:40:31] INFO root fetch - processPackages [ilds]: New version: [2023.4.3] Old Version: [2023.4.10]
+[2023-04-10 14:40:31] INFO root fetch - processPackages [hestia-earth-earth-engine]: Downloading https://files.pythonhosted.org/packages/0d/63/8d9c409b559eebff81c995a1e29a2e54fa664502fa8a1e27592441393c05/hestia-earth-earth-engine-0.2.0.tar.gz
+[2023-04-10 14:40:31] INFO root fetch - processPackages [ilds]: Downloading https://files.pythonhosted.org/packages/fd/03/88781751022c5e90433ac117c33044720426c4ccf8c8ab0a75646e8d12d6/ilds-2023.4.10.tar.gz
+[2023-04-10 14:40:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:32] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.4.dev202304101241] Old Version: [2.1.4.dev202304101235]
+[2023-04-10 14:40:32] INFO root fetch - processPackages [hestia-earth-earth-engine]: Downloading https://files.pythonhosted.org/packages/ea/56/3cc574568f9e93bb3e75686beef6c5700a85e6fbaf73f7eaff766bf19d4f/hestia-earth-earth-engine-0.2.1.tar.gz
+[2023-04-10 14:40:32] INFO root fetch - processPackages [PyroFork-dev]: Downloading https://files.pythonhosted.org/packages/70/73/b56b56f6474abae38dd57f19cb119207ce7dd34df86add373571172b20a7/PyroFork-dev-2.1.4.dev202304101241.tar.gz
+[2023-04-10 14:40:32] INFO root fetch - processPackages [ilds]: Downloading https://files.pythonhosted.org/packages/09/f9/92ade0b0f7c746f90622a7f51dd074a650fa374c15eb922ae695277e9fed/ilds-2023.4.3.tar.gz
+[2023-04-10 14:40:32] INFO root fetch - processPackages [hestia-earth-earth-engine]: executing diffoscope
+[2023-04-10 14:40:32] INFO root fetch - processPackages [hestia-earth-earth-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hestia-earth-earth-engine-0.2.0.tar.gz tmp/hestia-earth-earth-engine-0.2.1.tar.gz --markdown 20230410/h/hestia-earth-earth-engine/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-10 14:40:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:32] INFO root fetch - processPackages [ansys-mechanical-core]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-10 14:40:32] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-10 14:40:32] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.4.dev202304101235.tar.gz tmp/PyroFork-dev-2.1.4.dev202304101241.tar.gz --markdown 20230410/P/PyroFork-dev/2.1.4.dev202304101235-2.1.4.dev202304101241/diff.md --exclude *.pyd
+[2023-04-10 14:40:32] INFO root fetch - processPackages [ilds]: executing diffoscope
+[2023-04-10 14:40:32] INFO root fetch - processPackages [ilds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ilds-2023.4.10.tar.gz tmp/ilds-2023.4.3.tar.gz --markdown 20230410/i/ilds/2023.4.10-2023.4.3/diff.md --exclude *.pyd
+[2023-04-10 14:40:32] INFO root fetch - processPackages [ansys-mechanical-core]: Downloading https://files.pythonhosted.org/packages/de/b4/db1c01470be0298271b344140a6c8fd7da15f09b63b063e4883af1ee6e26/ansys-mechanical-core-0.7.0.tar.gz
+[2023-04-10 14:40:32] INFO root fetch - processPackages [ansys-mechanical-core]: Downloading https://files.pythonhosted.org/packages/a2/41/587f31bb18201b45a560ec905a353de8008149e36e2890be5fa1106d88a4/ansys-mechanical-core-0.7.1.tar.gz
+[2023-04-10 14:40:32] INFO root fetch - processPackages [ansys-mechanical-core]: executing diffoscope
+[2023-04-10 14:40:32] INFO root fetch - processPackages [ansys-mechanical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansys-mechanical-core-0.7.0.tar.gz tmp/ansys-mechanical-core-0.7.1.tar.gz --markdown 20230410/a/ansys-mechanical-core/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-10 14:40:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:33] INFO root fetch - processPackages [helios-opentelemetry-sdk]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 14:40:33] INFO root fetch - processPackages [helios-opentelemetry-sdk]: executing diffoscope
+[2023-04-10 14:40:33] INFO root fetch - processPackages [helios-opentelemetry-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helios-opentelemetry-sdk-1.0.8.tar.gz tmp/helios-opentelemetry-sdk-1.0.9.tar.gz --markdown 20230410/h/helios-opentelemetry-sdk/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 14:40:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:33] INFO root fetch - processPackages [gitlab-runner-tart-driver]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-04-10 14:40:34] INFO root fetch - processPackages [gitlab-runner-tart-driver]: Downloading https://files.pythonhosted.org/packages/2c/df/6a8c7f1b71502106ea53b0ecd33fc4d2610270257c620a25cead1188fa7c/gitlab-runner-tart-driver-0.0.2.tar.gz
+[2023-04-10 14:40:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:34] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230409] Old Version: [0.3.8.dev230408]
+[2023-04-10 14:40:34] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-04-10 14:40:34] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230408.tar.gz tmp/manticore-0.3.8.dev230409.tar.gz --markdown 20230410/m/manticore/0.3.8.dev230408-0.3.8.dev230409/diff.md --exclude *.pyd
+[2023-04-10 14:40:34] INFO root fetch - processPackages [gitlab-runner-tart-driver]: Downloading https://files.pythonhosted.org/packages/6a/3e/dca2a0c910c6843c4bb97655954882a12a5dd2fd330d6dfd1c1d028f7b97/gitlab-runner-tart-driver-0.1.0.tar.gz
+[2023-04-10 14:40:34] INFO root fetch - processPackages [gitlab-runner-tart-driver]: executing diffoscope
+[2023-04-10 14:40:34] INFO root fetch - processPackages [gitlab-runner-tart-driver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab-runner-tart-driver-0.0.2.tar.gz tmp/gitlab-runner-tart-driver-0.1.0.tar.gz --markdown 20230410/g/gitlab-runner-tart-driver/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-04-10 14:40:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:40:39] INFO root fetch - main [MainThread]: Store serial: [17645804]
