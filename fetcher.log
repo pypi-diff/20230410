@@ -15154,3 +15154,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 21:58:50] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:58:58] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:58:58] INFO root fetch - main [MainThread]: Store serial: [17649856]
+[2023-04-10 22:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649856]
+[2023-04-10 22:04:06] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 22:04:06] INFO root fetch - processPackages [chemotools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 22:04:06] INFO root fetch - processPackages [ecopipeline]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 22:04:06] INFO root fetch - processPackages [CrossPy]: New version: [0.0.0a3.dev9] Old Version: [0.0.0a3.dev8]
+[2023-04-10 22:04:06] INFO root fetch - processPackages [LRphase]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-10 22:04:06] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-10 22:04:06] INFO root fetch - processPackages [CrossPy]: executing diffoscope
+[2023-04-10 22:04:06] INFO root fetch - processPackages [CrossPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CrossPy-0.0.0a3.dev8.tar.gz tmp/CrossPy-0.0.0a3.dev9.tar.gz --markdown 20230410/C/CrossPy/0.0.0a3.dev8-0.0.0a3.dev9/diff.md --exclude *.pyd
+[2023-04-10 22:04:06] INFO root fetch - processPackages [chemotools]: Downloading https://files.pythonhosted.org/packages/5b/ca/82965eff739116141e64dd814023d634fbc085ef8721f45f9155363a3926/chemotools-0.0.9.tar.gz
+[2023-04-10 22:04:06] INFO root fetch - processPackages [LRphase]: Downloading https://files.pythonhosted.org/packages/07/0c/cb0631fe26c86bfb517e97ecd2b6400f295c8beb2816e2b5f30e56bcb74e/LRphase-1.1.0.tar.gz
+[2023-04-10 22:04:06] INFO root fetch - processPackages [ecopipeline]: Downloading https://files.pythonhosted.org/packages/9a/dc/8a2d18ae809dab709e5bb661cd9b0f2f112027798f65c657bfe17bbaa365/ecopipeline-0.0.3.tar.gz
+[2023-04-10 22:04:06] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2023-04-10 22:04:06] INFO root fetch - processPackages [chemotools]: executing diffoscope
+[2023-04-10 22:04:06] INFO root fetch - processPackages [chemotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemotools-0.0.8.tar.gz tmp/chemotools-0.0.9.tar.gz --markdown 20230410/c/chemotools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 22:04:06] INFO root fetch - processPackages [ecopipeline]: executing diffoscope
+[2023-04-10 22:04:06] INFO root fetch - processPackages [ecopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecopipeline-0.0.2.tar.gz tmp/ecopipeline-0.0.3.tar.gz --markdown 20230410/e/ecopipeline/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 22:04:07] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2023-04-10 22:04:07] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2023-04-10 22:04:07] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20230410/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-10 22:04:07] INFO root fetch - processPackages [LRphase]: Downloading https://files.pythonhosted.org/packages/99/90/d18d22345d40e4bab511bf8d1b743697cb0b489fd5b0c287b0f08202f33e/LRphase-1.1.1.tar.gz
+[2023-04-10 22:04:07] INFO root fetch - processPackages [LRphase]: executing diffoscope
+[2023-04-10 22:04:07] INFO root fetch - processPackages [LRphase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LRphase-1.1.0.tar.gz tmp/LRphase-1.1.1.tar.gz --markdown 20230410/L/LRphase/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-10 22:04:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:04:08] INFO root fetch - processPackages [cloudify-utilities-plugins-sdk]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 22:04:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:04:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:04:08] INFO root fetch - processPackages [cloudify-utilities-plugins-sdk]: Downloading https://files.pythonhosted.org/packages/fe/30/641f4a4a34af45b8e28564056cefa55e3cf9849be728f1d2b48800b95716/cloudify-utilities-plugins-sdk-0.0.98.tar.gz
+[2023-04-10 22:04:08] INFO root fetch - processPackages [cookiecutter-namespace-template]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-10 22:04:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:04:08] INFO root fetch - processPackages [cookiecutter-namespace-template]: Downloading https://files.pythonhosted.org/packages/08/4f/59d7e846fe1f9a752f017de422064aa3464a6c04de9f908e4b67bb459f05/cookiecutter-namespace-template-0.3.0.tar.gz
+[2023-04-10 22:04:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:04:08] INFO root fetch - processPackages [cloudify-utilities-plugins-sdk]: Downloading https://files.pythonhosted.org/packages/40/f3/5ca7e752f0446054284eee4360d3c184b3a3a1734f5f942600df1c522618/cloudify-utilities-plugins-sdk-0.0.99.tar.gz
+[2023-04-10 22:04:08] INFO root fetch - processPackages [cookiecutter-namespace-template]: Downloading https://files.pythonhosted.org/packages/a5/42/16450f910571dded226cb7aa42eff5aa9fcc406c41f676a82a7fc80a4706/cookiecutter_namespace_template-0.4.0.tar.gz
+[2023-04-10 22:04:08] INFO root fetch - processPackages [cloudify-utilities-plugins-sdk]: executing diffoscope
+[2023-04-10 22:04:08] INFO root fetch - processPackages [cloudify-utilities-plugins-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudify-utilities-plugins-sdk-0.0.98.tar.gz tmp/cloudify-utilities-plugins-sdk-0.0.99.tar.gz --markdown 20230410/c/cloudify-utilities-plugins-sdk/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 22:04:09] INFO root fetch - processPackages [cookiecutter-namespace-template]: executing diffoscope
+[2023-04-10 22:04:09] INFO root fetch - processPackages [cookiecutter-namespace-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter-namespace-template-0.3.0.tar.gz tmp/cookiecutter_namespace_template-0.4.0.tar.gz --markdown 20230410/c/cookiecutter-namespace-template/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-10 22:04:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:04:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:04:10] INFO root fetch - main [MainThread]: Store serial: [17649875]
