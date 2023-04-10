@@ -12098,3 +12098,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 17:54:30] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:54:30] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:54:30] INFO root fetch - main [MainThread]: Store serial: [17647587]
+[2023-04-10 17:59:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647587]
+[2023-04-10 17:59:38] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 17:59:38] INFO root fetch - processPackages [mythic-container]: New version: [0.2.0rc9] Old Version: [0.2.0rc8]
+[2023-04-10 17:59:38] WARNING root fetch - processPackages [columbus]: Skipping, unable to determine old version
+[2023-04-10 17:59:38] INFO root fetch - main [MainThread]: error
+[2023-04-10 17:59:38] INFO root fetch - processPackages [injective-py]: New version: [0.6.1.3] Old Version: [0.6.1.2]
+[2023-04-10 17:59:38] INFO root fetch - processPackages [libdyson-neon]: New version: [0.9.0] Old Version: [0.10.0]
+[2023-04-10 17:59:38] INFO root fetch - processPackages [stnblipy]: New version: [4.9.0] Old Version: [4.8.1]
+[2023-04-10 17:59:38] INFO root fetch - processPackages [tdw]: New version: [1.9.9.3] Old Version: [1.9.9.2]
+[2023-04-10 17:59:38] INFO root fetch - processPackages [libdyson-neon]: Downloading https://files.pythonhosted.org/packages/4a/1f/0d712e800cbe18c5be8b08b7dafe9ae9e33bfb6db535f00c6de51fb6e90e/libdyson-neon-0.10.0.tar.gz
+[2023-04-10 17:59:38] INFO root fetch - processPackages [stnblipy]: Downloading https://files.pythonhosted.org/packages/94/1c/8ab0a531931b6c4b64fe591c15a1e502a85a78aa50b9355068d41e6f69a5/stnblipy-4.8.1.tar.gz
+[2023-04-10 17:59:38] INFO root fetch - processPackages [injective-py]: Downloading https://files.pythonhosted.org/packages/e6/0e/c9b6399f6e9009ce71a2a287b74408559243a01ee1e2a1d5318d235c0417/injective-py-0.6.1.3.tar.gz
+[2023-04-10 17:59:38] INFO root fetch - processPackages [tdw]: Downloading https://files.pythonhosted.org/packages/c4/72/7e9dcffb20652a0fc7a75acb9c45c9c15e02911caff77569e88bda949a27/tdw-1.9.9.2.tar.gz
+[2023-04-10 17:59:39] INFO root fetch - processPackages [injective-py]: executing diffoscope
+[2023-04-10 17:59:39] INFO root fetch - processPackages [injective-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/injective-py-0.6.1.2.tar.gz tmp/injective-py-0.6.1.3.tar.gz --markdown 20230410/i/injective-py/0.6.1.2-0.6.1.3/diff.md --exclude *.pyd
+[2023-04-10 17:59:39] INFO root fetch - processPackages [libdyson-neon]: Downloading https://files.pythonhosted.org/packages/cf/4e/f6cd98b4148bc4544fe3ce803a9d95d599aa2801f56b1cf51150fb3aead5/libdyson-neon-0.9.0.tar.gz
+[2023-04-10 17:59:39] INFO root fetch - processPackages [mythic-container]: executing diffoscope
+[2023-04-10 17:59:39] INFO root fetch - processPackages [mythic-container]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mythic_container-0.2.0rc8.tar.gz tmp/mythic_container-0.2.0rc9.tar.gz --markdown 20230410/m/mythic-container/0.2.0rc8-0.2.0rc9/diff.md --exclude *.pyd
+[2023-04-10 17:59:39] INFO root fetch - processPackages [stnblipy]: Downloading https://files.pythonhosted.org/packages/7c/c8/a905767807dd0b2b5fd842b891c8b05848f126c49d446028a1f0f9042530/stnblipy-4.9.0.tar.gz
+[2023-04-10 17:59:39] INFO root fetch - processPackages [libdyson-neon]: executing diffoscope
+[2023-04-10 17:59:39] INFO root fetch - processPackages [libdyson-neon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libdyson-neon-0.10.0.tar.gz tmp/libdyson-neon-0.9.0.tar.gz --markdown 20230410/l/libdyson-neon/0.10.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 17:59:39] INFO root fetch - processPackages [stnblipy]: executing diffoscope
+[2023-04-10 17:59:39] INFO root fetch - processPackages [stnblipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stnblipy-4.8.1.tar.gz tmp/stnblipy-4.9.0.tar.gz --markdown 20230410/s/stnblipy/4.8.1-4.9.0/diff.md --exclude *.pyd
+[2023-04-10 17:59:39] WARNING root fetch - processPackages [tdw]: Skipping package: exceeds size limit 28395540>=10485760
+[2023-04-10 17:59:39] INFO root fetch - main [MainThread]: error
+[2023-04-10 17:59:39] INFO root fetch - processPackages [fast-weather]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 17:59:39] INFO root fetch - processPackages [fast-weather]: Downloading https://files.pythonhosted.org/packages/1f/d8/200143e83387bcc5e114cd0c414e8669a38c7590d243b6259a540c1541a4/fast-weather-0.1.1.tar.gz
+[2023-04-10 17:59:40] INFO root fetch - processPackages [fast-weather]: Downloading https://files.pythonhosted.org/packages/ec/37/3ca0bc993237e20d8a9a62e223b09a478a6fea727beb0e522890929ce65f/fast-weather-0.1.2.tar.gz
+[2023-04-10 17:59:40] INFO root fetch - processPackages [fast-weather]: executing diffoscope
+[2023-04-10 17:59:40] INFO root fetch - processPackages [fast-weather]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast-weather-0.1.1.tar.gz tmp/fast-weather-0.1.2.tar.gz --markdown 20230410/f/fast-weather/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 17:59:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:59:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:59:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:59:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:59:42] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:59:42] INFO root fetch - main [MainThread]: Store serial: [17647609]
