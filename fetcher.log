@@ -7050,3 +7050,107 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 11:12:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:12:57] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:12:57] INFO root fetch - main [MainThread]: Store serial: [17644573]
+[2023-04-10 11:18:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644573]
+[2023-04-10 11:18:26] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-10 11:18:26] WARNING root fetch - processPackages [dashscope]: Skipping, unable to determine old version
+[2023-04-10 11:18:26] INFO root fetch - main [MainThread]: error
+[2023-04-10 11:18:26] INFO root fetch - processPackages [pygedcom]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-10 11:18:26] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 11:18:26] INFO root fetch - processPackages [upathlib]: New version: [0.7.7b1] Old Version: [0.7.6]
+[2023-04-10 11:18:26] INFO root fetch - processPackages [PyQt6]: New version: [6.5.0] Old Version: [6.4.2]
+[2023-04-10 11:18:26] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-10 11:18:26] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: executing diffoscope
+[2023-04-10 11:18:26] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-provider-huawei-cloud-demo-0.0.8.tar.gz tmp/airflow-provider-huawei-cloud-demo-0.0.9.tar.gz --markdown 20230410/a/airflow-provider-huawei-cloud-demo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 11:18:26] INFO root fetch - processPackages [PyQt6]: Downloading https://files.pythonhosted.org/packages/c3/e0/e1b592a6253712721612e2e64a323930a724e1f5cf297ed5ec6d6c86dda1/PyQt6-6.4.2.tar.gz
+[2023-04-10 11:18:26] INFO root fetch - processPackages [pygedcom]: Downloading https://files.pythonhosted.org/packages/84/85/80220ed81869e2f2e085d0214dded21b756613601731f03bc20ab41dfd07/pygedcom-0.1.4.tar.gz
+[2023-04-10 11:18:26] INFO root fetch - processPackages [upathlib]: Downloading https://files.pythonhosted.org/packages/41/b7/04cda593d76f796bc7c05a5a0a2ef6f421449a8f90f16ccd56c4abd139e9/upathlib-0.7.7b1.tar.gz
+[2023-04-10 11:18:26] INFO root fetch - processPackages [pygedcom]: executing diffoscope
+[2023-04-10 11:18:26] INFO root fetch - processPackages [pygedcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygedcom-0.1.3.tar.gz tmp/pygedcom-0.1.4.tar.gz --markdown 20230410/p/pygedcom/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-10 11:18:27] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-10 11:18:27] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230410/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-10 11:18:27] INFO root fetch - processPackages [PyQt6]: Downloading https://files.pythonhosted.org/packages/28/01/9e4b91cb0c1023934b1dc654c5bbfc29cbabcbf6092f936b74aee46dd637/PyQt6-6.5.0.tar.gz
+[2023-04-10 11:18:27] INFO root fetch - processPackages [upathlib]: executing diffoscope
+[2023-04-10 11:18:27] INFO root fetch - processPackages [upathlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upathlib-0.7.6.tar.gz tmp/upathlib-0.7.7b1.tar.gz --markdown 20230410/u/upathlib/0.7.6-0.7.7b1/diff.md --exclude *.pyd
+[2023-04-10 11:18:27] INFO root fetch - processPackages [PyQt6]: executing diffoscope
+[2023-04-10 11:18:27] INFO root fetch - processPackages [PyQt6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6-6.4.2.tar.gz tmp/PyQt6-6.5.0.tar.gz --markdown 20230410/P/PyQt6/6.4.2-6.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:18:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:27] INFO root fetch - processPackages [aiocapsolver]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-10 11:18:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:28] INFO root fetch - processPackages [PyQt6-3D]: New version: [6.5.0] Old Version: [6.4.0]
+[2023-04-10 11:18:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:28] INFO root fetch - processPackages [abcd-seth]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 11:18:28] INFO root fetch - processPackages [aiocapsolver]: Downloading https://files.pythonhosted.org/packages/ec/b7/a331cb65e071ee3eef5b901d5cf5ab9bced7cd6737ba407113ca8c6b32a8/aiocapsolver-0.0.5.tar.gz
+[2023-04-10 11:18:28] INFO root fetch - processPackages [aiocapsolver]: executing diffoscope
+[2023-04-10 11:18:28] INFO root fetch - processPackages [aiocapsolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocapsolver-0.0.4.tar.gz tmp/aiocapsolver-0.0.5.tar.gz --markdown 20230410/a/aiocapsolver/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-10 11:18:28] INFO root fetch - processPackages [PyQt6-3D]: Downloading https://files.pythonhosted.org/packages/6a/f7/55aa01d56d4c6c20374389fc400822eb9327298111ab891f20af3e786037/PyQt6_3D-6.4.0.tar.gz
+[2023-04-10 11:18:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:28] INFO root fetch - processPackages [abcd-seth]: Downloading https://files.pythonhosted.org/packages/67/25/fedda80298a9b0b9c4128756b56f5b14bc3e15995a1e224e5e03cd82b84d/abcd_seth-1.0.2.tar.gz
+[2023-04-10 11:18:28] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-04-10 11:18:28] INFO root fetch - processPackages [abcd-seth]: executing diffoscope
+[2023-04-10 11:18:28] INFO root fetch - processPackages [abcd-seth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcd_seth-1.0.1.tar.gz tmp/abcd_seth-1.0.2.tar.gz --markdown 20230410/a/abcd-seth/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 11:18:28] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-04-10 11:18:28] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230410/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-04-10 11:18:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:29] INFO root fetch - processPackages [PyQt6-Charts]: New version: [6.5.0] Old Version: [6.4.0]
+[2023-04-10 11:18:29] INFO root fetch - processPackages [PyQt6-Charts]: Downloading https://files.pythonhosted.org/packages/b3/b4/fb94c482644f4a0a8bbb4f785eeea46c1229adc4468fcc025194482011e7/PyQt6_Charts-6.4.0.tar.gz
+[2023-04-10 11:18:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:29] INFO root fetch - processPackages [pybarnes]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 11:18:29] INFO root fetch - processPackages [pybarnes]: Downloading https://files.pythonhosted.org/packages/5b/50/86111c96cc644b8fbaaae286dfb03b7485e0c5eb3d8a059788ab4eccd80a/pybarnes-0.1.0.tar.gz
+[2023-04-10 11:18:29] INFO root fetch - processPackages [PyQt6-Charts]: Downloading https://files.pythonhosted.org/packages/d7/da/aef92577bb1d0679cc4f47218c89e6875c5a3e515f32db33a738f95dac06/PyQt6_Charts-6.5.0.tar.gz
+[2023-04-10 11:18:29] INFO root fetch - processPackages [pybarnes]: Downloading https://files.pythonhosted.org/packages/09/b0/f345d60157b4606e251f1d38fcca15329cd2d2137b777d7276778352f44a/pybarnes-0.1.1-py3-none-any.whl
+[2023-04-10 11:18:29] INFO root fetch - processPackages [pybarnes]: executing diffoscope
+[2023-04-10 11:18:29] INFO root fetch - processPackages [pybarnes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybarnes-0.1.0.tar.gz tmp/pybarnes-0.1.1-py3-none-any.whl.zip --markdown 20230410/p/pybarnes/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 11:18:30] INFO root fetch - processPackages [PyQt6-Charts]: executing diffoscope
+[2023-04-10 11:18:30] INFO root fetch - processPackages [PyQt6-Charts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_Charts-6.4.0.tar.gz tmp/PyQt6_Charts-6.5.0.tar.gz --markdown 20230410/P/PyQt6-Charts/6.4.0-6.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:18:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:30] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-10 11:18:31] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-10 11:18:31] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230410/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-10 11:18:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:31] INFO root fetch - processPackages [PyQt6-DataVisualization]: New version: [6.5.0] Old Version: [6.4.0]
+[2023-04-10 11:18:31] INFO root fetch - processPackages [PyQt6-DataVisualization]: Downloading https://files.pythonhosted.org/packages/62/b1/cee46d028500e171e98b8893fcbd2671601044db3eeb911e360e04546d98/PyQt6_DataVisualization-6.4.0.tar.gz
+[2023-04-10 11:18:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:31] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: New version: [1.7.6] Old Version: [1.7.5]
+[2023-04-10 11:18:31] INFO root fetch - processPackages [PyQt6-DataVisualization]: Downloading https://files.pythonhosted.org/packages/57/95/8086e46fdae5d5c8714e64c6c9f09c09e34eb85464199374ce1e39175174/PyQt6_DataVisualization-6.5.0.tar.gz
+[2023-04-10 11:18:31] INFO root fetch - processPackages [PyQt6-DataVisualization]: executing diffoscope
+[2023-04-10 11:18:31] INFO root fetch - processPackages [PyQt6-DataVisualization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_DataVisualization-6.4.0.tar.gz tmp/PyQt6_DataVisualization-6.5.0.tar.gz --markdown 20230410/P/PyQt6-DataVisualization/6.4.0-6.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:18:31] INFO root fetch - processPackages [PyQt6-3D]: Downloading https://files.pythonhosted.org/packages/61/3d/3c2fc89e929138d42face65a0ad2b81ad0f2df9701d8fd74ad591a2eaa28/PyQt6_3D-6.5.0.tar.gz
+[2023-04-10 11:18:31] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: Downloading https://files.pythonhosted.org/packages/d5/60/91b9b880ddfe263477546be434329e01acadf9b484411fbfa8a5d3a57a96/nonebot_plugin_searchbiliinfo-1.7.5.tar.gz
+[2023-04-10 11:18:32] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: Downloading https://files.pythonhosted.org/packages/25/e7/600afe54c4b009371e47c0a29f35e378b7b750c2caf6b508d847a01e48fb/nonebot_plugin_searchbiliinfo-1.7.6.tar.gz
+[2023-04-10 11:18:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:32] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-10 11:18:33] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-10 11:18:33] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230410/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-10 11:18:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:33] INFO root fetch - processPackages [AttentionMOI]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 11:18:33] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: executing diffoscope
+[2023-04-10 11:18:33] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_searchbiliinfo-1.7.5.tar.gz tmp/nonebot_plugin_searchbiliinfo-1.7.6.tar.gz --markdown 20230410/n/nonebot-plugin-searchbiliinfo/1.7.5-1.7.6/diff.md --exclude *.pyd
+[2023-04-10 11:18:33] INFO root fetch - processPackages [AttentionMOI]: Downloading https://files.pythonhosted.org/packages/2d/90/8cc36d9e395ca0ffed900baea49ee7994aeec7aa451233ecdb4968243edc/AttentionMOI-0.0.4.tar.gz
+[2023-04-10 11:18:33] INFO root fetch - processPackages [AttentionMOI]: executing diffoscope
+[2023-04-10 11:18:33] INFO root fetch - processPackages [AttentionMOI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AttentionMOI-0.0.3.tar.gz tmp/AttentionMOI-0.0.4.tar.gz --markdown 20230410/A/AttentionMOI/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 11:18:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:34] INFO root fetch - processPackages [PyQt6-NetworkAuth]: New version: [6.5.0] Old Version: [6.4.0]
+[2023-04-10 11:18:34] INFO root fetch - processPackages [PyQt6-3D]: executing diffoscope
+[2023-04-10 11:18:34] INFO root fetch - processPackages [PyQt6-3D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_3D-6.4.0.tar.gz tmp/PyQt6_3D-6.5.0.tar.gz --markdown 20230410/P/PyQt6-3D/6.4.0-6.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:18:34] INFO root fetch - processPackages [PyQt6-NetworkAuth]: Downloading https://files.pythonhosted.org/packages/a0/1c/6042587ed1e934206f7a2498e73b18ed7fc598c717af0561c409eaa01bfd/PyQt6_NetworkAuth-6.4.0.tar.gz
+[2023-04-10 11:18:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:34] INFO root fetch - processPackages [PyQt6-NetworkAuth]: Downloading https://files.pythonhosted.org/packages/dc/7f/2305cdafa48a14cf8f81a75f5d840277cf860cf4cec7afdb9d23d183ebe4/PyQt6_NetworkAuth-6.5.0.tar.gz
+[2023-04-10 11:18:34] INFO root fetch - processPackages [PyQt6-WebEngine]: New version: [6.5.0] Old Version: [6.4.0]
+[2023-04-10 11:18:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:35] INFO root fetch - processPackages [cchenutils]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 11:18:35] INFO root fetch - processPackages [PyQt6-WebEngine]: Downloading https://files.pythonhosted.org/packages/c1/54/80bebc08c537723a145442c3997bab122ebc8e540ae807f4291b2ce7f8bb/PyQt6_WebEngine-6.4.0.tar.gz
+[2023-04-10 11:18:35] INFO root fetch - processPackages [PyQt6-NetworkAuth]: executing diffoscope
+[2023-04-10 11:18:35] INFO root fetch - processPackages [PyQt6-NetworkAuth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_NetworkAuth-6.4.0.tar.gz tmp/PyQt6_NetworkAuth-6.5.0.tar.gz --markdown 20230410/P/PyQt6-NetworkAuth/6.4.0-6.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:18:35] INFO root fetch - processPackages [cchenutils]: Downloading https://files.pythonhosted.org/packages/8b/53/bde83f85ec9215f7643024f27ac9250a7c4de2e0aa6fde222ef2df298192/cchenutils-0.0.2.tar.gz
+[2023-04-10 11:18:35] INFO root fetch - processPackages [PyQt6-WebEngine]: Downloading https://files.pythonhosted.org/packages/8d/dd/90d73f7b51f5bdc733341e317a9ac1f0d8fdf61d6c793061d429ae86e28f/PyQt6_WebEngine-6.5.0.tar.gz
+[2023-04-10 11:18:35] INFO root fetch - processPackages [cchenutils]: Downloading https://files.pythonhosted.org/packages/2a/68/bfa17be25267cf976d643ff506f3f8a182bbeb87f50faa7073aeb9e03aba/cchenutils-0.0.3-py3-none-any.whl
+[2023-04-10 11:18:35] INFO root fetch - processPackages [PyQt6-WebEngine]: executing diffoscope
+[2023-04-10 11:18:35] INFO root fetch - processPackages [PyQt6-WebEngine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_WebEngine-6.4.0.tar.gz tmp/PyQt6_WebEngine-6.5.0.tar.gz --markdown 20230410/P/PyQt6-WebEngine/6.4.0-6.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:18:35] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-10 11:18:35] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.0.2.tar.gz tmp/cchenutils-0.0.3-py3-none-any.whl.zip --markdown 20230410/c/cchenutils/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 11:18:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:18:41] INFO root fetch - main [MainThread]: Store serial: [17644649]
