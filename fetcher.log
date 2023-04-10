@@ -1738,3 +1738,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-10 03:35:46] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:35:48] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:35:48] INFO root fetch - main [MainThread]: Store serial: [17641100]
+[2023-04-10 03:40:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17641100]
+[2023-04-10 03:40:55] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 03:40:55] INFO root fetch - processPackages [neon-homeassistant-skill]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 03:40:55] INFO root fetch - processPackages [pipen]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-10 03:40:55] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-04-10 03:40:55] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 03:40:55] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 03:40:55] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-04-10 03:40:55] INFO root fetch - processPackages [neon-homeassistant-skill]: executing diffoscope
+[2023-04-10 03:40:55] INFO root fetch - processPackages [neon-homeassistant-skill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_homeassistant_skill-0.0.8.tar.gz tmp/neon_homeassistant_skill-0.0.9.tar.gz --markdown 20230410/n/neon-homeassistant-skill/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 03:40:55] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-04-10 03:40:55] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230410/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 03:40:55] INFO root fetch - processPackages [pipen]: Downloading https://files.pythonhosted.org/packages/7f/ac/3133dd41e607e0ce4da47e807c9c7418495395e19f0626ed69eb54ffa162/pipen-0.7.2.tar.gz
+[2023-04-10 03:40:55] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-10 03:40:55] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230410/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 03:40:55] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-04-10 03:40:55] INFO root fetch - main [MainThread]: error
+[2023-04-10 03:40:55] INFO root fetch - processPackages [screcode]: New version: [0.1.2.dev202304100142] Old Version: [0.1.2.dev202304092258]
+[2023-04-10 03:40:55] INFO root fetch - processPackages [pipen]: Downloading https://files.pythonhosted.org/packages/4e/6a/2051895e7a53c9e4372858db264501af26cd355cc584a744c254d3c9cd0c/pipen-0.7.3.tar.gz
+[2023-04-10 03:40:55] INFO root fetch - processPackages [pipen]: executing diffoscope
+[2023-04-10 03:40:55] INFO root fetch - processPackages [pipen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen-0.7.2.tar.gz tmp/pipen-0.7.3.tar.gz --markdown 20230410/p/pipen/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-10 03:40:55] INFO root fetch - processPackages [screcode]: Downloading https://files.pythonhosted.org/packages/d2/35/1fc50192b061be0af06a0262abad7bb98994e2ade941a4d64b98eb20ef9d/screcode-0.1.2.dev202304100142-py3-none-any.whl
+[2023-04-10 03:40:56] INFO root fetch - processPackages [screcode]: executing diffoscope
+[2023-04-10 03:40:56] INFO root fetch - processPackages [screcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screcode-0.1.2.dev202304092258-py3-none-any.whl.zip tmp/screcode-0.1.2.dev202304100142-py3-none-any.whl.zip --markdown 20230410/s/screcode/0.1.2.dev202304092258-0.1.2.dev202304100142/diff.md --exclude *.pyd
+[2023-04-10 03:40:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:40:56] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.704] Old Version: [0.0.703]
+[2023-04-10 03:40:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:40:56] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-04-10 03:40:56] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/36/96/ef9fb780bf477d567659b836208a8a33f0669f81ca90cfc85cb29cae2bd1/nbdev-apl-0.0.704.tar.gz
+[2023-04-10 03:40:56] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-10 03:40:56] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.703.tar.gz tmp/nbdev-apl-0.0.704.tar.gz --markdown 20230410/n/nbdev-apl/0.0.703-0.0.704/diff.md --exclude *.pyd
+[2023-04-10 03:40:56] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-04-10 03:40:56] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230410/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-04-10 03:40:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:40:56] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-04-10 03:40:56] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-04-10 03:40:56] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230410/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-04-10 03:40:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:40:57] WARNING root fetch - processPackages [pyloobins]: Skipping, unable to determine old version
+[2023-04-10 03:40:57] INFO root fetch - main [MainThread]: error
+[2023-04-10 03:40:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:40:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:40:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:40:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:40:58] INFO root fetch - main [MainThread]: Store serial: [17641139]
