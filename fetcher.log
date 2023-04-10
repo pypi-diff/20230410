@@ -8590,3 +8590,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 13:52:39] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:52:40] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:52:40] INFO root fetch - main [MainThread]: Store serial: [17645468]
+[2023-04-10 13:57:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645468]
+[2023-04-10 13:57:47] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 13:57:47] INFO root fetch - processPackages [abcd-seth]: New version: [1.0.5.dev0] Old Version: [1.0.4.dev0]
+[2023-04-10 13:57:47] WARNING root fetch - processPackages [discordapiwebhooks]: Skipping, unable to determine old version
+[2023-04-10 13:57:47] INFO root fetch - processPackages [alibabacloud-documentautoml20221229-py2]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 13:57:47] INFO root fetch - main [MainThread]: error
+[2023-04-10 13:57:47] INFO root fetch - processPackages [ruiwen-data-all]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-10 13:57:47] INFO root fetch - processPackages [ytsaurus-spyt]: New version: [1.69.2b1.post5617124.dev1] Old Version: [1.69.1b439.post23515129.dev9]
+[2023-04-10 13:57:47] INFO root fetch - processPackages [alibabacloud-documentautoml20221229]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 13:57:47] INFO root fetch - processPackages [alibabacloud-documentautoml20221229-py2]: Downloading https://files.pythonhosted.org/packages/57/14/6459166487388675c0dfe517ffdd867a06a50d4e33a69dec969f21d9d0c4/alibabacloud_documentautoml20221229_py2-1.0.9.tar.gz
+[2023-04-10 13:57:47] INFO root fetch - processPackages [alibabacloud-documentautoml20221229]: Downloading https://files.pythonhosted.org/packages/d4/93/c52a0496bc830bcf4e5de052753309ae90746619de5383622f2422179022/alibabacloud_documentautoml20221229-1.0.9.tar.gz
+[2023-04-10 13:57:47] INFO root fetch - processPackages [ruiwen-data-all]: Downloading https://files.pythonhosted.org/packages/05/25/13152f03accc123be9059171db9693e29af33b293afb9bd7a0dab3c76de4/ruiwen_data_all-2.0.3.tar.gz
+[2023-04-10 13:57:47] INFO root fetch - processPackages [abcd-seth]: Downloading https://files.pythonhosted.org/packages/26/85/2bfbf9b6daf9252a183f0149334150135fe6debf9e92d37771475401f0c7/abcd_seth-1.0.5.dev0.tar.gz
+[2023-04-10 13:57:47] INFO root fetch - processPackages [alibabacloud-documentautoml20221229]: executing diffoscope
+[2023-04-10 13:57:47] INFO root fetch - processPackages [alibabacloud-documentautoml20221229]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_documentautoml20221229-1.0.8.tar.gz tmp/alibabacloud_documentautoml20221229-1.0.9.tar.gz --markdown 20230410/a/alibabacloud-documentautoml20221229/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 13:57:48] INFO root fetch - processPackages [alibabacloud-documentautoml20221229-py2]: executing diffoscope
+[2023-04-10 13:57:48] INFO root fetch - processPackages [alibabacloud-documentautoml20221229-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_documentautoml20221229_py2-1.0.8.tar.gz tmp/alibabacloud_documentautoml20221229_py2-1.0.9.tar.gz --markdown 20230410/a/alibabacloud-documentautoml20221229-py2/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 13:57:48] INFO root fetch - processPackages [ruiwen-data-all]: executing diffoscope
+[2023-04-10 13:57:48] INFO root fetch - processPackages [ruiwen-data-all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruiwen_data_all-2.0.2.tar.gz tmp/ruiwen_data_all-2.0.3.tar.gz --markdown 20230410/r/ruiwen-data-all/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-10 13:57:48] INFO root fetch - processPackages [ytsaurus-spyt]: Downloading https://files.pythonhosted.org/packages/84/af/fe0a8244ec0f089a21db0813ab04c1ec0751184839273f08488e73da4b3d/ytsaurus-spyt-1.69.2b1.post5617124.dev1.tar.gz
+[2023-04-10 13:57:48] INFO root fetch - processPackages [abcd-seth]: executing diffoscope
+[2023-04-10 13:57:48] INFO root fetch - processPackages [abcd-seth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcd_seth-1.0.4.dev0.tar.gz tmp/abcd_seth-1.0.5.dev0.tar.gz --markdown 20230410/a/abcd-seth/1.0.4.dev0-1.0.5.dev0/diff.md --exclude *.pyd
+[2023-04-10 13:57:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:57:49] INFO root fetch - processPackages [muffin-grpc]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-10 13:57:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:57:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:57:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:57:49] INFO root fetch - processPackages [vsiew]: New version: [2.0.0] Old Version: [1.6.8]
+[2023-04-10 13:57:49] INFO root fetch - processPackages [muffin-grpc]: Downloading https://files.pythonhosted.org/packages/b7/4a/b6bc2cc9c1911f3d137c33c0a727f8b08aa29080a170648e9d63549dbf32/muffin-grpc-0.5.0.tar.gz
+[2023-04-10 13:57:49] INFO root fetch - processPackages [pt-datasets]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-10 13:57:49] INFO root fetch - processPackages [test-swagger-coverage]: New version: [0.1.54] Old Version: [0.1.53]
+[2023-04-10 13:57:49] INFO root fetch - processPackages [vsiew]: Downloading https://files.pythonhosted.org/packages/1b/34/ace7ad5396d658dafe17db9dc43a949cb82e511b96408740d5faadf005ae/vsiew-1.6.8.tar.gz
+[2023-04-10 13:57:49] INFO root fetch - processPackages [ytsaurus-spyt]: executing diffoscope
+[2023-04-10 13:57:49] INFO root fetch - processPackages [ytsaurus-spyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytsaurus-spyt-1.69.1b439.post23515129.dev9.tar.gz tmp/ytsaurus-spyt-1.69.2b1.post5617124.dev1.tar.gz --markdown 20230410/y/ytsaurus-spyt/1.69.1b439.post23515129.dev9-1.69.2b1.post5617124.dev1/diff.md --exclude *.pyd
+[2023-04-10 13:57:49] INFO root fetch - processPackages [pt-datasets]: Downloading https://files.pythonhosted.org/packages/1d/42/903889af469839a55d6e509d666e9667e65c4ac92b51a65b44eb89ab490f/pt-datasets-0.9.8.tar.gz
+[2023-04-10 13:57:49] INFO root fetch - processPackages [test-swagger-coverage]: Downloading https://files.pythonhosted.org/packages/e5/55/e5ec1158ebf05cbd2045bae917a2b3454aa7a1e5cfc4a92b3aa71c50c32c/test-swagger-coverage-0.1.53.tar.gz
+[2023-04-10 13:57:49] INFO root fetch - processPackages [vsiew]: Downloading https://files.pythonhosted.org/packages/64/3f/d49c1b296b921c02096529ec2b1169544b592dcdb04214b594ac8a379f16/vsiew-2.0.0.tar.gz
+[2023-04-10 13:57:49] INFO root fetch - processPackages [muffin-grpc]: Downloading https://files.pythonhosted.org/packages/a6/28/dab06d6c8e65fadadc7888b38ac32cb9217880f39a398b5e06773362eca8/muffin_grpc-0.5.1.tar.gz
+[2023-04-10 13:57:49] INFO root fetch - processPackages [vsiew]: executing diffoscope
+[2023-04-10 13:57:49] INFO root fetch - processPackages [vsiew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsiew-1.6.8.tar.gz tmp/vsiew-2.0.0.tar.gz --markdown 20230410/v/vsiew/1.6.8-2.0.0/diff.md --exclude *.pyd
+[2023-04-10 13:57:49] INFO root fetch - processPackages [muffin-grpc]: executing diffoscope
+[2023-04-10 13:57:49] INFO root fetch - processPackages [muffin-grpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muffin-grpc-0.5.0.tar.gz tmp/muffin_grpc-0.5.1.tar.gz --markdown 20230410/m/muffin-grpc/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-10 13:57:49] INFO root fetch - processPackages [test-swagger-coverage]: Downloading https://files.pythonhosted.org/packages/bf/30/d9a696cf58df5d0be4c16bf4db2bb4403c70f0c725ae35103e76471fa4dd/test_swagger_coverage-0.1.54.tar.gz
+[2023-04-10 13:57:49] INFO root fetch - processPackages [pt-datasets]: Downloading https://files.pythonhosted.org/packages/35/9d/c7b87a5bad2fda4c2de7163c47c440d169bb3113e5f4a30fb59ed465adef/pt-datasets-0.9.9.tar.gz
+[2023-04-10 13:57:50] INFO root fetch - processPackages [test-swagger-coverage]: executing diffoscope
+[2023-04-10 13:57:50] INFO root fetch - processPackages [test-swagger-coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test-swagger-coverage-0.1.53.tar.gz tmp/test_swagger_coverage-0.1.54.tar.gz --markdown 20230410/t/test-swagger-coverage/0.1.53-0.1.54/diff.md --exclude *.pyd
+[2023-04-10 13:57:50] INFO root fetch - processPackages [pt-datasets]: executing diffoscope
+[2023-04-10 13:57:50] INFO root fetch - processPackages [pt-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pt-datasets-0.9.8.tar.gz tmp/pt-datasets-0.9.9.tar.gz --markdown 20230410/p/pt-datasets/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-10 13:57:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:57:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:57:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:57:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:57:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:57:58] INFO root fetch - main [MainThread]: Store serial: [17645500]
