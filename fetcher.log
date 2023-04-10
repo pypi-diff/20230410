@@ -7557,3 +7557,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 12:06:13] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:06:14] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:06:14] INFO root fetch - main [MainThread]: Store serial: [17644899]
+[2023-04-10 12:11:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644899]
+[2023-04-10 12:11:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 12:11:22] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-04-10 12:11:23] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-04-10 12:11:23] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230410/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-04-10 12:11:23] INFO root fetch - processPackages [tatarubot2]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-10 12:11:23] INFO root fetch - processPackages [tatarubot2]: Downloading https://files.pythonhosted.org/packages/fd/85/0a4315a68286509baaca33ab4025b1f13eb077316073a71b6ef3631a5359/tatarubot2-0.1.4.tar.gz
+[2023-04-10 12:11:23] INFO root fetch - processPackages [schedule]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-10 12:11:23] INFO root fetch - processPackages [shell-gpt]: New version: [0.8.7] Old Version: [0.8.6]
+[2023-04-10 12:11:23] INFO root fetch - processPackages [schedule]: Downloading https://files.pythonhosted.org/packages/a8/b5/a291a4c0faa491fd5baefa6d89011ece581cff47b23c0a39b42a63383358/schedule-1.1.0.tar.gz
+[2023-04-10 12:11:23] INFO root fetch - processPackages [shell-gpt]: Downloading https://files.pythonhosted.org/packages/ba/14/74b0d33c0255b17cc2197a690b0e7d227fc2699df4666a10ee99681a625a/shell_gpt-0.8.7.tar.gz
+[2023-04-10 12:11:23] INFO root fetch - processPackages [quickmpc]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-10 12:11:23] INFO root fetch - processPackages [quickmpc]: Downloading https://files.pythonhosted.org/packages/87/df/3c56293ed2766747da3b25bd500aced6b6ceef1a584b6c2bc7a302ac4f0b/quickmpc-0.3.1.tar.gz
+[2023-04-10 12:11:24] INFO root fetch - processPackages [shell-gpt]: executing diffoscope
+[2023-04-10 12:11:24] INFO root fetch - processPackages [shell-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shell_gpt-0.8.6.tar.gz tmp/shell_gpt-0.8.7.tar.gz --markdown 20230410/s/shell-gpt/0.8.6-0.8.7/diff.md --exclude *.pyd
+[2023-04-10 12:11:24] INFO root fetch - processPackages [schedule]: Downloading https://files.pythonhosted.org/packages/09/62/b9f933c01e3692393fb91cbe19015f91e1e69d409943a627c434518974f7/schedule-1.2.0.tar.gz
+[2023-04-10 12:11:24] INFO root fetch - processPackages [quickmpc]: Downloading https://files.pythonhosted.org/packages/ac/39/4b25a5c2186917df932eb6a8b015af9cb9f32a509e914c168daff01ac1d7/quickmpc-0.3.2.tar.gz
+[2023-04-10 12:11:24] INFO root fetch - processPackages [tatarubot2]: executing diffoscope
+[2023-04-10 12:11:24] INFO root fetch - processPackages [tatarubot2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tatarubot2-0.1.3.tar.gz tmp/tatarubot2-0.1.4.tar.gz --markdown 20230410/t/tatarubot2/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-10 12:11:25] INFO root fetch - processPackages [schedule]: executing diffoscope
+[2023-04-10 12:11:25] INFO root fetch - processPackages [schedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schedule-1.1.0.tar.gz tmp/schedule-1.2.0.tar.gz --markdown 20230410/s/schedule/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-10 12:11:25] INFO root fetch - processPackages [quickmpc]: executing diffoscope
+[2023-04-10 12:11:25] INFO root fetch - processPackages [quickmpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickmpc-0.3.1.tar.gz tmp/quickmpc-0.3.2.tar.gz --markdown 20230410/q/quickmpc/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-10 12:11:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:11:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:11:26] INFO root fetch - processPackages [topologicpy]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-10 12:11:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:11:26] WARNING root fetch - processPackages [gitlab-runner-tart-driver]: Skipping, unable to determine old version
+[2023-04-10 12:11:26] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:11:26] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/e2/51/4875fd1eea57f405297c2ef6a84f8d7997e68d3c4e82c9d152df1952f771/topologicpy-0.4.0.tar.gz
+[2023-04-10 12:11:26] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34011890>=10485760
+[2023-04-10 12:11:26] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:11:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:12:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:12:15] INFO root fetch - main [MainThread]: Store serial: [17644922]
