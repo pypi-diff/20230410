@@ -4070,3 +4070,96 @@ EOFError: EOF read where object expected
 [2023-04-10 05:28:46] INFO root fetch - main [MainThread]: success
 [2023-04-10 05:29:40] INFO root fetch - main [MainThread]: success
 [2023-04-10 05:29:40] INFO root fetch - main [MainThread]: Store serial: [17642389]
+[2023-04-10 05:34:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642389]
+[2023-04-10 05:34:48] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-10 05:34:48] INFO root fetch - processPackages [fsai-grpc-api]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 05:34:48] INFO root fetch - processPackages [iwx-manifest-builder]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 05:34:48] INFO root fetch - processPackages [json-file-split]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 05:34:48] INFO root fetch - processPackages [fsai-shared-funcs]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 05:34:48] INFO root fetch - processPackages [cvat-manifest-builder]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 05:34:48] INFO root fetch - processPackages [fsai-grpc-api]: Downloading https://files.pythonhosted.org/packages/08/a7/9a7ebe38ab432231655f1bfd81e702be8be178baa4b6a212002bdcf3cd96/fsai_grpc_api-0.0.98.tar.gz
+[2023-04-10 05:34:48] INFO root fetch - processPackages [iwx-manifest-builder]: Downloading https://files.pythonhosted.org/packages/33/bf/02ba356059e9069f6db9f027bf1bd97a4c1de39fe82e72814ed2f73f3c39/iwx_manifest_builder-0.0.98.tar.gz
+[2023-04-10 05:34:48] INFO root fetch - processPackages [json-file-split]: Downloading https://files.pythonhosted.org/packages/99/d8/622632db80b721cb33feb5bafb9759e9b295589e09234724044a35a985ba/json_file_split-0.0.98.tar.gz
+[2023-04-10 05:34:48] INFO root fetch - processPackages [cvat-manifest-builder]: Downloading https://files.pythonhosted.org/packages/4d/53/ceeb4be50300cbb9ab2e0de8699ddef9fb20be70ac60f72cac3097f0efc9/cvat_manifest_builder-0.0.98.tar.gz
+[2023-04-10 05:34:48] INFO root fetch - processPackages [fsai-shared-funcs]: Downloading https://files.pythonhosted.org/packages/61/bc/39412ebc8deaeb66f457caebc15c02bc1fe07bc33108672e4bf143d64e3b/fsai_shared_funcs-0.0.98.tar.gz
+[2023-04-10 05:34:48] INFO root fetch - processPackages [iwx-manifest-builder]: Downloading https://files.pythonhosted.org/packages/d7/d6/4db840a6915c649204176fabdc1a7d70a4fdf7a1d3bd33ddd8cd11c02111/iwx_manifest_builder-0.0.99.tar.gz
+[2023-04-10 05:34:48] INFO root fetch - processPackages [json-file-split]: Downloading https://files.pythonhosted.org/packages/a0/bb/0991effbd14e0114fac9146f11da815fc866dc9e12a179cdfc204af7bd99/json_file_split-0.0.99.tar.gz
+[2023-04-10 05:34:48] INFO root fetch - processPackages [fsai-shared-funcs]: Downloading https://files.pythonhosted.org/packages/3d/ad/0128c444d5b95fa3b9882d63404069f05fbee06ab63f54a541348c51a445/fsai_shared_funcs-0.0.99.tar.gz
+[2023-04-10 05:34:48] INFO root fetch - processPackages [cvat-manifest-builder]: Downloading https://files.pythonhosted.org/packages/2d/fd/8ffcf4ea6e13da75ab842cd4fdacad9222d483a9b210dbc27e9c251f6a20/cvat_manifest_builder-0.0.99.tar.gz
+[2023-04-10 05:34:48] INFO root fetch - processPackages [fsai-grpc-api]: Downloading https://files.pythonhosted.org/packages/9b/76/8a69144e2e7db3d7b70f7a9a6458e71d63b921d67ca39c9f646ee438e103/fsai_grpc_api-0.0.99.tar.gz
+[2023-04-10 05:34:49] INFO root fetch - processPackages [iwx-manifest-builder]: executing diffoscope
+[2023-04-10 05:34:49] INFO root fetch - processPackages [iwx-manifest-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iwx_manifest_builder-0.0.98.tar.gz tmp/iwx_manifest_builder-0.0.99.tar.gz --markdown 20230410/i/iwx-manifest-builder/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 05:34:49] INFO root fetch - processPackages [json-file-split]: executing diffoscope
+[2023-04-10 05:34:49] INFO root fetch - processPackages [fsai-shared-funcs]: executing diffoscope
+[2023-04-10 05:34:49] INFO root fetch - processPackages [json-file-split]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_file_split-0.0.98.tar.gz tmp/json_file_split-0.0.99.tar.gz --markdown 20230410/j/json-file-split/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 05:34:49] INFO root fetch - processPackages [fsai-shared-funcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fsai_shared_funcs-0.0.98.tar.gz tmp/fsai_shared_funcs-0.0.99.tar.gz --markdown 20230410/f/fsai-shared-funcs/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 05:34:49] INFO root fetch - processPackages [cvat-manifest-builder]: executing diffoscope
+[2023-04-10 05:34:49] INFO root fetch - processPackages [cvat-manifest-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvat_manifest_builder-0.0.98.tar.gz tmp/cvat_manifest_builder-0.0.99.tar.gz --markdown 20230410/c/cvat-manifest-builder/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 05:34:49] INFO root fetch - processPackages [fsai-grpc-api]: executing diffoscope
+[2023-04-10 05:34:49] INFO root fetch - processPackages [fsai-grpc-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fsai_grpc_api-0.0.98.tar.gz tmp/fsai_grpc_api-0.0.99.tar.gz --markdown 20230410/f/fsai-grpc-api/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 05:34:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:50] INFO root fetch - processPackages [geopix]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 05:34:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:50] INFO root fetch - processPackages [awpr]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 05:34:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:50] INFO root fetch - processPackages [tccli-intl-en]: New version: [3.0.99.1] Old Version: [3.0.98.1]
+[2023-04-10 05:34:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:50] INFO root fetch - processPackages [lime-stable]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-10 05:34:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:50] INFO root fetch - processPackages [geopix]: Downloading https://files.pythonhosted.org/packages/b6/a3/41b4f581e7463e3bce55e79579de9bf1f2c828011573c06bf7ab33a974bd/geopix-0.0.98.tar.gz
+[2023-04-10 05:34:50] INFO root fetch - processPackages [autots]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-04-10 05:34:50] INFO root fetch - processPackages [awpr]: Downloading https://files.pythonhosted.org/packages/20/69/15c65a62a3a988a3178f156c6296d17502891a9da8e386979e511c8bd639/awpr-0.0.98.tar.gz
+[2023-04-10 05:34:50] INFO root fetch - processPackages [tccli-intl-en]: Downloading https://files.pythonhosted.org/packages/f1/30/41af4d3a9dae71d94a6518cc57186cc8cf5a5b38d29a6a50861712b42078/tccli-intl-en-3.0.98.1.tar.gz
+[2023-04-10 05:34:50] INFO root fetch - processPackages [lime-stable]: Downloading https://files.pythonhosted.org/packages/9b/2d/322b07b77aff36888e5222bda0bf4d62b9b966d482a135fea26e94f4b357/lime-stable-0.9.8.tar.gz
+[2023-04-10 05:34:50] INFO root fetch - processPackages [autots]: Downloading https://files.pythonhosted.org/packages/70/e6/a7aeb7bda8e44d9e61ac1555afef4323e8f8b49cc3d7df3fe6cf7f87ce2e/autots-0.5.5.tar.gz
+[2023-04-10 05:34:50] INFO root fetch - processPackages [geopix]: Downloading https://files.pythonhosted.org/packages/6a/35/1c90409a83c347836b8e4e5b2ad3d6ad6534718a8977dd9b3a646edd5e26/geopix-0.0.99.tar.gz
+[2023-04-10 05:34:50] INFO root fetch - processPackages [awpr]: Downloading https://files.pythonhosted.org/packages/43/6a/a5e099ae1a88431e28ea793094495025f2a78ac4d52ea49d8aad0e55cf8c/awpr-0.0.99.tar.gz
+[2023-04-10 05:34:50] INFO root fetch - processPackages [lime-stable]: Downloading https://files.pythonhosted.org/packages/a3/88/4940908e003bc08dbc00ea92ef8b91f35daf8e9bce7d0f3e00551b160e56/lime-stable-0.9.9.tar.gz
+[2023-04-10 05:34:50] INFO root fetch - processPackages [geopix]: executing diffoscope
+[2023-04-10 05:34:50] INFO root fetch - processPackages [geopix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geopix-0.0.98.tar.gz tmp/geopix-0.0.99.tar.gz --markdown 20230410/g/geopix/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 05:34:51] INFO root fetch - processPackages [tccli-intl-en]: Downloading https://files.pythonhosted.org/packages/08/e0/99b129dd2c25cb88719c0b1692fbc03b299057b179a6c33831623b44d96b/tccli-intl-en-3.0.99.1.tar.gz
+[2023-04-10 05:34:51] INFO root fetch - processPackages [awpr]: executing diffoscope
+[2023-04-10 05:34:51] INFO root fetch - processPackages [awpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awpr-0.0.98.tar.gz tmp/awpr-0.0.99.tar.gz --markdown 20230410/a/awpr/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 05:34:51] INFO root fetch - processPackages [lime-stable]: executing diffoscope
+[2023-04-10 05:34:51] INFO root fetch - processPackages [lime-stable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lime-stable-0.9.8.tar.gz tmp/lime-stable-0.9.9.tar.gz --markdown 20230410/l/lime-stable/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-10 05:34:51] INFO root fetch - processPackages [tccli-intl-en]: executing diffoscope
+[2023-04-10 05:34:51] INFO root fetch - processPackages [tccli-intl-en]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tccli-intl-en-3.0.98.1.tar.gz tmp/tccli-intl-en-3.0.99.1.tar.gz --markdown 20230410/t/tccli-intl-en/3.0.98.1-3.0.99.1/diff.md --exclude *.pyd
+[2023-04-10 05:34:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:52] INFO root fetch - processPackages [memory-compressed-attention]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-10 05:34:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:52] WARNING root fetch - processPackages [bio-db-pipeline]: Skipping, unable to determine old version
+[2023-04-10 05:34:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:34:52] WARNING root fetch - processPackages [bio-db-pipeline]: Skipping, unable to determine old version
+[2023-04-10 05:34:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:34:52] WARNING root fetch - processPackages [bio-db-pipeline]: Skipping, unable to determine old version
+[2023-04-10 05:34:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:34:52] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: New version: [3.0.99] Old Version: [3.0.98]
+[2023-04-10 05:34:52] INFO root fetch - processPackages [memory-compressed-attention]: Downloading https://files.pythonhosted.org/packages/28/3a/dd1bde21be1bdf461f0dfdd3a6b2589abb977e76358009077aa594bc8fc9/memory_compressed_attention-0.0.5.tar.gz
+[2023-04-10 05:34:52] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: Downloading https://files.pythonhosted.org/packages/47/ec/491739e9cb7da970b8f280ea2383dc94da0c3d39e938ac559e0f2e52aea8/tencentcloud-sdk-python-intl-en-3.0.98.tar.gz
+[2023-04-10 05:34:52] INFO root fetch - processPackages [autots]: Downloading https://files.pythonhosted.org/packages/2a/c4/981d9696d3d7070515a61439d58964cc893aa22a6604f69dd9cb7ad5a4fa/autots-0.5.6.tar.gz
+[2023-04-10 05:34:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:52] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-10 05:34:52] INFO root fetch - processPackages [memory-compressed-attention]: Downloading https://files.pythonhosted.org/packages/4e/fe/9c24c46eec6cead1f413ec5a397a8d809e892ed9ba6ee93be971d4b130b2/memory_compressed_attention-0.0.6.tar.gz
+[2023-04-10 05:34:52] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: executing diffoscope
+[2023-04-10 05:34:52] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_streamdeck_yaml-2023.4.8.tar.gz tmp/home_assistant_streamdeck_yaml-2023.4.9.tar.gz --markdown 20230410/h/home-assistant-streamdeck-yaml/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-10 05:34:52] INFO root fetch - processPackages [autots]: executing diffoscope
+[2023-04-10 05:34:52] INFO root fetch - processPackages [autots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autots-0.5.5.tar.gz tmp/autots-0.5.6.tar.gz --markdown 20230410/a/autots/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-04-10 05:34:52] INFO root fetch - processPackages [memory-compressed-attention]: executing diffoscope
+[2023-04-10 05:34:52] INFO root fetch - processPackages [memory-compressed-attention]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memory_compressed_attention-0.0.5.tar.gz tmp/memory_compressed_attention-0.0.6.tar.gz --markdown 20230410/m/memory-compressed-attention/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-10 05:34:52] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: Downloading https://files.pythonhosted.org/packages/ee/9c/2dcfed598218dfd2d81fa3078c736962b265e5ae724bec2686e853a74d71/tencentcloud-sdk-python-intl-en-3.0.99.tar.gz
+[2023-04-10 05:34:53] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: executing diffoscope
+[2023-04-10 05:34:53] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-intl-en-3.0.98.tar.gz tmp/tencentcloud-sdk-python-intl-en-3.0.99.tar.gz --markdown 20230410/t/tencentcloud-sdk-python-intl-en/3.0.98-3.0.99/diff.md --exclude *.pyd
+[2023-04-10 05:34:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:53] WARNING root fetch - processPackages [shellai]: Skipping, unable to determine old version
+[2023-04-10 05:34:53] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:34:53] INFO root fetch - processPackages [aliyun-log-python-sdk]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-04-10 05:34:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:53] INFO root fetch - processPackages [aliyun-log-python-sdk]: Downloading https://files.pythonhosted.org/packages/d3/30/af164499813e83e1da8c70be3c24e8677b10d7b82b374112f02fe6da4657/aliyun-log-python-sdk-0.8.5.tar.gz
+[2023-04-10 05:34:54] INFO root fetch - processPackages [aliyun-log-python-sdk]: Downloading https://files.pythonhosted.org/packages/cc/4c/5a8ed9e6231618d8a2f5d065c4c694e65e5222e474dc0f9b464aecdc372b/aliyun-log-python-sdk-0.8.6.tar.gz
+[2023-04-10 05:34:54] INFO root fetch - processPackages [aliyun-log-python-sdk]: executing diffoscope
+[2023-04-10 05:34:54] INFO root fetch - processPackages [aliyun-log-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-log-python-sdk-0.8.5.tar.gz tmp/aliyun-log-python-sdk-0.8.6.tar.gz --markdown 20230410/a/aliyun-log-python-sdk/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-04-10 05:34:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:34:56] INFO root fetch - main [MainThread]: Store serial: [17642453]
