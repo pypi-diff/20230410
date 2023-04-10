@@ -5067,3 +5067,26 @@ EOFError: EOF read where object expected
 [2023-04-10 07:35:18] INFO root fetch - main [MainThread]: success
 [2023-04-10 07:35:18] INFO root fetch - main [MainThread]: success
 [2023-04-10 07:35:18] INFO root fetch - main [MainThread]: Store serial: [17643168]
+[2023-04-10 07:40:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643168]
+[2023-04-10 07:40:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-10 07:40:26] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-10 07:40:26] INFO root fetch - processPackages [mpapi-webui]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-10 07:40:26] INFO root fetch - processPackages [sqlalchemy-spanner]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-10 07:40:26] INFO root fetch - processPackages [awsimple]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-04-10 07:40:26] INFO root fetch - processPackages [mpapi-webui]: executing diffoscope
+[2023-04-10 07:40:26] INFO root fetch - processPackages [mpapi-webui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpapi-webui-1.0.0.tar.gz tmp/mpapi-webui-1.1.0.tar.gz --markdown 20230410/m/mpapi-webui/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 07:40:26] INFO root fetch - processPackages [sqlalchemy-spanner]: Downloading https://files.pythonhosted.org/packages/00/3c/ea3d3ae89a4c2d4042b062098d4acc641666991f0a8c815ccc64f563ad3f/sqlalchemy-spanner-1.3.0.tar.gz
+[2023-04-10 07:40:26] INFO root fetch - processPackages [awsimple]: Downloading https://files.pythonhosted.org/packages/1d/96/cbf87585d5900aaeafe3bdf2cdd41a16e9812a42ba6a42c551a6be60c688/awsimple-2.3.2-py3-none-any.whl
+[2023-04-10 07:40:26] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: Downloading https://files.pythonhosted.org/packages/91/95/4bc3df78719214b579e7bf06a68722e84b1205b7b1a2f3e807da98bf61ed/nonebot_plugin_pokemonfusion-1.0.5.tar.gz
+[2023-04-10 07:40:26] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: executing diffoscope
+[2023-04-10 07:40:26] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_pokemonfusion-1.0.4.tar.gz tmp/nonebot_plugin_pokemonfusion-1.0.5.tar.gz --markdown 20230410/n/nonebot-plugin-pokemonfusion/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-10 07:40:26] INFO root fetch - processPackages [awsimple]: executing diffoscope
+[2023-04-10 07:40:26] INFO root fetch - processPackages [awsimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awsimple-2.3.1-py3-none-any.whl.zip tmp/awsimple-2.3.2-py3-none-any.whl.zip --markdown 20230410/a/awsimple/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-04-10 07:40:26] INFO root fetch - processPackages [sqlalchemy-spanner]: Downloading https://files.pythonhosted.org/packages/93/fa/88d0c5ababcd55046a1954e86b693d540f92b0c7e23ab548b45a67c7bb27/sqlalchemy-spanner-1.4.0.tar.gz
+[2023-04-10 07:40:26] INFO root fetch - processPackages [sqlalchemy-spanner]: executing diffoscope
+[2023-04-10 07:40:26] INFO root fetch - processPackages [sqlalchemy-spanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-spanner-1.3.0.tar.gz tmp/sqlalchemy-spanner-1.4.0.tar.gz --markdown 20230410/s/sqlalchemy-spanner/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-10 07:40:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:40:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:40:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:40:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:40:27] INFO root fetch - main [MainThread]: Store serial: [17643186]
