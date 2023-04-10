@@ -1175,3 +1175,121 @@
 [2023-04-10 02:41:24] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:41:33] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:41:33] INFO root fetch - main [MainThread]: Store serial: [17640749]
+[2023-04-10 02:46:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640749]
+[2023-04-10 02:46:40] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 02:46:40] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 02:46:40] WARNING root fetch - processPackages [jupyterlite-repl-prerun]: Skipping, unable to determine old version
+[2023-04-10 02:46:40] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:46:40] INFO root fetch - processPackages [pyzw]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 02:46:40] INFO root fetch - processPackages [ezcode]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 02:46:40] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-10 02:46:40] INFO root fetch - processPackages [PyMemoryEditor]: New version: [1.4.5] Old Version: [1.4.4]
+[2023-04-10 02:46:40] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 02:46:40] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 02:46:40] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:46:40] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-04-10 02:46:40] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.4.8.tar.gz tmp/kubric-nightly-2023.4.9.tar.gz --markdown 20230410/k/kubric-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-10 02:46:40] INFO root fetch - processPackages [pyzw]: executing diffoscope
+[2023-04-10 02:46:40] INFO root fetch - processPackages [pyzw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzw-0.0.8-py3-none-any.whl.zip tmp/pyzw-0.0.9-py3-none-any.whl.zip --markdown 20230410/p/pyzw/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 02:46:40] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-10 02:46:40] INFO root fetch - processPackages [ezcode]: Downloading https://files.pythonhosted.org/packages/8f/37/509189212819cbc50746176f6c37252d17301172674e70c7e8de7377b0ed/ezcode-1.0.8.tar.gz
+[2023-04-10 02:46:40] INFO root fetch - processPackages [PyMemoryEditor]: Downloading https://files.pythonhosted.org/packages/6b/7d/191b1010438028b94ce88ff0281f10d83621ebb7c5dfad4cdb60489d823f/PyMemoryEditor-1.4.5.tar.gz
+[2023-04-10 02:46:40] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-04-10 02:46:40] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230410/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-10 02:46:40] INFO root fetch - processPackages [PyMemoryEditor]: executing diffoscope
+[2023-04-10 02:46:40] INFO root fetch - processPackages [PyMemoryEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMemoryEditor-1.4.4.tar.gz tmp/PyMemoryEditor-1.4.5.tar.gz --markdown 20230410/P/PyMemoryEditor/1.4.4-1.4.5/diff.md --exclude *.pyd
+[2023-04-10 02:46:41] INFO root fetch - processPackages [ezcode]: Downloading https://files.pythonhosted.org/packages/1a/aa/f47b8d3598bd2da9bcd0aeed19f8f76634f5a7ebb91f4853498b87fa7d7a/ezcode-1.0.9.tar.gz
+[2023-04-10 02:46:41] INFO root fetch - processPackages [ezcode]: executing diffoscope
+[2023-04-10 02:46:41] INFO root fetch - processPackages [ezcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezcode-1.0.8.tar.gz tmp/ezcode-1.0.9.tar.gz --markdown 20230410/e/ezcode/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 02:46:41] ERROR root fetch - processPackages [pyzw]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid continuation byte
+
+[2023-04-10 02:46:41] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:46:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:46:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:46:42] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:46:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:46:45] INFO root fetch - main [MainThread]: Store serial: [17640770]
