@@ -7746,3 +7746,147 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 12:28:40] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:28:41] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:28:41] INFO root fetch - main [MainThread]: Store serial: [17645024]
+[2023-04-10 12:33:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645024]
+[2023-04-10 12:33:49] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 12:33:49] INFO root fetch - processPackages [spiderx]: New version: [1.8.9] Old Version: [1.8.2]
+[2023-04-10 12:33:49] INFO root fetch - processPackages [goby-sdk]: New version: [1.0.3] Old Version: [1.0.1]
+[2023-04-10 12:33:49] INFO root fetch - processPackages [tinybird-cli]: New version: [1.0.0b99] Old Version: [1.0.0b98]
+[2023-04-10 12:33:49] INFO root fetch - processPackages [chunked-uploads-attentive]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 12:33:49] INFO root fetch - processPackages [cm-two]: New version: [2.2.5] Old Version: [2.2.4]
+[2023-04-10 12:33:49] INFO root fetch - processPackages [spiderx]: executing diffoscope
+[2023-04-10 12:33:49] INFO root fetch - processPackages [spiderx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderx-1.8.2.tar.gz tmp/spiderx-1.8.9.tar.gz --markdown 20230410/s/spiderx/1.8.2-1.8.9/diff.md --exclude *.pyd
+[2023-04-10 12:33:49] INFO root fetch - processPackages [goby-sdk]: Downloading https://files.pythonhosted.org/packages/0d/11/de346ef964d51b8350f74111c4d0274ae634f9a04882d949d94153a0660d/goby_sdk-1.0.1.tar.gz
+[2023-04-10 12:33:49] INFO root fetch - processPackages [chunked-uploads-attentive]: Downloading https://files.pythonhosted.org/packages/95/2b/c26dc718d5e06d3475322bd53f1a344316daf8f4e8c83f734ea3193a2189/chunked-uploads-attentive-0.0.1.tar.gz
+[2023-04-10 12:33:49] INFO root fetch - processPackages [cm-two]: Downloading https://files.pythonhosted.org/packages/8d/e5/138d022509083aeb4060ad7ebadb4b5b1cd87629c2e01af25e974ce35705/cm_two-2.2.4-py3-none-any.whl
+[2023-04-10 12:33:49] INFO root fetch - processPackages [tinybird-cli]: Downloading https://files.pythonhosted.org/packages/cf/bc/f6fe2aa48ad97fc6f03b105a263497f0cc5d7173fa89703bbc609c18f13a/tinybird-cli-1.0.0b98.tar.gz
+[2023-04-10 12:33:49] INFO root fetch - processPackages [chunked-uploads-attentive]: Downloading https://files.pythonhosted.org/packages/9a/09/0557dcd51cc9d539b114d9005449eeeddc176b3df666bb0d2334b04166c4/chunked-uploads-attentive-0.0.2.tar.gz
+[2023-04-10 12:33:49] INFO root fetch - processPackages [goby-sdk]: Downloading https://files.pythonhosted.org/packages/53/2e/a236e71007ff99defc571e390b37103d281fe142f67ff754f4459398db4d/goby_sdk-1.0.3.tar.gz
+[2023-04-10 12:33:49] INFO root fetch - processPackages [chunked-uploads-attentive]: executing diffoscope
+[2023-04-10 12:33:49] INFO root fetch - processPackages [chunked-uploads-attentive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chunked-uploads-attentive-0.0.1.tar.gz tmp/chunked-uploads-attentive-0.0.2.tar.gz --markdown 20230410/c/chunked-uploads-attentive/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 12:33:49] INFO root fetch - processPackages [goby-sdk]: executing diffoscope
+[2023-04-10 12:33:49] INFO root fetch - processPackages [goby-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goby_sdk-1.0.1.tar.gz tmp/goby_sdk-1.0.3.tar.gz --markdown 20230410/g/goby-sdk/1.0.1-1.0.3/diff.md --exclude *.pyd
+[2023-04-10 12:33:49] INFO root fetch - processPackages [cm-two]: Downloading https://files.pythonhosted.org/packages/9e/66/1cd91e9d8e23b64bc2a4c8e583cfedcbccc119183677925b62b689d27f0c/cm_two-2.2.5-py3-none-any.whl
+[2023-04-10 12:33:49] INFO root fetch - processPackages [tinybird-cli]: Downloading https://files.pythonhosted.org/packages/6a/27/a5d411f1a02b44b9f386c7d18397784dcaa5fe1129d9a77e87a5e048edc5/tinybird-cli-1.0.0b99.tar.gz
+[2023-04-10 12:33:50] INFO root fetch - processPackages [cm-two]: executing diffoscope
+[2023-04-10 12:33:50] INFO root fetch - processPackages [cm-two]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cm_two-2.2.4-py3-none-any.whl.zip tmp/cm_two-2.2.5-py3-none-any.whl.zip --markdown 20230410/c/cm-two/2.2.4-2.2.5/diff.md --exclude *.pyd
+[2023-04-10 12:33:50] INFO root fetch - processPackages [tinybird-cli]: executing diffoscope
+[2023-04-10 12:33:50] INFO root fetch - processPackages [tinybird-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinybird-cli-1.0.0b98.tar.gz tmp/tinybird-cli-1.0.0b99.tar.gz --markdown 20230410/t/tinybird-cli/1.0.0b98-1.0.0b99/diff.md --exclude *.pyd
+[2023-04-10 12:33:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:33:50] INFO root fetch - processPackages [streamlit-lightweight-charts]: New version: [0.7.19] Old Version: [0.7.18]
+[2023-04-10 12:33:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:33:50] INFO root fetch - processPackages [kustosz]: New version: [23.4.0] Old Version: [22.8.0]
+[2023-04-10 12:33:50] INFO root fetch - processPackages [streamlit-lightweight-charts]: Downloading https://files.pythonhosted.org/packages/92/9e/8347d4a9cf5a01c3903ef344824a3b00b9df1ecb2834a84cc00150d46d81/streamlit-lightweight-charts-0.7.19.tar.gz
+[2023-04-10 12:33:50] INFO root fetch - processPackages [streamlit-lightweight-charts]: executing diffoscope
+[2023-04-10 12:33:50] INFO root fetch - processPackages [streamlit-lightweight-charts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-lightweight-charts-0.7.18.tar.gz tmp/streamlit-lightweight-charts-0.7.19.tar.gz --markdown 20230410/s/streamlit-lightweight-charts/0.7.18-0.7.19/diff.md --exclude *.pyd
+[2023-04-10 12:33:50] INFO root fetch - processPackages [kustosz]: Downloading https://files.pythonhosted.org/packages/58/8d/a438c09bdf2c05c51a9bf2a86b2ae9177e3cb9b05c6534536b9c98b41931/kustosz-22.8.0.tar.gz
+[2023-04-10 12:33:51] ERROR root fetch - processPackages [cm-two]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+[2023-04-10 12:33:51] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:33:51] INFO root fetch - processPackages [zimran-events]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 12:33:51] INFO root fetch - processPackages [kustosz]: Downloading https://files.pythonhosted.org/packages/3e/cf/f10ce0167927b41363b7644899595a409b900418b3b2c5333f5cc7a8fbb2/kustosz-23.4.0.tar.gz
+[2023-04-10 12:33:51] INFO root fetch - processPackages [kustosz]: executing diffoscope
+[2023-04-10 12:33:51] INFO root fetch - processPackages [kustosz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kustosz-22.8.0.tar.gz tmp/kustosz-23.4.0.tar.gz --markdown 20230410/k/kustosz/22.8.0-23.4.0/diff.md --exclude *.pyd
+[2023-04-10 12:33:51] INFO root fetch - processPackages [zimran-events]: Downloading https://files.pythonhosted.org/packages/66/2a/82cb67628fa04af8d4b825a83c38f9715ae0fc0bbdeed3bcdc0b6d1d3514/zimran-events-0.0.1.tar.gz
+[2023-04-10 12:33:51] INFO root fetch - processPackages [zimran-events]: Downloading https://files.pythonhosted.org/packages/4e/5b/ece973df047cc00ddc9e011ff4e47fdeebce7ccc0a90513d039a378f835e/zimran-events-0.0.2.tar.gz
+[2023-04-10 12:33:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:33:51] INFO root fetch - processPackages [zimran-events]: executing diffoscope
+[2023-04-10 12:33:51] INFO root fetch - processPackages [zimran-events]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zimran-events-0.0.1.tar.gz tmp/zimran-events-0.0.2.tar.gz --markdown 20230410/z/zimran-events/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 12:33:51] INFO root fetch - processPackages [leetcode-cracker]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 12:33:51] INFO root fetch - processPackages [leetcode-cracker]: Downloading https://files.pythonhosted.org/packages/7d/02/42eaaeafa8853247378c145634762a1c130fe2f0945393f683b8419da990/leetcode_cracker-0.0.2.tar.gz
+[2023-04-10 12:33:51] INFO root fetch - processPackages [leetcode-cracker]: Downloading https://files.pythonhosted.org/packages/ca/88/19b03a3e4d2699c78be2256534a6312a30d21dbc30f2b78f17824987b80d/leetcode_cracker-0.0.3.tar.gz
+[2023-04-10 12:33:51] INFO root fetch - processPackages [leetcode-cracker]: executing diffoscope
+[2023-04-10 12:33:51] INFO root fetch - processPackages [leetcode-cracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leetcode_cracker-0.0.2.tar.gz tmp/leetcode_cracker-0.0.3.tar.gz --markdown 20230410/l/leetcode-cracker/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 12:33:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:33:52] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 12:33:52] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: executing diffoscope
+[2023-04-10 12:33:52] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-provider-huawei-cloud-demo-0.0.8.tar.gz tmp/airflow-provider-huawei-cloud-demo-0.0.9.tar.gz --markdown 20230410/a/airflow-provider-huawei-cloud-demo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 12:33:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:33:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:33:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:33:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:33:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:33:53] INFO root fetch - main [MainThread]: Store serial: [17645053]
