@@ -14647,3 +14647,56 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 21:21:06] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:21:07] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:21:07] INFO root fetch - main [MainThread]: Store serial: [17649536]
+[2023-04-10 21:26:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649536]
+[2023-04-10 21:26:15] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 21:26:15] INFO root fetch - processPackages [ediri-azapi]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-04-10 21:26:15] INFO root fetch - processPackages [gpush]: New version: [2.0.0] Old Version: [1.1.1]
+[2023-04-10 21:26:15] INFO root fetch - processPackages [circuitpython-async-button]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-10 21:26:15] WARNING root fetch - processPackages [odoo-addon-sale-coupon-order-suggestion]: Skipping, unable to determine old version
+[2023-04-10 21:26:15] INFO root fetch - main [MainThread]: error
+[2023-04-10 21:26:15] INFO root fetch - processPackages [retry-extended]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 21:26:15] INFO root fetch - processPackages [f4]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-10 21:26:16] INFO root fetch - processPackages [ediri-azapi]: Downloading https://files.pythonhosted.org/packages/86/f8/9d692f9656c4e98523c623918697b0e7f19b2ed7ea9a0e9772576c117061/ediri_azapi-1.4.0.tar.gz
+[2023-04-10 21:26:16] INFO root fetch - processPackages [retry-extended]: Downloading https://files.pythonhosted.org/packages/e7/ec/dfa532a5362894f673294f01fdfd1b257bb390ca979dabed4d55efc26497/retry_extended-0.2.2.tar.gz
+[2023-04-10 21:26:16] INFO root fetch - processPackages [circuitpython-async-button]: Downloading https://files.pythonhosted.org/packages/7d/7e/f573b324bb830bd768d936e3fff873f8700acc0e24f42bb1813ec13773a2/circuitpython-async-button-1.1.0.tar.gz
+[2023-04-10 21:26:16] INFO root fetch - processPackages [gpush]: Downloading https://files.pythonhosted.org/packages/f6/36/954915bad0b790c79a44e781fd95b103a57e857cd0af426361ca0425757c/gpush-2.0.0.tar.gz
+[2023-04-10 21:26:16] INFO root fetch - processPackages [retry-extended]: executing diffoscope
+[2023-04-10 21:26:16] INFO root fetch - processPackages [retry-extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retry_extended-0.2.1.tar.gz tmp/retry_extended-0.2.2.tar.gz --markdown 20230410/r/retry-extended/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 21:26:16] INFO root fetch - processPackages [f4]: Downloading https://files.pythonhosted.org/packages/ee/96/2f20dbcb75284a2cb6421bcc710bbddb36769d75ce5116a99f7f6817af09/f4-0.4.1.tar.gz
+[2023-04-10 21:26:16] INFO root fetch - processPackages [ediri-azapi]: Downloading https://files.pythonhosted.org/packages/b1/23/d2130dfa8b1628d6d63f9fd6c39272ade3f8876cef9f3891fd7690e000e8/ediri_azapi-1.5.0.tar.gz
+[2023-04-10 21:26:16] INFO root fetch - processPackages [gpush]: executing diffoscope
+[2023-04-10 21:26:16] INFO root fetch - processPackages [gpush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpush-1.1.1.tar.gz tmp/gpush-2.0.0.tar.gz --markdown 20230410/g/gpush/1.1.1-2.0.0/diff.md --exclude *.pyd
+[2023-04-10 21:26:16] INFO root fetch - processPackages [f4]: Downloading https://files.pythonhosted.org/packages/f2/1a/91c9532021cc1c732bd80def49bcef384518b83b425786f3eddbb654ccde/f4-0.4.2.tar.gz
+[2023-04-10 21:26:16] INFO root fetch - processPackages [circuitpython-async-button]: Downloading https://files.pythonhosted.org/packages/9b/e4/e6384d0b98ac5de37fb17a3038371f2fa8e1801161b80cadc94f54390bb1/circuitpython-async-button-1.2.0.tar.gz
+[2023-04-10 21:26:16] INFO root fetch - processPackages [ediri-azapi]: executing diffoscope
+[2023-04-10 21:26:16] INFO root fetch - processPackages [ediri-azapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_azapi-1.4.0.tar.gz tmp/ediri_azapi-1.5.0.tar.gz --markdown 20230410/e/ediri-azapi/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-04-10 21:26:16] INFO root fetch - processPackages [f4]: executing diffoscope
+[2023-04-10 21:26:16] INFO root fetch - processPackages [f4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/f4-0.4.1.tar.gz tmp/f4-0.4.2.tar.gz --markdown 20230410/f/f4/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-10 21:26:16] INFO root fetch - processPackages [circuitpython-async-button]: executing diffoscope
+[2023-04-10 21:26:16] INFO root fetch - processPackages [circuitpython-async-button]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-async-button-1.1.0.tar.gz tmp/circuitpython-async-button-1.2.0.tar.gz --markdown 20230410/c/circuitpython-async-button/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-10 21:26:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:26:17] INFO root fetch - processPackages [dkist-data-simulator]: New version: [3.1.4] Old Version: [3.1.3]
+[2023-04-10 21:26:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:26:17] INFO root fetch - processPackages [pepelimpiezas]: New version: [0.3] Old Version: [0.2]
+[2023-04-10 21:26:17] INFO root fetch - processPackages [dkist-data-simulator]: Downloading https://files.pythonhosted.org/packages/87/89/c13a1eeb7ac247966e7c97860f4d57d998f97fb7926a3ddec66a093b5432/dkist_data_simulator-3.1.3.tar.gz
+[2023-04-10 21:26:17] INFO root fetch - processPackages [pepelimpiezas]: Downloading https://files.pythonhosted.org/packages/70/f4/3b51d8aa475b49f0f7ce831daf6c798d406dc0835a8f476b25827a139140/pepelimpiezas-0.3.tar.gz
+[2023-04-10 21:26:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:26:17] INFO root fetch - processPackages [pepelimpiezas]: executing diffoscope
+[2023-04-10 21:26:17] INFO root fetch - processPackages [pepelimpiezas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepelimpiezas-0.2.tar.gz tmp/pepelimpiezas-0.3.tar.gz --markdown 20230410/p/pepelimpiezas/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-10 21:26:17] INFO root fetch - processPackages [chelydra]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-10 21:26:17] INFO root fetch - processPackages [dkist-data-simulator]: Downloading https://files.pythonhosted.org/packages/7b/2d/6f60f97e8b3e5cf793938cb6292d60e912cf9567dda0075954ef7c0e945b/dkist_data_simulator-3.1.4.tar.gz
+[2023-04-10 21:26:17] INFO root fetch - processPackages [chelydra]: Downloading https://files.pythonhosted.org/packages/2b/4a/0c1d826f5eca4aff047da0c4a2e9c11aa286f78786275e50a9c9e5fb97fb/chelydra-0.0.4.tar.gz
+[2023-04-10 21:26:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:26:17] INFO root fetch - processPackages [dkist-data-simulator]: executing diffoscope
+[2023-04-10 21:26:17] INFO root fetch - processPackages [dkist-data-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist_data_simulator-3.1.3.tar.gz tmp/dkist_data_simulator-3.1.4.tar.gz --markdown 20230410/d/dkist-data-simulator/3.1.3-3.1.4/diff.md --exclude *.pyd
+[2023-04-10 21:26:17] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.5] Old Version: [0.18.4]
+[2023-04-10 21:26:17] INFO root fetch - processPackages [chelydra]: executing diffoscope
+[2023-04-10 21:26:17] INFO root fetch - processPackages [chelydra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chelydra-0.0.2.tar.gz tmp/chelydra-0.0.4.tar.gz --markdown 20230410/c/chelydra/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 21:26:18] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-10 21:26:18] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.4.tar.gz tmp/gptdeploy-0.18.5.tar.gz --markdown 20230410/g/gptdeploy/0.18.4-0.18.5/diff.md --exclude *.pyd
+[2023-04-10 21:26:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:26:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:26:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:26:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:26:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:26:22] INFO root fetch - main [MainThread]: Store serial: [17649565]
