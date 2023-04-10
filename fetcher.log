@@ -6633,3 +6633,35 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 10:34:55] INFO root fetch - main [MainThread]: success
 [2023-04-10 10:34:56] INFO root fetch - main [MainThread]: success
 [2023-04-10 10:34:56] INFO root fetch - main [MainThread]: Store serial: [17644265]
+[2023-04-10 10:40:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644265]
+[2023-04-10 10:40:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 10:40:05] INFO root fetch - processPackages [httpx-cache]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 10:40:05] INFO root fetch - processPackages [algospace]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-10 10:40:05] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: New version: [2.1.0.dev3871883101] Old Version: [2.0.0.dev4655969641]
+[2023-04-10 10:40:05] WARNING root fetch - processPackages [package-wish]: Skipping, unable to determine old version
+[2023-04-10 10:40:05] INFO root fetch - main [MainThread]: error
+[2023-04-10 10:40:05] INFO root fetch - processPackages [exodusutils]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-10 10:40:05] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-10 10:40:05] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: Downloading https://files.pythonhosted.org/packages/23/8d/df9f660eaa30fcb18ec2b55fe6630ea55ffd7cc350c3d779219192decde3/th2_grpc_lw_data_provider-2.0.0.dev4655969641.tar.gz
+[2023-04-10 10:40:05] INFO root fetch - processPackages [exodusutils]: executing diffoscope
+[2023-04-10 10:40:05] INFO root fetch - processPackages [exodusutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exodusutils-0.3.7.tar.gz tmp/exodusutils-0.3.9.tar.gz --markdown 20230410/e/exodusutils/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-10 10:40:05] INFO root fetch - processPackages [httpx-cache]: Downloading https://files.pythonhosted.org/packages/b3/39/7b45d452862f014d4477d5c28dba76b3ec74c511b648b0bb1b2d2a3a99ef/httpx_cache-0.8.0.tar.gz
+[2023-04-10 10:40:05] INFO root fetch - processPackages [algospace]: Downloading https://files.pythonhosted.org/packages/83/48/738edec3a4fcdc7750912bafb06f4c7c980e5833746afbae84fd2b599c14/algospace-0.4.3.tar.gz
+[2023-04-10 10:40:05] INFO root fetch - processPackages [code-loader]: Downloading https://files.pythonhosted.org/packages/2b/01/67f0774553562f5ae0a08a3b821df90162bf956d036fab47342f443911f4/code-loader-0.2.8.tar.gz
+[2023-04-10 10:40:05] INFO root fetch - processPackages [algospace]: Downloading https://files.pythonhosted.org/packages/9a/33/0e71bd8c9f1dfcb44b46a090580a80071eee709f6d36ffd0436ab4c4ad2d/algospace-0.4.4.tar.gz
+[2023-04-10 10:40:05] INFO root fetch - processPackages [httpx-cache]: Downloading https://files.pythonhosted.org/packages/6b/8f/b7db1a3faca267d04ed8ccec8b64a56ac2bc5c9a1dae41752f5c6364f12f/httpx_cache-0.9.0.tar.gz
+[2023-04-10 10:40:05] INFO root fetch - processPackages [algospace]: executing diffoscope
+[2023-04-10 10:40:05] INFO root fetch - processPackages [algospace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algospace-0.4.3.tar.gz tmp/algospace-0.4.4.tar.gz --markdown 20230410/a/algospace/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-10 10:40:05] INFO root fetch - processPackages [httpx-cache]: executing diffoscope
+[2023-04-10 10:40:05] INFO root fetch - processPackages [httpx-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpx_cache-0.8.0.tar.gz tmp/httpx_cache-0.9.0.tar.gz --markdown 20230410/h/httpx-cache/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 10:40:05] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: executing diffoscope
+[2023-04-10 10:40:05] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_grpc_lw_data_provider-2.0.0.dev4655969641.tar.gz tmp/th2_grpc_lw_data_provider-2.1.0.dev3871883101.tar.gz --markdown 20230410/t/th2-grpc-lw-data-provider/2.0.0.dev4655969641-2.1.0.dev3871883101/diff.md --exclude *.pyd
+[2023-04-10 10:40:05] INFO root fetch - processPackages [code-loader]: Downloading https://files.pythonhosted.org/packages/23/3d/c50351675c5df1eec25c494b3e7b9f9b516c43bd5d3db8cc4447604a8f74/code-loader-0.2.9.tar.gz
+[2023-04-10 10:40:06] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-04-10 10:40:06] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230410/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 10:40:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:40:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:40:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:40:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:40:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:40:07] INFO root fetch - main [MainThread]: Store serial: [17644283]
