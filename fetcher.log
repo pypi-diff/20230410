@@ -13463,3 +13463,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 19:44:34] INFO root fetch - main [MainThread]: success
 [2023-04-10 19:44:37] INFO root fetch - main [MainThread]: success
 [2023-04-10 19:44:37] INFO root fetch - main [MainThread]: Store serial: [17648750]
+[2023-04-10 19:44:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17648750]
+[2023-04-10 19:45:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-10 19:45:04] INFO root fetch - processPackages [rocksnot]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-10 19:45:04] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-10 19:45:04] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev3] Old Version: [4.0.0.dev2]
+[2023-04-10 19:45:04] INFO root fetch - processPackages [httpdbg]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-04-10 19:45:04] INFO root fetch - processPackages [dp4plus-app]: New version: [0.1.1] Old Version: [0.0.21]
+[2023-04-10 19:45:04] INFO root fetch - processPackages [rocksnot]: Downloading https://files.pythonhosted.org/packages/0d/7f/fc75895cd06f345314a8e90794f42053334b477f2397966035fcaf788430/rocksnot-0.0.6.tar.gz
+[2023-04-10 19:45:04] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/d6/c0/8412600d01de28dac29fc7f2821e1c045150709439ee3cb7a4fd3bce8312/aim-ui-4.0.0.dev2.tar.gz
+[2023-04-10 19:45:04] INFO root fetch - processPackages [httpdbg]: Downloading https://files.pythonhosted.org/packages/1b/a3/7ed2c38b442075d27c204ae158c8a5530b5bc2a235e643230cc563cf6229/httpdbg-0.8.5.tar.gz
+[2023-04-10 19:45:04] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: Downloading https://files.pythonhosted.org/packages/30/22/e55bbd4b59b16e16f380a20584355f42654e2f4f68c18262e983ec77cefa/nonebot_plugin_sdgpt-0.1.7.tar.gz
+[2023-04-10 19:45:04] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 27060349>=10485760
+[2023-04-10 19:45:04] INFO root fetch - main [MainThread]: error
+[2023-04-10 19:45:04] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: executing diffoscope
+[2023-04-10 19:45:04] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sdgpt-0.1.6.tar.gz tmp/nonebot_plugin_sdgpt-0.1.7.tar.gz --markdown 20230410/n/nonebot-plugin-sdgpt/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-10 19:45:04] INFO root fetch - processPackages [dp4plus-app]: Downloading https://files.pythonhosted.org/packages/cc/95/dd141e9c6efaa1bdded9ded47050a17a36016f5b718bba3ee24519708824/dp4plus_app-0.0.21.tar.gz
+[2023-04-10 19:45:05] INFO root fetch - processPackages [rocksnot]: Downloading https://files.pythonhosted.org/packages/1a/e6/3f1db01a1ec826bde4cb46ec5f83a1bce293e390fd7af28a02cff1db463c/rocksnot-0.0.7.tar.gz
+[2023-04-10 19:45:05] INFO root fetch - processPackages [httpdbg]: Downloading https://files.pythonhosted.org/packages/b7/73/efb34ac06e425eb86724d0adc4860d55bd8a6ef41114ccd9bd3d400e2dc7/httpdbg-0.9.0.tar.gz
+[2023-04-10 19:45:05] INFO root fetch - processPackages [rocksnot]: executing diffoscope
+[2023-04-10 19:45:05] INFO root fetch - processPackages [rocksnot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocksnot-0.0.6.tar.gz tmp/rocksnot-0.0.7.tar.gz --markdown 20230410/r/rocksnot/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-10 19:45:05] INFO root fetch - processPackages [httpdbg]: executing diffoscope
+[2023-04-10 19:45:05] INFO root fetch - processPackages [httpdbg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpdbg-0.8.5.tar.gz tmp/httpdbg-0.9.0.tar.gz --markdown 20230410/h/httpdbg/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 19:45:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:45:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:45:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:45:07] INFO root fetch - processPackages [dp4plus-app]: Downloading https://files.pythonhosted.org/packages/c1/14/14dad7c28a9d453846a49498fce7216c5fdf4e7008557f861f5712cb83ba/dp4plus_app-0.1.1-py3-none-any.whl
+[2023-04-10 19:45:10] INFO root fetch - processPackages [dp4plus-app]: executing diffoscope
+[2023-04-10 19:45:10] INFO root fetch - processPackages [dp4plus-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dp4plus_app-0.0.21.tar.gz tmp/dp4plus_app-0.1.1-py3-none-any.whl.zip --markdown 20230410/d/dp4plus-app/0.0.21-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 19:45:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:45:11] INFO root fetch - main [MainThread]: Store serial: [17648763]
