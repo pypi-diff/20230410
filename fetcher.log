@@ -4163,3 +4163,15 @@ EOFError: EOF read where object expected
 [2023-04-10 05:34:55] INFO root fetch - main [MainThread]: success
 [2023-04-10 05:34:56] INFO root fetch - main [MainThread]: success
 [2023-04-10 05:34:56] INFO root fetch - main [MainThread]: Store serial: [17642453]
+[2023-04-10 05:39:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642453]
+[2023-04-10 05:40:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-10 05:40:03] INFO root fetch - processPackages [memory-compressed-attention]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-10 05:40:03] WARNING root fetch - processPackages [thread-bySean]: Skipping, unable to determine old version
+[2023-04-10 05:40:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:40:03] WARNING root fetch - processPackages [aish]: Skipping, unable to determine old version
+[2023-04-10 05:40:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:40:03] INFO root fetch - processPackages [memory-compressed-attention]: Downloading https://files.pythonhosted.org/packages/c8/89/a787e9c44144c0c73c295ca634715df1e267408bd88844cf902733dc8d19/memory_compressed_attention-0.0.7.tar.gz
+[2023-04-10 05:40:04] INFO root fetch - processPackages [memory-compressed-attention]: executing diffoscope
+[2023-04-10 05:40:04] INFO root fetch - processPackages [memory-compressed-attention]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memory_compressed_attention-0.0.6.tar.gz tmp/memory_compressed_attention-0.0.7.tar.gz --markdown 20230410/m/memory-compressed-attention/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-10 05:40:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:40:05] INFO root fetch - main [MainThread]: Store serial: [17642464]
