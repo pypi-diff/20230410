@@ -11477,3 +11477,78 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 17:06:57] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.13.0.dev20230409-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.13.0.dev20230410-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230410/t/tensorflow-text-nightly/2.13.0.dev20230409-2.13.0.dev20230410/diff.md --exclude *.pyd
 [2023-04-10 17:06:59] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:06:59] INFO root fetch - main [MainThread]: Store serial: [17647188]
+[2023-04-10 17:12:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647188]
+[2023-04-10 17:12:06] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-10 17:12:06] INFO root fetch - processPackages [utbot-executor]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-04-10 17:12:06] INFO root fetch - processPackages [pepperize.cdk-security-group]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 17:12:06] INFO root fetch - processPackages [novadata-utils]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 17:12:06] INFO root fetch - processPackages [espaco-exclusivo-package]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 17:12:06] INFO root fetch - processPackages [FlexGet]: New version: [3.6.0] Old Version: [3.5.9]
+[2023-04-10 17:12:06] INFO root fetch - processPackages [utbot-executor]: Downloading https://files.pythonhosted.org/packages/8b/97/5d5c63c429533c4aa0a48bfdc3a3a4423f3a2938fbcd3723ed4e5b102975/utbot_executor-1.5.3.tar.gz
+[2023-04-10 17:12:07] INFO root fetch - processPackages [novadata-utils]: Downloading https://files.pythonhosted.org/packages/c8/e5/8536dabb72b9b9ae840f48d086fb7542ce8c4ebdda0ce0ad72a852220933/novadata_utils-0.2.2.tar.gz
+[2023-04-10 17:12:07] INFO root fetch - processPackages [pepperize.cdk-security-group]: Downloading https://files.pythonhosted.org/packages/51/98/1c396781b2a6e81d75ff16359a412509fb0b2e194622172459fdd5a259e9/pepperize.cdk-security-group-0.0.98.tar.gz
+[2023-04-10 17:12:07] INFO root fetch - processPackages [espaco-exclusivo-package]: Downloading https://files.pythonhosted.org/packages/8b/32/53037070cd534af896d5e69b9c7e5480c791764898c8bc874bb8b0dd3d5e/espaco_exclusivo_package-0.1.8.tar.gz
+[2023-04-10 17:12:07] INFO root fetch - processPackages [FlexGet]: Downloading https://files.pythonhosted.org/packages/7b/92/3a68c8bd63be612a1da0f79415cb2d40bb842f1d4066289676062c874f9d/FlexGet-3.5.9.tar.gz
+[2023-04-10 17:12:07] INFO root fetch - processPackages [novadata-utils]: executing diffoscope
+[2023-04-10 17:12:07] INFO root fetch - processPackages [novadata-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novadata_utils-0.2.1.tar.gz tmp/novadata_utils-0.2.2.tar.gz --markdown 20230410/n/novadata-utils/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 17:12:07] INFO root fetch - processPackages [utbot-executor]: Downloading https://files.pythonhosted.org/packages/97/4a/f5c784acbaa673caf18b449cbfb9dc4bb5b9386b7f992857d34d1d78fbe6/utbot_executor-1.5.4.tar.gz
+[2023-04-10 17:12:07] INFO root fetch - processPackages [utbot-executor]: executing diffoscope
+[2023-04-10 17:12:07] INFO root fetch - processPackages [utbot-executor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utbot_executor-1.5.3.tar.gz tmp/utbot_executor-1.5.4.tar.gz --markdown 20230410/u/utbot-executor/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-04-10 17:12:07] INFO root fetch - processPackages [pepperize.cdk-security-group]: Downloading https://files.pythonhosted.org/packages/f9/44/84eb1aff085a41b99d2fbf0824481285bc3007b7c318e9a646a4802ce199/pepperize.cdk-security-group-0.0.99.tar.gz
+[2023-04-10 17:12:07] INFO root fetch - processPackages [espaco-exclusivo-package]: Downloading https://files.pythonhosted.org/packages/e3/fd/52452d064cec2e3002f91559bd68dfd1353f60185fc63dcb3a9923b9a3eb/espaco_exclusivo_package-0.1.9.tar.gz
+[2023-04-10 17:12:07] INFO root fetch - processPackages [pepperize.cdk-security-group]: executing diffoscope
+[2023-04-10 17:12:07] INFO root fetch - processPackages [pepperize.cdk-security-group]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-security-group-0.0.98.tar.gz tmp/pepperize.cdk-security-group-0.0.99.tar.gz --markdown 20230410/p/pepperize.cdk-security-group/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 17:12:07] INFO root fetch - processPackages [espaco-exclusivo-package]: executing diffoscope
+[2023-04-10 17:12:07] INFO root fetch - processPackages [espaco-exclusivo-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espaco_exclusivo_package-0.1.8.tar.gz tmp/espaco_exclusivo_package-0.1.9.tar.gz --markdown 20230410/e/espaco-exclusivo-package/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 17:12:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:08] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-04-10 17:12:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:08] INFO root fetch - processPackages [pyreal]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-04-10 17:12:08] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/f3/8c/31827f81a5d312ec9433b1eeaa9d77a560a03a70835765b94edf3469f6ec/so_vits_svc_fork-3.1.9.tar.gz
+[2023-04-10 17:12:08] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-10 17:12:08] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.1.8.tar.gz tmp/so_vits_svc_fork-3.1.9.tar.gz --markdown 20230410/s/so-vits-svc-fork/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-04-10 17:12:08] INFO root fetch - processPackages [pyreal]: Downloading https://files.pythonhosted.org/packages/76/5b/5bf938a4cce8f2c683543517c7cece799d10595d7d75c1b890343dbbc9b9/pyreal-0.3.2.tar.gz
+[2023-04-10 17:12:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:08] INFO root fetch - processPackages [altair-express]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 17:12:08] INFO root fetch - processPackages [altair-express]: Downloading https://files.pythonhosted.org/packages/27/e1/09689dd75020bc57e5d5146816f4ba49dceff6f1047483f74290014cc993/altair_express-0.1.8.tar.gz
+[2023-04-10 17:12:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:09] INFO root fetch - processPackages [napari-blender-bridge]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-10 17:12:09] INFO root fetch - processPackages [napari-blender-bridge]: Downloading https://files.pythonhosted.org/packages/ee/19/1ee4f0afc24b1c82f7441d4d4a94fd61df4f85bae0a7553c2a715a6a956b/napari-blender-bridge-0.1.2.tar.gz
+[2023-04-10 17:12:09] INFO root fetch - processPackages [pyreal]: Downloading https://files.pythonhosted.org/packages/d5/08/de35cf9f44b3f67b0056be7d4a10c118fc20b7230e850db91c27cbf997ab/pyreal-0.4.0.tar.gz
+[2023-04-10 17:12:09] INFO root fetch - processPackages [pyreal]: executing diffoscope
+[2023-04-10 17:12:09] INFO root fetch - processPackages [pyreal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyreal-0.3.2.tar.gz tmp/pyreal-0.4.0.tar.gz --markdown 20230410/p/pyreal/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-04-10 17:12:09] INFO root fetch - processPackages [altair-express]: Downloading https://files.pythonhosted.org/packages/04/0f/0eebf956ca953cec9fef71c1a2bccbdcdc4b3db5866d3459e3c1912617c3/altair_express-0.1.9.tar.gz
+[2023-04-10 17:12:09] INFO root fetch - processPackages [altair-express]: executing diffoscope
+[2023-04-10 17:12:09] INFO root fetch - processPackages [altair-express]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altair_express-0.1.8.tar.gz tmp/altair_express-0.1.9.tar.gz --markdown 20230410/a/altair-express/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 17:12:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:09] INFO root fetch - processPackages [poe-web-client]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 17:12:09] WARNING root fetch - processPackages [napari-blender-bridge]: Skipping package: exceeds size limit 14337756>=10485760
+[2023-04-10 17:12:09] INFO root fetch - main [MainThread]: error
+[2023-04-10 17:12:09] INFO root fetch - processPackages [poe-web-client]: Downloading https://files.pythonhosted.org/packages/8e/3e/9652019e596ec89df5743e5bc8e5ec973f585cf9ea25e62d207242e70e71/poe-web-client-0.0.4.tar.gz
+[2023-04-10 17:12:09] INFO root fetch - processPackages [recon-lw]: New version: [2.0.0.dev4658666204] Old Version: [2.0.0.dev4658240612]
+[2023-04-10 17:12:09] INFO root fetch - processPackages [poe-web-client]: executing diffoscope
+[2023-04-10 17:12:09] INFO root fetch - processPackages [poe-web-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poe-web-client-0.0.3.tar.gz tmp/poe-web-client-0.0.4.tar.gz --markdown 20230410/p/poe-web-client/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 17:12:10] INFO root fetch - processPackages [recon-lw]: Downloading https://files.pythonhosted.org/packages/b2/15/d39858141786c47ad364df810a520d7053762d19dee552e633ba225615eb/recon_lw-2.0.0.dev4658666204.tar.gz
+[2023-04-10 17:12:10] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2023-04-10 17:12:10] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-2.0.0.dev4658240612.tar.gz tmp/recon_lw-2.0.0.dev4658666204.tar.gz --markdown 20230410/r/recon-lw/2.0.0.dev4658240612-2.0.0.dev4658666204/diff.md --exclude *.pyd
+[2023-04-10 17:12:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:10] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 17:12:10] INFO root fetch - processPackages [simple-hierarchical-transformer]: Downloading https://files.pythonhosted.org/packages/7e/9e/f331494ec360c9523208570336a7adc2a21412f08141c279878dbfd802e1/simple-hierarchical-transformer-0.0.1.tar.gz
+[2023-04-10 17:12:10] INFO root fetch - processPackages [FlexGet]: Downloading https://files.pythonhosted.org/packages/27/a2/2bb8f760d09eab63ccaac31dbc05ab4a9d8a208b710e3ad3eaa20bebedbc/FlexGet-3.6.0.tar.gz
+[2023-04-10 17:12:11] INFO root fetch - processPackages [FlexGet]: executing diffoscope
+[2023-04-10 17:12:11] INFO root fetch - processPackages [FlexGet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlexGet-3.5.9.tar.gz tmp/FlexGet-3.6.0.tar.gz --markdown 20230410/F/FlexGet/3.5.9-3.6.0/diff.md --exclude *.pyd
+[2023-04-10 17:12:11] INFO root fetch - processPackages [simple-hierarchical-transformer]: Downloading https://files.pythonhosted.org/packages/e3/fd/ea8e10d6606d8440e7dbdb7376f94642e0675b27c0a1beac9e8c4cfb50c5/simple-hierarchical-transformer-0.0.2.tar.gz
+[2023-04-10 17:12:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:11] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-10 17:12:11] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.1.tar.gz tmp/simple-hierarchical-transformer-0.0.2.tar.gz --markdown 20230410/s/simple-hierarchical-transformer/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 17:12:11] INFO root fetch - processPackages [aliyun-python-sdk-iotcc]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-10 17:12:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:11] INFO root fetch - processPackages [aliyun-python-sdk-iotcc]: Downloading https://files.pythonhosted.org/packages/48/0b/04d3dce87f56dea842c9911179671c184377b601e44423e0e8a076d23ac6/aliyun-python-sdk-iotcc-2.0.4.tar.gz
+[2023-04-10 17:12:11] INFO root fetch - processPackages [aliyun-python-sdk-iotcc]: Downloading https://files.pythonhosted.org/packages/46/ec/0217d71d13acec6470a34aa17cbe0e8cf1d6d32952f11a0bb11e343917df/aliyun-python-sdk-iotcc-2.0.5.tar.gz
+[2023-04-10 17:12:12] INFO root fetch - processPackages [aliyun-python-sdk-iotcc]: executing diffoscope
+[2023-04-10 17:12:12] INFO root fetch - processPackages [aliyun-python-sdk-iotcc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-iotcc-2.0.4.tar.gz tmp/aliyun-python-sdk-iotcc-2.0.5.tar.gz --markdown 20230410/a/aliyun-python-sdk-iotcc/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-10 17:12:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:12:23] INFO root fetch - main [MainThread]: Store serial: [17647228]
