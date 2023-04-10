@@ -5547,3 +5547,35 @@ EOFError: EOF read where object expected
 [2023-04-10 08:43:10] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:43:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:43:36] INFO root fetch - main [MainThread]: Store serial: [17643527]
+[2023-04-10 08:48:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643527]
+[2023-04-10 08:48:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 08:48:45] INFO root fetch - processPackages [webtypy]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-10 08:48:45] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-10 08:48:45] INFO root fetch - processPackages [theoddsapi]: New version: [1.3.5] Old Version: [1.3.1]
+[2023-04-10 08:48:45] INFO root fetch - processPackages [vnpy-rqdata]: New version: [2.9.56.1] Old Version: [2.9.56.0]
+[2023-04-10 08:48:45] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-10 08:48:45] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-10 08:48:45] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230410/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 08:48:45] INFO root fetch - processPackages [webtypy]: Downloading https://files.pythonhosted.org/packages/6d/c8/72dcfc7dc2e3d3b8da80b3a8525247ae902b97a68982e5b9a0ecdd111ea2/webtypy-0.1.5.tar.gz
+[2023-04-10 08:48:45] INFO root fetch - processPackages [vnpy-rqdata]: Downloading https://files.pythonhosted.org/packages/83/09/84fad263e6044a40737519ea22f6b1d83356f465527b31fb685f39a80fe3/vnpy_rqdata-2.9.56.0.tar.gz
+[2023-04-10 08:48:45] INFO root fetch - processPackages [theoddsapi]: Downloading https://files.pythonhosted.org/packages/aa/ed/32aaa5dff6275b73363fcda950fefdcfb09f066c2f90b6562246d6a40dbe/theoddsapi-1.3.1.tar.gz
+[2023-04-10 08:48:46] INFO root fetch - processPackages [webtypy]: executing diffoscope
+[2023-04-10 08:48:46] INFO root fetch - processPackages [webtypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webtypy-0.1.4.tar.gz tmp/webtypy-0.1.5.tar.gz --markdown 20230410/w/webtypy/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-10 08:48:46] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-04-10 08:48:46] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230410/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 08:48:46] INFO root fetch - processPackages [vnpy-rqdata]: Downloading https://files.pythonhosted.org/packages/c8/10/737fcc52030f325623da6d98fcba3f1ee4963b60249e29eaa593012eade3/vnpy_rqdata-2.9.56.1.tar.gz
+[2023-04-10 08:48:46] INFO root fetch - processPackages [theoddsapi]: Downloading https://files.pythonhosted.org/packages/20/f4/02d048740c3f4fb0b05467ed3df883dbc8c6ed0815ed4387bb98f2c75cf1/theoddsapi-1.3.5.tar.gz
+[2023-04-10 08:48:46] INFO root fetch - processPackages [vnpy-rqdata]: executing diffoscope
+[2023-04-10 08:48:46] INFO root fetch - processPackages [vnpy-rqdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_rqdata-2.9.56.0.tar.gz tmp/vnpy_rqdata-2.9.56.1.tar.gz --markdown 20230410/v/vnpy-rqdata/2.9.56.0-2.9.56.1/diff.md --exclude *.pyd
+[2023-04-10 08:48:46] INFO root fetch - processPackages [theoddsapi]: executing diffoscope
+[2023-04-10 08:48:46] INFO root fetch - processPackages [theoddsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/theoddsapi-1.3.1.tar.gz tmp/theoddsapi-1.3.5.tar.gz --markdown 20230410/t/theoddsapi/1.3.1-1.3.5/diff.md --exclude *.pyd
+[2023-04-10 08:48:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:48:47] INFO root fetch - processPackages [quantplay]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-10 08:48:47] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2023-04-10 08:48:47] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.2.8.tar.gz tmp/quantplay-1.2.9.tar.gz --markdown 20230410/q/quantplay/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-10 08:48:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:48:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:48:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:48:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:48:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:48:48] INFO root fetch - main [MainThread]: Store serial: [17643545]
