@@ -8471,3 +8471,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 13:42:13] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:42:13] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:42:13] INFO root fetch - main [MainThread]: Store serial: [17645398]
+[2023-04-10 13:47:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645398]
+[2023-04-10 13:47:22] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-10 13:47:22] INFO root fetch - processPackages [zimran-events]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 13:47:22] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-10 13:47:22] INFO root fetch - processPackages [ruiwen-data-all]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-10 13:47:22] INFO root fetch - processPackages [spaceone-core]: New version: [1.9.7rc1] Old Version: [1.9.7.1]
+[2023-04-10 13:47:22] INFO root fetch - processPackages [pdm-backend]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-04-10 13:47:22] INFO root fetch - processPackages [pdm-backend]: Downloading https://files.pythonhosted.org/packages/d9/8e/47da696d34fceece5f46cac27f444e67740c69e42a031800e2585c4b974b/pdm_backend-2.0.5.tar.gz
+[2023-04-10 13:47:22] INFO root fetch - processPackages [ruiwen-data-all]: Downloading https://files.pythonhosted.org/packages/77/ee/f20d8b65930c7f8075591e518e8ee9cbfd228f061abb7ebdd4b984b6995c/ruiwen_data_all-2.0.2.tar.gz
+[2023-04-10 13:47:22] INFO root fetch - processPackages [zimran-events]: Downloading https://files.pythonhosted.org/packages/99/76/d007af833f1908aa9434e7685f59cadd60da74e98a13660e39f43dde2f32/zimran-events-0.0.4.tar.gz
+[2023-04-10 13:47:22] INFO root fetch - processPackages [spaceone-core]: executing diffoscope
+[2023-04-10 13:47:22] INFO root fetch - processPackages [spaceone-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_core-1.9.7.1-py3-none-any.whl.zip tmp/spaceone_core-1.9.7rc1-py3-none-any.whl.zip --markdown 20230410/s/spaceone-core/1.9.7.1-1.9.7rc1/diff.md --exclude *.pyd
+[2023-04-10 13:47:22] INFO root fetch - processPackages [zimran-events]: executing diffoscope
+[2023-04-10 13:47:22] INFO root fetch - processPackages [zimran-events]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zimran-events-0.0.3.tar.gz tmp/zimran-events-0.0.4.tar.gz --markdown 20230410/z/zimran-events/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 13:47:22] INFO root fetch - processPackages [ruiwen-data-all]: executing diffoscope
+[2023-04-10 13:47:22] INFO root fetch - processPackages [ruiwen-data-all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruiwen_data_all-2.0.1.tar.gz tmp/ruiwen_data_all-2.0.2.tar.gz --markdown 20230410/r/ruiwen-data-all/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-10 13:47:22] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: executing diffoscope
+[2023-04-10 13:47:22] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide6-Fluent-Widgets-0.6.8.tar.gz tmp/PySide6-Fluent-Widgets-0.6.9.tar.gz --markdown 20230410/P/PySide6-Fluent-Widgets/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-10 13:47:22] INFO root fetch - processPackages [pdm-backend]: Downloading https://files.pythonhosted.org/packages/3e/53/251901adf96d1d132a3855c93a520082ee168330814ebd3fcd11858fb9c7/pdm_backend-2.0.6.tar.gz
+[2023-04-10 13:47:22] INFO root fetch - processPackages [pdm-backend]: executing diffoscope
+[2023-04-10 13:47:22] INFO root fetch - processPackages [pdm-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm_backend-2.0.5.tar.gz tmp/pdm_backend-2.0.6.tar.gz --markdown 20230410/p/pdm-backend/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-04-10 13:47:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:23] INFO root fetch - processPackages [oarepo-model-builder]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-04-10 13:47:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:23] INFO root fetch - processPackages [fp-browser-sdk]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-10 13:47:23] INFO root fetch - processPackages [oarepo-model-builder]: executing diffoscope
+[2023-04-10 13:47:23] INFO root fetch - processPackages [oarepo-model-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-3.2.8.tar.gz tmp/oarepo-model-builder-3.2.9.tar.gz --markdown 20230410/o/oarepo-model-builder/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-04-10 13:47:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:23] INFO root fetch - processPackages [fp-browser-sdk]: Downloading https://files.pythonhosted.org/packages/96/45/98aafa7d4e478859387177eff4873255f11f6bb16ed394b1643078c8b765/fp_browser_sdk-0.8.3.tar.gz
+[2023-04-10 13:47:23] INFO root fetch - processPackages [ssbtoolkit]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 13:47:24] INFO root fetch - processPackages [fp-browser-sdk]: executing diffoscope
+[2023-04-10 13:47:24] INFO root fetch - processPackages [fp-browser-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fp_browser_sdk-0.8.2.tar.gz tmp/fp_browser_sdk-0.8.3.tar.gz --markdown 20230410/f/fp-browser-sdk/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-10 13:47:24] INFO root fetch - processPackages [ssbtoolkit]: Downloading https://files.pythonhosted.org/packages/d1/04/91c25bfaec61534e0957f727978c769141c5ba0b127f8a922743fb2a2cfc/ssbtoolkit-1.0.1.tar.gz
+[2023-04-10 13:47:24] INFO root fetch - processPackages [ssbtoolkit]: Downloading https://files.pythonhosted.org/packages/b7/a0/996a708791e34cfdeb97f8b5bffdcabe11595da1674f3b817219bcd0b381/ssbtoolkit-1.0.2.tar.gz
+[2023-04-10 13:47:24] INFO root fetch - processPackages [ssbtoolkit]: executing diffoscope
+[2023-04-10 13:47:24] INFO root fetch - processPackages [ssbtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssbtoolkit-1.0.1.tar.gz tmp/ssbtoolkit-1.0.2.tar.gz --markdown 20230410/s/ssbtoolkit/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 13:47:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:24] WARNING root fetch - processPackages [scrapautoscout]: Skipping, unable to determine old version
+[2023-04-10 13:47:24] INFO root fetch - main [MainThread]: error
+[2023-04-10 13:47:24] INFO root fetch - processPackages [abcd-seth]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 13:47:24] INFO root fetch - processPackages [abcd-seth]: executing diffoscope
+[2023-04-10 13:47:24] INFO root fetch - processPackages [abcd-seth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcd_seth-1.0.1.tar.gz tmp/abcd_seth-1.0.2.tar.gz --markdown 20230410/a/abcd-seth/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 13:47:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:25] INFO root fetch - processPackages [pqi]: New version: [3.0.0] Old Version: [2.0.6]
+[2023-04-10 13:47:25] INFO root fetch - processPackages [pqi]: Downloading https://files.pythonhosted.org/packages/33/a0/c446aed3d2a2aee6603baa430979c402859821a9bf02c23f59500171c9d2/pqi-2.0.6.tar.gz
+[2023-04-10 13:47:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:25] INFO root fetch - processPackages [hitchpylibrarytoolkit]: New version: [0.6.9] Old Version: [0.6.7]
+[2023-04-10 13:47:25] INFO root fetch - processPackages [hitchpylibrarytoolkit]: executing diffoscope
+[2023-04-10 13:47:25] INFO root fetch - processPackages [hitchpylibrarytoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitchpylibrarytoolkit-0.6.7.tar.gz tmp/hitchpylibrarytoolkit-0.6.9.tar.gz --markdown 20230410/h/hitchpylibrarytoolkit/0.6.7-0.6.9/diff.md --exclude *.pyd
+[2023-04-10 13:47:25] INFO root fetch - processPackages [pqi]: Downloading https://files.pythonhosted.org/packages/3b/b6/a9d7a0974266bd98d912e035be323b2a25195959ecec32d1cd24a514ba81/pqi-3.0.0.tar.gz
+[2023-04-10 13:47:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:25] INFO root fetch - processPackages [sysdweb]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-10 13:47:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:25] INFO root fetch - processPackages [pqi]: executing diffoscope
+[2023-04-10 13:47:25] INFO root fetch - processPackages [pqi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqi-2.0.6.tar.gz tmp/pqi-3.0.0.tar.gz --markdown 20230410/p/pqi/2.0.6-3.0.0/diff.md --exclude *.pyd
+[2023-04-10 13:47:25] INFO root fetch - processPackages [watchful]: New version: [3.5.0] Old Version: [3.0.0]
+[2023-04-10 13:47:25] INFO root fetch - processPackages [sysdweb]: Downloading https://files.pythonhosted.org/packages/bf/d6/38fe49367c066630878701688d8f238994769e31f2b6b4a895a1f5d760ba/sysdweb-1.1.4.tar.gz
+[2023-04-10 13:47:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:26] INFO root fetch - processPackages [watchful]: Downloading https://files.pythonhosted.org/packages/47/ab/eeab894a8ae2f2bbb42268b3ff6b8514e664ef4e4e827ed92c8d8587965a/watchful-3.0.0.tar.gz
+[2023-04-10 13:47:26] INFO root fetch - processPackages [watchful]: Downloading https://files.pythonhosted.org/packages/5f/de/336156aebedb30a58f19cffc29e700e0ec3c33addfbbfde3ff9d133a4400/watchful-3.5.0.tar.gz
+[2023-04-10 13:47:26] INFO root fetch - processPackages [sysdweb]: Downloading https://files.pythonhosted.org/packages/46/df/580b303bb4a087ce8a8629012b246382ada6921a50002d6b66c42ba60e36/sysdweb-1.1.5.tar.gz
+[2023-04-10 13:47:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:26] INFO root fetch - processPackages [watchful]: executing diffoscope
+[2023-04-10 13:47:26] INFO root fetch - processPackages [watchful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchful-3.0.0.tar.gz tmp/watchful-3.5.0.tar.gz --markdown 20230410/w/watchful/3.0.0-3.5.0/diff.md --exclude *.pyd
+[2023-04-10 13:47:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:26] INFO root fetch - processPackages [sysdweb]: executing diffoscope
+[2023-04-10 13:47:26] INFO root fetch - processPackages [sysdweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sysdweb-1.1.4.tar.gz tmp/sysdweb-1.1.5.tar.gz --markdown 20230410/s/sysdweb/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-10 13:47:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:47:27] INFO root fetch - main [MainThread]: Store serial: [17645441]
