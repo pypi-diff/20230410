@@ -839,3 +839,50 @@
 [2023-04-10 02:04:49] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:04:52] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:04:52] INFO root fetch - main [MainThread]: Store serial: [17640510]
+[2023-04-10 02:09:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640510]
+[2023-04-10 02:09:59] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 02:09:59] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 02:09:59] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc1.dev20230409] Old Version: [3.0.0rc1.dev20230408]
+[2023-04-10 02:09:59] INFO root fetch - processPackages [energinet-ml-sdk]: New version: [0.9.2.dev87] Old Version: [0.9.2.dev86]
+[2023-04-10 02:09:59] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.5.6] Old Version: [0.9.5.5]
+[2023-04-10 02:09:59] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 02:09:59] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 02:09:59] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-04-10 02:09:59] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230410/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 02:09:59] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-04-10 02:09:59] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc1.dev20230408.tar.gz tmp/openbb_nightly-3.0.0rc1.dev20230409.tar.gz --markdown 20230410/o/openbb-nightly/3.0.0rc1.dev20230408-3.0.0rc1.dev20230409/diff.md --exclude *.pyd
+[2023-04-10 02:09:59] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 02:09:59] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:09:59] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.2] Old Version: [0.18.1]
+[2023-04-10 02:09:59] INFO root fetch - processPackages [energinet-ml-sdk]: Downloading https://files.pythonhosted.org/packages/54/2b/db0e63d86ea785ca698c37a52630cc211b663e2977bc833709c06b244ffc/energinet-ml-sdk-0.9.2.dev86.tar.gz
+[2023-04-10 02:10:00] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/a0/c0/f5b2b683a3852881d9e73b253d6aa5b8c31e44a1a12473cf62d5bdcb959d/symbolicmode-0.9.5.6.tar.gz
+[2023-04-10 02:10:00] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-10 02:10:00] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.5.5.tar.gz tmp/symbolicmode-0.9.5.6.tar.gz --markdown 20230410/s/symbolicmode/0.9.5.5-0.9.5.6/diff.md --exclude *.pyd
+[2023-04-10 02:10:00] INFO root fetch - processPackages [gptdeploy]: Downloading https://files.pythonhosted.org/packages/23/a6/faff9577e195941dcf1b9d9925372bf2bcdebffd4764833f91696ab32d5f/gptdeploy-0.18.2.tar.gz
+[2023-04-10 02:10:00] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-10 02:10:00] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.1.tar.gz tmp/gptdeploy-0.18.2.tar.gz --markdown 20230410/g/gptdeploy/0.18.1-0.18.2/diff.md --exclude *.pyd
+[2023-04-10 02:10:00] INFO root fetch - processPackages [energinet-ml-sdk]: Downloading https://files.pythonhosted.org/packages/a4/cd/ab786482705c0a4d69973849d90bf6c223efe62005267478b29226bd0706/energinet-ml-sdk-0.9.2.dev87.tar.gz
+[2023-04-10 02:10:00] INFO root fetch - processPackages [energinet-ml-sdk]: executing diffoscope
+[2023-04-10 02:10:00] INFO root fetch - processPackages [energinet-ml-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energinet-ml-sdk-0.9.2.dev86.tar.gz tmp/energinet-ml-sdk-0.9.2.dev87.tar.gz --markdown 20230410/e/energinet-ml-sdk/0.9.2.dev86-0.9.2.dev87/diff.md --exclude *.pyd
+[2023-04-10 02:10:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:10:01] INFO root fetch - processPackages [gofish]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-04-10 02:10:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:10:01] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 02:10:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:10:01] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-10 02:10:01] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Downloading https://files.pythonhosted.org/packages/df/6c/78f1bfa2ffc81709ec21b0077aff92b7460ad1f071d595e2d767653cedc0/cdklabs.codepipeline-extensions-0.0.98.tar.gz
+[2023-04-10 02:10:01] WARNING root fetch - processPackages [cdklabs.codepipeline-extensions]: Skipping package: exceeds size limit 12637726>=10485760
+[2023-04-10 02:10:01] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:10:01] INFO root fetch - processPackages [gofish]: Downloading https://files.pythonhosted.org/packages/ac/18/75cfe16b82833af0d518ff6fd2a22c458d79d90ddbc2a7af4b25617dcba5/gofish-1.6.3.tar.gz
+[2023-04-10 02:10:01] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-10 02:10:01] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230410/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-10 02:10:01] WARNING root fetch - processPackages [pycracker]: Skipping, unable to determine old version
+[2023-04-10 02:10:01] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:10:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:10:01] INFO root fetch - processPackages [gofish]: Downloading https://files.pythonhosted.org/packages/77/0f/0d95709e7e4e6c842bc77557f01f4c662745294ad5507738ae6598afdce2/gofish-1.6.4.tar.gz
+[2023-04-10 02:10:01] INFO root fetch - processPackages [gofish]: executing diffoscope
+[2023-04-10 02:10:01] INFO root fetch - processPackages [gofish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gofish-1.6.3.tar.gz tmp/gofish-1.6.4.tar.gz --markdown 20230410/g/gofish/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-04-10 02:10:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:10:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:10:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:10:13] INFO root fetch - main [MainThread]: Store serial: [17640540]
