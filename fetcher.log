@@ -5154,3 +5154,43 @@ EOFError: EOF read where object expected
 [2023-04-10 07:51:02] INFO root fetch - main [MainThread]: success
 [2023-04-10 07:51:02] INFO root fetch - main [MainThread]: success
 [2023-04-10 07:51:02] INFO root fetch - main [MainThread]: Store serial: [17643235]
+[2023-04-10 07:56:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643235]
+[2023-04-10 07:56:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 07:56:09] WARNING root fetch - processPackages [mylibKIv1]: Skipping, unable to determine old version
+[2023-04-10 07:56:09] INFO root fetch - main [MainThread]: error
+[2023-04-10 07:56:09] INFO root fetch - processPackages [zcatalyst-runtime-39]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 07:56:09] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-10 07:56:09] WARNING root fetch - processPackages [duckingit]: Skipping, unable to determine old version
+[2023-04-10 07:56:09] INFO root fetch - processPackages [pycqBot]: New version: [0.5.1] Old Version: [0.5.0.2]
+[2023-04-10 07:56:09] INFO root fetch - main [MainThread]: error
+[2023-04-10 07:56:09] INFO root fetch - processPackages [xj-enroll]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-04-10 07:56:09] INFO root fetch - processPackages [intelliw]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-10 07:56:10] INFO root fetch - processPackages [zcatalyst-runtime-39]: Downloading https://files.pythonhosted.org/packages/d8/c1/43895aa610d3816260b6be95fdeb46c40435c7cd99e0e62461ed0eb12c62/zcatalyst_runtime_39-0.0.2.tar.gz
+[2023-04-10 07:56:10] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: Downloading https://files.pythonhosted.org/packages/62/34/4cccf5827b9f066ff2a400ae0a301e005f243026efdf107c8d9f33cc8225/nonebot_plugin_pokemonfusion-1.0.6.tar.gz
+[2023-04-10 07:56:10] INFO root fetch - processPackages [pycqBot]: Downloading https://files.pythonhosted.org/packages/7c/2b/a4c367428653475d76837003fcedca2df4b0899c65352a984d0723faf0f4/pycqBot-0.5.0.2.tar.gz
+[2023-04-10 07:56:10] INFO root fetch - processPackages [xj-enroll]: Downloading https://files.pythonhosted.org/packages/5f/55/043c01a1a9d5f4d1bc26501f84e1b44b3f001a7d69f9bfbcf23c512659ae/xj_enroll-1.0.98.tar.gz
+[2023-04-10 07:56:10] INFO root fetch - processPackages [intelliw]: Downloading https://files.pythonhosted.org/packages/9a/ce/20850d455cee55870f68b4c52538dfbcad9360bd19b3fe310f2060fc3b4e/intelliw-1.2.8-py3-none-any.whl
+[2023-04-10 07:56:10] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: executing diffoscope
+[2023-04-10 07:56:10] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_pokemonfusion-1.0.5.tar.gz tmp/nonebot_plugin_pokemonfusion-1.0.6.tar.gz --markdown 20230410/n/nonebot-plugin-pokemonfusion/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-10 07:56:10] INFO root fetch - processPackages [xj-enroll]: Downloading https://files.pythonhosted.org/packages/10/ba/d433d5e19456323afc65c6931bf6856d7357d50aca4073aa4b8c1dd1dd4b/xj_enroll-1.0.99.tar.gz
+[2023-04-10 07:56:10] INFO root fetch - processPackages [zcatalyst-runtime-39]: Downloading https://files.pythonhosted.org/packages/0e/b0/aacdbf1a84ae71623404b853694709140da167570265f1bd2e2a2ec10b57/zcatalyst_runtime_39-0.0.3.tar.gz
+[2023-04-10 07:56:10] INFO root fetch - processPackages [xj-enroll]: executing diffoscope
+[2023-04-10 07:56:10] INFO root fetch - processPackages [xj-enroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_enroll-1.0.98.tar.gz tmp/xj_enroll-1.0.99.tar.gz --markdown 20230410/x/xj-enroll/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-04-10 07:56:10] INFO root fetch - processPackages [pycqBot]: Downloading https://files.pythonhosted.org/packages/16/7a/e7991d949e346d37bd197008293ea09b315cad1f4572bd125436f0652794/pycqBot-0.5.1.tar.gz
+[2023-04-10 07:56:10] INFO root fetch - processPackages [zcatalyst-runtime-39]: executing diffoscope
+[2023-04-10 07:56:10] INFO root fetch - processPackages [zcatalyst-runtime-39]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zcatalyst_runtime_39-0.0.2.tar.gz tmp/zcatalyst_runtime_39-0.0.3.tar.gz --markdown 20230410/z/zcatalyst-runtime-39/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 07:56:10] INFO root fetch - processPackages [pycqBot]: executing diffoscope
+[2023-04-10 07:56:10] INFO root fetch - processPackages [pycqBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycqBot-0.5.0.2.tar.gz tmp/pycqBot-0.5.1.tar.gz --markdown 20230410/p/pycqBot/0.5.0.2-0.5.1/diff.md --exclude *.pyd
+[2023-04-10 07:56:10] INFO root fetch - processPackages [intelliw]: Downloading https://files.pythonhosted.org/packages/56/39/8c9d9f02f068eb32b537f84561688a3542e0d77b426f926f06943dd7238a/intelliw-1.2.9-py3-none-any.whl
+[2023-04-10 07:56:10] INFO root fetch - processPackages [intelliw]: executing diffoscope
+[2023-04-10 07:56:10] INFO root fetch - processPackages [intelliw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intelliw-1.2.8-py3-none-any.whl.zip tmp/intelliw-1.2.9-py3-none-any.whl.zip --markdown 20230410/i/intelliw/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-10 07:56:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:56:11] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-10 07:56:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:56:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:56:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:56:11] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-10 07:56:11] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230410/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 07:56:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:56:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:56:12] INFO root fetch - main [MainThread]: Store serial: [17643294]
