@@ -4355,3 +4355,70 @@ EOFError: EOF read where object expected
 [2023-04-10 06:00:51] INFO root fetch - main [MainThread]: success
 [2023-04-10 06:01:23] INFO root fetch - main [MainThread]: success
 [2023-04-10 06:01:23] INFO root fetch - main [MainThread]: Store serial: [17642615]
+[2023-04-10 06:06:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642615]
+[2023-04-10 06:06:31] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-10 06:06:31] INFO root fetch - processPackages [chromedriver-binary]: New version: [99.0.4844.51.0] Old Version: [99.0.4844.35.0]
+[2023-04-10 06:06:31] INFO root fetch - processPackages [tvault]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-10 06:06:31] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 06:06:31] INFO root fetch - processPackages [tonplay-sdk]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-10 06:06:31] INFO root fetch - processPackages [ulid-transform]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-10 06:06:31] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/50/a2/f36a3d2f2aa37ccc496e5f81d594f06e3965b836712da14b4b01d2f05ca8/chromedriver-binary-99.0.4844.35.0.tar.gz
+[2023-04-10 06:06:31] INFO root fetch - processPackages [tonplay-sdk]: Downloading https://files.pythonhosted.org/packages/79/60/951644a43386b1d50fa16dd312884546f2ec66598deee7aa0ea4b6c961f8/tonplay-sdk-0.0.4.tar.gz
+[2023-04-10 06:06:31] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: Downloading https://files.pythonhosted.org/packages/49/d7/bf1d47a18f88149f1fc370d62b5fc62509017e5652cf1dc6f0d47107c222/nonebot_plugin_pokemonfusion-1.0.0.tar.gz
+[2023-04-10 06:06:31] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/42/6b/0d1dd5bdc02fb599b88aa318663da722937ed09507cac4f5d7b4f4959a94/tvault-0.2.5-py3-none-any.whl
+[2023-04-10 06:06:31] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-10 06:06:31] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.2.4-py3-none-any.whl.zip tmp/tvault-0.2.5-py3-none-any.whl.zip --markdown 20230410/t/tvault/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-10 06:06:31] INFO root fetch - processPackages [ulid-transform]: Downloading https://files.pythonhosted.org/packages/b0/16/205bf0db5dda1679bf5cd10ad4e1cdce8a7ad0c2e493ce580615de8b6798/ulid_transform-0.6.3.tar.gz
+[2023-04-10 06:06:31] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: Downloading https://files.pythonhosted.org/packages/75/07/be3c82aee64200562081832ef3f34e910c4656dadcc6395d12a95b6c9f94/nonebot_plugin_pokemonfusion-1.0.1.tar.gz
+[2023-04-10 06:06:31] INFO root fetch - processPackages [tonplay-sdk]: Downloading https://files.pythonhosted.org/packages/36/f2/b6e890e5bac62d5ebe707fa3d493093308bcb1536dabbe5fe746b1354bf9/tonplay-sdk-0.0.5.tar.gz
+[2023-04-10 06:06:31] INFO root fetch - processPackages [ulid-transform]: executing diffoscope
+[2023-04-10 06:06:31] INFO root fetch - processPackages [ulid-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ulid_transform-0.6.2.tar.gz tmp/ulid_transform-0.6.3.tar.gz --markdown 20230410/u/ulid-transform/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-10 06:06:31] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: executing diffoscope
+[2023-04-10 06:06:31] INFO root fetch - processPackages [nonebot-plugin-pokemonfusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_pokemonfusion-1.0.0.tar.gz tmp/nonebot_plugin_pokemonfusion-1.0.1.tar.gz --markdown 20230410/n/nonebot-plugin-pokemonfusion/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 06:06:31] INFO root fetch - processPackages [tonplay-sdk]: executing diffoscope
+[2023-04-10 06:06:31] INFO root fetch - processPackages [tonplay-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tonplay-sdk-0.0.4.tar.gz tmp/tonplay-sdk-0.0.5.tar.gz --markdown 20230410/t/tonplay-sdk/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-10 06:06:31] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/d9/eb/3bd2a308b9e6f7441fbed7b759578bddade2cb983bb4ffe7fc3777863314/chromedriver-binary-99.0.4844.51.0.tar.gz
+[2023-04-10 06:06:31] INFO root fetch - processPackages [chromedriver-binary]: executing diffoscope
+[2023-04-10 06:06:31] INFO root fetch - processPackages [chromedriver-binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromedriver-binary-99.0.4844.35.0.tar.gz tmp/chromedriver-binary-99.0.4844.51.0.tar.gz --markdown 20230410/c/chromedriver-binary/99.0.4844.35.0-99.0.4844.51.0/diff.md --exclude *.pyd
+[2023-04-10 06:06:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:32] INFO root fetch - processPackages [smannan-lotr-sdk]: New version: [3.0] Old Version: [2.0]
+[2023-04-10 06:06:32] INFO root fetch - processPackages [smannan-lotr-sdk]: Downloading https://files.pythonhosted.org/packages/1d/df/2462687fed9e53790d72858e5d2eb8ffa175fe4893937f9df4837ee01983/smannan_lotr_sdk-2.0.tar.gz
+[2023-04-10 06:06:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:32] INFO root fetch - processPackages [dronecan]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 06:06:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:33] INFO root fetch - processPackages [ogr-tiller]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 06:06:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:33] INFO root fetch - processPackages [smannan-lotr-sdk]: Downloading https://files.pythonhosted.org/packages/b0/4a/27ef2caf3e6ef81787e23f447b4352a1e49806ed44070c742d0183553f1c/smannan_lotr_sdk-3.0.tar.gz
+[2023-04-10 06:06:33] INFO root fetch - processPackages [aifactory]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-04-10 06:06:33] INFO root fetch - processPackages [smannan-lotr-sdk]: executing diffoscope
+[2023-04-10 06:06:33] INFO root fetch - processPackages [smannan-lotr-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smannan_lotr_sdk-2.0.tar.gz tmp/smannan_lotr_sdk-3.0.tar.gz --markdown 20230410/s/smannan-lotr-sdk/2.0-3.0/diff.md --exclude *.pyd
+[2023-04-10 06:06:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:33] INFO root fetch - processPackages [dronecan]: Downloading https://files.pythonhosted.org/packages/92/85/be287416afa29b1a92951d2cd0fd23debf48e587800c1d5e55477fe19917/dronecan-1.0.8.tar.gz
+[2023-04-10 06:06:33] INFO root fetch - processPackages [ogr-tiller]: executing diffoscope
+[2023-04-10 06:06:33] INFO root fetch - processPackages [smannan-lotr-sdk]: New version: [3.0] Old Version: [2.0]
+[2023-04-10 06:06:33] INFO root fetch - processPackages [ogr-tiller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogr_tiller-0.0.8.tar.gz tmp/ogr_tiller-0.0.9.tar.gz --markdown 20230410/o/ogr-tiller/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 06:06:33] INFO root fetch - processPackages [aifactory]: executing diffoscope
+[2023-04-10 06:06:33] INFO root fetch - processPackages [aifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifactory-1.6.8.tar.gz tmp/aifactory-1.6.9.tar.gz --markdown 20230410/a/aifactory/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-04-10 06:06:33] INFO root fetch - processPackages [smannan-lotr-sdk]: executing diffoscope
+[2023-04-10 06:06:33] INFO root fetch - processPackages [smannan-lotr-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smannan_lotr_sdk-2.0.tar.gz tmp/smannan_lotr_sdk-3.0.tar.gz --markdown 20230410/s/smannan-lotr-sdk/2.0-3.0/diff.md --exclude *.pyd
+[2023-04-10 06:06:33] INFO root fetch - processPackages [dronecan]: Downloading https://files.pythonhosted.org/packages/96/09/6b038bd9e4dcad3f704ba680abb36e853e9de53060d94d50e6ab7aef9f59/dronecan-1.0.9.tar.gz
+[2023-04-10 06:06:34] INFO root fetch - processPackages [dronecan]: executing diffoscope
+[2023-04-10 06:06:34] INFO root fetch - processPackages [dronecan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dronecan-1.0.8.tar.gz tmp/dronecan-1.0.9.tar.gz --markdown 20230410/d/dronecan/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 06:06:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:34] INFO root fetch - processPackages [dronecan-gui-tool]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-04-10 06:06:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:34] INFO root fetch - processPackages [cabinet]: New version: [2023.4.9.1] Old Version: [2023.3.6.2]
+[2023-04-10 06:06:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:34] INFO root fetch - processPackages [dronecan-gui-tool]: Downloading https://files.pythonhosted.org/packages/39/bd/be845733ee143d721d902392777220c11c4d776f137eaa6bbe9f99f51d1d/dronecan_gui_tool-1.2.7.tar.gz
+[2023-04-10 06:06:34] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/b6/52/bb8437109d6d34fc1a49fd5effab02d0c6d5056666e65b721cc75b056a24/cabinet-2023.3.6.2.tar.gz
+[2023-04-10 06:06:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:34] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/25/2e/8a24fd5ff7eb020430a34daa1405a587f6dde75bc959553265ed25a6a14c/cabinet-2023.4.9.1.tar.gz
+[2023-04-10 06:06:34] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2023-04-10 06:06:34] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2023.3.6.2.tar.gz tmp/cabinet-2023.4.9.1.tar.gz --markdown 20230410/c/cabinet/2023.3.6.2-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-10 06:06:35] INFO root fetch - processPackages [dronecan-gui-tool]: Downloading https://files.pythonhosted.org/packages/76/95/575838ff4802232d228ab222765c6d97e957610b9b451616d619d2b461d3/dronecan_gui_tool-1.2.8.tar.gz
+[2023-04-10 06:06:35] INFO root fetch - processPackages [dronecan-gui-tool]: executing diffoscope
+[2023-04-10 06:06:35] INFO root fetch - processPackages [dronecan-gui-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dronecan_gui_tool-1.2.7.tar.gz tmp/dronecan_gui_tool-1.2.8.tar.gz --markdown 20230410/d/dronecan-gui-tool/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-04-10 06:06:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:06:36] INFO root fetch - main [MainThread]: Store serial: [17642648]
