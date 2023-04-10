@@ -6751,3 +6751,59 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 10:50:57] INFO root fetch - processPackages [neosctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neosctl-0.7.4.tar.gz tmp/neosctl-0.7.5.tar.gz --markdown 20230410/n/neosctl/0.7.4-0.7.5/diff.md --exclude *.pyd
 [2023-04-10 10:50:58] INFO root fetch - main [MainThread]: success
 [2023-04-10 10:50:58] INFO root fetch - main [MainThread]: Store serial: [17644325]
+[2023-04-10 10:56:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644325]
+[2023-04-10 10:56:10] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-10 10:56:10] INFO root fetch - processPackages [django-rating-system]: New version: [1.1.0] Old Version: [1.0.6]
+[2023-04-10 10:56:10] INFO root fetch - processPackages [timewise]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-10 10:56:10] INFO root fetch - processPackages [marshmallow_api_utils]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 10:56:10] INFO root fetch - processPackages [PySeismoSoil]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-10 10:56:10] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-10 10:56:11] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-04-10 10:56:11] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230410/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-10 10:56:11] INFO root fetch - processPackages [django-rating-system]: Downloading https://files.pythonhosted.org/packages/fe/fe/b1d257adbc3ba83f27e4950c953ba58ca52c01ecdcea78fe4277106b5498/django-rating-system-1.0.6.tar.gz
+[2023-04-10 10:56:11] INFO root fetch - processPackages [PySeismoSoil]: Downloading https://files.pythonhosted.org/packages/bb/81/2102d040a0087b36348b78d295ce6606f6cb0a83b53837de9379dec557d5/PySeismoSoil-0.5.2.tar.gz
+[2023-04-10 10:56:11] INFO root fetch - processPackages [timewise]: Downloading https://files.pythonhosted.org/packages/fd/a4/01e7b2af89d31c76bef9b189bb9d05420a9d1ff607024487ad9f455c294c/timewise-0.3.8.tar.gz
+[2023-04-10 10:56:11] INFO root fetch - processPackages [marshmallow_api_utils]: Downloading https://files.pythonhosted.org/packages/8b/28/2644eec4f33be5334aab6e1a7a7c9f2022166c28dd81c43dbc5052b867ec/marshmallow_api_utils-0.2.2.tar.gz
+[2023-04-10 10:56:12] INFO root fetch - processPackages [marshmallow_api_utils]: executing diffoscope
+[2023-04-10 10:56:12] INFO root fetch - processPackages [marshmallow_api_utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marshmallow_api_utils-0.2.1.tar.gz tmp/marshmallow_api_utils-0.2.2.tar.gz --markdown 20230410/m/marshmallow_api_utils/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 10:56:12] INFO root fetch - processPackages [django-rating-system]: Downloading https://files.pythonhosted.org/packages/27/0e/d876493c8ab72853fd542edfceb6cbbaac2e87234f8a154df68f17d0d596/django-rating-system-1.1.0.tar.gz
+[2023-04-10 10:56:12] INFO root fetch - processPackages [timewise]: Downloading https://files.pythonhosted.org/packages/5f/48/0958ae1b7d9f4dfc803041887b13b42a4e4a3a2d6ef36528c562f4c06aca/timewise-0.3.9.tar.gz
+[2023-04-10 10:56:12] INFO root fetch - processPackages [django-rating-system]: executing diffoscope
+[2023-04-10 10:56:12] INFO root fetch - processPackages [django-rating-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-rating-system-1.0.6.tar.gz tmp/django-rating-system-1.1.0.tar.gz --markdown 20230410/d/django-rating-system/1.0.6-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 10:56:12] INFO root fetch - processPackages [timewise]: executing diffoscope
+[2023-04-10 10:56:12] INFO root fetch - processPackages [timewise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timewise-0.3.8.tar.gz tmp/timewise-0.3.9.tar.gz --markdown 20230410/t/timewise/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-10 10:56:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:56:13] INFO root fetch - processPackages [deepdriver]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-10 10:56:13] INFO root fetch - processPackages [deepdriver]: executing diffoscope
+[2023-04-10 10:56:13] INFO root fetch - processPackages [deepdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdriver-0.9.4.tar.gz tmp/deepdriver-0.9.5.tar.gz --markdown 20230410/d/deepdriver/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-10 10:56:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:56:14] INFO root fetch - processPackages [voliboli-sgqlc-types]: New version: [1.6] Old Version: [1.5]
+[2023-04-10 10:56:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:56:14] WARNING root fetch - processPackages [odoo-addon-product-multi-price]: Skipping, unable to determine old version
+[2023-04-10 10:56:14] INFO root fetch - main [MainThread]: error
+[2023-04-10 10:56:14] INFO root fetch - processPackages [Barky]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-10 10:56:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:56:14] WARNING root fetch - processPackages [abcd-seth]: Skipping, unable to determine old version
+[2023-04-10 10:56:14] INFO root fetch - main [MainThread]: error
+[2023-04-10 10:56:14] INFO root fetch - processPackages [voliboli-sgqlc-types]: Downloading https://files.pythonhosted.org/packages/2d/ec/f24933dd0a501879662daafdf42afdd48cae5955ab3d315d503ecf0c94ca/voliboli_sgqlc_types-1.5.tar.gz
+[2023-04-10 10:56:14] WARNING root fetch - processPackages [voai]: Skipping, unable to determine old version
+[2023-04-10 10:56:14] INFO root fetch - main [MainThread]: error
+[2023-04-10 10:56:14] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-10 10:56:14] INFO root fetch - processPackages [Barky]: Downloading https://files.pythonhosted.org/packages/f9/6f/2e562fb16d0f96d4e737367b539a9dc2e287025ebec14b7c377de9688905/Barky-1.0.3.tar.gz
+[2023-04-10 10:56:14] INFO root fetch - processPackages [Barky]: executing diffoscope
+[2023-04-10 10:56:14] INFO root fetch - processPackages [Barky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Barky-1.0.2.tar.gz tmp/Barky-1.0.3.tar.gz --markdown 20230410/B/Barky/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-10 10:56:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:56:15] INFO root fetch - processPackages [PySeismoSoil]: Downloading https://files.pythonhosted.org/packages/6f/6f/c7406f23880ed7b8afc0c039bba6834f8bbe563b82aef119b0d31c18211b/PySeismoSoil-0.5.3.tar.gz
+[2023-04-10 10:56:15] INFO root fetch - processPackages [voliboli-sgqlc-types]: Downloading https://files.pythonhosted.org/packages/cb/a0/56712fafe1ae3e58c8defa9a234377bee36b7cbb26a9a0a136eadaba49a9/voliboli_sgqlc_types-1.6.tar.gz
+[2023-04-10 10:56:15] INFO root fetch - processPackages [voliboli-sgqlc-types]: executing diffoscope
+[2023-04-10 10:56:15] INFO root fetch - processPackages [voliboli-sgqlc-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voliboli_sgqlc_types-1.5.tar.gz tmp/voliboli_sgqlc_types-1.6.tar.gz --markdown 20230410/v/voliboli-sgqlc-types/1.5-1.6/diff.md --exclude *.pyd
+[2023-04-10 10:56:15] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/20/25/cd2d7952d37e65d8cb5c8703497e3dfb8a16877ce2497b8e9c3b3293d5e8/hiddifypanel-3.0.9-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-10 10:56:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:56:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:56:17] INFO root fetch - processPackages [PySeismoSoil]: executing diffoscope
+[2023-04-10 10:56:17] INFO root fetch - processPackages [PySeismoSoil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySeismoSoil-0.5.2.tar.gz tmp/PySeismoSoil-0.5.3.tar.gz --markdown 20230410/P/PySeismoSoil/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-10 10:56:18] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-10 10:56:18] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230410/h/hiddifypanel/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-10 10:56:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:56:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:56:47] INFO root fetch - main [MainThread]: Store serial: [17644363]
