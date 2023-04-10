@@ -6966,3 +6966,87 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 11:07:16] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:07:16] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:07:16] INFO root fetch - main [MainThread]: Store serial: [17644513]
+[2023-04-10 11:12:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644513]
+[2023-04-10 11:12:24] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-10 11:12:24] INFO root fetch - processPackages [voliboli-sgqlc-types]: New version: [1.9] Old Version: [1.8]
+[2023-04-10 11:12:24] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: New version: [6.5.0] Old Version: [6.4.3]
+[2023-04-10 11:12:24] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: New version: [6.5.0] Old Version: [6.4.3]
+[2023-04-10 11:12:24] INFO root fetch - processPackages [nonebot-adapter-telegram]: New version: [0.1.0b9] Old Version: [0.1.0b8]
+[2023-04-10 11:12:24] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: New version: [6.5.0] Old Version: [6.4.3]
+[2023-04-10 11:12:24] INFO root fetch - processPackages [nonebot-adapter-telegram]: Downloading https://files.pythonhosted.org/packages/39/63/352c95368189e3a1a9e243c03e6ff9d5aa229d35b74c7bd9917b194bcd0f/nonebot-adapter-telegram-0.1.0b8.tar.gz
+[2023-04-10 11:12:24] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: Downloading https://files.pythonhosted.org/packages/ce/08/c9a1b65494465ea114f7a18a7f354177f1cced31fedfc73d6718a05b1456/PyQt6_NetworkAuth_Qt6-6.4.3-py3-none-win_amd64.whl
+[2023-04-10 11:12:24] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: Downloading https://files.pythonhosted.org/packages/7a/41/e010ed1408eed8227bfcaa7aea0a6aaf090d1d357465c645b7b689eef1d4/PyQt6_Charts_Qt6-6.4.3-py3-none-win_amd64.whl
+[2023-04-10 11:12:24] INFO root fetch - processPackages [voliboli-sgqlc-types]: Downloading https://files.pythonhosted.org/packages/e8/b7/6d61fbb62a1edc07cfdf8d7c34ca9dedfcf1cc0eb44340fb55e96e07ceed/voliboli_sgqlc_types-1.9.tar.gz
+[2023-04-10 11:12:24] INFO root fetch - processPackages [voliboli-sgqlc-types]: executing diffoscope
+[2023-04-10 11:12:24] INFO root fetch - processPackages [voliboli-sgqlc-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voliboli_sgqlc_types-1.8.tar.gz tmp/voliboli_sgqlc_types-1.9.tar.gz --markdown 20230410/v/voliboli-sgqlc-types/1.8-1.9/diff.md --exclude *.pyd
+[2023-04-10 11:12:25] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: Downloading https://files.pythonhosted.org/packages/82/48/4d98c37a6468d2f55399fbeb9a4f987ca60311fd4b8ee8073274aabafae3/PyQt6_DataVisualization_Qt6-6.4.3-py3-none-win_amd64.whl
+[2023-04-10 11:12:25] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: Downloading https://files.pythonhosted.org/packages/80/2c/fc316d7b006c06212156fd18966c323fb5de78fab56e73ed5a9cbf3f6ad8/PyQt6_NetworkAuth_Qt6-6.5.0-py3-none-win_amd64.whl
+[2023-04-10 11:12:25] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: Downloading https://files.pythonhosted.org/packages/8f/cb/946d192cf808ac270569f589d8c29f4f5e4d584093b9af662f5feae20cb3/PyQt6_Charts_Qt6-6.5.0-py3-none-win_amd64.whl
+[2023-04-10 11:12:25] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: executing diffoscope
+[2023-04-10 11:12:25] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_NetworkAuth_Qt6-6.4.3-py3-none-win_amd64.whl.zip tmp/PyQt6_NetworkAuth_Qt6-6.5.0-py3-none-win_amd64.whl.zip --markdown 20230410/P/PyQt6-NetworkAuth-Qt6/6.4.3-6.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:12:25] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: executing diffoscope
+[2023-04-10 11:12:25] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_Charts_Qt6-6.4.3-py3-none-win_amd64.whl.zip tmp/PyQt6_Charts_Qt6-6.5.0-py3-none-win_amd64.whl.zip --markdown 20230410/P/PyQt6-Charts-Qt6/6.4.3-6.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:12:25] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: Downloading https://files.pythonhosted.org/packages/f5/64/346a6f80a2efbaace38ea3291702515413d1af91b99133d4c49924014bb7/PyQt6_DataVisualization_Qt6-6.5.0-py3-none-win_amd64.whl
+[2023-04-10 11:12:25] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: executing diffoscope
+[2023-04-10 11:12:25] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_DataVisualization_Qt6-6.4.3-py3-none-win_amd64.whl.zip tmp/PyQt6_DataVisualization_Qt6-6.5.0-py3-none-win_amd64.whl.zip --markdown 20230410/P/PyQt6-DataVisualization-Qt6/6.4.3-6.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:12:25] INFO root fetch - processPackages [nonebot-adapter-telegram]: Downloading https://files.pythonhosted.org/packages/5a/6e/76d06955b2984df0f0ae7d55dc31701c60646490b4b698e6d5ea1f1b4e1f/nonebot-adapter-telegram-0.1.0b9.tar.gz
+[2023-04-10 11:12:25] INFO root fetch - processPackages [nonebot-adapter-telegram]: executing diffoscope
+[2023-04-10 11:12:25] INFO root fetch - processPackages [nonebot-adapter-telegram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-adapter-telegram-0.1.0b8.tar.gz tmp/nonebot-adapter-telegram-0.1.0b9.tar.gz --markdown 20230410/n/nonebot-adapter-telegram/0.1.0b8-0.1.0b9/diff.md --exclude *.pyd
+[2023-04-10 11:12:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:25] INFO root fetch - processPackages [AttentionMOI]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 11:12:26] INFO root fetch - processPackages [AttentionMOI]: Downloading https://files.pythonhosted.org/packages/d2/28/5c0e18c2812623d175b0a3bb1b6c34ec4d515e105e3c91c3c68b2a90cab1/AttentionMOI-0.0.2.tar.gz
+[2023-04-10 11:12:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:26] INFO root fetch - processPackages [PyQt6-3D-Qt6]: New version: [6.5.0] Old Version: [6.4.3]
+[2023-04-10 11:12:26] INFO root fetch - processPackages [AttentionMOI]: Downloading https://files.pythonhosted.org/packages/cb/0a/92ee6805353e503ef85c398dc332c61fef046290150bf0746bdb1b59a19f/AttentionMOI-0.0.3.tar.gz
+[2023-04-10 11:12:26] INFO root fetch - processPackages [AttentionMOI]: executing diffoscope
+[2023-04-10 11:12:26] INFO root fetch - processPackages [AttentionMOI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AttentionMOI-0.0.2.tar.gz tmp/AttentionMOI-0.0.3.tar.gz --markdown 20230410/A/AttentionMOI/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 11:12:26] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Downloading https://files.pythonhosted.org/packages/9f/93/521f00f863776e530be83aa226fdf3dafe8076a65a41e486e9a1a38e14c8/PyQt6_3D_Qt6-6.4.3-py3-none-win_amd64.whl
+[2023-04-10 11:12:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:27] INFO root fetch - processPackages [fake-bge-module-latest]: New version: [20230410] Old Version: [20230409]
+[2023-04-10 11:12:27] INFO root fetch - processPackages [fake-bge-module-latest]: Downloading https://files.pythonhosted.org/packages/f5/b9/7246e0d42296e6012000f5d9ff5bd74fb68b91ff43bf1c2ac2158eba9d65/fake-bge-module-latest-20230410.tar.gz
+[2023-04-10 11:12:27] INFO root fetch - processPackages [fake-bge-module-latest]: executing diffoscope
+[2023-04-10 11:12:27] INFO root fetch - processPackages [fake-bge-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bge-module-latest-20230409.tar.gz tmp/fake-bge-module-latest-20230410.tar.gz --markdown 20230410/f/fake-bge-module-latest/20230409-20230410/diff.md --exclude *.pyd
+[2023-04-10 11:12:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:28] INFO root fetch - processPackages [appmesh]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-10 11:12:28] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Downloading https://files.pythonhosted.org/packages/21/7b/0ab1516ab569f177ac7a7a86430062f5a78b52219a64b03ff8f41da1ac69/PyQt6_3D_Qt6-6.5.0-py3-none-win_amd64.whl
+[2023-04-10 11:12:28] INFO root fetch - processPackages [PyQt6-3D-Qt6]: executing diffoscope
+[2023-04-10 11:12:28] INFO root fetch - processPackages [PyQt6-3D-Qt6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_3D_Qt6-6.4.3-py3-none-win_amd64.whl.zip tmp/PyQt6_3D_Qt6-6.5.0-py3-none-win_amd64.whl.zip --markdown 20230410/P/PyQt6-3D-Qt6/6.4.3-6.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:12:28] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/a9/f2/7b33ceb3e7978f5f4ec5b0d076eb6d97224a2ed908a4ce6ee686b7dd14bd/appmesh-0.3.6-py3-none-any.whl
+[2023-04-10 11:12:28] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/11/fa/1e153cac7faf62c273f8f8800bb70143898157b3c71132dbfc82a5ad6f52/appmesh-0.3.7-py3-none-any.whl
+[2023-04-10 11:12:28] INFO root fetch - processPackages [appmesh]: executing diffoscope
+[2023-04-10 11:12:28] INFO root fetch - processPackages [appmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appmesh-0.3.6-py3-none-any.whl.zip tmp/appmesh-0.3.7-py3-none-any.whl.zip --markdown 20230410/a/appmesh/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-10 11:12:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:29] INFO root fetch - processPackages [tranquilo]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 11:12:29] INFO root fetch - processPackages [tranquilo]: Downloading https://files.pythonhosted.org/packages/11/a6/b02c143820e5c9ca39ae626c71b1e61b02b5b7186457da410401462c2ec7/tranquilo-0.0.1.tar.gz
+[2023-04-10 11:12:29] INFO root fetch - processPackages [tranquilo]: Downloading https://files.pythonhosted.org/packages/72/6a/42fb366da3fdd02f9e56f8f36aa2c4d51968a8c25f8550561486d869dc9e/tranquilo-0.0.2.tar.gz
+[2023-04-10 11:12:29] INFO root fetch - processPackages [tranquilo]: executing diffoscope
+[2023-04-10 11:12:29] INFO root fetch - processPackages [tranquilo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tranquilo-0.0.1.tar.gz tmp/tranquilo-0.0.2.tar.gz --markdown 20230410/t/tranquilo/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 11:12:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:31] INFO root fetch - processPackages [faifah]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 11:12:31] INFO root fetch - processPackages [faifah]: Downloading https://files.pythonhosted.org/packages/af/36/8a06b08ed19d1c05b5c1092b19e8d94b46fd15e6cd21a8906f964041641a/faifah-0.0.8.tar.gz
+[2023-04-10 11:12:31] INFO root fetch - processPackages [faifah]: Downloading https://files.pythonhosted.org/packages/98/33/93daa6265163423b5b8bc7b117a22e3df4f55d355e113a642aaaec7db17f/faifah-0.0.9.tar.gz
+[2023-04-10 11:12:31] INFO root fetch - processPackages [faifah]: executing diffoscope
+[2023-04-10 11:12:31] INFO root fetch - processPackages [faifah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faifah-0.0.8.tar.gz tmp/faifah-0.0.9.tar.gz --markdown 20230410/f/faifah/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 11:12:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:31] INFO root fetch - processPackages [PyQt6-Qt6]: New version: [6.5.0] Old Version: [6.4.3]
+[2023-04-10 11:12:32] INFO root fetch - processPackages [PyQt6-Qt6]: Downloading https://files.pythonhosted.org/packages/11/cf/9102346c5ea4cc2796d1eb2214593e5b65a500b2abaad258cadfe8cb3dca/PyQt6_Qt6-6.4.3-py3-none-win_amd64.whl
+[2023-04-10 11:12:32] WARNING root fetch - processPackages [PyQt6-Qt6]: Skipping package: exceeds size limit 57464697>=10485760
+[2023-04-10 11:12:32] INFO root fetch - main [MainThread]: error
+[2023-04-10 11:12:32] INFO root fetch - processPackages [pydae]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 11:12:32] INFO root fetch - processPackages [pydae]: Downloading https://files.pythonhosted.org/packages/7d/df/18fbeeac68b8076a40737405fc9638efb381a7dae1ccdfa520fe3810b1cd/pydae-0.8.0.tar.gz
+[2023-04-10 11:12:32] WARNING root fetch - processPackages [pydae]: Skipping package: exceeds size limit 76279170>=10485760
+[2023-04-10 11:12:32] INFO root fetch - main [MainThread]: error
+[2023-04-10 11:12:32] INFO root fetch - processPackages [tf-nightly]: New version: [2.13.0.dev20230410] Old Version: [2.13.0.dev20230409]
+[2023-04-10 11:12:32] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/ca/a9/dfec2df92b1ce6dc949fb1bb8bad1bb457d634edc6c2d271e52e314c8ffd/tf_nightly-2.13.0.dev20230410-cp39-cp39-win_amd64.whl
+[2023-04-10 11:12:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:32] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-10 11:12:32] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-10 11:12:32] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230410/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-10 11:12:32] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2023-04-10 11:12:32] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.13.0.dev20230409-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.13.0.dev20230410-cp39-cp39-win_amd64.whl.zip --markdown 20230410/t/tf-nightly/2.13.0.dev20230409-2.13.0.dev20230410/diff.md --exclude *.pyd
+[2023-04-10 11:12:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:12:57] INFO root fetch - main [MainThread]: Store serial: [17644573]
