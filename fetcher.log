@@ -4778,3 +4778,49 @@ EOFError: EOF read where object expected
 [2023-04-10 06:55:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 06:56:14] INFO root fetch - main [MainThread]: success
 [2023-04-10 06:56:14] INFO root fetch - main [MainThread]: Store serial: [17642895]
+[2023-04-10 07:01:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642895]
+[2023-04-10 07:01:23] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 07:01:23] INFO root fetch - processPackages [smannan-lotr-sdk]: New version: [6.0] Old Version: [5.0]
+[2023-04-10 07:01:23] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-10 07:01:23] INFO root fetch - processPackages [pcb-parser]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-10 07:01:23] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-04-10 07:01:23] INFO root fetch - processPackages [best-sort]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-10 07:01:23] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-04-10 07:01:23] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230410/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-04-10 07:01:23] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/f8/6d/cacaedefed92bdeeb6387a16231fd5610ff167fca0c5f2f1156fd318d4ae/nonebot_plugin_bilichat-1.1.1.tar.gz
+[2023-04-10 07:01:23] INFO root fetch - processPackages [smannan-lotr-sdk]: Downloading https://files.pythonhosted.org/packages/36/c0/f2ad8e9dd03c22854ff1a40db594ec3d85060742ec3d08905b55ea83b739/smannan_lotr_sdk-6.0.tar.gz
+[2023-04-10 07:01:23] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2023-04-10 07:01:23] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-1.1.0.tar.gz tmp/nonebot_plugin_bilichat-1.1.1.tar.gz --markdown 20230410/n/nonebot-plugin-bilichat/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-10 07:01:23] INFO root fetch - processPackages [smannan-lotr-sdk]: executing diffoscope
+[2023-04-10 07:01:23] INFO root fetch - processPackages [smannan-lotr-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smannan_lotr_sdk-5.0.tar.gz tmp/smannan_lotr_sdk-6.0.tar.gz --markdown 20230410/s/smannan-lotr-sdk/5.0-6.0/diff.md --exclude *.pyd
+[2023-04-10 07:01:23] INFO root fetch - processPackages [best-sort]: Downloading https://files.pythonhosted.org/packages/c5/8b/53dfa726527b0629c3a80e3cd28da90c47eb8bdff36177db6e6a7309d134/best-sort-0.0.5.tar.gz
+[2023-04-10 07:01:23] INFO root fetch - processPackages [pcb-parser]: Downloading https://files.pythonhosted.org/packages/8b/93/7b29a22ed0fba46a0e856b51f423f9d2322b614098ce3b797a0ec6093e26/pcb-parser-0.0.5.tar.gz
+[2023-04-10 07:01:23] INFO root fetch - processPackages [pcb-parser]: executing diffoscope
+[2023-04-10 07:01:23] INFO root fetch - processPackages [pcb-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcb-parser-0.0.4.tar.gz tmp/pcb-parser-0.0.5.tar.gz --markdown 20230410/p/pcb-parser/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-10 07:01:23] INFO root fetch - processPackages [best-sort]: Downloading https://files.pythonhosted.org/packages/e0/0f/243c639b9fdedfd2d8b0c8b13920e1bfe57de8405ba68db33049ffd71901/best-sort-0.0.6.tar.gz
+[2023-04-10 07:01:23] INFO root fetch - processPackages [best-sort]: executing diffoscope
+[2023-04-10 07:01:23] INFO root fetch - processPackages [best-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/best-sort-0.0.5.tar.gz tmp/best-sort-0.0.6.tar.gz --markdown 20230410/b/best-sort/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-10 07:01:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:01:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:01:24] INFO root fetch - processPackages [motion-python]: New version: [0.1.28] Old Version: [0.1.27]
+[2023-04-10 07:01:24] INFO root fetch - processPackages [pynecone]: New version: [0.1.23a0] Old Version: [0.1.22a0]
+[2023-04-10 07:01:24] INFO root fetch - processPackages [motion-python]: executing diffoscope
+[2023-04-10 07:01:24] INFO root fetch - processPackages [motion-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motion_python-0.1.27.tar.gz tmp/motion_python-0.1.28.tar.gz --markdown 20230410/m/motion-python/0.1.27-0.1.28/diff.md --exclude *.pyd
+[2023-04-10 07:01:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:01:24] INFO root fetch - processPackages [pynecone]: executing diffoscope
+[2023-04-10 07:01:24] INFO root fetch - processPackages [pynecone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynecone-0.1.22a0.tar.gz tmp/pynecone-0.1.23a0.tar.gz --markdown 20230410/p/pynecone/0.1.22a0-0.1.23a0/diff.md --exclude *.pyd
+[2023-04-10 07:01:24] INFO root fetch - processPackages [xj-finance]: New version: [1.1.1] Old Version: [1.0.9]
+[2023-04-10 07:01:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:01:24] INFO root fetch - processPackages [rapid-pe]: New version: [0.0.7.dev20230409] Old Version: [0.0.7.dev20230408]
+[2023-04-10 07:01:25] INFO root fetch - processPackages [xj-finance]: Downloading https://files.pythonhosted.org/packages/ff/4e/893586b73b91486b131d9986801371c86b7496a7f15e967a5595f9adfaad/xj_finance-1.0.9.tar.gz
+[2023-04-10 07:01:25] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-04-10 07:01:25] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.0.7.dev20230408.tar.gz tmp/rapid_pe-0.0.7.dev20230409.tar.gz --markdown 20230410/r/rapid-pe/0.0.7.dev20230408-0.0.7.dev20230409/diff.md --exclude *.pyd
+[2023-04-10 07:01:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:01:25] INFO root fetch - processPackages [xj-finance]: Downloading https://files.pythonhosted.org/packages/68/dd/3b6cf09ee3405927bda6ecf77418c662f18ceb6b7d5bbc5081a6fb962296/xj_finance-1.1.1.tar.gz
+[2023-04-10 07:01:25] INFO root fetch - processPackages [xj-finance]: executing diffoscope
+[2023-04-10 07:01:25] INFO root fetch - processPackages [xj-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_finance-1.0.9.tar.gz tmp/xj_finance-1.1.1.tar.gz --markdown 20230410/x/xj-finance/1.0.9-1.1.1/diff.md --exclude *.pyd
+[2023-04-10 07:01:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:01:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:01:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:01:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 07:01:26] INFO root fetch - main [MainThread]: Store serial: [17642932]
