@@ -10161,3 +10161,56 @@ EOFError: EOF read where object expected
 [2023-04-10 15:44:02] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:44:03] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:44:03] INFO root fetch - main [MainThread]: Store serial: [17646316]
+[2023-04-10 15:49:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646316]
+[2023-04-10 15:49:11] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 15:49:11] INFO root fetch - processPackages [string-py]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 15:49:11] INFO root fetch - processPackages [essentials-configuration-keyvault]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 15:49:11] WARNING root fetch - processPackages [quality-assurance-data]: Skipping, unable to determine old version
+[2023-04-10 15:49:11] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:49:11] INFO root fetch - processPackages [crowdstrike-falconpy]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-10 15:49:11] INFO root fetch - processPackages [gridworks-protocol]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-10 15:49:11] INFO root fetch - processPackages [polywrap-msgpack]: New version: [0.1.0a9] Old Version: [0.1.0a8]
+[2023-04-10 15:49:11] INFO root fetch - processPackages [string-py]: Downloading https://files.pythonhosted.org/packages/ba/77/e33387a198bf4a88c013b4590e7a50127d56fb51b4ef4642d6f73ae1744d/string_py-0.1.0.tar.gz
+[2023-04-10 15:49:11] INFO root fetch - processPackages [polywrap-msgpack]: Downloading https://files.pythonhosted.org/packages/64/aa/a4ed22f4b6f335769968ea42458aaccd7b2e9197af3aea3e0b41b959e52b/polywrap_msgpack-0.1.0a8.tar.gz
+[2023-04-10 15:49:11] INFO root fetch - processPackages [gridworks-protocol]: Downloading https://files.pythonhosted.org/packages/ef/ef/878a8b584b7f74d4f755ebab26cfab7d933c9dd5e8d30fe46e8aec635fbd/gridworks_protocol-0.4.5.tar.gz
+[2023-04-10 15:49:11] INFO root fetch - processPackages [crowdstrike-falconpy]: Downloading https://files.pythonhosted.org/packages/84/6b/194fa10670b8f31fd39dd61ed454806cd1b5b3d5b02b945b1ee3705e5a56/crowdstrike-falconpy-1.2.8.tar.gz
+[2023-04-10 15:49:11] INFO root fetch - processPackages [essentials-configuration-keyvault]: Downloading https://files.pythonhosted.org/packages/13/a1/c2d8f12a3013453f1c9c8be9de52cd0656858f6f119b72f0dc74ba504cc0/essentials_configuration_keyvault-1.0.1.tar.gz
+[2023-04-10 15:49:11] INFO root fetch - processPackages [string-py]: Downloading https://files.pythonhosted.org/packages/2c/d9/83135fbb49c206c945e02dfb1c40150ed0d1c0e28230f3725af18e00217a/string_py-0.1.1.tar.gz
+[2023-04-10 15:49:11] INFO root fetch - processPackages [gridworks-protocol]: executing diffoscope
+[2023-04-10 15:49:11] INFO root fetch - processPackages [gridworks-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridworks_protocol-0.4.4.tar.gz tmp/gridworks_protocol-0.4.5.tar.gz --markdown 20230410/g/gridworks-protocol/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-10 15:49:11] INFO root fetch - processPackages [essentials-configuration-keyvault]: executing diffoscope
+[2023-04-10 15:49:11] INFO root fetch - processPackages [essentials-configuration-keyvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/essentials_configuration_keyvault-1.0.0.tar.gz tmp/essentials_configuration_keyvault-1.0.1.tar.gz --markdown 20230410/e/essentials-configuration-keyvault/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 15:49:11] INFO root fetch - processPackages [string-py]: executing diffoscope
+[2023-04-10 15:49:11] INFO root fetch - processPackages [string-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/string_py-0.1.0.tar.gz tmp/string_py-0.1.1.tar.gz --markdown 20230410/s/string-py/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 15:49:11] INFO root fetch - processPackages [polywrap-msgpack]: Downloading https://files.pythonhosted.org/packages/f5/e7/9acac563c1933244fee01221e1a4a327fcdf3dc200dbb47bafd8df87b4c6/polywrap_msgpack-0.1.0a9.tar.gz
+[2023-04-10 15:49:12] INFO root fetch - processPackages [crowdstrike-falconpy]: Downloading https://files.pythonhosted.org/packages/1a/45/a347e47878e59285f814ba3dfef9474f5beb8bd1e332199549995cd7f19b/crowdstrike-falconpy-1.2.9.tar.gz
+[2023-04-10 15:49:12] INFO root fetch - processPackages [polywrap-msgpack]: executing diffoscope
+[2023-04-10 15:49:12] INFO root fetch - processPackages [polywrap-msgpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_msgpack-0.1.0a8.tar.gz tmp/polywrap_msgpack-0.1.0a9.tar.gz --markdown 20230410/p/polywrap-msgpack/0.1.0a8-0.1.0a9/diff.md --exclude *.pyd
+[2023-04-10 15:49:12] INFO root fetch - processPackages [crowdstrike-falconpy]: executing diffoscope
+[2023-04-10 15:49:12] INFO root fetch - processPackages [crowdstrike-falconpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crowdstrike-falconpy-1.2.8.tar.gz tmp/crowdstrike-falconpy-1.2.9.tar.gz --markdown 20230410/c/crowdstrike-falconpy/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-10 15:49:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:49:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:49:13] INFO root fetch - processPackages [polywrap-manifest]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-10 15:49:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:49:13] INFO root fetch - processPackages [HealthCheckIOAPI]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 15:49:13] INFO root fetch - processPackages [dbis-relational-calculus]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-10 15:49:13] INFO root fetch - processPackages [polywrap-manifest]: Downloading https://files.pythonhosted.org/packages/62/60/94225b3b5d1c6cc0aea345f15d37850dc2d1224a963ca29d228fde172f13/polywrap_manifest-0.1.0a7.tar.gz
+[2023-04-10 15:49:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:49:13] INFO root fetch - processPackages [datrafilcha]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 15:49:13] INFO root fetch - processPackages [HealthCheckIOAPI]: Downloading https://files.pythonhosted.org/packages/23/7f/cd59b527a920a7dda0206602e6dcd4888e2426d71d0daa3c2f00beff010d/HealthCheckIOAPI-1.0.1.tar.gz
+[2023-04-10 15:49:13] INFO root fetch - processPackages [dbis-relational-calculus]: Downloading https://files.pythonhosted.org/packages/6f/36/07bd440b1801bbb775faf60c4b5cda4c40ab8d8cb7ea4035a3970c20ff43/dbis-relational-calculus-1.0.5.tar.gz
+[2023-04-10 15:49:13] INFO root fetch - processPackages [dbis-relational-calculus]: executing diffoscope
+[2023-04-10 15:49:13] INFO root fetch - processPackages [dbis-relational-calculus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbis-relational-calculus-1.0.4.tar.gz tmp/dbis-relational-calculus-1.0.5.tar.gz --markdown 20230410/d/dbis-relational-calculus/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-10 15:49:13] ERROR root fetch - processPackages [datrafilcha]: Unable to fetch info: No such project/version 'datrafilcha' 1.0.3
+[2023-04-10 15:49:13] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:49:13] INFO root fetch - processPackages [HealthCheckIOAPI]: Downloading https://files.pythonhosted.org/packages/57/a4/7a91a8a538821f0ce109f197a85404a3a897c7c8aca75af17790bdfbebc6/HealthCheckIOAPI-1.0.2.tar.gz
+[2023-04-10 15:49:13] INFO root fetch - processPackages [polywrap-manifest]: Downloading https://files.pythonhosted.org/packages/7c/77/cedbff14721aa458a69c7a30b856445730a28b02b55fd934aa0743eb874b/polywrap_manifest-0.1.0a8.tar.gz
+[2023-04-10 15:49:13] INFO root fetch - processPackages [HealthCheckIOAPI]: executing diffoscope
+[2023-04-10 15:49:13] INFO root fetch - processPackages [HealthCheckIOAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HealthCheckIOAPI-1.0.1.tar.gz tmp/HealthCheckIOAPI-1.0.2.tar.gz --markdown 20230410/H/HealthCheckIOAPI/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 15:49:13] INFO root fetch - processPackages [polywrap-manifest]: executing diffoscope
+[2023-04-10 15:49:13] INFO root fetch - processPackages [polywrap-manifest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_manifest-0.1.0a7.tar.gz tmp/polywrap_manifest-0.1.0a8.tar.gz --markdown 20230410/p/polywrap-manifest/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-10 15:49:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:49:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:49:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:49:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:49:14] INFO root fetch - main [MainThread]: Store serial: [17646368]
