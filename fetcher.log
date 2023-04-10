@@ -5237,3 +5237,49 @@ EOFError: EOF read where object expected
 [2023-04-10 08:01:24] INFO root fetch - processPackages [jittor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jittor-1.3.7.8.tar.gz tmp/jittor-1.3.7.9.tar.gz --markdown 20230410/j/jittor/1.3.7.8-1.3.7.9/diff.md --exclude *.pyd
 [2023-04-10 08:01:32] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:01:32] INFO root fetch - main [MainThread]: Store serial: [17643324]
+[2023-04-10 08:06:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643324]
+[2023-04-10 08:06:39] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 08:06:39] INFO root fetch - processPackages [django-ipghrms-perform]: New version: [1.1] Old Version: [1.0]
+[2023-04-10 08:06:39] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230409] Old Version: [2.4.0.dev20230408]
+[2023-04-10 08:06:39] INFO root fetch - processPackages [django-ipghrms-notification]: New version: [1.1] Old Version: [1.0]
+[2023-04-10 08:06:39] INFO root fetch - processPackages [django-ipghrms-leave]: New version: [1.1] Old Version: [1.0]
+[2023-04-10 08:06:39] INFO root fetch - processPackages [xj-thread]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-10 08:06:39] INFO root fetch - processPackages [xj-thread]: executing diffoscope
+[2023-04-10 08:06:39] INFO root fetch - processPackages [xj-thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_thread-1.2.98.tar.gz tmp/xj_thread-1.2.99.tar.gz --markdown 20230410/x/xj-thread/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-10 08:06:39] INFO root fetch - processPackages [django-ipghrms-leave]: Downloading https://files.pythonhosted.org/packages/65/8b/c4eaf7ce36699a733420b3b70a0b8c89170a8feee990e9caf248ad437c79/django-ipghrms-leave-1.0.tar.gz
+[2023-04-10 08:06:39] INFO root fetch - processPackages [django-ipghrms-notification]: Downloading https://files.pythonhosted.org/packages/34/dc/3d5aec0a6227b5a64c6363b540ab3888bd13f5105999154d29f4e81e434b/django-ipghrms-notification-1.0.tar.gz
+[2023-04-10 08:06:39] INFO root fetch - processPackages [django-ipghrms-perform]: Downloading https://files.pythonhosted.org/packages/b2/61/e8344b2b8c7db62a44035590436d9f92757f84bc328340b94aeb3bc94b1c/django-ipghrms-perform-1.0.tar.gz
+[2023-04-10 08:06:39] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/df/37/fbe2530f2a7897e82724676557a2f30748e29251e5f3cd272cb2178ec0fe/pyg-nightly-2.4.0.dev20230409.tar.gz
+[2023-04-10 08:06:40] INFO root fetch - processPackages [django-ipghrms-notification]: Downloading https://files.pythonhosted.org/packages/32/1e/e385d03d1e2da3016a1733d1d51773065243fda5dc73fc97f95c94fe9e83/django-ipghrms-notification-1.1.tar.gz
+[2023-04-10 08:06:40] INFO root fetch - processPackages [django-ipghrms-perform]: Downloading https://files.pythonhosted.org/packages/4f/fd/eca20e37bceca84d0071805746860e6a7f8aacb4453bda438b26213ed259/django-ipghrms-perform-1.1.tar.gz
+[2023-04-10 08:06:40] INFO root fetch - processPackages [django-ipghrms-notification]: executing diffoscope
+[2023-04-10 08:06:40] INFO root fetch - processPackages [django-ipghrms-notification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ipghrms-notification-1.0.tar.gz tmp/django-ipghrms-notification-1.1.tar.gz --markdown 20230410/d/django-ipghrms-notification/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-10 08:06:40] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-04-10 08:06:40] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230408.tar.gz tmp/pyg-nightly-2.4.0.dev20230409.tar.gz --markdown 20230410/p/pyg-nightly/2.4.0.dev20230408-2.4.0.dev20230409/diff.md --exclude *.pyd
+[2023-04-10 08:06:40] INFO root fetch - processPackages [django-ipghrms-perform]: executing diffoscope
+[2023-04-10 08:06:40] INFO root fetch - processPackages [django-ipghrms-perform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ipghrms-perform-1.0.tar.gz tmp/django-ipghrms-perform-1.1.tar.gz --markdown 20230410/d/django-ipghrms-perform/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-10 08:06:40] INFO root fetch - processPackages [django-ipghrms-leave]: Downloading https://files.pythonhosted.org/packages/8a/6f/5d6ab11a39f77c65df3904c0401e10a65564f7b9e22031c15889de17723e/django-ipghrms-leave-1.1.tar.gz
+[2023-04-10 08:06:40] INFO root fetch - processPackages [django-ipghrms-leave]: executing diffoscope
+[2023-04-10 08:06:40] INFO root fetch - processPackages [django-ipghrms-leave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ipghrms-leave-1.0.tar.gz tmp/django-ipghrms-leave-1.1.tar.gz --markdown 20230410/d/django-ipghrms-leave/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-10 08:06:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:06:41] WARNING root fetch - processPackages [pipen-log2file]: Skipping, unable to determine old version
+[2023-04-10 08:06:41] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:06:41] INFO root fetch - processPackages [hbshare]: New version: [3.7.9] Old Version: [3.7.8]
+[2023-04-10 08:06:41] INFO root fetch - processPackages [hbshare]: Downloading https://files.pythonhosted.org/packages/a5/a4/499d23d74887ffd4ef67553315658f683be836712d76c2899658261b95c7/hbshare-3.7.8.tar.gz
+[2023-04-10 08:06:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:06:41] ERROR root fetch - processPackages [anshudi]: Unable to get metadata: No such project 'anshudi'
+[2023-04-10 08:06:41] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:06:41] INFO root fetch - processPackages [autotranscribe]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-10 08:06:41] INFO root fetch - processPackages [hbshare]: Downloading https://files.pythonhosted.org/packages/3b/cf/d495e4794562827ff7bdac1372ab526c4beca5fa1b11cbb802d837fd27de/hbshare-3.7.9.tar.gz
+[2023-04-10 08:06:41] INFO root fetch - processPackages [hbshare]: executing diffoscope
+[2023-04-10 08:06:41] INFO root fetch - processPackages [hbshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbshare-3.7.8.tar.gz tmp/hbshare-3.7.9.tar.gz --markdown 20230410/h/hbshare/3.7.8-3.7.9/diff.md --exclude *.pyd
+[2023-04-10 08:06:41] INFO root fetch - processPackages [autotranscribe]: Downloading https://files.pythonhosted.org/packages/6d/47/1d81a8e211e6db2d1fdf3c0b8fe2ce1c477ea2201e1d9d6fa6b8bb4cd283/autotranscribe-0.1.4.tar.gz
+[2023-04-10 08:06:41] INFO root fetch - processPackages [autotranscribe]: Downloading https://files.pythonhosted.org/packages/a9/d3/75f7897512c2958606fb22e1121c7c628a035f5ae9b09aea3f2abe5cc451/autotranscribe-0.1.5.tar.gz
+[2023-04-10 08:06:42] INFO root fetch - processPackages [autotranscribe]: executing diffoscope
+[2023-04-10 08:06:42] INFO root fetch - processPackages [autotranscribe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autotranscribe-0.1.4.tar.gz tmp/autotranscribe-0.1.5.tar.gz --markdown 20230410/a/autotranscribe/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-10 08:06:42] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:06:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:06:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:06:44] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:06:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:06:45] INFO root fetch - main [MainThread]: Store serial: [17643357]
