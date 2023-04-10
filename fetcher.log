@@ -9983,3 +9983,32 @@ EOFError: EOF read where object expected
 [2023-04-10 15:28:20] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:28:20] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:28:20] INFO root fetch - main [MainThread]: Store serial: [17646196]
+[2023-04-10 15:33:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646196]
+[2023-04-10 15:33:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 15:33:28] WARNING root fetch - processPackages [xbee900-HIT]: Skipping, unable to determine old version
+[2023-04-10 15:33:28] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:33:28] WARNING root fetch - processPackages [torswitch]: Skipping, unable to determine old version
+[2023-04-10 15:33:28] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:33:28] INFO root fetch - processPackages [dbis-relational-calculus]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 15:33:28] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 15:33:28] INFO root fetch - processPackages [openjtalk]: New version: [0.3.0.dev3] Old Version: [0.3.0.dev2]
+[2023-04-10 15:33:28] INFO root fetch - processPackages [nucliadb-telemetry]: New version: [1.8.0] Old Version: [1.7.2]
+[2023-04-10 15:33:28] INFO root fetch - processPackages [webscrapbook]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-04-10 15:33:28] INFO root fetch - processPackages [dbis-relational-calculus]: executing diffoscope
+[2023-04-10 15:33:28] INFO root fetch - processPackages [dbis-relational-calculus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbis-relational-calculus-1.0.3.tar.gz tmp/dbis-relational-calculus-1.0.4.tar.gz --markdown 20230410/d/dbis-relational-calculus/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-10 15:33:28] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-10 15:33:28] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230410/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 15:33:29] INFO root fetch - processPackages [openjtalk]: Downloading https://files.pythonhosted.org/packages/31/dc/6c1404e73fa2f299c9aa57e7493e3699b17315b8ff9efb876c5025c0dcf0/openjtalk-0.3.0.dev2.tar.gz
+[2023-04-10 15:33:29] INFO root fetch - processPackages [nucliadb-telemetry]: Downloading https://files.pythonhosted.org/packages/b0/48/62137513c6e48d92edc9cef411545c7567b73e109ed47fabaf3801f8cdc1/nucliadb_telemetry-1.7.2-py3-none-any.whl
+[2023-04-10 15:33:29] INFO root fetch - processPackages [nucliadb-telemetry]: Downloading https://files.pythonhosted.org/packages/01/ba/e70f138195d63e5786bab5d38787df50c44dfb3ca7a073c967c45c41af15/nucliadb_telemetry-1.8.0-py3-none-any.whl
+[2023-04-10 15:33:29] INFO root fetch - processPackages [webscrapbook]: executing diffoscope
+[2023-04-10 15:33:29] INFO root fetch - processPackages [webscrapbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscrapbook-1.8.3.tar.gz tmp/webscrapbook-1.9.0.tar.gz --markdown 20230410/w/webscrapbook/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-04-10 15:33:29] INFO root fetch - processPackages [nucliadb-telemetry]: executing diffoscope
+[2023-04-10 15:33:29] INFO root fetch - processPackages [nucliadb-telemetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_telemetry-1.7.2-py3-none-any.whl.zip tmp/nucliadb_telemetry-1.8.0-py3-none-any.whl.zip --markdown 20230410/n/nucliadb-telemetry/1.7.2-1.8.0/diff.md --exclude *.pyd
+[2023-04-10 15:33:29] WARNING root fetch - processPackages [openjtalk]: Skipping package: exceeds size limit 24892151>=10485760
+[2023-04-10 15:33:29] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:33:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:33:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:33:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:33:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:33:31] INFO root fetch - main [MainThread]: Store serial: [17646221]
