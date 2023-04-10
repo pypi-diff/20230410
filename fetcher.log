@@ -13446,3 +13446,20 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 19:43:32] INFO root fetch - main [MainThread]: success
 [2023-04-10 19:43:43] INFO root fetch - main [MainThread]: success
 [2023-04-10 19:43:43] INFO root fetch - main [MainThread]: Store serial: [17648739]
+[2023-04-10 19:44:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17648739]
+[2023-04-10 19:44:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-10 19:44:33] INFO root fetch - processPackages [package-jmsierra-fff]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-10 19:44:33] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev2] Old Version: [4.0.0.dev1]
+[2023-04-10 19:44:33] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-10 19:44:33] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/86/07/ef607509da84045ec5b3baed6629eb8646078cfbac6de7a821acabe9c217/aim-ui-4.0.0.dev1.tar.gz
+[2023-04-10 19:44:33] WARNING root fetch - processPackages [scrapy-mattermostbot]: Skipping, unable to determine old version
+[2023-04-10 19:44:33] INFO root fetch - main [MainThread]: error
+[2023-04-10 19:44:33] INFO root fetch - processPackages [package-jmsierra-fff]: executing diffoscope
+[2023-04-10 19:44:33] INFO root fetch - processPackages [package-jmsierra-fff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/package_jmsierra_fff-0.2.0.tar.gz tmp/package_jmsierra_fff-0.3.0.tar.gz --markdown 20230410/p/package-jmsierra-fff/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-10 19:44:33] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-04-10 19:44:33] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230410/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-10 19:44:34] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 22058272>=10485760
+[2023-04-10 19:44:34] INFO root fetch - main [MainThread]: error
+[2023-04-10 19:44:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:44:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:44:37] INFO root fetch - main [MainThread]: Store serial: [17648750]
