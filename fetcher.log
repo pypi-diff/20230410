@@ -15555,3 +15555,83 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 22:34:15] ERROR root fetch - processPackages [sqlmesh]: Timeout during execution of pkgdiff
 [2023-04-10 22:34:15] INFO root fetch - main [MainThread]: error
 [2023-04-10 22:34:15] INFO root fetch - main [MainThread]: Store serial: [17650104]
+[2023-04-10 22:39:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650104]
+[2023-04-10 22:39:23] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-10 22:39:23] INFO root fetch - processPackages [ecopipeline]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 22:39:23] INFO root fetch - processPackages [django-robust-redirects]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-10 22:39:23] WARNING root fetch - processPackages [chessdisplay]: Skipping, unable to determine old version
+[2023-04-10 22:39:23] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:39:23] INFO root fetch - processPackages [school-grader]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-10 22:39:23] INFO root fetch - processPackages [doppkit]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-10 22:39:23] INFO root fetch - processPackages [rapidtide]: New version: [2.4.5.1] Old Version: [2.4.0]
+[2023-04-10 22:39:24] INFO root fetch - processPackages [school-grader]: Downloading https://files.pythonhosted.org/packages/42/20/392da3ccf5f21281e3d6b7d4e5b5f157810d82cf3d2c94d704b4d0db8bfa/school_grader-2.0.4.tar.gz
+[2023-04-10 22:39:24] INFO root fetch - processPackages [rapidtide]: Downloading https://files.pythonhosted.org/packages/ae/ff/ad1d8d2a9b7c0c9334dc820dfabcf94f6c587467b54f1bf1a1940714235e/rapidtide-2.4.0.tar.gz
+[2023-04-10 22:39:24] INFO root fetch - processPackages [ecopipeline]: Downloading https://files.pythonhosted.org/packages/7d/72/99fccd3036194aceae6369348a5e2f481ebfafe02c2daab6b9ff44c614c3/ecopipeline-0.0.4.tar.gz
+[2023-04-10 22:39:24] INFO root fetch - processPackages [django-robust-redirects]: Downloading https://files.pythonhosted.org/packages/9d/7e/a5d95b985ba240494c72ca5b423edf5b67bb18fb2b20eeca24e9ed25d82d/django-robust-redirects-1.1.1.tar.gz
+[2023-04-10 22:39:24] INFO root fetch - processPackages [doppkit]: executing diffoscope
+[2023-04-10 22:39:24] INFO root fetch - processPackages [doppkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doppkit-0.1.6.tar.gz tmp/doppkit-0.1.7.tar.gz --markdown 20230410/d/doppkit/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-10 22:39:24] INFO root fetch - processPackages [ecopipeline]: executing diffoscope
+[2023-04-10 22:39:24] INFO root fetch - processPackages [ecopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecopipeline-0.0.3.tar.gz tmp/ecopipeline-0.0.4.tar.gz --markdown 20230410/e/ecopipeline/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 22:39:24] INFO root fetch - processPackages [django-robust-redirects]: executing diffoscope
+[2023-04-10 22:39:24] INFO root fetch - processPackages [django-robust-redirects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-robust-redirects-1.1.0.tar.gz tmp/django-robust-redirects-1.1.1.tar.gz --markdown 20230410/d/django-robust-redirects/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-10 22:39:24] INFO root fetch - processPackages [school-grader]: Downloading https://files.pythonhosted.org/packages/39/1d/27590c59f1577d923d9bae102a48f318a61ec91675db8e083b9edfc1028b/school_grader-2.0.5.tar.gz
+[2023-04-10 22:39:24] INFO root fetch - processPackages [school-grader]: executing diffoscope
+[2023-04-10 22:39:24] INFO root fetch - processPackages [school-grader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/school_grader-2.0.4.tar.gz tmp/school_grader-2.0.5.tar.gz --markdown 20230410/s/school-grader/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-10 22:39:24] WARNING root fetch - processPackages [rapidtide]: Skipping package: exceeds size limit 99769094>=10485760
+[2023-04-10 22:39:24] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:39:24] WARNING root fetch - processPackages [adb-logger]: Skipping, unable to determine old version
+[2023-04-10 22:39:24] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:39:24] WARNING root fetch - processPackages [story-analyzer]: Skipping, unable to determine old version
+[2023-04-10 22:39:24] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:39:24] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a8]
+[2023-04-10 22:39:25] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-10 22:39:25] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a8.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230410/c/cbra/2.0.0a8-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-10 22:39:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:25] INFO root fetch - processPackages [FlipperNested]: New version: [1.7.1] Old Version: [1.6.4]
+[2023-04-10 22:39:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:25] INFO root fetch - processPackages [prettyqt]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-10 22:39:25] INFO root fetch - processPackages [FlipperNested]: Downloading https://files.pythonhosted.org/packages/e3/98/ff9b27f0cc096b4c11f9f10a4f187cb5c5558fdb6fb2f25863d3d7b67664/FlipperNested-1.6.4.tar.gz
+[2023-04-10 22:39:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:25] INFO root fetch - processPackages [balsam]: New version: [0.7.0a22] Old Version: [0.7.0a21]
+[2023-04-10 22:39:25] INFO root fetch - processPackages [FlipperNested]: Downloading https://files.pythonhosted.org/packages/34/26/fbf530482a82b7517f966f7ac68bd1d2ee5b19e2000e67fedaf181ae0ea0/FlipperNested-1.7.1.tar.gz
+[2023-04-10 22:39:25] INFO root fetch - processPackages [balsam]: Downloading https://files.pythonhosted.org/packages/02/65/8d8d9d58c86bdff3a7c4951d2932872d475e9ded521af09513a013e97a8b/balsam-0.7.0a21.tar.gz
+[2023-04-10 22:39:25] INFO root fetch - processPackages [FlipperNested]: executing diffoscope
+[2023-04-10 22:39:25] INFO root fetch - processPackages [FlipperNested]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlipperNested-1.6.4.tar.gz tmp/FlipperNested-1.7.1.tar.gz --markdown 20230410/F/FlipperNested/1.6.4-1.7.1/diff.md --exclude *.pyd
+[2023-04-10 22:39:25] INFO root fetch - processPackages [prettyqt]: Downloading https://files.pythonhosted.org/packages/e7/52/7784f9e9f7aacde3bdeb94b056bd8349ab8ed4f110aed9c40473fd61ae58/prettyqt-1.1.2.tar.gz
+[2023-04-10 22:39:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:25] INFO root fetch - processPackages [caso]: New version: [4.1.1.0rc1] Old Version: [4.1.0.0rc2]
+[2023-04-10 22:39:25] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-04-10 22:39:25] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.1.1.tar.gz tmp/prettyqt-1.1.2.tar.gz --markdown 20230410/p/prettyqt/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-10 22:39:26] INFO root fetch - processPackages [caso]: Downloading https://files.pythonhosted.org/packages/87/77/bd693d09537740eb8febfed3f174ede4b7b7f1aca9884be0f0c4c9ccb350/caso-4.1.0.0rc2.tar.gz
+[2023-04-10 22:39:26] INFO root fetch - processPackages [balsam]: Downloading https://files.pythonhosted.org/packages/5f/99/a034254a27bfc7cee615921f4faead557efe3a35780a590c976bf3ed7ed8/balsam-0.7.0a22.tar.gz
+[2023-04-10 22:39:26] INFO root fetch - processPackages [balsam]: executing diffoscope
+[2023-04-10 22:39:26] INFO root fetch - processPackages [balsam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsam-0.7.0a21.tar.gz tmp/balsam-0.7.0a22.tar.gz --markdown 20230410/b/balsam/0.7.0a21-0.7.0a22/diff.md --exclude *.pyd
+[2023-04-10 22:39:26] INFO root fetch - processPackages [caso]: Downloading https://files.pythonhosted.org/packages/23/1f/9cb7ea5e811af3a1c9fe8c919560d22674f2e0284eea7126b876ca839ab4/caso-4.1.1.0rc1.tar.gz
+[2023-04-10 22:39:26] INFO root fetch - processPackages [caso]: executing diffoscope
+[2023-04-10 22:39:26] INFO root fetch - processPackages [caso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caso-4.1.0.0rc2.tar.gz tmp/caso-4.1.1.0rc1.tar.gz --markdown 20230410/c/caso/4.1.0.0rc2-4.1.1.0rc1/diff.md --exclude *.pyd
+[2023-04-10 22:39:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:27] INFO root fetch - processPackages [balcony]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 22:39:27] INFO root fetch - processPackages [balcony]: Downloading https://files.pythonhosted.org/packages/f7/46/02bb32dcde71b4900e5d543e99b104dab2a63dec323d60cbdb25cd064438/balcony-0.0.8.tar.gz
+[2023-04-10 22:39:27] INFO root fetch - processPackages [balcony]: Downloading https://files.pythonhosted.org/packages/12/6e/1a03d61fc945caa3dc718bb4815932e4865637dc350375afc510f7998363/balcony-0.0.9.tar.gz
+[2023-04-10 22:39:27] INFO root fetch - processPackages [balcony]: executing diffoscope
+[2023-04-10 22:39:27] INFO root fetch - processPackages [balcony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balcony-0.0.8.tar.gz tmp/balcony-0.0.9.tar.gz --markdown 20230410/b/balcony/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 22:39:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:27] INFO root fetch - processPackages [sparkql]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-10 22:39:28] INFO root fetch - processPackages [sparkql]: Downloading https://files.pythonhosted.org/packages/70/fc/3d3e6853681a687bdcc942a8f7281628dc3caea8879a1e1cf5305a99a876/sparkql-0.6.0.tar.gz
+[2023-04-10 22:39:28] INFO root fetch - processPackages [sparkql]: Downloading https://files.pythonhosted.org/packages/e7/ae/06a3cf14b36be81aac3a1cb0ed4f155e43025751ff15cc531de5ed17ed9c/sparkql-0.7.0.tar.gz
+[2023-04-10 22:39:28] INFO root fetch - processPackages [sparkql]: executing diffoscope
+[2023-04-10 22:39:28] INFO root fetch - processPackages [sparkql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparkql-0.6.0.tar.gz tmp/sparkql-0.7.0.tar.gz --markdown 20230410/s/sparkql/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-10 22:39:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:28] INFO root fetch - processPackages [balcony]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 22:39:28] INFO root fetch - processPackages [balcony]: executing diffoscope
+[2023-04-10 22:39:28] INFO root fetch - processPackages [balcony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balcony-0.0.8.tar.gz tmp/balcony-0.0.9.tar.gz --markdown 20230410/b/balcony/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 22:39:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:28] WARNING root fetch - processPackages [bk-clustering]: Skipping, unable to determine old version
+[2023-04-10 22:39:28] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:39:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:29] WARNING root fetch - processPackages [infinitesimals]: Skipping, unable to determine old version
+[2023-04-10 22:39:29] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:39:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:39:33] INFO root fetch - main [MainThread]: Store serial: [17650201]
