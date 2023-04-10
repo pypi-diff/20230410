@@ -1140,3 +1140,38 @@
 [2023-04-10 02:36:11] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:36:11] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:36:11] INFO root fetch - main [MainThread]: Store serial: [17640731]
+[2023-04-10 02:41:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640731]
+[2023-04-10 02:41:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 02:41:21] INFO root fetch - processPackages [dcicsnovault]: New version: [8.0.0] Old Version: [7.9.9.0b2]
+[2023-04-10 02:41:21] INFO root fetch - processPackages [validate-pypi-name]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 02:41:21] INFO root fetch - processPackages [validate-pypi-name]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 02:41:21] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-10 02:41:21] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.0.dev202304090044] Old Version: [4.9.0.dev202304080044]
+[2023-04-10 02:41:21] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-04-10 02:41:22] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-04-10 02:41:22] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.0.dev202304080044.tar.gz tmp/tfds-nightly-4.9.0.dev202304090044.tar.gz --markdown 20230410/t/tfds-nightly/4.9.0.dev202304080044-4.9.0.dev202304090044/diff.md --exclude *.pyd
+[2023-04-10 02:41:22] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-04-10 02:41:22] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-10 02:41:22] INFO root fetch - processPackages [dcicsnovault]: Downloading https://files.pythonhosted.org/packages/3e/f0/e4b448162b7404fc0ef19f6f139ca5219c93ec9e474edf85cc37a8a8c2e1/dcicsnovault-7.9.9.0b2.tar.gz
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: Downloading https://files.pythonhosted.org/packages/52/96/06cee3d5abc6836a440eefe0877a118cffc96bb57aebea7a3559e4f4a894/validate_pypi_name-1.0.1-py3-none-any.whl
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: Downloading https://files.pythonhosted.org/packages/52/96/06cee3d5abc6836a440eefe0877a118cffc96bb57aebea7a3559e4f4a894/validate_pypi_name-1.0.1-py3-none-any.whl
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: Downloading https://files.pythonhosted.org/packages/e9/9b/6e56524897258ae46b29d975f4514e938adf35837ba016c5626211ef0bb9/validate_pypi_name-1.0.2-py3-none-any.whl
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: Downloading https://files.pythonhosted.org/packages/e9/9b/6e56524897258ae46b29d975f4514e938adf35837ba016c5626211ef0bb9/validate_pypi_name-1.0.2-py3-none-any.whl
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: Downloading https://files.pythonhosted.org/packages/e9/9b/6e56524897258ae46b29d975f4514e938adf35837ba016c5626211ef0bb9/validate_pypi_name-1.0.2-py3-none-any.whl
+[2023-04-10 02:41:22] INFO root fetch - processPackages [dcicsnovault]: Downloading https://files.pythonhosted.org/packages/01/9d/5a7d189ee011b4dcef45c3157bcf7b7987ad7fb9c70937a2d58a6bd81397/dcicsnovault-8.0.0.tar.gz
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: executing diffoscope
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: executing diffoscope
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validate_pypi_name-1.0.1-py3-none-any.whl.zip tmp/validate_pypi_name-1.0.2-py3-none-any.whl.zip --markdown 20230410/v/validate-pypi-name/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validate_pypi_name-1.0.1-py3-none-any.whl.zip tmp/validate_pypi_name-1.0.2-py3-none-any.whl.zip --markdown 20230410/v/validate-pypi-name/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: Downloading https://files.pythonhosted.org/packages/69/99/929004bb960190fefe707fe7fa54bc71ea4e9a37450a99c7bb54725ea86a/validate_pypi_name-1.0.3-py3-none-any.whl
+[2023-04-10 02:41:22] INFO root fetch - processPackages [dcicsnovault]: executing diffoscope
+[2023-04-10 02:41:22] INFO root fetch - processPackages [dcicsnovault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicsnovault-7.9.9.0b2.tar.gz tmp/dcicsnovault-8.0.0.tar.gz --markdown 20230410/d/dcicsnovault/7.9.9.0b2-8.0.0/diff.md --exclude *.pyd
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: executing diffoscope
+[2023-04-10 02:41:22] INFO root fetch - processPackages [validate-pypi-name]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validate_pypi_name-1.0.2-py3-none-any.whl.zip tmp/validate_pypi_name-1.0.3-py3-none-any.whl.zip --markdown 20230410/v/validate-pypi-name/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-10 02:41:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:41:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:41:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:41:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:41:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:41:33] INFO root fetch - main [MainThread]: Store serial: [17640749]
