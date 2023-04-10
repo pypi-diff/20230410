@@ -6489,3 +6489,28 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 10:19:06] INFO root fetch - main [MainThread]: success
 [2023-04-10 10:19:07] INFO root fetch - main [MainThread]: success
 [2023-04-10 10:19:07] INFO root fetch - main [MainThread]: Store serial: [17644186]
+[2023-04-10 10:24:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644186]
+[2023-04-10 10:24:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-10 10:24:14] INFO root fetch - processPackages [skinport.py]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-10 10:24:14] WARNING root fetch - processPackages [wbtest-utils]: Skipping, unable to determine old version
+[2023-04-10 10:24:14] INFO root fetch - main [MainThread]: error
+[2023-04-10 10:24:14] WARNING root fetch - processPackages [gpt-ai]: Skipping, unable to determine old version
+[2023-04-10 10:24:14] INFO root fetch - main [MainThread]: error
+[2023-04-10 10:24:14] INFO root fetch - processPackages [leetcode-cli]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-04-10 10:24:14] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 10:24:14] INFO root fetch - processPackages [skinport.py]: Downloading https://files.pythonhosted.org/packages/70/da/e31a1f82151ace5a614914f78e571f7eaf05fab3defab76ff772cc8d60ab/skinport.py-0.6.0.tar.gz
+[2023-04-10 10:24:14] INFO root fetch - processPackages [leetcode-cli]: Downloading https://files.pythonhosted.org/packages/9c/ad/f70c8eef7dfe1722eb358bd2bb84f5af2b05ad3f2c83ddf73ff2abb36449/leetcode-cli-0.0.7.tar.gz
+[2023-04-10 10:24:15] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: Downloading https://files.pythonhosted.org/packages/3c/8c/38a4eacdbbb84fab5cf4ea9b49a551d39e0e7cc8e59275daea7405e2e009/airflow-provider-huawei-cloud-demo-0.0.8.tar.gz
+[2023-04-10 10:24:15] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: Downloading https://files.pythonhosted.org/packages/5c/88/02a33b3ab366b91dbf99db4c5a374783c9d661e9d27a68a65ce80d4c94c4/airflow-provider-huawei-cloud-demo-0.0.9.tar.gz
+[2023-04-10 10:24:15] INFO root fetch - processPackages [skinport.py]: Downloading https://files.pythonhosted.org/packages/f5/8b/7c88220082a08d5a076234680527a7f6538d665e6f269b564d394bd09709/skinport.py-0.7.0.tar.gz
+[2023-04-10 10:24:15] INFO root fetch - processPackages [leetcode-cli]: Downloading https://files.pythonhosted.org/packages/3d/2b/fdfc94251a2128b5f4475a81be9d0dd9942ba324c5e5ad60428b2d0286c0/leetcode-cli-0.1.0.tar.gz
+[2023-04-10 10:24:15] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: executing diffoscope
+[2023-04-10 10:24:15] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-provider-huawei-cloud-demo-0.0.8.tar.gz tmp/airflow-provider-huawei-cloud-demo-0.0.9.tar.gz --markdown 20230410/a/airflow-provider-huawei-cloud-demo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 10:24:15] INFO root fetch - processPackages [skinport.py]: executing diffoscope
+[2023-04-10 10:24:15] INFO root fetch - processPackages [skinport.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skinport.py-0.6.0.tar.gz tmp/skinport.py-0.7.0.tar.gz --markdown 20230410/s/skinport.py/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-10 10:24:15] INFO root fetch - processPackages [leetcode-cli]: executing diffoscope
+[2023-04-10 10:24:15] INFO root fetch - processPackages [leetcode-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leetcode-cli-0.0.7.tar.gz tmp/leetcode-cli-0.1.0.tar.gz --markdown 20230410/l/leetcode-cli/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-04-10 10:24:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:24:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:24:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:24:16] INFO root fetch - main [MainThread]: Store serial: [17644204]
