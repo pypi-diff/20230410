@@ -2171,3 +2171,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-10 04:23:11] INFO root fetch - main [MainThread]: success
 [2023-04-10 04:23:26] INFO root fetch - main [MainThread]: success
 [2023-04-10 04:23:26] INFO root fetch - main [MainThread]: Store serial: [17641397]
+[2023-04-10 04:28:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17641397]
+[2023-04-10 04:28:33] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 04:28:33] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 04:28:33] INFO root fetch - processPackages [htmlfilesforquiz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 04:28:33] INFO root fetch - processPackages [htmlfilesforquiz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 04:28:33] INFO root fetch - processPackages [statcan-dialogue-dataset]: New version: [0.2.0.dev1] Old Version: [0.1.0]
+[2023-04-10 04:28:33] INFO root fetch - processPackages [importlib-metadata]: New version: [6.3.0] Old Version: [6.2.1]
+[2023-04-10 04:28:33] INFO root fetch - processPackages [htmlfilesforquiz]: executing diffoscope
+[2023-04-10 04:28:33] INFO root fetch - processPackages [htmlfilesforquiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmlfilesforquiz-0.0.8.tar.gz tmp/htmlfilesforquiz-0.0.9.tar.gz --markdown 20230410/h/htmlfilesforquiz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 04:28:33] INFO root fetch - processPackages [htmlfilesforquiz]: executing diffoscope
+[2023-04-10 04:28:33] INFO root fetch - processPackages [htmlfilesforquiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmlfilesforquiz-0.0.8.tar.gz tmp/htmlfilesforquiz-0.0.9.tar.gz --markdown 20230410/h/htmlfilesforquiz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 04:28:33] INFO root fetch - processPackages [cwsearch-utils]: Downloading https://files.pythonhosted.org/packages/3c/7e/dcfa0c1690e622e9e6efec012ec386625e151b053509e272c771389c80b7/cwsearch_utils-0.0.2-py3-none-any.whl
+[2023-04-10 04:28:33] INFO root fetch - processPackages [statcan-dialogue-dataset]: Downloading https://files.pythonhosted.org/packages/a4/f7/780ffd4f432d73d15d8c75184e1a2ce6a6643d3e1a17cc71eb00c9d251ee/statcan-dialogue-dataset-0.1.0.tar.gz
+[2023-04-10 04:28:33] WARNING root fetch - processPackages [statcan-dialogue-dataset]: Skipping package: exceeds size limit 23322507>=10485760
+[2023-04-10 04:28:33] INFO root fetch - main [MainThread]: error
+[2023-04-10 04:28:33] INFO root fetch - processPackages [importlib-metadata]: Downloading https://files.pythonhosted.org/packages/c2/84/ab374b7e05fbdeecf867294660ac0fdb23aa286aca68a31d587f67d181ad/importlib_metadata-6.3.0.tar.gz
+[2023-04-10 04:28:33] INFO root fetch - processPackages [mycotools]: New version: [0.9b9] Old Version: [0.9b8]
+[2023-04-10 04:28:33] INFO root fetch - processPackages [importlib-metadata]: executing diffoscope
+[2023-04-10 04:28:33] INFO root fetch - processPackages [importlib-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importlib_metadata-6.2.1.tar.gz tmp/importlib_metadata-6.3.0.tar.gz --markdown 20230410/i/importlib-metadata/6.2.1-6.3.0/diff.md --exclude *.pyd
+[2023-04-10 04:28:33] INFO root fetch - processPackages [cwsearch-utils]: Downloading https://files.pythonhosted.org/packages/9a/17/89ea74bad09b9327bf8c71853e2415ebcd74256306e02bcbd580986a7c04/cwsearch_utils-0.0.3-py3-none-any.whl
+[2023-04-10 04:28:33] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-04-10 04:28:33] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.0.2-py3-none-any.whl.zip tmp/cwsearch_utils-0.0.3-py3-none-any.whl.zip --markdown 20230410/c/cwsearch-utils/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 04:28:34] INFO root fetch - processPackages [mycotools]: Downloading https://files.pythonhosted.org/packages/3e/15/9cb9132ba6187eee0ca2a7aae3ce7d715352642e5a707e15d00144f13fe4/mycotools-0.9b8.tar.gz
+[2023-04-10 04:28:34] INFO root fetch - processPackages [mycotools]: Downloading https://files.pythonhosted.org/packages/ee/a4/9aa7fd55d3bd93c854023d0732b10eaf6a738e6aa0289ceb539fb946d02f/mycotools-0.9b9.tar.gz
+[2023-04-10 04:28:34] INFO root fetch - processPackages [mycotools]: executing diffoscope
+[2023-04-10 04:28:34] INFO root fetch - processPackages [mycotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mycotools-0.9b8.tar.gz tmp/mycotools-0.9b9.tar.gz --markdown 20230410/m/mycotools/0.9b8-0.9b9/diff.md --exclude *.pyd
+[2023-04-10 04:28:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:28:34] WARNING root fetch - processPackages [snowflake-ice-pick]: Skipping, unable to determine old version
+[2023-04-10 04:28:34] INFO root fetch - main [MainThread]: error
+[2023-04-10 04:28:34] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-10 04:28:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:28:34] INFO root fetch - processPackages [aliyun-python-sdk-oceanbasepro]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-10 04:28:34] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-10 04:28:34] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230410/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-10 04:28:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:28:35] INFO root fetch - processPackages [aliyun-python-sdk-oceanbasepro]: Downloading https://files.pythonhosted.org/packages/68/49/f3ed45bc2e1a095cff27f26fa6953ad684370935de7a7eb0cdfd9ebc5b62/aliyun-python-sdk-oceanbasepro-1.0.6.tar.gz
+[2023-04-10 04:28:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:28:35] INFO root fetch - processPackages [aliyun-python-sdk-oceanbasepro]: Downloading https://files.pythonhosted.org/packages/3a/06/e60595961df5c05d36142095e53ec32b2ab6746f8496bc07eeb489715b71/aliyun-python-sdk-oceanbasepro-1.0.7.tar.gz
+[2023-04-10 04:28:35] INFO root fetch - processPackages [aliyun-python-sdk-oceanbasepro]: executing diffoscope
+[2023-04-10 04:28:35] INFO root fetch - processPackages [aliyun-python-sdk-oceanbasepro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-oceanbasepro-1.0.6.tar.gz tmp/aliyun-python-sdk-oceanbasepro-1.0.7.tar.gz --markdown 20230410/a/aliyun-python-sdk-oceanbasepro/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-10 04:28:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:28:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:28:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:28:36] INFO root fetch - main [MainThread]: Store serial: [17641425]
