@@ -7217,3 +7217,55 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 11:29:03] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:29:06] INFO root fetch - main [MainThread]: success
 [2023-04-10 11:29:06] INFO root fetch - main [MainThread]: Store serial: [17644692]
+[2023-04-10 11:34:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644692]
+[2023-04-10 11:34:14] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 11:34:14] INFO root fetch - processPackages [QuantumPathQSOAPySDK]: New version: [1.4] Old Version: [1.3.2]
+[2023-04-10 11:34:14] INFO root fetch - processPackages [biglist]: New version: [0.7.9b1] Old Version: [0.7.8]
+[2023-04-10 11:34:14] INFO root fetch - processPackages [riscv-assembler]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 11:34:14] INFO root fetch - processPackages [cchenutils]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 11:34:14] INFO root fetch - processPackages [TG-AutoPoster]: New version: [3.5.0b1] Old Version: [3.5.0]
+[2023-04-10 11:34:14] INFO root fetch - processPackages [TG-AutoPoster]: Downloading https://files.pythonhosted.org/packages/1f/76/a949777697d39bb493777b7945d412dde2ae526f2753f7d05af7bc7dd2ee/TG_AutoPoster-3.5.0.tar.gz
+[2023-04-10 11:34:14] INFO root fetch - processPackages [biglist]: Downloading https://files.pythonhosted.org/packages/cc/cf/c8845325367d55972b41921f51f581cfeeb36ae51f4605dc01ab7236ea77/biglist-0.7.8.tar.gz
+[2023-04-10 11:34:14] INFO root fetch - processPackages [riscv-assembler]: Downloading https://files.pythonhosted.org/packages/d3/d6/895dc9cc3f450e386b27fb8596ea2b36aa64d263378d865b63d220bea4cc/riscv_assembler-1.0.8-py2.py3-none-any.whl
+[2023-04-10 11:34:14] INFO root fetch - processPackages [QuantumPathQSOAPySDK]: Downloading https://files.pythonhosted.org/packages/98/5b/db9170fb85c1d2615ffdfed9032b5555dfe071770288237e07ca39ad6b8c/QuantumPathQSOAPySDK-1.3.2.tar.gz
+[2023-04-10 11:34:14] INFO root fetch - processPackages [cchenutils]: Downloading https://files.pythonhosted.org/packages/dc/74/ca959411e32ec79ccdc86150933960b3e18a4a6ac43e3385e9126abce016/cchenutils-0.0.4-py3-none-any.whl
+[2023-04-10 11:34:14] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-10 11:34:14] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.0.3-py3-none-any.whl.zip tmp/cchenutils-0.0.4-py3-none-any.whl.zip --markdown 20230410/c/cchenutils/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 11:34:14] INFO root fetch - processPackages [biglist]: Downloading https://files.pythonhosted.org/packages/fa/4a/ca36a34bc55d6e085393d7b126f4773568378c940b99a76f2139396ee8f3/biglist-0.7.9b1.tar.gz
+[2023-04-10 11:34:14] INFO root fetch - processPackages [TG-AutoPoster]: Downloading https://files.pythonhosted.org/packages/b1/07/7964f142665c68e789cd13da118f4f8cbba142daf6d03a56933bddebc358/TG_AutoPoster-3.5.0b1.tar.gz
+[2023-04-10 11:34:15] INFO root fetch - processPackages [QuantumPathQSOAPySDK]: Downloading https://files.pythonhosted.org/packages/bc/0f/9252b6bcfbc40fb0847fc60e98f8a6f4d44daeed0243d71aefe996e80234/QuantumPathQSOAPySDK-1.4.tar.gz
+[2023-04-10 11:34:15] INFO root fetch - processPackages [riscv-assembler]: Downloading https://files.pythonhosted.org/packages/45/74/da94f97a9fb58c2185502a606ba68b67bfadb05907323c301519baf0fa0b/riscv-assembler-1.0.9.tar.gz
+[2023-04-10 11:34:15] INFO root fetch - processPackages [QuantumPathQSOAPySDK]: executing diffoscope
+[2023-04-10 11:34:15] INFO root fetch - processPackages [QuantumPathQSOAPySDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuantumPathQSOAPySDK-1.3.2.tar.gz tmp/QuantumPathQSOAPySDK-1.4.tar.gz --markdown 20230410/Q/QuantumPathQSOAPySDK/1.3.2-1.4/diff.md --exclude *.pyd
+[2023-04-10 11:34:15] INFO root fetch - processPackages [biglist]: executing diffoscope
+[2023-04-10 11:34:15] INFO root fetch - processPackages [biglist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biglist-0.7.8.tar.gz tmp/biglist-0.7.9b1.tar.gz --markdown 20230410/b/biglist/0.7.8-0.7.9b1/diff.md --exclude *.pyd
+[2023-04-10 11:34:15] INFO root fetch - processPackages [TG-AutoPoster]: executing diffoscope
+[2023-04-10 11:34:15] INFO root fetch - processPackages [TG-AutoPoster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TG_AutoPoster-3.5.0.tar.gz tmp/TG_AutoPoster-3.5.0b1.tar.gz --markdown 20230410/T/TG-AutoPoster/3.5.0-3.5.0b1/diff.md --exclude *.pyd
+[2023-04-10 11:34:15] INFO root fetch - processPackages [riscv-assembler]: executing diffoscope
+[2023-04-10 11:34:15] INFO root fetch - processPackages [riscv-assembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riscv_assembler-1.0.8-py2.py3-none-any.whl.zip tmp/riscv-assembler-1.0.9.tar.gz --markdown 20230410/r/riscv-assembler/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 11:34:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:34:16] INFO root fetch - processPackages [napari-sam]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-10 11:34:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:34:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:34:16] INFO root fetch - processPackages [hdr-plot]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-10 11:34:16] INFO root fetch - processPackages [ccxt]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-10 11:34:16] INFO root fetch - processPackages [napari-sam]: Downloading https://files.pythonhosted.org/packages/ab/d5/4e732a19544ca39e348119192a0169dc8a0b2a241d45fd5c2b9533391473/napari-sam-0.2.0.tar.gz
+[2023-04-10 11:34:16] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-04-10 11:34:16] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.8.tar.gz tmp/ccxt-3.0.9.tar.gz --markdown 20230410/c/ccxt/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-10 11:34:16] INFO root fetch - processPackages [napari-sam]: executing diffoscope
+[2023-04-10 11:34:16] INFO root fetch - processPackages [napari-sam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-sam-0.1.9.tar.gz tmp/napari-sam-0.2.0.tar.gz --markdown 20230410/n/napari-sam/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 11:34:16] INFO root fetch - processPackages [hdr-plot]: Downloading https://files.pythonhosted.org/packages/c1/b7/2736b14713cad24bd584c7da4af16510a059ff616ba1f7878da981aa6f6c/hdr-plot-0.6.0.tar.gz
+[2023-04-10 11:34:16] INFO root fetch - processPackages [hdr-plot]: Downloading https://files.pythonhosted.org/packages/21/62/ff640feca5c60e25872ed21b2fc60763e8a4cdb3ea50c6793c2c4831f8ca/hdr-plot-0.6.1.tar.gz
+[2023-04-10 11:34:16] INFO root fetch - processPackages [hdr-plot]: executing diffoscope
+[2023-04-10 11:34:16] INFO root fetch - processPackages [hdr-plot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdr-plot-0.6.0.tar.gz tmp/hdr-plot-0.6.1.tar.gz --markdown 20230410/h/hdr-plot/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-10 11:34:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:34:17] INFO root fetch - processPackages [sj-tool]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-10 11:34:17] INFO root fetch - processPackages [sj-tool]: Downloading https://files.pythonhosted.org/packages/0d/29/f6f31a7904374ce9f96df80dd1ab830aef6aea4270125d7c319ddfed07ff/sj_tool-1.0.5-py3-none-any.whl
+[2023-04-10 11:34:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:34:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:34:17] INFO root fetch - processPackages [sj-tool]: executing diffoscope
+[2023-04-10 11:34:17] INFO root fetch - processPackages [sj-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sj_tool-1.0.4-py3-none-any.whl.zip tmp/sj_tool-1.0.5-py3-none-any.whl.zip --markdown 20230410/s/sj-tool/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-10 11:34:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:34:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:34:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:34:21] INFO root fetch - main [MainThread]: Store serial: [17644721]
