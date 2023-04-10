@@ -5804,3 +5804,84 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 09:09:49] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:09:50] INFO root fetch - main [MainThread]: success
 [2023-04-10 09:09:50] INFO root fetch - main [MainThread]: Store serial: [17643691]
+[2023-04-10 09:14:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643691]
+[2023-04-10 09:14:58] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-10 09:14:58] INFO root fetch - processPackages [offshoreflac3d]: New version: [0.0.40] Old Version: [0.0.33]
+[2023-04-10 09:14:58] INFO root fetch - processPackages [py5paisa]: New version: [0.6.9] Old Version: [0.6.7]
+[2023-04-10 09:14:58] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: New version: [2.1.0.dev3871883101] Old Version: [2.0.0.dev4655406529]
+[2023-04-10 09:14:58] INFO root fetch - processPackages [drclient]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 09:14:58] INFO root fetch - processPackages [banner-storedot]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-04-10 09:14:58] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: Downloading https://files.pythonhosted.org/packages/b1/71/f0eeeb3161ecf7a717b0c098e74786e509489ec528667bf908aacafd3ef8/th2_grpc_lw_data_provider-2.0.0.dev4655406529.tar.gz
+[2023-04-10 09:14:58] INFO root fetch - processPackages [offshoreflac3d]: Downloading https://files.pythonhosted.org/packages/bb/9c/73e2a9da5cd56d514b21e229bd73bde74ab7d31fe0d5a422ca96b311c437/offshoreflac3d-0.0.33.tar.gz
+[2023-04-10 09:14:58] INFO root fetch - processPackages [py5paisa]: Downloading https://files.pythonhosted.org/packages/8f/02/33fbffffb672c82dd5be489b0f243ab357f2eb02613c14ff41acfee98b05/py5paisa-0.6.7.tar.gz
+[2023-04-10 09:14:58] INFO root fetch - processPackages [banner-storedot]: Downloading https://files.pythonhosted.org/packages/db/cf/a5f9fc89f889a07b7d1426d888f86fdfc50dcf513533ef1ecab18ec8fc47/banner-storedot-2.2.8.tar.gz
+[2023-04-10 09:14:58] INFO root fetch - processPackages [drclient]: Downloading https://files.pythonhosted.org/packages/95/c2/c6f842c9029555179566553a0e355022230ab9a5298f0019fd048d0e416d/drclient-0.0.3.tar.gz
+[2023-04-10 09:14:58] INFO root fetch - processPackages [py5paisa]: Downloading https://files.pythonhosted.org/packages/7a/c0/df3cee82b2a88a1b552d2c0f2929193b6c75cd8ab1f2574f51998e94c1c7/py5paisa-0.6.9.tar.gz
+[2023-04-10 09:14:58] INFO root fetch - processPackages [py5paisa]: executing diffoscope
+[2023-04-10 09:14:58] INFO root fetch - processPackages [py5paisa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py5paisa-0.6.7.tar.gz tmp/py5paisa-0.6.9.tar.gz --markdown 20230410/p/py5paisa/0.6.7-0.6.9/diff.md --exclude *.pyd
+[2023-04-10 09:14:58] INFO root fetch - processPackages [offshoreflac3d]: Downloading https://files.pythonhosted.org/packages/c3/6a/b211a8bfe509df0d4c7992d63ae42f95fea4079374e64dd1d2dc1008021d/offshoreflac3d-0.0.40.tar.gz
+[2023-04-10 09:14:58] INFO root fetch - processPackages [drclient]: Downloading https://files.pythonhosted.org/packages/f3/80/12bba12beea741e6d4b40837cde30c529ade802190729239eafafa8d57c1/drclient-0.0.4.tar.gz
+[2023-04-10 09:14:58] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: Downloading https://files.pythonhosted.org/packages/b8/71/939eea7287068082732ec066dc1b9af347f7ee06c935058691236acf7459/th2_grpc_lw_data_provider-2.1.0.dev3871883101.tar.gz
+[2023-04-10 09:14:58] INFO root fetch - processPackages [offshoreflac3d]: executing diffoscope
+[2023-04-10 09:14:58] INFO root fetch - processPackages [offshoreflac3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/offshoreflac3d-0.0.33.tar.gz tmp/offshoreflac3d-0.0.40.tar.gz --markdown 20230410/o/offshoreflac3d/0.0.33-0.0.40/diff.md --exclude *.pyd
+[2023-04-10 09:14:58] INFO root fetch - processPackages [drclient]: executing diffoscope
+[2023-04-10 09:14:58] INFO root fetch - processPackages [drclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drclient-0.0.3.tar.gz tmp/drclient-0.0.4.tar.gz --markdown 20230410/d/drclient/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 09:14:58] INFO root fetch - processPackages [banner-storedot]: Downloading https://files.pythonhosted.org/packages/0b/43/749443560714b9b39909973273c8822150a8417342bffd9df3eb79671716/banner-storedot-2.2.9.tar.gz
+[2023-04-10 09:14:58] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: executing diffoscope
+[2023-04-10 09:14:58] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_grpc_lw_data_provider-2.0.0.dev4655406529.tar.gz tmp/th2_grpc_lw_data_provider-2.1.0.dev3871883101.tar.gz --markdown 20230410/t/th2-grpc-lw-data-provider/2.0.0.dev4655406529-2.1.0.dev3871883101/diff.md --exclude *.pyd
+[2023-04-10 09:14:59] INFO root fetch - processPackages [banner-storedot]: executing diffoscope
+[2023-04-10 09:14:59] INFO root fetch - processPackages [banner-storedot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banner-storedot-2.2.8.tar.gz tmp/banner-storedot-2.2.9.tar.gz --markdown 20230410/b/banner-storedot/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-04-10 09:14:59] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:14:59] INFO root fetch - processPackages [leap-model-parser]: New version: [0.1.91.dev2] Old Version: [0.1.91.dev1]
+[2023-04-10 09:14:59] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:00] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 09:15:00] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:00] INFO root fetch - processPackages [xj-enroll]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-04-10 09:15:00] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-04-10 09:15:00] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.8.tar.gz tmp/sparrow-order-lib-0.1.9.tar.gz --markdown 20230410/s/sparrow-order-lib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 09:15:00] INFO root fetch - processPackages [leap-model-parser]: Downloading https://files.pythonhosted.org/packages/fe/9e/cc8c3e5cadb92d51732a11e31ff3860b60e2cfbfda5529339949f2a94e6a/leap_model_parser-0.1.91.dev1.tar.gz
+[2023-04-10 09:15:00] INFO root fetch - processPackages [xj-enroll]: executing diffoscope
+[2023-04-10 09:15:00] INFO root fetch - processPackages [xj-enroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_enroll-1.0.98.tar.gz tmp/xj_enroll-1.0.99.tar.gz --markdown 20230410/x/xj-enroll/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-04-10 09:15:00] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:00] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-10 09:15:00] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-04-10 09:15:00] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230410/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-10 09:15:00] INFO root fetch - processPackages [leap-model-parser]: Downloading https://files.pythonhosted.org/packages/89/46/d44f06f886ae33f580c66eed618cfd3cf7de4723d8f9615266e77bb2b862/leap_model_parser-0.1.91.dev2.tar.gz
+[2023-04-10 09:15:00] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:00] WARNING root fetch - processPackages [nanoclient]: Skipping, unable to determine old version
+[2023-04-10 09:15:00] INFO root fetch - main [MainThread]: error
+[2023-04-10 09:15:00] INFO root fetch - processPackages [leap-model-parser]: executing diffoscope
+[2023-04-10 09:15:00] INFO root fetch - processPackages [leap-model-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_parser-0.1.91.dev1.tar.gz tmp/leap_model_parser-0.1.91.dev2.tar.gz --markdown 20230410/l/leap-model-parser/0.1.91.dev1-0.1.91.dev2/diff.md --exclude *.pyd
+[2023-04-10 09:15:00] INFO root fetch - processPackages [fyle-integrations-platform-connector]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-10 09:15:00] INFO root fetch - processPackages [fyle-integrations-platform-connector]: Downloading https://files.pythonhosted.org/packages/52/45/e5e38ed24c1622734daa77b91cc350bf11c44695b7aaaf9671f084870c76/fyle-integrations-platform-connector-1.8.0.tar.gz
+[2023-04-10 09:15:01] INFO root fetch - processPackages [fyle-integrations-platform-connector]: Downloading https://files.pythonhosted.org/packages/f3/0e/46ba46fd9bd58f328ec9642711a0147d790cb1af6dc1c7e9f72f99a87249/fyle-integrations-platform-connector-1.9.0.tar.gz
+[2023-04-10 09:15:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:01] WARNING root fetch - processPackages [synapticflow]: Skipping, unable to determine old version
+[2023-04-10 09:15:01] INFO root fetch - main [MainThread]: error
+[2023-04-10 09:15:01] INFO root fetch - processPackages [fyle-integrations-platform-connector]: executing diffoscope
+[2023-04-10 09:15:01] INFO root fetch - processPackages [fyle-integrations-platform-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fyle-integrations-platform-connector-1.8.0.tar.gz tmp/fyle-integrations-platform-connector-1.9.0.tar.gz --markdown 20230410/f/fyle-integrations-platform-connector/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-10 09:15:01] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-04-10 09:15:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:01] INFO root fetch - processPackages [pybw]: New version: [23.4.4.2] Old Version: [23.4.4.1]
+[2023-04-10 09:15:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:01] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-04-10 09:15:01] INFO root fetch - processPackages [pybw]: Downloading https://files.pythonhosted.org/packages/90/05/00173470f417d9e6fca282d5edf628d753bba3505d8bf4d4b52a14d365f7/pybw-23.4.4.1.tar.gz
+[2023-04-10 09:15:02] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: Downloading https://files.pythonhosted.org/packages/b5/4b/0742a4ab14bdc0e7e1a1efa5e089f45c05c18e939582e562ff5095837d67/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz
+[2023-04-10 09:15:02] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-04-10 09:15:02] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230410/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-04-10 09:15:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:02] INFO root fetch - processPackages [aifactory]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-04-10 09:15:02] INFO root fetch - processPackages [aifactory]: executing diffoscope
+[2023-04-10 09:15:02] INFO root fetch - processPackages [aifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifactory-1.6.8.tar.gz tmp/aifactory-1.6.9.tar.gz --markdown 20230410/a/aifactory/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-04-10 09:15:02] INFO root fetch - processPackages [pybw]: Downloading https://files.pythonhosted.org/packages/45/37/145aaa1f164f2b21a23601f512b1d7f95e9007b16c3ab01418b87ad94e7d/pybw-23.4.4.2.tar.gz
+[2023-04-10 09:15:02] INFO root fetch - processPackages [pybw]: executing diffoscope
+[2023-04-10 09:15:02] INFO root fetch - processPackages [pybw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybw-23.4.4.1.tar.gz tmp/pybw-23.4.4.2.tar.gz --markdown 20230410/p/pybw/23.4.4.1-23.4.4.2/diff.md --exclude *.pyd
+[2023-04-10 09:15:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:03] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: Downloading https://files.pythonhosted.org/packages/c7/46/0f42bc025c61bcf7528be4662164372850647ddcc00ec2a211a0b9e071cc/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz
+[2023-04-10 09:15:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:05] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-04-10 09:15:05] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230410/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 09:15:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 09:15:07] INFO root fetch - main [MainThread]: Store serial: [17643742]
