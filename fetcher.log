@@ -7983,3 +7983,26 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 12:44:15] INFO root fetch - processPackages [ytsaurus-spyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytsaurus-spyt-1.69.1b439.post23515129.dev5.tar.gz tmp/ytsaurus-spyt-1.69.1b439.post23515129.dev9.tar.gz --markdown 20230410/y/ytsaurus-spyt/1.69.1b439.post23515129.dev5-1.69.1b439.post23515129.dev9/diff.md --exclude *.pyd
 [2023-04-10 12:44:17] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:44:17] INFO root fetch - main [MainThread]: Store serial: [17645106]
+[2023-04-10 12:49:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645106]
+[2023-04-10 12:49:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-10 12:49:24] INFO root fetch - processPackages [pysmells]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-10 12:49:24] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.1.8] Old Version: [3.1.7]
+[2023-04-10 12:49:24] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-10 12:49:24] INFO root fetch - processPackages [adviz]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-10 12:49:24] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/a8/1f/b350dc60c32185056f434e2de32edec300207a8c4c0003f23b689a4edb25/so_vits_svc_fork-3.1.8.tar.gz
+[2023-04-10 12:49:24] INFO root fetch - processPackages [pysmells]: Downloading https://files.pythonhosted.org/packages/8e/4a/11339b18e45558694f447c6bc21cc65a452bf1f1ceff68819778df1fc262/pysmells-1.0.8.tar.gz
+[2023-04-10 12:49:24] INFO root fetch - processPackages [pysmells]: executing diffoscope
+[2023-04-10 12:49:24] INFO root fetch - processPackages [pysmells]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysmells-1.0.7.tar.gz tmp/pysmells-1.0.8.tar.gz --markdown 20230410/p/pysmells/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-10 12:49:24] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-10 12:49:24] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.1.7.tar.gz tmp/so_vits_svc_fork-3.1.8.tar.gz --markdown 20230410/s/so-vits-svc-fork/3.1.7-3.1.8/diff.md --exclude *.pyd
+[2023-04-10 12:49:24] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-10 12:49:24] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230410/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 12:49:25] INFO root fetch - processPackages [adviz]: Downloading https://files.pythonhosted.org/packages/29/56/49d434e78991c2276c96d3d5aaa77188c5364441459613b0f4582cdc8655/adviz-0.0.5.tar.gz
+[2023-04-10 12:49:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:49:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:49:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:49:27] INFO root fetch - processPackages [adviz]: Downloading https://files.pythonhosted.org/packages/c8/f6/21fa122da16596422dbe3dcdbb6a571f2cc962ee9ec3b3aaa1f911e2a9da/adviz-0.0.6.tar.gz
+[2023-04-10 12:49:29] INFO root fetch - processPackages [adviz]: executing diffoscope
+[2023-04-10 12:49:29] INFO root fetch - processPackages [adviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adviz-0.0.5.tar.gz tmp/adviz-0.0.6.tar.gz --markdown 20230410/a/adviz/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-10 12:49:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:49:34] INFO root fetch - main [MainThread]: Store serial: [17645119]
