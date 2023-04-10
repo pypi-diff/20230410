@@ -8737,3 +8737,164 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 14:08:33] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:08:34] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:08:34] INFO root fetch - main [MainThread]: Store serial: [17645553]
+[2023-04-10 14:13:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645553]
+[2023-04-10 14:13:43] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-10 14:13:43] INFO root fetch - processPackages [ruiwen-data-all]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-10 14:13:43] INFO root fetch - processPackages [dbis-relational-calculus]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-10 14:13:44] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.7.0] Old Version: [2.6.9]
+[2023-04-10 14:13:44] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 14:13:44] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.7.0] Old Version: [2.6.9]
+[2023-04-10 14:13:44] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: Downloading https://files.pythonhosted.org/packages/fb/79/6889f2bcfe14ad3c2ad911188cae87c47eed38640d4ded20760568fafd48/pepperize.cdk-ssm-parameters-cross-region-0.0.98.tar.gz
+[2023-04-10 14:13:44] INFO root fetch - processPackages [ruiwen-data-all]: Downloading https://files.pythonhosted.org/packages/1d/0e/528057602bbcbfd71cad11be2d8d7243c1c514390aa689c896245f8e770b/ruiwen_data_all-2.0.5.tar.gz
+[2023-04-10 14:13:44] INFO root fetch - processPackages [dbis-relational-calculus]: Downloading https://files.pythonhosted.org/packages/f7/df/ba545b36062cc1519afda7b53e4c5efaebf04ff8fe42d267a52ba29d248b/dbis-relational-calculus-1.0.3.tar.gz
+[2023-04-10 14:13:44] INFO root fetch - processPackages [cdk8s-plus-25]: Downloading https://files.pythonhosted.org/packages/f6/7a/83e81eb8d0bc69e9312cda5223c5a722593e64ab188013bd03c27e66549c/cdk8s-plus-25-2.7.0.tar.gz
+[2023-04-10 14:13:44] INFO root fetch - processPackages [cdk8s-plus-24]: Downloading https://files.pythonhosted.org/packages/9f/ff/70922bb08a0e56b38d06bcbef73000d1c512ac3de61f990a09b8c883e35e/cdk8s-plus-24-2.7.0.tar.gz
+[2023-04-10 14:13:44] INFO root fetch - processPackages [ruiwen-data-all]: executing diffoscope
+[2023-04-10 14:13:44] INFO root fetch - processPackages [ruiwen-data-all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruiwen_data_all-2.0.4.tar.gz tmp/ruiwen_data_all-2.0.5.tar.gz --markdown 20230410/r/ruiwen-data-all/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-10 14:13:44] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: Downloading https://files.pythonhosted.org/packages/9b/28/15454316ba7c03762eb5f4132acad608b8e4002ca06c5309244457a24d67/pepperize.cdk-ssm-parameters-cross-region-0.0.99.tar.gz
+[2023-04-10 14:13:44] INFO root fetch - processPackages [dbis-relational-calculus]: executing diffoscope
+[2023-04-10 14:13:44] INFO root fetch - processPackages [dbis-relational-calculus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbis-relational-calculus-1.0.2.tar.gz tmp/dbis-relational-calculus-1.0.3.tar.gz --markdown 20230410/d/dbis-relational-calculus/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-10 14:13:44] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: executing diffoscope
+[2023-04-10 14:13:44] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ssm-parameters-cross-region-0.0.98.tar.gz tmp/pepperize.cdk-ssm-parameters-cross-region-0.0.99.tar.gz --markdown 20230410/p/pepperize.cdk-ssm-parameters-cross-region/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 14:13:45] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-04-10 14:13:45] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.6.9.tar.gz tmp/cdk8s-plus-25-2.7.0.tar.gz --markdown 20230410/c/cdk8s-plus-25/2.6.9-2.7.0/diff.md --exclude *.pyd
+[2023-04-10 14:13:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:45] INFO root fetch - processPackages [DLMS-SPODES]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-10 14:13:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:45] INFO root fetch - processPackages [spatial-casadi]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 14:13:45] INFO root fetch - processPackages [DLMS-SPODES]: executing diffoscope
+[2023-04-10 14:13:45] INFO root fetch - processPackages [DLMS-SPODES]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DLMS_SPODES-0.8.3.tar.gz tmp/DLMS_SPODES-0.9.0.tar.gz --markdown 20230410/D/DLMS-SPODES/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 14:13:45] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-04-10 14:13:45] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.6.9.tar.gz tmp/cdk8s-plus-24-2.7.0.tar.gz --markdown 20230410/c/cdk8s-plus-24/2.6.9-2.7.0/diff.md --exclude *.pyd
+[2023-04-10 14:13:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:45] INFO root fetch - processPackages [flask-toolkits]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-04-10 14:13:45] INFO root fetch - processPackages [spatial-casadi]: Downloading https://files.pythonhosted.org/packages/49/8b/5a993e3044cec34a29a8e918300d325d28a609f1954077084cabc0b93698/spatial_casadi-1.0.3.tar.gz
+[2023-04-10 14:13:45] INFO root fetch - processPackages [flask-toolkits]: executing diffoscope
+[2023-04-10 14:13:45] INFO root fetch - processPackages [flask-toolkits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-toolkits-0.7.8.tar.gz tmp/flask-toolkits-0.7.9.tar.gz --markdown 20230410/f/flask-toolkits/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-04-10 14:13:46] INFO root fetch - processPackages [spatial-casadi]: Downloading https://files.pythonhosted.org/packages/d5/93/4d00eba9f7823440ae69e57a9ead6041277bd277de9f77ccf9e564431f1d/spatial_casadi-1.0.4.tar.gz
+[2023-04-10 14:13:46] INFO root fetch - processPackages [spatial-casadi]: executing diffoscope
+[2023-04-10 14:13:46] INFO root fetch - processPackages [spatial-casadi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatial_casadi-1.0.3.tar.gz tmp/spatial_casadi-1.0.4.tar.gz --markdown 20230410/s/spatial-casadi/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-10 14:13:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:47] INFO root fetch - processPackages [flashcontainer]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-10 14:13:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:47] INFO root fetch - processPackages [cm-two]: New version: [2.2.6] Old Version: [2.2.5]
+[2023-04-10 14:13:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:47] INFO root fetch - processPackages [flashcontainer]: Downloading https://files.pythonhosted.org/packages/2e/95/329930e35a4750460b3f71817753268d2224e1b1bff5e26fd313304f148e/flashcontainer-0.4.0.tar.gz
+[2023-04-10 14:13:47] INFO root fetch - processPackages [opsramp-analytics-utils]: New version: [3.2.7] Old Version: [3.2.6]
+[2023-04-10 14:13:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:47] INFO root fetch - processPackages [cm-two]: Downloading https://files.pythonhosted.org/packages/da/8d/2ebf53ad020891fa7867b1cdbf9fcceeb3b699b02c6163b2b1f98adf0e8c/cm_two-2.2.6-py3-none-any.whl
+[2023-04-10 14:13:47] INFO root fetch - processPackages [poe-web-client]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 14:13:47] INFO root fetch - processPackages [opsramp-analytics-utils]: Downloading https://files.pythonhosted.org/packages/ca/0c/923b1529267b9a12def633d84458547696d2c63a0ea2adb77406ff7bc450/opsramp-analytics-utils-3.2.6.tar.gz
+[2023-04-10 14:13:47] INFO root fetch - processPackages [flashcontainer]: Downloading https://files.pythonhosted.org/packages/a1/1b/0a1f0094789aa6d4b053613c07ff9101f7536b8948d841fae2a65b4c77cd/flashcontainer-0.5.0.tar.gz
+[2023-04-10 14:13:47] INFO root fetch - processPackages [poe-web-client]: Downloading https://files.pythonhosted.org/packages/02/d6/dc661103b125d9abb538555d8318c77d4ac4e0593ea5902fb6a084d07060/poe-web-client-0.0.3.tar.gz
+[2023-04-10 14:13:47] INFO root fetch - processPackages [flashcontainer]: executing diffoscope
+[2023-04-10 14:13:47] INFO root fetch - processPackages [flashcontainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flashcontainer-0.4.0.tar.gz tmp/flashcontainer-0.5.0.tar.gz --markdown 20230410/f/flashcontainer/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-10 14:13:47] INFO root fetch - processPackages [poe-web-client]: executing diffoscope
+[2023-04-10 14:13:47] INFO root fetch - processPackages [poe-web-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poe-web-client-0.0.2.tar.gz tmp/poe-web-client-0.0.3.tar.gz --markdown 20230410/p/poe-web-client/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 14:13:48] INFO root fetch - processPackages [cm-two]: executing diffoscope
+[2023-04-10 14:13:48] INFO root fetch - processPackages [cm-two]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cm_two-2.2.5-py3-none-any.whl.zip tmp/cm_two-2.2.6-py3-none-any.whl.zip --markdown 20230410/c/cm-two/2.2.5-2.2.6/diff.md --exclude *.pyd
+[2023-04-10 14:13:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:48] INFO root fetch - processPackages [pt-datasets]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-10 14:13:48] INFO root fetch - processPackages [pt-datasets]: executing diffoscope
+[2023-04-10 14:13:48] INFO root fetch - processPackages [pt-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pt-datasets-0.9.8.tar.gz tmp/pt-datasets-0.9.9.tar.gz --markdown 20230410/p/pt-datasets/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-10 14:13:48] INFO root fetch - processPackages [opsramp-analytics-utils]: Downloading https://files.pythonhosted.org/packages/ac/4d/34a6c8a21aed420820bf650af29178a1d2abad585283b23986eba13bd746/opsramp-analytics-utils-3.2.7.tar.gz
+[2023-04-10 14:13:48] INFO root fetch - processPackages [opsramp-analytics-utils]: executing diffoscope
+[2023-04-10 14:13:48] INFO root fetch - processPackages [opsramp-analytics-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opsramp-analytics-utils-3.2.6.tar.gz tmp/opsramp-analytics-utils-3.2.7.tar.gz --markdown 20230410/o/opsramp-analytics-utils/3.2.6-3.2.7/diff.md --exclude *.pyd
+[2023-04-10 14:13:49] ERROR root fetch - processPackages [cm-two]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+[2023-04-10 14:13:49] INFO root fetch - main [MainThread]: error
+[2023-04-10 14:13:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:49] INFO root fetch - processPackages [oldschool-management-tools]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-04-10 14:13:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:49] INFO root fetch - processPackages [oldschool-management-tools]: Downloading https://files.pythonhosted.org/packages/1f/f4/30bfa50688d61e81bc74c1d26c6b1bbe212f8350dce7af9f860092c7def1/oldschool_management_tools-0.0.8.tar.gz
+[2023-04-10 14:13:49] INFO root fetch - processPackages [oldschool-management-tools]: Downloading https://files.pythonhosted.org/packages/ce/c7/831d5378a948193ecdc3d3173dcb1c5c0684780d48972f9e28425a6b2b27/oldschool_management_tools-0.1.0.tar.gz
+[2023-04-10 14:13:49] INFO root fetch - processPackages [oldschool-management-tools]: executing diffoscope
+[2023-04-10 14:13:49] INFO root fetch - processPackages [oldschool-management-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oldschool_management_tools-0.0.8.tar.gz tmp/oldschool_management_tools-0.1.0.tar.gz --markdown 20230410/o/oldschool-management-tools/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-04-10 14:13:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:13:50] INFO root fetch - main [MainThread]: Store serial: [17645594]
