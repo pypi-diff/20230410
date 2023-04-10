@@ -12265,3 +12265,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 18:10:10] INFO root fetch - main [MainThread]: success
 [2023-04-10 18:10:11] INFO root fetch - main [MainThread]: success
 [2023-04-10 18:10:11] INFO root fetch - main [MainThread]: Store serial: [17647704]
+[2023-04-10 18:15:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647704]
+[2023-04-10 18:15:19] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 18:15:19] INFO root fetch - processPackages [dramatiq-mongodb]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-10 18:15:19] INFO root fetch - processPackages [opensesame-extension-osweb]: New version: [2.0.0.0a8] Old Version: [2.0.0.0a7]
+[2023-04-10 18:15:19] INFO root fetch - processPackages [mia-accounting]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-04-10 18:15:19] INFO root fetch - processPackages [headless]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-04-10 18:15:19] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 18:15:19] INFO root fetch - processPackages [headless]: executing diffoscope
+[2023-04-10 18:15:19] INFO root fetch - processPackages [headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-2.0.0a8.tar.gz tmp/headless-2.0.0a9.tar.gz --markdown 20230410/h/headless/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-04-10 18:15:19] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-04-10 18:15:19] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230410/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 18:15:19] INFO root fetch - processPackages [dramatiq-mongodb]: Downloading https://files.pythonhosted.org/packages/a3/bf/fa549fe2f8e6e75066c41ec3139874d3d4a59b4993e5a1ca8587d9538426/dramatiq_mongodb-0.7.0.tar.gz
+[2023-04-10 18:15:19] INFO root fetch - processPackages [opensesame-extension-osweb]: executing diffoscope
+[2023-04-10 18:15:19] INFO root fetch - processPackages [opensesame-extension-osweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opensesame_extension_osweb-2.0.0.0a7.tar.gz tmp/opensesame_extension_osweb-2.0.0.0a8.tar.gz --markdown 20230410/o/opensesame-extension-osweb/2.0.0.0a7-2.0.0.0a8/diff.md --exclude *.pyd
+[2023-04-10 18:15:19] INFO root fetch - processPackages [mia-accounting]: Downloading https://files.pythonhosted.org/packages/76/27/8e802be1c288357581b12f06e50aba0882b0515f51cfd013d2fea6f56199/mia-accounting-1.3.0.tar.gz
+[2023-04-10 18:15:19] INFO root fetch - processPackages [mia-accounting]: executing diffoscope
+[2023-04-10 18:15:19] INFO root fetch - processPackages [mia-accounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mia-accounting-1.2.1.tar.gz tmp/mia-accounting-1.3.0.tar.gz --markdown 20230410/m/mia-accounting/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-04-10 18:15:19] INFO root fetch - processPackages [dramatiq-mongodb]: Downloading https://files.pythonhosted.org/packages/08/ad/e28597908cca71e7a1f5f336a978157156778ebf82d72a82b03c9cf13030/dramatiq_mongodb-0.7.1.tar.gz
+[2023-04-10 18:15:19] INFO root fetch - processPackages [dramatiq-mongodb]: executing diffoscope
+[2023-04-10 18:15:19] INFO root fetch - processPackages [dramatiq-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dramatiq_mongodb-0.7.0.tar.gz tmp/dramatiq_mongodb-0.7.1.tar.gz --markdown 20230410/d/dramatiq-mongodb/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-10 18:15:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:15:20] INFO root fetch - processPackages [watson-nlp-runtime-client]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-10 18:15:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:15:20] WARNING root fetch - processPackages [transcriptionary]: Skipping, unable to determine old version
+[2023-04-10 18:15:20] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:15:21] INFO root fetch - processPackages [data-ecosystem-services]: New version: [202304.0.5] Old Version: [202304.0.4]
+[2023-04-10 18:15:21] INFO root fetch - processPackages [watson-nlp-runtime-client]: Downloading https://files.pythonhosted.org/packages/48/f3/937d96a7c6a37445ca6c84a248b615229de0742c5978dcbe5ceb369f3dd7/watson_nlp_runtime_client-1.0.1-py3-none-any.whl
+[2023-04-10 18:15:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:15:21] INFO root fetch - processPackages [ddir]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-10 18:15:21] INFO root fetch - processPackages [data-ecosystem-services]: Downloading https://files.pythonhosted.org/packages/d1/29/ed92c69fc4e95488062d520d34065cedc4520625b9173cce70f7e10081ab/data_ecosystem_services-202304.0.5.tar.gz
+[2023-04-10 18:15:21] INFO root fetch - processPackages [ddir]: Downloading https://files.pythonhosted.org/packages/cf/32/04bac81c7079062cdc7c9912152ae4eb51dc69b247522205bfc31dbd231e/ddir-2.0.2-py3-none-any.whl
+[2023-04-10 18:15:21] INFO root fetch - processPackages [ddir]: executing diffoscope
+[2023-04-10 18:15:21] INFO root fetch - processPackages [ddir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddir-2.0.1-py3-none-any.whl.zip tmp/ddir-2.0.2-py3-none-any.whl.zip --markdown 20230410/d/ddir/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-10 18:15:21] INFO root fetch - processPackages [watson-nlp-runtime-client]: Downloading https://files.pythonhosted.org/packages/8d/10/9fce11902be2c7e8bc8c7b7cd11cbf0769fbec1648107375164ff065c83a/watson_nlp_runtime_client-1.1.0-py3-none-any.whl
+[2023-04-10 18:15:21] INFO root fetch - processPackages [data-ecosystem-services]: executing diffoscope
+[2023-04-10 18:15:21] INFO root fetch - processPackages [data-ecosystem-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_ecosystem_services-202304.0.4.tar.gz tmp/data_ecosystem_services-202304.0.5.tar.gz --markdown 20230410/d/data-ecosystem-services/202304.0.4-202304.0.5/diff.md --exclude *.pyd
+[2023-04-10 18:15:21] INFO root fetch - processPackages [watson-nlp-runtime-client]: executing diffoscope
+[2023-04-10 18:15:21] INFO root fetch - processPackages [watson-nlp-runtime-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watson_nlp_runtime_client-1.0.1-py3-none-any.whl.zip tmp/watson_nlp_runtime_client-1.1.0-py3-none-any.whl.zip --markdown 20230410/w/watson-nlp-runtime-client/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 18:15:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:15:22] INFO root fetch - processPackages [dataquality]: New version: [0.8.9] Old Version: [0.8.8a0]
+[2023-04-10 18:15:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:15:22] INFO root fetch - processPackages [ecr-scan-reporter]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-10 18:15:22] INFO root fetch - processPackages [dataquality]: executing diffoscope
+[2023-04-10 18:15:22] INFO root fetch - processPackages [dataquality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataquality-0.8.8a0.tar.gz tmp/dataquality-0.8.9.tar.gz --markdown 20230410/d/dataquality/0.8.8a0-0.8.9/diff.md --exclude *.pyd
+[2023-04-10 18:15:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:15:22] INFO root fetch - processPackages [ecr-scan-reporter]: Downloading https://files.pythonhosted.org/packages/af/18/3726c222e3d98353d3092e71329f65f14b88bc755608e27c2df56bdaf869/ecr_scan_reporter-0.4.7.tar.gz
+[2023-04-10 18:15:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:15:23] INFO root fetch - processPackages [ecr-scan-reporter]: Downloading https://files.pythonhosted.org/packages/fb/6a/79af1659eed0370cbf92e02de8983c6f24982c7e9458b154a90afeac368f/ecr_scan_reporter-0.4.8.tar.gz
+[2023-04-10 18:15:23] INFO root fetch - processPackages [ecr-scan-reporter]: executing diffoscope
+[2023-04-10 18:15:23] INFO root fetch - processPackages [ecr-scan-reporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecr_scan_reporter-0.4.7.tar.gz tmp/ecr_scan_reporter-0.4.8.tar.gz --markdown 20230410/e/ecr-scan-reporter/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-10 18:15:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:15:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:15:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:15:26] INFO root fetch - main [MainThread]: Store serial: [17647737]
