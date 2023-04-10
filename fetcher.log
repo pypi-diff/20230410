@@ -15980,3 +15980,64 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 23:11:53] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:11:58] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:11:58] INFO root fetch - main [MainThread]: Store serial: [17650478]
+[2023-04-10 23:17:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650478]
+[2023-04-10 23:17:06] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-10 23:17:06] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.5b7] Old Version: [0.8.5b2]
+[2023-04-10 23:17:06] INFO root fetch - processPackages [trainerbase]: New version: [2.9.2] Old Version: [2.9.1]
+[2023-04-10 23:17:06] INFO root fetch - processPackages [snapstream]: New version: [0.0.0.dev3] Old Version: [0.0.0.dev2]
+[2023-04-10 23:17:06] INFO root fetch - processPackages [chessdisplay]: New version: [0.5] Old Version: [0.4]
+[2023-04-10 23:17:06] INFO root fetch - processPackages [selcol]: New version: [0.0.4] Old Version: [0.0.3.2]
+[2023-04-10 23:17:07] ERROR root fetch - processPackages [chessdisplay]: Unable to fetch info: No such project/version 'chessdisplay' 0.4
+[2023-04-10 23:17:07] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:17:07] INFO root fetch - processPackages [python-project-structure]: Downloading https://files.pythonhosted.org/packages/fc/3f/fa5f31d4eecacf543ab65273f44747d399c4a3eab4559c7b8bb1ff9a8cbf/python-project-structure-0.8.5b7.tar.gz
+[2023-04-10 23:17:07] INFO root fetch - processPackages [django-docrootcms]: New version: [3.1] Old Version: [2.9]
+[2023-04-10 23:17:07] INFO root fetch - processPackages [snapstream]: Downloading https://files.pythonhosted.org/packages/ce/70/3ff0266d62030af96c58498accdffe4cc6840cdd8d62e09749eb57c94c8d/snapstream-0.0.0.dev2.tar.gz
+[2023-04-10 23:17:07] INFO root fetch - processPackages [selcol]: Downloading https://files.pythonhosted.org/packages/45/c2/261d517e24312fcf8ed20ae507b1676e2e7e1503a15c635053b862a7c594/selcol-0.0.3.2.tar.gz
+[2023-04-10 23:17:07] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/a4/52/ad2ea4f0088dae828ef2d74b2dca61a41c22c721d8accec7e1f5bde8bfe5/TrainerBase-2.9.2.tar.gz
+[2023-04-10 23:17:07] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2023-04-10 23:17:07] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainerBase-2.9.1.tar.gz tmp/TrainerBase-2.9.2.tar.gz --markdown 20230410/t/trainerbase/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2023-04-10 23:17:07] INFO root fetch - processPackages [django-docrootcms]: Downloading https://files.pythonhosted.org/packages/8c/23/0674df0d38cd7bc13ab62b4492c6936f4370b1149c1a00eb529e41041209/django-docrootcms-2.9.tar.gz
+[2023-04-10 23:17:07] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-10 23:17:07] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.5b2.tar.gz tmp/python-project-structure-0.8.5b7.tar.gz --markdown 20230410/p/python-project-structure/0.8.5b2-0.8.5b7/diff.md --exclude *.pyd
+[2023-04-10 23:17:07] INFO root fetch - processPackages [snapstream]: Downloading https://files.pythonhosted.org/packages/6d/75/6ebf5ba1ebab540e561d41987f5093847d68741ae1f977d59f697e2fc48e/snapstream-0.0.0.dev3.tar.gz
+[2023-04-10 23:17:07] INFO root fetch - processPackages [snapstream]: executing diffoscope
+[2023-04-10 23:17:07] INFO root fetch - processPackages [snapstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapstream-0.0.0.dev2.tar.gz tmp/snapstream-0.0.0.dev3.tar.gz --markdown 20230410/s/snapstream/0.0.0.dev2-0.0.0.dev3/diff.md --exclude *.pyd
+[2023-04-10 23:17:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:17:08] WARNING root fetch - processPackages [molfeat-padel]: Skipping, unable to determine old version
+[2023-04-10 23:17:08] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:17:08] INFO root fetch - processPackages [pheno-utils]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-10 23:17:08] INFO root fetch - processPackages [pheno-utils]: Downloading https://files.pythonhosted.org/packages/a3/2e/d35bba2bdce1ed7aaa54ef8adcaeb80205fbcf1f25baaf465bbd35886a96/pheno-utils-0.0.7.tar.gz
+[2023-04-10 23:17:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:17:08] INFO root fetch - processPackages [brds]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-10 23:17:08] INFO root fetch - processPackages [pheno-utils]: executing diffoscope
+[2023-04-10 23:17:08] INFO root fetch - processPackages [pheno-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheno-utils-0.0.6.tar.gz tmp/pheno-utils-0.0.7.tar.gz --markdown 20230410/p/pheno-utils/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-10 23:17:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:17:08] INFO root fetch - processPackages [policyengine-us]: New version: [0.282.0] Old Version: [0.281.1]
+[2023-04-10 23:17:09] INFO root fetch - processPackages [brds]: Downloading https://files.pythonhosted.org/packages/51/57/57faa9593a7051648a8651fc4bb325b6e90be52b3d3caede6bdbc02c0485/brds-0.2.4.tar.gz
+[2023-04-10 23:17:09] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/72/7a/5f6b3c8bb9067067946da3b1241738fe3987b2cd6fb3071c1fa1e4537c92/policyengine-us-0.282.0.tar.gz
+[2023-04-10 23:17:09] INFO root fetch - processPackages [brds]: executing diffoscope
+[2023-04-10 23:17:09] INFO root fetch - processPackages [brds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brds-0.2.3.tar.gz tmp/brds-0.2.4.tar.gz --markdown 20230410/b/brds/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-10 23:17:09] INFO root fetch - processPackages [selcol]: Downloading https://files.pythonhosted.org/packages/3f/db/512863d39c643047edbb6a43baf42dbb3c94c64b05133d7adcb8cd15ab77/selcol-0.0.4.tar.gz
+[2023-04-10 23:17:09] INFO root fetch - processPackages [django-docrootcms]: Downloading https://files.pythonhosted.org/packages/d0/1a/829934a17936030e7c816f105fc094414860ec6d6193b1d6e5d8e824276f/django-docrootcms-3.1.tar.gz
+[2023-04-10 23:17:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:17:09] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-10 23:17:09] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.281.1.tar.gz tmp/policyengine-us-0.282.0.tar.gz --markdown 20230410/p/policyengine-us/0.281.1-0.282.0/diff.md --exclude *.pyd
+[2023-04-10 23:17:10] INFO root fetch - processPackages [drip-drip]: New version: [1.1.0.dev4] Old Version: [1.1.0.dev2]
+[2023-04-10 23:17:10] INFO root fetch - processPackages [drip-drip]: Downloading https://files.pythonhosted.org/packages/7e/c7/4c293853f1351213975f6d789aef9a0c061f1774ca93afd39ec910563127/drip-drip-1.1.0.dev2.tar.gz
+[2023-04-10 23:17:10] INFO root fetch - processPackages [drip-drip]: Downloading https://files.pythonhosted.org/packages/62/ab/148756b51b84209183998658065034a85cc5f58a0e87d7d3c9bfa733bcf2/drip-drip-1.1.0.dev4.tar.gz
+[2023-04-10 23:17:10] INFO root fetch - processPackages [drip-drip]: executing diffoscope
+[2023-04-10 23:17:10] INFO root fetch - processPackages [drip-drip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drip-drip-1.1.0.dev2.tar.gz tmp/drip-drip-1.1.0.dev4.tar.gz --markdown 20230410/d/drip-drip/1.1.0.dev2-1.1.0.dev4/diff.md --exclude *.pyd
+[2023-04-10 23:17:10] INFO root fetch - processPackages [django-docrootcms]: executing diffoscope
+[2023-04-10 23:17:10] INFO root fetch - processPackages [django-docrootcms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-docrootcms-2.9.tar.gz tmp/django-docrootcms-3.1.tar.gz --markdown 20230410/d/django-docrootcms/2.9-3.1/diff.md --exclude *.pyd
+[2023-04-10 23:17:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:17:11] INFO root fetch - processPackages [NikeCA]: New version: [0.1.53] Old Version: [0.1.52]
+[2023-04-10 23:17:11] INFO root fetch - processPackages [NikeCA]: executing diffoscope
+[2023-04-10 23:17:11] INFO root fetch - processPackages [NikeCA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NikeCA-0.1.52.tar.gz tmp/NikeCA-0.1.53.tar.gz --markdown 20230410/N/NikeCA/0.1.52-0.1.53/diff.md --exclude *.pyd
+[2023-04-10 23:17:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:17:12] INFO root fetch - processPackages [selcol]: executing diffoscope
+[2023-04-10 23:17:12] INFO root fetch - processPackages [selcol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selcol-0.0.3.2.tar.gz tmp/selcol-0.0.4.tar.gz --markdown 20230410/s/selcol/0.0.3.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 23:17:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:17:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:17:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:18:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:18:09] INFO root fetch - main [MainThread]: Store serial: [17650516]
