@@ -14395,3 +14395,89 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 20:59:56] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:59:56] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:59:56] INFO root fetch - main [MainThread]: Store serial: [17649362]
+[2023-04-10 21:05:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649362]
+[2023-04-10 21:05:05] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-10 21:05:05] INFO root fetch - processPackages [Flask-BigApp]: New version: [2023.1.8.5] Old Version: [2023.1.8.4]
+[2023-04-10 21:05:05] INFO root fetch - processPackages [gridworks-proactor]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-10 21:05:05] INFO root fetch - processPackages [requests-toolkit-stable]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-10 21:05:05] INFO root fetch - processPackages [nanolayer]: New version: [0.4.8] Old Version: [0.4.7rc6]
+[2023-04-10 21:05:05] INFO root fetch - processPackages [pysisu]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-10 21:05:05] INFO root fetch - processPackages [requests-toolkit-stable]: executing diffoscope
+[2023-04-10 21:05:05] INFO root fetch - processPackages [requests-toolkit-stable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requests-toolkit-stable-0.9.1.tar.gz tmp/requests-toolkit-stable-0.9.2.tar.gz --markdown 20230410/r/requests-toolkit-stable/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-10 21:05:05] INFO root fetch - processPackages [gridworks-proactor]: Downloading https://files.pythonhosted.org/packages/88/f3/a1c66f61c7d757ead645975f14796f6dbd6167be08fd815b25f5d4a5ce07/gridworks_proactor-0.1.7.tar.gz
+[2023-04-10 21:05:05] INFO root fetch - processPackages [Flask-BigApp]: Downloading https://files.pythonhosted.org/packages/74/62/094388abb008c4e0dfa20b81b060ec5ab030cb78697cb59c385d711b3bda/Flask-BigApp-2023.1.8.5.tar.gz
+[2023-04-10 21:05:05] INFO root fetch - processPackages [pysisu]: Downloading https://files.pythonhosted.org/packages/e9/d0/bd9870511a6b2a5c443ef4ef526351741bbb81f8070af1b560b763756923/pysisu-0.4.8.tar.gz
+[2023-04-10 21:05:05] INFO root fetch - processPackages [gridworks-proactor]: executing diffoscope
+[2023-04-10 21:05:05] INFO root fetch - processPackages [gridworks-proactor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridworks_proactor-0.1.6.tar.gz tmp/gridworks_proactor-0.1.7.tar.gz --markdown 20230410/g/gridworks-proactor/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-10 21:05:05] INFO root fetch - processPackages [Flask-BigApp]: executing diffoscope
+[2023-04-10 21:05:05] INFO root fetch - processPackages [Flask-BigApp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-BigApp-2023.1.8.4.tar.gz tmp/Flask-BigApp-2023.1.8.5.tar.gz --markdown 20230410/F/Flask-BigApp/2023.1.8.4-2023.1.8.5/diff.md --exclude *.pyd
+[2023-04-10 21:05:05] INFO root fetch - processPackages [nanolayer]: Downloading https://files.pythonhosted.org/packages/f7/80/e468152babc6e88200c8550f2acb9118ee6b98559961a04f5057b14cce4a/nanolayer-0.4.8-py3-none-any.whl
+[2023-04-10 21:05:05] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-10 21:05:05] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.7rc6-py3-none-any.whl.zip tmp/nanolayer-0.4.8-py3-none-any.whl.zip --markdown 20230410/n/nanolayer/0.4.7rc6-0.4.8/diff.md --exclude *.pyd
+[2023-04-10 21:05:06] INFO root fetch - processPackages [pysisu]: Downloading https://files.pythonhosted.org/packages/e8/49/103e67d62cc5ae2a310e3f9762e3be83dfd9d54004711517609d2f3a5282/pysisu-0.4.9.tar.gz
+[2023-04-10 21:05:06] INFO root fetch - processPackages [pysisu]: executing diffoscope
+[2023-04-10 21:05:06] INFO root fetch - processPackages [pysisu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysisu-0.4.8.tar.gz tmp/pysisu-0.4.9.tar.gz --markdown 20230410/p/pysisu/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-10 21:05:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:06] INFO root fetch - processPackages [tinymovr]: New version: [1.2.7] Old Version: [1.2.5]
+[2023-04-10 21:05:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:07] INFO root fetch - processPackages [tinymovr]: Downloading https://files.pythonhosted.org/packages/a7/59/964d45811736e88bc289a1aa330bd4071f913b351cfb91ba82ebd8ae7059/tinymovr-1.2.5.tar.gz
+[2023-04-10 21:05:07] INFO root fetch - processPackages [omicscope]: New version: [1.0.5] Old Version: [1.0.2]
+[2023-04-10 21:05:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:07] WARNING root fetch - processPackages [scENVI]: Skipping, unable to determine old version
+[2023-04-10 21:05:07] INFO root fetch - main [MainThread]: error
+[2023-04-10 21:05:07] INFO root fetch - processPackages [omicscope]: Downloading https://files.pythonhosted.org/packages/b4/0b/2e6c85cd8b29921538074940b32c83bdcce1adebe5308176482a11bc36db/omicscope-1.0.2.tar.gz
+[2023-04-10 21:05:07] INFO root fetch - processPackages [fairmaterials]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-10 21:05:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:07] INFO root fetch - processPackages [nudecrawler]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-10 21:05:07] INFO root fetch - processPackages [tinymovr]: Downloading https://files.pythonhosted.org/packages/cc/e1/7cb1ea6cbb4fc5ed93d3dcb704f29941d1070f63bbc26b3ee68201c67ef8/tinymovr-1.2.7.tar.gz
+[2023-04-10 21:05:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:07] INFO root fetch - processPackages [goes2go]: New version: [2023.4.1] Old Version: [2023.4.0]
+[2023-04-10 21:05:07] INFO root fetch - processPackages [tinymovr]: executing diffoscope
+[2023-04-10 21:05:07] INFO root fetch - processPackages [tinymovr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinymovr-1.2.5.tar.gz tmp/tinymovr-1.2.7.tar.gz --markdown 20230410/t/tinymovr/1.2.5-1.2.7/diff.md --exclude *.pyd
+[2023-04-10 21:05:07] INFO root fetch - processPackages [fairmaterials]: Downloading https://files.pythonhosted.org/packages/2e/a3/45510ca2ea244639f456123705c5441cafdb8d2993ce46edcabc573736da/fairmaterials-0.3.0.tar.gz
+[2023-04-10 21:05:07] INFO root fetch - processPackages [nudecrawler]: Downloading https://files.pythonhosted.org/packages/52/e8/e0103d9c2e03d38a6401c5b40cf40b5bebe97cad6ff9d6abf999f98a5199/nudecrawler-0.3.7.tar.gz
+[2023-04-10 21:05:07] INFO root fetch - processPackages [nudecrawler]: executing diffoscope
+[2023-04-10 21:05:07] INFO root fetch - processPackages [nudecrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudecrawler-0.3.6.tar.gz tmp/nudecrawler-0.3.7.tar.gz --markdown 20230410/n/nudecrawler/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-10 21:05:07] WARNING root fetch - processPackages [omicscope]: Skipping package: exceeds size limit 41173327>=10485760
+[2023-04-10 21:05:07] INFO root fetch - main [MainThread]: error
+[2023-04-10 21:05:07] INFO root fetch - processPackages [goes2go]: Downloading https://files.pythonhosted.org/packages/9e/5e/5eae1fc4cc87764c83fc357c00bd5eb6875924509380290131d0196a7fca/goes2go-2023.4.1.tar.gz
+[2023-04-10 21:05:07] INFO root fetch - processPackages [somweb]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-10 21:05:07] INFO root fetch - processPackages [goes2go]: executing diffoscope
+[2023-04-10 21:05:07] INFO root fetch - processPackages [goes2go]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goes2go-2023.4.0.tar.gz tmp/goes2go-2023.4.1.tar.gz --markdown 20230410/g/goes2go/2023.4.0-2023.4.1/diff.md --exclude *.pyd
+[2023-04-10 21:05:07] INFO root fetch - processPackages [fairmaterials]: Downloading https://files.pythonhosted.org/packages/fc/f1/636e17ee8b137bbacf3cbf04bb94337c7dbaebec319e2ea756544c309847/fairmaterials-0.4.0.tar.gz
+[2023-04-10 21:05:07] INFO root fetch - processPackages [fairmaterials]: executing diffoscope
+[2023-04-10 21:05:07] INFO root fetch - processPackages [fairmaterials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fairmaterials-0.3.0.tar.gz tmp/fairmaterials-0.4.0.tar.gz --markdown 20230410/f/fairmaterials/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-10 21:05:07] INFO root fetch - processPackages [somweb]: Downloading https://files.pythonhosted.org/packages/57/1e/42c1bfb65e132277cb863b47f992db0d008bf36c87b288cc777bd9f69db8/somweb-1.1.2.tar.gz
+[2023-04-10 21:05:08] INFO root fetch - processPackages [somweb]: Downloading https://files.pythonhosted.org/packages/53/15/56db17abda0044edcbb804879eab2c074c3082f5d052b28a575ef56e356e/somweb-1.1.3.tar.gz
+[2023-04-10 21:05:08] INFO root fetch - processPackages [somweb]: executing diffoscope
+[2023-04-10 21:05:08] INFO root fetch - processPackages [somweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/somweb-1.1.2.tar.gz tmp/somweb-1.1.3.tar.gz --markdown 20230410/s/somweb/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-10 21:05:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:08] INFO root fetch - processPackages [resolwe]: New version: [9.0.0a4] Old Version: [9.0.0a3]
+[2023-04-10 21:05:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:08] INFO root fetch - processPackages [pymemuc]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-10 21:05:08] INFO root fetch - processPackages [resolwe]: executing diffoscope
+[2023-04-10 21:05:08] INFO root fetch - processPackages [resolwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resolwe-9.0.0a3.tar.gz tmp/resolwe-9.0.0a4.tar.gz --markdown 20230410/r/resolwe/9.0.0a3-9.0.0a4/diff.md --exclude *.pyd
+[2023-04-10 21:05:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:08] INFO root fetch - processPackages [python-pik-api-wrapper]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-04-10 21:05:08] INFO root fetch - processPackages [pymemuc]: Downloading https://files.pythonhosted.org/packages/29/1a/713c0c8e31a749c146ba79254dbb828b00dcceb9877397a27b801caeb58d/pymemuc-0.2.3.tar.gz
+[2023-04-10 21:05:09] INFO root fetch - processPackages [python-pik-api-wrapper]: Downloading https://files.pythonhosted.org/packages/a2/b7/ca3f50c5f5710cd936e22e07715f18d5249d8bbcfda304e6f50194ca599e/python_pik_api_wrapper-1.5.2.tar.gz
+[2023-04-10 21:05:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:09] INFO root fetch - processPackages [pylipd]: New version: [1.1.0] Old Version: [1.0.6]
+[2023-04-10 21:05:09] INFO root fetch - processPackages [pymemuc]: Downloading https://files.pythonhosted.org/packages/d1/6d/dfe5cef72dfff52f437e10a353159ddf8d0b1592b2319d500c7bddfd93e5/pymemuc-0.2.4.tar.gz
+[2023-04-10 21:05:09] INFO root fetch - processPackages [pymemuc]: executing diffoscope
+[2023-04-10 21:05:09] INFO root fetch - processPackages [pymemuc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemuc-0.2.3.tar.gz tmp/pymemuc-0.2.4.tar.gz --markdown 20230410/p/pymemuc/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-10 21:05:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:09] INFO root fetch - processPackages [pylipd]: Downloading https://files.pythonhosted.org/packages/19/59/193ac623791df48b2523dcfa0465afe8c20536fdf6acd0e8f0978d416d44/pylipd-1.0.6.tar.gz
+[2023-04-10 21:05:09] INFO root fetch - processPackages [python-pik-api-wrapper]: Downloading https://files.pythonhosted.org/packages/04/74/a2400ddfd91daa4966dd3f5ac54f4d8d6cee02470a2a878a83297ac42d34/python_pik_api_wrapper-1.5.3.tar.gz
+[2023-04-10 21:05:09] WARNING root fetch - processPackages [bazaar-cli]: Skipping, unable to determine old version
+[2023-04-10 21:05:09] INFO root fetch - main [MainThread]: error
+[2023-04-10 21:05:09] INFO root fetch - processPackages [python-pik-api-wrapper]: executing diffoscope
+[2023-04-10 21:05:09] INFO root fetch - processPackages [python-pik-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_pik_api_wrapper-1.5.2.tar.gz tmp/python_pik_api_wrapper-1.5.3.tar.gz --markdown 20230410/p/python-pik-api-wrapper/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-04-10 21:05:09] INFO root fetch - processPackages [pylipd]: Downloading https://files.pythonhosted.org/packages/e3/13/d159adc5474af103bc9a37acf25a911b3aefe7640c1ce5db86d00b83c980/pylipd-1.1.0.tar.gz
+[2023-04-10 21:05:09] INFO root fetch - processPackages [pylipd]: executing diffoscope
+[2023-04-10 21:05:09] INFO root fetch - processPackages [pylipd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylipd-1.0.6.tar.gz tmp/pylipd-1.1.0.tar.gz --markdown 20230410/p/pylipd/1.0.6-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 21:05:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:05:11] INFO root fetch - main [MainThread]: Store serial: [17649413]
