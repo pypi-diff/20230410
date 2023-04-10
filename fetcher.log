@@ -13554,3 +13554,78 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 19:50:30] INFO root fetch - main [MainThread]: success
 [2023-04-10 19:50:38] INFO root fetch - main [MainThread]: success
 [2023-04-10 19:50:38] INFO root fetch - main [MainThread]: Store serial: [17648827]
+[2023-04-10 19:55:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17648827]
+[2023-04-10 19:56:04] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-10 19:56:04] INFO root fetch - processPackages [nanolayer]: New version: [0.4.7rc5] Old Version: [0.4.7rc1]
+[2023-04-10 19:56:04] INFO root fetch - processPackages [doppkit]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 19:56:04] INFO root fetch - processPackages [pulp-rpm]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-04-10 19:56:04] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-10 19:56:04] INFO root fetch - processPackages [pulp-rpm-client]: New version: [3.9.1] Old Version: [3.9.0.dev1611548779]
+[2023-04-10 19:56:04] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-04-10 19:56:04] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230410/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-10 19:56:04] INFO root fetch - processPackages [doppkit]: Downloading https://files.pythonhosted.org/packages/36/c9/f9d0bb73e708cfd0db837651e017fe4f6e084b6e33a1e3333f4a7e55256d/doppkit-0.1.0.tar.gz
+[2023-04-10 19:56:05] INFO root fetch - processPackages [nanolayer]: Downloading https://files.pythonhosted.org/packages/de/10/384b8cac1b4545d3686cb50d8a33821ea28dc93a5742ac985b042f08c44b/nanolayer-0.4.7rc5-py3-none-any.whl
+[2023-04-10 19:56:05] INFO root fetch - processPackages [pulp-rpm]: executing diffoscope
+[2023-04-10 19:56:05] INFO root fetch - processPackages [pulp-rpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulp-rpm-3.9.0.tar.gz tmp/pulp-rpm-3.9.1.tar.gz --markdown 20230410/p/pulp-rpm/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-04-10 19:56:05] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-10 19:56:05] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.7rc1-py3-none-any.whl.zip tmp/nanolayer-0.4.7rc5-py3-none-any.whl.zip --markdown 20230410/n/nanolayer/0.4.7rc1-0.4.7rc5/diff.md --exclude *.pyd
+[2023-04-10 19:56:05] INFO root fetch - processPackages [pulp-rpm-client]: executing diffoscope
+[2023-04-10 19:56:05] INFO root fetch - processPackages [pulp-rpm-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulp_rpm-client-3.9.0.dev1611548779.tar.gz tmp/pulp_rpm-client-3.9.1.tar.gz --markdown 20230410/p/pulp-rpm-client/3.9.0.dev1611548779-3.9.1/diff.md --exclude *.pyd
+[2023-04-10 19:56:05] INFO root fetch - processPackages [doppkit]: Downloading https://files.pythonhosted.org/packages/73/d3/23703c5b0e705f1b6d052eaa2171fb34f6fa17df497a11c60275860a4438/doppkit-0.1.1.tar.gz
+[2023-04-10 19:56:05] INFO root fetch - processPackages [doppkit]: executing diffoscope
+[2023-04-10 19:56:05] INFO root fetch - processPackages [doppkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doppkit-0.1.0.tar.gz tmp/doppkit-0.1.1.tar.gz --markdown 20230410/d/doppkit/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 19:56:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:06] INFO root fetch - processPackages [pulsar-app]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-10 19:56:06] INFO root fetch - processPackages [pulsar-app]: Downloading https://files.pythonhosted.org/packages/3f/0b/d9ebd62ff663a5a7368887d62e0c4c15e1b1aaf6a5a35cd7c8340978ee14/pulsar-app-0.9.0.tar.gz
+[2023-04-10 19:56:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:06] INFO root fetch - processPackages [mythril]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-10 19:56:06] INFO root fetch - processPackages [mythril]: Downloading https://files.pythonhosted.org/packages/15/a9/a568ae41cab2a712424cc756b15f056beb54efe3738fc0bee7797245e3c5/mythril-0.9.1.tar.gz
+[2023-04-10 19:56:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:06] INFO root fetch - processPackages [pulsar-galaxy-lib]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-10 19:56:07] INFO root fetch - processPackages [pulsar-app]: Downloading https://files.pythonhosted.org/packages/be/85/35eeb28f6afd55063c5ffae34056a561121765776afbe5bd7271e1dd31b1/pulsar-app-0.9.1.tar.gz
+[2023-04-10 19:56:07] INFO root fetch - processPackages [pulsar-galaxy-lib]: Downloading https://files.pythonhosted.org/packages/b4/74/05d905b4a4ccc632caf0eb57f228bfedaa26f613945513cb38e18f74a6e1/pulsar-galaxy-lib-0.9.0.tar.gz
+[2023-04-10 19:56:07] INFO root fetch - processPackages [mythril]: Downloading https://files.pythonhosted.org/packages/2a/cd/5424a7c1c9e14ffddea6dbc7772d1e867be5666e47786ea8d978e3c4bd4c/mythril-0.9.2.tar.gz
+[2023-04-10 19:56:07] INFO root fetch - processPackages [pulsar-app]: executing diffoscope
+[2023-04-10 19:56:07] INFO root fetch - processPackages [pulsar-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsar-app-0.9.0.tar.gz tmp/pulsar-app-0.9.1.tar.gz --markdown 20230410/p/pulsar-app/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-10 19:56:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:07] INFO root fetch - processPackages [ABSQL]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-10 19:56:07] INFO root fetch - processPackages [mythril]: executing diffoscope
+[2023-04-10 19:56:07] INFO root fetch - processPackages [mythril]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mythril-0.9.1.tar.gz tmp/mythril-0.9.2.tar.gz --markdown 20230410/m/mythril/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-10 19:56:07] INFO root fetch - processPackages [ABSQL]: Downloading https://files.pythonhosted.org/packages/02/5e/e5e88878e1c8db35bfc0ee9c459c2015320bb1ff2fe3a3a095714173d86e/ABSQL-0.4.1.tar.gz
+[2023-04-10 19:56:07] INFO root fetch - processPackages [pulsar-galaxy-lib]: Downloading https://files.pythonhosted.org/packages/eb/e9/4d05ac2cade0d6f3607ac31306dbe8592623a17eb67cb670e53eff2d032a/pulsar-galaxy-lib-0.9.1.tar.gz
+[2023-04-10 19:56:08] INFO root fetch - processPackages [ABSQL]: Downloading https://files.pythonhosted.org/packages/1a/6a/5e9169e6145e3e4e36a30d54f3d4bd03e4fe1e7d3ed98356ed7fe7fc19dc/ABSQL-0.4.2.tar.gz
+[2023-04-10 19:56:08] INFO root fetch - processPackages [ABSQL]: executing diffoscope
+[2023-04-10 19:56:08] INFO root fetch - processPackages [ABSQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ABSQL-0.4.1.tar.gz tmp/ABSQL-0.4.2.tar.gz --markdown 20230410/A/ABSQL/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-10 19:56:08] INFO root fetch - processPackages [pulsar-galaxy-lib]: executing diffoscope
+[2023-04-10 19:56:08] INFO root fetch - processPackages [pulsar-galaxy-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsar-galaxy-lib-0.9.0.tar.gz tmp/pulsar-galaxy-lib-0.9.1.tar.gz --markdown 20230410/p/pulsar-galaxy-lib/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-10 19:56:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:08] WARNING root fetch - processPackages [mayfpayapi]: Skipping, unable to determine old version
+[2023-04-10 19:56:08] INFO root fetch - main [MainThread]: error
+[2023-04-10 19:56:08] INFO root fetch - processPackages [rubbrband]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 19:56:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:08] INFO root fetch - processPackages [science-optimization]: New version: [9.0.1] Old Version: [8.0.1]
+[2023-04-10 19:56:08] INFO root fetch - processPackages [rubbrband]: Downloading https://files.pythonhosted.org/packages/44/95/c150f04ac700d16321c14a1bb6f078bf8ba6ca9c29cac496c072ea1d2bb8/rubbrband-0.1.8.tar.gz
+[2023-04-10 19:56:09] INFO root fetch - processPackages [science-optimization]: Downloading https://files.pythonhosted.org/packages/f7/ed/7908601cfa0cd9885ce9f716dd99a2491d74646f1bf53baaced712aa8186/science_optimization-8.0.1.tar.gz
+[2023-04-10 19:56:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:09] INFO root fetch - processPackages [pi-MCP4725]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-10 19:56:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:09] INFO root fetch - processPackages [kat-bulgaria]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-10 19:56:09] INFO root fetch - processPackages [rubbrband]: Downloading https://files.pythonhosted.org/packages/d8/4e/3ddaeff75ff84dee970d90b90b2b0914383fd1bb4638d9d351a1df97ca72/rubbrband-0.1.9.tar.gz
+[2023-04-10 19:56:09] INFO root fetch - processPackages [pi-MCP4725]: Downloading https://files.pythonhosted.org/packages/0e/3e/aea6e4fdd1099ffe05eb5619e25e8826410a945b28b7cbe02de5f7ca0368/pi_MCP4725-0.1.tar.gz
+[2023-04-10 19:56:09] INFO root fetch - processPackages [kat-bulgaria]: Downloading https://files.pythonhosted.org/packages/e8/f4/a8195b0d24d3755ae3d099bed7cfe390ce05dc85b80f626232d1329a53e8/kat_bulgaria-0.6.2.tar.gz
+[2023-04-10 19:56:09] INFO root fetch - processPackages [rubbrband]: executing diffoscope
+[2023-04-10 19:56:09] INFO root fetch - processPackages [rubbrband]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rubbrband-0.1.8.tar.gz tmp/rubbrband-0.1.9.tar.gz --markdown 20230410/r/rubbrband/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 19:56:09] INFO root fetch - processPackages [kat-bulgaria]: executing diffoscope
+[2023-04-10 19:56:09] INFO root fetch - processPackages [kat-bulgaria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kat_bulgaria-0.6.1.tar.gz tmp/kat_bulgaria-0.6.2.tar.gz --markdown 20230410/k/kat-bulgaria/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-10 19:56:09] INFO root fetch - processPackages [science-optimization]: Downloading https://files.pythonhosted.org/packages/b3/85/3daa4abbb3bb0144b95d822911b0c21160bcc1b59f07dc9aea70149991d5/science_optimization-9.0.1.tar.gz
+[2023-04-10 19:56:09] INFO root fetch - processPackages [science-optimization]: executing diffoscope
+[2023-04-10 19:56:09] INFO root fetch - processPackages [science-optimization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/science_optimization-8.0.1.tar.gz tmp/science_optimization-9.0.1.tar.gz --markdown 20230410/s/science-optimization/8.0.1-9.0.1/diff.md --exclude *.pyd
+[2023-04-10 19:56:09] INFO root fetch - processPackages [pi-MCP4725]: Downloading https://files.pythonhosted.org/packages/14/e8/4227128afa3d43c8c3c9cd37ac1f76c22d113e661b6af2aab60ab4f9bfd9/pi_MCP4725-0.1.1.tar.gz
+[2023-04-10 19:56:09] INFO root fetch - processPackages [pi-MCP4725]: executing diffoscope
+[2023-04-10 19:56:09] INFO root fetch - processPackages [pi-MCP4725]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_MCP4725-0.1.tar.gz tmp/pi_MCP4725-0.1.1.tar.gz --markdown 20230410/p/pi-MCP4725/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 19:56:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 19:56:11] INFO root fetch - main [MainThread]: Store serial: [17648883]
