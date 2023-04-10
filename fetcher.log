@@ -11634,3 +11634,58 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 17:17:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:17:38] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:17:38] INFO root fetch - main [MainThread]: Store serial: [17647267]
+[2023-04-10 17:22:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647267]
+[2023-04-10 17:22:45] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 17:22:45] INFO root fetch - processPackages [lifeactuary]: New version: [1.2.1] Old Version: [1.2]
+[2023-04-10 17:22:45] INFO root fetch - processPackages [dominodatalab-data]: New version: [5.6.0.dev2] Old Version: [5.6.0.dev1]
+[2023-04-10 17:22:45] INFO root fetch - processPackages [cloudshell-snmp-autoload]: New version: [2.0.1] Old Version: [1.0.3]
+[2023-04-10 17:22:45] WARNING root fetch - processPackages [micropython-mc3479]: Skipping, unable to determine old version
+[2023-04-10 17:22:45] INFO root fetch - main [MainThread]: error
+[2023-04-10 17:22:45] INFO root fetch - processPackages [bbot]: New version: [1.0.5.1567rc0] Old Version: [1.0.5.1563rc0]
+[2023-04-10 17:22:46] INFO root fetch - processPackages [lifeactuary]: Downloading https://files.pythonhosted.org/packages/f7/6e/40fe3f7ff6fd2fac323075d0b024d7051a5dd0bfce51880a30e53f1bfbc8/lifeactuary-1.2.tar.gz
+[2023-04-10 17:22:46] INFO root fetch - processPackages [dominodatalab-data]: Downloading https://files.pythonhosted.org/packages/da/f5/93f8e9862a6a623f7ed0ac51fafe6af7a0fdf3a7c4a3b0d6263f6024c07b/dominodatalab_data-5.6.0.dev1.tar.gz
+[2023-04-10 17:22:46] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.13.0.dev20230410] Old Version: [2.13.0.dev20230409]
+[2023-04-10 17:22:46] INFO root fetch - processPackages [cloudshell-snmp-autoload]: Downloading https://files.pythonhosted.org/packages/48/ee/ceb93d19113bc629b1f39159fef0665d218e899f584980f37b428e8088bd/cloudshell-snmp-autoload-1.0.3.zip
+[2023-04-10 17:22:46] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/84/77/06b5b5538a1bddf31948b187264fe2d14c0e6df636e192e3ecee8a5f8373/bbot-1.0.5.1567rc0.tar.gz
+[2023-04-10 17:22:46] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/b1/19/ac861a4a789030810190cb8a3a642d934682117e7eab46203154fc0128ef/tf_nightly_intel-2.13.0.dev20230409-cp39-cp39-win_amd64.whl
+[2023-04-10 17:22:46] INFO root fetch - processPackages [cloudshell-snmp-autoload]: Downloading https://files.pythonhosted.org/packages/be/23/deda69a8183d65e8426d06d75900a1e89b28e7f3eafbd6ac14f3f3c97204/cloudshell-snmp-autoload-2.0.1.zip
+[2023-04-10 17:22:46] INFO root fetch - processPackages [cloudshell-snmp-autoload]: executing diffoscope
+[2023-04-10 17:22:46] INFO root fetch - processPackages [cloudshell-snmp-autoload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudshell-snmp-autoload-1.0.3.zip tmp/cloudshell-snmp-autoload-2.0.1.zip --markdown 20230410/c/cloudshell-snmp-autoload/1.0.3-2.0.1/diff.md --exclude *.pyd
+[2023-04-10 17:22:46] INFO root fetch - processPackages [dominodatalab-data]: Downloading https://files.pythonhosted.org/packages/39/02/d1cff078cc13aef881486c9f336eea8c4e7ca4dfb8e1d7d270b0a2c216ab/dominodatalab_data-5.6.0.dev2.tar.gz
+[2023-04-10 17:22:46] INFO root fetch - processPackages [lifeactuary]: Downloading https://files.pythonhosted.org/packages/67/f1/50a2a721f3f17615b7e3fc0c97a4b0ff5f45f9855a7f442b16089642aae1/lifeactuary-1.2.1.tar.gz
+[2023-04-10 17:22:46] INFO root fetch - processPackages [lifeactuary]: executing diffoscope
+[2023-04-10 17:22:46] INFO root fetch - processPackages [lifeactuary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifeactuary-1.2.tar.gz tmp/lifeactuary-1.2.1.tar.gz --markdown 20230410/l/lifeactuary/1.2-1.2.1/diff.md --exclude *.pyd
+[2023-04-10 17:22:46] INFO root fetch - processPackages [dominodatalab-data]: executing diffoscope
+[2023-04-10 17:22:46] INFO root fetch - processPackages [dominodatalab-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dominodatalab_data-5.6.0.dev1.tar.gz tmp/dominodatalab_data-5.6.0.dev2.tar.gz --markdown 20230410/d/dominodatalab-data/5.6.0.dev1-5.6.0.dev2/diff.md --exclude *.pyd
+[2023-04-10 17:22:46] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 178115971>=10485760
+[2023-04-10 17:22:46] INFO root fetch - main [MainThread]: error
+[2023-04-10 17:22:46] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.4.dev202304101525] Old Version: [2.1.4.dev202304101454]
+[2023-04-10 17:22:47] INFO root fetch - processPackages [PyroFork-dev]: Downloading https://files.pythonhosted.org/packages/fe/3d/868e59dd413985fc0d46f6e0192de8f704ce8b1a902f38f4515b4229bc39/PyroFork-dev-2.1.4.dev202304101525.tar.gz
+[2023-04-10 17:22:47] INFO root fetch - processPackages [bbot]: executing diffoscope
+[2023-04-10 17:22:47] INFO root fetch - processPackages [bbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbot-1.0.5.1563rc0.tar.gz tmp/bbot-1.0.5.1567rc0.tar.gz --markdown 20230410/b/bbot/1.0.5.1563rc0-1.0.5.1567rc0/diff.md --exclude *.pyd
+[2023-04-10 17:22:47] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-10 17:22:47] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.4.dev202304101454.tar.gz tmp/PyroFork-dev-2.1.4.dev202304101525.tar.gz --markdown 20230410/P/PyroFork-dev/2.1.4.dev202304101454-2.1.4.dev202304101525/diff.md --exclude *.pyd
+[2023-04-10 17:22:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:22:47] INFO root fetch - processPackages [splight-lib]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-04-10 17:22:47] INFO root fetch - processPackages [splight-lib]: Downloading https://files.pythonhosted.org/packages/e9/24/e6118ca446ffbd03f03dd65954381f6530a09f07901293a9339b027cf124/splight-lib-2.2.3.tar.gz
+[2023-04-10 17:22:47] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-04-10 17:22:47] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.2.2.tar.gz tmp/splight-lib-2.2.3.tar.gz --markdown 20230410/s/splight-lib/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-04-10 17:22:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:22:48] WARNING root fetch - processPackages [cir4mics]: Skipping, unable to determine old version
+[2023-04-10 17:22:48] INFO root fetch - main [MainThread]: error
+[2023-04-10 17:22:48] INFO root fetch - processPackages [nacolla]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-10 17:22:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:22:48] INFO root fetch - processPackages [alibabacloud-iotcc20210513-py2]: New version: [2.2.5] Old Version: [2.2.4]
+[2023-04-10 17:22:48] INFO root fetch - processPackages [nacolla]: Downloading https://files.pythonhosted.org/packages/9e/82/66a9f4f1319abd56acb7d705a038db57950d5f7b4e7bfa2fba7d0e51622a/nacolla-0.1.5.tar.gz
+[2023-04-10 17:22:48] INFO root fetch - processPackages [alibabacloud-iotcc20210513-py2]: Downloading https://files.pythonhosted.org/packages/1d/f7/d761bc3673bb05ad3abc8acedbc78d8e9efdabcc9ea9fa17c75aaf983cd9/alibabacloud_iotcc20210513_py2-2.2.4.tar.gz
+[2023-04-10 17:22:48] INFO root fetch - processPackages [nacolla]: executing diffoscope
+[2023-04-10 17:22:48] INFO root fetch - processPackages [nacolla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nacolla-0.1.4.tar.gz tmp/nacolla-0.1.5.tar.gz --markdown 20230410/n/nacolla/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-10 17:22:48] INFO root fetch - processPackages [alibabacloud-iotcc20210513-py2]: Downloading https://files.pythonhosted.org/packages/1c/d3/a2052883839392a77111bab86b6350c83e9abf14c2d84b1dd4ca56c1c724/alibabacloud_iotcc20210513_py2-2.2.5.tar.gz
+[2023-04-10 17:22:49] INFO root fetch - processPackages [alibabacloud-iotcc20210513-py2]: executing diffoscope
+[2023-04-10 17:22:49] INFO root fetch - processPackages [alibabacloud-iotcc20210513-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_iotcc20210513_py2-2.2.4.tar.gz tmp/alibabacloud_iotcc20210513_py2-2.2.5.tar.gz --markdown 20230410/a/alibabacloud-iotcc20210513-py2/2.2.4-2.2.5/diff.md --exclude *.pyd
+[2023-04-10 17:22:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:22:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:22:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:22:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:22:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:22:51] INFO root fetch - main [MainThread]: Store serial: [17647306]
