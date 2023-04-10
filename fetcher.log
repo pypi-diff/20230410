@@ -1906,3 +1906,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-10 03:56:40] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:56:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:56:42] INFO root fetch - main [MainThread]: Store serial: [17641277]
+[2023-04-10 04:01:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17641277]
+[2023-04-10 04:01:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 04:01:51] INFO root fetch - processPackages [docassemble.demo]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-10 04:01:51] INFO root fetch - processPackages [datastructuresLionelEric]: New version: [2.12] Old Version: [2.1]
+[2023-04-10 04:01:51] INFO root fetch - processPackages [docassemble.webapp]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-10 04:01:51] INFO root fetch - processPackages [docassemble]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-10 04:01:51] INFO root fetch - processPackages [docassemble.base]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-10 04:01:51] INFO root fetch - processPackages [docassemble.demo]: Downloading https://files.pythonhosted.org/packages/12/65/72be3778d6c8df2fc0725932b11671c295cbe40fccf8e32f5fad392c226b/docassemble.demo-1.4.8.tar.gz
+[2023-04-10 04:01:51] INFO root fetch - processPackages [datastructuresLionelEric]: Downloading https://files.pythonhosted.org/packages/19/5e/670db39ab737e4b9745a308bdb7206b83211bc108dc25c2a176584a8ac0d/datastructuresLionelEric-2.12.tar.gz
+[2023-04-10 04:01:51] INFO root fetch - processPackages [docassemble.base]: Downloading https://files.pythonhosted.org/packages/49/6f/c82f5b1b26e0b12bdf1e565f9218b862142854979a0f01ea54c864ac7770/docassemble.base-1.4.8.tar.gz
+[2023-04-10 04:01:51] INFO root fetch - processPackages [docassemble.webapp]: Downloading https://files.pythonhosted.org/packages/fe/48/4d304022057f0e254fc8916a718a52b355f0ae2843c22d86139803ae0020/docassemble.webapp-1.4.8.tar.gz
+[2023-04-10 04:01:51] INFO root fetch - processPackages [docassemble]: Downloading https://files.pythonhosted.org/packages/1b/b1/8cd8c51bc2b5aa0fa89d1528f73674a02f1202fc12d3696bb33172926993/docassemble-1.4.8.tar.gz
+[2023-04-10 04:01:51] INFO root fetch - processPackages [datastructuresLionelEric]: executing diffoscope
+[2023-04-10 04:01:51] INFO root fetch - processPackages [datastructuresLionelEric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datastructuresLionelEric-2.1.tar.gz tmp/datastructuresLionelEric-2.12.tar.gz --markdown 20230410/d/datastructuresLionelEric/2.1-2.12/diff.md --exclude *.pyd
+[2023-04-10 04:01:52] INFO root fetch - processPackages [docassemble]: Downloading https://files.pythonhosted.org/packages/8b/4e/0fabe3ae223b84b73fa9a38526c3f22a21eab5f747f408034f5c0ba59e7d/docassemble-1.4.9.tar.gz
+[2023-04-10 04:01:52] INFO root fetch - processPackages [docassemble]: executing diffoscope
+[2023-04-10 04:01:52] INFO root fetch - processPackages [docassemble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble-1.4.8.tar.gz tmp/docassemble-1.4.9.tar.gz --markdown 20230410/d/docassemble/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-10 04:01:52] WARNING root fetch - processPackages [docassemble.base]: Skipping package: exceeds size limit 10987248>=10485760
+[2023-04-10 04:01:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 04:01:52] INFO root fetch - processPackages [streamlit-chat-animated]: New version: [0.0.2.7] Old Version: [0.0.2.6]
+[2023-04-10 04:01:52] INFO root fetch - processPackages [streamlit-chat-animated]: Downloading https://files.pythonhosted.org/packages/55/bc/9f642b5bfd27e67f445eae87746d6dd8c61d81d476d502eaaef27d86a011/streamlit-chat-animated-0.0.2.6.tar.gz
+[2023-04-10 04:01:52] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:01:52] WARNING root fetch - processPackages [antchain-fairopennet]: Skipping, unable to determine old version
+[2023-04-10 04:01:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 04:01:52] INFO root fetch - processPackages [streamlit-chat-animated]: Downloading https://files.pythonhosted.org/packages/d9/ab/e7bc71c12535c685981d55e07b761010632bb057a8a52149f77f93285263/streamlit-chat-animated-0.0.2.7.tar.gz
+[2023-04-10 04:01:53] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:01:53] INFO root fetch - processPackages [streamlit-chat-animated]: executing diffoscope
+[2023-04-10 04:01:53] INFO root fetch - processPackages [streamlit-chat-animated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chat-animated-0.0.2.6.tar.gz tmp/streamlit-chat-animated-0.0.2.7.tar.gz --markdown 20230410/s/streamlit-chat-animated/0.0.2.6-0.0.2.7/diff.md --exclude *.pyd
+[2023-04-10 04:01:56] INFO root fetch - processPackages [docassemble.demo]: Downloading https://files.pythonhosted.org/packages/ea/e2/301126e8ccea026042cf14b25646d8a8775d5bc90eaed08eb9da6c61421a/docassemble.demo-1.4.9.tar.gz
+[2023-04-10 04:01:57] INFO root fetch - processPackages [docassemble.webapp]: Downloading https://files.pythonhosted.org/packages/ee/bd/035c358ae80b3b4826a36a17e6a993251ad2bb4c42b826fd879f02355d0e/docassemble.webapp-1.4.9.tar.gz
+[2023-04-10 04:02:00] INFO root fetch - processPackages [docassemble.demo]: executing diffoscope
+[2023-04-10 04:02:00] INFO root fetch - processPackages [docassemble.demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble.demo-1.4.8.tar.gz tmp/docassemble.demo-1.4.9.tar.gz --markdown 20230410/d/docassemble.demo/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-10 04:02:03] INFO root fetch - processPackages [docassemble.webapp]: executing diffoscope
+[2023-04-10 04:02:03] INFO root fetch - processPackages [docassemble.webapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble.webapp-1.4.8.tar.gz tmp/docassemble.webapp-1.4.9.tar.gz --markdown 20230410/d/docassemble.webapp/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-10 04:02:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:02:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:02:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:02:11] INFO root fetch - main [MainThread]: Store serial: [17641297]
