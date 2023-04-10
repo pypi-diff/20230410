@@ -15855,3 +15855,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 23:00:49] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:00:51] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:00:51] INFO root fetch - main [MainThread]: Store serial: [17650345]
+[2023-04-10 23:05:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650345]
+[2023-04-10 23:05:59] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 23:05:59] WARNING root fetch - processPackages [ipsuite]: Skipping, unable to determine old version
+[2023-04-10 23:05:59] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:05:59] INFO root fetch - processPackages [fw-gear-dcm2niix]: New version: [2.0.0] Old Version: [1.4.1]
+[2023-04-10 23:05:59] INFO root fetch - processPackages [chemotools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 23:05:59] INFO root fetch - processPackages [story-analyzer]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-10 23:05:59] INFO root fetch - processPackages [refx]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-10 23:05:59] INFO root fetch - processPackages [NikeCA]: New version: [0.1.53] Old Version: [0.1.52]
+[2023-04-10 23:05:59] INFO root fetch - processPackages [story-analyzer]: Downloading https://files.pythonhosted.org/packages/86/a8/c3e7241c08ad780dbfd946b5ed92f88a8a1e39a578d022010605df5a56b6/story_analyzer-0.1.3.tar.gz
+[2023-04-10 23:05:59] INFO root fetch - processPackages [fw-gear-dcm2niix]: Downloading https://files.pythonhosted.org/packages/6a/fc/af751a3ec2d8f3d231ae96b5c7b65321b02d30d42a6a2105a7985fe988ba/fw_gear_dcm2niix-1.4.1-py3-none-any.whl
+[2023-04-10 23:05:59] INFO root fetch - processPackages [NikeCA]: Downloading https://files.pythonhosted.org/packages/a9/b2/c43836f47d3aec37c0c9a93c25916e49d0e54262d83ee6d64073a76d4af5/NikeCA-0.1.53.tar.gz
+[2023-04-10 23:05:59] INFO root fetch - processPackages [refx]: Downloading https://files.pythonhosted.org/packages/03/86/abf071f20e49426e0d0cdda693b294c81b5ca161751ed6cd43b62101079e/refx-0.0.0.tar.gz
+[2023-04-10 23:05:59] INFO root fetch - processPackages [chemotools]: executing diffoscope
+[2023-04-10 23:05:59] INFO root fetch - processPackages [chemotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemotools-0.0.8.tar.gz tmp/chemotools-0.0.9.tar.gz --markdown 20230410/c/chemotools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 23:05:59] INFO root fetch - processPackages [story-analyzer]: executing diffoscope
+[2023-04-10 23:05:59] INFO root fetch - processPackages [story-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/story_analyzer-0.1.2.tar.gz tmp/story_analyzer-0.1.3.tar.gz --markdown 20230410/s/story-analyzer/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-10 23:05:59] INFO root fetch - processPackages [NikeCA]: executing diffoscope
+[2023-04-10 23:05:59] INFO root fetch - processPackages [NikeCA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NikeCA-0.1.52.tar.gz tmp/NikeCA-0.1.53.tar.gz --markdown 20230410/N/NikeCA/0.1.52-0.1.53/diff.md --exclude *.pyd
+[2023-04-10 23:06:00] INFO root fetch - processPackages [fw-gear-dcm2niix]: Downloading https://files.pythonhosted.org/packages/88/4b/7a0b3890ee396ada353462a5c65f61859fa76aed291952619d2efdf2943e/fw_gear_dcm2niix-2.0.0-py3-none-any.whl
+[2023-04-10 23:06:00] INFO root fetch - processPackages [refx]: Downloading https://files.pythonhosted.org/packages/3a/33/a517a253bb851c38f2c15fe1144f441bcc86afc496e9307ac55dabcee83d/refx-0.0.1.tar.gz
+[2023-04-10 23:06:00] INFO root fetch - processPackages [fw-gear-dcm2niix]: executing diffoscope
+[2023-04-10 23:06:00] INFO root fetch - processPackages [fw-gear-dcm2niix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fw_gear_dcm2niix-1.4.1-py3-none-any.whl.zip tmp/fw_gear_dcm2niix-2.0.0-py3-none-any.whl.zip --markdown 20230410/f/fw-gear-dcm2niix/1.4.1-2.0.0/diff.md --exclude *.pyd
+[2023-04-10 23:06:00] INFO root fetch - processPackages [refx]: executing diffoscope
+[2023-04-10 23:06:00] INFO root fetch - processPackages [refx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/refx-0.0.0.tar.gz tmp/refx-0.0.1.tar.gz --markdown 20230410/r/refx/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-10 23:06:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:06:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:06:01] INFO root fetch - processPackages [sqlite-vss]: New version: [0.0.2a4] Old Version: [0.0.2a3]
+[2023-04-10 23:06:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:06:01] INFO root fetch - processPackages [buildapp]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-10 23:06:01] INFO root fetch - processPackages [datasette-sqlite-vss]: New version: [0.0.2a4] Old Version: [0.0.2a3]
+[2023-04-10 23:06:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:06:01] INFO root fetch - processPackages [sqlite-vss]: Downloading https://files.pythonhosted.org/packages/61/40/414b2298ebc8c44621b929a227f2f647ef943c97051af2296fdcf2cb0b0d/sqlite_vss-0.0.2a4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-04-10 23:06:01] INFO root fetch - processPackages [hello-robot-stretch-body]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-10 23:06:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:06:01] INFO root fetch - processPackages [globsters]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 23:06:01] INFO root fetch - processPackages [buildapp]: Downloading https://files.pythonhosted.org/packages/fb/e4/51b1035bfd950718f41e9c1973060b7b6a9ee93ea33f9c6fc16de493ec0c/buildapp-1.0.1.tar.gz
+[2023-04-10 23:06:01] INFO root fetch - processPackages [hello-robot-stretch-body]: Downloading https://files.pythonhosted.org/packages/af/ed/b42608eac5f0f11938835bdd9d116b38549ee5ebf692f4a2bc79d4f6bf47/hello_robot_stretch_body-0.4.8.tar.gz
+[2023-04-10 23:06:01] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/05/3b/1595f141fc67173d8c32ac62298e8eac2419e775d3914d256e2524672e10/datasette_sqlite_vss-0.0.2a4-py3-none-any.whl
+[2023-04-10 23:06:01] INFO root fetch - processPackages [globsters]: Downloading https://files.pythonhosted.org/packages/b6/4c/b237192755aae7a3eece944f04e1e215885a465d75192d6b87bca2b57477/globsters-0.0.2.tar.gz
+[2023-04-10 23:06:01] INFO root fetch - processPackages [datasette-sqlite-vss]: executing diffoscope
+[2023-04-10 23:06:01] INFO root fetch - processPackages [datasette-sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vss-0.0.2a3-py3-none-any.whl.zip tmp/datasette_sqlite_vss-0.0.2a4-py3-none-any.whl.zip --markdown 20230410/d/datasette-sqlite-vss/0.0.2a3-0.0.2a4/diff.md --exclude *.pyd
+[2023-04-10 23:06:01] INFO root fetch - processPackages [buildapp]: Downloading https://files.pythonhosted.org/packages/f6/f4/c6684996450864b75841afb0d25896f4ed1d7106099dd1e1d1e4ec5b3f59/buildapp-1.1.0.tar.gz
+[2023-04-10 23:06:01] INFO root fetch - processPackages [buildapp]: executing diffoscope
+[2023-04-10 23:06:01] INFO root fetch - processPackages [buildapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildapp-1.0.1.tar.gz tmp/buildapp-1.1.0.tar.gz --markdown 20230410/b/buildapp/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 23:06:01] INFO root fetch - processPackages [hello-robot-stretch-body]: Downloading https://files.pythonhosted.org/packages/6d/db/4eb87d14c62b204df61adcb44a25f863c9bbae8f06006dad5c005d723461/hello_robot_stretch_body-0.4.9.tar.gz
+[2023-04-10 23:06:02] INFO root fetch - processPackages [globsters]: Downloading https://files.pythonhosted.org/packages/34/4c/230b81816c6e15cc0e8c17ef69689cfdc20448cdbfd2d1f72a2ace498f36/globsters-0.0.3-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl
+[2023-04-10 23:06:02] INFO root fetch - processPackages [sqlite-vss]: executing diffoscope
+[2023-04-10 23:06:02] INFO root fetch - processPackages [sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_vss-0.0.2a3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_vss-0.0.2a4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230410/s/sqlite-vss/0.0.2a3-0.0.2a4/diff.md --exclude *.pyd
+[2023-04-10 23:06:02] INFO root fetch - processPackages [hello-robot-stretch-body]: executing diffoscope
+[2023-04-10 23:06:02] INFO root fetch - processPackages [hello-robot-stretch-body]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello_robot_stretch_body-0.4.8.tar.gz tmp/hello_robot_stretch_body-0.4.9.tar.gz --markdown 20230410/h/hello-robot-stretch-body/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-10 23:06:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:06:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:06:03] INFO root fetch - processPackages [globsters]: executing diffoscope
+[2023-04-10 23:06:03] INFO root fetch - processPackages [globsters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/globsters-0.0.2.tar.gz tmp/globsters-0.0.3-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip --markdown 20230410/g/globsters/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 23:06:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:06:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:06:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:06:41] INFO root fetch - main [MainThread]: Store serial: [17650390]
