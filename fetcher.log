@@ -10422,3 +10422,75 @@ EOFError: EOF read where object expected
 [2023-04-10 15:59:46] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:59:56] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:59:56] INFO root fetch - main [MainThread]: Store serial: [17646506]
+[2023-04-10 16:04:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646506]
+[2023-04-10 16:05:03] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-10 16:05:03] INFO root fetch - processPackages [croydon]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-10 16:05:03] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 16:05:03] WARNING root fetch - processPackages [extr-nlp]: Skipping, unable to determine old version
+[2023-04-10 16:05:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:05:04] INFO root fetch - processPackages [alfred5]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-04-10 16:05:04] INFO root fetch - processPackages [quarchQCS]: New version: [1.1.4.dev1] Old Version: [1.1.3.dev2]
+[2023-04-10 16:05:04] WARNING root fetch - processPackages [yeagerai-agent]: Skipping, unable to determine old version
+[2023-04-10 16:05:04] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:05:04] INFO root fetch - processPackages [acryo]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 16:05:04] INFO root fetch - processPackages [croydon]: executing diffoscope
+[2023-04-10 16:05:04] INFO root fetch - processPackages [croydon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croydon-0.9.0.tar.gz tmp/croydon-0.9.1.tar.gz --markdown 20230410/c/croydon/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-10 16:05:04] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: executing diffoscope
+[2023-04-10 16:05:04] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-provider-huawei-cloud-demo-0.0.8.tar.gz tmp/airflow-provider-huawei-cloud-demo-0.0.9.tar.gz --markdown 20230410/a/airflow-provider-huawei-cloud-demo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 16:05:04] INFO root fetch - processPackages [quarchQCS]: Downloading https://files.pythonhosted.org/packages/6d/82/ca2319a5fe8fa29bbc8698647bbcc6a5870bdc07bab659357470f568fff5/quarchQCS-1.1.3.dev2-py3-none-any.whl
+[2023-04-10 16:05:04] INFO root fetch - processPackages [acryo]: Downloading https://files.pythonhosted.org/packages/93/70/83a0f53a875e03f4ab005a736764d4845506e9b7701ca5afcc7c7d96ab92/acryo-0.2.1.tar.gz
+[2023-04-10 16:05:04] INFO root fetch - processPackages [alfred5]: Downloading https://files.pythonhosted.org/packages/58/99/a6a56272931bcd55c5f3bc8e4cb254decf3a298637df32d57105c47f087d/alfred5-1.1.0.tar.gz
+[2023-04-10 16:05:04] INFO root fetch - processPackages [alfred5]: executing diffoscope
+[2023-04-10 16:05:04] INFO root fetch - processPackages [alfred5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfred5-1.0.9.tar.gz tmp/alfred5-1.1.0.tar.gz --markdown 20230410/a/alfred5/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 16:05:04] INFO root fetch - processPackages [acryo]: Downloading https://files.pythonhosted.org/packages/49/18/087bf57e45fc26a1c0a5271ee8712362553695469ac7f22c18c901dc8e50/acryo-0.2.2.tar.gz
+[2023-04-10 16:05:04] INFO root fetch - processPackages [acryo]: executing diffoscope
+[2023-04-10 16:05:04] INFO root fetch - processPackages [acryo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryo-0.2.1.tar.gz tmp/acryo-0.2.2.tar.gz --markdown 20230410/a/acryo/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 16:05:05] INFO root fetch - processPackages [quarchQCS]: Downloading https://files.pythonhosted.org/packages/12/7c/5bce6501f38f45ed74f32eea95a08a5dc4b8abb93f42cc92a380effa370f/quarchQCS-1.1.4.dev1-py3-none-any.whl
+[2023-04-10 16:05:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase-stock]: New version: [14.0.1.0.3.dev2] Old Version: [14.0.1.0.3.dev1]
+[2023-04-10 16:05:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:05] INFO root fetch - processPackages [poonia]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 16:05:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase-stock]: Downloading https://files.pythonhosted.org/packages/11/3b/e1deecc45b442db6a7f02f403a4740b0c0da09f673d38b91aab2dd8f51f6/odoo14_addon_l10n_br_purchase_stock-14.0.1.0.3.dev1-py3-none-any.whl
+[2023-04-10 16:05:05] INFO root fetch - processPackages [poonia]: executing diffoscope
+[2023-04-10 16:05:05] INFO root fetch - processPackages [poonia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poonia-0.1.8.tar.gz tmp/poonia-0.1.9.tar.gz --markdown 20230410/p/poonia/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 16:05:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: New version: [14.0.7.1.3] Old Version: [14.0.7.1.2]
+[2023-04-10 16:05:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase-stock]: Downloading https://files.pythonhosted.org/packages/cd/3a/920e3d9707c8c7c00796500da13c003a978367563c5d75a1bd196155374d/odoo14_addon_l10n_br_purchase_stock-14.0.1.0.3.dev2-py3-none-any.whl
+[2023-04-10 16:05:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: New version: [14.0.5.6.1] Old Version: [14.0.5.6.0]
+[2023-04-10 16:05:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: Downloading https://files.pythonhosted.org/packages/b2/77/8acb4b640b8cc79aa39d9c6ad3e20a1fa7e0620f1837d34798c5e3f6819f/odoo14_addon_l10n_br_account-14.0.5.6.0-py3-none-any.whl
+[2023-04-10 16:05:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Downloading https://files.pythonhosted.org/packages/98/6d/be45c390d67f991981091842be758008a92386784b203035bc1a31c1f59b/odoo14_addon_l10n_br_nfe-14.0.7.1.2-py3-none-any.whl
+[2023-04-10 16:05:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase-stock]: executing diffoscope
+[2023-04-10 16:05:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_purchase_stock-14.0.1.0.3.dev1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_purchase_stock-14.0.1.0.3.dev2-py3-none-any.whl.zip --markdown 20230410/o/odoo14-addon-l10n-br-purchase-stock/14.0.1.0.3.dev1-14.0.1.0.3.dev2/diff.md --exclude *.pyd
+[2023-04-10 16:05:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: Downloading https://files.pythonhosted.org/packages/c5/7a/aa32036801a571c6f375401b564e5960913bfc461fc3462ee213f3bd0fe7/odoo14_addon_l10n_br_account-14.0.5.6.1-py3-none-any.whl
+[2023-04-10 16:05:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: executing diffoscope
+[2023-04-10 16:05:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_account-14.0.5.6.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_account-14.0.5.6.1-py3-none-any.whl.zip --markdown 20230410/o/odoo14-addon-l10n-br-account/14.0.5.6.0-14.0.5.6.1/diff.md --exclude *.pyd
+[2023-04-10 16:05:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:06] INFO root fetch - processPackages [PrSpiders]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-10 16:05:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Downloading https://files.pythonhosted.org/packages/50/35/4912ada995a99b67bb27300839dfff5459b0074bc10fd2d61383471db73f/odoo14_addon_l10n_br_nfe-14.0.7.1.3-py3-none-any.whl
+[2023-04-10 16:05:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: executing diffoscope
+[2023-04-10 16:05:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_nfe-14.0.7.1.2-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_nfe-14.0.7.1.3-py3-none-any.whl.zip --markdown 20230410/o/odoo14-addon-l10n-br-nfe/14.0.7.1.2-14.0.7.1.3/diff.md --exclude *.pyd
+[2023-04-10 16:05:06] INFO root fetch - processPackages [quarchQCS]: executing diffoscope
+[2023-04-10 16:05:06] INFO root fetch - processPackages [quarchQCS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarchQCS-1.1.3.dev2-py3-none-any.whl.zip tmp/quarchQCS-1.1.4.dev1-py3-none-any.whl.zip --markdown 20230410/q/quarchQCS/1.1.3.dev2-1.1.4.dev1/diff.md --exclude *.pyd
+[2023-04-10 16:05:06] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/79/c4/44e8e54806e641295b67f69ec9e6cf71d4f6c85796bdd8b1124d7a60c6e5/PrSpiders-0.2.6.tar.gz
+[2023-04-10 16:05:06] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/67/d4/08ad98fc0425afe2614966738a8c9bb9d5d02d8f6e8ba4a24139df531f83/PrSpiders-0.2.7.tar.gz
+[2023-04-10 16:05:07] INFO root fetch - processPackages [PrSpiders]: executing diffoscope
+[2023-04-10 16:05:07] INFO root fetch - processPackages [PrSpiders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PrSpiders-0.2.6.tar.gz tmp/PrSpiders-0.2.7.tar.gz --markdown 20230410/P/PrSpiders/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-10 16:05:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:07] INFO root fetch - processPackages [Flask-Meter]: New version: [1.0.0] Old Version: [0.2.0]
+[2023-04-10 16:05:07] INFO root fetch - processPackages [Flask-Meter]: Downloading https://files.pythonhosted.org/packages/2c/0c/280a0d933114609f60d918913b09cb7d928335c76fce4de38898858bd8d3/Flask-Meter-0.2.0.tar.gz
+[2023-04-10 16:05:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:07] INFO root fetch - processPackages [Flask-Meter]: Downloading https://files.pythonhosted.org/packages/55/b3/b3c79d7291e88f07ca53d341ba1579c0c551da89787a91ab5220d8078662/Flask-Meter-1.0.0.tar.gz
+[2023-04-10 16:05:07] WARNING root fetch - processPackages [fuckvkeypad]: Skipping, unable to determine old version
+[2023-04-10 16:05:07] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:05:07] INFO root fetch - processPackages [Flask-Meter]: executing diffoscope
+[2023-04-10 16:05:07] INFO root fetch - processPackages [Flask-Meter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Meter-0.2.0.tar.gz tmp/Flask-Meter-1.0.0.tar.gz --markdown 20230410/F/Flask-Meter/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-10 16:05:07] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.4.dev202304101241] Old Version: [2.1.4.dev202304101235]
+[2023-04-10 16:05:08] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-10 16:05:08] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.4.dev202304101235.tar.gz tmp/PyroFork-dev-2.1.4.dev202304101241.tar.gz --markdown 20230410/P/PyroFork-dev/2.1.4.dev202304101235-2.1.4.dev202304101241/diff.md --exclude *.pyd
+[2023-04-10 16:05:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:05:12] INFO root fetch - main [MainThread]: Store serial: [17646555]
