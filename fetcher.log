@@ -1811,3 +1811,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-10 03:46:10] INFO root fetch - processPackages [satcfdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satcfdi-4.0.5.tar.gz tmp/satcfdi-4.0.6.tar.gz --markdown 20230410/s/satcfdi/4.0.5-4.0.6/diff.md --exclude *.pyd
 [2023-04-10 03:46:15] INFO root fetch - main [MainThread]: success
 [2023-04-10 03:46:15] INFO root fetch - main [MainThread]: Store serial: [17641154]
+[2023-04-10 03:51:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17641154]
+[2023-04-10 03:51:24] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 03:51:24] INFO root fetch - processPackages [pyproject-pre-commit]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-10 03:51:24] INFO root fetch - processPackages [django-silly-auth]: New version: [1.0.0] Old Version: [0.1.1]
+[2023-04-10 03:51:24] INFO root fetch - processPackages [ScaleConvertion]: New version: [0.3] Old Version: [0.2]
+[2023-04-10 03:51:24] INFO root fetch - processPackages [neon-homeassistant-skill]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 03:51:24] INFO root fetch - processPackages [coreframe]: New version: [0.1a] Old Version: [0.0.1]
+[2023-04-10 03:51:24] INFO root fetch - processPackages [neon-homeassistant-skill]: executing diffoscope
+[2023-04-10 03:51:24] INFO root fetch - processPackages [neon-homeassistant-skill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_homeassistant_skill-0.0.8.tar.gz tmp/neon_homeassistant_skill-0.0.9.tar.gz --markdown 20230410/n/neon-homeassistant-skill/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 03:51:24] INFO root fetch - processPackages [pyproject-pre-commit]: Downloading https://files.pythonhosted.org/packages/3f/e5/1ec001530b3f4e7527e7f41930bbcc7d7a922cb6550b38709a551bab0acc/pyproject_pre_commit-0.0.5.tar.gz
+[2023-04-10 03:51:24] INFO root fetch - processPackages [django-silly-auth]: Downloading https://files.pythonhosted.org/packages/09/32/3307cb605422ea73b7a762c5849511b07cd4b196c3360e01236bcd826e52/django-silly-auth-0.1.1.tar.gz
+[2023-04-10 03:51:24] INFO root fetch - processPackages [coreframe]: Downloading https://files.pythonhosted.org/packages/6c/84/de2631b3fe94ef3c615c3627a4dafd29c0fde466dee1352a040af1897021/coreframe-0.0.1.tar.gz
+[2023-04-10 03:51:24] INFO root fetch - processPackages [ScaleConvertion]: Downloading https://files.pythonhosted.org/packages/aa/0d/120f9abf7a12cca29558113534d015882617be5c215c87516774f3d6312f/ScaleConvertion-0.3.tar.gz
+[2023-04-10 03:51:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:51:25] INFO root fetch - processPackages [django-silly-auth]: New version: [1.0.0] Old Version: [0.1.1]
+[2023-04-10 03:51:26] INFO root fetch - processPackages [django-silly-auth]: Downloading https://files.pythonhosted.org/packages/09/32/3307cb605422ea73b7a762c5849511b07cd4b196c3360e01236bcd826e52/django-silly-auth-0.1.1.tar.gz
+[2023-04-10 03:51:26] INFO root fetch - processPackages [ScaleConvertion]: executing diffoscope
+[2023-04-10 03:51:26] INFO root fetch - processPackages [ScaleConvertion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScaleConvertion-0.2.tar.gz tmp/ScaleConvertion-0.3.tar.gz --markdown 20230410/S/ScaleConvertion/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-10 03:51:26] INFO root fetch - processPackages [django-silly-auth]: Downloading https://files.pythonhosted.org/packages/45/b0/508e4d6786b6635e254a46441cc101bada7e1a7658f3cd3eaf2023404907/django-silly-auth-1.0.0.tar.gz
+[2023-04-10 03:51:26] INFO root fetch - processPackages [django-silly-auth]: Downloading https://files.pythonhosted.org/packages/45/b0/508e4d6786b6635e254a46441cc101bada7e1a7658f3cd3eaf2023404907/django-silly-auth-1.0.0.tar.gz
+[2023-04-10 03:51:26] INFO root fetch - processPackages [coreframe]: Downloading https://files.pythonhosted.org/packages/68/ef/59411d393f46c565df344dc7204a83d0d75d78e0bfcffda1a950f85fcbd7/coreframe-0.1a.tar.gz
+[2023-04-10 03:51:26] INFO root fetch - processPackages [pyproject-pre-commit]: Downloading https://files.pythonhosted.org/packages/25/91/9ff78a793f115bc46ae6035dea74edfb4772f39e79bdef48da5443ac97c8/pyproject_pre_commit-0.0.6.tar.gz
+[2023-04-10 03:51:26] INFO root fetch - processPackages [coreframe]: executing diffoscope
+[2023-04-10 03:51:26] INFO root fetch - processPackages [coreframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coreframe-0.0.1.tar.gz tmp/coreframe-0.1a.tar.gz --markdown 20230410/c/coreframe/0.0.1-0.1a/diff.md --exclude *.pyd
+[2023-04-10 03:51:26] INFO root fetch - processPackages [django-silly-auth]: executing diffoscope
+[2023-04-10 03:51:26] INFO root fetch - processPackages [django-silly-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-silly-auth-0.1.1.tar.gz tmp/django-silly-auth-1.0.0.tar.gz --markdown 20230410/d/django-silly-auth/0.1.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-10 03:51:26] INFO root fetch - processPackages [django-silly-auth]: executing diffoscope
+[2023-04-10 03:51:26] INFO root fetch - processPackages [django-silly-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-silly-auth-0.1.1.tar.gz tmp/django-silly-auth-1.0.0.tar.gz --markdown 20230410/d/django-silly-auth/0.1.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-10 03:51:26] INFO root fetch - processPackages [pyproject-pre-commit]: executing diffoscope
+[2023-04-10 03:51:26] INFO root fetch - processPackages [pyproject-pre-commit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_pre_commit-0.0.5.tar.gz tmp/pyproject_pre_commit-0.0.6.tar.gz --markdown 20230410/p/pyproject-pre-commit/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-10 03:51:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:51:27] WARNING root fetch - processPackages [datastructresLionelEric]: Skipping, unable to determine old version
+[2023-04-10 03:51:27] INFO root fetch - main [MainThread]: error
+[2023-04-10 03:51:27] INFO root fetch - processPackages [voronoi]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-10 03:51:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:51:27] INFO root fetch - processPackages [satdigitalinvoice]: New version: [2.1.0] Old Version: [2.0.7]
+[2023-04-10 03:51:27] INFO root fetch - processPackages [voronoi]: Downloading https://files.pythonhosted.org/packages/a1/f6/f60f06f9c2f1f21c53bf7e73477050cf3e2f5996dc47faa044b2a3899a77/voronoi-0.3.1.tar.gz
+[2023-04-10 03:51:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:51:27] INFO root fetch - processPackages [datastructuresLionelEric]: New version: [2.1] Old Version: [1.0.92]
+[2023-04-10 03:51:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:51:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:51:27] INFO root fetch - processPackages [satdigitalinvoice]: Downloading https://files.pythonhosted.org/packages/55/d4/f6d81e117d831dfaa4374cf8140f9f16a35435816c0eb4e59111f8f1c151/satdigitalinvoice-2.1.0.tar.gz
+[2023-04-10 03:51:28] ERROR root fetch - processPackages [chatgpt-voice-assistant]: Unable to get metadata: No such project 'chatgpt-voice-assistant'
+[2023-04-10 03:51:28] INFO root fetch - main [MainThread]: error
+[2023-04-10 03:51:28] INFO root fetch - processPackages [datastructuresLionelEric]: Downloading https://files.pythonhosted.org/packages/69/05/ddaac58e506ad4ca9faac9bad220ae5cfaa5b8d8cf8f1cdb669894264bca/datastructuresLionelEric-2.1.tar.gz
+[2023-04-10 03:51:28] INFO root fetch - processPackages [datastructuresLionelEric]: executing diffoscope
+[2023-04-10 03:51:28] INFO root fetch - processPackages [datastructuresLionelEric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datastructuresLionelEric-1.0.92.tar.gz tmp/datastructuresLionelEric-2.1.tar.gz --markdown 20230410/d/datastructuresLionelEric/1.0.92-2.1/diff.md --exclude *.pyd
+[2023-04-10 03:51:28] INFO root fetch - processPackages [voronoi]: Downloading https://files.pythonhosted.org/packages/7f/5e/163b0e85506c4aedc724f84a9c9e8db003dda4b00ad424816d382ed355f8/voronoi-0.4.0.tar.gz
+[2023-04-10 03:51:28] INFO root fetch - processPackages [satdigitalinvoice]: executing diffoscope
+[2023-04-10 03:51:28] INFO root fetch - processPackages [satdigitalinvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satdigitalinvoice-2.0.7.tar.gz tmp/satdigitalinvoice-2.1.0.tar.gz --markdown 20230410/s/satdigitalinvoice/2.0.7-2.1.0/diff.md --exclude *.pyd
+[2023-04-10 03:51:28] INFO root fetch - processPackages [voronoi]: executing diffoscope
+[2023-04-10 03:51:28] INFO root fetch - processPackages [voronoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voronoi-0.3.1.tar.gz tmp/voronoi-0.4.0.tar.gz --markdown 20230410/v/voronoi/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-10 03:51:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:51:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:51:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 03:51:30] INFO root fetch - main [MainThread]: Store serial: [17641247]
