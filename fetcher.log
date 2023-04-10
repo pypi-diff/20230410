@@ -15747,3 +15747,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 22:50:20] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:50:23] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:50:23] INFO root fetch - main [MainThread]: Store serial: [17650284]
+[2023-04-10 22:55:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650284]
+[2023-04-10 22:55:31] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-10 22:55:31] INFO root fetch - processPackages [brds]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-10 22:55:31] INFO root fetch - processPackages [pytile]: New version: [5.2.4] Old Version: [5.2.3]
+[2023-04-10 22:55:31] WARNING root fetch - processPackages [tarraz]: Skipping, unable to determine old version
+[2023-04-10 22:55:31] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:55:31] INFO root fetch - processPackages [scikit-build]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-10 22:55:31] INFO root fetch - processPackages [python-invest]: New version: [0.2.1a0] Old Version: [0.1.1a0]
+[2023-04-10 22:55:31] INFO root fetch - processPackages [demo-sna]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-10 22:55:31] INFO root fetch - processPackages [brds]: Downloading https://files.pythonhosted.org/packages/b3/58/a016187a0c524da3a2e66b975616624915786d584c4e41a9d7912a38ea5e/brds-0.2.1.tar.gz
+[2023-04-10 22:55:31] INFO root fetch - processPackages [python-invest]: Downloading https://files.pythonhosted.org/packages/b2/0c/e3689fa031b18e1bfea327636865cb5dd113df1e540602ba6f8a44d055b1/python-invest-0.1.1a0.tar.gz
+[2023-04-10 22:55:31] INFO root fetch - processPackages [pytile]: Downloading https://files.pythonhosted.org/packages/69/55/c2c4ed57185ad68ed19c9914c74f6707643b7ee0f0c86d210df6bf68203e/pytile-5.2.3.tar.gz
+[2023-04-10 22:55:31] INFO root fetch - processPackages [scikit-build]: Downloading https://files.pythonhosted.org/packages/30/ee/1d6bc8c865b77d7c74487c63770582b72675c5f3260d687f1504996a5379/scikit-build-0.8.1.tar.gz
+[2023-04-10 22:55:31] INFO root fetch - processPackages [demo-sna]: Downloading https://files.pythonhosted.org/packages/50/41/28b760a1f34995a1cc9af1d64394466a9e63e80169a05b5d40a1f5b61cc3/demo_sna-0.3.4.tar.gz
+[2023-04-10 22:55:31] INFO root fetch - processPackages [demo-sna]: executing diffoscope
+[2023-04-10 22:55:31] INFO root fetch - processPackages [demo-sna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demo_sna-0.3.3.tar.gz tmp/demo_sna-0.3.4.tar.gz --markdown 20230410/d/demo-sna/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-10 22:55:31] INFO root fetch - processPackages [brds]: Downloading https://files.pythonhosted.org/packages/8e/e4/e5bb1273ce3dd44d344524c9ffdcf88192c336b4c0b65e9fa9f0dafd3cb7/brds-0.2.2.tar.gz
+[2023-04-10 22:55:31] INFO root fetch - processPackages [brds]: executing diffoscope
+[2023-04-10 22:55:31] INFO root fetch - processPackages [brds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brds-0.2.1.tar.gz tmp/brds-0.2.2.tar.gz --markdown 20230410/b/brds/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-10 22:55:31] INFO root fetch - processPackages [python-invest]: Downloading https://files.pythonhosted.org/packages/c5/2f/67ea1f3dc89e2f2337b20b093cd4bfc77571b132977eded044dfc3e6b80d/python-invest-0.2.1a0.tar.gz
+[2023-04-10 22:55:31] INFO root fetch - processPackages [pytile]: Downloading https://files.pythonhosted.org/packages/b2/6d/1c0ddbe27513953fa219c0809b12b88e72f64b89df0a8f571b897392fa65/pytile-5.2.4.tar.gz
+[2023-04-10 22:55:32] INFO root fetch - processPackages [python-invest]: executing diffoscope
+[2023-04-10 22:55:32] INFO root fetch - processPackages [python-invest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-invest-0.1.1a0.tar.gz tmp/python-invest-0.2.1a0.tar.gz --markdown 20230410/p/python-invest/0.1.1a0-0.2.1a0/diff.md --exclude *.pyd
+[2023-04-10 22:55:32] INFO root fetch - processPackages [pytile]: executing diffoscope
+[2023-04-10 22:55:32] INFO root fetch - processPackages [pytile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytile-5.2.3.tar.gz tmp/pytile-5.2.4.tar.gz --markdown 20230410/p/pytile/5.2.3-5.2.4/diff.md --exclude *.pyd
+[2023-04-10 22:55:32] INFO root fetch - processPackages [scikit-build]: Downloading https://files.pythonhosted.org/packages/bb/48/412c5f3fb48364caa8e339d8e84dd2706c75b82d80df377353deecb5b2dc/scikit-build-0.9.0.tar.gz
+[2023-04-10 22:55:32] INFO root fetch - processPackages [scikit-build]: executing diffoscope
+[2023-04-10 22:55:32] INFO root fetch - processPackages [scikit-build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-build-0.8.1.tar.gz tmp/scikit-build-0.9.0.tar.gz --markdown 20230410/s/scikit-build/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 22:55:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:33] INFO root fetch - processPackages [pydantic-geojson]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-10 22:55:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:33] INFO root fetch - processPackages [yfinance]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-10 22:55:33] INFO root fetch - processPackages [pydantic-geojson]: Downloading https://files.pythonhosted.org/packages/78/09/b04b2be7a271bddb291209f10e71734b3b3da67ad778391aae194fe0b332/pydantic_geojson-0.0.4.tar.gz
+[2023-04-10 22:55:33] INFO root fetch - processPackages [yfinance]: executing diffoscope
+[2023-04-10 22:55:33] INFO root fetch - processPackages [yfinance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yfinance-0.2.7.tar.gz tmp/yfinance-0.2.9.tar.gz --markdown 20230410/y/yfinance/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 22:55:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:33] INFO root fetch - processPackages [nextgpt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 22:55:33] INFO root fetch - processPackages [nextgpt]: Downloading https://files.pythonhosted.org/packages/71/63/84c97e5a9b1a474244d67a64a7832ffc09945e3f0c9d474a36bee79f7737/nextgpt-0.0.2.tar.gz
+[2023-04-10 22:55:33] INFO root fetch - processPackages [pydantic-geojson]: Downloading https://files.pythonhosted.org/packages/7e/f8/5489a69e54f8e427cd002a8521655b02802cc14d47903a8228fd5b3e83d0/pydantic_geojson-0.1.0.tar.gz
+[2023-04-10 22:55:33] INFO root fetch - processPackages [pydantic-geojson]: executing diffoscope
+[2023-04-10 22:55:33] INFO root fetch - processPackages [pydantic-geojson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_geojson-0.0.4.tar.gz tmp/pydantic_geojson-0.1.0.tar.gz --markdown 20230410/p/pydantic-geojson/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-10 22:55:33] INFO root fetch - processPackages [nextgpt]: Downloading https://files.pythonhosted.org/packages/47/f6/07a07645dbe4260acdd0dd5566043df6f765186109a993bf1fe2af285a47/nextgpt-0.0.3.tar.gz
+[2023-04-10 22:55:33] INFO root fetch - processPackages [nextgpt]: executing diffoscope
+[2023-04-10 22:55:33] INFO root fetch - processPackages [nextgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextgpt-0.0.2.tar.gz tmp/nextgpt-0.0.3.tar.gz --markdown 20230410/n/nextgpt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 22:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:34] INFO root fetch - processPackages [chessdisplay]: New version: [0.3] Old Version: [0.2]
+[2023-04-10 22:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:34] INFO root fetch - processPackages [nonebot-plugin-maimai]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 22:55:34] INFO root fetch - processPackages [chessdisplay]: Downloading https://files.pythonhosted.org/packages/7d/e2/7f3dbd0c7fe0dce9ad7c54bbfdadc09c2111cbb8faf40f57491ce1db5a56/chessdisplay-0.2.tar.gz
+[2023-04-10 22:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:34] INFO root fetch - processPackages [nonebot-plugin-maimai]: Downloading https://files.pythonhosted.org/packages/54/54/afeefce5867765190ba9fb236e091c803227da5dbcef11352eaf77bb135b/nonebot_plugin_maimai-0.1.1.tar.gz
+[2023-04-10 22:55:34] INFO root fetch - processPackages [DyaGram]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 22:55:34] INFO root fetch - processPackages [chessdisplay]: Downloading https://files.pythonhosted.org/packages/78/c9/b2e3ff2bd4b1e03db1a74e96ebe8cdaf2dcb31997c22d2492a950ccfced0/chessdisplay-0.3.tar.gz
+[2023-04-10 22:55:34] INFO root fetch - processPackages [chessdisplay]: executing diffoscope
+[2023-04-10 22:55:34] INFO root fetch - processPackages [chessdisplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chessdisplay-0.2.tar.gz tmp/chessdisplay-0.3.tar.gz --markdown 20230410/c/chessdisplay/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-10 22:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:34] INFO root fetch - processPackages [nonebot-plugin-maimai]: Downloading https://files.pythonhosted.org/packages/f6/5e/998d5a8037796940781d7230c744f58536bc525e1bac5f5cddfc03352309/nonebot_plugin_maimai-0.1.2.tar.gz
+[2023-04-10 22:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:35] INFO root fetch - processPackages [nonebot-plugin-maimai]: executing diffoscope
+[2023-04-10 22:55:35] INFO root fetch - processPackages [nonebot-plugin-maimai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_maimai-0.1.1.tar.gz tmp/nonebot_plugin_maimai-0.1.2.tar.gz --markdown 20230410/n/nonebot-plugin-maimai/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 22:55:35] INFO root fetch - processPackages [DyaGram]: executing diffoscope
+[2023-04-10 22:55:35] INFO root fetch - processPackages [DyaGram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DyaGram-0.0.98.tar.gz tmp/DyaGram-0.0.99.tar.gz --markdown 20230410/D/DyaGram/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 22:55:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:55:36] INFO root fetch - main [MainThread]: Store serial: [17650322]
