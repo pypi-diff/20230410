@@ -13739,3 +13739,67 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 20:06:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:06:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:06:36] INFO root fetch - main [MainThread]: Store serial: [17648973]
+[2023-04-10 20:11:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17648973]
+[2023-04-10 20:11:44] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-10 20:11:44] INFO root fetch - processPackages [naruno]: New version: [0.56.0] Old Version: [0.55.0]
+[2023-04-10 20:11:44] INFO root fetch - processPackages [naruno-api]: New version: [0.56.0] Old Version: [0.55.0]
+[2023-04-10 20:11:44] INFO root fetch - processPackages [lit]: New version: [16.0.1] Old Version: [16.0.0rc4]
+[2023-04-10 20:11:44] INFO root fetch - processPackages [doppkit]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 20:11:44] WARNING root fetch - processPackages [nextgpt]: Skipping, unable to determine old version
+[2023-04-10 20:11:44] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:11:44] INFO root fetch - processPackages [mpai-cae-arp]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-10 20:11:44] INFO root fetch - processPackages [naruno-api]: Downloading https://files.pythonhosted.org/packages/b7/6b/d0b11c062a3bf6216d928492eb0a3a9f419934f497e411cd943de8718404/naruno_api-0.56.0.tar.gz
+[2023-04-10 20:11:44] INFO root fetch - processPackages [lit]: Downloading https://files.pythonhosted.org/packages/e0/e3/9966b2e52d86f9174941f4865a2dd76903e71d448626f1ef87b1a6d1485d/lit-16.0.0rc4.tar.gz
+[2023-04-10 20:11:44] INFO root fetch - processPackages [naruno]: Downloading https://files.pythonhosted.org/packages/c7/4b/a94d3700ffc8797ab0ad1a2d16251fa6bd9dcd453375af4c8b01e7bd0599/naruno-0.56.0.tar.gz
+[2023-04-10 20:11:44] INFO root fetch - processPackages [doppkit]: Downloading https://files.pythonhosted.org/packages/50/25/522eccc653b091eedf8d4216edb9025123c5108820da8b400c90e313a022/doppkit-0.1.2.tar.gz
+[2023-04-10 20:11:44] INFO root fetch - processPackages [mpai-cae-arp]: Downloading https://files.pythonhosted.org/packages/7c/eb/833c2caee07ca63e56113ef0486d9f0c6ad449501058b1a0d022696d168b/mpai_cae_arp-0.2.5.tar.gz
+[2023-04-10 20:11:44] INFO root fetch - processPackages [naruno-api]: executing diffoscope
+[2023-04-10 20:11:44] INFO root fetch - processPackages [naruno-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_api-0.55.0.tar.gz tmp/naruno_api-0.56.0.tar.gz --markdown 20230410/n/naruno-api/0.55.0-0.56.0/diff.md --exclude *.pyd
+[2023-04-10 20:11:44] INFO root fetch - processPackages [mpai-cae-arp]: executing diffoscope
+[2023-04-10 20:11:44] INFO root fetch - processPackages [mpai-cae-arp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpai_cae_arp-0.2.4.tar.gz tmp/mpai_cae_arp-0.2.5.tar.gz --markdown 20230410/m/mpai-cae-arp/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-10 20:11:44] INFO root fetch - processPackages [doppkit]: executing diffoscope
+[2023-04-10 20:11:44] INFO root fetch - processPackages [doppkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doppkit-0.1.1.tar.gz tmp/doppkit-0.1.2.tar.gz --markdown 20230410/d/doppkit/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 20:11:44] INFO root fetch - processPackages [naruno]: executing diffoscope
+[2023-04-10 20:11:44] INFO root fetch - processPackages [naruno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno-0.55.0.tar.gz tmp/naruno-0.56.0.tar.gz --markdown 20230410/n/naruno/0.55.0-0.56.0/diff.md --exclude *.pyd
+[2023-04-10 20:11:44] INFO root fetch - processPackages [lit]: Downloading https://files.pythonhosted.org/packages/ba/7f/981185aaea6ac3a4ae5de9eca143a6382e3c62c9ee9ad47cffe94f8181aa/lit-16.0.1.tar.gz
+[2023-04-10 20:11:44] INFO root fetch - processPackages [lit]: executing diffoscope
+[2023-04-10 20:11:44] INFO root fetch - processPackages [lit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lit-16.0.0rc4.tar.gz tmp/lit-16.0.1.tar.gz --markdown 20230410/l/lit/16.0.0rc4-16.0.1/diff.md --exclude *.pyd
+[2023-04-10 20:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:11:45] INFO root fetch - processPackages [naruno-gui]: New version: [0.56.0] Old Version: [0.55.0]
+[2023-04-10 20:11:45] INFO root fetch - processPackages [naruno-gui]: Downloading https://files.pythonhosted.org/packages/75/66/1a3729ba07f6e0521c8b726244d4407a4cf187c478b1025e3fe052dc455d/naruno_gui-0.56.0.tar.gz
+[2023-04-10 20:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:11:45] INFO root fetch - processPackages [naruno-gui]: executing diffoscope
+[2023-04-10 20:11:45] INFO root fetch - processPackages [naruno-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_gui-0.55.0.tar.gz tmp/naruno_gui-0.56.0.tar.gz --markdown 20230410/n/naruno-gui/0.55.0-0.56.0/diff.md --exclude *.pyd
+[2023-04-10 20:11:45] INFO root fetch - processPackages [peoplecodeparser]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-10 20:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:11:45] INFO root fetch - processPackages [naruno-remote-app]: New version: [0.56.0] Old Version: [0.55.0]
+[2023-04-10 20:11:46] INFO root fetch - processPackages [naruno-remote-app]: Downloading https://files.pythonhosted.org/packages/23/8f/2720661c4e612b818bc16b683c686dc3b79e074c45ad93d516432586c8a1/naruno_remote_app-0.56.0.tar.gz
+[2023-04-10 20:11:46] INFO root fetch - processPackages [peoplecodeparser]: Downloading https://files.pythonhosted.org/packages/66/17/eeadc36ae9c8faf9b2c20db01740082e0b56746c0237959504aab21d5802/peoplecodeparser-1.1.5.tar.gz
+[2023-04-10 20:11:46] INFO root fetch - processPackages [naruno-remote-app]: executing diffoscope
+[2023-04-10 20:11:46] INFO root fetch - processPackages [naruno-remote-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_remote_app-0.55.0.tar.gz tmp/naruno_remote_app-0.56.0.tar.gz --markdown 20230410/n/naruno-remote-app/0.55.0-0.56.0/diff.md --exclude *.pyd
+[2023-04-10 20:11:46] INFO root fetch - processPackages [peoplecodeparser]: Downloading https://files.pythonhosted.org/packages/3b/bf/6210bb0b93d1f72789a91a8f58e8663e4434f43b941fc8a15506acc19467/peoplecodeparser-1.1.6.tar.gz
+[2023-04-10 20:11:46] INFO root fetch - processPackages [peoplecodeparser]: executing diffoscope
+[2023-04-10 20:11:46] INFO root fetch - processPackages [peoplecodeparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peoplecodeparser-1.1.5.tar.gz tmp/peoplecodeparser-1.1.6.tar.gz --markdown 20230410/p/peoplecodeparser/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-10 20:11:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:11:47] INFO root fetch - processPackages [naruno-tests]: New version: [0.56.0] Old Version: [0.55.0]
+[2023-04-10 20:11:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:11:47] WARNING root fetch - processPackages [mitz-datagen]: Skipping, unable to determine old version
+[2023-04-10 20:11:47] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:11:47] INFO root fetch - processPackages [moto]: New version: [4.1.7.dev9] Old Version: [4.1.7.dev8]
+[2023-04-10 20:11:47] INFO root fetch - processPackages [naruno-tests]: Downloading https://files.pythonhosted.org/packages/35/c6/d797956c4a3f72ce2270bc8ead70a5b2587ee92a01ed68ba84fc6379904f/naruno_tests-0.56.0.tar.gz
+[2023-04-10 20:11:47] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-10 20:11:47] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.7.dev8.tar.gz tmp/moto-4.1.7.dev9.tar.gz --markdown 20230410/m/moto/4.1.7.dev8-4.1.7.dev9/diff.md --exclude *.pyd
+[2023-04-10 20:11:47] INFO root fetch - processPackages [naruno-tests]: executing diffoscope
+[2023-04-10 20:11:47] INFO root fetch - processPackages [naruno-tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_tests-0.55.0.tar.gz tmp/naruno_tests-0.56.0.tar.gz --markdown 20230410/n/naruno-tests/0.55.0-0.56.0/diff.md --exclude *.pyd
+[2023-04-10 20:11:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:11:47] INFO root fetch - processPackages [geneinfo]: New version: [3.4.2] Old Version: [3.3.2]
+[2023-04-10 20:11:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:11:48] INFO root fetch - processPackages [geneinfo]: Downloading https://files.pythonhosted.org/packages/71/5b/08fd3ebb08b7902f40601f687bc6d9f65a53debeaec44876bc7e3682cbfb/geneinfo-3.3.2.tar.gz
+[2023-04-10 20:11:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:11:48] INFO root fetch - processPackages [geneinfo]: Downloading https://files.pythonhosted.org/packages/d4/01/156e27ee5628701cfcae303ae0e49bf306be2ccc2ab935497ecb64490c27/geneinfo-3.4.2.tar.gz
+[2023-04-10 20:11:48] INFO root fetch - processPackages [geneinfo]: executing diffoscope
+[2023-04-10 20:11:48] INFO root fetch - processPackages [geneinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geneinfo-3.3.2.tar.gz tmp/geneinfo-3.4.2.tar.gz --markdown 20230410/g/geneinfo/3.3.2-3.4.2/diff.md --exclude *.pyd
+[2023-04-10 20:11:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:11:50] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:12:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:12:19] INFO root fetch - main [MainThread]: Store serial: [17649010]
