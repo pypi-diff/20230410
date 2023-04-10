@@ -5493,3 +5493,57 @@ EOFError: EOF read where object expected
 [2023-04-10 08:37:57] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:37:58] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:37:58] INFO root fetch - main [MainThread]: Store serial: [17643498]
+[2023-04-10 08:43:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643498]
+[2023-04-10 08:43:05] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 08:43:05] INFO root fetch - processPackages [lest]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-10 08:43:05] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-10 08:43:05] INFO root fetch - processPackages [aiomoney]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 08:43:05] INFO root fetch - processPackages [llama-index]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-10 08:43:05] INFO root fetch - processPackages [gpt-index]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-10 08:43:05] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-10 08:43:05] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230410/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 08:43:05] INFO root fetch - processPackages [llama-index]: executing diffoscope
+[2023-04-10 08:43:05] INFO root fetch - processPackages [llama-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index-0.5.8.tar.gz tmp/llama_index-0.5.9.tar.gz --markdown 20230410/l/llama-index/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-10 08:43:05] INFO root fetch - processPackages [gpt-index]: executing diffoscope
+[2023-04-10 08:43:05] INFO root fetch - processPackages [gpt-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_index-0.5.8.tar.gz tmp/gpt_index-0.5.9.tar.gz --markdown 20230410/g/gpt-index/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-10 08:43:05] INFO root fetch - processPackages [lest]: Downloading https://files.pythonhosted.org/packages/a8/44/5ec043459b6b270cd940a3975d8d152b21b9e1a6901c8fc720c97a9ba456/lest-0.1.0.tar.gz
+[2023-04-10 08:43:05] INFO root fetch - processPackages [aiomoney]: Downloading https://files.pythonhosted.org/packages/55/26/f0795db67e474ee765dc236830a7bfbcaf95c045fbc5d831c28701ba25e9/aiomoney-1.0.8.tar.gz
+[2023-04-10 08:43:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:43:06] INFO root fetch - processPackages [fixme]: New version: [0.3] Old Version: [0.2]
+[2023-04-10 08:43:06] INFO root fetch - processPackages [fixme]: Downloading https://files.pythonhosted.org/packages/bd/72/22566783ce9a245ee38bbd9c709da4a34690ea32c24dd9fa43ee7a0c2c2c/fixme-0.2.tar.gz
+[2023-04-10 08:43:07] INFO root fetch - processPackages [lest]: Downloading https://files.pythonhosted.org/packages/67/e5/15313074478aad8e4f6ed8dd29449cae610d5113d296ca38b71ad51ee524/lest-0.2.0.tar.gz
+[2023-04-10 08:43:07] INFO root fetch - processPackages [lest]: executing diffoscope
+[2023-04-10 08:43:07] INFO root fetch - processPackages [lest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lest-0.1.0.tar.gz tmp/lest-0.2.0.tar.gz --markdown 20230410/l/lest/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 08:43:07] INFO root fetch - processPackages [fixme]: Downloading https://files.pythonhosted.org/packages/1c/1e/fecb19f6a60bfdd77639a34a233ab81f8086aafac1c915ec1ac93a9e09cc/fixme-0.3.tar.gz
+[2023-04-10 08:43:07] INFO root fetch - processPackages [fixme]: executing diffoscope
+[2023-04-10 08:43:07] INFO root fetch - processPackages [fixme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixme-0.2.tar.gz tmp/fixme-0.3.tar.gz --markdown 20230410/f/fixme/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-10 08:43:07] INFO root fetch - processPackages [aiomoney]: Downloading https://files.pythonhosted.org/packages/33/07/0be867462a85dae5aeb6ad4dc3eca72d9fad7a08f7406971d45492cca62f/aiomoney-1.0.9.tar.gz
+[2023-04-10 08:43:07] INFO root fetch - processPackages [aiomoney]: executing diffoscope
+[2023-04-10 08:43:07] INFO root fetch - processPackages [aiomoney]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomoney-1.0.8.tar.gz tmp/aiomoney-1.0.9.tar.gz --markdown 20230410/a/aiomoney/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 08:43:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:43:07] INFO root fetch - processPackages [lucupy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 08:43:08] INFO root fetch - processPackages [lucupy]: Downloading https://files.pythonhosted.org/packages/48/24/564fb7fc12915db3e559e4a44c2c2ea56620d4da2174d3da93586a4d9af4/lucupy-0.1.8.tar.gz
+[2023-04-10 08:43:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:43:08] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-10 08:43:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:43:08] INFO root fetch - processPackages [ninjapie]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-04-10 08:43:08] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-10 08:43:08] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230410/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 08:43:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:43:08] INFO root fetch - processPackages [lucupy]: Downloading https://files.pythonhosted.org/packages/8e/71/90824741abbd5f41e02cef3f27573135ac7ee3e561efa91dfd0394c03374/lucupy-0.1.9.tar.gz
+[2023-04-10 08:43:08] INFO root fetch - processPackages [ninjapie]: Downloading https://files.pythonhosted.org/packages/55/e3/c8011c581cc1bc2411984530c7c00e651069180d1b354baf4be731ff2d25/ninjapie-1.1.0.tar.gz
+[2023-04-10 08:43:08] INFO root fetch - processPackages [ninjapie]: executing diffoscope
+[2023-04-10 08:43:08] INFO root fetch - processPackages [ninjapie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ninjapie-1.0.3.tar.gz tmp/ninjapie-1.1.0.tar.gz --markdown 20230410/n/ninjapie/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 08:43:08] INFO root fetch - processPackages [feffery-antd-components]: New version: [0.2.0rc9] Old Version: [0.2.0rc8]
+[2023-04-10 08:43:08] INFO root fetch - processPackages [lucupy]: executing diffoscope
+[2023-04-10 08:43:08] INFO root fetch - processPackages [lucupy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lucupy-0.1.8.tar.gz tmp/lucupy-0.1.9.tar.gz --markdown 20230410/l/lucupy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 08:43:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:43:08] INFO root fetch - processPackages [feffery-antd-components]: Downloading https://files.pythonhosted.org/packages/07/9c/1a61953e64c02da731ef0b568ced411c4a51f999b841976566abc1f3187a/feffery_antd_components-0.2.0rc8.tar.gz
+[2023-04-10 08:43:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:43:09] INFO root fetch - processPackages [feffery-antd-components]: Downloading https://files.pythonhosted.org/packages/8f/7e/96ed4fb20dc234e5536b74a2e2d9e4a4641c42ec213ca7caaab5c96e02b5/feffery_antd_components-0.2.0rc9.tar.gz
+[2023-04-10 08:43:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:43:10] INFO root fetch - processPackages [feffery-antd-components]: executing diffoscope
+[2023-04-10 08:43:10] INFO root fetch - processPackages [feffery-antd-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feffery_antd_components-0.2.0rc8.tar.gz tmp/feffery_antd_components-0.2.0rc9.tar.gz --markdown 20230410/f/feffery-antd-components/0.2.0rc8-0.2.0rc9/diff.md --exclude *.pyd
+[2023-04-10 08:43:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:43:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:43:36] INFO root fetch - main [MainThread]: Store serial: [17643527]
