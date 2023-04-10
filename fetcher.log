@@ -1944,3 +1944,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-10 04:02:10] INFO root fetch - main [MainThread]: success
 [2023-04-10 04:02:11] INFO root fetch - main [MainThread]: success
 [2023-04-10 04:02:11] INFO root fetch - main [MainThread]: Store serial: [17641297]
+[2023-04-10 04:07:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17641297]
+[2023-04-10 04:07:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-10 04:07:19] INFO root fetch - processPackages [satdigitalinvoice]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-10 04:07:19] INFO root fetch - processPackages [neon-homeassistant-skill]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 04:07:19] INFO root fetch - processPackages [langchain-utils]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-10 04:07:19] INFO root fetch - processPackages [satdigitalinvoice]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-10 04:07:19] INFO root fetch - processPackages [pymodelextractor]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-10 04:07:19] INFO root fetch - processPackages [neon-homeassistant-skill]: executing diffoscope
+[2023-04-10 04:07:19] INFO root fetch - processPackages [neon-homeassistant-skill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_homeassistant_skill-0.0.8.tar.gz tmp/neon_homeassistant_skill-0.0.9.tar.gz --markdown 20230410/n/neon-homeassistant-skill/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 04:07:19] INFO root fetch - processPackages [satdigitalinvoice]: Downloading https://files.pythonhosted.org/packages/2c/2e/e87564ab6f536bd724433f1920ccc8670ddae9f5e4861aeb3343e68ab2b1/satdigitalinvoice-2.1.1.tar.gz
+[2023-04-10 04:07:19] INFO root fetch - processPackages [satdigitalinvoice]: Downloading https://files.pythonhosted.org/packages/2c/2e/e87564ab6f536bd724433f1920ccc8670ddae9f5e4861aeb3343e68ab2b1/satdigitalinvoice-2.1.1.tar.gz
+[2023-04-10 04:07:19] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/4b/99/c2bdedeb7dc5c6afdb8423f005c5c33e9e24a4b99a891673e7ce73aa219f/langchain_utils-0.1.4.tar.gz
+[2023-04-10 04:07:19] INFO root fetch - processPackages [satdigitalinvoice]: Downloading https://files.pythonhosted.org/packages/eb/92/5e824f612b1d1e3169faf282904b6c7ebe4cbced9b721b881ff20deea648/satdigitalinvoice-2.1.2.tar.gz
+[2023-04-10 04:07:19] INFO root fetch - processPackages [pymodelextractor]: executing diffoscope
+[2023-04-10 04:07:19] INFO root fetch - processPackages [pymodelextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymodelextractor-0.9.8.tar.gz tmp/pymodelextractor-0.9.9.tar.gz --markdown 20230410/p/pymodelextractor/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-10 04:07:19] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-10 04:07:19] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.1.3.tar.gz tmp/langchain_utils-0.1.4.tar.gz --markdown 20230410/l/langchain-utils/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-10 04:07:19] INFO root fetch - processPackages [satdigitalinvoice]: Downloading https://files.pythonhosted.org/packages/eb/92/5e824f612b1d1e3169faf282904b6c7ebe4cbced9b721b881ff20deea648/satdigitalinvoice-2.1.2.tar.gz
+[2023-04-10 04:07:19] INFO root fetch - processPackages [satdigitalinvoice]: executing diffoscope
+[2023-04-10 04:07:19] INFO root fetch - processPackages [satdigitalinvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satdigitalinvoice-2.1.1.tar.gz tmp/satdigitalinvoice-2.1.2.tar.gz --markdown 20230410/s/satdigitalinvoice/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-10 04:07:19] INFO root fetch - processPackages [satdigitalinvoice]: executing diffoscope
+[2023-04-10 04:07:19] INFO root fetch - processPackages [satdigitalinvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satdigitalinvoice-2.1.1.tar.gz tmp/satdigitalinvoice-2.1.2.tar.gz --markdown 20230410/s/satdigitalinvoice/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-10 04:07:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:07:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:07:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:07:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:07:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:07:21] INFO root fetch - main [MainThread]: Store serial: [17641312]
