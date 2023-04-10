@@ -5399,3 +5399,56 @@ EOFError: EOF read where object expected
 [2023-04-10 08:22:18] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:22:23] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:22:23] INFO root fetch - main [MainThread]: Store serial: [17643448]
+[2023-04-10 08:27:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643448]
+[2023-04-10 08:27:33] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 08:27:33] INFO root fetch - processPackages [voliboli-pdf-scraper]: New version: [1.5] Old Version: [1.4]
+[2023-04-10 08:27:33] INFO root fetch - processPackages [htmlfilesforquiz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 08:27:33] INFO root fetch - processPackages [djfabric]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 08:27:33] INFO root fetch - processPackages [hackme]: New version: [1.0.0] Old Version: [0.4.0]
+[2023-04-10 08:27:33] INFO root fetch - processPackages [tuneflow-py]: New version: [0.5.0] Old Version: [0.4.6]
+[2023-04-10 08:27:33] INFO root fetch - processPackages [htmlfilesforquiz]: executing diffoscope
+[2023-04-10 08:27:33] INFO root fetch - processPackages [htmlfilesforquiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmlfilesforquiz-0.0.8.tar.gz tmp/htmlfilesforquiz-0.0.9.tar.gz --markdown 20230410/h/htmlfilesforquiz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 08:27:34] INFO root fetch - processPackages [voliboli-pdf-scraper]: Downloading https://files.pythonhosted.org/packages/70/b0/a8c811117610d546209f4229678a65b1b17574a65dd1d0a6fe6da44b3c98/voliboli_pdf_scraper-1.4.tar.gz
+[2023-04-10 08:27:34] INFO root fetch - processPackages [djfabric]: Downloading https://files.pythonhosted.org/packages/a5/87/67727dd0e8932be7a7a1f09aaeddc08cc2e1e3482f2beb6576cc4b82f17d/djfabric-0.0.1.tar.gz
+[2023-04-10 08:27:34] INFO root fetch - processPackages [hackme]: Downloading https://files.pythonhosted.org/packages/60/47/f329852c1a9397e0c430e4a5400f92687379d29308bf3b9eee7f31618d74/hackme-0.4.0.tar.gz
+[2023-04-10 08:27:34] INFO root fetch - processPackages [tuneflow-py]: Downloading https://files.pythonhosted.org/packages/1a/ed/d60211c46a25015f7308e875417b5e59e0ac7854fcb891e85cfdd828e174/tuneflow-py-0.5.0.tar.gz
+[2023-04-10 08:27:34] INFO root fetch - processPackages [voliboli-pdf-scraper]: Downloading https://files.pythonhosted.org/packages/f9/1a/435ac36f86d0591ca21b6b5a01f8e085f7f3c33ce9778d773e37158efef7/voliboli_pdf_scraper-1.5.tar.gz
+[2023-04-10 08:27:34] INFO root fetch - processPackages [djfabric]: Downloading https://files.pythonhosted.org/packages/cc/0a/741d59069e8574b28b08bcdca3f2e4d5e4cf29ff7c63cc9aee62a5433c47/djfabric-0.0.2.tar.gz
+[2023-04-10 08:27:34] INFO root fetch - processPackages [hackme]: Downloading https://files.pythonhosted.org/packages/74/5a/7b7c6f447b792d9177aeddb31279c47f07b931ed3f0e68eb223099e9ae86/hackme-1.0.0.tar.gz
+[2023-04-10 08:27:34] INFO root fetch - processPackages [tuneflow-py]: executing diffoscope
+[2023-04-10 08:27:34] INFO root fetch - processPackages [tuneflow-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneflow-py-0.4.6.tar.gz tmp/tuneflow-py-0.5.0.tar.gz --markdown 20230410/t/tuneflow-py/0.4.6-0.5.0/diff.md --exclude *.pyd
+[2023-04-10 08:27:34] INFO root fetch - processPackages [voliboli-pdf-scraper]: executing diffoscope
+[2023-04-10 08:27:34] INFO root fetch - processPackages [voliboli-pdf-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voliboli_pdf_scraper-1.4.tar.gz tmp/voliboli_pdf_scraper-1.5.tar.gz --markdown 20230410/v/voliboli-pdf-scraper/1.4-1.5/diff.md --exclude *.pyd
+[2023-04-10 08:27:34] INFO root fetch - processPackages [djfabric]: executing diffoscope
+[2023-04-10 08:27:34] INFO root fetch - processPackages [djfabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djfabric-0.0.1.tar.gz tmp/djfabric-0.0.2.tar.gz --markdown 20230410/d/djfabric/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 08:27:34] INFO root fetch - processPackages [hackme]: executing diffoscope
+[2023-04-10 08:27:34] INFO root fetch - processPackages [hackme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hackme-0.4.0.tar.gz tmp/hackme-1.0.0.tar.gz --markdown 20230410/h/hackme/0.4.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-10 08:27:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:27:35] INFO root fetch - processPackages [del-msh]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-10 08:27:35] INFO root fetch - processPackages [del-msh]: Downloading https://files.pythonhosted.org/packages/ed/0a/f80e1e2416e79e96ee945bbcc22b1945fdcba5cdbb234c373c674a34e935/del_msh-0.1.7.tar.gz
+[2023-04-10 08:27:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:27:35] INFO root fetch - processPackages [del-msh]: Downloading https://files.pythonhosted.org/packages/2c/3e/d70535aab4121d608af9b8504da5d09f89bae50b6981c491179592ba79c1/del_msh-0.1.8.tar.gz
+[2023-04-10 08:27:35] INFO root fetch - processPackages [djrunner]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 08:27:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:27:35] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-10 08:27:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:27:35] INFO root fetch - processPackages [djrunner]: Downloading https://files.pythonhosted.org/packages/d8/8a/3408888e1c8a6365958fd3e8804b0a48165e161336cb36925efda9b1daae/djrunner-1.0.1.tar.gz
+[2023-04-10 08:27:35] INFO root fetch - processPackages [onestep]: New version: [0.1.74] Old Version: [0.1.73]
+[2023-04-10 08:27:35] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/b6/4f/b3217d86dcd9b8e63ea051d7625f5c27dd831dd2442d507945c02666ca86/langchain_utils-0.3.0-py3-none-any.whl
+[2023-04-10 08:27:35] INFO root fetch - processPackages [del-msh]: executing diffoscope
+[2023-04-10 08:27:35] INFO root fetch - processPackages [del-msh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/del_msh-0.1.7.tar.gz tmp/del_msh-0.1.8.tar.gz --markdown 20230410/d/del-msh/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-10 08:27:36] INFO root fetch - processPackages [onestep]: Downloading https://files.pythonhosted.org/packages/b5/71/de2207db1f476cfe2dc951e27949a9452bf63e1da8850ee2e42c13a376aa/onestep-0.1.73.tar.gz
+[2023-04-10 08:27:36] INFO root fetch - processPackages [djrunner]: Downloading https://files.pythonhosted.org/packages/8a/f9/3e9ca61f256e5fccd8adee992d2f6cec2ef5830fefab6094448f677f776a/djrunner-1.0.2.tar.gz
+[2023-04-10 08:27:36] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-10 08:27:36] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.2.2.tar.gz tmp/langchain_utils-0.3.0-py3-none-any.whl.zip --markdown 20230410/l/langchain-utils/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-10 08:27:36] INFO root fetch - processPackages [onestep]: Downloading https://files.pythonhosted.org/packages/b5/aa/842e98d911945e4c0ec4749e8fcd04c9bb5920a604b0d92732049a6dc77d/onestep-0.1.74.tar.gz
+[2023-04-10 08:27:36] INFO root fetch - processPackages [djrunner]: executing diffoscope
+[2023-04-10 08:27:36] INFO root fetch - processPackages [djrunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djrunner-1.0.1.tar.gz tmp/djrunner-1.0.2.tar.gz --markdown 20230410/d/djrunner/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 08:27:36] INFO root fetch - processPackages [onestep]: executing diffoscope
+[2023-04-10 08:27:36] INFO root fetch - processPackages [onestep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onestep-0.1.73.tar.gz tmp/onestep-0.1.74.tar.gz --markdown 20230410/o/onestep/0.1.73-0.1.74/diff.md --exclude *.pyd
+[2023-04-10 08:27:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:27:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:27:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:27:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:27:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:27:38] INFO root fetch - main [MainThread]: Store serial: [17643472]
