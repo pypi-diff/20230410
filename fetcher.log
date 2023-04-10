@@ -9829,3 +9829,104 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 15:17:53] INFO root fetch - main [MainThread]: error
 [2023-04-10 15:17:53] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:17:53] INFO root fetch - main [MainThread]: Store serial: [17646128]
+[2023-04-10 15:22:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646128]
+[2023-04-10 15:23:00] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 15:23:01] INFO root fetch - processPackages [coretex]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 15:23:01] INFO root fetch - processPackages [t2iadapter]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-10 15:23:01] INFO root fetch - processPackages [ssbtoolkit]: New version: [1.0.3] Old Version: [1.0.1]
+[2023-04-10 15:23:01] INFO root fetch - processPackages [gps-building-blocks]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-04-10 15:23:01] INFO root fetch - processPackages [je-auto-control]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-04-10 15:23:01] INFO root fetch - processPackages [je-auto-control]: executing diffoscope
+[2023-04-10 15:23:01] INFO root fetch - processPackages [je-auto-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control-0.0.97.tar.gz tmp/je_auto_control-0.0.99.tar.gz --markdown 20230410/j/je-auto-control/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 15:23:01] INFO root fetch - processPackages [t2iadapter]: Downloading https://files.pythonhosted.org/packages/04/5d/8975b84dfc94d16a37aca709679577c7d4af3d6a7017870bffd1322c8b2b/t2iadapter-0.1.2.tar.gz
+[2023-04-10 15:23:01] INFO root fetch - processPackages [coretex]: Downloading https://files.pythonhosted.org/packages/21/1d/980c6d21dbe2d503de34a1993b1e0e9c69167b0ab6e7aae2d6ebf057e8ed/coretex-0.0.8.tar.gz
+[2023-04-10 15:23:01] INFO root fetch - processPackages [gps-building-blocks]: Downloading https://files.pythonhosted.org/packages/71/de/29b8d5afef1de629736885761de3eeeed53a58c7f5dc93ea834fa2edae65/gps_building_blocks-1.98.0-py3-none-any.whl
+[2023-04-10 15:23:01] INFO root fetch - processPackages [ssbtoolkit]: Downloading https://files.pythonhosted.org/packages/b2/51/53056aba9362261deb1264ea30d82f7444d69105593aa40c61ee2964e2bc/ssbtoolkit-1.0.3.tar.gz
+[2023-04-10 15:23:01] INFO root fetch - processPackages [ssbtoolkit]: executing diffoscope
+[2023-04-10 15:23:01] INFO root fetch - processPackages [ssbtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssbtoolkit-1.0.1.tar.gz tmp/ssbtoolkit-1.0.3.tar.gz --markdown 20230410/s/ssbtoolkit/1.0.1-1.0.3/diff.md --exclude *.pyd
+[2023-04-10 15:23:01] INFO root fetch - processPackages [coretex]: Downloading https://files.pythonhosted.org/packages/93/86/1cf39d4988d7419e88a27e0ad1b3c4872a93a11dfc4bccd1a80ad2c687c7/coretex-0.0.9.tar.gz
+[2023-04-10 15:23:01] INFO root fetch - processPackages [coretex]: executing diffoscope
+[2023-04-10 15:23:01] INFO root fetch - processPackages [coretex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coretex-0.0.8.tar.gz tmp/coretex-0.0.9.tar.gz --markdown 20230410/c/coretex/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 15:23:01] INFO root fetch - processPackages [t2iadapter]: Downloading https://files.pythonhosted.org/packages/07/b3/3e0ee6f148b441f4f784871c3e11fc5865e123c766ea745f74cd02da04b0/t2iadapter-0.1.3.tar.gz
+[2023-04-10 15:23:01] INFO root fetch - processPackages [t2iadapter]: executing diffoscope
+[2023-04-10 15:23:01] INFO root fetch - processPackages [t2iadapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2iadapter-0.1.2.tar.gz tmp/t2iadapter-0.1.3.tar.gz --markdown 20230410/t/t2iadapter/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-10 15:23:01] INFO root fetch - processPackages [gps-building-blocks]: Downloading https://files.pythonhosted.org/packages/79/b4/9d18eee49dfd6521e304862a4c835a7fe5cf477f45d83a4f98f885c76c29/gps_building_blocks-1.99.0-py3-none-any.whl
+[2023-04-10 15:23:02] INFO root fetch - processPackages [gps-building-blocks]: executing diffoscope
+[2023-04-10 15:23:02] INFO root fetch - processPackages [gps-building-blocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gps_building_blocks-1.98.0-py3-none-any.whl.zip tmp/gps_building_blocks-1.99.0-py3-none-any.whl.zip --markdown 20230410/g/gps-building-blocks/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-04-10 15:23:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:23:02] INFO root fetch - processPackages [fastestimator-nightly]: New version: [1.5.0.dev202304091323] Old Version: [1.5.0.dev202304081321]
+[2023-04-10 15:23:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:23:02] INFO root fetch - processPackages [interloper]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 15:23:02] INFO root fetch - processPackages [interloper]: Downloading https://files.pythonhosted.org/packages/5e/53/baa718f7e1038ee93033d41e2dc9b93bfeba7ba3a7b0e7b110bdc07eb308/interloper-0.1.0.tar.gz
+[2023-04-10 15:23:02] INFO root fetch - processPackages [fastestimator-nightly]: Downloading https://files.pythonhosted.org/packages/1b/9c/edc17879bfe540826568be90049497fd6499dd3a91314b1387e708166711/fastestimator-nightly-1.5.0.dev202304091323.tar.gz
+[2023-04-10 15:23:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:23:02] INFO root fetch - processPackages [atlassian-api-py]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-04-10 15:23:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:23:02] INFO root fetch - processPackages [aiofauna]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-10 15:23:03] INFO root fetch - processPackages [aiofauna]: executing diffoscope
+[2023-04-10 15:23:03] INFO root fetch - processPackages [aiofauna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiofauna-0.0.7.tar.gz tmp/aiofauna-0.0.8.tar.gz --markdown 20230410/a/aiofauna/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-10 15:23:03] INFO root fetch - processPackages [interloper]: Downloading https://files.pythonhosted.org/packages/17/e2/eef5dcaf803b0133386c60fa353a06a7fbd42c2141952bf169a67d10bd32/interloper-0.1.1.tar.gz
+[2023-04-10 15:23:03] INFO root fetch - processPackages [atlassian-api-py]: Downloading https://files.pythonhosted.org/packages/97/34/a1bcd5bcb18c12132108f5c5d05426737428143635a03b112702bf6836c8/atlassian_api_py-0.4.1-py3-none-any.whl
+[2023-04-10 15:23:03] INFO root fetch - processPackages [interloper]: executing diffoscope
+[2023-04-10 15:23:03] INFO root fetch - processPackages [interloper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interloper-0.1.0.tar.gz tmp/interloper-0.1.1.tar.gz --markdown 20230410/i/interloper/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 15:23:03] INFO root fetch - processPackages [fastestimator-nightly]: executing diffoscope
+[2023-04-10 15:23:03] INFO root fetch - processPackages [fastestimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastestimator-nightly-1.5.0.dev202304081321.tar.gz tmp/fastestimator-nightly-1.5.0.dev202304091323.tar.gz --markdown 20230410/f/fastestimator-nightly/1.5.0.dev202304081321-1.5.0.dev202304091323/diff.md --exclude *.pyd
+[2023-04-10 15:23:03] INFO root fetch - processPackages [atlassian-api-py]: Downloading https://files.pythonhosted.org/packages/a9/f3/eb4f6d4787bd9e2f7c27bb9ed6034bc59cc2781752c91671faed84ae7ef8/atlassian_api_py-0.5.0-py3-none-any.whl
+[2023-04-10 15:23:03] INFO root fetch - processPackages [atlassian-api-py]: executing diffoscope
+[2023-04-10 15:23:03] INFO root fetch - processPackages [atlassian-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlassian_api_py-0.4.1-py3-none-any.whl.zip tmp/atlassian_api_py-0.5.0-py3-none-any.whl.zip --markdown 20230410/a/atlassian-api-py/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-04-10 15:23:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:23:04] ERROR root fetch - processPackages [gps-building-blocks]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+EOFError: EOF read where object expected
+
+[2023-04-10 15:23:04] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:23:04] INFO root fetch - processPackages [looqbox]: New version: [3.9.0] Old Version: [3.8.9]
+[2023-04-10 15:23:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:23:04] INFO root fetch - processPackages [looqbox]: Downloading https://files.pythonhosted.org/packages/29/ca/d1438e1ec49723533faeff8efb753109b757afb593341a9397662b91828c/looqbox-3.8.9-py3-none-any.whl
+[2023-04-10 15:23:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:23:04] INFO root fetch - processPackages [looqbox]: Downloading https://files.pythonhosted.org/packages/dc/42/07566b62f6515c970bc3849a70b2f009e9f094aae6502f71501d001909b9/looqbox-3.9.0-py3-none-any.whl
+[2023-04-10 15:23:05] INFO root fetch - processPackages [looqbox]: executing diffoscope
+[2023-04-10 15:23:05] INFO root fetch - processPackages [looqbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/looqbox-3.8.9-py3-none-any.whl.zip tmp/looqbox-3.9.0-py3-none-any.whl.zip --markdown 20230410/l/looqbox/3.8.9-3.9.0/diff.md --exclude *.pyd
+[2023-04-10 15:23:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:23:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:23:09] INFO root fetch - main [MainThread]: Store serial: [17646164]
