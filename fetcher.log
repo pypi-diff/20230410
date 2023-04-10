@@ -5579,3 +5579,125 @@ EOFError: EOF read where object expected
 [2023-04-10 08:48:48] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:48:48] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:48:48] INFO root fetch - main [MainThread]: Store serial: [17643545]
+[2023-04-10 08:53:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643545]
+[2023-04-10 08:53:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 08:53:56] INFO root fetch - processPackages [awsdf]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 08:53:56] INFO root fetch - processPackages [bq-tools-dirupload]: New version: [0.8.9.1] Old Version: [0.8.9]
+[2023-04-10 08:53:56] INFO root fetch - processPackages [pyzw]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 08:53:56] INFO root fetch - processPackages [easytradetesting]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 08:53:56] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-10 08:53:56] INFO root fetch - processPackages [awsdf]: executing diffoscope
+[2023-04-10 08:53:56] INFO root fetch - processPackages [awsdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awsdf-0.1.8.tar.gz tmp/awsdf-0.1.9.tar.gz --markdown 20230410/a/awsdf/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 08:53:56] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-10 08:53:56] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230410/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 08:53:56] INFO root fetch - processPackages [pyzw]: executing diffoscope
+[2023-04-10 08:53:56] INFO root fetch - processPackages [pyzw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzw-0.0.8-py3-none-any.whl.zip tmp/pyzw-0.0.9-py3-none-any.whl.zip --markdown 20230410/p/pyzw/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 08:53:56] INFO root fetch - processPackages [easytradetesting]: Downloading https://files.pythonhosted.org/packages/f3/ce/e4f4a7d8c9999deeb235efbb56b308d711fb2bd30e166e4e22c51bebeca5/easytradetesting-0.1.8.tar.gz
+[2023-04-10 08:53:56] INFO root fetch - processPackages [bq-tools-dirupload]: executing diffoscope
+[2023-04-10 08:53:56] INFO root fetch - processPackages [bq-tools-dirupload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bq_tools_dirupload-0.8.9-py3-none-any.whl.zip tmp/bq_tools_dirupload-0.8.9.1-py3-none-any.whl.zip --markdown 20230410/b/bq-tools-dirupload/0.8.9-0.8.9.1/diff.md --exclude *.pyd
+[2023-04-10 08:53:56] INFO root fetch - processPackages [easytradetesting]: Downloading https://files.pythonhosted.org/packages/65/0b/c8e0049d57cbebd18e7dc5f11b18bed4f306b6c1b6547530ebbe7ed5a601/easytradetesting-0.1.9.tar.gz
+[2023-04-10 08:53:56] INFO root fetch - processPackages [easytradetesting]: executing diffoscope
+[2023-04-10 08:53:56] INFO root fetch - processPackages [easytradetesting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytradetesting-0.1.8.tar.gz tmp/easytradetesting-0.1.9.tar.gz --markdown 20230410/e/easytradetesting/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 08:53:57] ERROR root fetch - processPackages [pyzw]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid continuation byte
+
+[2023-04-10 08:53:57] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:53:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:53:57] INFO root fetch - processPackages [explai]: New version: [0.4] Old Version: [0.3]
+[2023-04-10 08:53:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:53:57] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-10 08:53:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:53:57] INFO root fetch - processPackages [explai]: Downloading https://files.pythonhosted.org/packages/f2/e4/02b85fe5cc5527f4de0b8d6bad7472f602ce617bc54992a565a6e396d0be/explai-0.3.tar.gz
+[2023-04-10 08:53:57] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/4b/bd/38f151c606df2bc818a534bc0cc54aac7d1e31c79e4f6aa5dc4daed35f76/langchain_utils-0.3.1.tar.gz
+[2023-04-10 08:53:57] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-10 08:53:57] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.0-py3-none-any.whl.zip tmp/langchain_utils-0.3.1.tar.gz --markdown 20230410/l/langchain-utils/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-10 08:53:57] INFO root fetch - processPackages [explai]: Downloading https://files.pythonhosted.org/packages/51/02/c7192119a4c3fcf9c8c79dc1c215673efdb33c333f130c95cb06ddd2508d/explai-0.4.tar.gz
+[2023-04-10 08:53:57] INFO root fetch - processPackages [explai]: executing diffoscope
+[2023-04-10 08:53:57] INFO root fetch - processPackages [explai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/explai-0.3.tar.gz tmp/explai-0.4.tar.gz --markdown 20230410/e/explai/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-10 08:53:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:53:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:53:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:53:58] INFO root fetch - main [MainThread]: Store serial: [17643562]
