@@ -3956,3 +3956,74 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-10 05:18:26] INFO root fetch - main [MainThread]: success
 [2023-04-10 05:18:26] INFO root fetch - main [MainThread]: success
 [2023-04-10 05:18:26] INFO root fetch - main [MainThread]: Store serial: [17642351]
+[2023-04-10 05:23:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642351]
+[2023-04-10 05:23:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-10 05:23:33] INFO root fetch - processPackages [neon-homeassistant-skill]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 05:23:33] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 05:23:33] INFO root fetch - processPackages [toollib]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-04-10 05:23:33] INFO root fetch - processPackages [moarc-framework]: New version: [0.9.5.3] Old Version: [0.9.5.2]
+[2023-04-10 05:23:33] INFO root fetch - processPackages [snemail]: New version: [1.1.12] Old Version: [1.1.11]
+[2023-04-10 05:23:33] INFO root fetch - processPackages [neon-homeassistant-skill]: executing diffoscope
+[2023-04-10 05:23:33] INFO root fetch - processPackages [neon-homeassistant-skill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_homeassistant_skill-0.0.8.tar.gz tmp/neon_homeassistant_skill-0.0.9.tar.gz --markdown 20230410/n/neon-homeassistant-skill/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 05:23:33] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-10 05:23:33] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230410/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 05:23:34] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/c9/44/26a7cf8ab45062f610eb8049603654902905e9dd9c13290ce8a80e162640/toollib-1.2.6-py3-none-any.whl
+[2023-04-10 05:23:34] INFO root fetch - processPackages [moarc-framework]: Downloading https://files.pythonhosted.org/packages/49/84/8fb4853e94d1628fba91bdbe92646ba4bf5410663dd97bc3be29bb6b9328/moarc-framework-0.9.5.3.tar.gz
+[2023-04-10 05:23:34] INFO root fetch - processPackages [snemail]: Downloading https://files.pythonhosted.org/packages/d6/06/3fe6151e893158457eba442955f9a6904914af5a60c8a063bbc4c9d4b394/snemail-1.1.12.tar.gz
+[2023-04-10 05:23:34] INFO root fetch - processPackages [moarc-framework]: executing diffoscope
+[2023-04-10 05:23:34] INFO root fetch - processPackages [moarc-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moarc-framework-0.9.5.2.tar.gz tmp/moarc-framework-0.9.5.3.tar.gz --markdown 20230410/m/moarc-framework/0.9.5.2-0.9.5.3/diff.md --exclude *.pyd
+[2023-04-10 05:23:34] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/b8/4e/770ab02a445cf0d937fb3b59c618113238607a24f07048c9e164ce5108c3/toollib-1.2.7-py3-none-any.whl
+[2023-04-10 05:23:34] INFO root fetch - processPackages [snemail]: executing diffoscope
+[2023-04-10 05:23:34] INFO root fetch - processPackages [snemail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snemail-1.1.11.tar.gz tmp/snemail-1.1.12.tar.gz --markdown 20230410/s/snemail/1.1.11-1.1.12/diff.md --exclude *.pyd
+[2023-04-10 05:23:34] INFO root fetch - processPackages [toollib]: executing diffoscope
+[2023-04-10 05:23:34] INFO root fetch - processPackages [toollib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toollib-1.2.6-py3-none-any.whl.zip tmp/toollib-1.2.7-py3-none-any.whl.zip --markdown 20230410/t/toollib/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-04-10 05:23:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:23:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:23:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:23:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:23:35] ERROR root fetch - processPackages [toollib]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+EOFError: EOF read where object expected
+
+[2023-04-10 05:23:35] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:23:35] INFO root fetch - main [MainThread]: Store serial: [17642365]
