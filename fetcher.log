@@ -16077,3 +16077,58 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 23:23:19] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:23:19] INFO root fetch - main [MainThread]: success
 [2023-04-10 23:23:19] INFO root fetch - main [MainThread]: Store serial: [17650538]
+[2023-04-10 23:28:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650538]
+[2023-04-10 23:28:27] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 23:28:27] INFO root fetch - processPackages [dkist-processing-vbi]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-10 23:28:27] INFO root fetch - processPackages [dkist-processing-visp]: New version: [2.0.0rc5] Old Version: [2.0.0rc4]
+[2023-04-10 23:28:27] INFO root fetch - processPackages [tulp]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-10 23:28:27] INFO root fetch - processPackages [ovito]: New version: [3.8.3.dev10] Old Version: [3.8.2]
+[2023-04-10 23:28:27] INFO root fetch - processPackages [tiny-cli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 23:28:27] INFO root fetch - processPackages [dkist-processing-vbi]: Downloading https://files.pythonhosted.org/packages/11/37/dd4cca8936fb6f531bbb4911493556ed75e13a6cf18af83b88dfb40b8933/dkist_processing_vbi-1.1.7.tar.gz
+[2023-04-10 23:28:27] INFO root fetch - processPackages [ovito]: Downloading https://files.pythonhosted.org/packages/ba/12/cc6210fb93afae7eca5b630a56bcfdb1c42f459b6237b894e1541d1e99cc/ovito-3.8.2-cp39-cp39-win_amd64.whl
+[2023-04-10 23:28:27] INFO root fetch - processPackages [dkist-processing-visp]: Downloading https://files.pythonhosted.org/packages/a6/66/85b5fb4293600d99603efcd1690fe347f77800ada81b50fe6d338c098eed/dkist_processing_visp-2.0.0rc4.tar.gz
+[2023-04-10 23:28:27] INFO root fetch - processPackages [tulp]: Downloading https://files.pythonhosted.org/packages/45/8e/1601877af8ec81cef0bd46c688a48e5a58783ae6f654e6606e1310360fd3/tulp-0.4.1.tar.gz
+[2023-04-10 23:28:27] INFO root fetch - processPackages [tiny-cli]: executing diffoscope
+[2023-04-10 23:28:27] INFO root fetch - processPackages [tiny-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiny-cli-1.0.8.tar.gz tmp/tiny-cli-1.0.9.tar.gz --markdown 20230410/t/tiny-cli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 23:28:28] WARNING root fetch - processPackages [ovito]: Skipping package: exceeds size limit 75683790>=10485760
+[2023-04-10 23:28:28] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:28:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:28:28] INFO root fetch - processPackages [kcli]: New version: [99.0.202304102052] Old Version: [99.0.202304100703]
+[2023-04-10 23:28:28] INFO root fetch - processPackages [nautobot]: New version: [2.0.0a2] Old Version: [2.0.0a1]
+[2023-04-10 23:28:28] INFO root fetch - processPackages [tulp]: executing diffoscope
+[2023-04-10 23:28:28] INFO root fetch - processPackages [tulp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulp-0.4.0.tar.gz tmp/tulp-0.4.1.tar.gz --markdown 20230410/t/tulp/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-10 23:28:28] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/b8/3e/e8ae77333f8aa8b8521205f06804cae8e008f3fde1b314d13984fd699102/kcli-99.0.202304102052-py3-none-any.whl
+[2023-04-10 23:28:28] INFO root fetch - processPackages [nautobot]: Downloading https://files.pythonhosted.org/packages/7f/44/8a58dac7ada485a7ce1b6898cee699c20643e1529923b6bb97151e214510/nautobot-2.0.0a1.tar.gz
+[2023-04-10 23:28:28] INFO root fetch - processPackages [dkist-processing-vbi]: Downloading https://files.pythonhosted.org/packages/77/5e/8026529808f4f1bfb61857dadcb68e15be5401f346300e528313b41e28f5/dkist_processing_vbi-1.1.8.tar.gz
+[2023-04-10 23:28:29] INFO root fetch - processPackages [dkist-processing-visp]: Downloading https://files.pythonhosted.org/packages/fb/88/835ceea0ddf74c2986d600dfefb17d9155f7ff196e0306053890e04b7569/dkist_processing_visp-2.0.0rc5.tar.gz
+[2023-04-10 23:28:29] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-10 23:28:29] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304100703-py3-none-any.whl.zip tmp/kcli-99.0.202304102052-py3-none-any.whl.zip --markdown 20230410/k/kcli/99.0.202304100703-99.0.202304102052/diff.md --exclude *.pyd
+[2023-04-10 23:28:29] INFO root fetch - processPackages [dkist-processing-vbi]: executing diffoscope
+[2023-04-10 23:28:29] INFO root fetch - processPackages [dkist-processing-vbi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist_processing_vbi-1.1.7.tar.gz tmp/dkist_processing_vbi-1.1.8.tar.gz --markdown 20230410/d/dkist-processing-vbi/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-10 23:28:29] INFO root fetch - processPackages [dkist-processing-visp]: executing diffoscope
+[2023-04-10 23:28:29] INFO root fetch - processPackages [dkist-processing-visp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist_processing_visp-2.0.0rc4.tar.gz tmp/dkist_processing_visp-2.0.0rc5.tar.gz --markdown 20230410/d/dkist-processing-visp/2.0.0rc4-2.0.0rc5/diff.md --exclude *.pyd
+[2023-04-10 23:28:29] WARNING root fetch - processPackages [nautobot]: Skipping package: exceeds size limit 88297566>=10485760
+[2023-04-10 23:28:29] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:28:29] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-10 23:28:29] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-10 23:28:29] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230410/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-10 23:28:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:28:30] INFO root fetch - processPackages [robyn]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-10 23:28:30] INFO root fetch - processPackages [robyn]: executing diffoscope
+[2023-04-10 23:28:30] INFO root fetch - processPackages [robyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robyn-0.8.1.tar.gz tmp/robyn-0.9.0.tar.gz --markdown 20230410/r/robyn/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 23:28:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:28:31] INFO root fetch - processPackages [pytreeclass]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-10 23:28:31] INFO root fetch - processPackages [pytreeclass]: Downloading https://files.pythonhosted.org/packages/c9/fa/f4145adb857c9960806aba63e655d4f6bc94219a8a62e2c2017cc63111ba/pytreeclass-0.2.5.tar.gz
+[2023-04-10 23:28:31] INFO root fetch - processPackages [pytreeclass]: Downloading https://files.pythonhosted.org/packages/7c/ab/e53e93a38de261dfd09631b821cee2ad43abb374362f2e1d15099dd7a3be/pytreeclass-0.2.6.tar.gz
+[2023-04-10 23:28:32] INFO root fetch - processPackages [pytreeclass]: executing diffoscope
+[2023-04-10 23:28:32] INFO root fetch - processPackages [pytreeclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytreeclass-0.2.5.tar.gz tmp/pytreeclass-0.2.6.tar.gz --markdown 20230410/p/pytreeclass/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-10 23:28:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:28:32] INFO root fetch - processPackages [trainerbase]: New version: [2.9.4] Old Version: [2.9.3]
+[2023-04-10 23:28:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:28:32] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2023-04-10 23:28:32] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainerBase-2.9.3.tar.gz tmp/TrainerBase-2.9.4.tar.gz --markdown 20230410/t/trainerbase/2.9.3-2.9.4/diff.md --exclude *.pyd
+[2023-04-10 23:28:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:28:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:28:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:28:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:28:35] INFO root fetch - main [MainThread]: Store serial: [17650609]
