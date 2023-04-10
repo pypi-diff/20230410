@@ -6716,3 +6716,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 10:45:28] INFO root fetch - main [MainThread]: success
 [2023-04-10 10:45:42] INFO root fetch - main [MainThread]: success
 [2023-04-10 10:45:42] INFO root fetch - main [MainThread]: Store serial: [17644308]
+[2023-04-10 10:50:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644308]
+[2023-04-10 10:50:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 10:50:55] INFO root fetch - processPackages [scmrepo]: New version: [1.0.0] Old Version: [0.2.1]
+[2023-04-10 10:50:55] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-10 10:50:55] INFO root fetch - processPackages [antchain-identitymarriage]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-10 10:50:55] INFO root fetch - processPackages [ckanext-toolbelt]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-10 10:50:55] INFO root fetch - processPackages [automation_rest_server]: New version: [3.6.3] Old Version: [3.6.2]
+[2023-04-10 10:50:55] INFO root fetch - processPackages [scmrepo]: Downloading https://files.pythonhosted.org/packages/46/ce/64361c3d2e47d62d736e0fd61bcb0fcde7a05cc2079dded9d7c396e3d6e4/scmrepo-0.2.1.tar.gz
+[2023-04-10 10:50:55] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-10 10:50:55] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230410/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-10 10:50:55] INFO root fetch - processPackages [ckanext-toolbelt]: Downloading https://files.pythonhosted.org/packages/6b/52/893ab2b284f75943551797dbc57ac6d023e0378683e4c5c743ad64e010ec/ckanext-toolbelt-0.3.7.tar.gz
+[2023-04-10 10:50:55] INFO root fetch - processPackages [antchain-identitymarriage]: Downloading https://files.pythonhosted.org/packages/d5/9e/b01a1e8727e5ea057f37f86e5e48f835d5b98d88e6e60ab3ff6ac27eab0e/antchain_identitymarriage-1.0.5.tar.gz
+[2023-04-10 10:50:55] INFO root fetch - processPackages [automation_rest_server]: Downloading https://files.pythonhosted.org/packages/fd/eb/eac20afbe234f1f64b8d3061dbb8ea6564197d94e039bc63c7ae27af0489/automation_rest_server-3.6.3.tar.gz
+[2023-04-10 10:50:55] INFO root fetch - processPackages [antchain-identitymarriage]: executing diffoscope
+[2023-04-10 10:50:55] INFO root fetch - processPackages [antchain-identitymarriage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_identitymarriage-1.0.4.tar.gz tmp/antchain_identitymarriage-1.0.5.tar.gz --markdown 20230410/a/antchain-identitymarriage/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-10 10:50:55] INFO root fetch - processPackages [automation_rest_server]: executing diffoscope
+[2023-04-10 10:50:55] INFO root fetch - processPackages [automation_rest_server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation_rest_server-3.6.2.tar.gz tmp/automation_rest_server-3.6.3.tar.gz --markdown 20230410/a/automation_rest_server/3.6.2-3.6.3/diff.md --exclude *.pyd
+[2023-04-10 10:50:55] INFO root fetch - processPackages [ckanext-toolbelt]: Downloading https://files.pythonhosted.org/packages/9a/59/103205e9985367b4bc6bc151e81cbde40d5538b6757b7917e0576a460b8e/ckanext-toolbelt-0.3.8.tar.gz
+[2023-04-10 10:50:55] INFO root fetch - processPackages [scmrepo]: Downloading https://files.pythonhosted.org/packages/e1/34/ebd000a393619d845a5c54df307e7038801ca109796ad658e8621f1b72d1/scmrepo-1.0.0.tar.gz
+[2023-04-10 10:50:55] INFO root fetch - processPackages [ckanext-toolbelt]: executing diffoscope
+[2023-04-10 10:50:55] INFO root fetch - processPackages [ckanext-toolbelt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-toolbelt-0.3.7.tar.gz tmp/ckanext-toolbelt-0.3.8.tar.gz --markdown 20230410/c/ckanext-toolbelt/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-10 10:50:55] INFO root fetch - processPackages [scmrepo]: executing diffoscope
+[2023-04-10 10:50:55] INFO root fetch - processPackages [scmrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scmrepo-0.2.1.tar.gz tmp/scmrepo-1.0.0.tar.gz --markdown 20230410/s/scmrepo/0.2.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-10 10:50:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:50:56] INFO root fetch - processPackages [neosctl]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-04-10 10:50:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:50:56] INFO root fetch - processPackages [neosctl]: Downloading https://files.pythonhosted.org/packages/66/5c/8ae3debbe7e6042a3d879369f579c4815d80340a135a9415b0ad203284a6/neosctl-0.7.4.tar.gz
+[2023-04-10 10:50:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:50:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:50:57] INFO root fetch - processPackages [neosctl]: Downloading https://files.pythonhosted.org/packages/81/ee/e3aeb02adbcf669f2c2945b4e0dca4f028f5a1bb73fdbafeef0a67bfd867/neosctl-0.7.5.tar.gz
+[2023-04-10 10:50:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:50:57] INFO root fetch - processPackages [neosctl]: executing diffoscope
+[2023-04-10 10:50:57] INFO root fetch - processPackages [neosctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neosctl-0.7.4.tar.gz tmp/neosctl-0.7.5.tar.gz --markdown 20230410/n/neosctl/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-04-10 10:50:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 10:50:58] INFO root fetch - main [MainThread]: Store serial: [17644325]
