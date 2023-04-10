@@ -14901,3 +14901,74 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 21:36:53] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:37:09] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:37:09] INFO root fetch - main [MainThread]: Store serial: [17649676]
+[2023-04-10 21:42:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649676]
+[2023-04-10 21:42:17] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-10 21:42:17] INFO root fetch - processPackages [pyllms]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 21:42:17] INFO root fetch - processPackages [gym-trading-env]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 21:42:17] INFO root fetch - processPackages [mgz]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-04-10 21:42:18] INFO root fetch - processPackages [ldns-explorer]: New version: [1.2] Old Version: [1.1]
+[2023-04-10 21:42:18] INFO root fetch - processPackages [django-ocs-observation-portal]: New version: [4.6.0] Old Version: [4.5.1]
+[2023-04-10 21:42:18] INFO root fetch - processPackages [ldns-explorer]: Downloading https://files.pythonhosted.org/packages/cd/a1/810e76b0e62adec62b1353b4eb5b3373c498b4e799f9d1862e564be94638/ldns-explorer-1.1.tar.gz
+[2023-04-10 21:42:18] INFO root fetch - processPackages [pyllms]: Downloading https://files.pythonhosted.org/packages/0c/0a/f616f47fe632e20b894e4011dbbc730e7be2304fbe8214280a67082d8207/pyllms-0.1.2.tar.gz
+[2023-04-10 21:42:18] INFO root fetch - processPackages [django-ocs-observation-portal]: Downloading https://files.pythonhosted.org/packages/f3/fe/02f10b517672fb4b3a3572af7c1391487be108a1c4f34e02eddf473d68c8/django-ocs-observation-portal-4.5.1.tar.gz
+[2023-04-10 21:42:18] INFO root fetch - processPackages [gym-trading-env]: Downloading https://files.pythonhosted.org/packages/37/0e/80d1b340fe33f1b3d0575e02e7ee6737c3c75f3ad44a9112160494c2d083/gym-trading-env-0.1.1.tar.gz
+[2023-04-10 21:42:18] INFO root fetch - processPackages [pyllms]: executing diffoscope
+[2023-04-10 21:42:18] INFO root fetch - processPackages [pyllms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyllms-0.1.1.tar.gz tmp/pyllms-0.1.2.tar.gz --markdown 20230410/p/pyllms/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 21:42:18] INFO root fetch - processPackages [mgz]: executing diffoscope
+[2023-04-10 21:42:18] INFO root fetch - processPackages [mgz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mgz-1.8.8.tar.gz tmp/mgz-1.8.9.tar.gz --markdown 20230410/m/mgz/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-04-10 21:42:18] INFO root fetch - processPackages [gym-trading-env]: Downloading https://files.pythonhosted.org/packages/c2/b6/ad1a25adb4a5fa4d4e5904b8ee6aaa5f2f1e98aaaabd36c7006e1f058f01/gym-trading-env-0.1.2.tar.gz
+[2023-04-10 21:42:18] INFO root fetch - processPackages [django-ocs-observation-portal]: Downloading https://files.pythonhosted.org/packages/54/0a/2b8fe49a286578ebfa23358cef1655b7afdd5f9cee429826b861441abb8c/django_ocs_observation_portal-4.6.0.tar.gz
+[2023-04-10 21:42:18] INFO root fetch - processPackages [gym-trading-env]: executing diffoscope
+[2023-04-10 21:42:18] INFO root fetch - processPackages [gym-trading-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym-trading-env-0.1.1.tar.gz tmp/gym-trading-env-0.1.2.tar.gz --markdown 20230410/g/gym-trading-env/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 21:42:18] INFO root fetch - processPackages [django-ocs-observation-portal]: executing diffoscope
+[2023-04-10 21:42:18] INFO root fetch - processPackages [django-ocs-observation-portal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ocs-observation-portal-4.5.1.tar.gz tmp/django_ocs_observation_portal-4.6.0.tar.gz --markdown 20230410/d/django-ocs-observation-portal/4.5.1-4.6.0/diff.md --exclude *.pyd
+[2023-04-10 21:42:18] INFO root fetch - processPackages [ldns-explorer]: Downloading https://files.pythonhosted.org/packages/8a/a0/4f136450b0ff61051c63df20fca8054b56bc28cea83e71421f0b3ff1573d/ldns-explorer-1.2.tar.gz
+[2023-04-10 21:42:18] INFO root fetch - processPackages [ldns-explorer]: executing diffoscope
+[2023-04-10 21:42:18] INFO root fetch - processPackages [ldns-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldns-explorer-1.1.tar.gz tmp/ldns-explorer-1.2.tar.gz --markdown 20230410/l/ldns-explorer/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-10 21:42:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:19] WARNING root fetch - processPackages [netbox-kea-dhcp]: Skipping, unable to determine old version
+[2023-04-10 21:42:19] INFO root fetch - main [MainThread]: error
+[2023-04-10 21:42:19] INFO root fetch - processPackages [spanish-nlp]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-10 21:42:19] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:19] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304101942] Old Version: [1.0.202304092118]
+[2023-04-10 21:42:19] INFO root fetch - processPackages [spanish-nlp]: Downloading https://files.pythonhosted.org/packages/05/09/3b776764cad62f9a19b12cb47b9e4c9460170bd204b1ee7809750d71e0ca/spanish_nlp-0.2.7.tar.gz
+[2023-04-10 21:42:19] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/bd/9d/0670ed11c298268588baa8a2afba6fe4d3c44d38e56957cc47060fc4dfd3/mb_pytorch-1.0.202304101942-py3-none-any.whl
+[2023-04-10 21:42:19] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-10 21:42:19] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304092118-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304101942-py3-none-any.whl.zip --markdown 20230410/m/mb-pytorch/1.0.202304092118-1.0.202304101942/diff.md --exclude *.pyd
+[2023-04-10 21:42:20] INFO root fetch - processPackages [spanish-nlp]: Downloading https://files.pythonhosted.org/packages/a8/a6/3eb61b73e7cd1bca838863f191f04c82ec3a06702309e479a85a808cb6b8/spanish_nlp-0.2.8.tar.gz
+[2023-04-10 21:42:20] INFO root fetch - processPackages [spanish-nlp]: executing diffoscope
+[2023-04-10 21:42:20] INFO root fetch - processPackages [spanish-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanish_nlp-0.2.7.tar.gz tmp/spanish_nlp-0.2.8.tar.gz --markdown 20230410/s/spanish-nlp/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-10 21:42:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:20] INFO root fetch - processPackages [roboweb-extension]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 21:42:20] INFO root fetch - processPackages [roboweb-extension]: executing diffoscope
+[2023-04-10 21:42:20] INFO root fetch - processPackages [roboweb-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb-extension-0.1.8.tar.gz tmp/roboweb_extension-0.1.9.tar.gz --markdown 20230410/r/roboweb-extension/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 21:42:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:21] INFO root fetch - processPackages [polars-u64-idx]: New version: [0.17.1] Old Version: [0.17.0]
+[2023-04-10 21:42:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:21] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.33] Old Version: [0.1.32]
+[2023-04-10 21:42:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:21] INFO root fetch - processPackages [pandacolumns]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 21:42:21] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/6f/b3/6273d94186783931d21d8c0e4f5425192bf46c508ecd5983611946f741d7/polars_u64_idx-0.17.1.tar.gz
+[2023-04-10 21:42:21] INFO root fetch - processPackages [polars-u64-idx]: executing diffoscope
+[2023-04-10 21:42:21] INFO root fetch - processPackages [polars-u64-idx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_u64_idx-0.17.0.tar.gz tmp/polars_u64_idx-0.17.1.tar.gz --markdown 20230410/p/polars-u64-idx/0.17.0-0.17.1/diff.md --exclude *.pyd
+[2023-04-10 21:42:21] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/f9/ea/3f98c213a88cdd72a46a819dfc659a74781f6f88bc56a8425b3f28db51bc/roboweb_server-0.1.33.tar.gz
+[2023-04-10 21:42:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:21] INFO root fetch - processPackages [pandacolumns]: Downloading https://files.pythonhosted.org/packages/95/7f/881d0563a0724213fa6cc35167b9dffe387bc71aa2d2a59650f534780cb0/pandacolumns-0.1.0.tar.gz
+[2023-04-10 21:42:21] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-10 21:42:21] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.32.tar.gz tmp/roboweb_server-0.1.33.tar.gz --markdown 20230410/r/roboweb-server/0.1.32-0.1.33/diff.md --exclude *.pyd
+[2023-04-10 21:42:21] INFO root fetch - processPackages [honeybee-energy]: New version: [1.99.9] Old Version: [1.99.8]
+[2023-04-10 21:42:21] INFO root fetch - processPackages [pandacolumns]: Downloading https://files.pythonhosted.org/packages/92/63/7a586a99863fd53f714a0e16635bf9582d99f10bc8df8cd25e427f3a54f1/pandacolumns-0.1.1.tar.gz
+[2023-04-10 21:42:21] INFO root fetch - processPackages [pandacolumns]: executing diffoscope
+[2023-04-10 21:42:21] INFO root fetch - processPackages [pandacolumns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandacolumns-0.1.0.tar.gz tmp/pandacolumns-0.1.1.tar.gz --markdown 20230410/p/pandacolumns/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 21:42:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:22] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/b1/ab/c8fb70e349d71cce95bac52782f7ea0659a6987ed84dd41c7fe2ef40806c/honeybee-energy-1.99.8.tar.gz
+[2023-04-10 21:42:22] WARNING root fetch - processPackages [prcssr]: Skipping, unable to determine old version
+[2023-04-10 21:42:22] INFO root fetch - main [MainThread]: error
+[2023-04-10 21:42:22] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/8d/5e/1bc90eeaf45799cc7d5cda125017c1e4e2cf0ef068cd3db60d971b9596ba/honeybee-energy-1.99.9.tar.gz
+[2023-04-10 21:42:22] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:23] INFO root fetch - processPackages [honeybee-energy]: executing diffoscope
+[2023-04-10 21:42:23] INFO root fetch - processPackages [honeybee-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-energy-1.99.8.tar.gz tmp/honeybee-energy-1.99.9.tar.gz --markdown 20230410/h/honeybee-energy/1.99.8-1.99.9/diff.md --exclude *.pyd
+[2023-04-10 21:42:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:42:58] INFO root fetch - main [MainThread]: Store serial: [17649721]
