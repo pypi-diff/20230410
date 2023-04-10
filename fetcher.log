@@ -1008,3 +1008,78 @@
 [2023-04-10 02:20:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:20:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:20:36] INFO root fetch - main [MainThread]: Store serial: [17640630]
+[2023-04-10 02:25:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640630]
+[2023-04-10 02:25:44] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-10 02:25:44] INFO root fetch - processPackages [terra-ai-datasets]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-10 02:25:44] INFO root fetch - processPackages [aws-cdk.asset-awscli-v2]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-10 02:25:44] INFO root fetch - processPackages [zrb]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 02:25:44] INFO root fetch - processPackages [cdk-docker-image-deployment]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 02:25:44] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-10 02:25:44] INFO root fetch - processPackages [aws-cdk.asset-awscli-v2]: Downloading https://files.pythonhosted.org/packages/ff/ea/d3ff38a542e799992724e66182e34e344f1ad60cea450624e2d48ee7303b/aws-cdk.asset-awscli-v2-2.0.8.tar.gz
+[2023-04-10 02:25:44] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-10 02:25:44] WARNING root fetch - processPackages [aws-cdk.asset-awscli-v2]: Skipping package: exceeds size limit 53149528>=10485760
+[2023-04-10 02:25:44] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-10 02:25:44] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:25:44] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:25:44] WARNING root fetch - processPackages [db-classifier]: Skipping, unable to determine old version
+[2023-04-10 02:25:44] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:25:44] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.4] Old Version: [0.18.3]
+[2023-04-10 02:25:44] INFO root fetch - processPackages [terra-ai-datasets]: Downloading https://files.pythonhosted.org/packages/77/32/f9ca299b37596c38864c209adb2d17869c19b4da785c36181e69c7b7ed57/terra_ai_datasets-1.0.0.tar.gz
+[2023-04-10 02:25:44] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.5.7] Old Version: [0.9.5.6]
+[2023-04-10 02:25:44] INFO root fetch - processPackages [zrb]: Downloading https://files.pythonhosted.org/packages/30/24/7a33b243824d090473327938a5d9cd4148889b927653bd1df45802c27649/zrb-0.0.8.tar.gz
+[2023-04-10 02:25:44] INFO root fetch - processPackages [gptdeploy]: Downloading https://files.pythonhosted.org/packages/31/8c/2e2909c8255a2d74c5d65d0f10f36dd6be795b96c661ac2d60b0fe2a56f6/gptdeploy-0.18.4.tar.gz
+[2023-04-10 02:25:44] INFO root fetch - processPackages [cdk-docker-image-deployment]: executing diffoscope
+[2023-04-10 02:25:44] INFO root fetch - processPackages [cdk-docker-image-deployment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-docker-image-deployment-0.0.98.tar.gz tmp/cdk-docker-image-deployment-0.0.99.tar.gz --markdown 20230410/c/cdk-docker-image-deployment/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 02:25:44] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-10 02:25:44] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.3.tar.gz tmp/gptdeploy-0.18.4.tar.gz --markdown 20230410/g/gptdeploy/0.18.3-0.18.4/diff.md --exclude *.pyd
+[2023-04-10 02:25:44] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/85/a6/09b50d10fd8df5b67fd6acfc23f35c9db582c28a5053ca7a27927bafce36/symbolicmode-0.9.5.7.tar.gz
+[2023-04-10 02:25:44] INFO root fetch - processPackages [zrb]: Downloading https://files.pythonhosted.org/packages/8d/80/885cb50dd492ad011338deeabb6f07312d2c3da55917c9e243dd40e7a274/zrb-0.0.9.tar.gz
+[2023-04-10 02:25:44] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-10 02:25:44] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.5.6.tar.gz tmp/symbolicmode-0.9.5.7.tar.gz --markdown 20230410/s/symbolicmode/0.9.5.6-0.9.5.7/diff.md --exclude *.pyd
+[2023-04-10 02:25:44] INFO root fetch - processPackages [zrb]: executing diffoscope
+[2023-04-10 02:25:44] INFO root fetch - processPackages [zrb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zrb-0.0.8.tar.gz tmp/zrb-0.0.9.tar.gz --markdown 20230410/z/zrb/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 02:25:44] INFO root fetch - processPackages [terra-ai-datasets]: Downloading https://files.pythonhosted.org/packages/15/06/49e6c5162d7265941098fbcc8f08965a4c18ab551507de6e1a0372eff752/terra_ai_datasets-1.1.0.tar.gz
+[2023-04-10 02:25:44] INFO root fetch - processPackages [terra-ai-datasets]: executing diffoscope
+[2023-04-10 02:25:44] INFO root fetch - processPackages [terra-ai-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terra_ai_datasets-1.0.0.tar.gz tmp/terra_ai_datasets-1.1.0.tar.gz --markdown 20230410/t/terra-ai-datasets/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-10 02:25:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:45] INFO root fetch - processPackages [cdk-tweet-queue]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-10 02:25:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:45] INFO root fetch - processPackages [aws-cdk.lambda-layer-kubectl-v24]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-10 02:25:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdk-tweet-queue]: executing diffoscope
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdk-tweet-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-tweet-queue-2.0.98.tar.gz tmp/cdk-tweet-queue-2.0.99.tar.gz --markdown 20230410/c/cdk-tweet-queue/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-10 02:25:46] INFO root fetch - processPackages [aws-cdk.lambda-layer-kubectl-v24]: Downloading https://files.pythonhosted.org/packages/ba/44/5afcfe5feef2fcf876929e3f62aa23ec5afd6f1ea847bfdde639d820686f/aws-cdk.lambda-layer-kubectl-v24-2.0.98.tar.gz
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdktf-github-actions]: New version: [0.0.9] Old Version: [0.0.81]
+[2023-04-10 02:25:46] WARNING root fetch - processPackages [aws-cdk.lambda-layer-kubectl-v24]: Skipping package: exceeds size limit 27804216>=10485760
+[2023-04-10 02:25:46] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-10 02:25:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdktf-github-actions]: Downloading https://files.pythonhosted.org/packages/43/dd/e2885c7264ba0f36debb4e7a8d8ba08b312bb62464652036afacaa062442/cdktf-github-actions-0.0.81.tar.gz
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230410/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdktf-github-actions]: executing diffoscope
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdktf-github-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-github-actions-0.0.81.tar.gz tmp/cdktf-github-actions-0.0.9.tar.gz --markdown 20230410/c/cdktf-github-actions/0.0.81-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 02:25:46] INFO root fetch - processPackages [formkit-ninja]: New version: [0.1.7a1] Old Version: [0.1.6a9]
+[2023-04-10 02:25:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.0a99] Old Version: [2.0.0a98]
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2023-04-10 02:25:46] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.0a98.tar.gz tmp/cdk-ecs-service-extensions-2.0.0a99.tar.gz --markdown 20230410/c/cdk-ecs-service-extensions/2.0.0a98-2.0.0a99/diff.md --exclude *.pyd
+[2023-04-10 02:25:46] INFO root fetch - processPackages [formkit-ninja]: Downloading https://files.pythonhosted.org/packages/b5/36/f384f620bd5dd0ff6c4783b7a567b9a311690c491fb594e1cd591c3b17c7/formkit_ninja-0.1.6a9.tar.gz
+[2023-04-10 02:25:46] INFO root fetch - processPackages [formkit-ninja]: Downloading https://files.pythonhosted.org/packages/1c/36/acb4f7a2a07888b53a28e5609ab1ebefa54ce5cc8bc761f1ceb7467ae645/formkit_ninja-0.1.7a1.tar.gz
+[2023-04-10 02:25:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:47] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.5.8] Old Version: [0.9.5.7]
+[2023-04-10 02:25:47] INFO root fetch - processPackages [formkit-ninja]: executing diffoscope
+[2023-04-10 02:25:47] INFO root fetch - processPackages [formkit-ninja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formkit_ninja-0.1.6a9.tar.gz tmp/formkit_ninja-0.1.7a1.tar.gz --markdown 20230410/f/formkit-ninja/0.1.6a9-0.1.7a1/diff.md --exclude *.pyd
+[2023-04-10 02:25:47] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/3e/ae/5e068ed50f4806a6a7e20cc9f88bc5cf38054aeb8c721c74a91a420694f9/symbolicmode-0.9.5.8.tar.gz
+[2023-04-10 02:25:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:47] INFO root fetch - processPackages [cdktf-proxmox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 02:25:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:47] INFO root fetch - processPackages [cdktf-proxmox]: executing diffoscope
+[2023-04-10 02:25:47] INFO root fetch - processPackages [cdktf-proxmox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-proxmox-0.0.8.tar.gz tmp/cdktf-proxmox-0.0.9.tar.gz --markdown 20230410/c/cdktf-proxmox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 02:25:47] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-10 02:25:47] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.5.7.tar.gz tmp/symbolicmode-0.9.5.8.tar.gz --markdown 20230410/s/symbolicmode/0.9.5.7-0.9.5.8/diff.md --exclude *.pyd
+[2023-04-10 02:25:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:25:51] INFO root fetch - main [MainThread]: Store serial: [17640690]
