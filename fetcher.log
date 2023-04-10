@@ -15702,3 +15702,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 22:44:51] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:45:00] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:45:00] INFO root fetch - main [MainThread]: Store serial: [17650256]
+[2023-04-10 22:50:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650256]
+[2023-04-10 22:50:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 22:50:09] WARNING root fetch - processPackages [chessdisplay]: Skipping, unable to determine old version
+[2023-04-10 22:50:09] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:50:09] INFO root fetch - processPackages [lazyops]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-10 22:50:09] INFO root fetch - processPackages [columbus]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-10 22:50:09] INFO root fetch - processPackages [tyba-client]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-10 22:50:09] INFO root fetch - processPackages [columbus]: executing diffoscope
+[2023-04-10 22:50:09] INFO root fetch - processPackages [columbus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/columbus-0.1.6.tar.gz tmp/columbus-0.1.7.tar.gz --markdown 20230410/c/columbus/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-10 22:50:09] INFO root fetch - processPackages [anyscale]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-04-10 22:50:09] INFO root fetch - processPackages [lazyops]: executing diffoscope
+[2023-04-10 22:50:09] INFO root fetch - processPackages [lazyops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazyops-0.2.8.tar.gz tmp/lazyops-0.2.9.tar.gz --markdown 20230410/l/lazyops/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 22:50:09] INFO root fetch - processPackages [lenskit-build-helpers]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-10 22:50:09] INFO root fetch - processPackages [anyscale]: Downloading https://files.pythonhosted.org/packages/0d/64/8bf86d6d00617c61b31e91a8455e6fb08278056ee4d72abf6317509d592e/anyscale-0.5.98.tar.gz
+[2023-04-10 22:50:09] INFO root fetch - processPackages [lenskit-build-helpers]: Downloading https://files.pythonhosted.org/packages/23/a4/ef402500f1f2c3e3d6f9cc3224c9e107a879150a0527d104d82d1a2c2294/lenskit-build-helpers-0.1.0.tar.gz
+[2023-04-10 22:50:10] INFO root fetch - processPackages [anyscale]: Downloading https://files.pythonhosted.org/packages/61/f0/917cf3e18c478eaae2e53db68c9d20607edab461774054c8f509cc4885b6/anyscale-0.5.99.tar.gz
+[2023-04-10 22:50:10] INFO root fetch - processPackages [anyscale]: executing diffoscope
+[2023-04-10 22:50:10] INFO root fetch - processPackages [anyscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyscale-0.5.98.tar.gz tmp/anyscale-0.5.99.tar.gz --markdown 20230410/a/anyscale/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-04-10 22:50:10] INFO root fetch - processPackages [lenskit-build-helpers]: Downloading https://files.pythonhosted.org/packages/ae/23/076d751728380496a1a772e08936e65f9a7e90645d141af53d8e062af5ca/lenskit-build-helpers-0.2.0.tar.gz
+[2023-04-10 22:50:10] INFO root fetch - processPackages [tyba-client]: Downloading https://files.pythonhosted.org/packages/4b/95/821936077a1605c8dfe4295e0e5e6497553a80412c89421ce100cacc1f90/tyba-client-0.1.9.tar.gz
+[2023-04-10 22:50:10] INFO root fetch - processPackages [lenskit-build-helpers]: executing diffoscope
+[2023-04-10 22:50:10] INFO root fetch - processPackages [lenskit-build-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lenskit-build-helpers-0.1.0.tar.gz tmp/lenskit-build-helpers-0.2.0.tar.gz --markdown 20230410/l/lenskit-build-helpers/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 22:50:10] INFO root fetch - processPackages [tyba-client]: Downloading https://files.pythonhosted.org/packages/99/ec/3fe322709ab48851335aa88cdf75364336c09471e309f4f3e2c6cef63e06/tyba_client-0.2.0.tar.gz
+[2023-04-10 22:50:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:50:10] INFO root fetch - processPackages [kcli]: New version: [99.0.202304100703] Old Version: [99.0.202304091755]
+[2023-04-10 22:50:10] INFO root fetch - processPackages [tyba-client]: executing diffoscope
+[2023-04-10 22:50:10] INFO root fetch - processPackages [tyba-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tyba-client-0.1.9.tar.gz tmp/tyba_client-0.2.0.tar.gz --markdown 20230410/t/tyba-client/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 22:50:10] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-10 22:50:10] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304091755-py3-none-any.whl.zip tmp/kcli-99.0.202304100703-py3-none-any.whl.zip --markdown 20230410/k/kcli/99.0.202304091755-99.0.202304100703/diff.md --exclude *.pyd
+[2023-04-10 22:50:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:50:11] INFO root fetch - processPackages [lazyops]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-10 22:50:11] INFO root fetch - processPackages [lazyops]: executing diffoscope
+[2023-04-10 22:50:11] INFO root fetch - processPackages [lazyops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazyops-0.2.8.tar.gz tmp/lazyops-0.2.9.tar.gz --markdown 20230410/l/lazyops/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 22:50:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:50:11] INFO root fetch - processPackages [trainerbase]: New version: [2.9.0] Old Version: [2.8.2]
+[2023-04-10 22:50:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:50:11] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/03/d9/5a3062dab9ec88980a3f83161b3cc39d3d7a099e9f72f9bafcad0fab6e5b/TrainerBase-2.8.2.tar.gz
+[2023-04-10 22:50:12] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/d2/af/bcbd3d296ed5ae3346c2c55fe4ef019f590331bff5a3156d306832cdd660/TrainerBase-2.9.0.tar.gz
+[2023-04-10 22:50:12] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2023-04-10 22:50:12] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainerBase-2.8.2.tar.gz tmp/TrainerBase-2.9.0.tar.gz --markdown 20230410/t/trainerbase/2.8.2-2.9.0/diff.md --exclude *.pyd
+[2023-04-10 22:50:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:50:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:50:20] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:50:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:50:23] INFO root fetch - main [MainThread]: Store serial: [17650284]
