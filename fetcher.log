@@ -2215,3 +2215,46 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-10 04:28:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 04:28:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 04:28:36] INFO root fetch - main [MainThread]: Store serial: [17641425]
+[2023-04-10 04:33:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17641425]
+[2023-04-10 04:33:44] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 04:33:44] WARNING root fetch - processPackages [auto-vicuna-plugin-template]: Skipping, unable to determine old version
+[2023-04-10 04:33:44] INFO root fetch - main [MainThread]: error
+[2023-04-10 04:33:44] INFO root fetch - processPackages [enprog]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 04:33:44] INFO root fetch - processPackages [py-madvr]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-10 04:33:44] WARNING root fetch - processPackages [robotframework-hardware-jim]: Skipping, unable to determine old version
+[2023-04-10 04:33:44] INFO root fetch - main [MainThread]: error
+[2023-04-10 04:33:44] INFO root fetch - processPackages [htmlfilesforquiz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 04:33:44] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 04:33:44] INFO root fetch - processPackages [metaseg]: New version: [0.4.0] Old Version: [0.3.5]
+[2023-04-10 04:33:44] INFO root fetch - processPackages [htmlfilesforquiz]: executing diffoscope
+[2023-04-10 04:33:44] INFO root fetch - processPackages [htmlfilesforquiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmlfilesforquiz-0.0.8.tar.gz tmp/htmlfilesforquiz-0.0.9.tar.gz --markdown 20230410/h/htmlfilesforquiz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 04:33:44] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/b6/37/b6e73ae8fa1eca358a18cf76f52e8362d029673012bce9adcb011c81bbfe/py_madvr-1.2.3.tar.gz
+[2023-04-10 04:33:44] INFO root fetch - processPackages [enprog]: Downloading https://files.pythonhosted.org/packages/bf/d2/b1fd38c38fbbec7220c7e4a6c24f3eb11d3f72fc215fee1ff916b7885763/enprog-0.0.1.tar.gz
+[2023-04-10 04:33:44] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/fa/ad/c7ee7e685e7c6c08e6d6065032e35cdad113c4e0a12ef70d877959b42052/sparrow-order-lib-0.1.8.tar.gz
+[2023-04-10 04:33:44] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/52/39/67be4e23e504f4bad4216dd81232e6ff92abd707af3e7bd7984b3d5f8aca/metaseg-0.4.0.tar.gz
+[2023-04-10 04:33:44] INFO root fetch - processPackages [enprog]: Downloading https://files.pythonhosted.org/packages/2c/21/0f7e74df39e0c737c2b2736a2d05c393f71739d11180b39b2146945867ca/enprog-0.0.2.tar.gz
+[2023-04-10 04:33:44] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-10 04:33:44] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.3.5.tar.gz tmp/metaseg-0.4.0.tar.gz --markdown 20230410/m/metaseg/0.3.5-0.4.0/diff.md --exclude *.pyd
+[2023-04-10 04:33:44] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/61/15/9ff6bf4869457a5c1d197b96abc54cf7bd9d3c0deae085f4a35f426699f8/py_madvr-1.2.4.tar.gz
+[2023-04-10 04:33:44] INFO root fetch - processPackages [enprog]: executing diffoscope
+[2023-04-10 04:33:44] INFO root fetch - processPackages [enprog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enprog-0.0.1.tar.gz tmp/enprog-0.0.2.tar.gz --markdown 20230410/e/enprog/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 04:33:44] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-04-10 04:33:44] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.2.3.tar.gz tmp/py_madvr-1.2.4.tar.gz --markdown 20230410/p/py-madvr/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-10 04:33:44] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/a9/2c/b12f3c4993a0eaaf36185b68638fdd679d5f7439756590886545fcd2b7e7/sparrow-order-lib-0.1.9.tar.gz
+[2023-04-10 04:33:45] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-04-10 04:33:45] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.8.tar.gz tmp/sparrow-order-lib-0.1.9.tar.gz --markdown 20230410/s/sparrow-order-lib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 04:33:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:33:45] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 04:33:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:33:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:33:45] INFO root fetch - processPackages [dolby]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 04:33:45] INFO root fetch - processPackages [cwsearch-utils]: Downloading https://files.pythonhosted.org/packages/54/21/c311d7dd5a0e065af2b856d7ec632d4987bea2e500d7e3a2c1b12029fa6a/cwsearch_utils-0.0.4-py3-none-any.whl
+[2023-04-10 04:33:45] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-04-10 04:33:45] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.0.3-py3-none-any.whl.zip tmp/cwsearch_utils-0.0.4-py3-none-any.whl.zip --markdown 20230410/c/cwsearch-utils/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 04:33:45] INFO root fetch - processPackages [dolby]: executing diffoscope
+[2023-04-10 04:33:45] INFO root fetch - processPackages [dolby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolby-0.0.2.tar.gz tmp/dolby-0.0.3.tar.gz --markdown 20230410/d/dolby/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 04:33:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:33:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:33:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:33:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 04:33:46] INFO root fetch - main [MainThread]: Store serial: [17641454]
