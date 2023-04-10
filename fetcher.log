@@ -12229,3 +12229,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 18:04:58] INFO root fetch - main [MainThread]: success
 [2023-04-10 18:05:00] INFO root fetch - main [MainThread]: success
 [2023-04-10 18:05:00] INFO root fetch - main [MainThread]: Store serial: [17647680]
+[2023-04-10 18:10:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647680]
+[2023-04-10 18:10:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 18:10:08] WARNING root fetch - processPackages [compilecls]: Skipping, unable to determine old version
+[2023-04-10 18:10:08] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:10:08] INFO root fetch - processPackages [codeflare-torchx]: New version: [0.6.0.dev0] Old Version: [0.5.0.dev5]
+[2023-04-10 18:10:08] INFO root fetch - processPackages [pytpu]: New version: [14.6.8] Old Version: [14.6.7]
+[2023-04-10 18:10:08] INFO root fetch - processPackages [tiny-cli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 18:10:08] INFO root fetch - processPackages [aiofauna]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 18:10:08] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 18:10:08] INFO root fetch - processPackages [codeflare-torchx]: Downloading https://files.pythonhosted.org/packages/32/17/3685f301393fe9271e3d5e3c8aad8fc312501628f24ff9cd4b251e5c0135/codeflare_torchx-0.5.0.dev5-py3-none-any.whl
+[2023-04-10 18:10:08] INFO root fetch - processPackages [pytpu]: Downloading https://files.pythonhosted.org/packages/d8/e8/b89b51deb7380db8eced2839e8055d42f8d89f69a16e8d319894e4ffa300/pytpu-14.6.7.tar.gz
+[2023-04-10 18:10:08] INFO root fetch - processPackages [aiofauna]: Downloading https://files.pythonhosted.org/packages/69/14/730322d8d46afd19bf0948a35ba9fb3947464ec13df9f7d0cdd5f24fcd93/aiofauna-0.0.9.tar.gz
+[2023-04-10 18:10:08] INFO root fetch - processPackages [aiofauna]: executing diffoscope
+[2023-04-10 18:10:08] INFO root fetch - processPackages [aiofauna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiofauna-0.0.8.tar.gz tmp/aiofauna-0.0.9.tar.gz --markdown 20230410/a/aiofauna/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 18:10:09] INFO root fetch - processPackages [tiny-cli]: executing diffoscope
+[2023-04-10 18:10:09] INFO root fetch - processPackages [tiny-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiny-cli-1.0.8.tar.gz tmp/tiny-cli-1.0.9.tar.gz --markdown 20230410/t/tiny-cli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 18:10:09] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-04-10 18:10:09] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230410/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 18:10:09] INFO root fetch - processPackages [pytpu]: Downloading https://files.pythonhosted.org/packages/61/c6/ba83a9e2be0047ad5604c9547c1fbfd90a04fd89f49c4302c1c15afc5494/pytpu-14.6.8.tar.gz
+[2023-04-10 18:10:09] INFO root fetch - processPackages [pytpu]: executing diffoscope
+[2023-04-10 18:10:09] INFO root fetch - processPackages [pytpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytpu-14.6.7.tar.gz tmp/pytpu-14.6.8.tar.gz --markdown 20230410/p/pytpu/14.6.7-14.6.8/diff.md --exclude *.pyd
+[2023-04-10 18:10:09] INFO root fetch - processPackages [codeflare-torchx]: Downloading https://files.pythonhosted.org/packages/11/b5/78ecf78bdbe6a0c6a3af0d54ee7cc36f1b7bb4500fd2585cdca4c230c965/codeflare_torchx-0.6.0.dev0-py3-none-any.whl
+[2023-04-10 18:10:09] INFO root fetch - processPackages [codeflare-torchx]: executing diffoscope
+[2023-04-10 18:10:09] INFO root fetch - processPackages [codeflare-torchx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeflare_torchx-0.5.0.dev5-py3-none-any.whl.zip tmp/codeflare_torchx-0.6.0.dev0-py3-none-any.whl.zip --markdown 20230410/c/codeflare-torchx/0.5.0.dev5-0.6.0.dev0/diff.md --exclude *.pyd
+[2023-04-10 18:10:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:10:10] INFO root fetch - processPackages [aws-cdk.asset-awscli-v1]: New version: [2.2.99] Old Version: [2.2.98]
+[2023-04-10 18:10:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:10:10] INFO root fetch - processPackages [aws-cdk.asset-awscli-v1]: Downloading https://files.pythonhosted.org/packages/d8/5f/ec514d7b5296b58149a8b4407d5d4833dd7b24475d8d782b2c36a00c4d22/aws-cdk.asset-awscli-v1-2.2.98.tar.gz
+[2023-04-10 18:10:10] WARNING root fetch - processPackages [aws-cdk.asset-awscli-v1]: Skipping package: exceeds size limit 14653629>=10485760
+[2023-04-10 18:10:10] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:10:10] WARNING root fetch - processPackages [allcreate-login]: Skipping, unable to determine old version
+[2023-04-10 18:10:10] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:10:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:10:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:10:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:10:11] INFO root fetch - main [MainThread]: Store serial: [17647704]
