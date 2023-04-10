@@ -10925,3 +10925,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 16:26:10] INFO root fetch - main [MainThread]: success
 [2023-04-10 16:26:17] INFO root fetch - main [MainThread]: success
 [2023-04-10 16:26:17] INFO root fetch - main [MainThread]: Store serial: [17646775]
+[2023-04-10 16:31:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646775]
+[2023-04-10 16:31:24] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-10 16:31:24] INFO root fetch - processPackages [microkanren]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-10 16:31:24] INFO root fetch - processPackages [utbot-executor]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-10 16:31:24] INFO root fetch - processPackages [botsh]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 16:31:24] INFO root fetch - processPackages [Flask-Meter]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 16:31:24] INFO root fetch - processPackages [hiddifypanel]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-10 16:31:25] INFO root fetch - processPackages [botsh]: Downloading https://files.pythonhosted.org/packages/00/bb/83764a1ea707a1b3c1f2677b29eb16b2ca4397e86b69f6eea691539dc85c/botsh-0.1.0.tar.gz
+[2023-04-10 16:31:25] INFO root fetch - processPackages [utbot-executor]: Downloading https://files.pythonhosted.org/packages/db/40/074026b41d495fd771c501acdbcb89103d2f57b47e76fee67ca38da25de7/utbot_executor-1.5.2.tar.gz
+[2023-04-10 16:31:25] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/d4/0d/7a0cbabc9228ab86be00fdea6887d3a1cc2359cea17779c90de22f4ff30c/hiddifypanel-3.1.0-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-10 16:31:25] INFO root fetch - processPackages [Flask-Meter]: Downloading https://files.pythonhosted.org/packages/c7/e3/47e39cccc4e87a5d162c0e6f0f9a8aa1daec44a45ee45631eaf3cd61e9d5/Flask-Meter-1.0.1.tar.gz
+[2023-04-10 16:31:25] INFO root fetch - processPackages [utbot-executor]: executing diffoscope
+[2023-04-10 16:31:25] INFO root fetch - processPackages [utbot-executor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utbot_executor-1.5.1.tar.gz tmp/utbot_executor-1.5.2.tar.gz --markdown 20230410/u/utbot-executor/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-10 16:31:25] INFO root fetch - processPackages [Flask-Meter]: executing diffoscope
+[2023-04-10 16:31:25] INFO root fetch - processPackages [Flask-Meter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Meter-1.0.0.tar.gz tmp/Flask-Meter-1.0.1.tar.gz --markdown 20230410/F/Flask-Meter/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 16:31:25] INFO root fetch - processPackages [microkanren]: Downloading https://files.pythonhosted.org/packages/19/a8/b4b44479b6af2472fb4255e273b318ce51d9baa5ca657aac0d2cb0bdcd8e/microkanren-0.3.0.tar.gz
+[2023-04-10 16:31:25] INFO root fetch - processPackages [microkanren]: executing diffoscope
+[2023-04-10 16:31:25] INFO root fetch - processPackages [microkanren]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microkanren-0.2.2.tar.gz tmp/microkanren-0.3.0.tar.gz --markdown 20230410/m/microkanren/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-10 16:31:25] INFO root fetch - processPackages [botsh]: Downloading https://files.pythonhosted.org/packages/c7/db/01461a5989e795ce1b44af85193be758f0de0b93f5f4e6bdd7e8f7791fcf/botsh-0.1.1.tar.gz
+[2023-04-10 16:31:25] INFO root fetch - processPackages [botsh]: executing diffoscope
+[2023-04-10 16:31:25] INFO root fetch - processPackages [botsh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botsh-0.1.0.tar.gz tmp/botsh-0.1.1.tar.gz --markdown 20230410/b/botsh/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 16:31:25] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/c0/7d/d78b40c58025fa9ed3493c28e6f3e05d36f599d4c9a84af3c5e7fcaa6afb/hiddifypanel-3.1.1-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-10 16:31:25] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-10 16:31:25] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.1.0-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.1.1-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230410/h/hiddifypanel/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-10 16:31:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:26] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.4.dev202304101430] Old Version: [2.1.4.dev202304101420]
+[2023-04-10 16:31:26] INFO root fetch - processPackages [PyroFork-dev]: Downloading https://files.pythonhosted.org/packages/cd/15/75c2a5cb97aa263d35bb753f51bbdeb81fdccb9e4f4f761474e167d20ba2/PyroFork-dev-2.1.4.dev202304101430.tar.gz
+[2023-04-10 16:31:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:26] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 16:31:26] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: executing diffoscope
+[2023-04-10 16:31:26] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-provider-huawei-cloud-demo-0.0.8.tar.gz tmp/airflow-provider-huawei-cloud-demo-0.0.9.tar.gz --markdown 20230410/a/airflow-provider-huawei-cloud-demo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 16:31:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:26] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-10 16:31:26] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-10 16:31:26] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.4.dev202304101420.tar.gz tmp/PyroFork-dev-2.1.4.dev202304101430.tar.gz --markdown 20230410/P/PyroFork-dev/2.1.4.dev202304101420-2.1.4.dev202304101430/diff.md --exclude *.pyd
+[2023-04-10 16:31:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:26] INFO root fetch - processPackages [splight-cli]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-10 16:31:26] INFO root fetch - processPackages [splight-cli]: executing diffoscope
+[2023-04-10 16:31:26] INFO root fetch - processPackages [splight-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-cli-2.3.8.tar.gz tmp/splight-cli-2.3.9.tar.gz --markdown 20230410/s/splight-cli/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-10 16:31:26] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/20/58/83595c25956605935aa08227f1f01b1c02743825aca19e267bc95d1b4928/cybrid-api-bank-python-0.9.8.tar.gz
+[2023-04-10 16:31:27] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/89/0b/5831e52f1895b5ffe4c5b8862788216f9cf6c8554dfffa92e8805799baaf/cybrid-api-bank-python-0.9.9.tar.gz
+[2023-04-10 16:31:27] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-04-10 16:31:27] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230410/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-10 16:31:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:27] INFO root fetch - processPackages [gwosc]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-10 16:31:28] INFO root fetch - processPackages [gwosc]: Downloading https://files.pythonhosted.org/packages/3c/3d/24a2f0d6339291d6459971cc7a06486d709b8c784d823df48c0f8417b72a/gwosc-0.6.1.tar.gz
+[2023-04-10 16:31:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:28] INFO root fetch - processPackages [yeagerai-agent]: New version: [0.0.34] Old Version: [0.0.33]
+[2023-04-10 16:31:28] INFO root fetch - processPackages [yeagerai-agent]: Downloading https://files.pythonhosted.org/packages/eb/e1/b4fb34311a821df0aabbcc0c42a9ce8a4cc71fb64cef11f2434e20505862/yeagerai-agent-0.0.34.tar.gz
+[2023-04-10 16:31:28] INFO root fetch - processPackages [yeagerai-agent]: executing diffoscope
+[2023-04-10 16:31:28] INFO root fetch - processPackages [yeagerai-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeagerai-agent-0.0.33.tar.gz tmp/yeagerai-agent-0.0.34.tar.gz --markdown 20230410/y/yeagerai-agent/0.0.33-0.0.34/diff.md --exclude *.pyd
+[2023-04-10 16:31:28] INFO root fetch - processPackages [gwosc]: Downloading https://files.pythonhosted.org/packages/b6/b4/aa80325300c3ea99c0362630e8a252d208feb61f8894a3bb2a21cbcbd661/gwosc-0.7.0.tar.gz
+[2023-04-10 16:31:28] INFO root fetch - processPackages [gwosc]: executing diffoscope
+[2023-04-10 16:31:28] INFO root fetch - processPackages [gwosc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gwosc-0.6.1.tar.gz tmp/gwosc-0.7.0.tar.gz --markdown 20230410/g/gwosc/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-10 16:31:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:29] INFO root fetch - processPackages [nightingalejsonadapter]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-10 16:31:29] INFO root fetch - processPackages [nightingalejsonadapter]: Downloading https://files.pythonhosted.org/packages/f8/a6/265c3fff29d64ebf799c8e6ddf2effb45d37fd46a740a2e23f529c965b03/nightingalejsonadapter-1.1.0.tar.gz
+[2023-04-10 16:31:29] INFO root fetch - processPackages [nightingalejsonadapter]: Downloading https://files.pythonhosted.org/packages/d2/cb/4a08cf93feda047ab4a7a01b3d8dad0800729222997a6af90e1c13537ef8/nightingalejsonadapter-1.2.0.tar.gz
+[2023-04-10 16:31:30] INFO root fetch - processPackages [nightingalejsonadapter]: executing diffoscope
+[2023-04-10 16:31:30] INFO root fetch - processPackages [nightingalejsonadapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nightingalejsonadapter-1.1.0.tar.gz tmp/nightingalejsonadapter-1.2.0.tar.gz --markdown 20230410/n/nightingalejsonadapter/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-10 16:31:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:31:35] INFO root fetch - main [MainThread]: Store serial: [17646823]
