@@ -8339,3 +8339,55 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 13:31:43] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:31:43] INFO root fetch - main [MainThread]: success
 [2023-04-10 13:31:43] INFO root fetch - main [MainThread]: Store serial: [17645324]
+[2023-04-10 13:36:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645324]
+[2023-04-10 13:36:53] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 13:36:53] INFO root fetch - processPackages [gramex]: New version: [1.89.0] Old Version: [1.88.0]
+[2023-04-10 13:36:53] INFO root fetch - processPackages [qsi-tk]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-10 13:36:53] WARNING root fetch - processPackages [scrapautoscout]: Skipping, unable to determine old version
+[2023-04-10 13:36:53] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.4.9] Old Version: [2023.4.7]
+[2023-04-10 13:36:53] INFO root fetch - main [MainThread]: error
+[2023-04-10 13:36:53] INFO root fetch - processPackages [weekdaytime]: New version: [0.0.9] Old Version: [0.0.10]
+[2023-04-10 13:36:53] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-04-10 13:36:53] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.4.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.4.9-py39-none-any.whl.zip --markdown 20230410/t/torchrec-nightly/2023.4.7-2023.4.9/diff.md --exclude *.pyd
+[2023-04-10 13:36:53] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101681125095] Old Version: [0.0.101681038685]
+[2023-04-10 13:36:53] INFO root fetch - processPackages [weekdaytime]: Downloading https://files.pythonhosted.org/packages/3b/7a/4e78949a3a51d722659309b35d5c8e2028c04bd9006f5922d7e4bf180e3b/weekdaytime-0.0.10.tar.gz
+[2023-04-10 13:36:53] INFO root fetch - processPackages [qsi-tk]: Downloading https://files.pythonhosted.org/packages/c7/74/5e1ab410748a4d52a07a2ac4042da2e3c837a65eee495c3e56f859190426/qsi-tk-0.4.3.tar.gz
+[2023-04-10 13:36:53] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/e4/f0/981e06eb21a740037fbcd7639e89afdf9aba88091206d939c404ee9b5013/pyre-check-nightly-0.0.101681038685.tar.gz
+[2023-04-10 13:36:53] INFO root fetch - processPackages [weekdaytime]: Downloading https://files.pythonhosted.org/packages/d5/18/d983251b5e9e9e3488533cac69f93b57954df3cffe15cb6f22c637f1a093/weekdaytime-0.0.9.tar.gz
+[2023-04-10 13:36:53] INFO root fetch - processPackages [gramex]: Downloading https://files.pythonhosted.org/packages/fd/7c/f9a51bffce409ddd860a05554f49995c8b5c7ec0e84d5bb2f5b95833c923/gramex-1.88.0.tar.gz
+[2023-04-10 13:36:53] INFO root fetch - processPackages [weekdaytime]: executing diffoscope
+[2023-04-10 13:36:53] INFO root fetch - processPackages [weekdaytime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weekdaytime-0.0.10.tar.gz tmp/weekdaytime-0.0.9.tar.gz --markdown 20230410/w/weekdaytime/0.0.10-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 13:36:54] WARNING root fetch - processPackages [qsi-tk]: Skipping package: exceeds size limit 53927275>=10485760
+[2023-04-10 13:36:54] INFO root fetch - main [MainThread]: error
+[2023-04-10 13:36:54] INFO root fetch - processPackages [cdk-eks-cluster-module]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 13:36:54] INFO root fetch - processPackages [gramex]: Downloading https://files.pythonhosted.org/packages/80/97/5d5bb379b330dfac0e53e461e5389338914f27e83848b40d2be6e9d6f6d7/gramex-1.89.0.tar.gz
+[2023-04-10 13:36:54] INFO root fetch - processPackages [gramex]: executing diffoscope
+[2023-04-10 13:36:54] INFO root fetch - processPackages [gramex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gramex-1.88.0.tar.gz tmp/gramex-1.89.0.tar.gz --markdown 20230410/g/gramex/1.88.0-1.89.0/diff.md --exclude *.pyd
+[2023-04-10 13:36:54] INFO root fetch - processPackages [cdk-eks-cluster-module]: Downloading https://files.pythonhosted.org/packages/c3/6d/1a7ad27379fc8b3ae8c87aa19cbc6f4c69b7b25486eefbd17500dfb101f5/cdk-eks-cluster-module-0.0.8.tar.gz
+[2023-04-10 13:36:54] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23002890>=10485760
+[2023-04-10 13:36:54] INFO root fetch - main [MainThread]: error
+[2023-04-10 13:36:54] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-10 13:36:54] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/f3/2d/8c73b53518d3c938905df42f1f37dcd1332d5f2b369cad4fa3aba08c0d86/torchx_nightly-2023.4.9-py3-none-any.whl
+[2023-04-10 13:36:54] INFO root fetch - processPackages [cdk-eks-cluster-module]: Downloading https://files.pythonhosted.org/packages/b7/6c/b4cd531a305fd48b55a6a93824cb1c7faa62f541e7c4d6d86b095ff94607/cdk-eks-cluster-module-0.0.9.tar.gz
+[2023-04-10 13:36:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:36:54] INFO root fetch - processPackages [DLMS-SPODES]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-10 13:36:54] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-04-10 13:36:54] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.4.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230410/t/torchx-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-10 13:36:55] INFO root fetch - processPackages [cdk-eks-cluster-module]: executing diffoscope
+[2023-04-10 13:36:55] INFO root fetch - processPackages [cdk-eks-cluster-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-eks-cluster-module-0.0.8.tar.gz tmp/cdk-eks-cluster-module-0.0.9.tar.gz --markdown 20230410/c/cdk-eks-cluster-module/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 13:36:55] INFO root fetch - processPackages [DLMS-SPODES]: Downloading https://files.pythonhosted.org/packages/97/e2/60be495fca055220080de90e294b2c16ad5a60ea6485cdee969131f05bf4/DLMS_SPODES-0.8.3.tar.gz
+[2023-04-10 13:36:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:36:55] INFO root fetch - processPackages [DLMS-SPODES]: Downloading https://files.pythonhosted.org/packages/78/a8/0e1e9fd1aa9750b28e12462781d408863affaeb92dbdb8c020b6d3078e67/DLMS_SPODES-0.9.0.tar.gz
+[2023-04-10 13:36:55] INFO root fetch - processPackages [mmtools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 13:36:55] INFO root fetch - processPackages [DLMS-SPODES]: executing diffoscope
+[2023-04-10 13:36:55] INFO root fetch - processPackages [DLMS-SPODES]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DLMS_SPODES-0.8.3.tar.gz tmp/DLMS_SPODES-0.9.0.tar.gz --markdown 20230410/D/DLMS-SPODES/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 13:36:55] INFO root fetch - processPackages [mmtools]: Downloading https://files.pythonhosted.org/packages/c4/e6/d9d2332afdc8bb9531b47f10c3d6cdc000a821c0d3c45d635c023556dcb1/mmtools-0.0.8.tar.gz
+[2023-04-10 13:36:55] INFO root fetch - processPackages [mmtools]: Downloading https://files.pythonhosted.org/packages/e2/cf/f9d74b7bbf2ced12d2225fd238984b03fe51b16a905677008f5f50659494/mmtools-0.0.9.tar.gz
+[2023-04-10 13:36:56] INFO root fetch - processPackages [mmtools]: executing diffoscope
+[2023-04-10 13:36:56] INFO root fetch - processPackages [mmtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmtools-0.0.8.tar.gz tmp/mmtools-0.0.9.tar.gz --markdown 20230410/m/mmtools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 13:36:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:36:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:36:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:36:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:36:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 13:36:57] INFO root fetch - main [MainThread]: Store serial: [17645357]
