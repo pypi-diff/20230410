@@ -1315,3 +1315,131 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 02:51:54] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:52:13] INFO root fetch - main [MainThread]: success
 [2023-04-10 02:52:13] INFO root fetch - main [MainThread]: Store serial: [17640782]
+[2023-04-10 02:57:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17640782]
+[2023-04-10 02:57:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 02:57:20] INFO root fetch - processPackages [pycde]: New version: [0.2.1.dev9] Old Version: [0.2.1.dev80]
+[2023-04-10 02:57:20] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230409] Old Version: [0.0.8.dev20230408]
+[2023-04-10 02:57:20] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-10 02:57:20] INFO root fetch - processPackages [db-classifier]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 02:57:20] INFO root fetch - processPackages [PyMemoryEditor]: New version: [1.4.6] Old Version: [1.4.5]
+[2023-04-10 02:57:20] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-04-10 02:57:20] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230408.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230409.tar.gz --markdown 20230410/a/aemcmc-nightly/0.0.8.dev20230408-0.0.8.dev20230409/diff.md --exclude *.pyd
+[2023-04-10 02:57:20] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-04-10 02:57:20] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230410/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-10 02:57:20] INFO root fetch - processPackages [db-classifier]: Downloading https://files.pythonhosted.org/packages/72/61/4b71e8b91af031513cedb3c2b084339d5840975d15d6f0bc508bf3a8d97e/db-classifier-0.0.1.tar.gz
+[2023-04-10 02:57:20] INFO root fetch - processPackages [PyMemoryEditor]: Downloading https://files.pythonhosted.org/packages/ad/a3/271798cbf0039a5b38651f8074e70f1719d40315a560b5903ff6df251806/PyMemoryEditor-1.4.6.tar.gz
+[2023-04-10 02:57:20] INFO root fetch - processPackages [PyMemoryEditor]: executing diffoscope
+[2023-04-10 02:57:20] INFO root fetch - processPackages [PyMemoryEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMemoryEditor-1.4.5.tar.gz tmp/PyMemoryEditor-1.4.6.tar.gz --markdown 20230410/P/PyMemoryEditor/1.4.5-1.4.6/diff.md --exclude *.pyd
+[2023-04-10 02:57:20] INFO root fetch - processPackages [db-classifier]: Downloading https://files.pythonhosted.org/packages/02/4d/2eb848fb647ff3c2c75cb4c717b0fbd6d060fcb35f0cfec8cf17db6e5f9b/db-classifier-0.0.2.tar.gz
+[2023-04-10 02:57:20] INFO root fetch - processPackages [pycde]: executing diffoscope
+[2023-04-10 02:57:20] INFO root fetch - processPackages [pycde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycde-0.2.1.dev80-cp39-cp39-win_amd64.whl.zip tmp/pycde-0.2.1.dev9-cp39-cp39-win_amd64.whl.zip --markdown 20230410/p/pycde/0.2.1.dev80-0.2.1.dev9/diff.md --exclude *.pyd
+[2023-04-10 02:57:20] INFO root fetch - processPackages [db-classifier]: executing diffoscope
+[2023-04-10 02:57:20] INFO root fetch - processPackages [db-classifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/db-classifier-0.0.1.tar.gz tmp/db-classifier-0.0.2.tar.gz --markdown 20230410/d/db-classifier/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 02:57:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:57:21] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-10 02:57:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:57:21] INFO root fetch - processPackages [super-ec2]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 02:57:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:57:21] INFO root fetch - processPackages [xj-user]: Downloading https://files.pythonhosted.org/packages/26/be/e0d28eecf05fff47ab8dc5bf0e46eff90f3cee3ae03596f052698e5df93d/xj_user-1.2.98.tar.gz
+[2023-04-10 02:57:21] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:57:21] INFO root fetch - processPackages [super-ec2]: Downloading https://files.pythonhosted.org/packages/6f/5b/1c4410f9cdec4b306292deb7eabba0c5195fdc9ed51343c6561f7b7ae28a/super-ec2-0.0.98.tar.gz
+[2023-04-10 02:57:22] INFO root fetch - processPackages [xj-user]: Downloading https://files.pythonhosted.org/packages/f9/79/9b7536f52cd2a21b092678ce5bc888a17a7c527cef9ae891d864354f2e5c/xj_user-1.2.99.tar.gz
+[2023-04-10 02:57:22] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-10 02:57:22] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230410/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-10 02:57:23] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:57:25] INFO root fetch - processPackages [super-ec2]: Downloading https://files.pythonhosted.org/packages/0d/d0/5bf70ee0146094b68ecc7932c6443c5d3dbdfff94a43de975f62bdb1caca/super-ec2-0.0.99.tar.gz
+[2023-04-10 02:57:29] INFO root fetch - processPackages [super-ec2]: executing diffoscope
+[2023-04-10 02:57:29] INFO root fetch - processPackages [super-ec2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/super-ec2-0.0.98.tar.gz tmp/super-ec2-0.0.99.tar.gz --markdown 20230410/s/super-ec2/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 02:57:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 02:58:03] ERROR root fetch - processPackages [pycde]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=139850443399584)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=139850577616368)
+
+[2023-04-10 02:58:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 02:58:03] INFO root fetch - main [MainThread]: Store serial: [17640807]
