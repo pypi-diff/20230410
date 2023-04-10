@@ -11552,3 +11552,85 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 17:12:13] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:12:23] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:12:23] INFO root fetch - main [MainThread]: Store serial: [17647228]
+[2023-04-10 17:17:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647228]
+[2023-04-10 17:17:30] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-10 17:17:30] INFO root fetch - processPackages [dashboard-dataviz-panel]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 17:17:30] INFO root fetch - processPackages [edx-search]: New version: [3.5.0] Old Version: [3.4.0]
+[2023-04-10 17:17:30] INFO root fetch - processPackages [circuitpython-displayio-listselect]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 17:17:30] INFO root fetch - processPackages [pipestream]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 17:17:30] INFO root fetch - processPackages [th2-data-services-lwdp]: New version: [2.0.2.0.dev4658647164] Old Version: [2.0.2.0.dev4566564684]
+[2023-04-10 17:17:31] INFO root fetch - processPackages [dashboard-dataviz-panel]: Downloading https://files.pythonhosted.org/packages/f2/eb/1ffd125d5648a8029be06288dc0204c9d3c86c69e29fbce39ad2096b3a2d/dashboard_dataviz_panel-0.1.0-py3-none-any.whl
+[2023-04-10 17:17:31] INFO root fetch - processPackages [circuitpython-displayio-listselect]: Downloading https://files.pythonhosted.org/packages/ca/c3/2f9eee9b085313880fe07e8c4aa0172659372a5196995014c5eb22ce2ddd/circuitpython-displayio-listselect-1.0.0.tar.gz
+[2023-04-10 17:17:31] INFO root fetch - processPackages [pipestream]: Downloading https://files.pythonhosted.org/packages/df/20/774b8d84fe0de5e6bd1ef973e4d2a5b248b710b448c3b1c9a005bad19889/pipestream-1.0.0.tar.gz
+[2023-04-10 17:17:31] INFO root fetch - processPackages [edx-search]: Downloading https://files.pythonhosted.org/packages/33/d4/d8a7b16e4f340f19b696024a504bc9cdb0b481b607d37277ee3ac8cfc415/edx-search-3.4.0.tar.gz
+[2023-04-10 17:17:31] INFO root fetch - processPackages [th2-data-services-lwdp]: Downloading https://files.pythonhosted.org/packages/ef/b4/7945bb731eb5eca13f936a522eb03fd743982b928a8cfc7e98e3fe7641e1/th2_data_services_lwdp-2.0.2.0.dev4566564684.tar.gz
+[2023-04-10 17:17:31] INFO root fetch - processPackages [dashboard-dataviz-panel]: Downloading https://files.pythonhosted.org/packages/41/38/496f94a00bc9b70ae4b8a2b1125f5ffe915e9cced090d73f58badb8b8edc/dashboard_dataviz_panel-0.1.1-py3-none-any.whl
+[2023-04-10 17:17:31] INFO root fetch - processPackages [circuitpython-displayio-listselect]: Downloading https://files.pythonhosted.org/packages/6f/0f/feaeb286fc287f9ad6b7e7a2b32385250a38264b52bb06fe74540b9dc21b/circuitpython-displayio-listselect-1.0.1.tar.gz
+[2023-04-10 17:17:31] INFO root fetch - processPackages [pipestream]: Downloading https://files.pythonhosted.org/packages/a2/5e/bf7c88f04779fca15b0f60fa02a01a283bcd88ceaae40fbbb86734417db5/pipestream-1.0.1.tar.gz
+[2023-04-10 17:17:31] INFO root fetch - processPackages [dashboard-dataviz-panel]: executing diffoscope
+[2023-04-10 17:17:31] INFO root fetch - processPackages [dashboard-dataviz-panel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dashboard_dataviz_panel-0.1.0-py3-none-any.whl.zip tmp/dashboard_dataviz_panel-0.1.1-py3-none-any.whl.zip --markdown 20230410/d/dashboard-dataviz-panel/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 17:17:31] INFO root fetch - processPackages [pipestream]: executing diffoscope
+[2023-04-10 17:17:31] INFO root fetch - processPackages [circuitpython-displayio-listselect]: executing diffoscope
+[2023-04-10 17:17:31] INFO root fetch - processPackages [circuitpython-displayio-listselect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-displayio-listselect-1.0.0.tar.gz tmp/circuitpython-displayio-listselect-1.0.1.tar.gz --markdown 20230410/c/circuitpython-displayio-listselect/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 17:17:31] INFO root fetch - processPackages [pipestream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipestream-1.0.0.tar.gz tmp/pipestream-1.0.1.tar.gz --markdown 20230410/p/pipestream/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 17:17:31] INFO root fetch - processPackages [edx-search]: Downloading https://files.pythonhosted.org/packages/c7/45/95ebfb2c7f83b0a5e63257c1e0fae94f4cb9bcbfe789b04d334a47971b63/edx-search-3.5.0.tar.gz
+[2023-04-10 17:17:31] INFO root fetch - processPackages [th2-data-services-lwdp]: Downloading https://files.pythonhosted.org/packages/bc/8b/ae03fa1a0e84683a5463ecc808d6bfeef82485499340d618519e902b97af/th2_data_services_lwdp-2.0.2.0.dev4658647164.tar.gz
+[2023-04-10 17:17:31] INFO root fetch - processPackages [edx-search]: executing diffoscope
+[2023-04-10 17:17:31] INFO root fetch - processPackages [edx-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edx-search-3.4.0.tar.gz tmp/edx-search-3.5.0.tar.gz --markdown 20230410/e/edx-search/3.4.0-3.5.0/diff.md --exclude *.pyd
+[2023-04-10 17:17:31] INFO root fetch - processPackages [th2-data-services-lwdp]: executing diffoscope
+[2023-04-10 17:17:31] INFO root fetch - processPackages [th2-data-services-lwdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_data_services_lwdp-2.0.2.0.dev4566564684.tar.gz tmp/th2_data_services_lwdp-2.0.2.0.dev4658647164.tar.gz --markdown 20230410/t/th2-data-services-lwdp/2.0.2.0.dev4566564684-2.0.2.0.dev4658647164/diff.md --exclude *.pyd
+[2023-04-10 17:17:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:32] INFO root fetch - processPackages [discord-advert-framework]: New version: [2.6.0] Old Version: [2.5.3]
+[2023-04-10 17:17:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:32] INFO root fetch - processPackages [novadata-utils]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-10 17:17:32] INFO root fetch - processPackages [discord-advert-framework]: Downloading https://files.pythonhosted.org/packages/fd/e1/b282512957c6614808c1086b26ad09e5f9b1d2c0d952fc843e273990d23b/discord-advert-framework-2.5.3.tar.gz
+[2023-04-10 17:17:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:32] INFO root fetch - processPackages [kaflow]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 17:17:32] INFO root fetch - processPackages [novadata-utils]: Downloading https://files.pythonhosted.org/packages/a8/34/33de182732514989298fbb2f06be7f7edc4356db34cb77a8ec079caf52c8/novadata_utils-0.2.3.tar.gz
+[2023-04-10 17:17:32] INFO root fetch - processPackages [novadata-utils]: executing diffoscope
+[2023-04-10 17:17:32] INFO root fetch - processPackages [novadata-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novadata_utils-0.2.2.tar.gz tmp/novadata_utils-0.2.3.tar.gz --markdown 20230410/n/novadata-utils/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-10 17:17:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:32] INFO root fetch - processPackages [chemotools]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-10 17:17:32] INFO root fetch - processPackages [kaflow]: Downloading https://files.pythonhosted.org/packages/af/e0/b192c81f7f3820557cbb614e3f2702099f16d77ee3393b24444c7aa682e5/kaflow-0.1.2.tar.gz
+[2023-04-10 17:17:32] INFO root fetch - processPackages [kaflow]: executing diffoscope
+[2023-04-10 17:17:32] INFO root fetch - processPackages [kaflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaflow-0.1.1.tar.gz tmp/kaflow-0.1.2.tar.gz --markdown 20230410/k/kaflow/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 17:17:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:33] INFO root fetch - processPackages [chemotools]: Downloading https://files.pythonhosted.org/packages/c0/48/155af3a48bbea514a4daaa6152ac25b5bb502d28ec9e270f74576f66ee89/chemotools-0.0.7.tar.gz
+[2023-04-10 17:17:33] INFO root fetch - processPackages [edx-enterprise]: New version: [3.9.9] Old Version: [3.9.7]
+[2023-04-10 17:17:33] INFO root fetch - processPackages [chemotools]: Downloading https://files.pythonhosted.org/packages/a4/fa/4b535fc354bf39a56cdfcc0c096bdf6d2b738fbb6cd75b60b8ffae5d3bc6/chemotools-0.0.8.tar.gz
+[2023-04-10 17:17:33] INFO root fetch - processPackages [chemotools]: executing diffoscope
+[2023-04-10 17:17:33] INFO root fetch - processPackages [chemotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemotools-0.0.7.tar.gz tmp/chemotools-0.0.8.tar.gz --markdown 20230410/c/chemotools/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-10 17:17:33] INFO root fetch - processPackages [edx-enterprise]: Downloading https://files.pythonhosted.org/packages/31/14/7af8e7af4219b3659c93f15ec88cde96f71a35adbaec1864a90d441e9384/edx-enterprise-3.9.7.tar.gz
+[2023-04-10 17:17:33] WARNING root fetch - processPackages [discord-advert-framework]: Skipping package: exceeds size limit 16939706>=10485760
+[2023-04-10 17:17:33] INFO root fetch - main [MainThread]: error
+[2023-04-10 17:17:33] INFO root fetch - processPackages [tkreform]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-10 17:17:33] INFO root fetch - processPackages [tkreform]: Downloading https://files.pythonhosted.org/packages/fc/38/d9a79b7ada3f49bac5be0abe9416bc013d8a1a94371a25db9070f9d8b46a/tkreform-0.2.2.tar.gz
+[2023-04-10 17:17:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:33] INFO root fetch - processPackages [elabapi-python]: New version: [0.2.0] Old Version: [0.1.7]
+[2023-04-10 17:17:33] INFO root fetch - processPackages [tkreform]: Downloading https://files.pythonhosted.org/packages/1c/43/1f61de790862e0dd82d91ceaf507008ca760e75225b313dceae70f395815/tkreform-0.3.0.tar.gz
+[2023-04-10 17:17:33] INFO root fetch - processPackages [tkreform]: executing diffoscope
+[2023-04-10 17:17:33] INFO root fetch - processPackages [tkreform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkreform-0.2.2.tar.gz tmp/tkreform-0.3.0.tar.gz --markdown 20230410/t/tkreform/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-10 17:17:34] INFO root fetch - processPackages [elabapi-python]: Downloading https://files.pythonhosted.org/packages/8b/ee/f0611d88ed280abc116f348cf06c1d4377eb111b19e2ce59b06cde0c79e6/elabapi-python-0.1.7.tar.gz
+[2023-04-10 17:17:34] INFO root fetch - processPackages [edx-enterprise]: Downloading https://files.pythonhosted.org/packages/b6/01/e7734ff2b8f6d6288a0edc22ce723b9bbba2ac16c120cd41e4335f023837/edx-enterprise-3.9.9.tar.gz
+[2023-04-10 17:17:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:34] INFO root fetch - processPackages [discord-py-interactions]: New version: [5.0.0] Old Version: [4.4.1]
+[2023-04-10 17:17:34] INFO root fetch - processPackages [discord-py-interactions]: Downloading https://files.pythonhosted.org/packages/b6/4a/96fa6daef3db596656e439265f8e16cb419644f93e7965732912050888db/discord-py-interactions-4.4.1.tar.gz
+[2023-04-10 17:17:34] INFO root fetch - processPackages [edx-enterprise]: executing diffoscope
+[2023-04-10 17:17:34] INFO root fetch - processPackages [edx-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edx-enterprise-3.9.7.tar.gz tmp/edx-enterprise-3.9.9.tar.gz --markdown 20230410/e/edx-enterprise/3.9.7-3.9.9/diff.md --exclude *.pyd
+[2023-04-10 17:17:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:34] INFO root fetch - processPackages [sneakpeek-py]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 17:17:34] INFO root fetch - processPackages [elabapi-python]: Downloading https://files.pythonhosted.org/packages/6c/9b/5750ce43421b75437774a625f116bb49288462b9606a49f94f330652551e/elabapi-python-0.2.0.tar.gz
+[2023-04-10 17:17:34] INFO root fetch - processPackages [discord-py-interactions]: executing diffoscope
+[2023-04-10 17:17:34] INFO root fetch - processPackages [discord-py-interactions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-py-interactions-4.4.1.tar.gz tmp/discord-py-interactions-5.0.0.tar.gz --markdown 20230410/d/discord-py-interactions/4.4.1-5.0.0/diff.md --exclude *.pyd
+[2023-04-10 17:17:34] INFO root fetch - processPackages [elabapi-python]: executing diffoscope
+[2023-04-10 17:17:34] INFO root fetch - processPackages [elabapi-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elabapi-python-0.1.7.tar.gz tmp/elabapi-python-0.2.0.tar.gz --markdown 20230410/e/elabapi-python/0.1.7-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 17:17:34] INFO root fetch - processPackages [sneakpeek-py]: Downloading https://files.pythonhosted.org/packages/50/5b/e1d3ac24aad7881c99f50ed36e7e2fc732c13c3081d7587d9f554acb6451/sneakpeek_py-0.1.0.tar.gz
+[2023-04-10 17:17:34] INFO root fetch - processPackages [sneakpeek-py]: Downloading https://files.pythonhosted.org/packages/2b/a2/d8f285f467a8e09d5d1eba3ea793fcb8e31aea98edf49c21040c006458c4/sneakpeek_py-0.1.1.tar.gz
+[2023-04-10 17:17:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:35] INFO root fetch - processPackages [sneakpeek-py]: executing diffoscope
+[2023-04-10 17:17:35] INFO root fetch - processPackages [sneakpeek-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sneakpeek_py-0.1.0.tar.gz tmp/sneakpeek_py-0.1.1.tar.gz --markdown 20230410/s/sneakpeek-py/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 17:17:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:17:38] INFO root fetch - main [MainThread]: Store serial: [17647267]
