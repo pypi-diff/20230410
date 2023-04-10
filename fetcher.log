@@ -14700,3 +14700,124 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 21:26:19] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:26:22] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:26:22] INFO root fetch - main [MainThread]: Store serial: [17649565]
+[2023-04-10 21:31:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649565]
+[2023-04-10 21:31:30] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-04-10 21:31:30] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-10 21:31:30] INFO root fetch - processPackages [convtools]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-04-10 21:31:30] WARNING root fetch - processPackages [pyllms]: Skipping, unable to determine old version
+[2023-04-10 21:31:30] INFO root fetch - main [MainThread]: error
+[2023-04-10 21:31:30] INFO root fetch - processPackages [NetGsm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-10 21:31:30] INFO root fetch - processPackages [circup]: New version: [1.2.0] Old Version: [1.1.5]
+[2023-04-10 21:31:30] INFO root fetch - processPackages [pepelimpiezas]: New version: [0.4] Old Version: [0.3]
+[2023-04-10 21:31:30] INFO root fetch - processPackages [convtools]: Downloading https://files.pythonhosted.org/packages/b1/dd/64a55ef00a8cf5ab536bed5157306151bf8b9b7c70b1d62092f5204b52ac/convtools-1.1.2.tar.gz
+[2023-04-10 21:31:30] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: Downloading https://files.pythonhosted.org/packages/ea/54/6bf13cb9d57a01641363fc9468f24695092a5666812a549bcd43fa803f56/raindancers-network.raindancers-cdk-1.9.8.tar.gz
+[2023-04-10 21:31:30] INFO root fetch - processPackages [NetGsm]: Downloading https://files.pythonhosted.org/packages/17/54/34fa338f5d25c02725e55e73ab4b19aa361c412b00117ff0fe7c0b0eb4da/NetGsm-0.0.4.tar.gz
+[2023-04-10 21:31:30] INFO root fetch - processPackages [pepelimpiezas]: Downloading https://files.pythonhosted.org/packages/45/31/8292a02b9d423628eb3a777c274e327b401612da25b66347f2b5c2e636b6/pepelimpiezas-0.4.tar.gz
+[2023-04-10 21:31:30] INFO root fetch - processPackages [pepelimpiezas]: executing diffoscope
+[2023-04-10 21:31:30] INFO root fetch - processPackages [pepelimpiezas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepelimpiezas-0.3.tar.gz tmp/pepelimpiezas-0.4.tar.gz --markdown 20230410/p/pepelimpiezas/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-10 21:31:30] INFO root fetch - processPackages [circup]: Downloading https://files.pythonhosted.org/packages/ad/eb/fc0fbd8296a78ddcd7afda1b119b700dbd1017b5946f857807d6cc1c0e8d/circup-1.1.5.tar.gz
+[2023-04-10 21:31:30] INFO root fetch - processPackages [convtools]: Downloading https://files.pythonhosted.org/packages/b0/4a/57244afe9144c7a4cfe4497fca7c400ffe88315988690a21a733753856c0/convtools-1.2.0.tar.gz
+[2023-04-10 21:31:30] INFO root fetch - processPackages [convtools]: executing diffoscope
+[2023-04-10 21:31:30] INFO root fetch - processPackages [convtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convtools-1.1.2.tar.gz tmp/convtools-1.2.0.tar.gz --markdown 20230410/c/convtools/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-04-10 21:31:30] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: Downloading https://files.pythonhosted.org/packages/9a/d5/818105d18635e2296178505d8da89a15b0b8c0c5ecdae0cbf83882f33347/raindancers-network.raindancers-cdk-1.9.9.tar.gz
+[2023-04-10 21:31:31] INFO root fetch - processPackages [circup]: Downloading https://files.pythonhosted.org/packages/ae/74/52719ea62315bbb7e6b5a81d271d9f7cf91e3c7c59e63b433aa3838ac3a3/circup-1.2.0.tar.gz
+[2023-04-10 21:31:31] INFO root fetch - processPackages [NetGsm]: Downloading https://files.pythonhosted.org/packages/bf/3e/5688dae14168a41d1d563d0b5f1637dc048d87900f4b77ac5f0744fec747/NetGsm-0.0.5.tar.gz
+[2023-04-10 21:31:31] INFO root fetch - processPackages [circup]: executing diffoscope
+[2023-04-10 21:31:31] INFO root fetch - processPackages [circup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circup-1.1.5.tar.gz tmp/circup-1.2.0.tar.gz --markdown 20230410/c/circup/1.1.5-1.2.0/diff.md --exclude *.pyd
+[2023-04-10 21:31:31] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: executing diffoscope
+[2023-04-10 21:31:31] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raindancers-network.raindancers-cdk-1.9.8.tar.gz tmp/raindancers-network.raindancers-cdk-1.9.9.tar.gz --markdown 20230410/r/raindancers-network.raindancers-cdk/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-10 21:31:31] INFO root fetch - processPackages [NetGsm]: executing diffoscope
+[2023-04-10 21:31:31] INFO root fetch - processPackages [NetGsm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NetGsm-0.0.4.tar.gz tmp/NetGsm-0.0.5.tar.gz --markdown 20230410/N/NetGsm/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-10 21:31:31] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:31] INFO root fetch - processPackages [gumbi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 21:31:32] INFO root fetch - processPackages [gumbi]: Downloading https://files.pythonhosted.org/packages/ee/0d/4855d6499dc82e9e045f60aad98171e0446416496dc1c6c950fc7543ba03/gumbi-0.1.8.tar.gz
+[2023-04-10 21:31:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:32] INFO root fetch - processPackages [mypy-boto3-connect]: New version: [1.26.88] Old Version: [1.26.79]
+[2023-04-10 21:31:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:32] INFO root fetch - processPackages [ntlog]: New version: [0.2] Old Version: [0.1]
+[2023-04-10 21:31:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:32] INFO root fetch - processPackages [mypy-boto3-mediaconvert]: New version: [1.26.98] Old Version: [1.26.84]
+[2023-04-10 21:31:32] INFO root fetch - processPackages [mypy-boto3-connect]: Downloading https://files.pythonhosted.org/packages/bf/dd/b1ad092b8e274388d431d92c909a99aa6ce207f1d7cb783543b574a447f8/mypy-boto3-connect-1.26.79.tar.gz
+[2023-04-10 21:31:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:32] INFO root fetch - processPackages [mypy-boto3-mediaconvert]: Downloading https://files.pythonhosted.org/packages/70/c2/cd3fbd4d1b3bacc2e80a9c4df7c18566cc7a48062d4258aba8af9971eb94/mypy-boto3-mediaconvert-1.26.84.tar.gz
+[2023-04-10 21:31:32] INFO root fetch - processPackages [mypy-boto3-omics]: New version: [1.26.81] Old Version: [1.26.19]
+[2023-04-10 21:31:32] INFO root fetch - processPackages [ntlog]: Downloading https://files.pythonhosted.org/packages/94/1b/17e51fa2d15b123a6b07895c765342ae11c38f914ef9c430ebc3f153d07e/ntlog-0.2.tar.gz
+[2023-04-10 21:31:32] INFO root fetch - processPackages [ntlog]: executing diffoscope
+[2023-04-10 21:31:32] INFO root fetch - processPackages [ntlog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ntlog-0.1.tar.gz tmp/ntlog-0.2.tar.gz --markdown 20230410/n/ntlog/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-10 21:31:32] INFO root fetch - processPackages [mypy-boto3-omics]: Downloading https://files.pythonhosted.org/packages/17/bc/44c71adcd85cfdb29dcf76a8b4c521e5e13bad113e4d6917e24c68e31e57/mypy-boto3-omics-1.26.19.tar.gz
+[2023-04-10 21:31:32] INFO root fetch - processPackages [mypy-boto3-connect]: Downloading https://files.pythonhosted.org/packages/6d/7e/9234ade824a93e0ce48fee76c5187b7701a0ca9aefa6b420b41facb2ff2e/mypy-boto3-connect-1.26.88.tar.gz
+[2023-04-10 21:31:32] INFO root fetch - processPackages [mypy-boto3-mediaconvert]: Downloading https://files.pythonhosted.org/packages/df/80/71a5b3dd852f1bff66799f3ec8bf57e7b0da788ad25d2c4a43be7630fefa/mypy-boto3-mediaconvert-1.26.98.tar.gz
+[2023-04-10 21:31:33] INFO root fetch - processPackages [mypy-boto3-connect]: executing diffoscope
+[2023-04-10 21:31:33] INFO root fetch - processPackages [mypy-boto3-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-connect-1.26.79.tar.gz tmp/mypy-boto3-connect-1.26.88.tar.gz --markdown 20230410/m/mypy-boto3-connect/1.26.79-1.26.88/diff.md --exclude *.pyd
+[2023-04-10 21:31:33] INFO root fetch - processPackages [gumbi]: Downloading https://files.pythonhosted.org/packages/37/0d/85de826981a7491d6cd61159445b340d859e6ec0a66b87b49c9a942ca24e/gumbi-0.1.9.tar.gz
+[2023-04-10 21:31:33] INFO root fetch - processPackages [mypy-boto3-mediaconvert]: executing diffoscope
+[2023-04-10 21:31:33] INFO root fetch - processPackages [mypy-boto3-mediaconvert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-mediaconvert-1.26.84.tar.gz tmp/mypy-boto3-mediaconvert-1.26.98.tar.gz --markdown 20230410/m/mypy-boto3-mediaconvert/1.26.84-1.26.98/diff.md --exclude *.pyd
+[2023-04-10 21:31:33] INFO root fetch - processPackages [mypy-boto3-omics]: Downloading https://files.pythonhosted.org/packages/02/5b/51f2cb93db2b8155e8e161b2adda05009cc91e77ffae0536465a7d6b66a1/mypy-boto3-omics-1.26.81.tar.gz
+[2023-04-10 21:31:33] INFO root fetch - processPackages [mypy-boto3-omics]: executing diffoscope
+[2023-04-10 21:31:33] INFO root fetch - processPackages [mypy-boto3-omics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-omics-1.26.19.tar.gz tmp/mypy-boto3-omics-1.26.81.tar.gz --markdown 20230410/m/mypy-boto3-omics/1.26.19-1.26.81/diff.md --exclude *.pyd
+[2023-04-10 21:31:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:33] INFO root fetch - processPackages [mypy-boto3-ecs]: New version: [1.26.78] Old Version: [1.26.7]
+[2023-04-10 21:31:33] INFO root fetch - processPackages [mypy-boto3-ecs]: Downloading https://files.pythonhosted.org/packages/17/92/bf72050d290812f56c8ce87d9c9d3d8546d7f8f36666eac0adabd96870e6/mypy-boto3-ecs-1.26.7.tar.gz
+[2023-04-10 21:31:34] INFO root fetch - processPackages [mypy-boto3-ecs]: Downloading https://files.pythonhosted.org/packages/29/91/1bdba601de164e31c67323cce4baf25d287d31817908299261a503fa46f4/mypy-boto3-ecs-1.26.78.tar.gz
+[2023-04-10 21:31:34] INFO root fetch - processPackages [mypy-boto3-ecs]: executing diffoscope
+[2023-04-10 21:31:34] INFO root fetch - processPackages [mypy-boto3-ecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-ecs-1.26.7.tar.gz tmp/mypy-boto3-ecs-1.26.78.tar.gz --markdown 20230410/m/mypy-boto3-ecs/1.26.7-1.26.78/diff.md --exclude *.pyd
+[2023-04-10 21:31:34] INFO root fetch - processPackages [gumbi]: executing diffoscope
+[2023-04-10 21:31:34] INFO root fetch - processPackages [gumbi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gumbi-0.1.8.tar.gz tmp/gumbi-0.1.9.tar.gz --markdown 20230410/g/gumbi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 21:31:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:34] INFO root fetch - processPackages [mypy-boto3-marketplace-catalog]: New version: [1.26.8] Old Version: [1.26.110]
+[2023-04-10 21:31:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:34] INFO root fetch - processPackages [mypy-boto3-marketplace-catalog]: Downloading https://files.pythonhosted.org/packages/23/14/948782e03a97302fd73effa1fc775d1eace6500bf0810d925562173b6017/mypy-boto3-marketplace-catalog-1.26.110.tar.gz
+[2023-04-10 21:31:34] INFO root fetch - processPackages [mypy-boto3-rekognition]: New version: [1.26.8] Old Version: [1.26.28]
+[2023-04-10 21:31:34] INFO root fetch - processPackages [mypy-boto3-rekognition]: Downloading https://files.pythonhosted.org/packages/30/69/9cf0a41f18c3260ace475dd983059d92acf632dcb0ac11089106edf79c0c/mypy-boto3-rekognition-1.26.28.tar.gz
+[2023-04-10 21:31:34] INFO root fetch - processPackages [mypy-boto3-marketplace-catalog]: Downloading https://files.pythonhosted.org/packages/c7/c9/dffcdeb54f05ef4acaa674d25502b1f3b52290c6a17f2e56e7e154dda87d/mypy-boto3-marketplace-catalog-1.26.8.tar.gz
+[2023-04-10 21:31:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:34] INFO root fetch - processPackages [mypy-boto3]: New version: [1.26.99] Old Version: [1.26.98]
+[2023-04-10 21:31:35] INFO root fetch - processPackages [mypy-boto3-marketplace-catalog]: executing diffoscope
+[2023-04-10 21:31:35] INFO root fetch - processPackages [mypy-boto3-marketplace-catalog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-marketplace-catalog-1.26.110.tar.gz tmp/mypy-boto3-marketplace-catalog-1.26.8.tar.gz --markdown 20230410/m/mypy-boto3-marketplace-catalog/1.26.110-1.26.8/diff.md --exclude *.pyd
+[2023-04-10 21:31:35] INFO root fetch - processPackages [mypy-boto3-rekognition]: Downloading https://files.pythonhosted.org/packages/be/46/b12faf034bd1f64586116ebf441f68c4383719bd08d998ef061861bbb314/mypy-boto3-rekognition-1.26.8.tar.gz
+[2023-04-10 21:31:35] INFO root fetch - processPackages [mypy-boto3]: executing diffoscope
+[2023-04-10 21:31:35] INFO root fetch - processPackages [mypy-boto3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-1.26.98.tar.gz tmp/mypy-boto3-1.26.99.tar.gz --markdown 20230410/m/mypy-boto3/1.26.98-1.26.99/diff.md --exclude *.pyd
+[2023-04-10 21:31:35] INFO root fetch - processPackages [mypy-boto3-rekognition]: executing diffoscope
+[2023-04-10 21:31:35] INFO root fetch - processPackages [mypy-boto3-rekognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-rekognition-1.26.28.tar.gz tmp/mypy-boto3-rekognition-1.26.8.tar.gz --markdown 20230410/m/mypy-boto3-rekognition/1.26.28-1.26.8/diff.md --exclude *.pyd
+[2023-04-10 21:31:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:35] INFO root fetch - processPackages [boto3-stubs]: New version: [1.26.99] Old Version: [1.26.98]
+[2023-04-10 21:31:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:36] INFO root fetch - processPackages [boto3-stubs-lite]: New version: [1.26.99] Old Version: [1.26.98]
+[2023-04-10 21:31:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:36] INFO root fetch - processPackages [boto3-stubs]: executing diffoscope
+[2023-04-10 21:31:36] INFO root fetch - processPackages [boto3-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boto3-stubs-1.26.98.tar.gz tmp/boto3-stubs-1.26.99.tar.gz --markdown 20230410/b/boto3-stubs/1.26.98-1.26.99/diff.md --exclude *.pyd
+[2023-04-10 21:31:36] INFO root fetch - processPackages [jms-metabolite-services]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-04-10 21:31:36] INFO root fetch - processPackages [jms-metabolite-services]: Downloading https://files.pythonhosted.org/packages/06/36/b823e56b11ca1b51e710dbb00329f37f360492fd83eab800f561a1be853c/jms-metabolite-services-0.5.5.tar.gz
+[2023-04-10 21:31:36] INFO root fetch - processPackages [jms-metabolite-services]: executing diffoscope
+[2023-04-10 21:31:36] INFO root fetch - processPackages [jms-metabolite-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jms-metabolite-services-0.5.4.tar.gz tmp/jms-metabolite-services-0.5.5.tar.gz --markdown 20230410/j/jms-metabolite-services/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-04-10 21:31:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:36] INFO root fetch - processPackages [doppkit]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-10 21:31:36] INFO root fetch - processPackages [doppkit]: Downloading https://files.pythonhosted.org/packages/9b/ec/507a7c2d334f271c1de8cc68b4aa33971aee619ee28f9242d1bee3f16806/doppkit-0.1.7.tar.gz
+[2023-04-10 21:31:36] INFO root fetch - processPackages [doppkit]: executing diffoscope
+[2023-04-10 21:31:36] INFO root fetch - processPackages [doppkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doppkit-0.1.6.tar.gz tmp/doppkit-0.1.7.tar.gz --markdown 20230410/d/doppkit/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-10 21:31:37] INFO root fetch - processPackages [boto3-stubs-lite]: executing diffoscope
+[2023-04-10 21:31:37] INFO root fetch - processPackages [boto3-stubs-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boto3-stubs-lite-1.26.98.tar.gz tmp/boto3-stubs-lite-1.26.99.tar.gz --markdown 20230410/b/boto3-stubs-lite/1.26.98-1.26.99/diff.md --exclude *.pyd
+[2023-04-10 21:31:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:37] INFO root fetch - processPackages [dlint]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-10 21:31:37] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:37] INFO root fetch - processPackages [pymmcore-plus]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-04-10 21:31:37] INFO root fetch - processPackages [dlint]: Downloading https://files.pythonhosted.org/packages/f5/e5/2641041b68397ce88df925085d2fb33b367379684a6974f8a2239d9aafca/dlint-0.9.1-py2.py3-none-any.whl
+[2023-04-10 21:31:37] INFO root fetch - processPackages [pymmcore-plus]: Downloading https://files.pythonhosted.org/packages/ed/13/2ddacdb19642c24266d869eeaa8769d26913b449ca42e9482f456bb4909e/pymmcore_plus-0.6.6.tar.gz
+[2023-04-10 21:31:38] INFO root fetch - processPackages [dlint]: Downloading https://files.pythonhosted.org/packages/a2/15/56a614ae1ddc15515cb1fa7ec7fb5ab4e5f0c2192ee6d927e0713e31d4c7/dlint-0.9.2-py2.py3-none-any.whl
+[2023-04-10 21:31:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:38] INFO root fetch - processPackages [robodk]: New version: [5.5.5] Old Version: [5.5.4]
+[2023-04-10 21:31:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:38] INFO root fetch - processPackages [pymmcore-plus]: Downloading https://files.pythonhosted.org/packages/f6/80/59c57b90ce21c6ddcb3a10191de88587d30576d6415ce690428c3420672a/pymmcore_plus-0.6.7.tar.gz
+[2023-04-10 21:31:38] INFO root fetch - processPackages [dlint]: executing diffoscope
+[2023-04-10 21:31:38] INFO root fetch - processPackages [dlint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlint-0.9.1-py2.py3-none-any.whl.zip tmp/dlint-0.9.2-py2.py3-none-any.whl.zip --markdown 20230410/d/dlint/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-10 21:31:38] INFO root fetch - processPackages [pymmcore-plus]: executing diffoscope
+[2023-04-10 21:31:38] INFO root fetch - processPackages [pymmcore-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymmcore_plus-0.6.6.tar.gz tmp/pymmcore_plus-0.6.7.tar.gz --markdown 20230410/p/pymmcore-plus/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-04-10 21:31:38] INFO root fetch - processPackages [robodk]: Downloading https://files.pythonhosted.org/packages/b2/89/ba3c72980886cc0dca32d9f738cd9e6f5849f70119ebc0fcd6a84789f01e/robodk-5.5.4-py2.py3-none-any.whl
+[2023-04-10 21:31:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:38] INFO root fetch - processPackages [robodk]: Downloading https://files.pythonhosted.org/packages/cf/df/d061cd2302b09e786307708c8ae2db220f9a42b9db7272aff1ce73dfbed1/robodk-5.5.5-py2.py3-none-any.whl
+[2023-04-10 21:31:38] INFO root fetch - processPackages [robodk]: executing diffoscope
+[2023-04-10 21:31:38] INFO root fetch - processPackages [robodk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robodk-5.5.4-py2.py3-none-any.whl.zip tmp/robodk-5.5.5-py2.py3-none-any.whl.zip --markdown 20230410/r/robodk/5.5.4-5.5.5/diff.md --exclude *.pyd
+[2023-04-10 21:31:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:31:39] INFO root fetch - main [MainThread]: Store serial: [17649630]
