@@ -14029,3 +14029,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 20:28:28] INFO root fetch - processPackages [mmda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmda-0.3.0.tar.gz tmp/mmda-0.3.6.tar.gz --markdown 20230410/m/mmda/0.3.0-0.3.6/diff.md --exclude *.pyd
 [2023-04-10 20:28:31] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:28:31] INFO root fetch - main [MainThread]: Store serial: [17649141]
+[2023-04-10 20:33:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649141]
+[2023-04-10 20:33:38] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 20:33:38] INFO root fetch - processPackages [longitudinal-trends]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-10 20:33:38] INFO root fetch - processPackages [cythereal-magic]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-10 20:33:38] INFO root fetch - processPackages [aleimi]: New version: [0.0.1] Old Version: [0.0.0a3]
+[2023-04-10 20:33:38] INFO root fetch - processPackages [pysparkler]: New version: [0.3.dev1681151702] Old Version: [0.3.dev1680911761]
+[2023-04-10 20:33:38] INFO root fetch - processPackages [hikari-yuyo]: New version: [1.9.1a1] Old Version: [1.9.0a1]
+[2023-04-10 20:33:38] INFO root fetch - processPackages [cythereal-magic]: executing diffoscope
+[2023-04-10 20:33:38] INFO root fetch - processPackages [cythereal-magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cythereal-magic-1.9.0.tar.gz tmp/cythereal-magic-1.9.1.tar.gz --markdown 20230410/c/cythereal-magic/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-10 20:33:39] INFO root fetch - processPackages [longitudinal-trends]: Downloading https://files.pythonhosted.org/packages/06/6e/73e891ef59b91242e875003b45d9823877fd4577a924487804d33c9c739c/longitudinal_trends-0.0.5.tar.gz
+[2023-04-10 20:33:39] INFO root fetch - processPackages [hikari-yuyo]: Downloading https://files.pythonhosted.org/packages/1c/73/32fc9673b8d6caca075ddb668365e3aa1106cc59f6f654a108dd3cbcd8d2/hikari-yuyo-1.9.0a1.tar.gz
+[2023-04-10 20:33:39] INFO root fetch - processPackages [aleimi]: Downloading https://files.pythonhosted.org/packages/38/b6/961ecd38d95276bd80894cdb4245eae3b09b9f4caa54b0bdbc9c3f34fad6/aleimi-0.0.0a3.tar.gz
+[2023-04-10 20:33:39] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/5e/7b/a7c44feb53260664f529e92bf64a1267e3d10cd56fdfaac42ed61fbb4ff6/pysparkler-0.3.dev1681151702.tar.gz
+[2023-04-10 20:33:39] INFO root fetch - processPackages [longitudinal-trends]: Downloading https://files.pythonhosted.org/packages/ec/70/68803b954b98109c8c31a2420818b40fd9ece85e2fcbcabffe1258064a1a/longitudinal_trends-0.1.0.tar.gz
+[2023-04-10 20:33:39] INFO root fetch - processPackages [longitudinal-trends]: executing diffoscope
+[2023-04-10 20:33:39] INFO root fetch - processPackages [longitudinal-trends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/longitudinal_trends-0.0.5.tar.gz tmp/longitudinal_trends-0.1.0.tar.gz --markdown 20230410/l/longitudinal-trends/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-10 20:33:39] INFO root fetch - processPackages [pysparkler]: executing diffoscope
+[2023-04-10 20:33:39] INFO root fetch - processPackages [pysparkler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkler-0.3.dev1680911761.tar.gz tmp/pysparkler-0.3.dev1681151702.tar.gz --markdown 20230410/p/pysparkler/0.3.dev1680911761-0.3.dev1681151702/diff.md --exclude *.pyd
+[2023-04-10 20:33:39] INFO root fetch - processPackages [aleimi]: Downloading https://files.pythonhosted.org/packages/e7/4a/b70dbefaf87428ff5326e324289576607d352ebc0f7acfe368f0f5925805/aleimi-0.0.1.tar.gz
+[2023-04-10 20:33:39] INFO root fetch - processPackages [aleimi]: executing diffoscope
+[2023-04-10 20:33:39] INFO root fetch - processPackages [aleimi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aleimi-0.0.0a3.tar.gz tmp/aleimi-0.0.1.tar.gz --markdown 20230410/a/aleimi/0.0.0a3-0.0.1/diff.md --exclude *.pyd
+[2023-04-10 20:33:39] INFO root fetch - processPackages [hikari-yuyo]: Downloading https://files.pythonhosted.org/packages/38/c1/0564a1baefa3a6c0538e4b894416ec1ea5e8ea0f5acd37bcfe6185089477/hikari-yuyo-1.9.1a1.tar.gz
+[2023-04-10 20:33:40] INFO root fetch - processPackages [hikari-yuyo]: executing diffoscope
+[2023-04-10 20:33:40] INFO root fetch - processPackages [hikari-yuyo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari-yuyo-1.9.0a1.tar.gz tmp/hikari-yuyo-1.9.1a1.tar.gz --markdown 20230410/h/hikari-yuyo/1.9.0a1-1.9.1a1/diff.md --exclude *.pyd
+[2023-04-10 20:33:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:33:40] WARNING root fetch - processPackages [astronomica]: Skipping, unable to determine old version
+[2023-04-10 20:33:40] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:33:40] INFO root fetch - processPackages [pyhOn]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-10 20:33:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:33:40] INFO root fetch - processPackages [conbench]: New version: [2023.4.6] Old Version: [2023.4.5]
+[2023-04-10 20:33:40] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/ed/f4/f0a75337c4a87cda07a01e7a548f6ad769d835bfc18edf3d31009401cf5a/pyhOn-0.6.3.tar.gz
+[2023-04-10 20:33:40] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-10 20:33:40] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.6.2.tar.gz tmp/pyhOn-0.6.3.tar.gz --markdown 20230410/p/pyhOn/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-10 20:33:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:33:40] WARNING root fetch - processPackages [boxline]: Skipping, unable to determine old version
+[2023-04-10 20:33:40] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:33:40] INFO root fetch - processPackages [FileCrawler]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-10 20:33:40] INFO root fetch - processPackages [conbench]: Downloading https://files.pythonhosted.org/packages/97/b4/fba3e0839b793e226eea71fc04ede30b9d82209bce271ae5ac82daf3a9b1/conbench-2023.4.5.tar.gz
+[2023-04-10 20:33:40] INFO root fetch - processPackages [FileCrawler]: Downloading https://files.pythonhosted.org/packages/b3/7e/fa7604c9b20ce584095f421a5a62d5b2f38071aaf350d1c6e1fa9598ac3c/FileCrawler-0.1.5.tar.gz
+[2023-04-10 20:33:41] INFO root fetch - processPackages [conbench]: Downloading https://files.pythonhosted.org/packages/50/d1/e7a966e13c8c2e66495ce51e768699c3b4e6da456ee11c819ecd243234d7/conbench-2023.4.6.tar.gz
+[2023-04-10 20:33:41] INFO root fetch - processPackages [conbench]: executing diffoscope
+[2023-04-10 20:33:41] INFO root fetch - processPackages [conbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conbench-2023.4.5.tar.gz tmp/conbench-2023.4.6.tar.gz --markdown 20230410/c/conbench/2023.4.5-2023.4.6/diff.md --exclude *.pyd
+[2023-04-10 20:33:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:33:41] WARNING root fetch - processPackages [FileCrawler]: Skipping package: exceeds size limit 23443377>=10485760
+[2023-04-10 20:33:41] INFO root fetch - main [MainThread]: error
+[2023-04-10 20:33:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:33:42] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:33:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:33:43] INFO root fetch - main [MainThread]: Store serial: [17649172]
