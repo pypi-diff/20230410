@@ -5283,3 +5283,23 @@ EOFError: EOF read where object expected
 [2023-04-10 08:06:44] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:06:45] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:06:45] INFO root fetch - main [MainThread]: Store serial: [17643357]
+[2023-04-10 08:11:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643357]
+[2023-04-10 08:11:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-10 08:11:52] INFO root fetch - processPackages [pynarrator]: New version: [0.0.1.8] Old Version: [0.0.1.7]
+[2023-04-10 08:11:52] INFO root fetch - processPackages [llama-cpp-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 08:11:52] WARNING root fetch - processPackages [mylibKIv1]: Skipping, unable to determine old version
+[2023-04-10 08:11:52] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:11:52] INFO root fetch - processPackages [cparo]: New version: [2.1] Old Version: [0.1]
+[2023-04-10 08:11:52] INFO root fetch - processPackages [cparo]: Downloading https://files.pythonhosted.org/packages/fb/73/2c31ddb32e0189fa4fa2fec16623b0a71e26d1953cd0ef19c6bcc2823b0d/cparo-0.1.tar.gz
+[2023-04-10 08:11:52] INFO root fetch - processPackages [llama-cpp-python]: executing diffoscope
+[2023-04-10 08:11:52] INFO root fetch - processPackages [llama-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_python-0.1.8.tar.gz tmp/llama_cpp_python-0.1.9.tar.gz --markdown 20230410/l/llama-cpp-python/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 08:11:53] INFO root fetch - processPackages [pynarrator]: Downloading https://files.pythonhosted.org/packages/c3/c2/1dc39449dd8639f766e83588c3358735b6ce2a313b8d3530a3a1e7c7d6de/pynarrator-0.0.1.8.tar.gz
+[2023-04-10 08:11:53] INFO root fetch - processPackages [pynarrator]: executing diffoscope
+[2023-04-10 08:11:53] INFO root fetch - processPackages [pynarrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynarrator-0.0.1.7.tar.gz tmp/pynarrator-0.0.1.8.tar.gz --markdown 20230410/p/pynarrator/0.0.1.7-0.0.1.8/diff.md --exclude *.pyd
+[2023-04-10 08:11:53] INFO root fetch - processPackages [cparo]: Downloading https://files.pythonhosted.org/packages/92/f0/db7f5eb325d2a2cc0a87035bd5bc3bb6f9ac772f25f1475b79106136943b/cparo-2.1.tar.gz
+[2023-04-10 08:11:53] INFO root fetch - processPackages [cparo]: executing diffoscope
+[2023-04-10 08:11:53] INFO root fetch - processPackages [cparo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cparo-0.1.tar.gz tmp/cparo-2.1.tar.gz --markdown 20230410/c/cparo/0.1-2.1/diff.md --exclude *.pyd
+[2023-04-10 08:11:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:11:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:11:54] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:11:54] INFO root fetch - main [MainThread]: Store serial: [17643368]
