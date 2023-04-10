@@ -15042,3 +15042,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 21:48:13] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:48:15] INFO root fetch - main [MainThread]: success
 [2023-04-10 21:48:15] INFO root fetch - main [MainThread]: Store serial: [17649767]
+[2023-04-10 21:53:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649767]
+[2023-04-10 21:53:23] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 21:53:23] INFO root fetch - processPackages [pandacolumns]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 21:53:23] INFO root fetch - processPackages [turkle]: New version: [2.7.1] Old Version: [2.7.0]
+[2023-04-10 21:53:23] INFO root fetch - processPackages [SimPEG]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-10 21:53:23] INFO root fetch - processPackages [buttervolume]: New version: [3.9] Old Version: [3.8]
+[2023-04-10 21:53:23] INFO root fetch - processPackages [adviz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 21:53:23] INFO root fetch - processPackages [SimPEG]: Downloading https://files.pythonhosted.org/packages/28/12/eb784bea87f286b1a51d2ad7684304f4e926f44d50b1c7363d3b7d35d43e/SimPEG-0.9.3.tar.gz
+[2023-04-10 21:53:23] INFO root fetch - processPackages [turkle]: Downloading https://files.pythonhosted.org/packages/34/e6/017d209ced839267ca5d66f799e6028eca89d5dfa95636d102fb90289d55/turkle-2.7.0.tar.gz
+[2023-04-10 21:53:23] INFO root fetch - processPackages [pandacolumns]: Downloading https://files.pythonhosted.org/packages/c5/89/8267e2bf5e845e633b6f32863a2bdd83205adb3cc28943f97e44b2b10091/pandacolumns-0.1.2.tar.gz
+[2023-04-10 21:53:23] INFO root fetch - processPackages [buttervolume]: Downloading https://files.pythonhosted.org/packages/59/98/ba0572f374b2345861c4276b9da10b21c0c554ba8a4f97bd8a61cfd78bc4/buttervolume-3.8.tar.gz
+[2023-04-10 21:53:23] INFO root fetch - processPackages [pandacolumns]: executing diffoscope
+[2023-04-10 21:53:23] INFO root fetch - processPackages [pandacolumns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandacolumns-0.1.1.tar.gz tmp/pandacolumns-0.1.2.tar.gz --markdown 20230410/p/pandacolumns/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 21:53:23] INFO root fetch - processPackages [buttervolume]: Downloading https://files.pythonhosted.org/packages/63/ed/c9c71d39a4a4a3ed0eea1aa4e975e981922fbbee0fa215bc249930d0a822/buttervolume-3.9.tar.gz
+[2023-04-10 21:53:23] INFO root fetch - processPackages [SimPEG]: Downloading https://files.pythonhosted.org/packages/98/1e/a7cbf93302a2b70b1bc7a08571ba05f326947fbadce3d737817012b99c51/SimPEG-0.9.4.tar.gz
+[2023-04-10 21:53:24] INFO root fetch - processPackages [adviz]: Downloading https://files.pythonhosted.org/packages/2d/81/59f7261f85c6e1621cc7c1328af9be5beadd4246f73620fcf0cd9cb0e3b9/adviz-0.0.9.tar.gz
+[2023-04-10 21:53:24] INFO root fetch - processPackages [adviz]: executing diffoscope
+[2023-04-10 21:53:24] INFO root fetch - processPackages [adviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adviz-0.0.8.tar.gz tmp/adviz-0.0.9.tar.gz --markdown 20230410/a/adviz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 21:53:24] INFO root fetch - processPackages [buttervolume]: executing diffoscope
+[2023-04-10 21:53:24] INFO root fetch - processPackages [buttervolume]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buttervolume-3.8.tar.gz tmp/buttervolume-3.9.tar.gz --markdown 20230410/b/buttervolume/3.8-3.9/diff.md --exclude *.pyd
+[2023-04-10 21:53:24] INFO root fetch - processPackages [turkle]: Downloading https://files.pythonhosted.org/packages/ca/5b/1badad1079505dba883fa9067b16419eb49876289abae1512663c74adf40/turkle-2.7.1.tar.gz
+[2023-04-10 21:53:24] INFO root fetch - processPackages [turkle]: executing diffoscope
+[2023-04-10 21:53:24] INFO root fetch - processPackages [turkle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turkle-2.7.0.tar.gz tmp/turkle-2.7.1.tar.gz --markdown 20230410/t/turkle/2.7.0-2.7.1/diff.md --exclude *.pyd
+[2023-04-10 21:53:24] INFO root fetch - processPackages [SimPEG]: executing diffoscope
+[2023-04-10 21:53:24] INFO root fetch - processPackages [SimPEG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimPEG-0.9.3.tar.gz tmp/SimPEG-0.9.4.tar.gz --markdown 20230410/S/SimPEG/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-10 21:53:24] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:53:24] INFO root fetch - processPackages [awsslack]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 21:53:25] INFO root fetch - processPackages [awsslack]: Downloading https://files.pythonhosted.org/packages/3d/c5/4bf4dfff786ef97c4443eb63b9d382d0ab5b3daf2c521b1752f41a1e2c16/awsslack-0.1.2.tar.gz
+[2023-04-10 21:53:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:53:25] INFO root fetch - processPackages [pytorch-forecasting]: New version: [1.0.0] Old Version: [0.9.2]
+[2023-04-10 21:53:25] INFO root fetch - processPackages [awsslack]: executing diffoscope
+[2023-04-10 21:53:25] INFO root fetch - processPackages [awsslack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awsslack-0.1.1.tar.gz tmp/awsslack-0.1.2.tar.gz --markdown 20230410/a/awsslack/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 21:53:25] INFO root fetch - processPackages [pytorch-forecasting]: Downloading https://files.pythonhosted.org/packages/6d/f5/7b942fb72e67568b6312eb5120764e1f90e335be23ddfa7ec0cd51b26c31/pytorch_forecasting-0.9.2.tar.gz
+[2023-04-10 21:53:26] INFO root fetch - processPackages [pytorch-forecasting]: Downloading https://files.pythonhosted.org/packages/02/7b/c931802d961f0818dd8da74003fb98b0e1102bfe56a05eff01966596280a/pytorch_forecasting-1.0.0.tar.gz
+[2023-04-10 21:53:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:53:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:53:26] INFO root fetch - processPackages [pytorch-forecasting]: executing diffoscope
+[2023-04-10 21:53:26] INFO root fetch - processPackages [pytorch-forecasting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch_forecasting-0.9.2.tar.gz tmp/pytorch_forecasting-1.0.0.tar.gz --markdown 20230410/p/pytorch-forecasting/0.9.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-10 21:53:26] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:53:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:53:32] INFO root fetch - main [MainThread]: success
+[2023-04-10 21:53:32] INFO root fetch - main [MainThread]: Store serial: [17649794]
