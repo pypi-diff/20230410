@@ -10750,3 +10750,178 @@ EOFError: EOF read where object expected
 [2023-04-10 16:20:56] INFO root fetch - main [MainThread]: success
 [2023-04-10 16:20:56] INFO root fetch - main [MainThread]: success
 [2023-04-10 16:20:56] INFO root fetch - main [MainThread]: Store serial: [17646725]
+[2023-04-10 16:25:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646725]
+[2023-04-10 16:26:04] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-10 16:26:04] INFO root fetch - processPackages [yeagerai-agent]: New version: [0.0.33] Old Version: [0.0.32]
+[2023-04-10 16:26:04] INFO root fetch - processPackages [naruno-api]: New version: [0.55.0] Old Version: [0.54.2]
+[2023-04-10 16:26:04] INFO root fetch - processPackages [naruno-remote-app]: New version: [0.55.0] Old Version: [0.54.2]
+[2023-04-10 16:26:04] INFO root fetch - processPackages [naruno]: New version: [0.55.0] Old Version: [0.54.2]
+[2023-04-10 16:26:04] INFO root fetch - processPackages [naruno-gui]: New version: [0.55.0] Old Version: [0.54.2]
+[2023-04-10 16:26:04] INFO root fetch - processPackages [yeagerai-agent]: Downloading https://files.pythonhosted.org/packages/79/85/8867770e40e5f6569b115d4f36c42205beb526a519d67016a548309bf202/yeagerai-agent-0.0.33.tar.gz
+[2023-04-10 16:26:05] INFO root fetch - processPackages [yeagerai-agent]: executing diffoscope
+[2023-04-10 16:26:05] INFO root fetch - processPackages [yeagerai-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeagerai-agent-0.0.32.tar.gz tmp/yeagerai-agent-0.0.33.tar.gz --markdown 20230410/y/yeagerai-agent/0.0.32-0.0.33/diff.md --exclude *.pyd
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno-api]: Downloading https://files.pythonhosted.org/packages/84/a7/1acc4380f97a7e229270d625904c5651aa63b19db878ce6fbcd53790f21a/naruno_api-0.55.0.tar.gz
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno-api]: executing diffoscope
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_api-0.54.2.tar.gz tmp/naruno_api-0.55.0.tar.gz --markdown 20230410/n/naruno-api/0.54.2-0.55.0/diff.md --exclude *.pyd
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno]: Downloading https://files.pythonhosted.org/packages/18/e5/9db948a44a9b6debc3c0ec184a4453cd4a301e278b044258a4a83e7a14b2/naruno-0.55.0.tar.gz
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno-remote-app]: Downloading https://files.pythonhosted.org/packages/df/cd/9c2ff5f5fa33861ed0dc73266d6a33f0b3370140f3a6530526c80fa1b785/naruno_remote_app-0.55.0.tar.gz
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno-gui]: Downloading https://files.pythonhosted.org/packages/9f/3d/7813d8665be58daa8194e90292a4b8b487bd2d77e79f4a3736b4bc08e6f9/naruno_gui-0.55.0.tar.gz
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno]: executing diffoscope
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno-remote-app]: executing diffoscope
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno-0.54.2.tar.gz tmp/naruno-0.55.0.tar.gz --markdown 20230410/n/naruno/0.54.2-0.55.0/diff.md --exclude *.pyd
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno-remote-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_remote_app-0.54.2.tar.gz tmp/naruno_remote_app-0.55.0.tar.gz --markdown 20230410/n/naruno-remote-app/0.54.2-0.55.0/diff.md --exclude *.pyd
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno-gui]: executing diffoscope
+[2023-04-10 16:26:05] INFO root fetch - processPackages [naruno-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_gui-0.54.2.tar.gz tmp/naruno_gui-0.55.0.tar.gz --markdown 20230410/n/naruno-gui/0.54.2-0.55.0/diff.md --exclude *.pyd
+[2023-04-10 16:26:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:06] INFO root fetch - processPackages [naruno-tests]: New version: [0.55.0] Old Version: [0.54.2]
+[2023-04-10 16:26:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:06] INFO root fetch - processPackages [paymentech]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-04-10 16:26:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:06] INFO root fetch - processPackages [coolmongo]: New version: [1.3] Old Version: [1.0]
+[2023-04-10 16:26:06] INFO root fetch - processPackages [naruno-tests]: Downloading https://files.pythonhosted.org/packages/0b/1b/98c4ca7f21367084f5b0c71e51cec81c88f047cdd8d8bc2aa2adc60e0d7f/naruno_tests-0.55.0.tar.gz
+[2023-04-10 16:26:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:06] INFO root fetch - processPackages [naruno-tests]: executing diffoscope
+[2023-04-10 16:26:06] INFO root fetch - processPackages [naruno-tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_tests-0.54.2.tar.gz tmp/naruno_tests-0.55.0.tar.gz --markdown 20230410/n/naruno-tests/0.54.2-0.55.0/diff.md --exclude *.pyd
+[2023-04-10 16:26:06] INFO root fetch - processPackages [qtpy-frameless-window]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-10 16:26:06] INFO root fetch - processPackages [paymentech]: Downloading https://files.pythonhosted.org/packages/22/0a/3a0f7d3d224171be5a6d49e7c7267f4880f592e4221e7b082436ef42b8ee/paymentech-0.2.9.tar.gz
+[2023-04-10 16:26:06] INFO root fetch - processPackages [coolmongo]: Downloading https://files.pythonhosted.org/packages/00/78/3fa3455d9c766d59d6fb9ef8941c829c56872f36f90a51a8d9df474ae333/coolmongo-1.0.tar.gz
+[2023-04-10 16:26:06] INFO root fetch - processPackages [qtpy-frameless-window]: Downloading https://files.pythonhosted.org/packages/22/0d/d697a871229c2325bdae570555860805e9d6c15a622e1b248e9fcb7bf8a7/QtPy-Frameless-Window-0.0.5.tar.gz
+[2023-04-10 16:26:06] INFO root fetch - processPackages [paymentech]: Downloading https://files.pythonhosted.org/packages/d6/a3/a043e9b03608eba6c941f7db8d59971c2cbccb314eb02615495c32bdc6f0/paymentech-0.3.0.tar.gz
+[2023-04-10 16:26:06] INFO root fetch - processPackages [qtpy-frameless-window]: Downloading https://files.pythonhosted.org/packages/b2/4a/4036d0eaaff8f34fb0a18192e8cc8bd4474c57ea2f2ba01f91cf2f97ea16/QtPy-Frameless-Window-0.0.6.tar.gz
+[2023-04-10 16:26:06] INFO root fetch - processPackages [paymentech]: executing diffoscope
+[2023-04-10 16:26:06] INFO root fetch - processPackages [paymentech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paymentech-0.2.9.tar.gz tmp/paymentech-0.3.0.tar.gz --markdown 20230410/p/paymentech/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-04-10 16:26:06] INFO root fetch - processPackages [qtpy-frameless-window]: executing diffoscope
+[2023-04-10 16:26:06] INFO root fetch - processPackages [qtpy-frameless-window]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QtPy-Frameless-Window-0.0.5.tar.gz tmp/QtPy-Frameless-Window-0.0.6.tar.gz --markdown 20230410/q/qtpy-frameless-window/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-10 16:26:06] INFO root fetch - processPackages [coolmongo]: Downloading https://files.pythonhosted.org/packages/61/49/8818371ecf0d4456975cd085d2b1428536c12248a74d47546db34de2ca80/coolmongo-1.3.tar.gz
+[2023-04-10 16:26:06] INFO root fetch - processPackages [coolmongo]: executing diffoscope
+[2023-04-10 16:26:06] INFO root fetch - processPackages [coolmongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coolmongo-1.0.tar.gz tmp/coolmongo-1.3.tar.gz --markdown 20230410/c/coolmongo/1.0-1.3/diff.md --exclude *.pyd
+[2023-04-10 16:26:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:07] INFO root fetch - processPackages [coolmysql]: New version: [1.3] Old Version: [1.0]
+[2023-04-10 16:26:07] INFO root fetch - processPackages [coolmysql]: Downloading https://files.pythonhosted.org/packages/56/e8/c09a4e992233a6f908d07d44c577e281e963f29d1898d6e5b0f5bedbb380/coolmysql-1.0.tar.gz
+[2023-04-10 16:26:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:07] INFO root fetch - processPackages [pdfje]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-10 16:26:07] INFO root fetch - processPackages [pdfje]: Downloading https://files.pythonhosted.org/packages/11/57/ae26cc5eb8c3946ee9dfbf2aaf6b9a138797816e9a93fc32c61ed929d390/pdfje-0.3.0.tar.gz
+[2023-04-10 16:26:07] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:07] INFO root fetch - processPackages [xfps]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 16:26:07] INFO root fetch - processPackages [coolmysql]: Downloading https://files.pythonhosted.org/packages/3e/58/4d1ee989b60df01151efd346b19084233c042b8533ce3eca28d6544784c6/coolmysql-1.3.tar.gz
+[2023-04-10 16:26:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:08] INFO root fetch - processPackages [coolmysql]: executing diffoscope
+[2023-04-10 16:26:08] INFO root fetch - processPackages [coolmysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coolmysql-1.0.tar.gz tmp/coolmysql-1.3.tar.gz --markdown 20230410/c/coolmysql/1.0-1.3/diff.md --exclude *.pyd
+[2023-04-10 16:26:08] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.55.9] Old Version: [1.55.8]
+[2023-04-10 16:26:08] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:08] INFO root fetch - processPackages [cm-two]: New version: [2.2.62] Old Version: [2.2.61]
+[2023-04-10 16:26:08] INFO root fetch - processPackages [xfps]: Downloading https://files.pythonhosted.org/packages/1f/74/0d80ed1e5eddc1270102c275569256a2ae20d3a49f18f5a842dc94a7e5bf/xfps-0.1.8.tar.gz
+[2023-04-10 16:26:08] INFO root fetch - processPackages [pdfje]: Downloading https://files.pythonhosted.org/packages/a8/83/c7ec04fdfd559d33651909cd1c99865edff7969ad50f05fe54a9ea10b98a/pdfje-0.4.0.tar.gz
+[2023-04-10 16:26:08] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/6d/dd/78416734848b3e65cee27d2029a24ed08df96d4fa20b2f0b25986e3597c5/Simba-UW-tf-dev-1.55.9.tar.gz
+[2023-04-10 16:26:08] INFO root fetch - processPackages [cm-two]: Downloading https://files.pythonhosted.org/packages/b6/9d/2bbd15dc51f47a7096218d8de05a5dce0a9d79c64a5b8d0a6d65871b6b7f/cm_two-2.2.62-py3-none-any.whl
+[2023-04-10 16:26:08] INFO root fetch - processPackages [pdfje]: executing diffoscope
+[2023-04-10 16:26:08] INFO root fetch - processPackages [pdfje]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfje-0.3.0.tar.gz tmp/pdfje-0.4.0.tar.gz --markdown 20230410/p/pdfje/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-10 16:26:08] INFO root fetch - processPackages [cm-two]: executing diffoscope
+[2023-04-10 16:26:08] INFO root fetch - processPackages [cm-two]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cm_two-2.2.61-py3-none-any.whl.zip tmp/cm_two-2.2.62-py3-none-any.whl.zip --markdown 20230410/c/cm-two/2.2.61-2.2.62/diff.md --exclude *.pyd
+[2023-04-10 16:26:08] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-04-10 16:26:08] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.55.8.tar.gz tmp/Simba-UW-tf-dev-1.55.9.tar.gz --markdown 20230410/S/Simba-UW-tf-dev/1.55.8-1.55.9/diff.md --exclude *.pyd
+[2023-04-10 16:26:08] INFO root fetch - processPackages [xfps]: Downloading https://files.pythonhosted.org/packages/3d/b2/e8fe0882c623ebaf1bd3afe417b51c943682e9f2b04c080deb9b7dab4681/xfps-0.1.9.tar.gz
+[2023-04-10 16:26:08] INFO root fetch - processPackages [xfps]: executing diffoscope
+[2023-04-10 16:26:08] INFO root fetch - processPackages [xfps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xfps-0.1.8.tar.gz tmp/xfps-0.1.9.tar.gz --markdown 20230410/x/xfps/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 16:26:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:09] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 16:26:09] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: executing diffoscope
+[2023-04-10 16:26:09] INFO root fetch - processPackages [airflow-provider-huawei-cloud-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-provider-huawei-cloud-demo-0.0.8.tar.gz tmp/airflow-provider-huawei-cloud-demo-0.0.9.tar.gz --markdown 20230410/a/airflow-provider-huawei-cloud-demo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 16:26:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:09] INFO root fetch - processPackages [dashscope]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 16:26:09] ERROR root fetch - processPackages [cm-two]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+[2023-04-10 16:26:09] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:26:09] WARNING root fetch - processPackages [chemotools]: Skipping, unable to determine old version
+[2023-04-10 16:26:09] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:26:09] INFO root fetch - processPackages [dashscope]: executing diffoscope
+[2023-04-10 16:26:09] INFO root fetch - processPackages [dashscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dashscope-1.0.1.tar.gz tmp/dashscope-1.0.2.tar.gz --markdown 20230410/d/dashscope/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 16:26:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:26:17] INFO root fetch - main [MainThread]: Store serial: [17646775]
