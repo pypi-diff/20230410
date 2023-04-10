@@ -5466,3 +5466,30 @@ EOFError: EOF read where object expected
 [2023-04-10 08:32:48] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:32:48] INFO root fetch - main [MainThread]: success
 [2023-04-10 08:32:48] INFO root fetch - main [MainThread]: Store serial: [17643478]
+[2023-04-10 08:37:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17643478]
+[2023-04-10 08:37:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 08:37:55] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-10 08:37:55] INFO root fetch - processPackages [aliyun-python-sdk-sae]: New version: [1.5.0.0] Old Version: [1.4.0.0]
+[2023-04-10 08:37:55] WARNING root fetch - processPackages [taichu-model-server]: Skipping, unable to determine old version
+[2023-04-10 08:37:55] INFO root fetch - main [MainThread]: error
+[2023-04-10 08:37:55] INFO root fetch - processPackages [awsdf]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 08:37:55] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-10 08:37:55] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-10 08:37:55] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-10 08:37:55] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230410/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 08:37:55] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-04-10 08:37:55] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230410/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-10 08:37:55] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-10 08:37:55] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230410/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 08:37:55] INFO root fetch - processPackages [aliyun-python-sdk-sae]: Downloading https://files.pythonhosted.org/packages/3d/76/6d44a1750921d969a1fee042ce45d1a3bd615551b8024108f6524c51203e/aliyun-python-sdk-sae-1.4.0.0.tar.gz
+[2023-04-10 08:37:55] INFO root fetch - processPackages [awsdf]: executing diffoscope
+[2023-04-10 08:37:55] INFO root fetch - processPackages [awsdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awsdf-0.1.8.tar.gz tmp/awsdf-0.1.9.tar.gz --markdown 20230410/a/awsdf/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 08:37:56] INFO root fetch - processPackages [aliyun-python-sdk-sae]: Downloading https://files.pythonhosted.org/packages/e8/27/1d897f1edc5071a6615cffa1f8fd6b93916abc9d6a83c0106a115627d2fa/aliyun-python-sdk-sae-1.5.0.0.tar.gz
+[2023-04-10 08:37:56] INFO root fetch - processPackages [aliyun-python-sdk-sae]: executing diffoscope
+[2023-04-10 08:37:56] INFO root fetch - processPackages [aliyun-python-sdk-sae]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-sae-1.4.0.0.tar.gz tmp/aliyun-python-sdk-sae-1.5.0.0.tar.gz --markdown 20230410/a/aliyun-python-sdk-sae/1.4.0.0-1.5.0.0/diff.md --exclude *.pyd
+[2023-04-10 08:37:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:37:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:37:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:37:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:37:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 08:37:58] INFO root fetch - main [MainThread]: Store serial: [17643498]
