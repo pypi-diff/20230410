@@ -4175,3 +4175,40 @@ EOFError: EOF read where object expected
 [2023-04-10 05:40:04] INFO root fetch - processPackages [memory-compressed-attention]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memory_compressed_attention-0.0.6.tar.gz tmp/memory_compressed_attention-0.0.7.tar.gz --markdown 20230410/m/memory-compressed-attention/0.0.6-0.0.7/diff.md --exclude *.pyd
 [2023-04-10 05:40:05] INFO root fetch - main [MainThread]: success
 [2023-04-10 05:40:05] INFO root fetch - main [MainThread]: Store serial: [17642464]
+[2023-04-10 05:45:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642464]
+[2023-04-10 05:45:12] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 05:45:12] WARNING root fetch - processPackages [synthetic-dataset]: Skipping, unable to determine old version
+[2023-04-10 05:45:12] WARNING root fetch - processPackages [decisionlab]: Skipping, unable to determine old version
+[2023-04-10 05:45:12] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:45:12] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:45:12] WARNING root fetch - processPackages [Postprocessing-and-POSEA]: Skipping, unable to determine old version
+[2023-04-10 05:45:12] INFO root fetch - main [MainThread]: error
+[2023-04-10 05:45:12] INFO root fetch - processPackages [keepvariable]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 05:45:12] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-10 05:45:12] INFO root fetch - processPackages [laion-clap]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-10 05:45:12] INFO root fetch - processPackages [anduin]: New version: [8.4.9] Old Version: [8.4.8]
+[2023-04-10 05:45:12] INFO root fetch - processPackages [aiotruenas-client]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-10 05:45:12] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-04-10 05:45:12] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230410/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-10 05:45:12] INFO root fetch - processPackages [keepvariable]: Downloading https://files.pythonhosted.org/packages/f8/54/ed74db844e827757f120fd1db8ae766ecbeac6c2c2756c0b70ad3c90b772/keepvariable-1.0.1.tar.gz
+[2023-04-10 05:45:12] INFO root fetch - processPackages [laion-clap]: Downloading https://files.pythonhosted.org/packages/4c/33/f76f976d5733f92b1830a612708b9bf884be51ffe251635bd8b6ec1249b2/laion_clap-1.1.2.tar.gz
+[2023-04-10 05:45:12] INFO root fetch - processPackages [anduin]: Downloading https://files.pythonhosted.org/packages/db/f5/eea627f2bbdc694d1370fe3584a1ebbc97ad08d6c294efc4b37bde2cdf1f/anduin-8.4.8.tar.gz
+[2023-04-10 05:45:12] INFO root fetch - processPackages [aiotruenas-client]: Downloading https://files.pythonhosted.org/packages/89/8a/add1897b964b4811ed2512dfcd62c3a0c59286882519b6d2485ba91d9471/aiotruenas-client-0.8.0.tar.gz
+[2023-04-10 05:45:13] INFO root fetch - processPackages [keepvariable]: Downloading https://files.pythonhosted.org/packages/91/c0/b762ce928ce0fe1da91ae4233b80473aa3330c4e906f91ebd4a43eb4dfda/keepvariable-1.0.2.tar.gz
+[2023-04-10 05:45:13] INFO root fetch - processPackages [anduin]: Downloading https://files.pythonhosted.org/packages/98/fa/f41e09d1f702e3f73d7c2fef1e8d19f14b31c3fea0a1f5fed3925b3093d0/anduin-8.4.9.tar.gz
+[2023-04-10 05:45:13] INFO root fetch - processPackages [aiotruenas-client]: Downloading https://files.pythonhosted.org/packages/3b/cd/3d8dde45fcbb5f354c2e6d8267627dcf3dccf59d9a7cdff9e12feb07955d/aiotruenas-client-0.9.0.tar.gz
+[2023-04-10 05:45:13] INFO root fetch - processPackages [keepvariable]: executing diffoscope
+[2023-04-10 05:45:13] INFO root fetch - processPackages [keepvariable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keepvariable-1.0.1.tar.gz tmp/keepvariable-1.0.2.tar.gz --markdown 20230410/k/keepvariable/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 05:45:13] INFO root fetch - processPackages [laion-clap]: Downloading https://files.pythonhosted.org/packages/42/06/c8c62e00dec73660ef04075023dc25cc7d3bf878a06f2efdf81956c91456/laion_clap-1.1.3.tar.gz
+[2023-04-10 05:45:13] INFO root fetch - processPackages [anduin]: executing diffoscope
+[2023-04-10 05:45:13] INFO root fetch - processPackages [anduin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anduin-8.4.8.tar.gz tmp/anduin-8.4.9.tar.gz --markdown 20230410/a/anduin/8.4.8-8.4.9/diff.md --exclude *.pyd
+[2023-04-10 05:45:13] INFO root fetch - processPackages [aiotruenas-client]: executing diffoscope
+[2023-04-10 05:45:13] INFO root fetch - processPackages [aiotruenas-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotruenas-client-0.8.0.tar.gz tmp/aiotruenas-client-0.9.0.tar.gz --markdown 20230410/a/aiotruenas-client/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 05:45:14] INFO root fetch - processPackages [laion-clap]: executing diffoscope
+[2023-04-10 05:45:14] INFO root fetch - processPackages [laion-clap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laion_clap-1.1.2.tar.gz tmp/laion_clap-1.1.3.tar.gz --markdown 20230410/l/laion-clap/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-10 05:45:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:45:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:45:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:45:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:45:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 05:45:15] INFO root fetch - main [MainThread]: Store serial: [17642493]
