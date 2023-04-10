@@ -6807,3 +6807,115 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 10:56:29] INFO root fetch - main [MainThread]: success
 [2023-04-10 10:56:47] INFO root fetch - main [MainThread]: success
 [2023-04-10 10:56:47] INFO root fetch - main [MainThread]: Store serial: [17644363]
+[2023-04-10 11:01:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644363]
+[2023-04-10 11:01:54] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-10 11:01:54] INFO root fetch - processPackages [voliboli-sgqlc-types]: New version: [1.8] Old Version: [1.7]
+[2023-04-10 11:01:54] INFO root fetch - processPackages [pure-safetensors]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-10 11:01:54] INFO root fetch - processPackages [sphoin]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-10 11:01:54] INFO root fetch - processPackages [PyQt6-sip]: New version: [13.5.0] Old Version: [13.4.1]
+[2023-04-10 11:01:54] INFO root fetch - processPackages [PyQt5-sip]: New version: [4.19.19] Old Version: [4.19.18]
+[2023-04-10 11:01:54] INFO root fetch - processPackages [voliboli-sgqlc-types]: Downloading https://files.pythonhosted.org/packages/1b/64/ee0230d201819d0ef4c97a778ce8505c771b22d70f15d0aa7361bae91b99/voliboli_sgqlc_types-1.7.tar.gz
+[2023-04-10 11:01:54] INFO root fetch - processPackages [pure-safetensors]: Downloading https://files.pythonhosted.org/packages/2f/d8/c128d444b889d8aeb1a7ad2b4cd3142a778b51235ee0af64de2e35a8c423/pure_safetensors-0.1.0.tar.gz
+[2023-04-10 11:01:54] INFO root fetch - processPackages [PyQt6-sip]: Downloading https://files.pythonhosted.org/packages/1e/24/99d1f9938afd58cf2d6120454cb36214bd76e18443b130b80b09fb368579/PyQt6_sip-13.4.1.tar.gz
+[2023-04-10 11:01:54] INFO root fetch - processPackages [PyQt5-sip]: Downloading https://files.pythonhosted.org/packages/cf/c8/1e9eda4ba09a84fc528d4c87001de2d7a8cbbe04c2a834af3eb81a0ecd88/PyQt5_sip-4.19.18-cp37-none-win_amd64.whl
+[2023-04-10 11:01:54] INFO root fetch - processPackages [sphoin]: executing diffoscope
+[2023-04-10 11:01:54] INFO root fetch - processPackages [sphoin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphoin-2.0.8.tar.gz tmp/sphoin-2.0.9.tar.gz --markdown 20230410/s/sphoin/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-10 11:01:54] INFO root fetch - processPackages [voliboli-sgqlc-types]: Downloading https://files.pythonhosted.org/packages/f0/56/60e57591f789d68ad89ffd7ad7f30ce57e7de6906a2e9d58178bde7f5157/voliboli_sgqlc_types-1.8.tar.gz
+[2023-04-10 11:01:54] INFO root fetch - processPackages [PyQt6-sip]: Downloading https://files.pythonhosted.org/packages/23/fd/530e274c4d7d39645478156063de266d7d3c1fb70ba9f38372a75094ed51/PyQt6_sip-13.5.0.tar.gz
+[2023-04-10 11:01:54] INFO root fetch - processPackages [voliboli-sgqlc-types]: executing diffoscope
+[2023-04-10 11:01:54] INFO root fetch - processPackages [voliboli-sgqlc-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voliboli_sgqlc_types-1.7.tar.gz tmp/voliboli_sgqlc_types-1.8.tar.gz --markdown 20230410/v/voliboli-sgqlc-types/1.7-1.8/diff.md --exclude *.pyd
+[2023-04-10 11:01:54] INFO root fetch - processPackages [PyQt5-sip]: Downloading https://files.pythonhosted.org/packages/9b/ca/f61051460610126dc89b354345c8319183cae938ed87b51ba03ba03f2a1e/PyQt5_sip-4.19.19-cp38-none-win_amd64.whl
+[2023-04-10 11:01:54] INFO root fetch - processPackages [PyQt6-sip]: executing diffoscope
+[2023-04-10 11:01:54] INFO root fetch - processPackages [PyQt6-sip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_sip-13.4.1.tar.gz tmp/PyQt6_sip-13.5.0.tar.gz --markdown 20230410/P/PyQt6-sip/13.4.1-13.5.0/diff.md --exclude *.pyd
+[2023-04-10 11:01:54] INFO root fetch - processPackages [pure-safetensors]: Downloading https://files.pythonhosted.org/packages/3c/94/29291c5673d85c7ab1eb143491d9369a669eaac215a9188d1d7e3a79f653/pure_safetensors-0.2.0.tar.gz
+[2023-04-10 11:01:54] INFO root fetch - processPackages [pure-safetensors]: executing diffoscope
+[2023-04-10 11:01:54] INFO root fetch - processPackages [pure-safetensors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_safetensors-0.1.0.tar.gz tmp/pure_safetensors-0.2.0.tar.gz --markdown 20230410/p/pure-safetensors/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 11:01:55] INFO root fetch - processPackages [PyQt5-sip]: executing diffoscope
+[2023-04-10 11:01:55] INFO root fetch - processPackages [PyQt5-sip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt5_sip-4.19.18-cp37-none-win_amd64.whl.zip tmp/PyQt5_sip-4.19.19-cp38-none-win_amd64.whl.zip --markdown 20230410/P/PyQt5-sip/4.19.18-4.19.19/diff.md --exclude *.pyd
+[2023-04-10 11:01:55] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:55] INFO root fetch - processPackages [botoolkit]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-10 11:01:55] INFO root fetch - processPackages [botoolkit]: Downloading https://files.pythonhosted.org/packages/19/ff/d8289351388ee37892ed395bb7b5d9e7608a48f8c49bb3c4fd400f3788cf/botoolkit-1.1.8.tar.gz
+[2023-04-10 11:01:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:56] WARNING root fetch - processPackages [gitstorage]: Skipping, unable to determine old version
+[2023-04-10 11:01:56] INFO root fetch - main [MainThread]: error
+[2023-04-10 11:01:56] INFO root fetch - processPackages [tatarubot2]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 11:01:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:56] INFO root fetch - processPackages [sip]: New version: [6.7.8] Old Version: [6.7.7]
+[2023-04-10 11:01:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:56] INFO root fetch - processPackages [autogluon.common]: New version: [0.7.0b20230410] Old Version: [0.7.0b20230409]
+[2023-04-10 11:01:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:56] INFO root fetch - processPackages [PyQt-builder]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-10 11:01:56] INFO root fetch - processPackages [sip]: Downloading https://files.pythonhosted.org/packages/f1/ba/19f9cb16416a3c98bd5969b1bd9bf3c92dd278788d8d949ed66b8e0edf0d/sip-6.7.7.tar.gz
+[2023-04-10 11:01:56] INFO root fetch - processPackages [botoolkit]: Downloading https://files.pythonhosted.org/packages/1f/9a/a069946b17b7b0c9aacf88a9600b172f5b4c8a29c391f3e4bbe3cb93eec2/botoolkit-1.1.9.tar.gz
+[2023-04-10 11:01:56] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/5f/99/b6c4269ad18c400947d7a2879f6d32ec38d1acc8be988947175094facad6/autogluon.common-0.7.0b20230410.tar.gz
+[2023-04-10 11:01:56] INFO root fetch - processPackages [PyQt-builder]: Downloading https://files.pythonhosted.org/packages/22/61/ddb67823c67ba12597908221413d817602a511e0c60fe926b58d49222332/PyQt-builder-1.9.0.tar.gz
+[2023-04-10 11:01:56] INFO root fetch - processPackages [tatarubot2]: Downloading https://files.pythonhosted.org/packages/b5/b8/aaf969b88496c34e5ddf4f612a7cf3320be97ad3d908ec6ddbbec61a9fa8/tatarubot2-0.1.1.tar.gz
+[2023-04-10 11:01:56] INFO root fetch - processPackages [tatarubot2]: executing diffoscope
+[2023-04-10 11:01:56] INFO root fetch - processPackages [tatarubot2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tatarubot2-0.1.0.tar.gz tmp/tatarubot2-0.1.1.tar.gz --markdown 20230410/t/tatarubot2/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 11:01:56] INFO root fetch - processPackages [sip]: Downloading https://files.pythonhosted.org/packages/c7/09/68bfefcdc48875e66aabafc946620483d0cd93aba52dde37d2059e5bf927/sip-6.7.8.tar.gz
+[2023-04-10 11:01:56] INFO root fetch - processPackages [botoolkit]: executing diffoscope
+[2023-04-10 11:01:56] INFO root fetch - processPackages [botoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botoolkit-1.1.8.tar.gz tmp/botoolkit-1.1.9.tar.gz --markdown 20230410/b/botoolkit/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-10 11:01:56] INFO root fetch - processPackages [sip]: executing diffoscope
+[2023-04-10 11:01:56] INFO root fetch - processPackages [sip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sip-6.7.7.tar.gz tmp/sip-6.7.8.tar.gz --markdown 20230410/s/sip/6.7.7-6.7.8/diff.md --exclude *.pyd
+[2023-04-10 11:01:56] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2023-04-10 11:01:56] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-0.7.0b20230409.tar.gz tmp/autogluon.common-0.7.0b20230410.tar.gz --markdown 20230410/a/autogluon.common/0.7.0b20230409-0.7.0b20230410/diff.md --exclude *.pyd
+[2023-04-10 11:01:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:57] INFO root fetch - processPackages [autogluon.core]: New version: [0.7.0b20230410] Old Version: [0.7.0b20230409]
+[2023-04-10 11:01:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:57] INFO root fetch - processPackages [autogluon.features]: New version: [0.7.0b20230410] Old Version: [0.7.0b20230409]
+[2023-04-10 11:01:57] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/d9/45/68aa513aa9b1e67a6cc2155b263cd3e73b3c9dfc562248a2d22ad66fff08/autogluon.core-0.7.0b20230410.tar.gz
+[2023-04-10 11:01:58] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/8a/bb/fbac73d35395bfa6ad9f9055c190baef23732a712af040b05b2f78090428/autogluon.features-0.7.0b20230410.tar.gz
+[2023-04-10 11:01:58] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2023-04-10 11:01:58] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-0.7.0b20230409.tar.gz tmp/autogluon.core-0.7.0b20230410.tar.gz --markdown 20230410/a/autogluon.core/0.7.0b20230409-0.7.0b20230410/diff.md --exclude *.pyd
+[2023-04-10 11:01:58] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:58] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2023-04-10 11:01:58] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-0.7.0b20230409.tar.gz tmp/autogluon.features-0.7.0b20230410.tar.gz --markdown 20230410/a/autogluon.features/0.7.0b20230409-0.7.0b20230410/diff.md --exclude *.pyd
+[2023-04-10 11:01:58] INFO root fetch - processPackages [hecto-agent]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 11:01:58] INFO root fetch - processPackages [hecto-agent]: Downloading https://files.pythonhosted.org/packages/d7/14/6ba9af439ce422ab9d6d5bdc9735c457d28499a85eb5f6cc4af2947bc32f/hecto_agent-0.0.2.tar.gz
+[2023-04-10 11:01:58] INFO root fetch - processPackages [hecto-agent]: Downloading https://files.pythonhosted.org/packages/6f/e3/bc5dd5ccf57059522186484c1dcccc9f68c714fd2d6e6fd4e01f93a0a959/hecto_agent-0.0.3.tar.gz
+[2023-04-10 11:01:58] INFO root fetch - processPackages [hecto-agent]: executing diffoscope
+[2023-04-10 11:01:58] INFO root fetch - processPackages [hecto-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hecto_agent-0.0.2.tar.gz tmp/hecto_agent-0.0.3.tar.gz --markdown 20230410/h/hecto-agent/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 11:01:59] INFO root fetch - processPackages [PyQt-builder]: Downloading https://files.pythonhosted.org/packages/22/c9/862c300cc29ab43664f539451c69aaf0d45766818a3a7671d6ec01635430/PyQt-builder-1.9.1.tar.gz
+[2023-04-10 11:01:59] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:59] INFO root fetch - processPackages [autogluon.tabular]: New version: [0.7.0b20230410] Old Version: [0.7.0b20230409]
+[2023-04-10 11:01:59] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/d9/74/19060e5b2434602650cda40a8a9f443835c5dbf37752ccf939bdeb9cf252/autogluon.tabular-0.7.0b20230410.tar.gz
+[2023-04-10 11:01:59] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:59] INFO root fetch - processPackages [autogluon.multimodal]: New version: [0.7.0b20230410] Old Version: [0.7.0b20230409]
+[2023-04-10 11:01:59] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:01:59] INFO root fetch - processPackages [autogluon.timeseries]: New version: [0.7.0b20230410] Old Version: [0.7.0b20230409]
+[2023-04-10 11:01:59] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/c1/c9/8bacf696d968129ba16f268d33140703d38a620c27893acb63811ed39369/autogluon.multimodal-0.7.0b20230410.tar.gz
+[2023-04-10 11:01:59] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/c4/a2/aca78e1c2c0a6f163a1cca4f384b77c94b3f0030403549a92d20c4cdb2b5/autogluon.timeseries-0.7.0b20230410.tar.gz
+[2023-04-10 11:02:00] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2023-04-10 11:02:00] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-0.7.0b20230409.tar.gz tmp/autogluon.multimodal-0.7.0b20230410.tar.gz --markdown 20230410/a/autogluon.multimodal/0.7.0b20230409-0.7.0b20230410/diff.md --exclude *.pyd
+[2023-04-10 11:02:00] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2023-04-10 11:02:00] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-0.7.0b20230409.tar.gz tmp/autogluon.timeseries-0.7.0b20230410.tar.gz --markdown 20230410/a/autogluon.timeseries/0.7.0b20230409-0.7.0b20230410/diff.md --exclude *.pyd
+[2023-04-10 11:02:00] INFO root fetch - processPackages [autogluon.tabular]: executing diffoscope
+[2023-04-10 11:02:00] INFO root fetch - processPackages [autogluon.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.tabular-0.7.0b20230409.tar.gz tmp/autogluon.tabular-0.7.0b20230410.tar.gz --markdown 20230410/a/autogluon.tabular/0.7.0b20230409-0.7.0b20230410/diff.md --exclude *.pyd
+[2023-04-10 11:02:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:02:01] INFO root fetch - processPackages [autogluon]: New version: [0.7.0b20230410] Old Version: [0.7.0b20230409]
+[2023-04-10 11:02:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:02:01] INFO root fetch - processPackages [autogluon.eda]: New version: [0.7.0b20230410] Old Version: [0.7.0b20230409]
+[2023-04-10 11:02:01] INFO root fetch - processPackages [PyQt-builder]: executing diffoscope
+[2023-04-10 11:02:01] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/82/e8/198f3c50d73982f53276841c7d9af3af8197f67e01836e921b90788bb41b/autogluon-0.7.0b20230410.tar.gz
+[2023-04-10 11:02:01] INFO root fetch - processPackages [PyQt-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-builder-1.9.0.tar.gz tmp/PyQt-builder-1.9.1.tar.gz --markdown 20230410/P/PyQt-builder/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-10 11:02:01] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:02:01] INFO root fetch - processPackages [voliboli-sgqlc-types]: New version: [1.8] Old Version: [1.7]
+[2023-04-10 11:02:01] INFO root fetch - processPackages [voliboli-sgqlc-types]: executing diffoscope
+[2023-04-10 11:02:01] INFO root fetch - processPackages [voliboli-sgqlc-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voliboli_sgqlc_types-1.7.tar.gz tmp/voliboli_sgqlc_types-1.8.tar.gz --markdown 20230410/v/voliboli-sgqlc-types/1.7-1.8/diff.md --exclude *.pyd
+[2023-04-10 11:02:01] INFO root fetch - processPackages [autogluon.eda]: Downloading https://files.pythonhosted.org/packages/2a/3e/056d0756af073ee86b03232ecc611d058f7fa9649e16d07834411ab13646/autogluon.eda-0.7.0b20230410.tar.gz
+[2023-04-10 11:02:01] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2023-04-10 11:02:01] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-0.7.0b20230409.tar.gz tmp/autogluon-0.7.0b20230410.tar.gz --markdown 20230410/a/autogluon/0.7.0b20230409-0.7.0b20230410/diff.md --exclude *.pyd
+[2023-04-10 11:02:02] INFO root fetch - processPackages [autogluon.eda]: executing diffoscope
+[2023-04-10 11:02:02] INFO root fetch - processPackages [autogluon.eda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.eda-0.7.0b20230409.tar.gz tmp/autogluon.eda-0.7.0b20230410.tar.gz --markdown 20230410/a/autogluon.eda/0.7.0b20230409-0.7.0b20230410/diff.md --exclude *.pyd
+[2023-04-10 11:02:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:02:02] INFO root fetch - processPackages [prettytable]: New version: [3.7.0] Old Version: [3.6.0]
+[2023-04-10 11:02:02] INFO root fetch - processPackages [prettytable]: Downloading https://files.pythonhosted.org/packages/ba/b6/8e78337766d4c324ac22cb887ecc19487531f508dbf17d922b91492d55bb/prettytable-3.6.0.tar.gz
+[2023-04-10 11:02:02] INFO root fetch - processPackages [prettytable]: Downloading https://files.pythonhosted.org/packages/7a/cd/bec5850e23eb005c6fe30fe4c26bafd9a07b3d2524771f22a0fa01270078/prettytable-3.7.0-py3-none-any.whl
+[2023-04-10 11:02:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:02:02] INFO root fetch - processPackages [prettytable]: executing diffoscope
+[2023-04-10 11:02:02] INFO root fetch - processPackages [prettytable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettytable-3.6.0.tar.gz tmp/prettytable-3.7.0-py3-none-any.whl.zip --markdown 20230410/p/prettytable/3.6.0-3.7.0/diff.md --exclude *.pyd
+[2023-04-10 11:02:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:02:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:02:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:02:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 11:02:04] INFO root fetch - main [MainThread]: Store serial: [17644479]
