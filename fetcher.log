@@ -8006,3 +8006,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 12:49:29] INFO root fetch - processPackages [adviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adviz-0.0.5.tar.gz tmp/adviz-0.0.6.tar.gz --markdown 20230410/a/adviz/0.0.5-0.0.6/diff.md --exclude *.pyd
 [2023-04-10 12:49:34] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:49:34] INFO root fetch - main [MainThread]: Store serial: [17645119]
+[2023-04-10 12:54:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645119]
+[2023-04-10 12:54:41] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-10 12:54:41] WARNING root fetch - processPackages [admin-tool-button]: Skipping, unable to determine old version
+[2023-04-10 12:54:41] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:54:41] WARNING root fetch - processPackages [admin-tool-button]: Skipping, unable to determine old version
+[2023-04-10 12:54:41] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:54:41] WARNING root fetch - processPackages [ak-keydetector]: Skipping, unable to determine old version
+[2023-04-10 12:54:41] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:54:41] INFO root fetch - processPackages [deg]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 12:54:41] INFO root fetch - processPackages [activetune]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-10 12:54:41] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-10 12:54:41] INFO root fetch - processPackages [Flask-Helper]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-10 12:54:41] INFO root fetch - processPackages [adviz]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-10 12:54:41] INFO root fetch - processPackages [Flask-Helper]: Downloading https://files.pythonhosted.org/packages/d9/f5/e937bf36fb7df1d1f6bda55d84e96812a6e2a86bb57cd8bc6b0575de7e91/Flask-Helper-2.0.1.tar.gz
+[2023-04-10 12:54:41] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: Downloading https://files.pythonhosted.org/packages/47/b5/f035aed9514552cf1ed980cc9bcd7ef7c12efa3a1b4ad65d9bb00e90ddf6/chatgpt_prompt_wrapper-0.0.6.tar.gz
+[2023-04-10 12:54:41] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: executing diffoscope
+[2023-04-10 12:54:41] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt_prompt_wrapper-0.0.5.tar.gz tmp/chatgpt_prompt_wrapper-0.0.6.tar.gz --markdown 20230410/c/chatgpt-prompt-wrapper/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-10 12:54:41] INFO root fetch - processPackages [deg]: Downloading https://files.pythonhosted.org/packages/ef/b9/587d43e12c211fe9762312e320aec2f04fcb921ee8b4234188b465c53c34/deg-1.0.1.tar.gz
+[2023-04-10 12:54:41] INFO root fetch - processPackages [activetune]: Downloading https://files.pythonhosted.org/packages/80/78/88eea444099b6b56876a63636e81cd4a7f052935f9148a4e1c190a6b1c94/activetune-0.0.8.tar.gz
+[2023-04-10 12:54:41] INFO root fetch - processPackages [deg]: executing diffoscope
+[2023-04-10 12:54:41] INFO root fetch - processPackages [deg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deg-1.0.0.tar.gz tmp/deg-1.0.1.tar.gz --markdown 20230410/d/deg/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 12:54:41] INFO root fetch - processPackages [activetune]: executing diffoscope
+[2023-04-10 12:54:41] INFO root fetch - processPackages [activetune]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/activetune-0.0.7.tar.gz tmp/activetune-0.0.8.tar.gz --markdown 20230410/a/activetune/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-10 12:54:41] INFO root fetch - processPackages [Flask-Helper]: Downloading https://files.pythonhosted.org/packages/c2/80/05e980d0ec4e79845376105ce91a29b70126c4424aecca7610c266f68454/Flask-Helper-2.0.2.tar.gz
+[2023-04-10 12:54:41] INFO root fetch - processPackages [adviz]: Downloading https://files.pythonhosted.org/packages/ba/7d/718b990a5369b2257a41c57d666c3857b0f4cb001f1e05070f720c573718/adviz-0.0.7.tar.gz
+[2023-04-10 12:54:41] INFO root fetch - processPackages [Flask-Helper]: executing diffoscope
+[2023-04-10 12:54:41] INFO root fetch - processPackages [Flask-Helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Helper-2.0.1.tar.gz tmp/Flask-Helper-2.0.2.tar.gz --markdown 20230410/F/Flask-Helper/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-10 12:54:42] INFO root fetch - processPackages [adviz]: executing diffoscope
+[2023-04-10 12:54:42] INFO root fetch - processPackages [adviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adviz-0.0.6.tar.gz tmp/adviz-0.0.7.tar.gz --markdown 20230410/a/adviz/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-10 12:54:42] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:54:42] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-10 12:54:42] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:54:42] WARNING root fetch - processPackages [weekdaytime]: Skipping, unable to determine old version
+[2023-04-10 12:54:42] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:54:43] INFO root fetch - processPackages [oarepo-model-builder]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-04-10 12:54:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:54:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:54:43] INFO root fetch - processPackages [oarepo-model-builder]: Downloading https://files.pythonhosted.org/packages/c2/a9/4fd0ae0b8b166fc79229800f25c7e1fc7c08a3f0b64155f229508591224a/oarepo-model-builder-3.2.8.tar.gz
+[2023-04-10 12:54:43] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/42/c4/1152d436715f3fde8daf4486b6c6ac4efd15701ef10929bfe49a0b3f7236/PyQt6-Fluent-Widgets-0.6.9.tar.gz
+[2023-04-10 12:54:43] INFO root fetch - processPackages [melkit]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-10 12:54:43] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: executing diffoscope
+[2023-04-10 12:54:43] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6-Fluent-Widgets-0.6.8.tar.gz tmp/PyQt6-Fluent-Widgets-0.6.9.tar.gz --markdown 20230410/P/PyQt6-Fluent-Widgets/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-10 12:54:43] INFO root fetch - processPackages [melkit]: Downloading https://files.pythonhosted.org/packages/85/f4/363c9bcb82fd966934113a17a192b290d4aeb5fd7d08d0c1dbb8096bfa0c/melkit-0.1.3.tar.gz
+[2023-04-10 12:54:43] INFO root fetch - processPackages [oarepo-model-builder]: Downloading https://files.pythonhosted.org/packages/22/fc/15bda42b5b84b741e80978c77e9ecb136bce965d31e6ab01f6ccf6babc3e/oarepo-model-builder-3.2.9.tar.gz
+[2023-04-10 12:54:43] INFO root fetch - processPackages [melkit]: Downloading https://files.pythonhosted.org/packages/22/c8/84db398f76bc45873710fd30623d1c0ac9504028f435c9e8b2ca75e5b3c2/melkit-0.1.4.tar.gz
+[2023-04-10 12:54:43] INFO root fetch - processPackages [oarepo-model-builder]: executing diffoscope
+[2023-04-10 12:54:43] INFO root fetch - processPackages [oarepo-model-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-3.2.8.tar.gz tmp/oarepo-model-builder-3.2.9.tar.gz --markdown 20230410/o/oarepo-model-builder/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-04-10 12:54:44] INFO root fetch - processPackages [melkit]: executing diffoscope
+[2023-04-10 12:54:44] INFO root fetch - processPackages [melkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melkit-0.1.3.tar.gz tmp/melkit-0.1.4.tar.gz --markdown 20230410/m/melkit/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-10 12:54:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:54:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:54:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:54:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:54:47] INFO root fetch - main [MainThread]: Store serial: [17645163]
