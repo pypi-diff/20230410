@@ -15495,3 +15495,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 22:25:32] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:26:05] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:26:05] INFO root fetch - main [MainThread]: Store serial: [17650074]
+[2023-04-10 22:31:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650074]
+[2023-04-10 22:31:13] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 22:31:13] INFO root fetch - processPackages [jimGW]: New version: [0.0.4.5] Old Version: [0.0.4.4]
+[2023-04-10 22:31:13] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.5b2] Old Version: [0.8.5b1]
+[2023-04-10 22:31:13] INFO root fetch - processPackages [voip-utils]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 22:31:13] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.9] Old Version: [0.18.8]
+[2023-04-10 22:31:13] INFO root fetch - processPackages [sqlmesh]: New version: [0.3.1.dev9] Old Version: [0.3.0]
+[2023-04-10 22:31:13] INFO root fetch - processPackages [gptdeploy]: Downloading https://files.pythonhosted.org/packages/28/8e/b8927500bfb52743dfb8a289e3f31e688199b5a59772b782c9ff31241d67/gptdeploy-0.18.8.tar.gz
+[2023-04-10 22:31:13] INFO root fetch - processPackages [jimGW]: Downloading https://files.pythonhosted.org/packages/c0/21/09cea2bd2b5e8d97a98e564cb33a006fe45708117e810e3553b93f58b466/jimGW-0.0.4.5.tar.gz
+[2023-04-10 22:31:13] INFO root fetch - processPackages [voip-utils]: Downloading https://files.pythonhosted.org/packages/fd/2c/879120746c2d5274a3054719f7c44d05d533696ae5afb3e0523a88b673cc/voip-utils-0.0.1.tar.gz
+[2023-04-10 22:31:13] INFO root fetch - processPackages [jimGW]: executing diffoscope
+[2023-04-10 22:31:13] INFO root fetch - processPackages [jimGW]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jimGW-0.0.4.4.tar.gz tmp/jimGW-0.0.4.5.tar.gz --markdown 20230410/j/jimGW/0.0.4.4-0.0.4.5/diff.md --exclude *.pyd
+[2023-04-10 22:31:13] INFO root fetch - processPackages [python-project-structure]: Downloading https://files.pythonhosted.org/packages/36/fd/e01b4870ac136efc769a60252152f81ddb9407582f2aadbb77bb5be75eb7/python-project-structure-0.8.5b2.tar.gz
+[2023-04-10 22:31:13] INFO root fetch - processPackages [voip-utils]: Downloading https://files.pythonhosted.org/packages/dd/a3/d94f1b53ada606373a13cd4e4c3f6ead9fd0c738935813948121c00c2a80/voip-utils-0.0.2.tar.gz
+[2023-04-10 22:31:13] INFO root fetch - processPackages [gptdeploy]: Downloading https://files.pythonhosted.org/packages/57/8f/7ee320d3dff95f2e8982dc7f527b310660378c61a29b2f8909312b96f32e/gptdeploy-0.18.9.tar.gz
+[2023-04-10 22:31:13] INFO root fetch - processPackages [sqlmesh]: Downloading https://files.pythonhosted.org/packages/14/37/5230b8fa217ca62f87762ad686f4e1302f41882c6493b34b28b7a7ef8b11/sqlmesh-0.3.1.dev9.tar.gz
+[2023-04-10 22:31:13] INFO root fetch - processPackages [voip-utils]: executing diffoscope
+[2023-04-10 22:31:13] INFO root fetch - processPackages [voip-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voip-utils-0.0.1.tar.gz tmp/voip-utils-0.0.2.tar.gz --markdown 20230410/v/voip-utils/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 22:31:13] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-10 22:31:13] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.8.tar.gz tmp/gptdeploy-0.18.9.tar.gz --markdown 20230410/g/gptdeploy/0.18.8-0.18.9/diff.md --exclude *.pyd
+[2023-04-10 22:31:13] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-10 22:31:13] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.5b1.tar.gz tmp/python-project-structure-0.8.5b2.tar.gz --markdown 20230410/p/python-project-structure/0.8.5b1-0.8.5b2/diff.md --exclude *.pyd
+[2023-04-10 22:31:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:31:14] INFO root fetch - processPackages [inewave]: New version: [0.0.94] Old Version: [0.0.93]
+[2023-04-10 22:31:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:31:14] INFO root fetch - processPackages [dash-component-editor]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-10 22:31:14] INFO root fetch - processPackages [inewave]: Downloading https://files.pythonhosted.org/packages/85/0f/ffcab7f99d9309c28ab8e7632afe4f75b771c78b1dfca4602f9bca6c62ec/inewave-0.0.93.tar.gz
+[2023-04-10 22:31:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:31:14] INFO root fetch - processPackages [shrike]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-04-10 22:31:15] INFO root fetch - processPackages [dash-component-editor]: Downloading https://files.pythonhosted.org/packages/c1/2c/80e233fb797b6e7bcd442236d3d4f7cb040b01af3d52172426ef2733dde6/dash_component_editor-0.0.4.tar.gz
+[2023-04-10 22:31:15] INFO root fetch - processPackages [shrike]: Downloading https://files.pythonhosted.org/packages/67/29/d163d7fdeba6739e7cc411f549b5bc74b7d00a674448522865bac1a28819/shrike-1.9.4.tar.gz
+[2023-04-10 22:31:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:31:15] INFO root fetch - processPackages [dash-component-editor]: Downloading https://files.pythonhosted.org/packages/85/4b/38a41bf99d8dcd0e0623b53e451f5c67f54044b9e84ab60dc21f41b2709a/dash_component_editor-0.0.5.tar.gz
+[2023-04-10 22:31:15] INFO root fetch - processPackages [paasta-tools]: New version: [0.92.1] Old Version: [0.92.0]
+[2023-04-10 22:31:15] INFO root fetch - processPackages [dash-component-editor]: executing diffoscope
+[2023-04-10 22:31:15] INFO root fetch - processPackages [dash-component-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_component_editor-0.0.4.tar.gz tmp/dash_component_editor-0.0.5.tar.gz --markdown 20230410/d/dash-component-editor/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-10 22:31:15] INFO root fetch - processPackages [sqlmesh]: executing diffoscope
+[2023-04-10 22:31:15] INFO root fetch - processPackages [sqlmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlmesh-0.3.0.tar.gz tmp/sqlmesh-0.3.1.dev9.tar.gz --markdown 20230410/s/sqlmesh/0.3.0-0.3.1.dev9/diff.md --exclude *.pyd
+[2023-04-10 22:31:15] INFO root fetch - processPackages [paasta-tools]: Downloading https://files.pythonhosted.org/packages/4a/0d/4404f538f73fd9262e827faffa3ec48b8413a24ff7a44cb416e30e89634c/paasta-tools-0.92.0.tar.gz
+[2023-04-10 22:31:15] INFO root fetch - processPackages [shrike]: Downloading https://files.pythonhosted.org/packages/50/5a/b279e513d9765819f3f5cab873f8c3ac40ab37a954c06dcd3cdaded74e9e/shrike-1.9.5.tar.gz
+[2023-04-10 22:31:15] INFO root fetch - processPackages [shrike]: executing diffoscope
+[2023-04-10 22:31:15] INFO root fetch - processPackages [shrike]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shrike-1.9.4.tar.gz tmp/shrike-1.9.5.tar.gz --markdown 20230410/s/shrike/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-04-10 22:31:15] INFO root fetch - processPackages [paasta-tools]: Downloading https://files.pythonhosted.org/packages/d8/f5/9a4c0134f4d0862da0cbcc57381d5c9f52e37ea937fa628e123433ccb7a4/paasta-tools-0.92.1.tar.gz
+[2023-04-10 22:31:16] INFO root fetch - processPackages [paasta-tools]: executing diffoscope
+[2023-04-10 22:31:16] INFO root fetch - processPackages [paasta-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paasta-tools-0.92.0.tar.gz tmp/paasta-tools-0.92.1.tar.gz --markdown 20230410/p/paasta-tools/0.92.0-0.92.1/diff.md --exclude *.pyd
+[2023-04-10 22:31:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:31:16] INFO root fetch - processPackages [evaics.ml]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-10 22:31:16] INFO root fetch - processPackages [evaics.ml]: Downloading https://files.pythonhosted.org/packages/b7/67/194b11ad81402cbb975ea38fa0d058defd1f7df44375d7914096afca66e4/evaics.ml-0.1.4.tar.gz
+[2023-04-10 22:31:16] INFO root fetch - processPackages [evaics.ml]: executing diffoscope
+[2023-04-10 22:31:16] INFO root fetch - processPackages [evaics.ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evaics.ml-0.1.3.tar.gz tmp/evaics.ml-0.1.4.tar.gz --markdown 20230410/e/evaics.ml/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-10 22:31:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:31:17] INFO root fetch - processPackages [inewave]: Downloading https://files.pythonhosted.org/packages/05/80/083ef8c37c3a3f6ab44cd7f46102d1dca9cdb65e41832b83ee338207dec2/inewave-0.0.94.tar.gz
+[2023-04-10 22:31:17] INFO root fetch - processPackages [inewave]: executing diffoscope
+[2023-04-10 22:31:17] INFO root fetch - processPackages [inewave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inewave-0.0.93.tar.gz tmp/inewave-0.0.94.tar.gz --markdown 20230410/i/inewave/0.0.93-0.0.94/diff.md --exclude *.pyd
+[2023-04-10 22:31:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:31:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:31:25] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:34:15] ERROR root fetch - processPackages [sqlmesh]: Timeout during execution of pkgdiff
+[2023-04-10 22:34:15] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:34:15] INFO root fetch - main [MainThread]: Store serial: [17650104]
