@@ -11962,3 +11962,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 17:44:04] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:44:05] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:44:05] INFO root fetch - main [MainThread]: Store serial: [17647471]
+[2023-04-10 17:49:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647471]
+[2023-04-10 17:49:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-10 17:49:12] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 17:49:12] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-04-10 17:49:12] INFO root fetch - processPackages [linesieve]: New version: [1.0b1] Old Version: [1.0a9]
+[2023-04-10 17:49:12] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-10 17:49:12] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230410/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 17:49:12] INFO root fetch - processPackages [monarch-py]: New version: [0.6.0] Old Version: [0.5.5]
+[2023-04-10 17:49:12] INFO root fetch - processPackages [CMinx]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-10 17:49:12] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-10 17:49:13] INFO root fetch - processPackages [linesieve]: Downloading https://files.pythonhosted.org/packages/0d/07/47b750c15f2c70a209137e2fdc39e88d0dc7e80d754d7835f91f6399fd92/linesieve-1.0a9.tar.gz
+[2023-04-10 17:49:13] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-04-10 17:49:13] INFO root fetch - main [MainThread]: error
+[2023-04-10 17:49:13] INFO root fetch - processPackages [CMinx]: Downloading https://files.pythonhosted.org/packages/dd/0f/5082f6f931d069d05c8a7300fbf72a89cea48506347f49e981688265a688/CMinx-1.1.7.tar.gz
+[2023-04-10 17:49:13] INFO root fetch - processPackages [monarch-py]: Downloading https://files.pythonhosted.org/packages/3c/35/e2dee8e83334d459ffe619c563ed6d01d2c58073fcab10afc11901175d66/monarch_py-0.5.5.tar.gz
+[2023-04-10 17:49:13] INFO root fetch - processPackages [textual]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-10 17:49:13] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/17/d2/002affba91d339187f5699c26fecc3fa3bf966f17c5d08bb696c724b63ee/textual-0.9.0.tar.gz
+[2023-04-10 17:49:13] INFO root fetch - processPackages [linesieve]: Downloading https://files.pythonhosted.org/packages/1a/83/720d99cbba01570616e327bcee850e5d64a4206e30d6159672640f42d378/linesieve-1.0b1.tar.gz
+[2023-04-10 17:49:13] INFO root fetch - processPackages [CMinx]: Downloading https://files.pythonhosted.org/packages/c3/8b/6ec119a9f2d626ef63eb427bae04fd225d1070eb258179925aba64d4fdc1/CMinx-1.1.8.tar.gz
+[2023-04-10 17:49:13] INFO root fetch - processPackages [monarch-py]: Downloading https://files.pythonhosted.org/packages/ba/2a/ab9e1e8730d3f16cb6ddef97e8775868236de32e0787f0fe6139373e729c/monarch_py-0.6.0.tar.gz
+[2023-04-10 17:49:13] INFO root fetch - processPackages [monarch-py]: executing diffoscope
+[2023-04-10 17:49:13] INFO root fetch - processPackages [monarch-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monarch_py-0.5.5.tar.gz tmp/monarch_py-0.6.0.tar.gz --markdown 20230410/m/monarch-py/0.5.5-0.6.0/diff.md --exclude *.pyd
+[2023-04-10 17:49:13] INFO root fetch - processPackages [linesieve]: executing diffoscope
+[2023-04-10 17:49:13] INFO root fetch - processPackages [linesieve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linesieve-1.0a9.tar.gz tmp/linesieve-1.0b1.tar.gz --markdown 20230410/l/linesieve/1.0a9-1.0b1/diff.md --exclude *.pyd
+[2023-04-10 17:49:13] INFO root fetch - processPackages [CMinx]: executing diffoscope
+[2023-04-10 17:49:13] INFO root fetch - processPackages [CMinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CMinx-1.1.7.tar.gz tmp/CMinx-1.1.8.tar.gz --markdown 20230410/C/CMinx/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-10 17:49:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:49:13] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/0e/7d/2155bf024c3bdf1dc6365e109a16bab46098e032e62666565176ebc9f84a/textual-0.9.1.tar.gz
+[2023-04-10 17:49:14] INFO root fetch - processPackages [textual]: executing diffoscope
+[2023-04-10 17:49:14] INFO root fetch - processPackages [textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-0.9.0.tar.gz tmp/textual-0.9.1.tar.gz --markdown 20230410/t/textual/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-10 17:49:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:49:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:49:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:49:15] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:49:15] INFO root fetch - main [MainThread]: Store serial: [17647502]
