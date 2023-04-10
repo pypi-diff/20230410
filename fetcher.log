@@ -15813,3 +15813,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 22:55:35] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:55:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:55:36] INFO root fetch - main [MainThread]: Store serial: [17650322]
+[2023-04-10 23:00:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650322]
+[2023-04-10 23:00:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 23:00:45] INFO root fetch - processPackages [infinitesimals]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 23:00:45] INFO root fetch - processPackages [trainerbase]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-04-10 23:00:45] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-10 23:00:45] INFO root fetch - processPackages [ansible-core]: New version: [2.15.0b2] Old Version: [2.15.0b1]
+[2023-04-10 23:00:45] WARNING root fetch - processPackages [wmb-browser]: Skipping, unable to determine old version
+[2023-04-10 23:00:45] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:00:45] INFO root fetch - processPackages [story-analyzer]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 23:00:45] INFO root fetch - processPackages [infinitesimals]: Downloading https://files.pythonhosted.org/packages/3f/37/fb6532b2d2eb103d76f4a3fe439c6235a3c0224f28f0c64d6ae90d7ebcbe/infinitesimals-0.0.1.tar.gz
+[2023-04-10 23:00:45] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-10 23:00:45] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230410/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-10 23:00:45] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/ee/29/02f9847d91c43a9f7b0912d1a43e1e47ca2fb7d88853e1e1161f7ea57289/TrainerBase-2.9.1.tar.gz
+[2023-04-10 23:00:45] INFO root fetch - processPackages [ansible-core]: Downloading https://files.pythonhosted.org/packages/67/94/40f60a7adc38b1bbf0413953146ecaaa5f73e90542f29c35bafabdeac9d3/ansible-core-2.15.0b1.tar.gz
+[2023-04-10 23:00:45] INFO root fetch - processPackages [story-analyzer]: Downloading https://files.pythonhosted.org/packages/cf/3d/e4bf84b65b251789e30cd69d8ce5d889934a20b8977401df578569ac3323/story_analyzer-0.1.1.tar.gz
+[2023-04-10 23:00:45] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2023-04-10 23:00:45] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainerBase-2.9.0.tar.gz tmp/TrainerBase-2.9.1.tar.gz --markdown 20230410/t/trainerbase/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-04-10 23:00:45] INFO root fetch - processPackages [infinitesimals]: Downloading https://files.pythonhosted.org/packages/03/e6/e8e3abe7bb15211fa07171b561cc6b2c1f65bc8904585a7de975d54203ad/infinitesimals-0.0.2.tar.gz
+[2023-04-10 23:00:45] INFO root fetch - processPackages [infinitesimals]: executing diffoscope
+[2023-04-10 23:00:45] INFO root fetch - processPackages [infinitesimals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinitesimals-0.0.1.tar.gz tmp/infinitesimals-0.0.2.tar.gz --markdown 20230410/i/infinitesimals/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 23:00:45] INFO root fetch - processPackages [story-analyzer]: Downloading https://files.pythonhosted.org/packages/63/b4/b08115329ef7bb0b3c6154a7f273d323e5e4c874a29bd68a387b7329c85d/story_analyzer-0.1.2.tar.gz
+[2023-04-10 23:00:45] WARNING root fetch - processPackages [ansible-core]: Skipping package: exceeds size limit 10959980>=10485760
+[2023-04-10 23:00:45] INFO root fetch - main [MainThread]: error
+[2023-04-10 23:00:45] INFO root fetch - processPackages [story-analyzer]: executing diffoscope
+[2023-04-10 23:00:45] INFO root fetch - processPackages [story-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/story_analyzer-0.1.1.tar.gz tmp/story_analyzer-0.1.2.tar.gz --markdown 20230410/s/story-analyzer/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 23:00:45] INFO root fetch - processPackages [geeViz]: New version: [2023.4.1] Old Version: [2023.3.1]
+[2023-04-10 23:00:45] INFO root fetch - processPackages [geeViz]: Downloading https://files.pythonhosted.org/packages/ac/bb/73b6b6a5efa2b9baf42afd61025666e4d684845b828a21fe93e3aab15a13/geeViz-2023.3.1.tar.gz
+[2023-04-10 23:00:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:00:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:00:46] INFO root fetch - processPackages [geeViz]: Downloading https://files.pythonhosted.org/packages/6e/96/d895beec0946378b2f09970b5d5f45673c6032ae61183ddad961762c5279/geeViz-2023.4.1.tar.gz
+[2023-04-10 23:00:46] INFO root fetch - processPackages [ipsuite]: New version: [0.1.0a2] Old Version: [0.1.0a1]
+[2023-04-10 23:00:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:00:46] INFO root fetch - processPackages [geeViz]: executing diffoscope
+[2023-04-10 23:00:46] INFO root fetch - processPackages [geeViz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geeViz-2023.3.1.tar.gz tmp/geeViz-2023.4.1.tar.gz --markdown 20230410/g/geeViz/2023.3.1-2023.4.1/diff.md --exclude *.pyd
+[2023-04-10 23:00:46] INFO root fetch - processPackages [ipsuite]: Downloading https://files.pythonhosted.org/packages/70/22/aa3d0b021a92f852572e4d7d28ccc89b25f69fa6b8b573c3447c5732a578/ipsuite-0.1.0a1.tar.gz
+[2023-04-10 23:00:47] INFO root fetch - processPackages [ipsuite]: Downloading https://files.pythonhosted.org/packages/0c/cc/25cf92ece5a7b9797198e6f5898d365b3a6f496c8f7affb0b1fc30b85bbf/ipsuite-0.1.0a2-py3-none-any.whl
+[2023-04-10 23:00:47] INFO root fetch - processPackages [ipsuite]: executing diffoscope
+[2023-04-10 23:00:47] INFO root fetch - processPackages [ipsuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipsuite-0.1.0a1.tar.gz tmp/ipsuite-0.1.0a2-py3-none-any.whl.zip --markdown 20230410/i/ipsuite/0.1.0a1-0.1.0a2/diff.md --exclude *.pyd
+[2023-04-10 23:00:48] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:00:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:00:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 23:00:51] INFO root fetch - main [MainThread]: Store serial: [17650345]
