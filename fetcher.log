@@ -9524,3 +9524,68 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 14:57:05] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:57:06] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:57:06] INFO root fetch - main [MainThread]: Store serial: [17645972]
+[2023-04-10 15:02:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645972]
+[2023-04-10 15:02:14] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-10 15:02:14] WARNING root fetch - processPackages [boneflet]: Skipping, unable to determine old version
+[2023-04-10 15:02:14] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:02:14] INFO root fetch - processPackages [openai-chat]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 15:02:14] INFO root fetch - processPackages [je-auto-control-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 15:02:14] INFO root fetch - processPackages [mexa]: New version: [0.5] Old Version: [0.4]
+[2023-04-10 15:02:14] INFO root fetch - processPackages [sessender]: New version: [0.4.5] Old Version: [0.4.3]
+[2023-04-10 15:02:14] INFO root fetch - processPackages [w32py]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-10 15:02:15] INFO root fetch - processPackages [je-auto-control-dev]: executing diffoscope
+[2023-04-10 15:02:15] INFO root fetch - processPackages [je-auto-control-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control_dev-0.0.8.tar.gz tmp/je_auto_control_dev-0.0.9.tar.gz --markdown 20230410/j/je-auto-control-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 15:02:15] INFO root fetch - processPackages [openai-chat]: Downloading https://files.pythonhosted.org/packages/29/e3/8bc7a3911d7e164d57736cd3d7f2395e93e15565dbd2779781e52a1de749/openai_chat-0.0.3.tar.gz
+[2023-04-10 15:02:15] INFO root fetch - processPackages [sessender]: Downloading https://files.pythonhosted.org/packages/9d/49/6845aea01e8ca851a065300c0486fc402dd68065cf9de3996764a5979258/sessender-0.4.3.tar.gz
+[2023-04-10 15:02:15] INFO root fetch - processPackages [w32py]: Downloading https://files.pythonhosted.org/packages/a1/9f/e3255441a6aa2dee405c9bbd492ec4a0c3fba4ebc245927ac7f9a2e44cb9/w32py-0.3.5.tar.gz
+[2023-04-10 15:02:15] INFO root fetch - processPackages [mexa]: Downloading https://files.pythonhosted.org/packages/ca/e6/31d67214e5224a1b37d273b38d05945318b88ed3ba67fef6bab40206b213/mexa-0.4.tar.gz
+[2023-04-10 15:02:15] INFO root fetch - processPackages [openai-chat]: executing diffoscope
+[2023-04-10 15:02:15] INFO root fetch - processPackages [openai-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_chat-0.0.2.tar.gz tmp/openai_chat-0.0.3.tar.gz --markdown 20230410/o/openai-chat/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 15:02:15] INFO root fetch - processPackages [sessender]: Downloading https://files.pythonhosted.org/packages/ba/c6/a0ec335b87de754c9eb24be87e2ffe17b79ccd2c4cbe20da6e16aa036802/sessender-0.4.5.tar.gz
+[2023-04-10 15:02:15] INFO root fetch - processPackages [w32py]: Downloading https://files.pythonhosted.org/packages/f1/12/1d09b8e023601a935aa6ca8fc7c67f25b7af9c5d646fc961b235718c1bb8/w32py-0.3.6.tar.gz
+[2023-04-10 15:02:15] INFO root fetch - processPackages [mexa]: Downloading https://files.pythonhosted.org/packages/fc/7a/fc88b535e117804e5d07ce2ed4a8dfb091542903f5a002fa3661bfeecfb0/mexa-0.5.tar.gz
+[2023-04-10 15:02:15] INFO root fetch - processPackages [w32py]: executing diffoscope
+[2023-04-10 15:02:15] INFO root fetch - processPackages [w32py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/w32py-0.3.5.tar.gz tmp/w32py-0.3.6.tar.gz --markdown 20230410/w/w32py/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-10 15:02:15] INFO root fetch - processPackages [sessender]: executing diffoscope
+[2023-04-10 15:02:15] INFO root fetch - processPackages [sessender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sessender-0.4.3.tar.gz tmp/sessender-0.4.5.tar.gz --markdown 20230410/s/sessender/0.4.3-0.4.5/diff.md --exclude *.pyd
+[2023-04-10 15:02:15] INFO root fetch - processPackages [mexa]: executing diffoscope
+[2023-04-10 15:02:15] INFO root fetch - processPackages [mexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mexa-0.4.tar.gz tmp/mexa-0.5.tar.gz --markdown 20230410/m/mexa/0.4-0.5/diff.md --exclude *.pyd
+[2023-04-10 15:02:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:02:16] INFO root fetch - processPackages [alibabacloud-gateway-fc-util]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 15:02:16] INFO root fetch - processPackages [alibabacloud-gateway-fc-util]: Downloading https://files.pythonhosted.org/packages/88/33/1fcbcc441185f2d9e995bf7ce404698a8f276ed5c00975fc27d73d738a2f/alibabacloud_gateway_fc_util-0.0.3.tar.gz
+[2023-04-10 15:02:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:02:16] INFO root fetch - processPackages [gtki-module-orup-errors]: New version: [1.35.61] Old Version: [1.35.6]
+[2023-04-10 15:02:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:02:16] WARNING root fetch - processPackages [client-pack-2try-version]: Skipping, unable to determine old version
+[2023-04-10 15:02:16] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:02:16] INFO root fetch - processPackages [gtki-module-orup-errors]: Downloading https://files.pythonhosted.org/packages/7b/e6/09d24dfdc614a2b67a6ca3912916a0f62af93ee1a661bd3818d3c3b87683/gtki_module_orup_errors-1.35.61-py3-none-any.whl
+[2023-04-10 15:02:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:02:16] INFO root fetch - processPackages [py-carbon]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-10 15:02:16] WARNING root fetch - processPackages [server-pack-2try-version]: Skipping, unable to determine old version
+[2023-04-10 15:02:16] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:02:16] INFO root fetch - processPackages [psl]: New version: [2023.4.10] Old Version: [2023.3.6]
+[2023-04-10 15:02:16] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:02:16] INFO root fetch - processPackages [alibabacloud-gateway-fc-util]: Downloading https://files.pythonhosted.org/packages/a2/a0/b4d0bbb2ffd3fbcf2a5644d21cd5152d058f83e11489dd1c4b4e680230f8/alibabacloud_gateway_fc_util-0.0.4.tar.gz
+[2023-04-10 15:02:16] INFO root fetch - processPackages [lifeomic-patient-ml-types]: New version: [7.3.0] Old Version: [7.2.1]
+[2023-04-10 15:02:16] INFO root fetch - processPackages [py-carbon]: Downloading https://files.pythonhosted.org/packages/dc/85/5c3f5ef42d68bcbb347becd78efe5eb9b076767a0e8f0048ab988304798c/py-carbon-1.0.3.tar.gz
+[2023-04-10 15:02:16] INFO root fetch - processPackages [gtki-module-orup-errors]: executing diffoscope
+[2023-04-10 15:02:16] INFO root fetch - processPackages [gtki-module-orup-errors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtki_module_orup_errors-1.35.6-py3-none-any.whl.zip tmp/gtki_module_orup_errors-1.35.61-py3-none-any.whl.zip --markdown 20230410/g/gtki-module-orup-errors/1.35.6-1.35.61/diff.md --exclude *.pyd
+[2023-04-10 15:02:16] INFO root fetch - processPackages [psl]: Downloading https://files.pythonhosted.org/packages/4d/fd/adad27e8e1ff6380bbe1f6a1a1ce167fdd09d0e227155dd65eb06defe5ac/psl-2023.3.6.tar.gz
+[2023-04-10 15:02:16] INFO root fetch - processPackages [lifeomic-patient-ml-types]: Downloading https://files.pythonhosted.org/packages/27/a5/a3683dd5ee68ac4e94b052ee2dcecbc1de617e8151f30a0fda75029d6308/lifeomic_patient_ml_types-7.2.1.tar.gz
+[2023-04-10 15:02:16] INFO root fetch - processPackages [alibabacloud-gateway-fc-util]: executing diffoscope
+[2023-04-10 15:02:16] INFO root fetch - processPackages [alibabacloud-gateway-fc-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_gateway_fc_util-0.0.3.tar.gz tmp/alibabacloud_gateway_fc_util-0.0.4.tar.gz --markdown 20230410/a/alibabacloud-gateway-fc-util/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 15:02:17] INFO root fetch - processPackages [lifeomic-patient-ml-types]: Downloading https://files.pythonhosted.org/packages/d4/9d/2ff810586598c03ed4d9389e13fe1e0b838a60d842cfdce1ad93579256d0/lifeomic_patient_ml_types-7.3.0.tar.gz
+[2023-04-10 15:02:17] INFO root fetch - processPackages [py-carbon]: Downloading https://files.pythonhosted.org/packages/a0/e0/8fd85b41ab6deef48f774fea9193a9116c5a41294ad93a20d173769ab4a6/py-carbon-1.0.4.tar.gz
+[2023-04-10 15:02:17] INFO root fetch - processPackages [lifeomic-patient-ml-types]: executing diffoscope
+[2023-04-10 15:02:17] INFO root fetch - processPackages [lifeomic-patient-ml-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifeomic_patient_ml_types-7.2.1.tar.gz tmp/lifeomic_patient_ml_types-7.3.0.tar.gz --markdown 20230410/l/lifeomic-patient-ml-types/7.2.1-7.3.0/diff.md --exclude *.pyd
+[2023-04-10 15:02:17] INFO root fetch - processPackages [psl]: Downloading https://files.pythonhosted.org/packages/88/1b/74ed29efcc772e73d55d60019e503bd50f99fbc7ddfc814fc5aa84aec3ed/psl-2023.4.10.tar.gz
+[2023-04-10 15:02:17] INFO root fetch - processPackages [psl]: executing diffoscope
+[2023-04-10 15:02:17] INFO root fetch - processPackages [psl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psl-2023.3.6.tar.gz tmp/psl-2023.4.10.tar.gz --markdown 20230410/p/psl/2023.3.6-2023.4.10/diff.md --exclude *.pyd
+[2023-04-10 15:02:17] INFO root fetch - processPackages [py-carbon]: executing diffoscope
+[2023-04-10 15:02:17] INFO root fetch - processPackages [py-carbon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-carbon-1.0.3.tar.gz tmp/py-carbon-1.0.4.tar.gz --markdown 20230410/p/py-carbon/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-10 15:02:17] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:02:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:02:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:02:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:02:18] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:02:18] INFO root fetch - main [MainThread]: Store serial: [17646014]
