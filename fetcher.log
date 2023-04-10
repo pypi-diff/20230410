@@ -7890,3 +7890,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 12:33:52] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:33:53] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:33:53] INFO root fetch - main [MainThread]: Store serial: [17645053]
+[2023-04-10 12:38:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645053]
+[2023-04-10 12:39:00] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-10 12:39:00] INFO root fetch - processPackages [timed-count]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-10 12:39:00] INFO root fetch - processPackages [voai]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 12:39:00] INFO root fetch - processPackages [kavk-api]: New version: [0.9.7.4] Old Version: [0.9.7.3]
+[2023-04-10 12:39:00] INFO root fetch - processPackages [pygedcom]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-10 12:39:00] INFO root fetch - processPackages [EEGRAPH]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 12:39:00] INFO root fetch - processPackages [voai]: Downloading https://files.pythonhosted.org/packages/50/14/1f86a17d797f3ad31256ff7ad8531432bcb753839cfb50e4c79bb7cd8435/voai-0.0.2.tar.gz
+[2023-04-10 12:39:00] INFO root fetch - processPackages [timed-count]: Downloading https://files.pythonhosted.org/packages/8d/dc/45f792080b86cb9e12e02695830b03965be810b795eb9d06089a0ee1d597/timed_count-1.1.0.tar.gz
+[2023-04-10 12:39:00] INFO root fetch - processPackages [EEGRAPH]: Downloading https://files.pythonhosted.org/packages/d4/ee/df6115f1021a2c046162749d07b952c9f36cd489377bae2c23095fae8edc/EEGRAPH-0.1.8.tar.gz
+[2023-04-10 12:39:00] INFO root fetch - processPackages [pygedcom]: Downloading https://files.pythonhosted.org/packages/45/67/1542cf88a492e8bc9ce8acfd8aed298bcf9d23bf2e4641f80cfa1d153fef/pygedcom-0.1.5.tar.gz
+[2023-04-10 12:39:00] INFO root fetch - processPackages [pygedcom]: executing diffoscope
+[2023-04-10 12:39:00] INFO root fetch - processPackages [pygedcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygedcom-0.1.4.tar.gz tmp/pygedcom-0.1.5.tar.gz --markdown 20230410/p/pygedcom/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-10 12:39:01] INFO root fetch - processPackages [kavk-api]: Downloading https://files.pythonhosted.org/packages/4d/d3/d9f083eb4ddb3cb603b5ad0c1b0aa019cd755f3810753df1e925789c24ce/kavk_api-0.9.7.4.tar.gz
+[2023-04-10 12:39:01] INFO root fetch - processPackages [voai]: Downloading https://files.pythonhosted.org/packages/5b/4b/e7542eaaf70ace7aba205089d0473b531764dc65b9581d8f7289998bc6c5/voai-0.0.3.tar.gz
+[2023-04-10 12:39:01] INFO root fetch - processPackages [kavk-api]: executing diffoscope
+[2023-04-10 12:39:01] INFO root fetch - processPackages [kavk-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kavk_api-0.9.7.3.tar.gz tmp/kavk_api-0.9.7.4.tar.gz --markdown 20230410/k/kavk-api/0.9.7.3-0.9.7.4/diff.md --exclude *.pyd
+[2023-04-10 12:39:01] INFO root fetch - processPackages [voai]: executing diffoscope
+[2023-04-10 12:39:01] INFO root fetch - processPackages [voai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voai-0.0.2.tar.gz tmp/voai-0.0.3.tar.gz --markdown 20230410/v/voai/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 12:39:01] INFO root fetch - processPackages [timed-count]: Downloading https://files.pythonhosted.org/packages/b8/80/56c655c7be8c26a6b1571b6f123e54314cc54f841c3f08b89c3502668d88/timed_count-1.1.1.tar.gz
+[2023-04-10 12:39:01] INFO root fetch - processPackages [timed-count]: executing diffoscope
+[2023-04-10 12:39:01] INFO root fetch - processPackages [timed-count]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timed_count-1.1.0.tar.gz tmp/timed_count-1.1.1.tar.gz --markdown 20230410/t/timed-count/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-10 12:39:01] INFO root fetch - processPackages [EEGRAPH]: Downloading https://files.pythonhosted.org/packages/dc/73/ae62d75040489955878306ed295de57e7e30cbf6e31466ffdd352cbbb887/EEGRAPH-0.1.9.tar.gz
+[2023-04-10 12:39:01] INFO root fetch - processPackages [EEGRAPH]: executing diffoscope
+[2023-04-10 12:39:01] INFO root fetch - processPackages [EEGRAPH]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EEGRAPH-0.1.8.tar.gz tmp/EEGRAPH-0.1.9.tar.gz --markdown 20230410/E/EEGRAPH/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 12:39:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:39:02] INFO root fetch - processPackages [cellar-extractor]: New version: [1.0.45] Old Version: [1.0.44]
+[2023-04-10 12:39:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:39:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:39:02] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-10 12:39:02] INFO root fetch - processPackages [fenrirWeb]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-10 12:39:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:39:02] INFO root fetch - processPackages [waffle-utils]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-10 12:39:02] INFO root fetch - processPackages [cellar-extractor]: Downloading https://files.pythonhosted.org/packages/27/c1/ffaf2cf7f73650bcc88e2d1fc1cf52a864faf7ef8d19845dbfcac5d459b3/cellar_extractor-1.0.44.tar.gz
+[2023-04-10 12:39:02] INFO root fetch - processPackages [fenrirWeb]: Downloading https://files.pythonhosted.org/packages/ca/80/8f00ab5bf9a9e3b64f47151202d772489e1a5c3f17d7d56976223c8e7996/fenrirWeb-0.2.0.tar.gz
+[2023-04-10 12:39:02] INFO root fetch - processPackages [waffle-utils]: Downloading https://files.pythonhosted.org/packages/16/0e/d5a967ada31804948415f44910d7e992c85721e66f25add59cf0439bf606/waffle_utils-0.2.2.tar.gz
+[2023-04-10 12:39:02] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/5d/63/cce3acdee557268a2ae29933bc33efd82f88bbefe407720661769ed2419a/PyQt-Fluent-Widgets-0.6.9.tar.gz
+[2023-04-10 12:39:02] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: executing diffoscope
+[2023-04-10 12:39:02] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-Fluent-Widgets-0.6.8.tar.gz tmp/PyQt-Fluent-Widgets-0.6.9.tar.gz --markdown 20230410/P/PyQt-Fluent-Widgets/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-10 12:39:02] INFO root fetch - processPackages [fenrirWeb]: Downloading https://files.pythonhosted.org/packages/43/26/312e7e814ea3e80287e9b888cf11b1a73a427b36098d810956823081ab11/fenrirWeb-0.3.0.tar.gz
+[2023-04-10 12:39:02] INFO root fetch - processPackages [waffle-utils]: Downloading https://files.pythonhosted.org/packages/a0/7b/05bcbb0d8e98ef043f365477f93c7f93cb94c9028959e26cbc6b72161d87/waffle_utils-0.2.3.tar.gz
+[2023-04-10 12:39:02] INFO root fetch - processPackages [waffle-utils]: executing diffoscope
+[2023-04-10 12:39:02] INFO root fetch - processPackages [waffle-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waffle_utils-0.2.2.tar.gz tmp/waffle_utils-0.2.3.tar.gz --markdown 20230410/w/waffle-utils/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-10 12:39:02] INFO root fetch - processPackages [fenrirWeb]: executing diffoscope
+[2023-04-10 12:39:02] INFO root fetch - processPackages [fenrirWeb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fenrirWeb-0.2.0.tar.gz tmp/fenrirWeb-0.3.0.tar.gz --markdown 20230410/f/fenrirWeb/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-10 12:39:02] INFO root fetch - processPackages [cellar-extractor]: Downloading https://files.pythonhosted.org/packages/8e/78/91e1387bf019286d868fd12203314a774a26056dcf2cf03b7d4a58ba944a/cellar_extractor-1.0.45.tar.gz
+[2023-04-10 12:39:02] INFO root fetch - processPackages [cellar-extractor]: executing diffoscope
+[2023-04-10 12:39:02] INFO root fetch - processPackages [cellar-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellar_extractor-1.0.44.tar.gz tmp/cellar_extractor-1.0.45.tar.gz --markdown 20230410/c/cellar-extractor/1.0.44-1.0.45/diff.md --exclude *.pyd
+[2023-04-10 12:39:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:39:03] INFO root fetch - processPackages [croydon]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-10 12:39:03] INFO root fetch - processPackages [croydon]: Downloading https://files.pythonhosted.org/packages/0f/a7/2941c78a03d5afe7b6cd8bb571d61a9caa4a3c07479b0bd17ea6c4f2aba6/croydon-0.9.1.tar.gz
+[2023-04-10 12:39:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:39:04] INFO root fetch - processPackages [croydon]: executing diffoscope
+[2023-04-10 12:39:04] INFO root fetch - processPackages [croydon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croydon-0.9.0.tar.gz tmp/croydon-0.9.1.tar.gz --markdown 20230410/c/croydon/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-10 12:39:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:39:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:39:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:39:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:39:05] INFO root fetch - main [MainThread]: Store serial: [17645082]
