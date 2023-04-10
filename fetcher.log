@@ -15283,3 +15283,58 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 22:09:34] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:09:36] INFO root fetch - main [MainThread]: success
 [2023-04-10 22:09:36] INFO root fetch - main [MainThread]: Store serial: [17649931]
+[2023-04-10 22:14:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649931]
+[2023-04-10 22:14:43] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 22:14:43] INFO root fetch - processPackages [PyAstronomy]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-10 22:14:43] INFO root fetch - processPackages [requests-toolkit-stable]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-10 22:14:43] INFO root fetch - processPackages [zntrack]: New version: [0.6.0a5] Old Version: [0.6.0a4]
+[2023-04-10 22:14:43] INFO root fetch - processPackages [plantpredict]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-10 22:14:43] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.5b1] Old Version: [0.8.5b0]
+[2023-04-10 22:14:43] INFO root fetch - processPackages [requests-toolkit-stable]: executing diffoscope
+[2023-04-10 22:14:43] INFO root fetch - processPackages [requests-toolkit-stable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requests-toolkit-stable-0.9.1.tar.gz tmp/requests-toolkit-stable-0.9.2.tar.gz --markdown 20230410/r/requests-toolkit-stable/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-10 22:14:43] INFO root fetch - processPackages [PyAstronomy]: Downloading https://files.pythonhosted.org/packages/74/0a/db7ce4d55dfc7cabce685917145f3f9bec29723142da9f8eb23053762d18/PyAstronomy-0.8.1.tar.gz
+[2023-04-10 22:14:44] INFO root fetch - processPackages [plantpredict]: Downloading https://files.pythonhosted.org/packages/94/c5/c8b73b69b6c95665572a1b86da26c21b134885c9b2f106986537ead3c293/plantpredict-1.0.8.tar.gz
+[2023-04-10 22:14:44] INFO root fetch - processPackages [zntrack]: Downloading https://files.pythonhosted.org/packages/b6/58/405dec1789d7ff676bb58cf43a03f8a97604721753e70666b2a1b1a64aac/zntrack-0.6.0a4.tar.gz
+[2023-04-10 22:14:44] INFO root fetch - processPackages [python-project-structure]: Downloading https://files.pythonhosted.org/packages/f2/df/120e95586bfeda11b12161ba75c219545e16f2f233560057d508a68f500e/python-project-structure-0.8.5b1.tar.gz
+[2023-04-10 22:14:44] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-10 22:14:44] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.5b0.tar.gz tmp/python-project-structure-0.8.5b1.tar.gz --markdown 20230410/p/python-project-structure/0.8.5b0-0.8.5b1/diff.md --exclude *.pyd
+[2023-04-10 22:14:44] INFO root fetch - processPackages [zntrack]: Downloading https://files.pythonhosted.org/packages/e4/7c/85ae75059d71bcaf226e9dc66207f30f823f5bee755199926a8883f4025c/zntrack-0.6.0a5.tar.gz
+[2023-04-10 22:14:44] INFO root fetch - processPackages [plantpredict]: Downloading https://files.pythonhosted.org/packages/91/2e/6f5c62fdb8719d10168fc20efdd320074d3624adc23bef51d28cf1994512/plantpredict-1.0.9.tar.gz
+[2023-04-10 22:14:44] INFO root fetch - processPackages [zntrack]: executing diffoscope
+[2023-04-10 22:14:44] INFO root fetch - processPackages [zntrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zntrack-0.6.0a4.tar.gz tmp/zntrack-0.6.0a5.tar.gz --markdown 20230410/z/zntrack/0.6.0a4-0.6.0a5/diff.md --exclude *.pyd
+[2023-04-10 22:14:44] INFO root fetch - processPackages [plantpredict]: executing diffoscope
+[2023-04-10 22:14:44] INFO root fetch - processPackages [plantpredict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plantpredict-1.0.8.tar.gz tmp/plantpredict-1.0.9.tar.gz --markdown 20230410/p/plantpredict/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-10 22:14:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:14:45] WARNING root fetch - processPackages [yodapa]: Skipping, unable to determine old version
+[2023-04-10 22:14:45] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:14:45] INFO root fetch - processPackages [almonaut]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-10 22:14:45] INFO root fetch - processPackages [almonaut]: Downloading https://files.pythonhosted.org/packages/a6/d5/5434135901baccf4ae36e6939c772b61113fc4cdab30b2c476147e3c88f5/almonaut-0.1.0.tar.gz
+[2023-04-10 22:14:45] INFO root fetch - processPackages [PyAstronomy]: Downloading https://files.pythonhosted.org/packages/12/9e/ca33da75c9225e195015638b4d148bdce3f07262c3bfe1f04905793e6747/PyAstronomy-0.9.0.tar.gz
+[2023-04-10 22:14:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:14:45] INFO root fetch - processPackages [satcfdi]: New version: [4.0.7] Old Version: [4.0.6]
+[2023-04-10 22:14:45] INFO root fetch - processPackages [almonaut]: Downloading https://files.pythonhosted.org/packages/9f/0c/3dbd896136f84f99aa4568002223b2f4736329ff03a810d25a6c52c62187/almonaut-0.2.0.tar.gz
+[2023-04-10 22:14:45] INFO root fetch - processPackages [almonaut]: executing diffoscope
+[2023-04-10 22:14:45] INFO root fetch - processPackages [almonaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almonaut-0.1.0.tar.gz tmp/almonaut-0.2.0.tar.gz --markdown 20230410/a/almonaut/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 22:14:45] INFO root fetch - processPackages [satcfdi]: Downloading https://files.pythonhosted.org/packages/ab/5b/7f5a41a6b2b3314a424fc141a0e3193f99180b5d03e3c577704c1f066382/satcfdi-4.0.7.tar.gz
+[2023-04-10 22:14:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:14:45] WARNING root fetch - processPackages [datasette-auth-osm]: Skipping, unable to determine old version
+[2023-04-10 22:14:45] INFO root fetch - main [MainThread]: error
+[2023-04-10 22:14:45] INFO root fetch - processPackages [satcfdi]: executing diffoscope
+[2023-04-10 22:14:45] INFO root fetch - processPackages [satcfdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satcfdi-4.0.6.tar.gz tmp/satcfdi-4.0.7.tar.gz --markdown 20230410/s/satcfdi/4.0.6-4.0.7/diff.md --exclude *.pyd
+[2023-04-10 22:14:45] INFO root fetch - processPackages [spare-scores]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 22:14:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:14:46] INFO root fetch - processPackages [brds]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 22:14:46] INFO root fetch - processPackages [spare-scores]: Downloading https://files.pythonhosted.org/packages/13/a0/2b4ef9a977e973cc518b6288c73580a7eaae124ba25725b1fc8319df8c70/spare_scores-0.1.8.tar.gz
+[2023-04-10 22:14:46] INFO root fetch - processPackages [PyAstronomy]: executing diffoscope
+[2023-04-10 22:14:46] INFO root fetch - processPackages [PyAstronomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAstronomy-0.8.1.tar.gz tmp/PyAstronomy-0.9.0.tar.gz --markdown 20230410/P/PyAstronomy/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-10 22:14:46] INFO root fetch - processPackages [brds]: executing diffoscope
+[2023-04-10 22:14:46] INFO root fetch - processPackages [brds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brds-0.1.0.tar.gz tmp/brds-0.1.1.tar.gz --markdown 20230410/b/brds/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 22:14:46] INFO root fetch - processPackages [spare-scores]: Downloading https://files.pythonhosted.org/packages/c5/e1/d9b4f743aeb49481cd014a371146d6fb8c2973df513363470c9b7a0f7672/spare_scores-0.1.9.tar.gz
+[2023-04-10 22:14:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:14:46] INFO root fetch - processPackages [spare-scores]: executing diffoscope
+[2023-04-10 22:14:46] INFO root fetch - processPackages [spare-scores]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spare_scores-0.1.8.tar.gz tmp/spare_scores-0.1.9.tar.gz --markdown 20230410/s/spare-scores/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 22:14:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:14:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:14:49] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:14:51] INFO root fetch - main [MainThread]: success
+[2023-04-10 22:14:51] INFO root fetch - main [MainThread]: Store serial: [17649969]
