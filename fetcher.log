@@ -9589,3 +9589,132 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 15:02:18] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:02:18] INFO root fetch - main [MainThread]: success
 [2023-04-10 15:02:18] INFO root fetch - main [MainThread]: Store serial: [17646014]
+[2023-04-10 15:07:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646014]
+[2023-04-10 15:07:26] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 15:07:26] INFO root fetch - processPackages [sittagger]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-10 15:07:26] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-10 15:07:26] INFO root fetch - processPackages [cm-two]: New version: [2.2.61] Old Version: [2.2.6]
+[2023-04-10 15:07:26] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 15:07:26] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 15:07:26] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-10 15:07:26] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230410/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 15:07:26] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-10 15:07:26] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230410/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 15:07:26] INFO root fetch - processPackages [sittagger]: Downloading https://files.pythonhosted.org/packages/4e/61/75642e60a2bbf93f9012f052458c7dd7ad4fdd64ccadb22ab2734bee90d8/sittagger-0.6.1.tar.gz
+[2023-04-10 15:07:26] INFO root fetch - processPackages [cm-two]: Downloading https://files.pythonhosted.org/packages/a3/a9/e181178c1cc59f1bb35aef5eab0e6f0709e6ce7766231ff66e579c391a03/cm_two-2.2.61-py3-none-any.whl
+[2023-04-10 15:07:26] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/7a/8b/7de5a365cfae34cd68b385fb2ac2ef2760296e1312eac915dbbc0f90985b/fbgemm_gpu_nightly_cpu-2023.4.9-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-10 15:07:26] INFO root fetch - processPackages [sittagger]: Downloading https://files.pythonhosted.org/packages/52/b6/9300813d6de6752437d4813f92115a6ab7dc9b632d330e772e04042de593/sittagger-0.6.2.tar.gz
+[2023-04-10 15:07:26] INFO root fetch - processPackages [sittagger]: executing diffoscope
+[2023-04-10 15:07:26] INFO root fetch - processPackages [sittagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sittagger-0.6.1.tar.gz tmp/sittagger-0.6.2.tar.gz --markdown 20230410/s/sittagger/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-10 15:07:27] INFO root fetch - processPackages [cm-two]: executing diffoscope
+[2023-04-10 15:07:27] INFO root fetch - processPackages [cm-two]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cm_two-2.2.6-py3-none-any.whl.zip tmp/cm_two-2.2.61-py3-none-any.whl.zip --markdown 20230410/c/cm-two/2.2.6-2.2.61/diff.md --exclude *.pyd
+[2023-04-10 15:07:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:07:27] INFO root fetch - processPackages [base16-colorlib]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-10 15:07:27] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:07:27] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-10 15:07:27] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-10 15:07:27] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230410/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-10 15:07:27] INFO root fetch - processPackages [base16-colorlib]: Downloading https://files.pythonhosted.org/packages/97/8d/5d8df2494265767e607876d57736cdc62bd02ba161fd3e0e485a9b45fa4d/base16_colorlib-0.1.0.tar.gz
+[2023-04-10 15:07:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:07:28] ERROR root fetch - processPackages [cm-two]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+[2023-04-10 15:07:28] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:07:28] INFO root fetch - processPackages [types-graphene]: New version: [0.18] Old Version: [0.17]
+[2023-04-10 15:07:28] WARNING root fetch - processPackages [richspot]: Skipping, unable to determine old version
+[2023-04-10 15:07:28] INFO root fetch - main [MainThread]: error
+[2023-04-10 15:07:28] INFO root fetch - processPackages [base16-colorlib]: Downloading https://files.pythonhosted.org/packages/98/81/ce0c927809a83261dd2f194be09ca0763e2fadfac002efdafa9bf6893413/base16_colorlib-0.2.0.tar.gz
+[2023-04-10 15:07:28] INFO root fetch - processPackages [base16-colorlib]: executing diffoscope
+[2023-04-10 15:07:28] INFO root fetch - processPackages [base16-colorlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/base16_colorlib-0.1.0.tar.gz tmp/base16_colorlib-0.2.0.tar.gz --markdown 20230410/b/base16-colorlib/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 15:07:28] INFO root fetch - processPackages [types-graphene]: executing diffoscope
+[2023-04-10 15:07:28] INFO root fetch - processPackages [types-graphene]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-graphene-0.17.tar.gz tmp/types-graphene-0.18.tar.gz --markdown 20230410/t/types-graphene/0.17-0.18/diff.md --exclude *.pyd
+[2023-04-10 15:07:28] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-04-10 15:07:28] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.4.8-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.4.9-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230410/f/fbgemm-gpu-nightly-cpu/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-10 15:07:28] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:07:29] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:07:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:07:30] INFO root fetch - main [MainThread]: success
+[2023-04-10 15:07:30] INFO root fetch - main [MainThread]: Store serial: [17646044]
