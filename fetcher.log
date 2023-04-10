@@ -7498,3 +7498,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-10 12:00:56] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:00:59] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:00:59] INFO root fetch - main [MainThread]: Store serial: [17644863]
+[2023-04-10 12:06:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17644863]
+[2023-04-10 12:06:06] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 12:06:06] INFO root fetch - processPackages [tatarubot2]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-10 12:06:06] INFO root fetch - processPackages [nlpipes]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 12:06:06] WARNING root fetch - processPackages [etcd-sdk-python]: Skipping, unable to determine old version
+[2023-04-10 12:06:06] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:06:06] INFO root fetch - processPackages [django-htmx-viewsets]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-10 12:06:06] INFO root fetch - processPackages [kevin-toolbox]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 12:06:06] INFO root fetch - processPackages [danling]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 12:06:07] INFO root fetch - processPackages [kevin-toolbox]: Downloading https://files.pythonhosted.org/packages/03/25/b79b0719ac682eb7d634a9d54900f028bf9699d9fd50925ab9e46ab2ee47/kevin-toolbox-1.0.0.tar.gz
+[2023-04-10 12:06:07] INFO root fetch - processPackages [nlpipes]: Downloading https://files.pythonhosted.org/packages/a3/a5/61d021f09b15d01ed0dc82c6485d500e987e3538d20a9e6ea944f5bf1538/nlpipes-0.1.8.tar.gz
+[2023-04-10 12:06:07] INFO root fetch - processPackages [tatarubot2]: Downloading https://files.pythonhosted.org/packages/e8/89/2c856f500d3b7628ced88cbe24fa33bf1074cb860fd4d418f7ce05624510/tatarubot2-0.1.3.tar.gz
+[2023-04-10 12:06:07] INFO root fetch - processPackages [danling]: Downloading https://files.pythonhosted.org/packages/24/80/a8de7d2281864ea0d4e235b26f3f02dca5cb06c7f50ac7f7d899444bb9f8/danling-0.1.8.tar.gz
+[2023-04-10 12:06:07] INFO root fetch - processPackages [django-htmx-viewsets]: Downloading https://files.pythonhosted.org/packages/7a/55/860a37a8fcefa7101d85132ac47141762a451f6b85a5d506250bd359113a/django-htmx-viewsets-0.0.7.tar.gz
+[2023-04-10 12:06:08] INFO root fetch - processPackages [kevin-toolbox]: Downloading https://files.pythonhosted.org/packages/1e/e9/bfe9d0ba6167d9e7c916ebb25f8499332cd25d8b4ccb0b12b649d7526c31/kevin-toolbox-1.0.1.tar.gz
+[2023-04-10 12:06:08] INFO root fetch - processPackages [tatarubot2]: executing diffoscope
+[2023-04-10 12:06:08] INFO root fetch - processPackages [tatarubot2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tatarubot2-0.1.2.tar.gz tmp/tatarubot2-0.1.3.tar.gz --markdown 20230410/t/tatarubot2/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-10 12:06:08] INFO root fetch - processPackages [django-htmx-viewsets]: executing diffoscope
+[2023-04-10 12:06:08] INFO root fetch - processPackages [django-htmx-viewsets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-htmx-viewsets-0.0.6.tar.gz tmp/django-htmx-viewsets-0.0.7.tar.gz --markdown 20230410/d/django-htmx-viewsets/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-10 12:06:08] INFO root fetch - processPackages [nlpipes]: Downloading https://files.pythonhosted.org/packages/98/56/9d102d7fc8c8919a7ce21c3cdadb266023fc983d1ac2a5843421d8f7b67f/nlpipes-0.1.9.tar.gz
+[2023-04-10 12:06:08] INFO root fetch - processPackages [kevin-toolbox]: executing diffoscope
+[2023-04-10 12:06:08] INFO root fetch - processPackages [kevin-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kevin-toolbox-1.0.0.tar.gz tmp/kevin-toolbox-1.0.1.tar.gz --markdown 20230410/k/kevin-toolbox/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 12:06:09] INFO root fetch - processPackages [nlpipes]: executing diffoscope
+[2023-04-10 12:06:09] INFO root fetch - processPackages [nlpipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpipes-0.1.8.tar.gz tmp/nlpipes-0.1.9.tar.gz --markdown 20230410/n/nlpipes/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 12:06:09] INFO root fetch - processPackages [danling]: Downloading https://files.pythonhosted.org/packages/2b/bb/95f75eee26844e5431f2f8d5545433795818d0d15c0e71d0e5c10a5f4ad1/danling-0.1.9.tar.gz
+[2023-04-10 12:06:09] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:06:09] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-10 12:06:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:06:10] INFO root fetch - processPackages [kevin-toolbox-dev]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 12:06:10] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-10 12:06:10] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230410/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-10 12:06:10] INFO root fetch - processPackages [kevin-toolbox-dev]: Downloading https://files.pythonhosted.org/packages/bb/21/ccd442301355ff7f09c69d40d7253ffd17fd97d28cf4d41d597bc27a0d84/kevin-toolbox-dev-1.0.0.tar.gz
+[2023-04-10 12:06:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:06:10] INFO root fetch - processPackages [deezer-downloader]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-10 12:06:10] INFO root fetch - processPackages [deezer-downloader]: Downloading https://files.pythonhosted.org/packages/60/f5/a03abea66b6674054791e3c2e9da7ee119ecad08219a38a671f24b027d2a/deezer_downloader-2.0.2.tar.gz
+[2023-04-10 12:06:10] INFO root fetch - processPackages [kevin-toolbox-dev]: Downloading https://files.pythonhosted.org/packages/8a/1a/f556b58299914fe853e86ac092eadca0f98c77e8b9924b59fe937def9db5/kevin-toolbox-dev-1.0.1.tar.gz
+[2023-04-10 12:06:10] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:06:10] INFO root fetch - processPackages [neapolitan]: New version: [23.4] Old Version: [23.3]
+[2023-04-10 12:06:10] INFO root fetch - processPackages [kevin-toolbox-dev]: executing diffoscope
+[2023-04-10 12:06:10] INFO root fetch - processPackages [kevin-toolbox-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kevin-toolbox-dev-1.0.0.tar.gz tmp/kevin-toolbox-dev-1.0.1.tar.gz --markdown 20230410/k/kevin-toolbox-dev/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 12:06:10] INFO root fetch - processPackages [neapolitan]: Downloading https://files.pythonhosted.org/packages/b1/65/b635c0b31e61d7b28964735fbe4907a98a10d53869a76409a1b0275565df/neapolitan-23.4.tar.gz
+[2023-04-10 12:06:11] INFO root fetch - processPackages [neapolitan]: executing diffoscope
+[2023-04-10 12:06:11] INFO root fetch - processPackages [neapolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neapolitan-23.3.tar.gz tmp/neapolitan-23.4.tar.gz --markdown 20230410/n/neapolitan/23.3-23.4/diff.md --exclude *.pyd
+[2023-04-10 12:06:11] INFO root fetch - processPackages [danling]: executing diffoscope
+[2023-04-10 12:06:11] INFO root fetch - processPackages [danling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danling-0.1.8.tar.gz tmp/danling-0.1.9.tar.gz --markdown 20230410/d/danling/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 12:06:11] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:06:11] INFO root fetch - processPackages [deezer-downloader]: executing diffoscope
+[2023-04-10 12:06:11] INFO root fetch - processPackages [deezer-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deezer_downloader-2.0.1.tar.gz tmp/deezer_downloader-2.0.2.tar.gz --markdown 20230410/d/deezer-downloader/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-10 12:06:11] INFO root fetch - processPackages [streamlit-lightweight-charts]: New version: [0.7.18] Old Version: [0.7.17]
+[2023-04-10 12:06:11] INFO root fetch - processPackages [streamlit-lightweight-charts]: Downloading https://files.pythonhosted.org/packages/3e/ea/8b5e4157e8424374d7e854b1677cbaa91ebf6f6851e4142b4e87637fe2a3/streamlit-lightweight-charts-0.7.17.tar.gz
+[2023-04-10 12:06:11] INFO root fetch - processPackages [streamlit-lightweight-charts]: Downloading https://files.pythonhosted.org/packages/ed/96/7ed6ffdc9cfe36bc91986cd5a429269ed2d6e775d872c310d161a518fce7/streamlit-lightweight-charts-0.7.18.tar.gz
+[2023-04-10 12:06:11] INFO root fetch - processPackages [streamlit-lightweight-charts]: executing diffoscope
+[2023-04-10 12:06:11] INFO root fetch - processPackages [streamlit-lightweight-charts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-lightweight-charts-0.7.17.tar.gz tmp/streamlit-lightweight-charts-0.7.18.tar.gz --markdown 20230410/s/streamlit-lightweight-charts/0.7.17-0.7.18/diff.md --exclude *.pyd
+[2023-04-10 12:06:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:06:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:06:12] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:06:13] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:06:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:06:14] INFO root fetch - main [MainThread]: Store serial: [17644899]
