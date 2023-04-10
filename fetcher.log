@@ -11921,3 +11921,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 17:38:39] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:38:53] INFO root fetch - main [MainThread]: success
 [2023-04-10 17:38:53] INFO root fetch - main [MainThread]: Store serial: [17647441]
+[2023-04-10 17:43:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647441]
+[2023-04-10 17:44:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-10 17:44:02] INFO root fetch - processPackages [twitch-to-clip]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-10 17:44:02] INFO root fetch - processPackages [tricky]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 17:44:02] INFO root fetch - processPackages [ipfabric-diagrams]: New version: [6.2.0b1] Old Version: [6.2.0b0]
+[2023-04-10 17:44:02] INFO root fetch - processPackages [openlane]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-04-10 17:44:02] INFO root fetch - processPackages [interloper]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-10 17:44:02] INFO root fetch - processPackages [twitch-to-clip]: Downloading https://files.pythonhosted.org/packages/95/39/e838c9f76054418506636458f129f429e3eb5128172840fc4edd9a11903d/twitch-to-clip-1.0.2.tar.gz
+[2023-04-10 17:44:02] INFO root fetch - processPackages [tricky]: Downloading https://files.pythonhosted.org/packages/2f/2a/44c79deec2f32f6e529c5ad9e72e6cb060867455cac6ce8a7c65a1f7eb37/tricky-0.0.8.tar.gz
+[2023-04-10 17:44:02] INFO root fetch - processPackages [ipfabric-diagrams]: Downloading https://files.pythonhosted.org/packages/0a/d1/4816a4cfef21a12f3a952cc9cb3262608091c0fbcba6250a3c963e3ce810/ipfabric_diagrams-6.2.0b0.tar.gz
+[2023-04-10 17:44:02] INFO root fetch - processPackages [openlane]: Downloading https://files.pythonhosted.org/packages/f9/e1/2bc6d40f7a838d2e5cfcd0d8b4d3b5f2a822440b2a94b0ce02148cab52bc/openlane-2.0.0a8.tar.gz
+[2023-04-10 17:44:02] INFO root fetch - processPackages [interloper]: Downloading https://files.pythonhosted.org/packages/ed/94/2833102ea6dba4c6c6f928f9722ec5f5be9ef321f7c6fa222a343462b018/interloper-0.1.2.tar.gz
+[2023-04-10 17:44:02] INFO root fetch - processPackages [interloper]: executing diffoscope
+[2023-04-10 17:44:02] INFO root fetch - processPackages [interloper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interloper-0.1.1.tar.gz tmp/interloper-0.1.2.tar.gz --markdown 20230410/i/interloper/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-10 17:44:02] INFO root fetch - processPackages [twitch-to-clip]: Downloading https://files.pythonhosted.org/packages/bf/34/bacc7181d6abb6f2941d64a7bfa833274a4a8d525862fc75dc684435ee72/twitch-to-clip-1.0.3.tar.gz
+[2023-04-10 17:44:02] INFO root fetch - processPackages [twitch-to-clip]: executing diffoscope
+[2023-04-10 17:44:02] INFO root fetch - processPackages [twitch-to-clip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitch-to-clip-1.0.2.tar.gz tmp/twitch-to-clip-1.0.3.tar.gz --markdown 20230410/t/twitch-to-clip/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-10 17:44:02] INFO root fetch - processPackages [tricky]: Downloading https://files.pythonhosted.org/packages/1f/1f/69387711c8a77318f5bda8e316739b1e7e6d167ec044721b37c81944715a/tricky-0.0.9.tar.gz
+[2023-04-10 17:44:02] INFO root fetch - processPackages [ipfabric-diagrams]: Downloading https://files.pythonhosted.org/packages/a2/4e/5f02e4aa6ec9ccace4837a8acb556233830ade45e0fab379670d73613c95/ipfabric_diagrams-6.2.0b1.tar.gz
+[2023-04-10 17:44:02] INFO root fetch - processPackages [tricky]: executing diffoscope
+[2023-04-10 17:44:02] INFO root fetch - processPackages [tricky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tricky-0.0.8.tar.gz tmp/tricky-0.0.9.tar.gz --markdown 20230410/t/tricky/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 17:44:02] INFO root fetch - processPackages [openlane]: Downloading https://files.pythonhosted.org/packages/3b/36/ef13f9e1e09e4ec49090d033dcc88d1ce603bd51886f214690e50b2e5357/openlane-2.0.0a9.tar.gz
+[2023-04-10 17:44:02] INFO root fetch - processPackages [ipfabric-diagrams]: executing diffoscope
+[2023-04-10 17:44:02] INFO root fetch - processPackages [ipfabric-diagrams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipfabric_diagrams-6.2.0b0.tar.gz tmp/ipfabric_diagrams-6.2.0b1.tar.gz --markdown 20230410/i/ipfabric-diagrams/6.2.0b0-6.2.0b1/diff.md --exclude *.pyd
+[2023-04-10 17:44:03] INFO root fetch - processPackages [openlane]: executing diffoscope
+[2023-04-10 17:44:03] INFO root fetch - processPackages [openlane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlane-2.0.0a8.tar.gz tmp/openlane-2.0.0a9.tar.gz --markdown 20230410/o/openlane/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-04-10 17:44:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:44:03] INFO root fetch - processPackages [twitch-to-clip]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-10 17:44:03] INFO root fetch - processPackages [twitch-to-clip]: executing diffoscope
+[2023-04-10 17:44:03] INFO root fetch - processPackages [twitch-to-clip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitch-to-clip-1.0.2.tar.gz tmp/twitch-to-clip-1.0.3.tar.gz --markdown 20230410/t/twitch-to-clip/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-10 17:44:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:44:03] INFO root fetch - processPackages [python-roborock]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-10 17:44:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:44:04] INFO root fetch - processPackages [python-roborock]: Downloading https://files.pythonhosted.org/packages/3c/dd/d19a27da7e7eb57313ec3deea1be7b05d73272dbdb48acfcb36a0ce35afe/python_roborock-0.6.1.tar.gz
+[2023-04-10 17:44:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:44:04] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-04-10 17:44:04] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.6.0.tar.gz tmp/python_roborock-0.6.1.tar.gz --markdown 20230410/p/python-roborock/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-10 17:44:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:44:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:44:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 17:44:05] INFO root fetch - main [MainThread]: Store serial: [17647471]
