@@ -10600,3 +10600,63 @@ EOFError: EOF read where object expected
 [2023-04-10 16:10:27] INFO root fetch - main [MainThread]: success
 [2023-04-10 16:10:30] INFO root fetch - main [MainThread]: success
 [2023-04-10 16:10:30] INFO root fetch - main [MainThread]: Store serial: [17646611]
+[2023-04-10 16:15:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17646611]
+[2023-04-10 16:15:38] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-10 16:15:38] WARNING root fetch - processPackages [botsh]: Skipping, unable to determine old version
+[2023-04-10 16:15:38] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:15:38] INFO root fetch - processPackages [splight-lib]: New version: [2.2.2] Old Version: [2.2.1]
+[2023-04-10 16:15:38] INFO root fetch - processPackages [helyos-agent-sdk]: New version: [0.3.0] Old Version: [0.1.6]
+[2023-04-10 16:15:38] WARNING root fetch - processPackages [TaiNLP]: Skipping, unable to determine old version
+[2023-04-10 16:15:38] WARNING root fetch - processPackages [sneakpeek-py]: Skipping, unable to determine old version
+[2023-04-10 16:15:38] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:15:38] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:15:38] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-10 16:15:38] WARNING root fetch - processPackages [scart]: Skipping, unable to determine old version
+[2023-04-10 16:15:38] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:15:38] INFO root fetch - processPackages [ipsocgen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 16:15:38] INFO root fetch - processPackages [rstyleslice]: New version: [1.4] Old Version: [1.1]
+[2023-04-10 16:15:38] INFO root fetch - processPackages [splight-lib]: Downloading https://files.pythonhosted.org/packages/3b/e9/73aeb2ade98900b42da44c96459fd3303e994235e864ae13179a9724a366/splight-lib-2.2.1.tar.gz
+[2023-04-10 16:15:38] INFO root fetch - processPackages [ipsocgen]: executing diffoscope
+[2023-04-10 16:15:38] INFO root fetch - processPackages [ipsocgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipsocgen-0.1.8.tar.gz tmp/ipsocgen-0.1.9.tar.gz --markdown 20230410/i/ipsocgen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 16:15:38] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-10 16:15:38] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230410/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-10 16:15:38] INFO root fetch - processPackages [helyos-agent-sdk]: Downloading https://files.pythonhosted.org/packages/00/6a/8195f7b97d320ad7543e90f2fa80f5a4a887628357daff621711b8d82dd2/helyos_agent_sdk-0.1.6.tar.gz
+[2023-04-10 16:15:38] INFO root fetch - processPackages [rstyleslice]: Downloading https://files.pythonhosted.org/packages/5d/ef/b94f2214b10b4f814aafcfba400cd0ba6a158d0e2e53bc9bfc5d2b974d17/rstyleslice-1.1.tar.gz
+[2023-04-10 16:15:38] INFO root fetch - processPackages [splight-lib]: Downloading https://files.pythonhosted.org/packages/06/9d/bc644cb06ab10cb0134e9e0ae906684a77af99de78eea3ca2d55e2342498/splight-lib-2.2.2.tar.gz
+[2023-04-10 16:15:38] INFO root fetch - processPackages [helyos-agent-sdk]: Downloading https://files.pythonhosted.org/packages/57/3c/e4f1ec478d3eb26f3266a2d872437a9fce8256b0b86b22a95eb5295e07b6/helyos_agent_sdk-0.3.0.tar.gz
+[2023-04-10 16:15:38] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-04-10 16:15:38] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.2.1.tar.gz tmp/splight-lib-2.2.2.tar.gz --markdown 20230410/s/splight-lib/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2023-04-10 16:15:38] INFO root fetch - processPackages [rstyleslice]: Downloading https://files.pythonhosted.org/packages/42/bf/a5427065e05a5feb543ced587bf8c74d0c4d425108668a193d055cf7299a/rstyleslice-1.4.tar.gz
+[2023-04-10 16:15:38] INFO root fetch - processPackages [rstyleslice]: executing diffoscope
+[2023-04-10 16:15:38] INFO root fetch - processPackages [rstyleslice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rstyleslice-1.1.tar.gz tmp/rstyleslice-1.4.tar.gz --markdown 20230410/r/rstyleslice/1.1-1.4/diff.md --exclude *.pyd
+[2023-04-10 16:15:38] INFO root fetch - processPackages [helyos-agent-sdk]: executing diffoscope
+[2023-04-10 16:15:38] INFO root fetch - processPackages [helyos-agent-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helyos_agent_sdk-0.1.6.tar.gz tmp/helyos_agent_sdk-0.3.0.tar.gz --markdown 20230410/h/helyos-agent-sdk/0.1.6-0.3.0/diff.md --exclude *.pyd
+[2023-04-10 16:15:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:15:39] INFO root fetch - processPackages [TerminalPrinter]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-04-10 16:15:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:15:39] INFO root fetch - processPackages [xhs]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 16:15:39] INFO root fetch - processPackages [xhs]: Downloading https://files.pythonhosted.org/packages/92/40/a7c78588dbbb307682531ddc9811199e5e50530f8047af0063233c3bfb79/xhs-0.1.0.tar.gz
+[2023-04-10 16:15:39] INFO root fetch - processPackages [TerminalPrinter]: Downloading https://files.pythonhosted.org/packages/84/56/daa79aa8b066b5e0fb31a4a9e2ea46ec7631c1f836f87f0b3d53061604d8/TerminalPrinter-2.2.0.tar.gz
+[2023-04-10 16:15:39] INFO root fetch - processPackages [TerminalPrinter]: executing diffoscope
+[2023-04-10 16:15:39] INFO root fetch - processPackages [TerminalPrinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TerminalPrinter-2.1.0.tar.gz tmp/TerminalPrinter-2.2.0.tar.gz --markdown 20230410/T/TerminalPrinter/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-04-10 16:15:40] INFO root fetch - processPackages [xhs]: Downloading https://files.pythonhosted.org/packages/f2/95/33c6a0d3fbc1872c00d80e7771e12378faed0091c03a7f61561ee1ff3a21/xhs-0.1.1.tar.gz
+[2023-04-10 16:15:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:15:40] WARNING root fetch - processPackages [pure-math]: Skipping, unable to determine old version
+[2023-04-10 16:15:40] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:15:40] INFO root fetch - processPackages [xhs]: executing diffoscope
+[2023-04-10 16:15:40] INFO root fetch - processPackages [xhs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xhs-0.1.0.tar.gz tmp/xhs-0.1.1.tar.gz --markdown 20230410/x/xhs/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-10 16:15:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:15:40] WARNING root fetch - processPackages [polywrap-client-config-builder]: Skipping, unable to determine old version
+[2023-04-10 16:15:40] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:15:40] INFO root fetch - processPackages [polywrap-client]: New version: [0.1.0a4] Old Version: [0.1.0a3]
+[2023-04-10 16:15:40] WARNING root fetch - processPackages [yeagerai-agent]: Skipping, unable to determine old version
+[2023-04-10 16:15:40] INFO root fetch - main [MainThread]: error
+[2023-04-10 16:15:40] INFO root fetch - processPackages [polywrap-client]: Downloading https://files.pythonhosted.org/packages/00/55/bb0c2cf05fa194f1ab58bd7f5f5381b75a2e3bacb4bb2aafc8987ac4a335/polywrap_client-0.1.0a3.tar.gz
+[2023-04-10 16:15:40] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:15:40] INFO root fetch - processPackages [polywrap-client]: Downloading https://files.pythonhosted.org/packages/80/f8/5d300d6fcb2da426408599e055a752c0247c482e8dc308125ae1172d535b/polywrap_client-0.1.0a4.tar.gz
+[2023-04-10 16:15:40] INFO root fetch - processPackages [polywrap-client]: executing diffoscope
+[2023-04-10 16:15:40] INFO root fetch - processPackages [polywrap-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_client-0.1.0a3.tar.gz tmp/polywrap_client-0.1.0a4.tar.gz --markdown 20230410/p/polywrap-client/0.1.0a3-0.1.0a4/diff.md --exclude *.pyd
+[2023-04-10 16:15:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:15:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:15:41] INFO root fetch - main [MainThread]: success
+[2023-04-10 16:15:41] INFO root fetch - main [MainThread]: Store serial: [17646671]
