@@ -12319,3 +12319,46 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 18:15:24] INFO root fetch - main [MainThread]: success
 [2023-04-10 18:15:26] INFO root fetch - main [MainThread]: success
 [2023-04-10 18:15:26] INFO root fetch - main [MainThread]: Store serial: [17647737]
+[2023-04-10 18:20:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17647737]
+[2023-04-10 18:20:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-10 18:20:34] INFO root fetch - processPackages [data-ecosystem-dependencies]: New version: [202304.0.5] Old Version: [202304.0.4]
+[2023-04-10 18:20:34] INFO root fetch - processPackages [django-robust-redirects]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 18:20:34] WARNING root fetch - processPackages [ovos-dinkum-listener]: Skipping, unable to determine old version
+[2023-04-10 18:20:34] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:20:34] INFO root fetch - processPackages [dataquality]: New version: [0.8.9] Old Version: [0.8.8a0]
+[2023-04-10 18:20:34] INFO root fetch - processPackages [SSOPDataBase]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-10 18:20:34] WARNING root fetch - processPackages [gpt-gateway]: Skipping, unable to determine old version
+[2023-04-10 18:20:34] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:20:34] INFO root fetch - processPackages [meson]: New version: [1.1.0rc2] Old Version: [1.1.0rc1]
+[2023-04-10 18:20:34] INFO root fetch - processPackages [dataquality]: executing diffoscope
+[2023-04-10 18:20:34] INFO root fetch - processPackages [dataquality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataquality-0.8.8a0.tar.gz tmp/dataquality-0.8.9.tar.gz --markdown 20230410/d/dataquality/0.8.8a0-0.8.9/diff.md --exclude *.pyd
+[2023-04-10 18:20:34] INFO root fetch - processPackages [django-robust-redirects]: Downloading https://files.pythonhosted.org/packages/96/df/eb175b16f60f6d0572e700db140a53b40473def593ef4a0a51bf1f289ae1/django-robust-redirects-1.0.0.tar.gz
+[2023-04-10 18:20:34] INFO root fetch - processPackages [SSOPDataBase]: Downloading https://files.pythonhosted.org/packages/f3/41/d20e79956987c6308696814781b251c93daf49699b5aabf8bd42bbddeca9/ssopdatabase-0.1.0.tar.gz
+[2023-04-10 18:20:34] INFO root fetch - processPackages [meson]: Downloading https://files.pythonhosted.org/packages/04/e4/0b96838bb61d6c65509ffef04be0730980ef942f5ba0fc161d12e0b81b8a/meson-1.1.0rc1.tar.gz
+[2023-04-10 18:20:34] INFO root fetch - processPackages [django-robust-redirects]: Downloading https://files.pythonhosted.org/packages/cd/cf/49929f3b77a712c062c43dc65f0ed9b6ccfa90ad1b226f2028a83468b21b/django-robust-redirects-1.0.1.tar.gz
+[2023-04-10 18:20:35] WARNING root fetch - processPackages [SSOPDataBase]: Skipping package: exceeds size limit 25018017>=10485760
+[2023-04-10 18:20:35] INFO root fetch - main [MainThread]: error
+[2023-04-10 18:20:35] INFO root fetch - processPackages [django-robust-redirects]: executing diffoscope
+[2023-04-10 18:20:35] INFO root fetch - processPackages [django-robust-redirects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-robust-redirects-1.0.0.tar.gz tmp/django-robust-redirects-1.0.1.tar.gz --markdown 20230410/d/django-robust-redirects/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 18:20:35] INFO root fetch - processPackages [deepchem]: New version: [2.7.2.dev20230410162347] Old Version: [2.7.2.dev20230406001048]
+[2023-04-10 18:20:35] INFO root fetch - processPackages [data-ecosystem-dependencies]: Downloading https://files.pythonhosted.org/packages/98/aa/565d0bfd0f67766752657c3a9a225022ee25cdeaf2e0f5a111899e8c5d15/data_ecosystem_dependencies-202304.0.5.tar.gz
+[2023-04-10 18:20:35] INFO root fetch - processPackages [deepchem]: Downloading https://files.pythonhosted.org/packages/8f/cc/357ef71f5d9f161886df4ed39fa04fa92d0ceddcf9948ed7dafad057e7eb/deepchem-2.7.2.dev20230406001048.tar.gz
+[2023-04-10 18:20:35] INFO root fetch - processPackages [data-ecosystem-dependencies]: executing diffoscope
+[2023-04-10 18:20:35] INFO root fetch - processPackages [data-ecosystem-dependencies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_ecosystem_dependencies-202304.0.4.tar.gz tmp/data_ecosystem_dependencies-202304.0.5.tar.gz --markdown 20230410/d/data-ecosystem-dependencies/202304.0.4-202304.0.5/diff.md --exclude *.pyd
+[2023-04-10 18:20:35] INFO root fetch - processPackages [deepchem]: Downloading https://files.pythonhosted.org/packages/ed/6b/30bec9fe432a1a032d1913f6f52eeb1951b6c49223d522d93240f9404cc3/deepchem-2.7.2.dev20230410162347.tar.gz
+[2023-04-10 18:20:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:20:36] INFO root fetch - processPackages [typeguard]: New version: [4.0.0rc3] Old Version: [4.0.0rc2]
+[2023-04-10 18:20:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:20:36] INFO root fetch - processPackages [deepchem]: executing diffoscope
+[2023-04-10 18:20:36] INFO root fetch - processPackages [deepchem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepchem-2.7.2.dev20230406001048.tar.gz tmp/deepchem-2.7.2.dev20230410162347.tar.gz --markdown 20230410/d/deepchem/2.7.2.dev20230406001048-2.7.2.dev20230410162347/diff.md --exclude *.pyd
+[2023-04-10 18:20:36] INFO root fetch - processPackages [typeguard]: Downloading https://files.pythonhosted.org/packages/23/99/7f6d785905782194d56f2f27c74a07e4833d2a7ad3d7448650f3b5e55a09/typeguard-4.0.0rc3.tar.gz
+[2023-04-10 18:20:36] INFO root fetch - processPackages [meson]: Downloading https://files.pythonhosted.org/packages/1c/60/fe2c60cacdd353cf9c143d4f392e64eb76b171ea1f3ab88b9ff0baac4ed4/meson-1.1.0rc2.tar.gz
+[2023-04-10 18:20:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:20:36] INFO root fetch - processPackages [typeguard]: executing diffoscope
+[2023-04-10 18:20:36] INFO root fetch - processPackages [typeguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typeguard-4.0.0rc2.tar.gz tmp/typeguard-4.0.0rc3.tar.gz --markdown 20230410/t/typeguard/4.0.0rc2-4.0.0rc3/diff.md --exclude *.pyd
+[2023-04-10 18:20:38] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:20:38] INFO root fetch - processPackages [meson]: executing diffoscope
+[2023-04-10 18:20:38] INFO root fetch - processPackages [meson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meson-1.1.0rc1.tar.gz tmp/meson-1.1.0rc2.tar.gz --markdown 20230410/m/meson/1.1.0rc1-1.1.0rc2/diff.md --exclude *.pyd
+[2023-04-10 18:20:39] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:22:47] INFO root fetch - main [MainThread]: success
+[2023-04-10 18:22:47] INFO root fetch - main [MainThread]: Store serial: [17647767]
