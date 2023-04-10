@@ -9465,3 +9465,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 14:51:15] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:51:52] INFO root fetch - main [MainThread]: success
 [2023-04-10 14:51:52] INFO root fetch - main [MainThread]: Store serial: [17645940]
+[2023-04-10 14:56:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645940]
+[2023-04-10 14:57:00] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 14:57:00] INFO root fetch - processPackages [skynix-cli]: New version: [0.1.3.post4] Old Version: [0.1.3.post3]
+[2023-04-10 14:57:00] INFO root fetch - processPackages [pyntcli]: New version: [0.1.41] Old Version: [0.1.40]
+[2023-04-10 14:57:00] INFO root fetch - processPackages [kevin-toolbox]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-10 14:57:00] INFO root fetch - processPackages [precession]: New version: [2.0.0.dev0] Old Version: [1.0.3]
+[2023-04-10 14:57:00] INFO root fetch - processPackages [toui]: New version: [1.0.3b0] Old Version: [1.0.2b0]
+[2023-04-10 14:57:00] INFO root fetch - processPackages [skynix-cli]: Downloading https://files.pythonhosted.org/packages/c0/92/be4bc77fb2fd0f2e72963dc972b115fbbc0c0cae2c2a5ca7cbca37976493/skynix-cli-0.1.3.post3.tar.gz
+[2023-04-10 14:57:00] INFO root fetch - processPackages [kevin-toolbox]: Downloading https://files.pythonhosted.org/packages/69/e2/d44b257fe5c8a608fc6e40829497534eadb9f147bef30a093920ef362f58/kevin-toolbox-1.0.2.tar.gz
+[2023-04-10 14:57:00] INFO root fetch - processPackages [pyntcli]: Downloading https://files.pythonhosted.org/packages/a8/e5/24e4604dc1f9baecb86163e29773f765ce910e79df19a3c44cfb9c9264de/pyntcli-0.1.41-py3-none-any.whl
+[2023-04-10 14:57:00] INFO root fetch - processPackages [toui]: Downloading https://files.pythonhosted.org/packages/43/11/927d753f0cf251cc014853653c111dfd6c687786db3e5e7519be72a25247/toui-1.0.2b0.tar.gz
+[2023-04-10 14:57:00] INFO root fetch - processPackages [precession]: Downloading https://files.pythonhosted.org/packages/3e/91/d9fe695ea0ce9740e318ef78bf2d2402e5996e42cc0be19b9de5730b1281/precession-1.0.3.tar.gz
+[2023-04-10 14:57:01] INFO root fetch - processPackages [precession]: Downloading https://files.pythonhosted.org/packages/7f/7f/66ea5067fc90477c2bb9b411636492dd416aee84eabc820c3488d67d12ee/precession-2.0.0.dev0.tar.gz
+[2023-04-10 14:57:01] INFO root fetch - processPackages [kevin-toolbox]: executing diffoscope
+[2023-04-10 14:57:01] INFO root fetch - processPackages [kevin-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kevin-toolbox-1.0.1.tar.gz tmp/kevin-toolbox-1.0.2.tar.gz --markdown 20230410/k/kevin-toolbox/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 14:57:01] INFO root fetch - processPackages [skynix-cli]: Downloading https://files.pythonhosted.org/packages/d6/f5/9e63bff29d0892911e7371eb8cbd1cf1be4595155709cb5e0596c15b4ab4/skynix-cli-0.1.3.post4.tar.gz
+[2023-04-10 14:57:01] INFO root fetch - processPackages [pyntcli]: executing diffoscope
+[2023-04-10 14:57:01] INFO root fetch - processPackages [pyntcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyntcli-0.1.40-py3-none-any.whl.zip tmp/pyntcli-0.1.41-py3-none-any.whl.zip --markdown 20230410/p/pyntcli/0.1.40-0.1.41/diff.md --exclude *.pyd
+[2023-04-10 14:57:01] INFO root fetch - processPackages [toui]: Downloading https://files.pythonhosted.org/packages/bf/fa/b57796ee063f0d97df145bdb0fa2003ae498426de0276d693256a48adfc1/toui-1.0.3b0.tar.gz
+[2023-04-10 14:57:01] INFO root fetch - processPackages [precession]: executing diffoscope
+[2023-04-10 14:57:01] INFO root fetch - processPackages [precession]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/precession-1.0.3.tar.gz tmp/precession-2.0.0.dev0.tar.gz --markdown 20230410/p/precession/1.0.3-2.0.0.dev0/diff.md --exclude *.pyd
+[2023-04-10 14:57:01] INFO root fetch - processPackages [skynix-cli]: executing diffoscope
+[2023-04-10 14:57:01] INFO root fetch - processPackages [skynix-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skynix-cli-0.1.3.post3.tar.gz tmp/skynix-cli-0.1.3.post4.tar.gz --markdown 20230410/s/skynix-cli/0.1.3.post3-0.1.3.post4/diff.md --exclude *.pyd
+[2023-04-10 14:57:01] INFO root fetch - processPackages [toui]: executing diffoscope
+[2023-04-10 14:57:01] INFO root fetch - processPackages [toui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toui-1.0.2b0.tar.gz tmp/toui-1.0.3b0.tar.gz --markdown 20230410/t/toui/1.0.2b0-1.0.3b0/diff.md --exclude *.pyd
+[2023-04-10 14:57:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:57:02] INFO root fetch - processPackages [sharingiscaring]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-10 14:57:02] INFO root fetch - processPackages [sharingiscaring]: executing diffoscope
+[2023-04-10 14:57:02] INFO root fetch - processPackages [sharingiscaring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharingiscaring-0.2.8.tar.gz tmp/sharingiscaring-0.2.9.tar.gz --markdown 20230410/s/sharingiscaring/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-10 14:57:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:57:02] INFO root fetch - processPackages [kevin-toolbox-dev]: New version: [1.0.2] Old Version: [1.0.1.5]
+[2023-04-10 14:57:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:57:02] INFO root fetch - processPackages [types-graphene]: New version: [0.18] Old Version: [0.17]
+[2023-04-10 14:57:02] INFO root fetch - processPackages [kevin-toolbox-dev]: Downloading https://files.pythonhosted.org/packages/1f/58/f9044a84e4c86cbd371f7d03606d29c02e036f161ca8268a47ef18168a37/kevin-toolbox-dev-1.0.2.tar.gz
+[2023-04-10 14:57:02] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:57:03] WARNING root fetch - processPackages [gyropalm-control]: Skipping, unable to determine old version
+[2023-04-10 14:57:03] INFO root fetch - main [MainThread]: error
+[2023-04-10 14:57:03] INFO root fetch - processPackages [uip-cli]: New version: [2.0.0] Old Version: [1.3.0]
+[2023-04-10 14:57:03] INFO root fetch - processPackages [types-graphene]: Downloading https://files.pythonhosted.org/packages/6f/9a/749334ac6da5380424818a71cd67eeb7615d09bad3b44921fb4d63ed7ee3/types-graphene-0.17.tar.gz
+[2023-04-10 14:57:03] INFO root fetch - processPackages [kevin-toolbox-dev]: executing diffoscope
+[2023-04-10 14:57:03] INFO root fetch - processPackages [kevin-toolbox-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kevin-toolbox-dev-1.0.1.5.tar.gz tmp/kevin-toolbox-dev-1.0.2.tar.gz --markdown 20230410/k/kevin-toolbox-dev/1.0.1.5-1.0.2/diff.md --exclude *.pyd
+[2023-04-10 14:57:03] INFO root fetch - processPackages [uip-cli]: Downloading https://files.pythonhosted.org/packages/d2/c3/b5074a2ce7140a68bec5f6fb51fe2158579bc493113b503142d1f3c329a1/uip-cli-1.3.0.tar.gz
+[2023-04-10 14:57:03] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:57:03] INFO root fetch - processPackages [pulumi-pulumiservice]: New version: [0.6.0] Old Version: [0.5.1a1681128726]
+[2023-04-10 14:57:03] INFO root fetch - processPackages [types-graphene]: Downloading https://files.pythonhosted.org/packages/ed/a3/27a21dc4110ae34e3aa1aafed560f144033ddc1bc02bc61f58cc4f257d56/types-graphene-0.18.tar.gz
+[2023-04-10 14:57:03] INFO root fetch - processPackages [pulumi-pulumiservice]: Downloading https://files.pythonhosted.org/packages/b3/e8/833983caad40e95de1e414630f5216e0fc8b0898bff7608a5f915c21d074/pulumi_pulumiservice-0.6.0.tar.gz
+[2023-04-10 14:57:03] INFO root fetch - processPackages [types-graphene]: executing diffoscope
+[2023-04-10 14:57:03] INFO root fetch - processPackages [types-graphene]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-graphene-0.17.tar.gz tmp/types-graphene-0.18.tar.gz --markdown 20230410/t/types-graphene/0.17-0.18/diff.md --exclude *.pyd
+[2023-04-10 14:57:03] INFO root fetch - processPackages [uip-cli]: Downloading https://files.pythonhosted.org/packages/25/37/cbabe8ff6b43c3aa3d285667b53ea2c06819276b0b655f9b7a6227b3345b/uip-cli-2.0.0.tar.gz
+[2023-04-10 14:57:03] INFO root fetch - processPackages [pulumi-pulumiservice]: executing diffoscope
+[2023-04-10 14:57:03] INFO root fetch - processPackages [pulumi-pulumiservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_pulumiservice-0.5.1a1681128726.tar.gz tmp/pulumi_pulumiservice-0.6.0.tar.gz --markdown 20230410/p/pulumi-pulumiservice/0.5.1a1681128726-0.6.0/diff.md --exclude *.pyd
+[2023-04-10 14:57:03] INFO root fetch - processPackages [uip-cli]: executing diffoscope
+[2023-04-10 14:57:03] INFO root fetch - processPackages [uip-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uip-cli-1.3.0.tar.gz tmp/uip-cli-2.0.0.tar.gz --markdown 20230410/u/uip-cli/1.3.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-10 14:57:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:57:04] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:57:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:57:05] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:57:06] INFO root fetch - main [MainThread]: success
+[2023-04-10 14:57:06] INFO root fetch - main [MainThread]: Store serial: [17645972]
