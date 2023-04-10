@@ -8060,3 +8060,43 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 12:54:46] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:54:47] INFO root fetch - main [MainThread]: success
 [2023-04-10 12:54:47] INFO root fetch - main [MainThread]: Store serial: [17645163]
+[2023-04-10 12:59:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17645163]
+[2023-04-10 12:59:54] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 12:59:55] INFO root fetch - processPackages [zimran-events]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-10 12:59:55] INFO root fetch - processPackages [talisman-dm]: New version: [1.0.0a5] Old Version: [1.0.0a4]
+[2023-04-10 12:59:55] INFO root fetch - processPackages [dashscope]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 12:59:55] WARNING root fetch - processPackages [admin-tool-button]: Skipping, unable to determine old version
+[2023-04-10 12:59:55] INFO root fetch - main [MainThread]: error
+[2023-04-10 12:59:55] INFO root fetch - processPackages [recipe-scrapers]: New version: [9.2.6] Old Version: [9.2.5]
+[2023-04-10 12:59:55] INFO root fetch - processPackages [chatgpt4-cli]: New version: [1.4.8] Old Version: [1.4.7]
+[2023-04-10 12:59:55] INFO root fetch - processPackages [dashscope]: Downloading https://files.pythonhosted.org/packages/b8/f8/ba169ad010103a703be789874eb22328f13415625a6254253abe04371a40/dashscope-1.0.0.tar.gz
+[2023-04-10 12:59:55] INFO root fetch - processPackages [zimran-events]: Downloading https://files.pythonhosted.org/packages/e7/4f/cc1ae77678d5e3f659ffd90572216824caca30f022ee3251e3e34590e441/zimran-events-0.0.3.tar.gz
+[2023-04-10 12:59:55] INFO root fetch - processPackages [recipe-scrapers]: Downloading https://files.pythonhosted.org/packages/d5/32/798f352029a9eb96fba9618fce5cd481dd19d4a66f562825dc7281c0f853/recipe_scrapers-9.2.5.tar.gz
+[2023-04-10 12:59:55] INFO root fetch - processPackages [zimran-events]: executing diffoscope
+[2023-04-10 12:59:55] INFO root fetch - processPackages [zimran-events]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zimran-events-0.0.2.tar.gz tmp/zimran-events-0.0.3.tar.gz --markdown 20230410/z/zimran-events/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-10 12:59:55] INFO root fetch - processPackages [talisman-dm]: Downloading https://files.pythonhosted.org/packages/8f/58/7b2d4e65f9bf45bbeeaa1a6e4abd9a311e3af9aa4b03a06612077ebcd468/talisman-dm-1.0.0a5.tar.gz
+[2023-04-10 12:59:55] INFO root fetch - processPackages [dashscope]: Downloading https://files.pythonhosted.org/packages/42/00/a7d808d4943f30dbad075b7f9a50ccfc3d474cfc1b3168291c87775db660/dashscope-1.0.1.tar.gz
+[2023-04-10 12:59:55] INFO root fetch - processPackages [chatgpt4-cli]: Downloading https://files.pythonhosted.org/packages/55/c6/fdaa4a4703a58fd8bf2cfca450abb710be1c04356a6a7e316ee89776319a/chatgpt4-cli-1.4.8.tar.gz
+[2023-04-10 12:59:55] INFO root fetch - processPackages [dashscope]: executing diffoscope
+[2023-04-10 12:59:55] INFO root fetch - processPackages [dashscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dashscope-1.0.0.tar.gz tmp/dashscope-1.0.1.tar.gz --markdown 20230410/d/dashscope/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 12:59:55] INFO root fetch - processPackages [talisman-dm]: executing diffoscope
+[2023-04-10 12:59:55] INFO root fetch - processPackages [talisman-dm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talisman-dm-1.0.0a4.tar.gz tmp/talisman-dm-1.0.0a5.tar.gz --markdown 20230410/t/talisman-dm/1.0.0a4-1.0.0a5/diff.md --exclude *.pyd
+[2023-04-10 12:59:55] INFO root fetch - processPackages [recipe-scrapers]: Downloading https://files.pythonhosted.org/packages/6b/5c/232be4938285e5a5392e78867e82229cbcfc9854f0e5a6dadf8e8730e53b/recipe_scrapers-9.2.6.tar.gz
+[2023-04-10 12:59:55] INFO root fetch - processPackages [chatgpt4-cli]: executing diffoscope
+[2023-04-10 12:59:55] INFO root fetch - processPackages [chatgpt4-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt4-cli-1.4.7.tar.gz tmp/chatgpt4-cli-1.4.8.tar.gz --markdown 20230410/c/chatgpt4-cli/1.4.7-1.4.8/diff.md --exclude *.pyd
+[2023-04-10 12:59:55] INFO root fetch - processPackages [recipe-scrapers]: executing diffoscope
+[2023-04-10 12:59:55] INFO root fetch - processPackages [recipe-scrapers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recipe_scrapers-9.2.5.tar.gz tmp/recipe_scrapers-9.2.6.tar.gz --markdown 20230410/r/recipe-scrapers/9.2.5-9.2.6/diff.md --exclude *.pyd
+[2023-04-10 12:59:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:59:56] INFO root fetch - processPackages [ytsaurus-spyt]: New version: [1.69.1b439.post23515129.dev9] Old Version: [1.69.1b439.post23515129.dev5]
+[2023-04-10 12:59:56] INFO root fetch - processPackages [ytsaurus-spyt]: executing diffoscope
+[2023-04-10 12:59:56] INFO root fetch - processPackages [ytsaurus-spyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytsaurus-spyt-1.69.1b439.post23515129.dev5.tar.gz tmp/ytsaurus-spyt-1.69.1b439.post23515129.dev9.tar.gz --markdown 20230410/y/ytsaurus-spyt/1.69.1b439.post23515129.dev5-1.69.1b439.post23515129.dev9/diff.md --exclude *.pyd
+[2023-04-10 12:59:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:59:56] INFO root fetch - processPackages [AttentionMOI]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-10 12:59:56] INFO root fetch - processPackages [AttentionMOI]: executing diffoscope
+[2023-04-10 12:59:56] INFO root fetch - processPackages [AttentionMOI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AttentionMOI-0.0.4.tar.gz tmp/AttentionMOI-0.0.5.tar.gz --markdown 20230410/A/AttentionMOI/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-10 12:59:56] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:59:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:59:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:59:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:59:57] INFO root fetch - main [MainThread]: success
+[2023-04-10 12:59:57] INFO root fetch - main [MainThread]: Store serial: [17645187]
