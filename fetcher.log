@@ -14285,3 +14285,66 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-10 20:49:33] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:49:33] INFO root fetch - main [MainThread]: success
 [2023-04-10 20:49:33] INFO root fetch - main [MainThread]: Store serial: [17649294]
+[2023-04-10 20:54:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17649294]
+[2023-04-10 20:54:41] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-10 20:54:41] INFO root fetch - processPackages [ecopipeline]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-10 20:54:41] INFO root fetch - processPackages [doppkit]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-10 20:54:41] INFO root fetch - processPackages [yomu]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-10 20:54:41] INFO root fetch - processPackages [dcicsnovault]: New version: [8.0.1] Old Version: [8.0.0]
+[2023-04-10 20:54:41] INFO root fetch - processPackages [nbproject]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-04-10 20:54:41] INFO root fetch - processPackages [ecopipeline]: Downloading https://files.pythonhosted.org/packages/e2/8a/f7a5ab123ffc668f8c8006319694b30214d0570a4eca2caf9a10018c7d2e/ecopipeline-0.0.1.tar.gz
+[2023-04-10 20:54:41] INFO root fetch - processPackages [dcicsnovault]: Downloading https://files.pythonhosted.org/packages/03/f2/d4ac12354a0a7d2bce828fbae12c03106d24c587863b7ca783ee472c9370/dcicsnovault-8.0.1.tar.gz
+[2023-04-10 20:54:41] INFO root fetch - processPackages [doppkit]: Downloading https://files.pythonhosted.org/packages/23/70/932d0b0a8d3f685079a0a5f06cf863b3d00595c009728e7a572df1e76482/doppkit-0.1.6.tar.gz
+[2023-04-10 20:54:41] INFO root fetch - processPackages [yomu]: Downloading https://files.pythonhosted.org/packages/ae/1b/d7668feb04c8dd556ea0b5787d33e26694ae87594cddf63dc4a73ac43e0c/yomu-0.1.0.tar.gz
+[2023-04-10 20:54:42] INFO root fetch - processPackages [nbproject]: Downloading https://files.pythonhosted.org/packages/9d/05/cd457ad2f918a6c195ac1bda03ddcc4e0c82c91693cf151abf7288677fdd/nbproject-0.8.3.tar.gz
+[2023-04-10 20:54:42] INFO root fetch - processPackages [doppkit]: executing diffoscope
+[2023-04-10 20:54:42] INFO root fetch - processPackages [doppkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doppkit-0.1.5.tar.gz tmp/doppkit-0.1.6.tar.gz --markdown 20230410/d/doppkit/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-10 20:54:42] INFO root fetch - processPackages [dcicsnovault]: executing diffoscope
+[2023-04-10 20:54:42] INFO root fetch - processPackages [dcicsnovault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicsnovault-8.0.0.tar.gz tmp/dcicsnovault-8.0.1.tar.gz --markdown 20230410/d/dcicsnovault/8.0.0-8.0.1/diff.md --exclude *.pyd
+[2023-04-10 20:54:42] INFO root fetch - processPackages [ecopipeline]: Downloading https://files.pythonhosted.org/packages/eb/ea/80e2472da78e2745d66c8c3976a1f8a607f81453c3d136a0f42334d6934b/ecopipeline-0.0.2.tar.gz
+[2023-04-10 20:54:42] INFO root fetch - processPackages [ecopipeline]: executing diffoscope
+[2023-04-10 20:54:42] INFO root fetch - processPackages [ecopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecopipeline-0.0.1.tar.gz tmp/ecopipeline-0.0.2.tar.gz --markdown 20230410/e/ecopipeline/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-10 20:54:42] INFO root fetch - processPackages [yomu]: Downloading https://files.pythonhosted.org/packages/45/ac/fe2a8c8fc6af1ebf26331e7c50b9e3c6ecdd295651806fb1571db9abf096/yomu-0.2.0.tar.gz
+[2023-04-10 20:54:42] INFO root fetch - processPackages [yomu]: executing diffoscope
+[2023-04-10 20:54:42] INFO root fetch - processPackages [yomu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yomu-0.1.0.tar.gz tmp/yomu-0.2.0.tar.gz --markdown 20230410/y/yomu/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-10 20:54:42] INFO root fetch - processPackages [nbproject]: Downloading https://files.pythonhosted.org/packages/b3/12/b14bc83111a28680c1d7f44c05e9e2f7b50466343cc56e1729e749253c90/nbproject-0.8.4.tar.gz
+[2023-04-10 20:54:42] INFO root fetch - processPackages [nbproject]: executing diffoscope
+[2023-04-10 20:54:42] INFO root fetch - processPackages [nbproject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbproject-0.8.3.tar.gz tmp/nbproject-0.8.4.tar.gz --markdown 20230410/n/nbproject/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-04-10 20:54:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:43] INFO root fetch - processPackages [fitsmap]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-10 20:54:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:43] INFO root fetch - processPackages [noisegrad]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 20:54:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:43] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.4b1] Old Version: [0.8.4b0]
+[2023-04-10 20:54:43] INFO root fetch - processPackages [fitsmap]: Downloading https://files.pythonhosted.org/packages/5d/c4/ae154b0fad9dd3e7acdc4221ed5af41d08c409368088557219350ef7b5cd/fitsmap-0.9.0.tar.gz
+[2023-04-10 20:54:43] INFO root fetch - processPackages [noisegrad]: Downloading https://files.pythonhosted.org/packages/93/70/e7a96233f95b61fad6da04825e19e7b66caf383f258badc71cb1c05a84f4/noisegrad-0.0.3.tar.gz
+[2023-04-10 20:54:43] INFO root fetch - processPackages [python-project-structure]: Downloading https://files.pythonhosted.org/packages/4f/07/ab1dc3347af14381f692a2dc59655d57343ae24fd6c0b206f959f696d78e/python-project-structure-0.8.4b1.tar.gz
+[2023-04-10 20:54:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:43] INFO root fetch - processPackages [pi-MCP4725]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-10 20:54:43] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-10 20:54:43] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.4b0.tar.gz tmp/python-project-structure-0.8.4b1.tar.gz --markdown 20230410/p/python-project-structure/0.8.4b0-0.8.4b1/diff.md --exclude *.pyd
+[2023-04-10 20:54:43] INFO root fetch - processPackages [noisegrad]: Downloading https://files.pythonhosted.org/packages/6c/2f/a0ce0a109253b799c0251b2b286b4fe5c833c9c26ff7664516c23b2e5b2b/noisegrad-0.0.4.tar.gz
+[2023-04-10 20:54:43] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:43] INFO root fetch - processPackages [noisegrad]: executing diffoscope
+[2023-04-10 20:54:43] INFO root fetch - processPackages [noisegrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noisegrad-0.0.3.tar.gz tmp/noisegrad-0.0.4.tar.gz --markdown 20230410/n/noisegrad/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 20:54:43] INFO root fetch - processPackages [fitsmap]: Downloading https://files.pythonhosted.org/packages/c0/82/eb6e70d0e3c1e4c1fb8e699ba57495975e3c39a79d924bc7087dbcca81f6/fitsmap-0.9.1.tar.gz
+[2023-04-10 20:54:43] INFO root fetch - processPackages [telescope-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-10 20:54:44] INFO root fetch - processPackages [pi-MCP4725]: Downloading https://files.pythonhosted.org/packages/ca/02/f8a8289b76c4d79c38cac040f0fc2c831a61cc3108570e154b3ecfa6a5d9/pi_MCP4725-0.1.3.tar.gz
+[2023-04-10 20:54:44] INFO root fetch - processPackages [pi-MCP4725]: executing diffoscope
+[2023-04-10 20:54:44] INFO root fetch - processPackages [pi-MCP4725]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_MCP4725-0.1.2.tar.gz tmp/pi_MCP4725-0.1.3.tar.gz --markdown 20230410/p/pi-MCP4725/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-10 20:54:44] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/54/a7/775080f9207b9b2addc9ec2bad02d9935f1341c8f2a1e5872ce9322753cc/telescope_sdk-0.1.8.tar.gz
+[2023-04-10 20:54:44] INFO root fetch - processPackages [fitsmap]: executing diffoscope
+[2023-04-10 20:54:44] INFO root fetch - processPackages [fitsmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fitsmap-0.9.0.tar.gz tmp/fitsmap-0.9.1.tar.gz --markdown 20230410/f/fitsmap/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-10 20:54:44] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/0a/bb/38861a90d251e67f2517742bb238c8e3c1fcddda5f965901c92e3e9a1b3d/telescope_sdk-0.1.9.tar.gz
+[2023-04-10 20:54:44] INFO root fetch - processPackages [telescope-sdk]: executing diffoscope
+[2023-04-10 20:54:44] INFO root fetch - processPackages [telescope-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telescope_sdk-0.1.8.tar.gz tmp/telescope_sdk-0.1.9.tar.gz --markdown 20230410/t/telescope-sdk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-10 20:54:44] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:45] INFO root fetch - processPackages [splight-cli]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-10 20:54:45] INFO root fetch - processPackages [splight-cli]: executing diffoscope
+[2023-04-10 20:54:45] INFO root fetch - processPackages [splight-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-cli-2.3.8.tar.gz tmp/splight-cli-2.3.9.tar.gz --markdown 20230410/s/splight-cli/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-10 20:54:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:45] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:46] INFO root fetch - main [MainThread]: success
+[2023-04-10 20:54:46] INFO root fetch - main [MainThread]: Store serial: [17649326]
