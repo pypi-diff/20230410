@@ -4732,3 +4732,49 @@ EOFError: EOF read where object expected
 [2023-04-10 06:50:24] INFO root fetch - main [MainThread]: success
 [2023-04-10 06:50:24] INFO root fetch - main [MainThread]: success
 [2023-04-10 06:50:24] INFO root fetch - main [MainThread]: Store serial: [17642849]
+[2023-04-10 06:55:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17642849]
+[2023-04-10 06:55:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-10 06:55:32] INFO root fetch - processPackages [tango-mlflow]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-10 06:55:32] INFO root fetch - processPackages [pcb-parser]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-10 06:55:32] INFO root fetch - processPackages [pyhOn]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-10 06:55:32] INFO root fetch - processPackages [lessweb]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-10 06:55:32] INFO root fetch - processPackages [openjij]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-10 06:55:32] INFO root fetch - processPackages [tango-mlflow]: Downloading https://files.pythonhosted.org/packages/5f/be/714dd12784c4b201df9cea5b4d181a595e0c5b344b1315d38b2b53e3c3ff/tango_mlflow-1.0.0.tar.gz
+[2023-04-10 06:55:32] INFO root fetch - processPackages [pcb-parser]: Downloading https://files.pythonhosted.org/packages/60/b5/3debb129c1754f34cf195cc32f31812296580c990b7408bac26f9d015115/pcb-parser-0.0.3.tar.gz
+[2023-04-10 06:55:32] INFO root fetch - processPackages [lessweb]: Downloading https://files.pythonhosted.org/packages/92/23/fe690067e9da681aa3a8519e25ae35fb741f3d5bb9b34ebc9679e33eabf3/lessweb-1.0.7.tar.gz
+[2023-04-10 06:55:32] INFO root fetch - processPackages [openjij]: Downloading https://files.pythonhosted.org/packages/86/8c/e8be10a62d2d8c8b773cf48cc8a5615a13f85cc9eab2e3d48bcadb4f6b50/openjij-0.6.8.tar.gz
+[2023-04-10 06:55:32] INFO root fetch - processPackages [lessweb]: executing diffoscope
+[2023-04-10 06:55:32] INFO root fetch - processPackages [lessweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lessweb-1.0.6.tar.gz tmp/lessweb-1.0.7.tar.gz --markdown 20230410/l/lessweb/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-10 06:55:32] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/15/8c/e5a46bb7caa01f5b87f9af5adc8a851be736fed87169289688ed263c0048/pyhOn-0.6.0.tar.gz
+[2023-04-10 06:55:32] INFO root fetch - processPackages [tango-mlflow]: Downloading https://files.pythonhosted.org/packages/43/3e/1fe25c222fd7b85f80d7ad7580520b2f7b0290f2724034394a10ba9e239e/tango_mlflow-1.0.1.tar.gz
+[2023-04-10 06:55:32] INFO root fetch - processPackages [pcb-parser]: Downloading https://files.pythonhosted.org/packages/5d/78/534826719164b3b1fb100b44df0cb1b621af6703348d6bbfbd11b2826dce/pcb-parser-0.0.4.tar.gz
+[2023-04-10 06:55:32] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-10 06:55:32] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.5.0.tar.gz tmp/pyhOn-0.6.0.tar.gz --markdown 20230410/p/pyhOn/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-10 06:55:32] INFO root fetch - processPackages [tango-mlflow]: executing diffoscope
+[2023-04-10 06:55:32] INFO root fetch - processPackages [tango-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tango_mlflow-1.0.0.tar.gz tmp/tango_mlflow-1.0.1.tar.gz --markdown 20230410/t/tango-mlflow/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-10 06:55:32] INFO root fetch - processPackages [pcb-parser]: executing diffoscope
+[2023-04-10 06:55:32] INFO root fetch - processPackages [pcb-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcb-parser-0.0.3.tar.gz tmp/pcb-parser-0.0.4.tar.gz --markdown 20230410/p/pcb-parser/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-10 06:55:33] INFO root fetch - processPackages [openjij]: Downloading https://files.pythonhosted.org/packages/75/e7/b1230dce50b940805d9fd369beca0d1db6663e3bd0c4793afd4688ba0eaa/openjij-0.6.9.tar.gz
+[2023-04-10 06:55:33] INFO root fetch - processPackages [openjij]: executing diffoscope
+[2023-04-10 06:55:33] INFO root fetch - processPackages [openjij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openjij-0.6.8.tar.gz tmp/openjij-0.6.9.tar.gz --markdown 20230410/o/openjij/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-10 06:55:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:55:33] INFO root fetch - processPackages [smannan-lotr-sdk]: New version: [5.0] Old Version: [4.0]
+[2023-04-10 06:55:33] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:55:34] INFO root fetch - processPackages [pynecone]: New version: [0.1.23a0] Old Version: [0.1.22a0]
+[2023-04-10 06:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:55:34] INFO root fetch - processPackages [smannan-lotr-sdk]: Downloading https://files.pythonhosted.org/packages/d2/f8/dd45e0a201b6c37cbd604e2d87ca8fdf70436b779a47b5347cce827c7d1c/smannan_lotr_sdk-5.0.tar.gz
+[2023-04-10 06:55:34] INFO root fetch - processPackages [cengal]: New version: [3.1.9] Old Version: [3.1.10]
+[2023-04-10 06:55:34] INFO root fetch - processPackages [smannan-lotr-sdk]: executing diffoscope
+[2023-04-10 06:55:34] INFO root fetch - processPackages [smannan-lotr-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smannan_lotr_sdk-4.0.tar.gz tmp/smannan_lotr_sdk-5.0.tar.gz --markdown 20230410/s/smannan-lotr-sdk/4.0-5.0/diff.md --exclude *.pyd
+[2023-04-10 06:55:34] INFO root fetch - processPackages [pynecone]: Downloading https://files.pythonhosted.org/packages/c3/87/f8c08642de93afc408459f93d8a6dbe0dbde999bb06693ede8c8dc013458/pynecone-0.1.23a0.tar.gz
+[2023-04-10 06:55:34] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/51/dc/57ee01ebd17434558808ba9acfbba7c1b47210076be1ab83b9eb8b3f8df4/cengal-3.1.10.tar.gz
+[2023-04-10 06:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:55:34] INFO root fetch - processPackages [cengal]: executing diffoscope
+[2023-04-10 06:55:34] INFO root fetch - processPackages [cengal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cengal-3.1.10.tar.gz tmp/cengal-3.1.9.tar.gz --markdown 20230410/c/cengal/3.1.10-3.1.9/diff.md --exclude *.pyd
+[2023-04-10 06:55:34] INFO root fetch - processPackages [pynecone]: executing diffoscope
+[2023-04-10 06:55:34] INFO root fetch - processPackages [pynecone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230410:/home/abi/fetcher/20230410:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynecone-0.1.22a0.tar.gz tmp/pynecone-0.1.23a0.tar.gz --markdown 20230410/p/pynecone/0.1.22a0-0.1.23a0/diff.md --exclude *.pyd
+[2023-04-10 06:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:55:35] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:55:36] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:56:14] INFO root fetch - main [MainThread]: success
+[2023-04-10 06:56:14] INFO root fetch - main [MainThread]: Store serial: [17642895]
